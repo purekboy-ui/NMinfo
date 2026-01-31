@@ -1319,3 +1319,44 @@ window.closeCalModal = function () {
 };
 
 renderView('NMBasics');
+
+// --- Operation Guide Logic ---
+const GUIDE_IMAGES = [
+    'pics/01.png',
+    'pics/02.png',
+    'pics/03.png',
+    'pics/04.png',
+    'pics/05.png',
+    'pics/06.png'
+];
+let currentGuideIndex = 0;
+
+window.openGuideModal = function () {
+    const modal = document.getElementById('guide-modal');
+    if (modal) {
+        modal.classList.remove('hidden');
+        currentGuideIndex = 0;
+        updateGuideView();
+    }
+};
+
+window.closeGuideModal = function () {
+    const modal = document.getElementById('guide-modal');
+    if (modal) modal.classList.add('hidden');
+};
+
+window.changeGuideStep = function (delta) {
+    const newIndex = currentGuideIndex + delta;
+    if (newIndex >= 0 && newIndex < GUIDE_IMAGES.length) {
+        currentGuideIndex = newIndex;
+        updateGuideView();
+    }
+};
+
+function updateGuideView() {
+    const imgEl = document.getElementById('guide-img');
+    const indEl = document.getElementById('guide-step-indicator');
+
+    if (imgEl) imgEl.src = GUIDE_IMAGES[currentGuideIndex];
+    if (indEl) indEl.textContent = `${currentGuideIndex + 1} / ${GUIDE_IMAGES.length}`;
+}

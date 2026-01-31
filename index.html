@@ -32,6 +32,9 @@
                 <a href="https://gen-lang-client-0435635260.web.app/" target="_blank" class="external-link-btn">
                     🤖 無聊做的AI文字辨識
                 </a>
+                <div class="operation-guide-link" onclick="openGuideModal()">
+                    📖 操作說明 (How to use)
+                </div>
                 <div class="search-box">
                     <input type="text" id="exam-search" placeholder="搜尋檢查 (如: Brain, 胃)...">
                 </div>
@@ -130,6 +133,26 @@
     </div>
 
 
+
+    <!-- Guide Modal -->
+    <div id="guide-modal" class="modal-overlay hidden" onclick="closeGuideModal()">
+        <div class="modal-content guide-box" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <h3>📖 AI 辨識 - 操作說明</h3>
+                <button class="close-btn" onclick="closeGuideModal()">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="guide-display">
+                    <img id="guide-img" src="" alt="Guide Step">
+                </div>
+                <div class="guide-controls">
+                    <button class="control-btn" onclick="changeGuideStep(-1)">◀ 上一步</button>
+                    <span id="guide-step-indicator">1 / 6</span>
+                    <button class="control-btn" onclick="changeGuideStep(1)">下一步 ▶</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
