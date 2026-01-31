@@ -815,84 +815,28 @@ body::before {
     color: var(--primary-color);
 }
 
-/* General Modal Styles (Reusing structure but specific for Guide) */
-.modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(4px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2000;
-    opacity: 1;
-    transition: opacity 0.3s;
-}
-
-.hidden {
-    display: none !important;
-}
-
-.modal-content.guide-box {
-    width: 90%;
-    max-width: 800px;
-    background: #fff;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-xl);
+/* Guide Gallery (Vertical Stack) */
+.guide-gallery {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    max-height: 90vh;
+    gap: 2rem;
+    margin-top: 1rem;
 }
 
-.guide-display {
-    flex: 1;
-    background: #f1f3f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    overflow: auto;
-}
-
-.guide-display img {
-    max-width: 100%;
-    max-height: 60vh;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.guide-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
+.guide-step-card {
     background: #fff;
-    border-top: 1px solid var(--border-subtle);
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-subtle);
+    overflow: hidden;
 }
 
-.control-btn {
-    padding: 0.5rem 1rem;
-    background: var(--primary-color);
-    color: white;
-    border: none;
+.guide-step-card img {
+    width: 100%;
+    height: auto;
+    display: block;
     border-radius: var(--radius-sm);
-    cursor: pointer;
-    font-weight: 700;
-    transition: background 0.2s;
-}
-
-.control-btn:hover {
-    background: var(--primary-dark);
-}
-
-#guide-step-indicator {
-    font-weight: 700;
-    color: var(--text-muted);
-    font-family: 'Nunito', sans-serif;
 }
 
 .nav-category {

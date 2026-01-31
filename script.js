@@ -700,6 +700,18 @@ const EXAM_DATA = {
         timeArchitecture: { steps: [{ label: "攝影", value: "多角度平面像" }, { label: "時間", value: "約 20 分" }] },
         adminRules: [{ title: "準備", content: "確認病人呼吸狀況。" }],
         patientEducation: [{ title: "配合", content: "吸氣憋氣配合 (若需要)。" }]
+    },
+    // --- Operation Guide ---
+    OperationGuide: {
+        title: "AI 辨識 - 操作說明 (Operation Guide)",
+        gallery: [
+            { src: "assets/guide/01.png", desc: "Step 1" },
+            { src: "assets/guide/02.png", desc: "Step 2" },
+            { src: "assets/guide/03.png", desc: "Step 3" },
+            { src: "assets/guide/04.png", desc: "Step 4" },
+            { src: "assets/guide/05.png", desc: "Step 5" },
+            { src: "assets/guide/06.png", desc: "Step 6" }
+        ]
     }
 };
 
@@ -935,6 +947,16 @@ function buildCardHTML(key, data) {
                 </div>
             ` : ''}
 
+            ${data.gallery ? `
+                <div class="guide-gallery">
+                    ${data.gallery.map((img, i) => `
+                        <div class="guide-step-card">
+                            <img src="${img.src}" alt="${img.desc}" loading="lazy">
+                        </div>
+                    `).join('')}
+                </div>
+            ` : ''}
+
             ${extraHTML}
 
             ${hasAdminRules ? `
@@ -971,16 +993,16 @@ function getPetSpecificContent() {
 function getI131SpecificContent() {
     return `
         <div class="calculator-box">
-             <div class="calc-input-group">
+            <div class="calc-input-group">
                 <input type="date" id="i131-date" placeholder="選擇入院日...">
                 <p style="font-size:0.9rem; color:var(--text-muted); margin-top:0.5rem; text-align:center;">↓ 點擊上方選擇入院日期 ↓</p>
-             </div>
-             
-             <div id="i131-result" class="result-box">
+            </div>
+            
+            <div id="i131-result" class="result-box">
                 <span style="color:var(--text-muted); font-weight:500;">請選擇日期計算行程...</span>
-             </div>
-             
-             <div id="i131-wbs" style="display:none;"></div>
+            </div>
+            
+            <div id="i131-wbs" style="display:none;"></div>
         </div>
     `;
 }
@@ -1007,11 +1029,11 @@ function attachI131Listeners() {
         if (day === 2) { // Tue
             isValid = true;
             outDateObj.setDate(dateObj.getDate() + 3); // Tue+3 = Fri
-            output = `✅ <strong>OK:</strong> 週二入院，預計 <strong>週五出院</strong> (住院 4 天)`;
+            output = `✅ <strong>OK:</strong> 週二入院，預計 < strong > 週五出院</strong > (住院 4 天)`;
         } else if (day === 5) { // Fri
             isValid = true;
             outDateObj.setDate(dateObj.getDate() + 4); // Fri+4 = Tue
-            output = `✅ <strong>OK:</strong> 週五入院，預計 <strong>下週二出院</strong> (住院 5 天)`;
+            output = `✅ <strong>OK:</strong> 週五入院，預計 < strong > 下週二出院</strong > (住院 5 天)`;
         } else {
             isValid = false;
             output = `⛔ <strong>錯誤 (ERROR):</strong> 僅能排週二或週五入院！`;
@@ -1320,47 +1342,14 @@ window.closeCalModal = function () {
 
 renderView('NMBasics');
 
-// --- Operation Guide Logic ---
-const GUIDE_IMAGES = [
-    'pics/01.png',
-    'pics/02.png',
-    'pics/03.png',
-    'pics/04.png',
-    'pics/05.png',
-    'pics/06.png'
-];
-let currentGuideIndex = 0;
-
-window.closeGuideModal = function () {
-    const modal = document.getElementById('guide-modal');
-    if (modal) modal.classList.add('hidden');
-};
-
-// Event Listener for Guide Button (Safer than onclick)
+// Event Listener for Guide Button
 const guideBtn = document.getElementById('guide-btn');
 if (guideBtn) {
     guideBtn.addEventListener('click', () => {
-        const modal = document.getElementById('guide-modal');
-        if (modal) {
-            modal.classList.remove('hidden');
-            currentGuideIndex = 0;
-            updateGuideView();
-        }
+        // Highlight logic (optional, but good for UX)
+        document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+        guideBtn.classList.add('active'); // Add active class to guide btn if we want styling
+
+        renderView('OperationGuide');
     });
-}
-
-window.changeGuideStep = function (delta) {
-    const newIndex = currentGuideIndex + delta;
-    if (newIndex >= 0 && newIndex < GUIDE_IMAGES.length) {
-        currentGuideIndex = newIndex;
-        updateGuideView();
-    }
-};
-
-function updateGuideView() {
-    const imgEl = document.getElementById('guide-img');
-    const indEl = document.getElementById('guide-step-indicator');
-
-    if (imgEl) imgEl.src = GUIDE_IMAGES[currentGuideIndex];
-    if (indEl) indEl.textContent = `${currentGuideIndex + 1} / ${GUIDE_IMAGES.length}`;
 }
