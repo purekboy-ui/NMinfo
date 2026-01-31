@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>義大核醫排檢筆記</title>
+    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Nunito:wght@400;600;700;800&family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>
+                    <img src="./assets/oil.png" alt="icon" style="height: 50px; width: auto; margin-right: 5px;">
+                    核醫筆記
+                </h2>
+                <div class="app-credits">
+                    Handcrafted by Huang Chun-Yin 2026
+                </div>
+                <!-- External Resource Link -->
+                <a href="https://purekboy-ui.github.io/NMeduWEB/" target="_blank" class="external-link-btn">
+                    🌐 無聊做的核醫衛教網站
+                </a>
+                <a href="https://gen-lang-client-0435635260.web.app/" target="_blank" class="external-link-btn">
+                    🤖 無聊做的AI文字辨識
+                </a>
+                <div class="search-box">
+                    <input type="text" id="exam-search" placeholder="搜尋檢查 (如: Brain, 胃)...">
+                </div>
+            </div>
+
+            <nav class="sidebar-nav-scroll">
+                <!-- 🌸 Learning Section -->
+                <div class="nav-category" style="color: var(--primary-color);">📚 核醫小學堂</div>
+                <button class="nav-btn active" data-category="NMBasics">核醫是什麼？</button>
+                <button class="nav-btn" data-category="PatientQA">常見 Q&A 話術</button>
+
+                <!-- Admin & QC (no label) -->
+                <button class="nav-btn" data-category="Radiopharmacy">💊 核醫藥物</button>
+                <button class="nav-btn" data-category="RadiationSafety">☢️ 輻射防護</button>
+                <button class="nav-btn" data-category="Calendar">📅 2026 行事曆</button>
+                <button class="nav-btn" data-category="EmergencyCart">急救車管理</button>
+
+
+                <!-- PET Center -->
+                <div class="nav-category">正子中心</div>
+                <button class="nav-btn" data-category="PET">FDG 正子斷層</button>
+                <button class="nav-btn" data-category="POSLUMA">攝護腺 PSMA PET</button>
+
+                <!-- Endocrine -->
+                <div class="nav-category">內分泌 / 治療</div>
+                <button class="nav-btn" data-category="Thyroid">甲狀腺 (Thyroid)</button>
+                <button class="nav-btn" data-category="Parathyroid">副甲狀腺 (Para)</button>
+                <button class="nav-btn" data-category="I131">I-131 治療</button>
+                <button class="nav-btn" data-category="I131WBS">I-131 掃描 (WBS)</button>
+                <button class="nav-btn" data-category="Ra223">Ra-223 治療</button>
+                <button class="nav-btn" data-category="MIBG">腎上腺髓質 (MIBG)</button>
+                <button class="nav-btn" data-category="NP59">腎上腺皮質 (NP-59)</button>
+
+                <!-- Cardiac / Lymph -->
+                <div class="nav-category">心臟 / 循環 / 淋巴</div>
+                <button class="nav-btn" data-category="MPI_Tl201">心肌灌流 - Tl-201</button>
+                <button class="nav-btn" data-category="MPI_Tc99m">心肌灌流 - Tc-99m</button>
+                <button class="nav-btn" data-category="MUGA">心室功能 (MUGA)</button>
+                <button class="nav-btn" data-category="Venography">靜脈攝影 (Venography)</button>
+                <button class="nav-btn" data-category="Lymphedema">淋巴水腫 (Lymph)</button>
+                <button class="nav-btn" data-category="SLN">前哨淋巴 (SLN)</button>
+
+                <!-- GI System -->
+                <div class="nav-category">消化系統</div>
+                <button class="nav-btn" data-category="Gastric">胃排空 (Gastric)</button>
+                <button class="nav-btn" data-category="GIBleed">腸胃道出血</button>
+                <button class="nav-btn" data-category="Liver">肝脾臟掃描</button>
+                <button class="nav-btn" data-category="Biliary">膽道掃描 (IVRC)</button>
+                <button class="nav-btn" data-category="Salivary">唾液腺掃描</button>
+
+                <!-- Bone / Renal / GU -->
+                <div class="nav-category">骨骼 / 腎臟 / 生殖</div>
+                <button class="nav-btn" data-category="Bone">全身骨骼 (Bone)</button>
+                <button class="nav-btn" data-category="DMSA">腎皮質 (DMSA)</button>
+                <button class="nav-btn" data-category="DTPA">腎利尿 (DTPA)</button>
+                <button class="nav-btn" data-category="MAG3">腎功能 (MAG3)</button>
+                <button class="nav-btn" data-category="Scrotal">陰囊掃描 (Scrotal)</button>
+
+                <!-- Other -->
+                <div class="nav-category">其他 (Brain/Lung)</div>
+                <button class="nav-btn" data-category="Ga67">鎵-67 發炎 (Ga67)</button>
+                <button class="nav-btn" data-category="TRODAT">多巴胺掃描 (TRODAT)</button>
+                <button class="nav-btn" data-category="Brain">腦部灌流 (Brain)</button>
+                <button class="nav-btn" data-category="Lung">肺部灌流 (Lung)</button>
+            </nav>
+        </aside>
+
+        <!-- Main Content Panel -->
+        <main class="main-panel">
+            <header class="content-header">
+                <!-- Smart Greeting -->
+                <div id="smart-greeting" class="smart-greeting">
+                    ☀️ 早安，開始專業的一天吧！
+                </div>
+
+
+
+                <div class="dashboard-info">
+                    <div id="weather-info" class="weather-info"></div>
+                    <!-- Traffic info removed -->
+                </div>
+
+                <div class="date-time-display">
+                    <span id="clock-display">Waiting...</span>
+                </div>
+
+
+
+
+            </header>
+
+            <div id="content-display" class="content-area">
+                <!-- Content injected via JS -->
+            </div>
+        </main>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
