@@ -1331,19 +1331,23 @@ const GUIDE_IMAGES = [
 ];
 let currentGuideIndex = 0;
 
-window.openGuideModal = function () {
-    const modal = document.getElementById('guide-modal');
-    if (modal) {
-        modal.classList.remove('hidden');
-        currentGuideIndex = 0;
-        updateGuideView();
-    }
-};
-
 window.closeGuideModal = function () {
     const modal = document.getElementById('guide-modal');
     if (modal) modal.classList.add('hidden');
 };
+
+// Event Listener for Guide Button (Safer than onclick)
+const guideBtn = document.getElementById('guide-btn');
+if (guideBtn) {
+    guideBtn.addEventListener('click', () => {
+        const modal = document.getElementById('guide-modal');
+        if (modal) {
+            modal.classList.remove('hidden');
+            currentGuideIndex = 0;
+            updateGuideView();
+        }
+    });
+}
 
 window.changeGuideStep = function (delta) {
     const newIndex = currentGuideIndex + delta;
