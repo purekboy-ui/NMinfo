@@ -2,8 +2,8 @@
 const EXAM_DATA = {
     // --- Admin & QC ---
     Calendar: {
-        title: "2026 核醫行事曆 (Calendar)",
-        miniClass: { indications: "2026年度與國定假日。", principle: "員工專用版 | 行政與開診資訊。" },
+        title: "核醫行事曆 (Calendar)",
+        miniClass: { indications: "年度與國定假日。", principle: "員工專用版 | 行政與開診資訊。" },
         adminRules: [
             {
                 title: "📅 月曆視圖 (Calendar View)",
@@ -718,7 +718,7 @@ const EXAM_DATA = {
 // State
 let currentState = {
     view: 'home',
-    calendarDate: new Date(2026, 0, 1) // Default to Jan 2026
+    calendarDate: new Date() // Default to Today
 };
 
 // Search Logic with Keyword Associations
@@ -1188,10 +1188,8 @@ function initCalendar() {
     const container = document.getElementById('calendar-app-container');
     if (!container) return;
 
-    // Ensure we start with a valid date (Jan 2026 if not set, or reset if needed)
-    if (!currentState.calendarDate || isNaN(currentState.calendarDate.getTime())) {
-        currentState.calendarDate = new Date(2026, 0, 1);
-    }
+    // Always reset to today when entering the view
+    currentState.calendarDate = new Date();
 
     renderCalendarMonth();
 }
@@ -1351,5 +1349,15 @@ if (guideBtn) {
         guideBtn.classList.add('active'); // Add active class to guide btn if we want styling
 
         renderView('OperationGuide');
+    });
+}
+
+// Event Listener for Toolbox Toggle (Collapsible Menu)
+const toolboxToggle = document.getElementById('toolbox-toggle');
+const toolboxContent = document.getElementById('toolbox-content');
+if (toolboxToggle && toolboxContent) {
+    toolboxToggle.addEventListener('click', () => {
+        toolboxToggle.classList.toggle('open');
+        toolboxContent.classList.toggle('open');
     });
 }

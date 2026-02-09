@@ -23,24 +23,37 @@
                     核醫筆記
                 </h2>
                 <div class="app-credits">
-                    Handcrafted 2026
+                    Handcrafted 2026 by Huang Chun-Yin
                 </div>
-                <!-- External Resource Link -->
-                <a href="https://purekboy-ui.github.io/NMeduWEB/" target="_blank" class="external-link-btn">
-                    🌐 無聊做的核醫衛教網站
-                </a>
-                <a href="https://gen-lang-client-0435635260.web.app/" target="_blank" class="external-link-btn">
-                    🤖 無聊做的AI文字辨識
-                </a>
-                <div id="guide-btn" class="operation-guide-link">
-                    📖 操作說明 (How to use)
+                <!-- Collapsible Toolbox -->
+                <div class="toolbox-container">
+                    <button class="toolbox-toggle" id="toolbox-toggle">
+                        <span class="toolbox-icon">🧰</span>
+                        <span class="toolbox-label">無聊做的東西</span>
+                        <span class="toolbox-count">6</span>
+                        <span class="toolbox-arrow">▼</span>
+                    </button>
+                    <div class="toolbox-content" id="toolbox-content">
+                        <a href="https://nminfo-nmedu.web.app/" target="_blank" class="external-link-btn">
+                            核醫衛教網站
+                        </a>
+                        <a href="https://gen-lang-client-0435635260.web.app/" target="_blank" class="external-link-btn">
+                            AI 文字辨識
+                        </a>
+                        <div id="guide-btn" class="operation-guide-link">
+                            操作說明
+                        </div>
+                        <a href="https://i131-ward-scheduler.web.app/" target="_blank" class="external-link-btn">
+                            I-131 病房排程 DEMO
+                        </a>
+                        <a href="https://nminfo-examp.web.app/" target="_blank" class="external-link-btn">
+                            核醫排檢 DEMO
+                        </a>
+                        <a href="https://nminfo-petarr.web.app/" target="_blank" class="external-link-btn">
+                            PET 智慧排程助手
+                        </a>
+                    </div>
                 </div>
-                <a href="https://purekboy-ui.github.io/I131-Ward-Scheduler/" target="_blank" class="external-link-btn">
-                    🛏️ 無聊做的碘131病房排程系統DEMO
-                </a>
-                <a href="https://purekboy-ui.github.io/nmis-scheduler/" target="_blank" class="external-link-btn">
-                    🗓️ 無聊做的核醫排檢DEMO
-                </a>
                 <div class="search-box">
                     <input type="text" id="exam-search" placeholder="搜尋檢查 (如: Brain, 胃)...">
                 </div>
@@ -48,14 +61,14 @@
 
             <nav class="sidebar-nav-scroll">
                 <!-- 🌸 Learning Section -->
-                <div class="nav-category" style="color: var(--primary-color);">📚 核醫小學堂</div>
+                <div class="nav-category" style="color: var(--primary-color);">核醫小學堂</div>
                 <button class="nav-btn active" data-category="NMBasics">核醫是什麼？</button>
                 <button class="nav-btn" data-category="PatientQA">常見 Q&A 話術</button>
 
                 <!-- Admin & QC (no label) -->
-                <button class="nav-btn" data-category="Radiopharmacy">💊 核醫藥物</button>
-                <button class="nav-btn" data-category="RadiationSafety">☢️ 輻射防護</button>
-                <button class="nav-btn" data-category="Calendar">📅 2026 行事曆</button>
+                <button class="nav-btn" data-category="Radiopharmacy">核醫藥物</button>
+                <button class="nav-btn" data-category="RadiationSafety">輻射防護</button>
+                <button class="nav-btn" data-category="Calendar">行事曆</button>
                 <button class="nav-btn" data-category="EmergencyCart">急救車管理</button>
 
 
