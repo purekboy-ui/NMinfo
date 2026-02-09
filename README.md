@@ -4,7 +4,7 @@
 
 這不是什麼大系統，單純是一個方便自己和同事查找資料的靜態網頁。
 
-👉 **線上版**：[GitHub Pages](https://purekboy-ui.github.io/NMinfo/) | [Firebase](https://nminfo-f108e.web.app/)
+👉 **線上版**：[GitHub Pages](https://purekboy-ui.github.io/NMinfo/) 
 
 ## 內容物
 
