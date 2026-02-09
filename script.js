@@ -1361,3 +1361,70 @@ if (toolboxToggle && toolboxContent) {
         toolboxContent.classList.toggle('open');
     });
 }
+
+// ===========================================
+// MOBILE MENU TOGGLE
+// ===========================================
+const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+const sidebarOverlay = document.getElementById('sidebar-overlay');
+const sidebar = document.querySelector('.sidebar');
+
+function openMobileMenu() {
+    mobileMenuToggle?.classList.add('active');
+    sidebarOverlay?.classList.add('active');
+    sidebar?.classList.add('open');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeMobileMenu() {
+    mobileMenuToggle?.classList.remove('active');
+    sidebarOverlay?.classList.remove('active');
+    sidebar?.classList.remove('open');
+    document.body.style.overflow = '';
+}
+
+function toggleMobileMenu() {
+    if (sidebar?.classList.contains('open')) {
+        closeMobileMenu();
+    } else {
+        openMobileMenu();
+    }
+}
+
+// Toggle button click
+mobileMenuToggle?.addEventListener('click', toggleMobileMenu);
+
+// Close on overlay click
+sidebarOverlay?.addEventListener('click', closeMobileMenu);
+
+// Close on nav item click (mobile)
+document.querySelectorAll('.nav-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+            closeMobileMenu();
+        }
+    });
+});
+
+// Close on external link click
+document.querySelectorAll('.external-link-btn').forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+            closeMobileMenu();
+        }
+    });
+});
+
+// Handle window resize
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+        closeMobileMenu();
+    }
+});
+
+// Handle escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && sidebar?.classList.contains('open')) {
+        closeMobileMenu();
+    }
+});
