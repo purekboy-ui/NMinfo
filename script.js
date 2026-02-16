@@ -1,5 +1,396 @@
 // Data Store: 20+ Exams with Strict Clinical Logic
 const EXAM_DATA = {
+    // --- 藥物劑量 ---
+    DosageTable: {
+        title: "核醫藥物劑量速查表 (Dosage Quick Reference)",
+        miniClass: {
+            indications: "科內常見與少見檢查之建議劑量總覽。",
+            principle: "整合 <strong>SNMMI (北美核子醫學與分子影像學會)</strong> 與 <strong>EANM (歐洲核子醫學會)</strong> 最新指引 (2024-2025)，並納入台灣特有藥物 (Trodat-1、Phytate)。所有兒科劑量計算後若低於最低劑量 (Min) 應以 Min 給予；若高於成人劑量則以成人劑量為上限。"
+        },
+        adminRules: [
+            {
+                title: "📋 綜合劑量速查表 (Section 8)",
+                content: `
+                <div class="dosage-table-wrapper">
+                    <div class="dosage-source-badges">
+                        <span class="source-badge snmmi">SNMMI 2024/2025</span>
+                        <span class="source-badge eanm">EANM Dosage Card v5.7</span>
+                        <span class="source-badge local">台灣臨床共識</span>
+                    </div>
+                    <div class="table-scroll-container">
+                    <table class="dosage-ref-table">
+                        <thead>
+                            <tr>
+                                <th>檢查類別</th>
+                                <th>檢查項目</th>
+                                <th>藥物</th>
+                                <th>成人建議劑量</th>
+                                <th>兒科計算公式</th>
+                                <th>最低劑量</th>
+                                <th>指引來源</th>
+                                <th>備註</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="cat-tag neuro">神經</span></td>
+                                <td>腦血流灌注</td>
+                                <td>Tc-99m HMPAO / ECD</td>
+                                <td><strong>20 mCi</strong></td>
+                                <td>0.3 mCi/kg (Class B)</td>
+                                <td>5 mCi</td>
+                                <td><span class="guide-tag snmmi">SNMMI</span><span class="guide-tag eanm">EANM</span></td>
+                                <td>腦死判定不可低於 5 mCi</td>
+                            </tr>
+                            <tr>
+                                <td><span class="cat-tag neuro">神經</span></td>
+                                <td>多巴胺受體</td>
+                                <td>Tc-99m Trodat-1</td>
+                                <td><strong>20–25 mCi</strong></td>
+                                <td>0.3 mCi/kg (Off-label)</td>
+                                <td>N/A</td>
+                                <td><span class="guide-tag local">台灣</span></td>
+                                <td>台灣常用，劑量高於 DaTscan</td>
+                            </tr>
+                            <tr>
+                                <td><span class="cat-tag neuro">神經</span></td>
+                                <td>多巴胺受體</td>
+                                <td>I-123 FP-CIT (DaTscan)</td>
+                                <td><strong>3–5 mCi</strong></td>
+                                <td>Class C (極少)</td>
+                                <td>N/A</td>
+                                <td><span class="guide-tag snmmi">SNMMI</span><span class="guide-tag eanm">EANM</span></td>
+                                <td>需甲狀腺阻斷 (Lugol's)</td>
+                            </tr>
+                            <tr>
+                                <td><span class="cat-tag neuro">神經</span></td>
+                                <td>腦脊髓液池</td>
+                                <td>In-111 DTPA</td>
+                                <td><strong>0.5 mCi</strong></td>
+                                <td>Class C (罕用)</td>
+                                <td>N/A</td>
+                                <td><span class="guide-tag snmmi">SNMMI</span></td>
+                                <td>絕對上限 0.5 mCi (鞘內)</td>
+                            </tr>
+                            <tr>
+                                <td><span class="cat-tag cardiac">心臟</span></td>
+                                <td>心肌灌注 (1-Day)</td>
+                                <td>Tc-99m MIBI/Tetro</td>
+                                <td><strong>R:10 / S:30 mCi</strong></td>
+                                <td>0.2 mCi/kg</td>
+                                <td>2 mCi</td>
+                                <td><span class="guide-tag snmmi">SNMMI</span></td>
+                                <td>Stress ≥ 3倍 Rest</td>
+                            </tr>
+                            <tr>
+                                <td><span class="cat-tag cardiac">心臟</span></td>
+                                <td>心肌灌注 (Tl-201)</td>
+                                <td>Tl-201 Chloride</td>
+                                <td><strong>2–4 mCi</strong></td>
+                                <td>避免兒童</td>
+                                <td>N/A</td>
+                                <td><span class="guide-tag snmmi">SNMMI</span></td>
+                                <td>輻射劑量極高，3 mCi ≈ 30 mCi Tc</td>
+                            </tr>
+                            <tr>
+                                <td><span class="cat-tag cardiac">心臟</span></td>
+                                <td>類澱粉沉積症</td>
+                                <td>Tc-99m PYP</td>
+                                <td><strong>20 mCi</strong></td>
+                                <td>不適用</td>
+                                <td>N/A</td>
+                                <td><span class="guide-tag snmmi">SNMMI</span></td>
+                                <td>3hr SPECT/CT 必要</td>
+                            </tr>
+                            <tr>
+                                <td><span class="cat-tag cardiac">心臟</span></td>
+                                <td>MUGA</td>
+                                <td>Tc-99m RBC</td>
+                                <td><strong>20–25 mCi</strong></td>
+                                <td>0.25 mCi/kg (Class B)</td>
+                                <td>3 mCi</td>
+                                <td><span class="guide-tag snmmi">SNMMI</span><span class="guide-tag eanm">EANM</span></td>
+                                <td>標記率需 >95%</td>
+                            </tr>
+                            <tr>
+                                <td><span class="cat-tag endo">內分泌</span></td>
+                                <td>甲狀腺掃描</td>
+                                <td>Tc-99m Pertechnetate</td>
+                                <td><strong>5 mCi</strong></td>
+                                <td>0.05 mCi/kg (Class B)</td>
+                                <td>0.5 mCi</td>
+                                <td><span class="guide-tag snmmi">SNMMI</span><span class="guide-tag eanm">EANM</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><span class="cat-tag endo">內分泌</span></td>
+                                <td>甲狀腺掃描</td>
+                                <td>I-123 NaI</td>
+                                <td><strong>0.2–0.4 mCi</strong></td>
+                                <td>0.01 mCi/kg (Class C)</td>
+                                <td>0.03 mCi</td>
+                                <td><span class="guide-tag eanm">EANM</span></td>
+                                <td>最佳但昂貴</td>
+                            </tr>
+                            <tr>
+                                <td><span class="cat-tag endo">內分泌</span></td>
+                                <td>甲狀腺攝取</td>
+                                <td>I-131 NaI</td>
+                                <td><strong>10 μCi</strong></td>
+                                <td>禁忌</td>
+                                <td>N/A</td>
+                                <td><span class="guide-tag snmmi">SNMMI</span></td>
+                                <td>>30 μCi 有 Stunning Effect</td>
+                            </tr>
+                            <tr>
+                                <td><span class="cat-tag endo">內分泌</span></td>
+                                <td>甲狀腺癌追蹤</td>
+                                <td>I-131 NaI (WBS)</td>
+                                <td><strong>2–5 mCi</strong></td>
+                                <td>依體重調整</td>
+                                <td>N/A</td>
+                                <td><span class="guide-tag snmmi">SNMMI</span></td>
+                                <td>術後全身掃描</td>
+                            </tr>
+                            <tr>
+                                <td><span class="cat-tag endo">內分泌</span></td>
+                                <td>副甲狀腺</td>
+                                <td>Tc-99m MIBI</td>
+                                <td><strong>20–25 mCi</strong></td>
+                                <td>0.2 mCi/kg (Class B)</td>
+                                <td>2 mCi</td>
+                                <td><span class="guide-tag snmmi">SNMMI</span><span class="guide-tag eanm">EANM</span></td>
+                                <td>雙相法為主流</td>
+                            </tr>
+                            <tr>
+                                <td><span class="cat-tag endo">內分泌</span></td>
+                                <td>MIBG 掃描</td>
+                                <td>I-123 MIBG</td>
+                                <td><strong>10 mCi</strong></td>
+                                <td>0.14 mCi/kg (Class B)</td>
+                                <td>1 mCi</td>
+                                <td><span class="guide-tag snmmi">SNMMI</span><span class="guide-tag eanm">EANM</span></td>
+                                <td>慢速注射 >5 分鐘</td>
+                            </tr>
+                            <tr>
+                                <td><span class="cat-tag gi">胃腸</span></td>
+                                <td>胃排空 (固體)</td>
+                                <td>Tc-99m Sulfur Colloid</td>
+                                <td><strong>0.5–1 mCi</strong></td>
+                                <td>0.25 mCi (固定)</td>
+                                <td>0.25 mCi</td>
+                                <td><span class="guide-tag snmmi">SNMMI</span><span class="guide-tag eanm">EANM</span></td>
+                                <td>標準 Tougas 餐</td>
+                            </tr>
+                            <tr>
+                                <td><span class="cat-tag gi">胃腸</span></td>
+                                <td>唾液腺</td>
+                                <td>Tc-99m Pertechnetate</td>
+                                <td><strong>10 mCi</strong></td>
+                                <td>0.05 mCi/kg</td>
+                                <td>0.5 mCi</td>
+                                <td><span class="guide-tag snmmi">SNMMI</span></td>
+                                <td>檸檬汁刺激</td>
+                            </tr>
+                            <tr>
+                                <td><span class="cat-tag gi">胃腸</span></td>
+                                <td>肝脾 / Phytate</td>
+                                <td>Tc-99m SC / Phytate</td>
+                                <td><strong>5 mCi</strong></td>
+                                <td>0.05 mCi/kg</td>
+                                <td>0.5 mCi</td>
+                                <td><span class="guide-tag snmmi">SNMMI</span><span class="guide-tag local">台灣</span></td>
+                                <td>Phytate 為台灣常用替代</td>
+                            </tr>
+                            <tr>
+                                <td><span class="cat-tag gi">胃腸</span></td>
+                                <td>梅克爾憩室</td>
+                                <td>Tc-99m Pertechnetate</td>
+                                <td><strong>10–15 mCi</strong></td>
+                                <td>0.05 mCi/kg</td>
+                                <td>0.5 mCi</td>
+                                <td><span class="guide-tag snmmi">SNMMI</span></td>
+                                <td>預給 H2 Blocker</td>
+                            </tr>
+                            <tr>
+                                <td><span class="cat-tag gi">胃腸</span></td>
+                                <td>肝血管瘤</td>
+                                <td>Tc-99m RBC</td>
+                                <td><strong>20–25 mCi</strong></td>
+                                <td>0.25 mCi/kg (Class B)</td>
+                                <td>3 mCi</td>
+                                <td><span class="guide-tag snmmi">SNMMI</span></td>
+                                <td>需做 SPECT</td>
+                            </tr>
+                            <tr>
+                                <td><span class="cat-tag renal">泌尿</span></td>
+                                <td>腎皮質 (靜態)</td>
+                                <td>Tc-99m DMSA</td>
+                                <td><strong>5 mCi</strong></td>
+                                <td>0.05 mCi/kg (Class A)</td>
+                                <td>0.5 mCi</td>
+                                <td><span class="guide-tag snmmi">SNMMI</span><span class="guide-tag eanm">EANM</span></td>
+                                <td>輻射劑量較高</td>
+                            </tr>
+                            <tr>
+                                <td><span class="cat-tag renal">泌尿</span></td>
+                                <td>腎功能 (動態)</td>
+                                <td>Tc-99m MAG3</td>
+                                <td><strong>5–8 mCi</strong></td>
+                                <td>0.15 mCi/kg (Class A)</td>
+                                <td>1 mCi</td>
+                                <td><span class="guide-tag snmmi">SNMMI</span><span class="guide-tag eanm">EANM</span></td>
+                                <td>優於 DTPA</td>
+                            </tr>
+                            <tr>
+                                <td><span class="cat-tag renal">泌尿</span></td>
+                                <td>腎功能 (動態)</td>
+                                <td>Tc-99m DTPA</td>
+                                <td><strong>5–10 mCi</strong></td>
+                                <td>0.2 mCi/kg (Class B)</td>
+                                <td>1 mCi</td>
+                                <td><span class="guide-tag snmmi">SNMMI</span><span class="guide-tag eanm">EANM</span></td>
+                                <td>GFR 測量用</td>
+                            </tr>
+                            <tr>
+                                <td><span class="cat-tag renal">泌尿</span></td>
+                                <td>膀胱逆流 (直接)</td>
+                                <td>Tc-99m SC / Pertech</td>
+                                <td><strong>1 mCi</strong></td>
+                                <td>1 mCi (固定)</td>
+                                <td>1 mCi</td>
+                                <td><span class="guide-tag snmmi">SNMMI</span></td>
+                                <td>與體重無關</td>
+                            </tr>
+                            <tr>
+                                <td><span class="cat-tag pulm">呼吸</span></td>
+                                <td>肺灌注</td>
+                                <td>Tc-99m MAA</td>
+                                <td><strong>4 mCi</strong></td>
+                                <td>0.05 mCi/kg</td>
+                                <td>0.5 mCi</td>
+                                <td><span class="guide-tag snmmi">SNMMI</span><span class="guide-tag eanm">EANM</span></td>
+                                <td>嚴控粒子數 (兒科 1-5 萬)</td>
+                            </tr>
+                            <tr>
+                                <td><span class="cat-tag pulm">呼吸</span></td>
+                                <td>肺通氣 (Aerosol)</td>
+                                <td>Tc-99m DTPA Aerosol</td>
+                                <td><strong>30 mCi (入霧器)</strong></td>
+                                <td>吸入 0.5–1 mCi</td>
+                                <td>0.5 mCi</td>
+                                <td><span class="guide-tag snmmi">SNMMI</span></td>
+                                <td>實際吸入約 0.5–1 mCi</td>
+                            </tr>
+                            <tr>
+                                <td><span class="cat-tag infect">感染</span></td>
+                                <td>白血球掃描</td>
+                                <td>Tc-99m HMPAO WBC</td>
+                                <td><strong>20 mCi</strong></td>
+                                <td>0.3 mCi/kg</td>
+                                <td>3 mCi</td>
+                                <td><span class="guide-tag snmmi">SNMMI</span></td>
+                                <td>腸道發炎首選</td>
+                            </tr>
+                            <tr>
+                                <td><span class="cat-tag infect">感染</span></td>
+                                <td>發炎掃描</td>
+                                <td>Ga-67 Citrate</td>
+                                <td><strong>5 mCi</strong></td>
+                                <td>0.04 mCi/kg</td>
+                                <td>0.5 mCi</td>
+                                <td><span class="guide-tag snmmi">SNMMI</span></td>
+                                <td>48/72hr 延遲造影</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                    <div class="dosage-table-footer">
+                        <p><strong>EANM 兒科劑量分類：</strong></p>
+                        <ul>
+                            <li><strong>Class A (類線性)：</strong>腎皮質 (DMSA)、MAG3。標的器官小，係數增長較緩。</li>
+                            <li><strong>Class B (體表面積相關)：</strong>多數 Tc-99m 藥物 (MDP, HMPAO, RBC 等)。係數 ≈ 體重^0.7。</li>
+                            <li><strong>Class C (高背景需求)：</strong>受體造影 (MIBG, I-123)。低體重需相對極高基礎活性。</li>
+                        </ul>
+                        <p style="margin-top:0.5rem;color:var(--text-muted);font-size:0.85rem;">📚 資料來源：SNMMI Procedure Standards 2024/2025、EANM Paediatric Dosage Card v5.7.2016、台灣核醫學會臨床共識</p>
+                    </div>
+                </div>`
+            }
+        ],
+        patientEducation: []
+    },
+    DosageCalc: {
+        title: "核醫藥物劑量計算器 (Dosage Calculator)",
+        miniClass: {
+            indications: "輸入體重，自動計算成人/兒科藥物劑量 (mCi)。",
+            principle: "<strong>計算邏輯：</strong>成人多採固定劑量或體重調整上限 (70 kg rule)；兒科採 EANM Class A/B/C 體表面積校正模型或 SNMMI 線性公式 (mCi/kg)，計算結果 clamp 在最低劑量與成人上限之間。"
+        },
+        adminRules: [
+            {
+                title: "💊 劑量計算器",
+                content: `
+                <div class="dosage-calc-container">
+                    <div class="calc-row">
+                        <div class="calc-field">
+                            <label for="dosage-exam-select">選擇檢查項目</label>
+                            <select id="dosage-exam-select">
+                                <option value="">-- 請選擇 --</option>
+                                <optgroup label="神經系統">
+                                    <option value="brain_perfusion">腦血流灌注 (HMPAO/ECD)</option>
+                                    <option value="trodat">多巴胺受體 (Trodat-1)</option>
+                                    <option value="datscan">多巴胺受體 (DaTscan I-123)</option>
+                                    <option value="cisternography">腦脊髓液池 (In-111 DTPA)</option>
+                                </optgroup>
+                                <optgroup label="心臟系統">
+                                    <option value="mpi_rest">心肌灌注 1-Day Rest (MIBI)</option>
+                                    <option value="mpi_stress">心肌灌注 1-Day Stress (MIBI)</option>
+                                    <option value="mpi_2day">心肌灌注 2-Day (MIBI)</option>
+                                    <option value="cardiac_pyp">類澱粉沉積症 (PYP)</option>
+                                    <option value="muga">MUGA (Tc-99m RBC)</option>
+                                </optgroup>
+                                <optgroup label="內分泌">
+                                    <option value="thyroid_tc">甲狀腺掃描 (Tc-99m)</option>
+                                    <option value="thyroid_i123">甲狀腺掃描 (I-123)</option>
+                                    <option value="parathyroid">副甲狀腺 (MIBI)</option>
+                                    <option value="mibg_i123">MIBG 掃描 (I-123)</option>
+                                </optgroup>
+                                <optgroup label="胃腸系統">
+                                    <option value="gastric">胃排空 - 固體</option>
+                                    <option value="salivary">唾液腺掃描</option>
+                                    <option value="liver_spleen">肝脾 / Phytate</option>
+                                    <option value="meckel">梅克爾憩室</option>
+                                    <option value="liver_hemangioma">肝血管瘤 (RBC)</option>
+                                </optgroup>
+                                <optgroup label="泌尿系統">
+                                    <option value="dmsa">腎皮質 DMSA</option>
+                                    <option value="mag3">腎功能 MAG3</option>
+                                    <option value="dtpa_renal">腎功能 DTPA</option>
+                                    <option value="cystography">膀胱逆流 (直接)</option>
+                                </optgroup>
+                                <optgroup label="呼吸 / 感染">
+                                    <option value="lung_perf">肺灌注 (MAA)</option>
+                                    <option value="wbc_scan">白血球掃描 (HMPAO WBC)</option>
+                                    <option value="ga67">Ga-67 發炎掃描</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="calc-field">
+                            <label for="dosage-weight">體重 (kg)</label>
+                            <input type="number" id="dosage-weight" min="1" max="200" step="0.1" placeholder="如：70">
+                        </div>
+                        <div class="calc-field calc-btn-field">
+                            <button id="dosage-calc-btn" class="calc-action-btn">計算劑量</button>
+                        </div>
+                    </div>
+                    <div id="dosage-calc-result" class="dosage-result-box">
+                        <span style="color:var(--text-muted); font-weight:500;">請選擇檢查項目並輸入體重...</span>
+                    </div>
+                    <div id="dosage-formula-display" class="dosage-formula-box" style="display:none;"></div>
+                </div>`
+            }
+        ],
+        patientEducation: []
+    },
     // --- Admin & QC ---
     Calendar: {
         title: "核醫行事曆 (Calendar)",
@@ -736,6 +1127,8 @@ const SEARCH_KEYWORDS = {
     DTPA: ['kidney', '腎', 'renal', 'gfr', 'obstruction', '阻塞', 'hydronephrosis', '水腎', 'lasix'],
     MAG3: ['kidney', '腎', 'renal', 'tubular', '小管', 'erpf', 'pediatric', '小兒', 'obstruction'],
     Gastric: ['stomach', '胃', 'emptying', '排空', 'gastroparesis', '胃輕癱', 'nausea', '噁心'],
+    DosageTable: ['dosage', '劑量', 'dose', '劑量表', 'snmmi', 'eanm', 'mci', 'mbq'],
+    DosageCalc: ['calculator', '計算', 'dosage', '劑量', 'weight', '體重', 'pediatric', '兒科'],
     GIBleed: ['bleeding', '出血', 'gi', '腸胃', 'meckel', 'rbc'],
     Biliary: ['gallbladder', '膽囊', 'cholecystitis', '膽囊炎', 'hida', 'biliary', '膽道'],
     Liver: ['liver', '肝', 'spleen', '脾', 'cirrhosis', '肝硬化', 'colloid'],
@@ -831,6 +1224,7 @@ function renderView(viewName) {
             // I131 listener            if (viewName === 'PET') attachPetListeners();
             if (viewName === 'I131') attachI131Listeners();
             if (viewName === 'Calendar') initCalendar();
+            if (viewName === 'DosageCalc') attachDosageCalcListeners();
         }
         container.style.opacity = '1';
         container.style.transition = 'opacity 0.2s';
@@ -1428,3 +1822,267 @@ document.addEventListener('keydown', (e) => {
         closeMobileMenu();
     }
 });
+
+// ===========================================
+// DOSAGE CALCULATOR LOGIC
+// ===========================================
+const DOSAGE_DB = {
+    brain_perfusion: {
+        name: '腦血流灌注 (Tc-99m HMPAO/ECD)', drug: 'Tc-99m HMPAO / ECD',
+        adultFixed: 20, adultRange: [20, 30], pedPerKg: 0.3, pedMin: 5, pedClass: 'B',
+        source: ['SNMMI', 'EANM'], note: '腦死判定不可低於 5 mCi',
+        formula: '成人: 固定 20 mCi (範圍 20-30)\n兒科: 0.3 mCi/kg (EANM Class B), Min 5 mCi'
+    },
+    trodat: {
+        name: '多巴胺受體 (Tc-99m Trodat-1)', drug: 'Tc-99m Trodat-1',
+        adultFixed: 22.5, adultRange: [20, 25], pedPerKg: 0.3, pedMin: null, pedClass: 'Off-label',
+        source: ['台灣'], note: '台灣特有，劑量高於 DaTscan',
+        formula: '成人: 20-25 mCi (固定)\n兒科: 0.3 mCi/kg (Off-label, 無標準指引)'
+    },
+    datscan: {
+        name: '多巴胺受體 (I-123 FP-CIT DaTscan)', drug: 'I-123 FP-CIT',
+        adultFixed: 4, adultRange: [3, 5], pedPerKg: null, pedMin: null, pedClass: 'C',
+        source: ['SNMMI', 'EANM'], note: '需甲狀腺阻斷 (Lugol\'s)',
+        formula: '成人: 3-5 mCi (固定)\n兒科: 極少執行, 依 Class C 計算'
+    },
+    cisternography: {
+        name: '腦脊髓液池 (In-111 DTPA)', drug: 'In-111 DTPA',
+        adultFixed: 0.5, adultRange: [0.5, 0.5], pedPerKg: null, pedMin: null, pedClass: 'C',
+        source: ['SNMMI'], note: '鞘內注射，絕對上限 0.5 mCi',
+        formula: '成人: 固定 0.5 mCi (絕對上限)\n兒科: 極罕見, Class C 推算'
+    },
+    mpi_rest: {
+        name: '心肌灌注 1-Day Rest (Tc-99m MIBI)', drug: 'Tc-99m Sestamibi',
+        adultFixed: 10, adultRange: [8, 12], pedPerKg: 0.2, pedMin: 2, pedClass: 'N/A',
+        source: ['SNMMI'], note: 'Rest 劑量 (低劑量), Stress 需 ≥3 倍',
+        formula: '成人: 8-12 mCi (Rest, 低劑量)\n兒科: 0.2 mCi/kg, Min 2 mCi (SNMMI)'
+    },
+    mpi_stress: {
+        name: '心肌灌注 1-Day Stress (Tc-99m MIBI)', drug: 'Tc-99m Sestamibi',
+        adultFixed: 30, adultRange: [24, 36], pedPerKg: null, pedMin: null, pedClass: 'N/A',
+        source: ['SNMMI'], note: 'Stress 劑量 (高劑量), 需 ≥3 倍 Rest',
+        formula: '成人: 24-36 mCi (Stress, 高劑量)\n兒科: 甚少執行 MPI'
+    },
+    mpi_2day: {
+        name: '心肌灌注 2-Day (Tc-99m MIBI)', drug: 'Tc-99m Sestamibi',
+        adultFixed: 25, adultRange: [20, 30], pedPerKg: null, pedMin: null, pedClass: 'N/A',
+        source: ['SNMMI'], note: '適用肥胖者 (BMI>35)',
+        formula: '成人: 20-30 mCi / 次 (2-Day)\n兒科: 甚少執行 MPI'
+    },
+    cardiac_pyp: {
+        name: '類澱粉沉積症 (Tc-99m PYP)', drug: 'Tc-99m Pyrophosphate',
+        adultFixed: 20, adultRange: [15, 20], pedPerKg: null, pedMin: null, pedClass: 'N/A',
+        source: ['SNMMI'], note: '3hr SPECT/CT 必要；<10 mCi 可能假陰性',
+        formula: '成人: 15-20 mCi (固定)\n兒科: 不適用'
+    },
+    muga: {
+        name: 'MUGA (Tc-99m RBC)', drug: 'Tc-99m Red Blood Cells',
+        adultFixed: 22.5, adultRange: [20, 25], pedPerKg: 0.25, pedMin: 3, pedClass: 'B',
+        source: ['SNMMI', 'EANM'], note: '體外標記率需 >95%',
+        formula: '成人: 20-25 mCi (範圍 20-30)\n兒科: 0.25 mCi/kg (EANM Class B), Min 3 mCi'
+    },
+    thyroid_tc: {
+        name: '甲狀腺掃描 (Tc-99m Pertechnetate)', drug: 'Tc-99m Pertechnetate',
+        adultFixed: 5, adultRange: [2, 10], pedPerKg: 0.05, pedMin: 0.5, pedClass: 'B',
+        source: ['SNMMI', 'EANM'], note: '僅被捕捉不有機化',
+        formula: '成人: 5 mCi (範圍 2-10)\n兒科: 0.05 mCi/kg (EANM Class B), Min 0.5 mCi'
+    },
+    thyroid_i123: {
+        name: '甲狀腺掃描 (I-123 NaI)', drug: 'I-123 NaI',
+        adultFixed: 0.3, adultRange: [0.2, 0.4], pedPerKg: 0.01, pedMin: 0.03, pedClass: 'C',
+        source: ['EANM'], note: '最佳但昂貴，可同時評估攝取與有機化',
+        formula: '成人: 0.2-0.4 mCi\n兒科: 0.01 mCi/kg (EANM Class C), Min 0.03 mCi'
+    },
+    parathyroid: {
+        name: '副甲狀腺 (Tc-99m MIBI)', drug: 'Tc-99m Sestamibi',
+        adultFixed: 22.5, adultRange: [20, 25], pedPerKg: 0.2, pedMin: 2, pedClass: 'B',
+        source: ['SNMMI', 'EANM'], note: '雙相法為主流，副甲狀腺腺瘤體積微小需高劑量',
+        formula: '成人: 20-25 mCi (高劑量 MIBI)\n兒科: 0.2 mCi/kg (Class B), Min 2 mCi'
+    },
+    mibg_i123: {
+        name: 'MIBG 掃描 (I-123)', drug: 'I-123 MIBG',
+        adultFixed: 10, adultRange: [10, 10], pedPerKg: 0.14, pedMin: 1, pedClass: 'B',
+        source: ['SNMMI', 'EANM'], note: '緩慢注射 >5 分鐘',
+        formula: '成人: 10 mCi (固定)\n兒科: 0.14 mCi/kg (EANM Class B), Min 1 mCi, Max 10 mCi'
+    },
+    gastric: {
+        name: '胃排空 - 固體 (Tc-99m SC)', drug: 'Tc-99m Sulfur Colloid',
+        adultFixed: 0.75, adultRange: [0.5, 1], pedPerKg: null, pedMin: 0.25, pedClass: 'N/A',
+        source: ['SNMMI', 'EANM'], note: '標準 Tougas 餐',
+        formula: '成人: 0.5-1 mCi\n兒科: 固定 0.25 mCi (與體重無關)',
+        pedFixed: 0.25
+    },
+    salivary: {
+        name: '唾液腺掃描', drug: 'Tc-99m Pertechnetate',
+        adultFixed: 10, adultRange: [8, 12], pedPerKg: 0.05, pedMin: 0.5, pedClass: 'N/A',
+        source: ['SNMMI'], note: '檸檬汁刺激觀察排泄',
+        formula: '成人: 10 mCi (範圍 8-12)\n兒科: 0.05 mCi/kg, Min 0.5 mCi'
+    },
+    liver_spleen: {
+        name: '肝脾 / Phytate', drug: 'Tc-99m SC / Phytate',
+        adultFixed: 5, adultRange: [3, 8], pedPerKg: 0.05, pedMin: 0.5, pedClass: 'N/A',
+        source: ['SNMMI', '台灣'], note: 'Phytate 為台灣特有替代藥物',
+        formula: '成人: 5 mCi (Phytate 3-5 mCi)\n兒科: 0.05 mCi/kg, Min 0.5 mCi'
+    },
+    meckel: {
+        name: '梅克爾憩室', drug: 'Tc-99m Pertechnetate',
+        adultFixed: 12.5, adultRange: [10, 15], pedPerKg: 0.05, pedMin: 0.5, pedClass: 'N/A',
+        source: ['SNMMI'], note: '預給 H2 Blocker 增加敏感度',
+        formula: '成人: 10-15 mCi\n兒科: 0.05 mCi/kg, Min 0.5 mCi'
+    },
+    liver_hemangioma: {
+        name: '肝血管瘤 (Tc-99m RBC)', drug: 'Tc-99m RBC',
+        adultFixed: 22.5, adultRange: [20, 25], pedPerKg: 0.25, pedMin: 3, pedClass: 'B',
+        source: ['SNMMI'], note: '需做 SPECT',
+        formula: '成人: 20-25 mCi\n兒科: 0.25 mCi/kg (Class B), Min 3 mCi'
+    },
+    dmsa: {
+        name: '腎皮質 DMSA', drug: 'Tc-99m DMSA',
+        adultFixed: 5, adultRange: [3, 5], pedPerKg: 0.05, pedMin: 0.5, pedClass: 'A',
+        source: ['SNMMI', 'EANM'], note: '輻射劑量較高，皮質滯留率高',
+        formula: '成人: 5 mCi (範圍 3-5)\n兒科: 0.05 mCi/kg (EANM Class A), Min 0.5 mCi'
+    },
+    mag3: {
+        name: '腎功能 MAG3', drug: 'Tc-99m MAG3',
+        adultFixed: 6.5, adultRange: [5, 8], pedPerKg: 0.15, pedMin: 1, pedClass: 'A',
+        source: ['SNMMI', 'EANM'], note: '腎小管分泌，優於 DTPA',
+        formula: '成人: 5-8 mCi\n兒科: 0.15 mCi/kg (EANM Class A), Min 1 mCi'
+    },
+    dtpa_renal: {
+        name: '腎功能 DTPA', drug: 'Tc-99m DTPA',
+        adultFixed: 7.5, adultRange: [5, 10], pedPerKg: 0.2, pedMin: 1, pedClass: 'B',
+        source: ['SNMMI', 'EANM'], note: 'GFR 測量用',
+        formula: '成人: 5-10 mCi\n兒科: 0.2 mCi/kg (EANM Class B), Min 1 mCi'
+    },
+    cystography: {
+        name: '膀胱逆流 (直接)', drug: 'Tc-99m SC / Pertechnetate',
+        adultFixed: 1, adultRange: [1, 1], pedPerKg: null, pedMin: 1, pedClass: 'N/A',
+        source: ['SNMMI'], note: '經導尿管注入，與體重無關',
+        formula: '成人/兒科: 固定 1 mCi (與體重無關)',
+        pedFixed: 1
+    },
+    lung_perf: {
+        name: '肺灌注 (Tc-99m MAA)', drug: 'Tc-99m MAA',
+        adultFixed: 4, adultRange: [3, 5], pedPerKg: 0.05, pedMin: 0.5, pedClass: 'N/A',
+        source: ['SNMMI', 'EANM'], note: '嚴控粒子數：兒科 1-5 萬顆',
+        formula: '成人: 4 mCi (範圍 3-5)\n兒科: 0.05 mCi/kg, Min 0.5 mCi\n⚠️ 粒子數限制: 兒科/肺高壓 1-5 萬顆'
+    },
+    wbc_scan: {
+        name: '白血球掃描 (Tc-99m HMPAO WBC)', drug: 'Tc-99m HMPAO WBC',
+        adultFixed: 20, adultRange: [15, 25], pedPerKg: 0.3, pedMin: 3, pedClass: 'N/A',
+        source: ['SNMMI'], note: '腸道發炎/骨髓炎首選',
+        formula: '成人: 20 mCi (範圍 15-25)\n兒科: 0.3 mCi/kg, Min 3 mCi'
+    },
+    ga67: {
+        name: 'Ga-67 發炎掃描', drug: 'Ga-67 Citrate',
+        adultFixed: 5, adultRange: [4, 6], pedPerKg: 0.04, pedMin: 0.5, pedClass: 'N/A',
+        source: ['SNMMI'], note: '48/72hr 延遲造影',
+        formula: '成人: 5 mCi (範圍 4-6)\n兒科: 0.04 mCi/kg, Min 0.5 mCi'
+    }
+};
+
+function attachDosageCalcListeners() {
+    const select = document.getElementById('dosage-exam-select');
+    const weightInput = document.getElementById('dosage-weight');
+    const calcBtn = document.getElementById('dosage-calc-btn');
+    const resultBox = document.getElementById('dosage-calc-result');
+    const formulaBox = document.getElementById('dosage-formula-display');
+
+    if (!select || !calcBtn) return;
+
+    function calculate() {
+        const examKey = select.value;
+        const weight = parseFloat(weightInput.value);
+
+        if (!examKey) {
+            resultBox.innerHTML = '<span style="color:var(--accent-red);font-weight:600;">⚠️ 請先選擇檢查項目</span>';
+            formulaBox.style.display = 'none';
+            return;
+        }
+
+        const exam = DOSAGE_DB[examKey];
+        if (!exam) return;
+
+        // Source badges HTML
+        const sourceBadges = exam.source.map(s => {
+            if (s === 'SNMMI') return '<span class="guide-tag snmmi">SNMMI</span>';
+            if (s === 'EANM') return '<span class="guide-tag eanm">EANM</span>';
+            if (s === '台灣') return '<span class="guide-tag local">台灣</span>';
+            return `<span class="guide-tag">${s}</span>`;
+        }).join(' ');
+
+        // Adult dose
+        const adultStr = exam.adultRange[0] === exam.adultRange[1]
+            ? `<strong>${exam.adultRange[0]} mCi</strong>`
+            : `<strong>${exam.adultRange[0]}–${exam.adultRange[1]} mCi</strong> (建議 ${exam.adultFixed} mCi)`;
+
+        // Pediatric calc
+        let pedStr = '';
+        if (!weight || weight <= 0) {
+            pedStr = '<span style="color:var(--text-muted);">請輸入體重以計算兒科劑量</span>';
+        } else if (exam.pedFixed != null) {
+            // Fixed pediatric dose (不依體重)
+            pedStr = `<strong>${exam.pedFixed} mCi</strong> (固定劑量，與體重無關)`;
+        } else if (exam.pedPerKg != null) {
+            let rawDose = exam.pedPerKg * weight;
+            let finalDose = rawDose;
+            let clampNote = '';
+
+            // Clamp: min
+            if (exam.pedMin != null && finalDose < exam.pedMin) {
+                finalDose = exam.pedMin;
+                clampNote = ` → 調整至最低劑量 ${exam.pedMin} mCi`;
+            }
+            // Clamp: adult max
+            if (finalDose > exam.adultRange[1]) {
+                finalDose = exam.adultRange[1];
+                clampNote = ` → 以成人上限 ${exam.adultRange[1]} mCi 為上限`;
+            }
+
+            const classInfo = exam.pedClass !== 'N/A' && exam.pedClass !== 'Off-label'
+                ? ` (EANM Class ${exam.pedClass})`
+                : exam.pedClass === 'Off-label' ? ' (Off-label)' : '';
+
+            pedStr = `${exam.pedPerKg} mCi/kg × ${weight} kg = ${rawDose.toFixed(2)} mCi${clampNote}`;
+            pedStr += `<br><strong>建議劑量: ${finalDose.toFixed(2)} mCi</strong>${classInfo}`;
+        } else {
+            pedStr = '<span style="color:var(--text-muted);">此檢查不適用兒科 / 無標準兒科指引</span>';
+        }
+
+        resultBox.innerHTML = `
+            <div class="dosage-result-card">
+                <div class="dosage-result-header">
+                    <h4>${exam.name}</h4>
+                    <div class="dosage-result-source">指引依據: ${sourceBadges}</div>
+                </div>
+                <div class="dosage-result-grid">
+                    <div class="dosage-result-item adult">
+                        <div class="dosage-label">👤 成人劑量</div>
+                        <div class="dosage-value">${adultStr}</div>
+                    </div>
+                    <div class="dosage-result-item pediatric">
+                        <div class="dosage-label">👶 兒科劑量${weight ? ` (${weight} kg)` : ''}</div>
+                        <div class="dosage-value">${pedStr}</div>
+                    </div>
+                </div>
+                ${exam.note ? `<div class="dosage-result-note">💡 ${exam.note}</div>` : ''}
+            </div>
+        `;
+
+        // Show formula
+        formulaBox.style.display = 'block';
+        formulaBox.innerHTML = `
+            <div class="formula-card">
+                <div class="formula-title">📐 計算公式 & 依據</div>
+                <div class="formula-source">指引來源: ${sourceBadges}</div>
+                <pre class="formula-content">${exam.formula}</pre>
+                <div class="formula-note">
+                    ※ 兒科劑量計算規則: 結果 < 最低劑量 → 以最低劑量給予；結果 > 成人上限 → 以成人劑量為上限。
+                </div>
+            </div>
+        `;
+    }
+
+    calcBtn.addEventListener('click', calculate);
+    weightInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') calculate(); });
+}
