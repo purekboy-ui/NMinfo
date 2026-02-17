@@ -33,15 +33,18 @@
                 <div class="app-credits">
                     Handcrafted 2026 by Huang Chun-Yin
                 </div>
+                <div class="search-box">
+                    <input type="text" id="exam-search" placeholder="搜尋檢查 (如: Brain, 胃)...">
+                </div>
                 <!-- Collapsible Toolbox -->
-                <div class="toolbox-container">
-                    <button class="toolbox-toggle" id="toolbox-toggle">
-                        <span class="toolbox-icon">🧰</span>
-                        <span class="toolbox-label">無聊做的東西</span>
-                        <span class="toolbox-count">6</span>
-                        <span class="toolbox-arrow">▼</span>
+                <div class="sidebar-dropdown">
+                    <button class="dropdown-toggle" data-dropdown="toolbox">
+                        <span class="dropdown-icon">🧰</span>
+                        <span class="dropdown-label">無聊做的東西</span>
+                        <span class="dropdown-count">6</span>
+                        <span class="dropdown-arrow">▼</span>
                     </button>
-                    <div class="toolbox-content" id="toolbox-content">
+                    <div class="dropdown-content" id="dropdown-toolbox">
                         <a href="https://nminfo-nmedu.web.app/" target="_blank" class="external-link-btn">
                             核醫衛教網站
                         </a>
@@ -62,75 +65,80 @@
                         </a>
                     </div>
                 </div>
-                <div class="search-box">
-                    <input type="text" id="exam-search" placeholder="搜尋檢查 (如: Brain, 胃)...">
-                </div>
             </div>
 
             <nav class="sidebar-nav-scroll">
-                <!-- 💊 Dosage Section -->
-                <div class="nav-category" style="color: var(--accent-red);">藥物劑量</div>
-                <button class="nav-btn" data-category="DosageTable">藥物劑量表</button>
-                <button class="nav-btn" data-category="DosageCalc">劑量計算器</button>
+                <!-- 📚 核醫小學堂 -->
+                <div class="sidebar-dropdown">
+                    <button class="dropdown-toggle" data-dropdown="learning">
+                        <span class="dropdown-icon">📚</span>
+                        <span class="dropdown-label">核醫小學堂</span>
+                        <span class="dropdown-count">8</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="dropdown-content" id="dropdown-learning">
+                        <button class="nav-btn active" data-category="NMBasics">核醫是什麼？</button>
+                        <button class="nav-btn" data-category="PatientQA">常見 Q&A 話術</button>
+                        <button class="nav-btn" data-category="Radiopharmacy">核醫藥物</button>
+                        <button class="nav-btn" data-category="RadiationSafety">輻射防護</button>
+                        <button class="nav-btn" data-category="DosageTable">藥物劑量表</button>
+                        <button class="nav-btn" data-category="DosageCalc">劑量計算器</button>
+                        <button class="nav-btn" data-category="Calendar">行事曆</button>
+                        <button class="nav-btn" data-category="EmergencyCart">急救車管理</button>
+                    </div>
+                </div>
 
-                <!-- 🌸 Learning Section -->
-                <div class="nav-category" style="color: var(--primary-color);">核醫小學堂</div>
-                <button class="nav-btn active" data-category="NMBasics">核醫是什麼？</button>
-                <button class="nav-btn" data-category="PatientQA">常見 Q&A 話術</button>
+                <!-- 🏥 服務項目(檢查與治療) -->
+                <div class="sidebar-dropdown">
+                    <button class="dropdown-toggle" data-dropdown="services">
+                        <span class="dropdown-icon">🏥</span>
+                        <span class="dropdown-label">服務項目(檢查與治療)</span>
+                        <span class="dropdown-count">28</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="dropdown-content" id="dropdown-services">
+                        <div class="dropdown-sub-label">正子中心</div>
+                        <button class="nav-btn" data-category="PET">FDG 正子斷層</button>
+                        <button class="nav-btn" data-category="POSLUMA">攝護腺 PSMA PET</button>
 
-                <!-- Admin & QC (no label) -->
-                <button class="nav-btn" data-category="Radiopharmacy">核醫藥物</button>
-                <button class="nav-btn" data-category="RadiationSafety">輻射防護</button>
-                <button class="nav-btn" data-category="Calendar">行事曆</button>
-                <button class="nav-btn" data-category="EmergencyCart">急救車管理</button>
+                        <div class="dropdown-sub-label">內分泌 / 治療</div>
+                        <button class="nav-btn" data-category="Thyroid">甲狀腺 (Thyroid)</button>
+                        <button class="nav-btn" data-category="Parathyroid">副甲狀腺 (Para)</button>
+                        <button class="nav-btn" data-category="I131">I-131 治療</button>
+                        <button class="nav-btn" data-category="I131WBS">I-131 掃描 (WBS)</button>
+                        <button class="nav-btn" data-category="Ra223">Ra-223 治療</button>
+                        <button class="nav-btn" data-category="MIBG">腎上腺髓質 (MIBG)</button>
+                        <button class="nav-btn" data-category="NP59">腎上腺皮質 (NP-59)</button>
 
+                        <div class="dropdown-sub-label">心臟 / 循環 / 淋巴</div>
+                        <button class="nav-btn" data-category="MPI_Tl201">心肌灌流 - Tl-201</button>
+                        <button class="nav-btn" data-category="MPI_Tc99m">心肌灌流 - Tc-99m</button>
+                        <button class="nav-btn" data-category="MUGA">心室功能 (MUGA)</button>
+                        <button class="nav-btn" data-category="Venography">靜脈攝影 (Venography)</button>
+                        <button class="nav-btn" data-category="Lymphedema">淋巴水腫 (Lymph)</button>
+                        <button class="nav-btn" data-category="SLN">前哨淋巴 (SLN)</button>
 
-                <!-- PET Center -->
-                <div class="nav-category">正子中心</div>
-                <button class="nav-btn" data-category="PET">FDG 正子斷層</button>
-                <button class="nav-btn" data-category="POSLUMA">攝護腺 PSMA PET</button>
+                        <div class="dropdown-sub-label">消化系統</div>
+                        <button class="nav-btn" data-category="Gastric">胃排空 (Gastric)</button>
+                        <button class="nav-btn" data-category="GIBleed">腸胃道出血</button>
+                        <button class="nav-btn" data-category="Liver">肝脾臟掃描</button>
+                        <button class="nav-btn" data-category="Biliary">膽道掃描 (IVRC)</button>
+                        <button class="nav-btn" data-category="Salivary">唾液腺掃描</button>
 
-                <!-- Endocrine -->
-                <div class="nav-category">內分泌 / 治療</div>
-                <button class="nav-btn" data-category="Thyroid">甲狀腺 (Thyroid)</button>
-                <button class="nav-btn" data-category="Parathyroid">副甲狀腺 (Para)</button>
-                <button class="nav-btn" data-category="I131">I-131 治療</button>
-                <button class="nav-btn" data-category="I131WBS">I-131 掃描 (WBS)</button>
-                <button class="nav-btn" data-category="Ra223">Ra-223 治療</button>
-                <button class="nav-btn" data-category="MIBG">腎上腺髓質 (MIBG)</button>
-                <button class="nav-btn" data-category="NP59">腎上腺皮質 (NP-59)</button>
+                        <div class="dropdown-sub-label">骨骼 / 腎臟 / 生殖</div>
+                        <button class="nav-btn" data-category="Bone">全身骨骼 (Bone)</button>
+                        <button class="nav-btn" data-category="DMSA">腎皮質 (DMSA)</button>
+                        <button class="nav-btn" data-category="DTPA">腎利尿 (DTPA)</button>
+                        <button class="nav-btn" data-category="MAG3">腎功能 (MAG3)</button>
+                        <button class="nav-btn" data-category="Scrotal">陰囊掃描 (Scrotal)</button>
 
-                <!-- Cardiac / Lymph -->
-                <div class="nav-category">心臟 / 循環 / 淋巴</div>
-                <button class="nav-btn" data-category="MPI_Tl201">心肌灌流 - Tl-201</button>
-                <button class="nav-btn" data-category="MPI_Tc99m">心肌灌流 - Tc-99m</button>
-                <button class="nav-btn" data-category="MUGA">心室功能 (MUGA)</button>
-                <button class="nav-btn" data-category="Venography">靜脈攝影 (Venography)</button>
-                <button class="nav-btn" data-category="Lymphedema">淋巴水腫 (Lymph)</button>
-                <button class="nav-btn" data-category="SLN">前哨淋巴 (SLN)</button>
-
-                <!-- GI System -->
-                <div class="nav-category">消化系統</div>
-                <button class="nav-btn" data-category="Gastric">胃排空 (Gastric)</button>
-                <button class="nav-btn" data-category="GIBleed">腸胃道出血</button>
-                <button class="nav-btn" data-category="Liver">肝脾臟掃描</button>
-                <button class="nav-btn" data-category="Biliary">膽道掃描 (IVRC)</button>
-                <button class="nav-btn" data-category="Salivary">唾液腺掃描</button>
-
-                <!-- Bone / Renal / GU -->
-                <div class="nav-category">骨骼 / 腎臟 / 生殖</div>
-                <button class="nav-btn" data-category="Bone">全身骨骼 (Bone)</button>
-                <button class="nav-btn" data-category="DMSA">腎皮質 (DMSA)</button>
-                <button class="nav-btn" data-category="DTPA">腎利尿 (DTPA)</button>
-                <button class="nav-btn" data-category="MAG3">腎功能 (MAG3)</button>
-                <button class="nav-btn" data-category="Scrotal">陰囊掃描 (Scrotal)</button>
-
-                <!-- Other -->
-                <div class="nav-category">其他 (Brain/Lung)</div>
-                <button class="nav-btn" data-category="Ga67">鎵-67 發炎 (Ga67)</button>
-                <button class="nav-btn" data-category="TRODAT">多巴胺掃描 (TRODAT)</button>
-                <button class="nav-btn" data-category="Brain">腦部灌流 (Brain)</button>
-                <button class="nav-btn" data-category="Lung">肺部灌流 (Lung)</button>
+                        <div class="dropdown-sub-label">其他</div>
+                        <button class="nav-btn" data-category="Ga67">鎵-67 發炎 (Ga67)</button>
+                        <button class="nav-btn" data-category="TRODAT">多巴胺掃描 (TRODAT)</button>
+                        <button class="nav-btn" data-category="Brain">腦部灌流 (Brain)</button>
+                        <button class="nav-btn" data-category="Lung">肺部灌流 (Lung)</button>
+                    </div>
+                </div>
             </nav>
         </aside>
 
@@ -140,13 +148,6 @@
                 <!-- Smart Greeting -->
                 <div id="smart-greeting" class="smart-greeting">
                     ☀️ 早安，開始專業的一天吧！
-                </div>
-
-
-
-                <div class="dashboard-info">
-                    <div id="weather-info" class="weather-info"></div>
-                    <!-- Traffic info removed -->
                 </div>
 
                 <div class="date-time-display">

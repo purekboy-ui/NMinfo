@@ -797,13 +797,13 @@ body::before {
 }
 
 /* ============================================
-   Collapsible Toolbox Container
+   Unified Sidebar Dropdown System
    ============================================ */
-.toolbox-container {
-    margin-bottom: 1rem;
+.sidebar-dropdown {
+    margin-bottom: 0.6rem;
 }
 
-.toolbox-toggle {
+.dropdown-toggle {
     display: flex;
     align-items: center;
     width: 100%;
@@ -817,17 +817,17 @@ body::before {
     font-family: var(--font-heading);
 }
 
-.toolbox-toggle:hover {
+.dropdown-toggle:hover {
     background: rgba(255, 255, 255, 0.8);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(255, 158, 181, 0.3);
 }
 
-.toolbox-icon {
+.dropdown-icon {
     font-size: 1.2rem;
 }
 
-.toolbox-label {
+.dropdown-label {
     flex: 1;
     text-align: left;
     font-weight: 700;
@@ -835,7 +835,7 @@ body::before {
     color: var(--text-main);
 }
 
-.toolbox-count {
+.dropdown-count {
     background: var(--primary-color);
     color: #fff;
     font-size: 0.75rem;
@@ -844,39 +844,51 @@ body::before {
     border-radius: var(--radius-pill);
 }
 
-.toolbox-arrow {
+.dropdown-arrow {
     font-size: 0.75rem;
     color: var(--text-muted);
     transition: transform 0.3s ease;
 }
 
-.toolbox-toggle.open .toolbox-arrow {
+.dropdown-toggle.open .dropdown-arrow {
     transform: rotate(180deg);
 }
 
-.toolbox-content {
+.dropdown-content {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease, padding 0.3s ease;
     padding: 0 0.5rem;
 }
 
-.toolbox-content.open {
-    max-height: 400px;
+.dropdown-content.open {
+    max-height: 2000px;
     padding: 0.8rem 0.5rem 0;
 }
 
-.toolbox-content .external-link-btn,
-.toolbox-content .operation-guide-link {
+.dropdown-content .external-link-btn,
+.dropdown-content .operation-guide-link {
     font-size: 0.85rem;
     padding: 0.6rem 1rem;
     margin-bottom: 0.5rem;
 }
 
+/* Sub-label inside service dropdown */
+.dropdown-sub-label {
+    font-family: var(--font-heading);
+    font-size: 0.78rem;
+    font-weight: 800;
+    color: var(--text-light);
+    padding: 0.8rem 0.5rem 0.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 0.3rem;
+}
+
 /* Operation Guide Link */
 .operation-guide-link {
     font-size: 0.85rem;
-    color: var(--text-muted);
     color: var(--text-muted);
     margin-top: 0.2rem;
     margin-bottom: 1rem;
@@ -916,14 +928,9 @@ body::before {
     border-radius: var(--radius-sm);
 }
 
+/* Hidden nav-category (replaced by dropdown-sub-label) */
 .nav-category {
-    font-family: var(--font-heading);
-    font-size: 0.9rem;
-    font-weight: 800;
-    color: var(--text-light);
-    padding: 1rem 0.5rem 0.5rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
+    display: none;
 }
 
 .nav-btn {
@@ -1835,40 +1842,40 @@ body::before {
     .sidebar {
         width: 280px;
     }
-    
+
     .content-area {
         padding: 0 2rem 2rem;
     }
-    
+
     .content-header {
         padding: 0 1.5rem;
     }
-    
+
     .info-card {
         padding: 2rem;
     }
-    
+
     .card-title {
         font-size: 1.7rem;
     }
-    
+
     .timeline {
         gap: 1rem;
     }
-    
+
     .time-block {
         padding: 0.8rem 1.5rem;
         min-width: 120px;
     }
-    
+
     .cal-grid {
         gap: 0.5rem;
     }
-    
+
     .cal-date-num {
         font-size: 1rem;
     }
-    
+
     .doctor-card {
         min-width: 220px;
     }
@@ -1881,17 +1888,17 @@ body::before {
     body {
         overflow-x: hidden;
     }
-    
+
     /* Show Mobile Menu Toggle */
     .mobile-menu-toggle {
         display: flex;
     }
-    
+
     /* Show Overlay */
     .sidebar-overlay {
         display: block;
     }
-    
+
     /* Sidebar: Off-canvas Slide-in */
     .sidebar {
         position: fixed;
@@ -1905,65 +1912,65 @@ body::before {
         box-shadow: none;
         z-index: 100;
     }
-    
+
     .sidebar.open {
         transform: translateX(0);
         box-shadow: 4px 0 20px rgba(0, 0, 0, 0.15);
     }
-    
+
     .sidebar-header {
         padding: 1.5rem 1rem 1rem;
     }
-    
+
     .sidebar-header h2 {
         font-size: 1.5rem;
     }
-    
+
     .sidebar-header h2 img {
         height: 40px !important;
     }
-    
+
     .search-box input {
         padding: 0.8rem 1rem;
         font-size: 0.9rem;
     }
-    
+
     .sidebar-nav-scroll {
         padding: 0.5rem 1rem 2rem;
     }
-    
+
     .nav-btn {
         padding: 0.6rem 0.8rem;
         font-size: 0.9rem;
     }
-    
+
     .nav-btn.active {
         transform: translateX(5px) scale(1);
     }
-    
+
     .external-link-btn {
         padding: 0.6rem 0.8rem;
         font-size: 0.85rem;
     }
-    
+
     .toolbox-toggle {
         padding: 0.7rem 0.8rem;
     }
-    
+
     .toolbox-label {
         font-size: 0.85rem;
     }
-    
+
     /* Main Panel: Full Width */
     .app-container {
         flex-direction: column;
     }
-    
+
     .main-panel {
         width: 100%;
         min-height: 100vh;
     }
-    
+
     .content-header {
         height: auto;
         padding: 4rem 1rem 1rem;
@@ -1971,136 +1978,136 @@ body::before {
         gap: 0.5rem;
         align-items: flex-start;
     }
-    
+
     .smart-greeting {
         font-size: 1.2rem;
         order: -1;
     }
-    
+
     .dashboard-info {
         flex-wrap: wrap;
         gap: 0.5rem;
         font-size: 0.8rem;
     }
-    
+
     .date-time-display {
         font-size: 0.9rem;
         padding: 0.3rem 0.8rem;
     }
-    
+
     /* Content Area */
     .content-area {
         padding: 0 1rem 2rem;
     }
-    
+
     .info-card {
         padding: 1.5rem;
         border-radius: var(--radius-md);
     }
-    
+
     .card-title {
         font-size: 1.4rem;
         margin-bottom: 1.5rem;
     }
-    
+
     .section-title {
         font-size: 1.1rem;
     }
-    
+
     .mini-class {
         padding: 1rem 1.2rem;
     }
-    
+
     .mini-class h3 {
         font-size: 0.9rem;
     }
-    
+
     /* Time Architecture - Stack Vertically */
     .time-architecture {
         padding: 1.2rem;
     }
-    
+
     .timeline {
         flex-direction: column;
         align-items: center;
         gap: 0.8rem;
     }
-    
+
     .time-block {
         width: 100%;
         max-width: 250px;
         padding: 0.8rem 1.2rem;
     }
-    
+
     .time-arrow {
         transform: rotate(90deg);
     }
-    
+
     /* Lists */
     .list-item {
         padding: 1rem;
         font-size: 0.95rem;
     }
-    
+
     /* Tables */
     .quick-dial-table {
         font-size: 0.9rem;
     }
-    
+
     .quick-dial-table th,
     .quick-dial-table td {
         padding: 0.8rem;
     }
-    
+
     /* Calendar */
     .cal-grid {
         gap: 0.3rem;
     }
-    
+
     .cal-head {
         font-size: 0.75rem;
         padding: 0.4rem;
     }
-    
+
     .cal-cell {
         padding: 0.3rem;
         border-radius: var(--radius-sm);
     }
-    
+
     .cal-date-num {
         font-size: 0.85rem;
     }
-    
+
     .cal-label {
         font-size: 0.6rem;
         padding: 0.1rem 0.2rem;
     }
-    
+
     /* Doctor Cards - Full Width */
     .doctor-block-container {
         flex-direction: column;
     }
-    
+
     .doctor-card {
         min-width: 100%;
     }
-    
+
     /* Guide Gallery */
     .guide-step-card {
         padding: 0.8rem;
     }
-    
+
     /* Modal */
     .modal-content {
         width: 95%;
         max-height: 90vh;
         margin: 5vh auto;
     }
-    
+
     .modal-header {
         padding: 1rem;
     }
-    
+
     .modal-body {
         padding: 1rem;
     }
@@ -2116,68 +2123,68 @@ body::before {
         width: 44px;
         height: 44px;
     }
-    
+
     .hamburger-line {
         width: 20px;
     }
-    
+
     .sidebar {
         width: 90%;
         max-width: 300px;
     }
-    
+
     .sidebar-header h2 {
         font-size: 1.3rem;
     }
-    
+
     .content-header {
         padding: 3.5rem 0.8rem 0.8rem;
     }
-    
+
     .smart-greeting {
         font-size: 1.1rem;
     }
-    
+
     .content-area {
         padding: 0 0.8rem 1.5rem;
     }
-    
+
     .info-card {
         padding: 1.2rem;
     }
-    
+
     .card-title {
         font-size: 1.25rem;
     }
-    
+
     .section-title {
         font-size: 1rem;
     }
-    
+
     .time-block {
         padding: 0.6rem 1rem;
     }
-    
+
     .time-block span {
         font-size: 1.2rem;
     }
-    
+
     .cal-head {
         font-size: 0.65rem;
     }
-    
+
     .cal-date-num {
         font-size: 0.75rem;
     }
-    
+
     .cal-label {
         font-size: 0.55rem;
     }
-    
+
     .quick-dial-table {
         font-size: 0.8rem;
     }
-    
+
     .quick-dial-table th,
     .quick-dial-table td {
         padding: 0.6rem;
@@ -2192,13 +2199,13 @@ body::before {
         max-height: 100vh;
         overflow-y: auto;
     }
-    
+
     .content-header {
         padding-top: 1rem;
         flex-direction: row;
         flex-wrap: wrap;
     }
-    
+
     .mobile-menu-toggle {
         position: fixed;
     }
@@ -2208,16 +2215,17 @@ body::before {
    PRINT STYLES
    =========================================== */
 @media print {
+
     .sidebar,
     .mobile-menu-toggle,
     .sidebar-overlay {
         display: none !important;
     }
-    
+
     .main-panel {
         width: 100%;
     }
-    
+
     .info-card {
         box-shadow: none;
         border: 1px solid #ccc;
@@ -2300,13 +2308,40 @@ body::before {
     white-space: nowrap;
 }
 
-.cat-tag.neuro { background: #EDE7F6; color: #5E35B1; }
-.cat-tag.cardiac { background: #FCE4EC; color: #C62828; }
-.cat-tag.endo { background: #FFF8E1; color: #F57F17; }
-.cat-tag.gi { background: #E0F2F1; color: #00695C; }
-.cat-tag.renal { background: #E3F2FD; color: #1565C0; }
-.cat-tag.pulm { background: #F3E5F5; color: #7B1FA2; }
-.cat-tag.infect { background: #FBE9E7; color: #BF360C; }
+.cat-tag.neuro {
+    background: #EDE7F6;
+    color: #5E35B1;
+}
+
+.cat-tag.cardiac {
+    background: #FCE4EC;
+    color: #C62828;
+}
+
+.cat-tag.endo {
+    background: #FFF8E1;
+    color: #F57F17;
+}
+
+.cat-tag.gi {
+    background: #E0F2F1;
+    color: #00695C;
+}
+
+.cat-tag.renal {
+    background: #E3F2FD;
+    color: #1565C0;
+}
+
+.cat-tag.pulm {
+    background: #F3E5F5;
+    color: #7B1FA2;
+}
+
+.cat-tag.infect {
+    background: #FBE9E7;
+    color: #BF360C;
+}
 
 /* --- Table Wrapper --- */
 .dosage-table-wrapper {
@@ -2621,5 +2656,96 @@ body::before {
 
     .dosage-result-item {
         padding: 0.8rem;
+    }
+}
+
+/* ===========================================
+   GLOBAL RESPONSIVE
+   =========================================== */
+@media (max-width: 768px) {
+
+    /* Content grid: 2-col → 1-col */
+    .info-card [style*="grid-template-columns: 1fr 1fr"] {
+        grid-template-columns: 1fr !important;
+    }
+
+    .info-card {
+        padding: 1.2rem;
+    }
+
+    .card-title {
+        font-size: 1.6rem;
+    }
+
+    /* Table scroll wrapper */
+    .table-scroll-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Timeline vertical on mobile */
+    .timeline {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .time-block {
+        min-width: auto;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .time-arrow {
+        transform: rotate(90deg);
+    }
+
+    .content-area {
+        padding: 0.5rem 1rem 1.5rem;
+    }
+
+    .content-header {
+        padding: 0 1rem;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .smart-greeting {
+        font-size: 1.1rem;
+    }
+
+    /* Images fit container */
+    .info-card img {
+        max-width: 100% !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-card {
+        padding: 1rem;
+        border-radius: var(--radius-md);
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+    }
+
+    .mini-class {
+        padding: 1rem;
+    }
+
+    .time-architecture {
+        padding: 1rem;
+    }
+
+    .list-item {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.1rem;
     }
 }

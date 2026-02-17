@@ -1151,16 +1151,29 @@ const SEARCH_KEYWORDS = {
 
 const searchInput = document.getElementById('exam-search');
 searchInput.addEventListener('input', (e) => {
-    const term = e.target.value.toLowerCase();
+    const term = e.target.value.toLowerCase().trim();
     const buttons = document.querySelectorAll('.nav-btn');
     const navContainer = document.querySelector('.sidebar-nav-scroll');
-    const categories = document.querySelectorAll('.nav-category');
+    const dropdowns = document.querySelectorAll('.sidebar-nav-scroll .sidebar-dropdown');
+
+    // If search is empty, restore all
+    if (!term) {
+        buttons.forEach(btn => btn.classList.remove('hidden'));
+        document.querySelectorAll('.dropdown-sub-label').forEach(l => l.style.display = '');
+        let noResultMsg = document.getElementById('no-result-msg');
+        if (noResultMsg) noResultMsg.remove();
+        return;
+    }
 
     let visibleCount = 0;
+
+    // Track which dropdowns have matches
+    const dropdownHasMatch = new Set();
 
     buttons.forEach(btn => {
         const text = btn.textContent.toLowerCase();
         const cat = btn.dataset.category;
+        if (!cat) return;
         const catLower = cat.toLowerCase();
         const keywords = SEARCH_KEYWORDS[cat] || [];
 
@@ -1171,14 +1184,42 @@ searchInput.addEventListener('input', (e) => {
         if (matchText || matchCat || matchKeyword) {
             btn.classList.remove('hidden');
             visibleCount++;
+            // Find parent dropdown and mark it
+            const parentDropdown = btn.closest('.sidebar-dropdown');
+            if (parentDropdown) {
+                dropdownHasMatch.add(parentDropdown);
+            }
         } else {
             btn.classList.add('hidden');
         }
     });
 
+    // Auto-expand dropdowns with matches, collapse others
+    dropdowns.forEach(dd => {
+        const toggle = dd.querySelector('.dropdown-toggle');
+        const content = dd.querySelector('.dropdown-content');
+        if (dropdownHasMatch.has(dd)) {
+            toggle?.classList.add('open');
+            content?.classList.add('open');
+        }
+    });
+
+    // Hide sub-labels that have no visible sibling buttons
+    document.querySelectorAll('.dropdown-sub-label').forEach(label => {
+        let next = label.nextElementSibling;
+        let hasVisible = false;
+        while (next && !next.classList.contains('dropdown-sub-label')) {
+            if (next.classList.contains('nav-btn') && !next.classList.contains('hidden')) {
+                hasVisible = true;
+                break;
+            }
+            next = next.nextElementSibling;
+        }
+        label.style.display = hasVisible ? '' : 'none';
+    });
+
     // Handle "No Results" Message
     let noResultMsg = document.getElementById('no-result-msg');
-
     if (visibleCount === 0) {
         if (!noResultMsg) {
             noResultMsg = document.createElement('div');
@@ -1191,12 +1232,8 @@ searchInput.addEventListener('input', (e) => {
                 </div>`;
             navContainer.appendChild(noResultMsg);
         }
-        // Hide categories if no results
-        categories.forEach(c => c.style.display = 'none');
     } else {
         if (noResultMsg) noResultMsg.remove();
-        // Show categories again (or keep them logic-based if we wanted to be stricter, but simple is fine)
-        categories.forEach(c => c.style.display = 'block');
     }
 });
 
@@ -1516,35 +1553,7 @@ window.toggleQA = function (element) {
 
 
 
-// Dashboard Info (Weather & Traffic)
-async function updateDashboardInfo() {
-    const weatherEl = document.getElementById('weather-info');
-    const trafficEl = document.getElementById('traffic-info');
-
-    // 1. Mock Weather (Kaohsiung Yanchao)
-    try {
-        const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=22.79&longitude=120.36&current_weather=true');
-        const data = await response.json();
-        const temp = data.current_weather.temperature;
-        const code = data.current_weather.weathercode;
-        let condition = "晴";
-        if (code > 3) condition = "多雲";
-        if (code > 50) condition = "雨";
-
-        weatherEl.innerHTML = `燕巢區 ${temp}°C ${condition}`;
-    } catch (e) {
-        weatherEl.innerHTML = `燕巢區 26°C 晴`; // Fallback
-    }
-
-    // 2. Mock Traffic - REMOVED per user request
-    if (trafficEl) {
-        trafficEl.style.display = 'none';
-    }
-}
-
-// Init
-updateDashboardInfo();
-setInterval(updateDashboardInfo, 300000); // 5 mins
+// Weather & Traffic — REMOVED per user request
 // --- Calendar Logic (Data & Functions) ---
 
 const SPECIAL_DAYS = [
@@ -1746,15 +1755,17 @@ if (guideBtn) {
     });
 }
 
-// Event Listener for Toolbox Toggle (Collapsible Menu)
-const toolboxToggle = document.getElementById('toolbox-toggle');
-const toolboxContent = document.getElementById('toolbox-content');
-if (toolboxToggle && toolboxContent) {
-    toolboxToggle.addEventListener('click', () => {
-        toolboxToggle.classList.toggle('open');
-        toolboxContent.classList.toggle('open');
+// Unified Dropdown Toggle System (all 3 categories)
+document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+    toggle.addEventListener('click', () => {
+        const dropdownId = toggle.dataset.dropdown;
+        const content = document.getElementById(`dropdown-${dropdownId}`);
+        if (content) {
+            toggle.classList.toggle('open');
+            content.classList.toggle('open');
+        }
     });
-}
+});
 
 // ===========================================
 // MOBILE MENU TOGGLE
