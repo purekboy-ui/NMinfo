@@ -1,8 +1,8 @@
 # 義大核醫排檢筆記 (NMinfo)
 
-這是一個用於快速查詢核醫檢查規範、排程禁忌，以及病人衛教資訊的靜態網頁系統。
+這是一個用於快速查詢核醫检查規範、排程禁忌，以及病人衛教資訊的靜態網頁系統。
 
-👉 **線上版**：[NMinfo Web App](https://nminfo-f108e.web.app/) 或 [GitHub Pages](https://purekboy-ui.github.io/NMinfo/)
+👉 **線上版**：[GitHub Pages](https://purekboy-ui.github.io/NMinfo/)
 
 ## 內容物
 
