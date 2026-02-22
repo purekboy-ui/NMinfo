@@ -1,8 +1,21 @@
+# IDE and Agents
 .agent/
-.DS_Store
+.github/
+.clinerules*
+.cursorrules*
+.windsurfrules*
+*.bak
+
+# Firebase
+.firebase/
+.firebaserc
+firebase.json
+
+# Documentation
+docs/
+*.md
+!README.md
+
+# Dependencies
 node_modules/
 dist/
-firebase.json
-.firebaserc
-.firebase/
-dosage.md
