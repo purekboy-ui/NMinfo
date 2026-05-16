@@ -6615,15 +6615,32 @@ function buildHomeHubHTML() {
                         <p>如果你是第一次使用，建議先把左側分類看過一輪。現在大致分成幾個區塊：PET、心臟、內分泌、骨骼與腎泌尿、胃腸肝膽、神經與肺部感染，另外還有核醫小學堂與治療單元。每個檢查頁會放適應症、時間架構、判讀重點，也會逐步補上給放射師與核醫醫師使用的技術 protocol 摘要，方便在上機前或判讀前快速核對。</p>
                         <p>站內另外有幾個比較偏工作支援的頁面。像「病人溝通與衛教」適合櫃台、電話通知或檢查前說明時使用；「藥物與劑量工具」整理了常用放射藥物、成人與兒科劑量；「輻射防護與治療安全」則比較適合碰到治療型核醫、返家限制、污染處理或特殊情境時回來查。這些內容不一定每天都要用到，但真正需要的時候，通常都很急，所以我把它們也放進同一個網站裡。</p>
                         <p>另外，平常會用到的工具與外部連結，我也直接放在這裡，避免還要多切一次單元。下面這些都可以直接點開：</p>
-                        <ul class="home-link-list">
-                            <li><strong><a href="patient-education/" target="_blank" rel="noopener noreferrer">民眾版核醫衛教</a>：</strong>提供病人與家屬閱讀的簡化說明，適合在衛教或電話溝通時直接分享。</li>
-                            <li><strong><a href="https://gen-lang-client-0435635260.web.app/" target="_blank" rel="noopener noreferrer">AI 文字辨識</a>：</strong>協助把圖片或文件中的文字快速抓出來，適合整理資料時搭配使用。</li>
-                            <li><strong><a href="https://i131-ward-scheduler.web.app/" target="_blank" rel="noopener noreferrer">I-131 病房排程</a>：</strong>用來確認住院日期、病房安排與治療節奏，避免排程來回重算。</li>
-                            <li><strong><a href="https://nminfo-examp.web.app/" target="_blank" rel="noopener noreferrer">核醫排檢 DEMO</a>：</strong>適合做流程展示，或拿來快速說明排檢邏輯。</li>
-                            <li><strong><a href="https://nminfo-petarr.web.app/" target="_blank" rel="noopener noreferrer">PET 智慧排程</a>：</strong>整理 PET 檢查安排時常見的時間與流程條件，適合排程前先核對。</li>
-                            <li><strong><a href="https://www.snm.org.tw/" target="_blank" rel="noopener noreferrer">台灣核醫學會</a>：</strong>回查學會公告、研討會與正式專業消息時最直接的入口。</li>
-                        </ul>
-                        <p>這個首頁不想塞太多視覺資訊，原因其實很單純：真正的重點不是首頁看起來多完整，而是你進來之後，能不能很快知道下一步該往哪裡找。希望它像一份科內筆記，讀起來平穩、實用，也讓人願意在忙的時候打開來用。</p>
+                        <div class="home-link-card-grid">
+                            <a class="home-link-card" href="patient-education/" target="_blank" rel="noopener noreferrer">
+                                <strong>民眾版核醫衛教</strong>
+                                <span>提供病人與家屬閱讀的簡化說明，適合在衛教或電話溝通時直接分享。</span>
+                            </a>
+                            <a class="home-link-card" href="https://gen-lang-client-0435635260.web.app/" target="_blank" rel="noopener noreferrer">
+                                <strong>AI 文字辨識</strong>
+                                <span>協助把圖片或文件中的文字快速抓出來，適合整理資料時搭配使用。</span>
+                            </a>
+                            <a class="home-link-card" href="https://i131-ward-scheduler.web.app/" target="_blank" rel="noopener noreferrer">
+                                <strong>I-131 病房排程</strong>
+                                <span>用來確認住院日期、病房安排與治療節奏，避免排程來回重算。</span>
+                            </a>
+                            <a class="home-link-card" href="https://nminfo-examp.web.app/" target="_blank" rel="noopener noreferrer">
+                                <strong>核醫排檢 DEMO</strong>
+                                <span>適合做流程展示，或拿來快速說明排檢邏輯。</span>
+                            </a>
+                            <a class="home-link-card" href="https://nminfo-petarr.web.app/" target="_blank" rel="noopener noreferrer">
+                                <strong>PET 智慧排程</strong>
+                                <span>整理 PET 檢查安排時常見的時間與流程條件，適合排程前先核對。</span>
+                            </a>
+                            <a class="home-link-card" href="https://www.snm.org.tw/" target="_blank" rel="noopener noreferrer">
+                                <strong>台灣核醫學會</strong>
+                                <span>回查學會公告、研討會與正式專業消息時最直接的入口。</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
