@@ -6606,85 +6606,13 @@ function buildHomeHubHTML() {
     return `
         <article class="home-hub">
             <section class="home-hero">
-                <div class="home-hero-grid">
-                    <div class="home-hero-copy">
-                        <span class="home-eyebrow">首頁總覽</span>
-                        <h1>這裡是科內查核與教學共用的核醫筆記。</h1>
-                        <p class="home-hero-lead">首頁先只保留閱讀入口，不把所有卡片和提醒一次丟給新同事。真的要查 protocol、病人衛教或安全流程，再往左側單元展開。</p>
-                        <div class="home-hero-actions">
-                            ${renderHomeLinkCard({ view: 'PatientQA', title: '病人溝通與衛教', desc: '櫃台、電話與檢前說明先從這裡找。', kicker: '衛教' }, 'home-action-card')}
-                            ${renderHomeLinkCard({ view: 'DosageTable', title: '藥物與劑量工具', desc: '查藥物、活度與兒科公式。', kicker: '工具' }, 'home-action-card')}
-                            ${renderHomeLinkCard({ view: 'PET', title: '常用檢查與技術摘要', desc: '左側各檢查頁已逐步加入 protocol 摘要。', kicker: '檢查' }, 'home-action-card')}
-                        </div>
-                    </div>
-                    <aside class="home-hero-panel">
-                        <div class="home-panel-header">
-                            <h2>第一次進來先這樣用</h2>
-                            <p>把首頁當導讀，不要當總複習。真正需要細節時，再進到單一檢查頁面。</p>
-                        </div>
-                        <div class="home-panel-section">
-                            <div class="home-panel-section-heading">
-                                <h3>三個入口</h3>
-                                <span>先熟悉</span>
-                            </div>
-                            <div class="home-panel-checks">
-                                ${[
-                                    { level: 'guidance', title: '左側檢查單元', desc: '查單一檢查時，先進該頁，再看新增的技術 Protocol 摘要。' },
-                                    { level: 'guidance', title: '病人溝通與衛教', desc: '病人、家屬或櫃台常見問題，優先用這裡整理口徑。' },
-                                    { level: 'caution', title: '輻射安全與治療流程', desc: '碰到污染、返家限制或治療型核醫，再打開安全相關頁面。' }
-                                ].map((item) => `
-                                    <div class="home-panel-check is-${item.level}">
-                                        <span class="home-panel-check-label">${getHomeLevelLabel(item.level)}</span>
-                                        <strong>${item.title}</strong>
-                                        <p>${item.desc}</p>
-                                    </div>
-                                `).join('')}
-                            </div>
-                        </div>
-                        <div class="home-panel-section">
-                            <div class="home-panel-section-heading">
-                                <h3>閱讀方式</h3>
-                                <span>不必一次看完</span>
-                            </div>
-                            <div class="home-panel-checks">
-                                ${[
-                                    { level: 'guidance', title: '先看本站怎麼分類', desc: 'PET、心臟、內分泌、腎泌尿、GI、神經 / 肺 / 感染各自收在固定區塊。' },
-                                    { level: 'guidance', title: '再看每頁時間軸與適應症', desc: '確認這檢查在回答什麼問題，再去讀技術 baseline。' },
-                                    { level: 'guidance', title: '最後才看 protocol 細節', desc: 'QC、假影與後處理是給上機與判讀前快速核對，不必首頁背熟。' }
-                                ].map((item) => `
-                                    <div class="home-panel-check is-${item.level}">
-                                        <strong>${item.title}</strong>
-                                        <p>${item.desc}</p>
-                                    </div>
-                                `).join('')}
-                            </div>
-                        </div>
-                    </aside>
-                </div>
-            </section>
-
-            <section class="home-section">
-                <div class="home-section-heading">
-                    <div>
-                        <h2>網站現在主要有三種內容</h2>
-                        <p>不再把首頁做成資訊牆，而是把用途講清楚。</p>
-                    </div>
-                </div>
-                <div class="home-workflow-grid">
-                    <div class="home-workflow-step">
-                        <strong>檢查頁</strong>
-                        <h3>看檢查目的、時間架構與 protocol 摘要</h3>
-                        <p>適合放射師與核醫醫師臨床前快速核對，特別是收像、後處理、QC 與常見陷阱。</p>
-                    </div>
-                    <div class="home-workflow-step">
-                        <strong>工具頁</strong>
-                        <h3>查劑量、排程與操作規則</h3>
-                        <p>把常用藥物、兒科換算、病安與流程工具集中，避免在長文中來回翻找。</p>
-                    </div>
-                    <div class="home-workflow-step">
-                        <strong>衛教頁</strong>
-                        <h3>統一病人與家屬的說明口徑</h3>
-                        <p>給櫃台、電話通知與檢前溝通使用，不和技術 protocol 混在同一個閱讀層級。</p>
+                <div class="home-hero-copy">
+                    <span class="home-eyebrow">首頁總覽</span>
+                    <h1>這個網站整理了核醫科常用的檢查、流程、工具與衛教內容。</h1>
+                    <div class="prose">
+                        <p>如果你是第一次使用，建議先把它當成導讀頁。左側已經依主題分成 PET、心臟、內分泌、腎泌尿、胃腸肝膽、神經與肺部感染等區塊，每個檢查頁會放適應症、時間架構、判讀重點，以及整理中的技術 protocol 摘要。</p>
+                        <p>除了檢查內容之外，站內也放了病人溝通與衛教資料、放射藥物與劑量工具、輻射安全與治療相關整理。查單一檢查時，直接從左側進入對應頁面即可；需要排檢、解釋檢查或核對安全事項時，再到相應工具頁查看。</p>
+                        <p>整體架構大致分成三部分：一是各檢查單元，二是流程與工具，三是病人衛教與安全資料。首頁不再堆太多資訊，目的是讓新同事先知道網站裡有什麼，再依需要往下讀。</p>
                     </div>
                 </div>
             </section>
