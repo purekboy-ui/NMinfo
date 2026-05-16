@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>核醫衛教陪伴站｜給台灣一般民眾的核醫檢查與治療說明</title>
+    <meta name="description" content="給台灣一般民眾的核醫檢查與治療衛教網站。用清楚、同理且有來源的方式說明核醫是什麼、檢查前後要注意什麼，以及常見檢查與 I-131 治療。">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;800&display=swap" rel="stylesheet"></noscript>
+</head>
+<body>
+    <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="開啟選單">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <div class="app-shell">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="brand-mark" aria-hidden="true">NM</div>
+                <div class="brand-copy">
+                    <p class="brand-eyebrow">Patient Education</p>
+                    <h1>核醫衛教陪伴站</h1>
+                    <p>收到檢查或治療通知時，先從這裡看。</p>
+                </div>
+            </div>
+
+            <div class="search-box">
+                <label class="sr-only" for="topic-search">快速切換主題</label>
+                <input id="topic-search" type="text" placeholder="輸入檢查或治療名稱…" autocomplete="off">
+                <kbd>/</kbd>
+            </div>
+
+            <nav class="sidebar-nav" id="sidebar-nav" aria-label="網站主題"></nav>
+
+            <div class="sidebar-footer">
+                <p>本網站提供一般衛教，不取代醫師診斷與院內個別醫囑。</p>
+            </div>
+        </aside>
+
+        <main class="main-panel">
+            <header class="topbar">
+                <div>
+                    <p class="topbar-label">台灣一般民眾版</p>
+                    <p class="topbar-note">先照頁面順序往下看，再找你的檢查或治療名稱。實際安排仍以你的通知單與醫療團隊指示為準。</p>
+                </div>
+            </header>
+
+            <div class="content-scroll">
+                <div class="content-frame">
+                    <div id="content-display" class="content-display" aria-live="polite"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="patient-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

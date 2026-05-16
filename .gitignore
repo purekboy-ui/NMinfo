@@ -15,7 +15,21 @@ firebase.json
 docs/
 *.md
 !README.md
+!clinical-guides/**/*.md
 
 # Dependencies
 node_modules/
 dist/
+
+# Local logs and scratch outputs
+firebase-debug.log
+run.log
+results.tsv
+tmp-*/
+pdf/
+
+# Research staging
+# Website-ready teaching assets should stay in assets/ or clinical-guides/
+# Unfinished literature extracts, raw exports, screenshots, and working notes
+# should be placed here instead of mixing with website assets.
+research-staging/
