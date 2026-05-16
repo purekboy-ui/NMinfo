@@ -2434,9 +2434,9 @@ a:hover { text-decoration: underline; }
 
 .home-hero-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1.12fr) minmax(320px, 0.88fr);
+    grid-template-columns: minmax(0, 1fr);
     align-items: start;
-    gap: 28px;
+    gap: 22px;
 }
 
 .home-eyebrow {
@@ -2458,6 +2458,8 @@ a:hover { text-decoration: underline; }
     align-content: start;
     gap: 18px;
     min-width: 0;
+    max-width: 72rem;
+    margin: 0 auto;
 }
 
 .home-hero-kicker {
@@ -2479,17 +2481,24 @@ a:hover { text-decoration: underline; }
     color: var(--text-secondary);
     font-size: 1.04rem;
     line-height: var(--zh-body-leading);
-    max-width: 32rem;
+    max-width: 56rem;
 }
 
 .home-hero .prose {
     max-width: none;
 }
 
+.home-hero .prose p {
+    max-width: 68ch;
+}
+
 .home-hero-art {
     position: relative;
     margin: 0;
-    align-self: stretch;
+    align-self: start;
+    max-width: 1040px;
+    width: 100%;
+    justify-self: center;
 }
 
 .home-hero-art::before {
@@ -2972,12 +2981,6 @@ a:hover { text-decoration: underline; }
     .home-workflow-grid,
     .home-panel-recent {
         grid-template-columns: 1fr;
-    }
-
-    .home-hero-art {
-        order: -1;
-        max-width: 720px;
-        justify-self: center;
     }
 }
 

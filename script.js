@@ -589,21 +589,6 @@ PatientQA: {
                         <p><strong>建議話術：</strong>「我們請您多喝水不是客套，是希望藥物快點代謝掉，對身體更好，影像也會更清楚。尤其骨骼、腎臟、正子這類檢查，排尿做得好，影像品質差很多。」</p>`
                 }
             ]
-        },
-        {
-            type: "section",
-            title: "不能只靠話術，必須升級給醫師或資深同仁的情境",
-            icon: "🚨",
-            html: `<div class="prose">
-                <ul>
-                    <li><strong>懷孕或可能懷孕</strong>：不可自行決定可不可以做。</li>
-                    <li><strong>哺乳中的病人</strong>：先確認今天的藥物名稱與停餵規範。</li>
-                    <li><strong>FDG PET 糖尿病控制不佳</strong>：血糖高、剛打胰島素、剛進食，都可能需要改期。</li>
-                    <li><strong>壓力心肌灌流</strong>：氣喘、COPD、嚴重心律不整、近期咖啡因、跌倒風險。</li>
-                    <li><strong>治療性核醫</strong>：I-131、Lu-177、Ra-223、Y-90 不能套用診斷檢查的回答。</li>
-                    <li><strong>病人聽不懂但很焦慮</strong>：先放慢速度，講「目的、流程、今天要配合什麼」三件事，不要丟專有名詞。</li>
-                </ul>
-            </div>`
         }
     ]
 },
@@ -6591,10 +6576,40 @@ function buildLearningGuideHTML(key, data) {
 }
 
 function buildHomeHubHTML() {
+    const starterActions = HOME_HUB_CONFIG.quickActions.filter((item) => HOME_HUB_CONFIG.starterPack.includes(item.view));
+    const criticalChecks = HOME_HUB_CONFIG.criticalChecks;
+    const resourceLinks = [
+        {
+            href: 'patient-education/',
+            kicker: '病人版',
+            title: '民眾版核醫衛教',
+            desc: '提供病人與家屬閱讀的簡化說明，適合在衛教或電話溝通時直接分享。',
+            variant: 'warning'
+        },
+        {
+            href: 'https://gen-lang-client-0435635260.web.app/',
+            kicker: '輔助工具',
+            title: 'AI 文字辨識',
+            desc: '協助把圖片或文件中的文字快速抓出來，適合整理資料時搭配使用。',
+            variant: 'info'
+        },
+        {
+            href: 'https://nminfo-examp.web.app/',
+            kicker: '流程展示',
+            title: '核醫排檢 DEMO',
+            desc: '適合做流程展示，或拿來快速說明排檢邏輯。',
+            variant: 'success'
+        },
+        ...HOME_HUB_CONFIG.resourceLinks
+    ];
+
     return `
         <article class="home-hub">
             <section class="home-hero">
                 <div class="home-hero-grid">
+                    <figure class="home-hero-art">
+                        <img src="assets/home/home-hero-stand-guide.png" alt="漫畫風核醫首頁主視覺：一名以召喚姿勢登場的專業講者，身後出現由 PET/CT、gamma camera 與原子軌道構成的替身式守護者。" loading="eager" decoding="async">
+                    </figure>
                     <div class="home-hero-copy">
                         <span class="home-eyebrow">首頁總覽</span>
                         <p class="home-hero-kicker">作者：Chun-Yin Huang</p>
@@ -6603,39 +6618,51 @@ function buildHomeHubHTML() {
                         <div class="prose">
                             <p>這個網站最初的目的，不是做成一個花俏的展示頁，而是把科內真正會用到、也真的會忘記的資訊整理在一起。排檢、收像、後處理、衛教、治療安全、劑量換算，這些事情平常都夾在忙碌的工作裡，很少有人有空從頭翻 guideline，所以才需要一個能夠隨手打開、很快找到重點的地方。</p>
                             <p>如果你是第一次使用，建議先把左側分類看過一輪。現在大致分成幾個區塊：PET、心臟、內分泌、骨骼與腎泌尿、胃腸肝膽、神經與肺部感染，另外還有核醫小學堂與治療單元。每個檢查頁會放適應症、時間架構、判讀重點，也會逐步補上給放射師與核醫醫師使用的技術 protocol 摘要，方便在上機前或判讀前快速核對。</p>
-                            <p>站內另外有幾個比較偏工作支援的頁面。像「病人溝通與衛教」適合櫃台、電話通知或檢查前說明時使用；「藥物與劑量工具」整理了常用放射藥物、成人與兒科劑量；「輻射防護與治療安全」則比較適合碰到治療型核醫、返家限制、污染處理或特殊情境時回來查。這些內容不一定每天都要用到，但真正需要的時候，通常都很急，所以我把它們也放進同一個網站裡。</p>
-                            <p>另外，平常會用到的工具與外部連結，我也直接放在這裡，避免還要多切一次單元。下面這些都可以直接點開：</p>
-                            <div class="home-link-card-grid">
-                                <a class="home-link-card" href="patient-education/" target="_blank" rel="noopener noreferrer">
-                                    <strong>民眾版核醫衛教</strong>
-                                    <span>提供病人與家屬閱讀的簡化說明，適合在衛教或電話溝通時直接分享。</span>
-                                </a>
-                                <a class="home-link-card" href="https://gen-lang-client-0435635260.web.app/" target="_blank" rel="noopener noreferrer">
-                                    <strong>AI 文字辨識</strong>
-                                    <span>協助把圖片或文件中的文字快速抓出來，適合整理資料時搭配使用。</span>
-                                </a>
-                                <a class="home-link-card" href="https://i131-ward-scheduler.web.app/" target="_blank" rel="noopener noreferrer">
-                                    <strong>I-131 病房排程</strong>
-                                    <span>用來確認住院日期、病房安排與治療節奏，避免排程來回重算。</span>
-                                </a>
-                                <a class="home-link-card" href="https://nminfo-examp.web.app/" target="_blank" rel="noopener noreferrer">
-                                    <strong>核醫排檢 DEMO</strong>
-                                    <span>適合做流程展示，或拿來快速說明排檢邏輯。</span>
-                                </a>
-                                <a class="home-link-card" href="https://nminfo-petarr.web.app/" target="_blank" rel="noopener noreferrer">
-                                    <strong>PET 智慧排程</strong>
-                                    <span>整理 PET 檢查安排時常見的時間與流程條件，適合排程前先核對。</span>
-                                </a>
-                                <a class="home-link-card" href="https://www.snm.org.tw/" target="_blank" rel="noopener noreferrer">
-                                    <strong>台灣核醫學會</strong>
-                                    <span>回查學會公告、研討會與正式專業消息時最直接的入口。</span>
-                                </a>
-                            </div>
+                            <p>站內另外有幾個比較偏工作支援的頁面。像「病人溝通與衛教」適合櫃台、電話通知或檢查前說明時使用；「藥物與劑量工具」整理了常用放射藥物、成人與兒科劑量；「輻射防護與治療安全」則比較適合碰到治療型核醫、返家限制、污染處理或特殊情境時回來查。這些內容不一定每天都要用到，但真正需要的時候通常都很急，所以首頁先把最值得先看的入口拆出來。</p>
                         </div>
                     </div>
-                    <figure class="home-hero-art">
-                        <img src="assets/home/home-hero-stand-guide.png" alt="漫畫風核醫首頁主視覺：一名以召喚姿勢登場的專業講者，身後出現由 PET/CT、gamma camera 與原子軌道構成的替身式守護者。" loading="eager" decoding="async">
-                    </figure>
+                </div>
+            </section>
+
+            <section class="home-section">
+                <div class="home-section-heading">
+                    <div>
+                        <h2>先看這 3 件事</h2>
+                        <p>第一次進站時，先把高風險分流、PET 前置條件與病人說明節奏抓住，後面很多流程會順很多。</p>
+                    </div>
+                </div>
+                <div class="home-critical-grid">
+                    ${criticalChecks.map((item) => `
+                        <article class="home-critical-card is-${item.level}">
+                            <span class="home-critical-label">${getHomeLevelLabel(item.level)}</span>
+                            <h3>${item.title}</h3>
+                            <p>${item.desc}</p>
+                        </article>
+                    `).join('')}
+                </div>
+            </section>
+
+            <section class="home-section">
+                <div class="home-section-heading">
+                    <div>
+                        <h2>第一次使用建議先從這裡開始</h2>
+                        <p>先熟悉工作骨架，再回到單一檢查或治療細節，會比直接硬讀長文有效。</p>
+                    </div>
+                </div>
+                <div class="home-card-grid">
+                    ${starterActions.map((item) => renderHomeLinkCard(item)).join('')}
+                </div>
+            </section>
+
+            <section class="home-section">
+                <div class="home-section-heading">
+                    <div>
+                        <h2>常用工具與外部連結</h2>
+                        <p>把高頻工具獨立出來，避免它們插在正文中間打斷閱讀節奏。</p>
+                    </div>
+                </div>
+                <div class="home-card-grid">
+                    ${resourceLinks.map((item) => renderHomeResourceLink(item)).join('')}
                 </div>
             </section>
         </article>
