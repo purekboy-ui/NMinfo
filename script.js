@@ -7003,6 +7003,74 @@ function attachGuideNavListeners() {
     });
 }
 
+function getProtocolData(key) {
+    return window.NMINFO_PROTOCOL_DATA?.[key] || null;
+}
+
+function renderProtocolRows(rows) {
+    if (!Array.isArray(rows) || rows.length === 0) return '';
+
+    return rows.map(([label, value]) => `
+        <tr>
+            <th scope="row">${label}</th>
+            <td>${value}</td>
+        </tr>
+    `).join('');
+}
+
+function renderProtocolList(items) {
+    if (!Array.isArray(items) || items.length === 0) return '';
+    return `<ul>${items.map((item) => `<li>${item}</li>`).join('')}</ul>`;
+}
+
+function buildProtocolSummaryHTML(key) {
+    const protocol = getProtocolData(key);
+    if (!protocol) return '';
+
+    return `
+        <section class="protocol-summary-section" aria-labelledby="protocol-summary-title">
+            <div class="protocol-summary-heading">
+                <span class="protocol-summary-kicker">技術 Protocol 摘要</span>
+                <div>
+                    <h2 id="protocol-summary-title">${protocol.title}</h2>
+                    <p>給放射師與核醫醫師快速核對 acquisition、processing、QC 與 artifact。這裡是研究底稿轉成網站的第一層摘要，仍需對照科內機型與正式 SOP。</p>
+                </div>
+            </div>
+            <div class="protocol-summary-grid">
+                <article class="protocol-summary-card is-wide">
+                    <h3>Acquisition baseline</h3>
+                    <div class="protocol-table-wrap">
+                        <table class="protocol-table">
+                            <tbody>${renderProtocolRows(protocol.acquisition)}</tbody>
+                        </table>
+                    </div>
+                </article>
+                <article class="protocol-summary-card is-wide">
+                    <h3>Image processing</h3>
+                    <div class="protocol-table-wrap">
+                        <table class="protocol-table">
+                            <tbody>${renderProtocolRows(protocol.processing)}</tbody>
+                        </table>
+                    </div>
+                </article>
+                <article class="protocol-summary-card">
+                    <h3>QC checklist</h3>
+                    ${renderProtocolList(protocol.qc)}
+                </article>
+                <article class="protocol-summary-card">
+                    <h3>Artifact / pitfall</h3>
+                    ${renderProtocolList(protocol.pitfalls)}
+                </article>
+                <article class="protocol-summary-card is-wide">
+                    <h3>科內落地時最該固定</h3>
+                    ${renderProtocolList(protocol.localFixedFields)}
+                </article>
+            </div>
+            ${protocol.source ? `<p class="protocol-summary-source">主要來源：${protocol.source}</p>` : ''}
+        </section>
+    `;
+}
+
 function buildContentHTML(key, data) {
     if (!data) return '<div class="empty-state"><h3>⚠️ 找不到資料</h3></div>';
 
@@ -7068,6 +7136,7 @@ function buildContentHTML(key, data) {
 
     const galleryHTML = buildGalleryHTML(data);
     const specialHTML = buildSpecialContentHTML(key, data);
+    const protocolSummaryHTML = buildProtocolSummaryHTML(key);
     const useImmersiveReading = shouldUseImmersiveReading(key, data);
 
     // Content blocks
@@ -7094,6 +7163,7 @@ function buildContentHTML(key, data) {
             ${readerGuideHTML}
             ${conceptDiagramHTML}
             ${timeHTML}
+            ${protocolSummaryHTML}
             ${specialHTML}
             ${blocksHTML}
             ${galleryHTML}

@@ -1,6 +1,8 @@
 # IDE and Agents
 .agent/
-.github/
+.github/*
+!.github/workflows/
+!.github/workflows/*.yml
 .clinerules*
 .cursorrules*
 .windsurfrules*
@@ -33,3 +35,4 @@ pdf/
 # Unfinished literature extracts, raw exports, screenshots, and working notes
 # should be placed here instead of mixing with website assets.
 research-staging/
+local-archive/

@@ -170,6 +170,15 @@ a:hover { text-decoration: underline; }
     font-weight: 700;
     color: #fffdfc;
     box-shadow: none;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.brand-icon img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .sidebar-brand h1 {
@@ -1087,6 +1096,8 @@ a:hover { text-decoration: underline; }
 /* Tables */
 .data-table-wrapper {
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
     margin: 18px 0;
     border-radius: 18px;
     border: 1px solid var(--border-light);
@@ -1094,8 +1105,10 @@ a:hover { text-decoration: underline; }
 }
 
 .data-table {
-    width: 100%;
+    width: max(100%, 720px);
+    min-width: 720px;
     border-collapse: collapse;
+    table-layout: auto;
     font-size: 0.95rem;
 }
 
@@ -1454,6 +1467,22 @@ a:hover { text-decoration: underline; }
 
 @media (max-width: 600px) {
     .calc-result-grid { grid-template-columns: 1fr; }
+
+    .calc-form select,
+    .calc-form input,
+    .calc-form button {
+        width: 100%;
+    }
+
+    .calc-form select,
+    .calc-form input {
+        min-width: 0;
+        flex: 1 0 100%;
+    }
+
+    .calc-form button {
+        flex: 1 0 100%;
+    }
 }
 
 .calc-result-item {
@@ -1748,7 +1777,11 @@ a:hover { text-decoration: underline; }
 .sidebar-overlay.visible { display: block; }
 
 @media (max-width: 768px) {
-    .mobile-menu-toggle { display: flex; }
+    .mobile-menu-toggle {
+        display: flex;
+        top: calc(env(safe-area-inset-top, 0px) + 12px);
+        left: 12px;
+    }
 
     .sidebar {
         position: fixed;
@@ -1763,7 +1796,7 @@ a:hover { text-decoration: underline; }
     .sidebar.open { transform: translateX(0); }
 
     .content-area {
-        padding: 24px 20px 60px;
+        padding: calc(env(safe-area-inset-top, 0px) + 84px) 20px 60px;
     }
 
     .two-col { grid-template-columns: 1fr; }
@@ -2364,6 +2397,11 @@ a:hover { text-decoration: underline; }
     .calc-input-row {
         flex-direction: column;
     }
+    .calc-input-group,
+    .calc-btn-primary {
+        width: 100%;
+        min-width: 0;
+    }
     .flow-timeline {
         flex-direction: column;
         align-items: stretch;
@@ -2850,6 +2888,12 @@ a:hover { text-decoration: underline; }
 }
 
 @media (max-width: 768px) {
+    .home-hero-actions,
+    .home-hero-metrics,
+    .home-mini-links {
+        grid-template-columns: 1fr;
+    }
+
     .home-hero {
         padding: 24px 20px;
         border-radius: 24px;
@@ -3437,11 +3481,147 @@ a:hover { text-decoration: underline; }
     grid-column: 1 / -1;
 }
 
+/* Technical protocol summary */
+.protocol-summary-section {
+    display: grid;
+    gap: 22px;
+    padding: 26px;
+    border: 1px solid rgba(143,94,103,0.14);
+    border-radius: 24px;
+    background: rgba(255,252,251,0.88);
+}
+
+.protocol-summary-heading {
+    display: grid;
+    gap: 10px;
+    max-width: var(--reading-measure-wide);
+}
+
+.protocol-summary-kicker {
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: var(--radius-full);
+    background: var(--brand-primary-soft);
+    color: var(--brand-primary);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: var(--zh-label-spacing);
+}
+
+.protocol-summary-heading h2 {
+    font-size: 1.55rem;
+    line-height: var(--zh-heading-leading);
+    color: var(--text-primary);
+}
+
+.protocol-summary-heading p,
+.protocol-summary-source {
+    color: var(--text-secondary);
+    font-size: 0.98rem;
+    line-height: var(--zh-body-leading-dense);
+}
+
+.protocol-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.protocol-summary-card {
+    display: grid;
+    align-content: start;
+    gap: 12px;
+    padding: 18px;
+    border: 1px solid var(--border-light);
+    border-radius: 18px;
+    background: rgba(247,241,239,0.64);
+}
+
+.protocol-summary-card.is-wide {
+    grid-column: 1 / -1;
+}
+
+.protocol-summary-card h3 {
+    color: var(--text-primary);
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.protocol-summary-card ul {
+    display: grid;
+    gap: 8px;
+    padding-left: 20px;
+}
+
+.protocol-summary-card li {
+    color: var(--text-secondary);
+    font-size: 0.96rem;
+    line-height: var(--zh-body-leading-dense);
+}
+
+.protocol-table-wrap {
+    overflow-x: auto;
+}
+
+.protocol-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 560px;
+}
+
+.protocol-table th,
+.protocol-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(143,94,103,0.10);
+    vertical-align: top;
+    text-align: left;
+    font-size: 0.94rem;
+    line-height: var(--zh-body-leading-dense);
+}
+
+.protocol-table th {
+    width: 34%;
+    color: var(--brand-primary-strong);
+    font-weight: 800;
+}
+
+.protocol-table td {
+    color: var(--text-secondary);
+}
+
+.protocol-table tr:last-child th,
+.protocol-table tr:last-child td {
+    border-bottom: 0;
+}
+
+.protocol-summary-source {
+    margin-top: -2px;
+    color: var(--text-tertiary);
+}
+
 @media (max-width: 768px) {
+    .protocol-summary-section {
+        padding: 20px 16px;
+        border-radius: 20px;
+    }
+
+    .protocol-summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .protocol-summary-card {
+        padding: 16px;
+    }
+
     .therapy-rich-card,
     .therapy-section-card,
     .therapy-timeline-step {
         padding: 18px 16px;
+    }
+
+    .therapy-info-grid,
+    .therapy-section-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -4223,6 +4403,7 @@ a:hover { text-decoration: underline; }
         grid-template-columns: 1fr;
     }
 
+    .concept-diagram.is-matrix .concept-diagram-body,
     .concept-diagram.is-decision .concept-diagram-body {
         grid-template-columns: 1fr;
     }
@@ -4322,5 +4503,19 @@ a:hover { text-decoration: underline; }
 
     .is-immersive-reading .progressive-section summary span {
         flex: 1 1 auto;
+    }
+}
+
+@media (max-width: 560px) {
+    .content-area {
+        padding: calc(env(safe-area-inset-top, 0px) + 80px) 16px 48px;
+    }
+
+    .cal-label {
+        display: none;
+    }
+
+    .cal-cell {
+        font-size: 0.8rem;
     }
 }
