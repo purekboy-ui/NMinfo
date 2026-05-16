@@ -6609,35 +6609,30 @@ function buildHomeHubHTML() {
                 <div class="home-hero-grid">
                     <div class="home-hero-copy">
                         <span class="home-eyebrow">首頁總覽</span>
-                        <h1>先查常用工作，再進入完整內容。</h1>
-                        <p class="home-hero-lead">高風險條件、病人衛教、劑量工具與常用檢查放在最前面。需要細節時，再從左側單元進入。</p>
+                        <h1>這裡是科內查核與教學共用的核醫筆記。</h1>
+                        <p class="home-hero-lead">首頁先只保留閱讀入口，不把所有卡片和提醒一次丟給新同事。真的要查 protocol、病人衛教或安全流程，再往左側單元展開。</p>
                         <div class="home-hero-actions">
-                            ${renderHomeLinkCard({ view: 'PatientQA', title: '病人溝通與衛教', desc: '櫃台、電話與檢前說明最常用。', kicker: '衛教' }, 'home-action-card')}
-                            ${renderHomeLinkCard({ view: 'DosageTable', title: '藥物與劑量工具', desc: '查藥物、活度與兒科劑量公式。', kicker: '工具' }, 'home-action-card')}
-                            ${renderHomeLinkCard({ view: 'RadiationSafety', title: '輻射防護與治療安全', desc: '查污染處理、返家限制與治療型輻防。', kicker: '安全' }, 'home-action-card')}
-                        </div>
-                        <div class="home-hero-metrics">
-                            ${HOME_HUB_CONFIG.heroMetrics.map((item) => `
-                                <div class="home-hero-metric">
-                                    <span>${item.label}</span>
-                                    <strong>${item.value}</strong>
-                                    <p>${item.desc}</p>
-                                </div>
-                            `).join('')}
+                            ${renderHomeLinkCard({ view: 'PatientQA', title: '病人溝通與衛教', desc: '櫃台、電話與檢前說明先從這裡找。', kicker: '衛教' }, 'home-action-card')}
+                            ${renderHomeLinkCard({ view: 'DosageTable', title: '藥物與劑量工具', desc: '查藥物、活度與兒科公式。', kicker: '工具' }, 'home-action-card')}
+                            ${renderHomeLinkCard({ view: 'PET', title: '常用檢查與技術摘要', desc: '左側各檢查頁已逐步加入 protocol 摘要。', kicker: '檢查' }, 'home-action-card')}
                         </div>
                     </div>
                     <aside class="home-hero-panel">
                         <div class="home-panel-header">
-                            <h2>先核對高風險條件</h2>
-                            <p>懷孕、哺乳、治療性核醫、血糖與空腹條件，先確認再安排流程。</p>
+                            <h2>第一次進來先這樣用</h2>
+                            <p>把首頁當導讀，不要當總複習。真正需要細節時，再進到單一檢查頁面。</p>
                         </div>
                         <div class="home-panel-section">
                             <div class="home-panel-section-heading">
-                                <h3>先核對</h3>
-                                <span>高風險</span>
+                                <h3>三個入口</h3>
+                                <span>先熟悉</span>
                             </div>
                             <div class="home-panel-checks">
-                                ${HOME_HUB_CONFIG.heroChecks.map((item) => `
+                                ${[
+                                    { level: 'guidance', title: '左側檢查單元', desc: '查單一檢查時，先進該頁，再看新增的技術 Protocol 摘要。' },
+                                    { level: 'guidance', title: '病人溝通與衛教', desc: '病人、家屬或櫃台常見問題，優先用這裡整理口徑。' },
+                                    { level: 'caution', title: '輻射安全與治療流程', desc: '碰到污染、返家限制或治療型核醫，再打開安全相關頁面。' }
+                                ].map((item) => `
                                     <div class="home-panel-check is-${item.level}">
                                         <span class="home-panel-check-label">${getHomeLevelLabel(item.level)}</span>
                                         <strong>${item.title}</strong>
@@ -6648,11 +6643,20 @@ function buildHomeHubHTML() {
                         </div>
                         <div class="home-panel-section">
                             <div class="home-panel-section-heading">
-                                <h3>常用外部工具</h3>
-                                <span>快速打開</span>
+                                <h3>閱讀方式</h3>
+                                <span>不必一次看完</span>
                             </div>
-                            <div class="home-panel-links">
-                                ${HOME_HUB_CONFIG.resourceLinks.map((item) => renderHomeResourceLink(item)).join('')}
+                            <div class="home-panel-checks">
+                                ${[
+                                    { level: 'guidance', title: '先看本站怎麼分類', desc: 'PET、心臟、內分泌、腎泌尿、GI、神經 / 肺 / 感染各自收在固定區塊。' },
+                                    { level: 'guidance', title: '再看每頁時間軸與適應症', desc: '確認這檢查在回答什麼問題，再去讀技術 baseline。' },
+                                    { level: 'guidance', title: '最後才看 protocol 細節', desc: 'QC、假影與後處理是給上機與判讀前快速核對，不必首頁背熟。' }
+                                ].map((item) => `
+                                    <div class="home-panel-check is-${item.level}">
+                                        <strong>${item.title}</strong>
+                                        <p>${item.desc}</p>
+                                    </div>
+                                `).join('')}
                             </div>
                         </div>
                     </aside>
@@ -6662,51 +6666,28 @@ function buildHomeHubHTML() {
             <section class="home-section">
                 <div class="home-section-heading">
                     <div>
-                        <h2>今天先用這些</h2>
-                        <p>把高頻入口放前面，減少搜尋與決策時間。</p>
-                    </div>
-                </div>
-                <div class="home-card-grid">
-                    ${HOME_HUB_CONFIG.quickActions.map((item) => renderHomeLinkCard(item)).join('')}
-                </div>
-            </section>
-
-            <section class="home-section">
-                <div class="home-section-heading">
-                    <div>
-                        <h2>高風險先確認</h2>
-                        <p>不要把病安與流程關鍵埋在長文末尾。</p>
-                    </div>
-                </div>
-                <div class="home-critical-grid">
-                    ${HOME_HUB_CONFIG.criticalChecks.map((item) => `
-                        <div class="home-critical-card is-${item.level}">
-                            <span class="home-critical-label">${getHomeLevelLabel(item.level)}</span>
-                            <h3>${item.title}</h3>
-                            <p>${item.desc}</p>
-                        </div>
-                    `).join('')}
-                </div>
-            </section>
-
-            <section class="home-section">
-                <div class="home-section-heading">
-                    <div>
-                        <h2>新人與忙碌時都適用的三步流程</h2>
-                        <p>先把焦慮變成順序，再把順序變成可執行動作。</p>
+                        <h2>網站現在主要有三種內容</h2>
+                        <p>不再把首頁做成資訊牆，而是把用途講清楚。</p>
                     </div>
                 </div>
                 <div class="home-workflow-grid">
-                    ${HOME_HUB_CONFIG.workflow.map((item) => `
-                        <div class="home-workflow-step">
-                            <strong>${item.step}</strong>
-                            <h3>${item.title}</h3>
-                            <p>${item.desc}</p>
-                        </div>
-                    `).join('')}
+                    <div class="home-workflow-step">
+                        <strong>檢查頁</strong>
+                        <h3>看檢查目的、時間架構與 protocol 摘要</h3>
+                        <p>適合放射師與核醫醫師臨床前快速核對，特別是收像、後處理、QC 與常見陷阱。</p>
+                    </div>
+                    <div class="home-workflow-step">
+                        <strong>工具頁</strong>
+                        <h3>查劑量、排程與操作規則</h3>
+                        <p>把常用藥物、兒科換算、病安與流程工具集中，避免在長文中來回翻找。</p>
+                    </div>
+                    <div class="home-workflow-step">
+                        <strong>衛教頁</strong>
+                        <h3>統一病人與家屬的說明口徑</h3>
+                        <p>給櫃台、電話通知與檢前溝通使用，不和技術 protocol 混在同一個閱讀層級。</p>
+                    </div>
                 </div>
             </section>
-
         </article>
     `;
 }
@@ -7023,6 +7004,23 @@ function renderProtocolList(items) {
     return `<ul>${items.map((item) => `<li>${item}</li>`).join('')}</ul>`;
 }
 
+function renderProtocolSectionBody(items) {
+    if (!Array.isArray(items) || items.length === 0) return '<p>這一段摘要仍在整理中。</p>';
+
+    const firstItem = items[0];
+    if (Array.isArray(firstItem)) {
+        return `
+            <div class="protocol-table-wrap">
+                <table class="protocol-table">
+                    <tbody>${renderProtocolRows(items)}</tbody>
+                </table>
+            </div>
+        `;
+    }
+
+    return renderProtocolList(items);
+}
+
 function buildProtocolSummaryHTML(key) {
     const protocol = getProtocolData(key);
     if (!protocol) return '';
@@ -7030,35 +7028,23 @@ function buildProtocolSummaryHTML(key) {
     const sections = [
         {
             title: '收像參數基線',
-            body: `
-                <div class="protocol-table-wrap">
-                    <table class="protocol-table">
-                        <tbody>${renderProtocolRows(protocol.acquisition)}</tbody>
-                    </table>
-                </div>
-            `
+            body: renderProtocolSectionBody(protocol.acquisition)
         },
         {
             title: '影像處理',
-            body: `
-                <div class="protocol-table-wrap">
-                    <table class="protocol-table">
-                        <tbody>${renderProtocolRows(protocol.processing)}</tbody>
-                    </table>
-                </div>
-            `
+            body: renderProtocolSectionBody(protocol.processing)
         },
         {
             title: 'QC 檢查清單',
-            body: renderProtocolList(protocol.qc)
+            body: renderProtocolSectionBody(protocol.qc)
         },
         {
             title: '常見假影與陷阱',
-            body: renderProtocolList(protocol.pitfalls)
+            body: renderProtocolSectionBody(protocol.pitfalls)
         },
         {
             title: '科內落地時最該固定',
-            body: renderProtocolList(protocol.localFixedFields)
+            body: renderProtocolSectionBody(protocol.localFixedFields)
         }
     ];
 
@@ -7069,6 +7055,7 @@ function buildProtocolSummaryHTML(key) {
                 <div>
                     <h2 id="protocol-summary-title">${protocol.title}</h2>
                     <p>給放射師與核醫醫師快速核對收像、後處理、QC 與常見陷阱。這裡是研究底稿轉成網站的第一層摘要，仍需對照科內機型與正式 SOP。</p>
+                    ${protocol.note ? `<p class="protocol-summary-note">${protocol.note}</p>` : ''}
                 </div>
             </div>
             <div class="protocol-summary-stack">

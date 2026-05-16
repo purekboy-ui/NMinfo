@@ -3521,6 +3521,11 @@ a:hover { text-decoration: underline; }
     line-height: var(--zh-body-leading-dense);
 }
 
+.protocol-summary-note {
+    margin-top: 10px;
+    color: rgba(110, 76, 83, 0.82);
+}
+
 .protocol-summary-stack {
     display: grid;
     gap: 16px;
