@@ -2446,17 +2446,12 @@ a:hover { text-decoration: underline; }
     letter-spacing: var(--zh-label-spacing);
 }
 
-.home-hero-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1.12fr) minmax(300px, 0.8fr);
-    gap: 24px;
-    align-items: stretch;
-}
-
 .home-hero-copy {
     display: grid;
     align-content: start;
     gap: 18px;
+    max-width: 46rem;
+    margin: 0 auto;
 }
 
 .home-hero-kicker {
@@ -2471,7 +2466,7 @@ a:hover { text-decoration: underline; }
     line-height: 1.18;
     letter-spacing: 0;
     color: var(--text-primary);
-    max-width: 15ch;
+    max-width: none;
 }
 
 .home-hero-lead {
@@ -2479,6 +2474,28 @@ a:hover { text-decoration: underline; }
     font-size: 1.04rem;
     line-height: var(--zh-body-leading);
     max-width: 32rem;
+}
+
+.home-hero .prose {
+    max-width: none;
+}
+
+.home-link-list {
+    padding-left: 22px;
+}
+
+.home-link-list li + li {
+    margin-top: 10px;
+}
+
+.home-link-list a {
+    color: var(--accent-blue);
+    text-decoration: underline;
+    text-underline-offset: 0.12em;
+}
+
+.home-link-list a:hover {
+    color: var(--brand-primary);
 }
 
 .home-hero-actions {
