@@ -51,3 +51,30 @@ FDG PET/CT 的技術重點不只是全身代謝成像，而是把病人準備、
 - 發炎、感染、術後變化
 - 金屬與 CT AC artifact
 - 呼吸造成肺底 / 肝頂配準誤差
+
+## 科內落地時最該固定的欄位
+
+- 示蹤劑與實際活度
+- 禁食時間、血糖、胰島素 / 降糖藥、劇烈運動與保暖狀態
+- 注射時間、開始收像時間與 uptake time
+- scan range、arms up / down、time/bed
+- CT 模式（AC-only 或診斷 CT、是否使用對比劑）
+- reconstruction preset 與定量指標（SUVbw 或 SUL）
+- 是否加做診斷 CT、局部延長 bed、排尿後或延遲補拍
+
+## SUV 解讀與目前趨勢
+
+- **不要把單一 SUV cutoff 當成惡性門檻。** SUV 反映的是在特定流程下的相對攝取強度，不是病理診斷本身；感染、發炎、肉芽腫與部分良性病灶都可能偏高，低代謝或小病灶惡性腫瘤也可能不高。
+- **SUV 受多重前分析與後分析因素影響**，至少包括：
+  - 血糖、胰島素、禁食是否充分
+  - 注射後等待時間是否一致
+  - 注射滲漏、殘餘活度與實際注入劑量
+  - 體型正規化方式（SUVbw、SUL、LBM）
+  - 體動、呼吸造成的配準誤差
+  - 病灶大小與 partial-volume effect
+  - reconstruction preset、PSF / BSREM、平滑與 matrix
+  - ROI 定義方式（SUVmax、SUVmean、SULpeak）
+- **目前趨勢是把 SUV 放回標準化與追蹤脈絡中使用。**
+  - staging 時，SUV 可作為描述性資訊，但不應單獨下良惡性判斷。
+  - longitudinal follow-up 時，比較價值建立在同一 tracer、相近血糖、相近 uptake time、相近重建與相近 ROI 方法上。
+  - 治療反應評估越來越偏向使用 **PERCIST / SULpeak** 這類較標準化的框架，而不是只看單次 SUVmax 升降。

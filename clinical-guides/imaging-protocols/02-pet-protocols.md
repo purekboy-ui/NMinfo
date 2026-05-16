@@ -8,6 +8,13 @@
 - CT 若只做 attenuation correction，目標是配準穩定與劑量合理，不是硬做診斷級 CT。
 - reconstruction 應固定一組科內臨床 preset，避免每次任意切換 OSEM / TOF / PSF / BSREM。
 - 若採不同 tracer，不能直接照搬 FDG 的等待時間與排尿策略。
+- 不要把單次 SUV 數字當成病理答案；臨床價值來自標準化流程下的比較與脈絡化解讀。
+
+## PET 共通的 SUV 變因與目前角色
+
+- 主要變因包含：血糖與胰島素狀態、禁食是否充分、注射滲漏、殘餘活度、uptake time、體型正規化方式（SUVbw / SUL）、體動與呼吸配準、病灶大小造成的 partial-volume effect、reconstruction preset、以及 ROI 定義方式。
+- 因此 SUV 最適合拿來做 **同流程下的描述與追蹤**，不適合脫離流程背景後硬套單一 cut-off。
+- 目前實務趨勢是：初次 staging 以 **分布型態 + 解剖對位 + 臨床問題** 為主，SUV 作輔助；治療反應評估則越來越重視 **標準化 longitudinal comparison**，例如使用 **SULpeak / PERCIST**。
 
 ## 1. FDG PET/CT 腫瘤影像
 
@@ -153,6 +160,14 @@
 - 一定要熟悉各 tracer label 規定的 acquisition window
 - 判讀核心是灰白質分界，不是單看全腦亮不亮
 - 若做定量，需使用對應的 validated software pipeline
+
+### 科內落地時最該固定的欄位
+
+- tracer 種類與實際活度
+- 注射時間、開始收像時間與 tracer-specific acquisition window
+- 頭部固定方式與收像時間
+- CT AC 或其他 attenuation correction 流程
+- reconstruction preset 與 quantitation software pipeline
 
 ## 6. NaF PET/CT
 

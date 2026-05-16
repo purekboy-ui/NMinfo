@@ -353,6 +353,16 @@ const CATEGORY_FALLBACKS = {
   }
 };
 
+const DEFAULT_PET_LOCAL_FIXED_FIELDS = [
+  '示蹤劑與實際活度',
+  '禁食 / 血糖 / 注射前後活動等病人準備',
+  '注射時間、開始收像時間與 uptake time',
+  '掃描範圍、體位與每 bed / 每次收像時間',
+  'CT 模式（AC-only、診斷 CT、是否使用對比劑）',
+  '固定的 reconstruction preset 與定量指標（SUVbw 或 SUL）',
+  '是否加做診斷 CT、局部延長 bed、排尿後或延遲補拍'
+];
+
 const DEFAULT_LOCAL_FIXED_FIELDS = [
   '示蹤劑與實際活度',
   '注射時間、開始收像時間與時間差',
@@ -452,17 +462,19 @@ function buildProtocolData() {
 function buildDirectFileProtocol(fileName) {
   const markdown = readMarkdown(fileName);
   const title = extractFirstHeading(markdown);
-  const sourceItems = findFirstAvailableList(markdown, ['最新主要來源', '最新優先來源', '主要來源', '來源']);
+  const sourceItems = findFirstAvailableList(markdown, ['最新已核對的主要來源', '最新主要來源', '最新優先來源', '主要來源', '來源']);
   const localFixed = parseBullets(markdown, '科內落地時最該固定的欄位');
+  const acquisition = parseTable(markdown, 'Acquisition parameter table');
+  const processing = parseTable(markdown, 'Image processing parameter table');
 
   return {
     title,
     source: formatSourceList(sourceItems),
-    acquisition: parseTable(markdown, 'Acquisition parameter table'),
-    processing: parseTable(markdown, 'Image processing parameter table'),
+    acquisition,
+    processing,
     qc: parseBullets(markdown, 'QC checklist'),
     pitfalls: parseBullets(markdown, 'Artifact / pitfall checklist'),
-    localFixedFields: localFixed.length > 0 ? localFixed : DEFAULT_LOCAL_FIXED_FIELDS
+    localFixedFields: localFixed.length > 0 ? localFixed : getDefaultLocalFixedFields({ title, acquisition, processing })
   };
 }
 
@@ -483,7 +495,7 @@ function buildOverviewProtocol(spec) {
     processing: processing.length > 0 ? processing : ['後處理請先回看 raw data，再確認重建 preset 與對位品質。'],
     qc: categoryFallback.qc,
     pitfalls: pitfalls.length > 0 ? pitfalls : categoryFallback.pitfalls,
-    localFixedFields: localFixed.length > 0 ? localFixed : DEFAULT_LOCAL_FIXED_FIELDS,
+    localFixedFields: localFixed.length > 0 ? localFixed : getDefaultLocalFixedFields({ title: spec.title || cleanupTitle(spec.heading), acquisition, processing }),
     note: spec.note || ''
   };
 }
@@ -491,15 +503,18 @@ function buildOverviewProtocol(spec) {
 function buildGenericFallback(key, config) {
   const qcFallback = CATEGORY_FALLBACKS[config.qcGroup || 'generic'];
   const pitfallFallback = CATEGORY_FALLBACKS[config.pitfallsGroup || config.qcGroup || 'generic'];
+  const acquisition = config.acquisition;
+  const processing = config.processing;
+  const title = config.title || DISPLAY_NAMES[key] || key;
 
   return {
-    title: config.title || DISPLAY_NAMES[key] || key,
+    title,
     source: config.source,
-    acquisition: config.acquisition,
-    processing: config.processing,
+    acquisition,
+    processing,
     qc: qcFallback.qc,
     pitfalls: pitfallFallback.pitfalls,
-    localFixedFields: config.localFixedFields || DEFAULT_LOCAL_FIXED_FIELDS,
+    localFixedFields: config.localFixedFields || getDefaultLocalFixedFields({ title, acquisition, processing }),
     note: config.note || ''
   };
 }
@@ -624,8 +639,77 @@ function findFirstAvailableList(markdown, headingCandidates) {
 
     const proseItems = parseParagraphLines(markdown, heading);
     if (proseItems.length > 0) return proseItems;
+
+    const labelledItems = parseLabelledList(markdown, heading);
+    if (labelledItems.length > 0) return labelledItems;
   }
   return [];
+}
+
+function parseLabelledList(markdown, labelText) {
+  const lines = markdown.split('\n');
+
+  for (let i = 0; i < lines.length; i += 1) {
+    const normalizedLine = cleanupText(lines[i].replace(/[：:]\s*$/, ''));
+    if (normalizedLine !== labelText) continue;
+
+    const items = [];
+    let currentItem = '';
+
+    for (let j = i + 1; j < lines.length; j += 1) {
+      const line = lines[j];
+      const trimmed = line.trim();
+
+      if (!trimmed) {
+        if (currentItem) {
+          items.push(cleanupText(currentItem));
+          currentItem = '';
+        }
+        continue;
+      }
+
+      if (/^#{1,6}\s+/.test(trimmed)) {
+        if (currentItem) items.push(cleanupText(currentItem));
+        break;
+      }
+
+      if (trimmed.startsWith('- ')) {
+        if (currentItem) items.push(cleanupText(currentItem));
+        currentItem = trimmed.replace(/^- /, '');
+        continue;
+      }
+
+      if (currentItem) {
+        currentItem = `${currentItem} ${trimmed}`;
+      } else {
+        break;
+      }
+    }
+
+    if (currentItem) items.push(cleanupText(currentItem));
+    return items.filter(Boolean);
+  }
+
+  return [];
+}
+
+function getDefaultLocalFixedFields({ title = '', acquisition = [], processing = [] }) {
+  const modalityText = [
+    title,
+    ...normalizeFieldText(acquisition),
+    ...normalizeFieldText(processing)
+  ].join(' ');
+
+  return /\bPET\b/i.test(modalityText) ? DEFAULT_PET_LOCAL_FIXED_FIELDS : DEFAULT_LOCAL_FIXED_FIELDS;
+}
+
+function normalizeFieldText(items) {
+  if (!Array.isArray(items)) return [];
+
+  return items.flatMap((item) => {
+    if (Array.isArray(item)) return item;
+    return typeof item === 'string' ? [item] : [];
+  });
 }
 
 function cleanupTitle(value) {
@@ -644,7 +728,7 @@ function cleanupText(value) {
 
 function formatSourceList(items) {
   return items
-    .map((item) => item.replace(/\s+/g, ' ').trim())
+    .map((item) => item.replace(/https?\s*:\s*\/\s*\/.*$/gi, '').replace(/\s+/g, ' ').trim().replace(/[;；,，:\-–—\s]+$/g, ''))
     .filter(Boolean)
     .join('；');
 }

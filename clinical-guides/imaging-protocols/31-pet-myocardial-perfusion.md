@@ -47,3 +47,12 @@ PET MPI 的真正優勢是高品質 perfusion 加上 MBF / MFR 定量；若動�
 - dynamic acquisition 起始錯誤
 - CT AC 對位不良
 - 不同 tracer / 不同流程定量結果硬比
+
+## 科內落地時最該固定的欄位
+
+- tracer 種類與實際活度
+- stress 藥物 / 運動條件、停止咖啡因與用藥規則
+- 注射時間、dynamic framing、開始收像時間
+- 是否做 dynamic + static、是否加 ECG gating
+- CT AC 模式與配準檢查流程
+- reconstruction preset 與 MBF / MFR quantitation software pipeline

@@ -4,7 +4,7 @@
 const PROTOCOL_DATA = {
   "PET": {
     "title": "FDG PET / CT 腫瘤影像",
-    "source": "",
+    "source": "EANM / SNMMI guideline for FDG PET / CT: tumour imaging",
     "acquisition": [
       [
         "Detector / modality",
@@ -86,15 +86,17 @@ const PROTOCOL_DATA = {
     ],
     "localFixedFields": [
       "示蹤劑與實際活度",
-      "注射時間、開始收像時間與時間差",
-      "固定的 reconstruction preset 名稱與版本",
-      "視野 / 體位 / 幾何條件",
-      "是否加做 SPECT/CT、診斷 CT 或延遲補拍"
+      "禁食時間、血糖、胰島素 / 降糖藥、劇烈運動與保暖狀態",
+      "注射時間、開始收像時間與 uptake time",
+      "scan range、arms up / down、time / bed",
+      "CT 模式（AC-only 或診斷 CT、是否使用對比劑）",
+      "reconstruction preset 與定量指標（SUVbw 或 SUL）",
+      "是否加做診斷 CT、局部延長 bed、排尿後或延遲補拍"
     ]
   },
   "BrainPET": {
     "title": "FDG Brain PET",
-    "source": "",
+    "source": "SNMMI Procedure Standard / EANM Practice Guideline for Brain [18F]FDG PET Imaging version 2.0, 2024",
     "acquisition": [
       [
         "Detector / modality",
@@ -173,15 +175,16 @@ const PROTOCOL_DATA = {
     ],
     "localFixedFields": [
       "示蹤劑與實際活度",
-      "注射時間、開始收像時間與時間差",
-      "固定的 reconstruction preset 名稱與版本",
-      "視野 / 體位 / 幾何條件",
-      "是否加做 SPECT/CT、診斷 CT 或延遲補拍"
+      "禁食時間、血糖、注射與等待期環境控制",
+      "注射時間、開始收像時間與 uptake time",
+      "頭部固定方式、收像時間與是否鎮靜",
+      "CT AC 或 MR-based AC 的採用流程",
+      "reconstruction preset、reorientation 規則與使用的 normal database / quantitation pipeline"
     ]
   },
   "POSLUMA": {
     "title": "PSMA PET / CT",
-    "source": "",
+    "source": "PSMA PET / CT: joint EANM procedure guideline / SNMMI procedure standard 2.0, 2023",
     "acquisition": [
       [
         "Detector / modality",
@@ -256,16 +259,18 @@ const PROTOCOL_DATA = {
       "不同 tracer / 不同流程下硬比 SUV"
     ],
     "localFixedFields": [
-      "示蹤劑與實際活度",
-      "注射時間、開始收像時間與時間差",
-      "固定的 reconstruction preset 名稱與版本",
-      "視野 / 體位 / 幾何條件",
-      "是否加做 SPECT/CT、診斷 CT 或延遲補拍"
+      "tracer 種類與實際活度",
+      "注射時間、開始收像時間與 tracer-specific uptake time",
+      "排尿指示、是否使用利尿或其他院內輔助流程",
+      "scan range、arms up / down、time / bed",
+      "CT 模式（AC-only 或 staging 診斷 CT、是否使用對比劑）",
+      "reconstruction preset 與定量指標",
+      "是否加做局部延長 bed、排尿後或延遲補拍"
     ]
   },
   "Ga68DOTATOC": {
     "title": "SSTR PET / CT",
-    "source": "",
+    "source": "SNMMI Procedure Standard / EANM Practice Guideline for SSTR PET Imaging, 2022",
     "acquisition": [
       [
         "Detector / modality",
@@ -338,16 +343,17 @@ const PROTOCOL_DATA = {
       "過強 PSF 視覺上放大小病灶"
     ],
     "localFixedFields": [
-      "示蹤劑與實際活度",
-      "注射時間、開始收像時間與時間差",
-      "固定的 reconstruction preset 名稱與版本",
-      "視野 / 體位 / 幾何條件",
-      "是否加做 SPECT/CT、診斷 CT 或延遲補拍"
+      "tracer 種類與實際活度",
+      "注射時間、開始收像時間與 uptake time",
+      "scan range、arms up / down、time / bed",
+      "CT 模式（AC-only 或 staging 診斷 CT、是否使用對比劑）",
+      "reconstruction preset 與定量指標",
+      "是否加做局部高解析、延長 bed 或延遲補拍"
     ]
   },
   "NaFPET": {
     "title": "18F-NaF PET / CT",
-    "source": "",
+    "source": "SNM guideline for Sodium 18F-Fluoride with PET / CT Bone Scans 1.1；SNM Guideline for Sodium 18F-Fluoride PET / CT Bone Scans PDF",
     "acquisition": [
       [
         "Detector / modality",
@@ -429,7 +435,7 @@ const PROTOCOL_DATA = {
   },
   "Bone": {
     "title": "骨骼掃描 Bone Scintigraphy",
-    "source": "",
+    "source": "SNMMI Practice Guideline for Bone Scintigraphy 4.0",
     "acquisition": [
       [
         "Detector / modality",
@@ -512,7 +518,7 @@ const PROTOCOL_DATA = {
   },
   "MPI_Tc99m": {
     "title": "Tc-99m MPI SPECT",
-    "source": "",
+    "source": "SNMMI / ASNC / SCCT Guideline for Cardiac SPECT / CT and PET / CT 1.0；ASNC reporting / protocol quick references, 2024",
     "acquisition": [
       [
         "Detector / modality",
@@ -608,7 +614,7 @@ const PROTOCOL_DATA = {
   },
   "CardiacPET": {
     "title": "PET Myocardial Perfusion Imaging",
-    "source": "",
+    "source": "SNMMI / EANM / ASNC / ACNM Guideline for 18F-Flurpiridaz PET Myocardial Perfusion Imaging and Blood Flow Quantitation, 2025；ASNC PET Quick Reference Guide, 2024",
     "acquisition": [
       [
         "Detector / modality",
@@ -677,16 +683,17 @@ const PROTOCOL_DATA = {
       "不同 tracer / 不同流程定量結果硬比"
     ],
     "localFixedFields": [
-      "示蹤劑與實際活度",
-      "注射時間、開始收像時間與時間差",
-      "固定的 reconstruction preset 名稱與版本",
-      "視野 / 體位 / 幾何條件",
-      "是否加做 SPECT/CT、診斷 CT 或延遲補拍"
+      "tracer 種類與實際活度",
+      "stress 藥物 / 運動條件、停止咖啡因與用藥規則",
+      "注射時間、dynamic framing、開始收像時間",
+      "是否做 dynamic + static、是否加 ECG gating",
+      "CT AC 模式與配準檢查流程",
+      "reconstruction preset 與 MBF / MFR quantitation software pipeline"
     ]
   },
   "CardiacAmyloid": {
     "title": "Cardiac Amyloidosis Imaging（PYP / DPD / HMDP）",
-    "source": "",
+    "source": "Cardiac Amyloidosis Imaging | SNMMI；ASNC / AHA / ASE / EANM / HFSA / ISA / SCMR / SNMMI Expert Consensus Recommendations, 2019",
     "acquisition": [
       [
         "Detector / modality",
@@ -763,7 +770,7 @@ const PROTOCOL_DATA = {
   },
   "Thyroid": {
     "title": "Thyroid Uptake 與 Thyroid Scintigraphy",
-    "source": "",
+    "source": "EANM / SNMMI guideline for Radio-Iodine Uptake and Thyroid Scintigraphy v3.0；ACR / SNMMI / SPR Practice Guideline for the Performance of Thyroid Scintigraphy and Uptake Measurements",
     "acquisition": [
       [
         "Detector / modality",
@@ -838,7 +845,7 @@ const PROTOCOL_DATA = {
   },
   "Parathyroid": {
     "title": "Parathyroid Scintigraphy",
-    "source": "",
+    "source": "SNMMI guideline for Parathyroid Scintigraphy 4.0；SNM Practice Guideline for Parathyroid Scintigraphy 4.0 PDF",
     "acquisition": [
       [
         "Detector / modality",
@@ -916,7 +923,7 @@ const PROTOCOL_DATA = {
   },
   "MIBG": {
     "title": "123I / 131I-MIBG Scintigraphy",
-    "source": "",
+    "source": "131I / 123I-Metaiodobenzylguanidine scintigraphy: EANM guideline for tumour imaging, SNMMI endorsement",
     "acquisition": [
       [
         "Detector / modality",
@@ -995,7 +1002,7 @@ const PROTOCOL_DATA = {
   },
   "Salivary": {
     "title": "Salivary Gland Scintigraphy",
-    "source": "",
+    "source": "ACR / SNMMI / SPR Practice Guideline for Performance of Gastrointestinal Scintigraphy",
     "acquisition": [
       [
         "Detector / modality",
@@ -1063,7 +1070,7 @@ const PROTOCOL_DATA = {
   },
   "DTPA": {
     "title": "Renal Dynamic Scintigraphy（MAG3 / DTPA）",
-    "source": "",
+    "source": "SNMMI / EANM Renal Scintigraphy in Adults, 2018",
     "acquisition": [
       [
         "Detector / modality",
@@ -1142,7 +1149,7 @@ const PROTOCOL_DATA = {
   },
   "MAG3": {
     "title": "Diuretic Renography",
-    "source": "",
+    "source": "SNMMI / EANM guideline for Diuretic Renal Scintigraphy in Adults With Suspected Upper Urinary Tract Obstruction；成人 renal scintigraphy guideline",
     "acquisition": [
       [
         "Detector / modality",
@@ -1208,7 +1215,7 @@ const PROTOCOL_DATA = {
   },
   "DMSA": {
     "title": "DMSA Renal Cortical Scintigraphy",
-    "source": "",
+    "source": "Pediatric [99mTc]Tc-DMSA Renal Cortical Scintigraphy: An Update, 2021；SNMMI / EANM Renal Scintigraphy in Adults, 2018",
     "acquisition": [
       [
         "Detector / modality",
@@ -1287,7 +1294,7 @@ const PROTOCOL_DATA = {
   },
   "Gastric": {
     "title": "Gastric Emptying Scintigraphy",
-    "source": "",
+    "source": "Consensus Recommendations for Gastric Emptying Scintigraphy；Gastric Emptying Scintigraphy 2024: Still A Need for Compliance with Published Guidelines",
     "acquisition": [
       [
         "Detector / modality",
@@ -1362,7 +1369,7 @@ const PROTOCOL_DATA = {
   },
   "Biliary": {
     "title": "Hepatobiliary Scintigraphy / HIDA",
-    "source": "",
+    "source": "SNM guideline for Hepatobiliary Scintigraphy 4.0；Appropriate Use Criteria for Hepatobiliary Scintigraphy in Abdominal Pain",
     "acquisition": [
       [
         "Detector / modality",
@@ -1429,7 +1436,7 @@ const PROTOCOL_DATA = {
   },
   "GIBleed": {
     "title": "Gastrointestinal Bleeding Scintigraphy",
-    "source": "",
+    "source": "Gastrointestinal Bleeding Scintigraphy 3.0；2024 PDF procedure standard",
     "acquisition": [
       [
         "Detector / modality",
@@ -1496,7 +1503,7 @@ const PROTOCOL_DATA = {
   },
   "Liver": {
     "title": "Liver-Spleen Scintigraphy",
-    "source": "",
+    "source": "ACR / SNMMI / SPR Practice Guideline for the Performance of Liver and Spleen Scintigraphy",
     "acquisition": [
       [
         "Detector / modality",
@@ -1563,7 +1570,7 @@ const PROTOCOL_DATA = {
   },
   "Brain": {
     "title": "Brain Perfusion SPECT",
-    "source": "",
+    "source": "Brain Perfusion SPECT Using 99mTc Radiopharmaceuticals 3.0",
     "acquisition": [
       [
         "Detector / modality",
@@ -1645,7 +1652,7 @@ const PROTOCOL_DATA = {
   },
   "TRODAT": {
     "title": "DaT SPECT（123I-Ioflupane）",
-    "source": "",
+    "source": "EANM / SNMMI guideline for Dopaminergic Imaging in Parkinsonian Syndromes；SNM Practice Guideline for Dopamine Transporter Imaging",
     "acquisition": [
       [
         "Detector / modality",
@@ -1748,7 +1755,7 @@ const PROTOCOL_DATA = {
   },
   "LungVQ": {
     "title": "V / Q Scintigraphy",
-    "source": "",
+    "source": "Pulmonary Scintigraphy archived guideline；Appropriate Use Criteria for Ventilation / Perfusion Imaging in Pulmonary Embolism",
     "acquisition": [
       [
         "Detector / modality",
@@ -1822,7 +1829,7 @@ const PROTOCOL_DATA = {
   },
   "WBCScan": {
     "title": "Leukocyte / Infection Scintigraphy",
-    "source": "",
+    "source": "ACR / SNMMI / SPR Practice Guideline for the Performance of Scintigraphy for Inflammation or Infection；Society of Nuclear Medicine Procedure Guideline for 111In-Leukocyte Scintigraphy",
     "acquisition": [
       [
         "Detector / modality",
@@ -1930,11 +1937,11 @@ const PROTOCOL_DATA = {
       "兩次追蹤檢查若重建 preset 改變，SUV 不宜直接硬比"
     ],
     "localFixedFields": [
-      "示蹤劑與實際活度",
-      "注射時間、開始收像時間與時間差",
-      "固定的 reconstruction preset 名稱與版本",
-      "視野 / 體位 / 幾何條件",
-      "是否加做 SPECT/CT、診斷 CT 或延遲補拍"
+      "tracer 種類與實際活度",
+      "注射時間、開始收像時間與 tracer-specific acquisition window",
+      "頭部固定方式與收像時間",
+      "CT AC 或其他 attenuation correction 流程",
+      "reconstruction preset 與 quantitation software pipeline"
     ],
     "note": "本站目前使用 PET 總覽章節整理；若未來另建單卷，再替換成專檔版。"
   },
@@ -1979,7 +1986,7 @@ const PROTOCOL_DATA = {
   },
   "Salivary2": {
     "title": "Salivary Gland Scintigraphy",
-    "source": "",
+    "source": "ACR / SNMMI / SPR Practice Guideline for Performance of Gastrointestinal Scintigraphy",
     "acquisition": [
       [
         "Detector / modality",

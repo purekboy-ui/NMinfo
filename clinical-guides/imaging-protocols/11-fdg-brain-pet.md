@@ -48,3 +48,12 @@ FDG brain PET 和全身 FDG PET 最大差異，在於注射與等待期的腦部
 - 頭部 motion
 - 注射等待期病人講話、哭泣、咀嚼或緊張
 - 過度平滑造成皮質細節下降
+
+## 科內落地時最該固定的欄位
+
+- 示蹤劑與實際活度
+- 禁食時間、血糖、注射與等待期環境控制
+- 注射時間、開始收像時間與 uptake time
+- 頭部固定方式、收像時間與是否鎮靜
+- CT AC 或 MR-based AC 的採用流程
+- reconstruction preset、reorientation 規則與使用的 normal database / quantitation pipeline

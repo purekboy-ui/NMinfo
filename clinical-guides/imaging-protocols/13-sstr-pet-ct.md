@@ -46,3 +46,12 @@ SSTR PET/CT 是 NET 與 theranostics 重要基礎影像。技術上要同時處�
 - 脾臟、肝、腎上腺、腎臟與尿路生理攝取
 - 炎症或非 NET 病灶的受體表現
 - 過強 PSF 視覺上放大小病灶
+
+## 科內落地時最該固定的欄位
+
+- tracer 種類與實際活度
+- 注射時間、開始收像時間與 uptake time
+- scan range、arms up / down、time/bed
+- CT 模式（AC-only 或 staging 診斷 CT、是否使用對比劑）
+- reconstruction preset 與定量指標
+- 是否加做局部高解析、延長 bed 或延遲補拍

@@ -48,3 +48,13 @@ PSMA PET/CT 的技術關鍵在 tracer-specific workflow。不同 PSMA tracer 的
 - 18F-PSMA-1007 的非特異性骨攝取
 - 金屬與 CT AC artifact
 - 不同 tracer / 不同流程下硬比 SUV
+
+## 科內落地時最該固定的欄位
+
+- tracer 種類與實際活度
+- 注射時間、開始收像時間與 tracer-specific uptake time
+- 排尿指示、是否使用利尿或其他院內輔助流程
+- scan range、arms up / down、time/bed
+- CT 模式（AC-only 或 staging 診斷 CT、是否使用對比劑）
+- reconstruction preset 與定量指標
+- 是否加做局部延長 bed、排尿後或延遲補拍
