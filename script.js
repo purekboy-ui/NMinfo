@@ -25,7 +25,7 @@ NMBasics: {
         {
             type: "info-box-emerald",
             html: `<h4>📚 先抓住三個基本觀念：功能影像、設備差異與 QC</h4>
-            <p>如果你是新人，這頁最重要的不是背機型，而是先建立三個觀念：<strong>核醫在看功能</strong>、<strong>不同設備各自在解不同問題</strong>、以及<strong>QC 沒做好時，影像看起來像病人的問題，其實可能是設備或流程的問題</strong>。</p>
+            <p>新人先掌握三件事：<strong>核醫在看功能</strong>、<strong>不同設備各自在解不同問題</strong>、以及<strong>QC 沒做好時，影像看起來像病人的問題，其實可能是設備或流程的問題</strong>。</p>
             <p>國際上目前的主流趨勢很清楚：一般核醫仍以<strong>雙 detector Anger camera 搭配 SPECT/CT</strong>為主力；高階系統朝<strong>數位化與定量化</strong>前進；心肌專科則已大量使用<strong>CZT 專門系統</strong>來換取更高靈敏度、更短掃描時間與更低劑量可能性。</p>`
         },
         {
@@ -373,7 +373,7 @@ DocumentControl: {
                 </div>
                 <div class="detail-card">
                     <h4>品質手冊不應該做什麼</h4>
-                    <p>不要把 ISO 條文逐句改成「本單位將...」。那種文件看起來正式，實際上最難讀，也最難維護。<strong>品質手冊的任務是建立框架，不是替每個作業做逐步教學。</strong></p>
+                    <p>不要把 ISO 條文逐句改成「本單位將...」。那種文件看起來正式，實際上最難讀，也最難維護。<strong>品質手冊要說清楚管理範圍與責任，不要替每個作業做逐步教學。</strong></p>
                 </div>
                 <div class="detail-card">
                     <h4>為什麼 2015 版後仍很多單位保留它</h4>
@@ -615,7 +615,7 @@ Radiopharmacy: {
     content: [
         {
             type: "info-box-blue",
-            html: `<h4>🧪 這一頁不是背名詞，是把熱核室真的會出錯的地方排清楚</h4>
+            html: `<h4>熱核室最需要管好的是到貨、分裝、放行與污染控制</h4>
             <p>內容以 <strong>EANM cGRPP 2021</strong>、<strong>EANM quality risk management 2022</strong> 與台灣現行法規為骨架。重點不是炫技，而是把<strong>收貨、放行、分裝、貼標、運送、污染偵測、料帳與廢棄</strong>做成可重複、可追溯、可交班的流程。</p>
             <div class="source-badges">
                 <span class="guide-tag eanm">EANM cGRPP 2021</span>
@@ -709,13 +709,13 @@ Radiopharmacy: {
 
 RadiationSafety: {
     title: "輻射防護與治療安全",
-    subtitle: "Radiation Protection and Therapy Safety — 把法規、治療型輻防與返家風險分流，整理成核醫現場真的用得到的框架",
+    subtitle: "Radiation Protection and Therapy Safety — 整理法規、治療型輻防與返家風險分流",
     category: "learning",
     content: [
         {
             type: "info-box-amber",
-            html: `<h4>⚠️ 法規不是背條文比賽，而是把高風險工作做成可證明的制度</h4>
-            <p>讀這頁時，先不要想成在背法條；把它當成核醫現場每天都會遇到的四類問題：</p>
+            html: `<h4>法規的重點，是讓高風險工作有明確責任與紀錄</h4>
+            <p>核醫現場最常遇到四類問題：</p>
             <ul>
                 <li><strong>制度：</strong>能不能開工、誰負責。</li>
                 <li><strong>劑量：</strong>有沒有超標、要怎麼監測。</li>
@@ -825,7 +825,7 @@ RadiationSafety: {
                     <p>主流做法是門診治療。由於是 alpha 治療，外照射較低，重點通常放在<strong>前 7 天如廁與體液衛生</strong>。</p>
                 </div>
             </div>
-            <p class="therapy-rp-footnote">讀法建議：先看自己正在面對哪一種核種，再回頭看病房、出院與返家限制。這樣比把所有治療規定堆成一頁更不容易記錯。</p>`
+            <p class="therapy-rp-footnote">不同核種的病房需求、出院量測與返家限制不同，應分開判斷。</p>`
         },
         {
             type: "section",
@@ -946,7 +946,7 @@ I131Ward: {
         {
             type: "info-box-rose",
             html: `<h4>☢️ I-131 病房要用另一套標準來看</h4>
-            <p>I-131 治療的關鍵，不只是把藥口服完，而是把<strong>治療適應症、病人準備、住院期間污染風險、病房動線、出院測量與返家限制</strong>一次管好。這一頁以 <strong>SNMMI / EANM 2022 DTC guideline</strong>、<strong>ACR-ACNM-ARS-SNMMI-SPR 2026 practice parameter</strong> 與近年 I-131 清除研究為核心。</p>
+            <p>I-131 治療不只是在病人服藥後結束；還要管好<strong>治療適應症、病人準備、住院期間污染風險、病房動線、出院測量與返家限制</strong>。內容依據 <strong>SNMMI / EANM 2022 DTC guideline</strong>、<strong>ACR-ACNM-ARS-SNMMI-SPR 2026 practice parameter</strong> 與近年 I-131 清除研究整理。</p>
             <div class="source-badges">
                 <span class="guide-tag snmmi">SNMMI / EANM 2022</span>
                 <span class="guide-tag snmmi">ACR / ACNM / SNMMI 2026</span>
@@ -1020,7 +1020,7 @@ I131Ward: {
                 <ul>
                     <li><strong>出院不是看病人想不想回家：</strong>要依部門量測結果、法規 / 院規標準與醫師判斷決定，並留下可追溯紀錄。</li>
                     <li><strong>返家安排要能落地：</strong>與孕婦、幼兒的距離與接觸時間、睡眠安排、工作返場時間、交通方式與家中照護情境，要依治療活度與測量值調整，不能所有人都給同一張紙。</li>
-                    <li><strong>補水與排尿仍是主角：</strong>返家後持續補水、勤排尿與做好如廁衛生，可幫助殘留 I-131 排除並降低家屬暴露。</li>
+                    <li><strong>補水與排尿仍然重要：</strong>返家後持續補水、勤排尿與做好如廁衛生，可幫助殘留 I-131 排除並降低家屬暴露。</li>
                     <li><strong>哺乳與備孕：</strong>不可自行恢復或自行抓天數，需依治療指示與專科團隊建議執行。</li>
                 </ul>
             </div>`
@@ -3813,7 +3813,7 @@ OtherTherapies: {
     content: [
         {
             type: "info-box-amber",
-            html: `<h4>這一頁是整合入口，不是把三種治療混成同一套規則</h4>
+            html: `<h4>整合入口：三種治療要分開判斷</h4>
             <p>I-131 MIBG、Sm-153 與 Y-90 的適應症、技術路徑與輻射防護都不同。放在一起是因為站內優先把高頻四大治療獨立拉出，但這三種仍值得保留一個能快速回想的入口。</p>`
         },
         {
@@ -3842,13 +3842,13 @@ OtherTherapies: {
         },
         {
             type: "section",
-            title: "Y-90：真正的主角是血流分布與術前 mapping，不是單純『打一支藥』",
+            title: "Y-90：重點是血流分布與術前 mapping，不是單純『打一支藥』",
             icon: "💠",
             html: `<div class="prose">
                 <ul>
                     <li>Y-90 依賴導管技術、動脈血流與 Tc-99m MAA mapping；沒有 mapping，就沒有安全的正式治療。</li>
                     <li>重點風險是非目標栓塞、肺分流、肝功能餘裕與術後肝臟耐受度。</li>
-                    <li>和 Lu-177 / I-131 不同，這頁的技術核心更接近介入治療與劑量學整合。</li>
+                    <li>和 Lu-177 / I-131 不同，Y-90 的技術重點更接近介入治療與劑量學整合。</li>
                 </ul>
             </div>`
         }
@@ -4445,7 +4445,7 @@ const EXAM_TEACHING_SUPPLEMENTS = {
             title: "PSMA 治療的深層邏輯：不是有亮點就夠，而是要亮得有代表性",
             html: `<div class="prose">
                 <p>Lu-177 PSMA 真正依賴的，不只是「某些病灶有 PSMA 表現」，而是<strong>整體腫瘤負荷大多仍保有可治療的標的</strong>。若病人體內已出現大量去分化病灶，代表腫瘤生物學正在往另一個方向走，這時候再漂亮的單一亮點，也未必能轉成實際獲益。</p>
-                <p>所以這一頁最值得讀者學會的，不只是副作用列表，而是<strong>影像篩選、病程階段、器官風險與病人生活目標</strong>如何一起決定「該不該現在做」。</p>
+                <p>重點不只是副作用列表，而是<strong>影像篩選、病程階段、器官風險與病人生活目標</strong>如何一起決定「該不該現在做」。</p>
             </div>`
         }
     ],
@@ -4504,7 +4504,7 @@ const EXAM_READER_GUIDES = {
     NMBasics: {
         eyebrow: "先看基本觀念",
         title: "核醫常看功能，設備與 QC 會影響影像品質",
-        lead: "這一頁主要介紹三件事：核醫檢查在看什麼、常見設備有什麼差別、以及 QC 為什麼重要。先把這些基本觀念看懂，後面讀 SPECT、PET 或各種檢查時會比較容易。",
+        lead: "核醫檢查看功能；設備決定影像怎麼取得；QC 決定影像能不能被信任。先懂這三件事，後面讀 SPECT、PET 或各種檢查會比較容易。",
         cards: [
             { title: "先抓核心價值", text: "核醫最擅長回答的是器官有沒有在正常運作、病灶有沒有活性，而不只是長得像不像。" },
             { title: "再分清主流設備", text: "雙 detector gamma camera、通用型 CZT、心肌專用 CZT、PET/CT 與 PET/MR，各自在解不同的臨床與技術問題。" },
@@ -4537,7 +4537,7 @@ const EXAM_READER_GUIDES = {
     Radiopharmacy: {
         eyebrow: "先看作業順序",
         title: "熱核室工作重點在收貨、分裝、放行與污染控制",
-        lead: "這一頁把 cGRPP 與台灣法規整理成日常工作流程。先把每一步的順序看清楚，比較不容易在忙碌時漏掉核對或紀錄。",
+        lead: "cGRPP 與台灣法規都指向同一件事：到貨、分裝、放行、污染偵測與紀錄要能重複執行。",
         cards: [
             { title: "先擋住到貨風險", text: "包件完整性、表面劑量率、擦拭測試與文件核對，是把錯誤擋在門外的第一關。" },
             { title: "分裝不是只靠手快", text: "真正成熟的分裝是先備妥器材、屏蔽、標籤與紀錄，再開始抽藥，而不是邊做邊補。" },
@@ -4548,7 +4548,7 @@ const EXAM_READER_GUIDES = {
     RadiationSafety: {
         eyebrow: "先看常用場景",
         title: "輻防法規可先分成制度、劑量、事故與紀錄",
-        lead: "這一頁先把核醫科最常遇到的法規內容分成幾個日常場景：開工前要準備什麼、劑量怎麼看、事故怎麼處理、紀錄怎麼留。先這樣分，後面會比較好讀。",
+        lead: "核醫科常用的輻防內容可分成四件事：開工前準備、劑量監測、事故處理、紀錄保存。",
         cards: [
             { title: "制度面先看第 7 條", text: "輻射防護管理組織、人員與輻射防護計畫沒到位，就不是『先做再補』的問題。" },
             { title: "數字面先抓幾個常用值", text: "5 年 100 mSv、單年 50 mSv、30% 門檻 6 mSv、懷孕後下腹 2 mSv，是現場最常用到的幾個數字。" },
@@ -4572,12 +4572,12 @@ const EXAM_READER_GUIDES = {
     EmergencyCart: {
         eyebrow: "先看日常檢查",
         title: "急救車管理重點在平時檢查是否確實",
-        lead: "急救車最重要的是在需要使用前，就先發現鎖號、AED、氧氣或效期等問題。這一頁整理的是日常檢查與異常處理的基本重點。",
+        lead: "急救車要在使用前就發現鎖號、AED、氧氣或效期問題。日常檢查與異常處理要簡單、固定、可追溯。",
         cards: [
             { title: "每日檢查要抓什麼", text: "鎖號、AED 狀態、氧氣壓力與紀錄簽名，看似簡單，但每一項都在防止真正的臨床空窗。" },
             { title: "半年盤點不只是算數量", text: "藥品效期、即期品替換、批號與盤點紀錄一致性，才是後續出事時站得住腳的證據。" },
             { title: "一看到異常就要升級", text: "鎖頭破壞、藥品失蹤、封條不一致或設備不亮，不能留到『下班前再說』。" },
-            { title: "這頁怎麼用", text: "把它當成值班前 1 分鐘的複誦頁，而不是出事後才回來找答案的頁面。" }
+            { title: "值班前快速核對", text: "用 1 分鐘確認鎖號、AED、氧氣、效期與紀錄，不要等出事後才找資料。" }
         ]
     },
     DosageTable: {
@@ -4614,7 +4614,7 @@ const EXAM_READER_GUIDES = {
             type: "chain",
             kicker: "核心因果鏈",
             title: "FDG PET/CT：影像品質在上機前就已經決定一半",
-            lead: "這頁先抓一條線：前處理會改變 FDG 分布，FDG 分布會決定病灶對比，最後才輪到掃描機把結果呈現出來。",
+            lead: "前處理會改變 FDG 分布，FDG 分布會決定病灶對比，最後才輪到掃描機把結果呈現出來。",
             items: [
                 { label: "1 空腹", tone: "warning", title: "先把競爭性葡萄糖降下來", text: "禁食與喝水不是儀式，而是在替 FDG 創造比較乾淨的背景。" },
                 { label: "2 血糖", tone: "critical", title: "血糖 / 胰島素是最大變因", text: "血糖高、剛打胰島素或剛進食，會把 FDG 分布帶往肌肉與脂肪，降低病灶對比。" },
@@ -4867,7 +4867,7 @@ const EXAM_READER_GUIDES = {
             { title: "它在問的是總血流能力", text: "不只是單一血管有沒有塞，而是整顆心在壓力下還能把血流拉高多少。" },
             { title: "微血管疾病在這裡更容易浮現", text: "當大血管沒有明顯狹窄，但病人仍有典型症狀時，Cardiac PET 的量化能力特別有價值。" },
             { title: "前處理是為了保留壓力反應", text: "咖啡因、部分藥物與呼吸狀態會直接影響血管擴張藥反應，所以前處理錯了，數值也會被一起帶歪。" },
-            { title: "讀這頁時要先分清 protocol", text: "不同 tracer、不同壓力藥物與是否做 flow quantification，會讓檢查目的和解讀層次完全不同。" }
+            { title: "先分清 protocol", text: "不同 tracer、不同壓力藥物與是否做 flow quantification，會讓檢查目的和解讀層次完全不同。" }
         ]
     },
     MIBG: {
@@ -4908,21 +4908,21 @@ const EXAM_READER_GUIDES = {
         title: "核醫靜脈攝影主要看靜脈回流是否受阻",
         lead: "Radionuclide venography 的重點在於觀察靜脈回流是否中斷、延遲，或改走旁支。這和超音波主要看血管壓縮性的角度不同。",
         cards: [
-            { title: "技術細節直接影響故事", text: "止血帶位置、足背注射品質與病人移動，任何一個環節出錯都可能製造假性流向異常。" },
+            { title: "技術細節直接影響結果", text: "止血帶位置、足背注射品質與病人移動，任何一個環節出錯都可能製造假性流向異常。" },
             { title: "真正有價值的是側枝與中斷", text: "看到繞路，不只是『有點慢』，而是代表深靜脈主通道可能真的出了問題。" },
-            { title: "它現在少做，是因為被更方便的方法取代", text: "但在超音波不易回答或需要功能性流向概念時，這頁仍有教學與補充價值。" },
-            { title: "這頁最適合拿來學什麼", text: "學會把靜脈影像當成動態路徑，而不是一張靜止照片。" }
+            { title: "現在少做，是因為有更方便的方法", text: "但在超音波不易回答或需要功能性流向概念時，仍有補充價值。" },
+            { title: "把靜脈影像看成動態路徑", text: "重點不是一張靜止照片，而是回流方向、側枝與中斷位置。" }
         ]
     },
     Lymphedema: {
         eyebrow: "先看回流功能",
         title: "淋巴水腫攝影主要看淋巴回流是否受阻",
-        lead: "Lymphoscintigraphy 看起來像是在拍水腫，但重點其實是淋巴回流功能。這一頁主要整理回流路徑與判讀重點。",
+        lead: "Lymphoscintigraphy 看起來像是在拍水腫，但重點其實是淋巴回流功能。內容整理回流路徑與判讀重點。",
         cards: [
             { title: "Dermal backflow 是重要語言", text: "真皮逆流不是抽象名詞，而是淋巴壓力真的推不回去後留下的功能痕跡。" },
             { title: "注射痛感要先交代", text: "指趾間注射比一般抽血更刺激，若沒先說，病人很容易在第一步就失去信任感。" },
             { title: "術後史決定判讀方向", text: "乳癌、婦癌清掃或放療後個案，和原發性淋巴異常的圖像邏輯並不相同。" },
-            { title: "這頁在做的是鑑別，不只是證明", text: "它的價值常在把淋巴回流障礙與靜脈性或其他原因造成的腫脹分開。" }
+            { title: "用途是鑑別，不只是證明", text: "它的價值常在把淋巴回流障礙與靜脈性或其他原因造成的腫脹分開。" }
         ]
     },
     SLN: {
@@ -4933,7 +4933,7 @@ const EXAM_READER_GUIDES = {
             { title: "先理解第一站的邏輯", text: "如果前哨節點沒有轉移，後面整串淋巴結大規模清掃的必要性就可能下降。" },
             { title: "排程必須和開刀房同頻", text: "做得再漂亮，若和手術時序沒接上，這張圖的臨床價值就會被折損。" },
             { title: "皮膚標記不是裝飾", text: "那個記號是外科進入病人體表時的導航點，洗掉就等於把核醫資訊切斷。" },
-            { title: "讀這頁時要帶著手術思維", text: "核醫在這裡不是終點，而是把資訊交棒給 gamma probe 和術者決策。" }
+            { title: "要和手術流程一起看", text: "核醫在這裡不是終點，而是把資訊交棒給 gamma probe 和術者決策。" }
         ]
     },
     GIBleed: {
@@ -4943,7 +4943,7 @@ const EXAM_READER_GUIDES = {
         cards: [
             { title: "RBC 標記是為了陪它等", text: "因為出血可能間歇發生，所以標記紅血球的價值就在能拉長觀察時間。" },
             { title: "動態比單張截圖重要", text: "如果只看某一瞬間，很容易把血管、脾臟或尿路誤當成出血點。" },
-            { title: "真正出血點會移動", text: "先出現、再沿著腸道方向擴散，是這頁判讀最核心的敘事線索。" },
+            { title: "真正出血點會移動", text: "先出現、再沿著腸道方向擴散，是判讀時最重要的線索。" },
             { title: "排檢前先問目前還在不在流", text: "若臨床時機已過，影像陰性不一定代表從來沒有出血。" }
         ]
     },
@@ -4952,7 +4952,7 @@ const EXAM_READER_GUIDES = {
         title: "Meckel 掃描主要看小腸內是否有會攝取的胃黏膜",
         lead: "Meckel diverticulum 能被核醫抓到，重點不在憩室形狀，而在其中是否有會攝取 pertechnetate 的異位胃黏膜。",
         cards: [
-            { title: "兒童無痛性出血是典型入口", text: "這頁最常出現在兒童反覆下消化道出血的情境，不是成人腹痛的泛用檢查。" },
+            { title: "兒童無痛性出血是典型情境", text: "Meckel 掃描最常用在兒童反覆下消化道出血，不是成人腹痛的泛用檢查。" },
             { title: "和胃同步出現最有說服力", text: "若腹腔亮點和胃差不多時間出現，判讀力量會大很多。" },
             { title: "前處理藥物是在提高停留率", text: "H2 blocker 或其他輔助藥物不是裝飾性 protocol，而是在幫異位胃黏膜把訊號留久一點。" },
             { title: "太晚出現或會移動要小心", text: "如果亮點晚很多才出現或位置會跑，常要先懷疑腸道內游離藥物或泌尿干擾。" }
@@ -4963,10 +4963,10 @@ const EXAM_READER_GUIDES = {
         title: "肝脾掃描主要看網狀內皮系統的分布變化",
         lead: "Liver-spleen scan 的重點是看肝、脾與骨髓之間的吞噬分布如何改變，而不只是看器官輪廓。",
         cards: [
-            { title: "Kupffer cell 才是這頁主角", text: "不是每個肝病灶都適合這個檢查，真正有價值的是網狀內皮吞噬是否改變。" },
+            { title: "重點是 Kupffer cell 分布", text: "不是每個肝病灶都適合這個檢查，真正有價值的是網狀內皮吞噬是否改變。" },
             { title: "Colloid shift 是功能轉移", text: "看到脾和骨髓更亮，不只是『別處也有攝取』，而是肝臟真的沒辦法像以前那樣處理膠體了。" },
-            { title: "副脾定位仍有實務價值", text: "在術前術後或不明脾組織問題時，這頁仍能提供結構影像不一定給得出的功能線索。" },
-            { title: "它更適合教功能概念", text: "這頁最好用來教新人把肝病理解成系統分工，而不是只記某個器官亮不亮。" }
+            { title: "副脾定位仍有實務價值", text: "在術前術後或不明脾組織問題時，仍能提供結構影像不一定給得出的功能線索。" },
+            { title: "用來理解功能分工", text: "新人可用這個檢查理解肝脾網狀內皮系統，而不是只記某個器官亮不亮。" }
         ]
     },
     LiverHemangioma: {
@@ -4975,8 +4975,8 @@ const EXAM_READER_GUIDES = {
         lead: "肝血管瘤 RBC 掃描常要靠延遲相來看病灶是否逐步被血池填滿，這是判讀的重要特徵。",
         cards: [
             { title: "早期不亮不代表沒價值", text: "血管瘤常在早期相不突出，真正有辨識力的是延遲相越來越像被血灌滿。" },
-            { title: "病灶愈大，故事愈清楚", text: "較大的病灶更容易呈現典型 delayed fill-in，小病灶則可能需要 SPECT 幫忙。" },
-            { title: "這頁強在特異度", text: "當延遲填充模式很典型時，它常比很多模糊的解剖影像更有說服力。" },
+            { title: "病灶愈大，型態愈清楚", text: "較大的病灶更容易呈現典型 delayed fill-in，小病灶則可能需要 SPECT 幫忙。" },
+            { title: "強項是特異度", text: "當延遲填充模式很典型時，它常比很多模糊的解剖影像更有說服力。" },
             { title: "讀片時先想它是不是血池", text: "只要把病灶當成『慢慢裝滿血的空間』去理解，很多判讀直覺會變得更清楚。" }
         ]
     },
@@ -4988,7 +4988,7 @@ const EXAM_READER_GUIDES = {
             { title: "唾液是消化鏈的起點", text: "當分泌與排出出了問題，病人的不適不只在口乾，也會一路影響吞嚥與進食體驗。" },
             { title: "刺激前後的對比就是答案", text: "這個檢查最有趣的地方，在於先看會不會抓，再看能不能排。" },
             { title: "同一檢查，不同閱讀入口", text: "從內分泌分類讀它，焦點可能是功能測試；從消化分類讀它，更像是在理解口腔前段功能。" },
-            { title: "所以這頁需要自己的敘事", text: "不是因為技術不同，而是因為讀者此刻真正想知道的問題不同。" }
+            { title: "分類不同，重點也不同", text: "從內分泌或消化分類閱讀時，關注的臨床問題會不同。" }
         ]
     },
     Cystography: {
@@ -5008,7 +5008,7 @@ const EXAM_READER_GUIDES = {
         lead: "Scrotal scintigraphy 常用在急性陰囊疼痛時，協助分辨缺血扭轉和發炎充血，因為後續處置差異很大。",
         cards: [
             { title: "冷和熱代表完全不同的後果", text: "扭轉的冷缺血與附睪炎的熱充血，不只是影像差異，而是後續處置節奏完全不同。" },
-            { title: "這頁最大的價值是急", text: "黃金時間窗短，所以流程協調比任何華麗解說都更重要。" },
+            { title: "最大價值是急", text: "黃金時間窗短，所以流程協調比任何華麗解說都更重要。" },
             { title: "延遲相有時比早期更關鍵", text: "doughnut sign 這種周邊熱、中心冷的圖像，往往比單看動脈相更能幫忙定向。" },
             { title: "它常在超音波卡關時補位", text: "不是要取代所有急診超音波，而是在判斷仍不清楚時補上功能線索。" }
         ]
@@ -5021,7 +5021,7 @@ const EXAM_READER_GUIDES = {
             { title: "安靜與微光不是形式", text: "因為你想凍結的是基準狀態，不是病人剛剛被聊天或噪音拉高的腦活動。" },
             { title: "癲癇時機決定意義", text: "發作中注射看到的是 hotspot，發作間期則可能反過來呈現低灌流。" },
             { title: "失智看的是網路型態", text: "不同型失智會在特定灌流網路掉下來，這和單純看萎縮是不同層次的問題。" },
-            { title: "它也有急重症角色", text: "從腦死判定到特定血流評估，這頁的價值不只在門診失智工作。" }
+            { title: "也有急重症角色", text: "從腦死判定到特定血流評估，腦灌流影像不只用在門診失智工作。" }
         ]
     },
     TRODAT: {
@@ -5031,7 +5031,7 @@ const EXAM_READER_GUIDES = {
         cards: [
             { title: "逗號變句號是結果，不是口訣", text: "那個經典外觀背後代表的是 putamen 先掉訊號、病程再往尾核延伸。" },
             { title: "正常掃描也很有價值", text: "若 DAT 保留，原發性顫抖或藥物性巴金森就會比退化性疾病更值得優先考慮。" },
-            { title: "排程限制本身就是臨床現實", text: "昂貴試劑、批次開瓶與長時間等待，都讓這頁的行政邏輯和一般掃描不同。" },
+            { title: "排程限制也是臨床現實", text: "昂貴試劑、批次開瓶與長時間等待，都讓 TRODAT 的行政邏輯和一般掃描不同。" },
             { title: "頭能不能穩住，比病名更早決定能不能做", text: "因為一旦無法固定，後面再正確的生理假設也無法換成可用影像。" }
         ]
     },
@@ -5041,7 +5041,7 @@ const EXAM_READER_GUIDES = {
         lead: "Cisternography 不是看固定器官攝取，而是追蹤腦脊髓液的流動路徑，觀察是否有滯留、逆流或外漏。",
         cards: [
             { title: "腰椎穿刺讓它一開始就不同", text: "這不是一般靜脈注射檢查，所以病人說明與風險感受都必須提前處理。" },
-            { title: "多時點才看得出路徑", text: "2 到 4 小時、24 小時、48 小時的差別，就是這頁真正的判讀語言。" },
+            { title: "多時點才看得出路徑", text: "2 到 4 小時、24 小時、48 小時的差別，是 cisternography 的判讀重點。" },
             { title: "NPH 在看的是逆流與滯留", text: "如果藥物一直待在腦室、不肯往大腦表面上去，臨床意義就會浮現。" },
             { title: "CSF leak 則是在找外漏", text: "當病人的問題變成鼻漏或耳漏，閱讀焦點就從循環變成定位。" }
         ]
@@ -5053,7 +5053,7 @@ const EXAM_READER_GUIDES = {
         cards: [
             { title: "MAA 的邏輯是微血管暫時取樣", text: "顆粒不是要堵住肺，而是在可接受範圍內替你標記當下的肺灌流分布。" },
             { title: "粒子數管理是安全核心", text: "兒科、肺高壓或特殊肺功能病人，粒子數不是小細節，而是直接影響風險控制。" },
-            { title: "它常在不能做 CTA 時補位", text: "顯影劑過敏、腎功能不佳或其他限制，讓這頁保有穩定的臨床位置。" },
+            { title: "常在不能做 CTA 時補位", text: "顯影劑過敏、腎功能不佳或其他限制，讓 V/Q 保有穩定的臨床位置。" },
             { title: "楔形缺損要帶著臨床看", text: "影像不是獨立證據，呼吸症狀、X 光與其他風險因子會一起決定解釋方向。" }
         ]
     },
@@ -5063,7 +5063,7 @@ const EXAM_READER_GUIDES = {
         lead: "Ga-67 通常需要較長等待時間，讓背景逐步下降，再看發炎或特定病理組織的攝取情形。",
         cards: [
             { title: "等待不是效率差", text: "48 到 72 小時的延遲，是在讓非特異背景慢慢退掉，病灶對比逐步拉開。" },
-            { title: "它不只追感染", text: "某些淋巴瘤、類肉瘤病與慢性發炎也會讓這頁有解讀價值。" },
+            { title: "不只追感染", text: "某些淋巴瘤、類肉瘤病與慢性發炎也會讓 Ga-67 掃描有解讀價值。" },
             { title: "腸道處理會影響判讀", text: "瀉劑與腸道背景管理不是附帶提醒，而是為了避免把腸內殘留誤認成病灶。" },
             { title: "它更像補充而不是第一線", text: "在 PET、WBC scan 或現代解剖影像已很成熟的時代，Ga-67 常出現在特定情境下的補位角色。" }
         ]
@@ -5073,10 +5073,10 @@ const EXAM_READER_GUIDES = {
         title: "白血球掃描重點在抽血、標記與回注流程",
         lead: "WBC scan 不只是在看影像，前面的抽血、分離、標記與回注流程也會直接影響結果品質。",
         cards: [
-            { title: "它依賴的是病人自己的趨化能力", text: "標記白血球之後要回到真正感染處，所以這頁比一般發炎掃描更接近『活的生理反應』。" },
+            { title: "依賴病人自己的趨化能力", text: "標記白血球之後要回到真正感染處，所以比一般發炎掃描更接近活的生理反應。" },
             { title: "白血球太低就先別硬做", text: "因為不只是敏感度差，連標記和回注本身都可能變得不可靠。" },
             { title: "早期與延遲相要一起讀", text: "真正感染通常會逐步聚焦，而不是一直維持模糊不變。" },
-            { title: "抗生素與免疫狀態會改故事", text: "陰性結果若脫離用藥史與白血球狀態來看，很容易被過度解讀。" }
+            { title: "抗生素與免疫狀態會改變結果", text: "陰性結果若脫離用藥史與白血球狀態來看，很容易被過度解讀。" }
         ]
     },
     I131: {
@@ -5087,7 +5087,7 @@ const EXAM_READER_GUIDES = {
             { title: "攝碘能力是治療成立的入口", text: "沒有 NIS 與適當 TSH 刺激，再好的活度也未必能換來有效治療。" },
             { title: "低碘與停藥都在替病灶讓路", text: "前置限制看似繁瑣，其實都是在提升真正目標的攝取優勢。" },
             { title: "病房與出院不是附屬流程", text: "補水、排尿、污染處理與返家安排，本身就是治療安全性的一部分。" },
-            { title: "這頁一定要想到家屬", text: "I-131 會直接碰到家庭空間、睡眠距離與幼兒接觸安排，所以衛教不能只停在病人本人。" }
+            { title: "一定要想到家屬", text: "I-131 會直接碰到家庭空間、睡眠距離與幼兒接觸安排，所以衛教不能只停在病人本人。" }
         ],
         conceptDiagram: {
             type: "chain",
@@ -5110,7 +5110,7 @@ const EXAM_READER_GUIDES = {
         lead: "這種治療成立的前提，是病灶仍保有 MIBG 攝取能力。若沒有這個前提，後面的治療風險與限制就不值得承擔。",
         cards: [
             { title: "先有診斷攝取，才談治療", text: "治療前影像證明不是流程裝飾，而是在確認這條運輸路徑還活著。" },
-            { title: "甲狀腺阻斷與家屬教育都要前置", text: "因為這頁的風險不只在病人身上，也在照顧者如何面對污染與接觸限制。" },
+            { title: "甲狀腺阻斷與家屬教育都要前置", text: "I-131 MIBG 的風險不只在病人身上，也在照顧者如何面對污染與接觸限制。" },
             { title: "兒科照護是另一層難題", text: "神經母細胞瘤個案常牽涉陪病、安撫、排泄污染與幹細胞備援等整體規劃。" },
             { title: "病房管理直接決定可行性", text: "尿液、汗液與嘔吐物都可能帶來污染，這不是給完藥再想的事。" }
         ]
@@ -5118,10 +5118,10 @@ const EXAM_READER_GUIDES = {
     Sm153: {
         eyebrow: "先看治療目標",
         title: "Sm-153 主要用於骨轉移疼痛緩解",
-        lead: "Sm-153 EDTMP 的角色主要是緩解骨轉移疼痛，而不是根治腫瘤。這一頁重點是病人篩選、效果期待與副作用監測。",
+        lead: "Sm-153 EDTMP 的角色主要是緩解骨轉移疼痛，而不是根治腫瘤。重點是病人篩選、效果期待與副作用監測。",
         cards: [
             { title: "先確認病灶真的屬於它", text: "骨掃描有對應攝取、且疼痛來源和成骨活性病灶對得上，治療才比較有機會有效。" },
-            { title: "這頁在治痛，不是在治所有病程", text: "若把它理解成通用抗癌藥，病人與團隊都容易對效果產生錯誤期待。" },
+            { title: "治痛，不是治所有病程", text: "若把它理解成通用抗癌藥，病人與團隊都容易對效果產生錯誤期待。" },
             { title: "骨髓儲備是關鍵限制", text: "因為多發骨轉移病人常已歷經多線治療，血球餘裕很可能比病灶數量更早成為限制。" },
             { title: "短期 flare 要先講", text: "疼痛有時會短暫加劇，若事前沒有說明，病人會以為治療讓病情惡化。" }
         ]
@@ -5140,10 +5140,10 @@ const EXAM_READER_GUIDES = {
             type: "decision",
             kicker: "治療篩選圖",
             title: "Ra-223：先確定病程由骨病灶主導，再談 alpha 治療",
-            lead: "這頁最怕讀者只記得 Xofigo 或 alpha 粒子。真正的入口是病人是不是落在那個很窄、但很有價值的適應症區間。",
+            lead: "Ra-223 的入口是病人是否落在很窄、但很有價值的適應症區間。",
             items: [
                 { label: "入口", tone: "info", title: "症狀性骨轉移是主場", text: "疼痛與病程負擔主要來自骨病灶時，Ra-223 才比較可能把優勢轉成臨床獲益。" },
-                { label: "排除", tone: "critical", title: "內臟轉移會改變故事", text: "若肝、肺等內臟病灶主導病程，骨靶向 alpha 治療的價值會被大幅削弱。" },
+                { label: "排除", tone: "critical", title: "內臟轉移會改變治療價值", text: "若肝、肺等內臟病灶主導病程，骨靶向 alpha 治療的價值會被大幅削弱。" },
                 { label: "機制", tone: "success", title: "類鈣性質走向骨重塑區", text: "Ra-223 聚在骨轉移微環境附近，短射程高能量是它的核心優勢。" },
                 { label: "門票", tone: "warning", title: "CBC 決定每一輪能不能進場", text: "骨髓儲備不足時，病人想做也未必安全；血球監測不是附屬流程。" },
                 { label: "衛教", tone: "neutral", title: "不用隔離但仍要會清潔", text: "主要糞便排泄，如廁清潔、手部衛生與照護者說明仍要講清楚。" }
@@ -5154,12 +5154,12 @@ const EXAM_READER_GUIDES = {
     Lu177PSMA: {
         eyebrow: "先看病人篩選",
         title: "Lu-177 PSMA 治療前要先看病灶分布與器官耐受度",
-        lead: "PSMA 影像有攝取不代表一定適合治療。這一頁重點是病人篩選、正常器官風險、尿路管理與治療目標。",
+        lead: "PSMA 影像有攝取不代表一定適合治療。重點是病人篩選、正常器官風險、尿路管理與治療目標。",
         cards: [
             { title: "不是有亮點就夠", text: "若整體腫瘤生物學已去分化，只剩少數病灶保有 PSMA，治療效果往往不如影像表面那麼樂觀。" },
             { title: "唾液腺、腎臟與骨髓要一起想", text: "這不是只看腫瘤有沒有入口，也要看正常器官能不能承受代價。" },
             { title: "尿路管理是返家衛教核心", text: "排泄帶來的污染控制，會直接影響病人回家後的生活安排與家屬暴露風險。" },
-            { title: "這頁必須和病程目標一起讀", text: "有時候治療目標是延長控制，有時候是減症狀，兩者會改變你怎麼和病人談風險與期待。" }
+            { title: "要和病程目標一起看", text: "有時候治療目標是延長控制，有時候是減症狀，兩者會改變你怎麼和病人談風險與期待。" }
         ]
     },
     Lu177DOTATATE: {
@@ -5170,7 +5170,7 @@ const EXAM_READER_GUIDES = {
             { title: "DOTATATE PET 其實像資格考", text: "Krenning score 與受體分布不只是影像資訊，而是在替治療劃線。" },
             { title: "氨基酸保腎不是配角", text: "腎臟是最需要被保護的器官之一，所以 amino acid infusion 本身就是治療設計的一部分。" },
             { title: "噁心常來自保護流程本身", text: "很多病人最不舒服的不是放射藥物，而是腎保護輸液與整體療程負擔。" },
-            { title: "這頁要用長程視角讀", text: "PRRT 少有一針見效的戲劇性，它更像一場分段完成的控制策略。" }
+            { title: "要用長程視角看", text: "PRRT 少有一針見效的戲劇性，它更像一場分段完成的控制策略。" }
         ]
     },
     Y90SIRT: {
@@ -5181,18 +5181,18 @@ const EXAM_READER_GUIDES = {
             { title: "Mapping 幾乎和正式治療同等重要", text: "MAA 模擬是在證明你對血流的假設沒有錯，不是走程序。" },
             { title: "肺分流與腸道異常分流是兩大警報", text: "因為一旦微球跑錯地方，風險不是輕微副作用，而是嚴重非目標照射。" },
             { title: "肝功能餘裕必須先算進來", text: "Y-90 不是只看腫瘤能不能打，也要看剩下的肝能不能承受被治療後的反應。" },
-            { title: "這頁一定要用跨科語言看", text: "介入放射、肝膽腸胃與核醫缺一不可，所以它不是任何單科能獨立完成的劇本。" }
+            { title: "需要跨科合作", text: "介入放射、肝膽腸胃與核醫缺一不可，不是任何單科能獨立完成的療程。" }
         ]
     },
     OperationGuide: {
         eyebrow: "先照步驟做",
         title: "AI 辨識操作說明以固定步驟與減少錯誤為主",
-        lead: "操作型頁面的重點是照順序完成每一步，減少漏做、跳步或誤判。這一頁主要提供實際操作時的流程提醒。",
+        lead: "操作型頁面的重點是照順序完成每一步，減少漏做、跳步或誤判。內容提供實際操作時的流程提醒。",
         cards: [
             { title: "照步驟走，比記口訣更重要", text: "圖像導引的目的就是讓你在現場少猜一步、少漏一步。" },
-            { title: "每一張圖都在擋一種常見失誤", text: "從開啟功能、選擇來源到確認結果，這頁其實是在替操作建立防呆欄杆。" },
+            { title: "每一張圖都在擋一種常見失誤", text: "從開啟功能、選擇來源到確認結果，都是在替操作建立防呆欄杆。" },
             { title: "結果出來後仍要做人類判斷", text: "操作成功不等於辨識一定正確，最後的核對仍需要回到內容與影像本身。" },
-            { title: "這頁適合拿來帶新人上手", text: "它不是背景知識地圖，而是降低第一次操作焦慮與失誤率的工作頁。" }
+            { title: "適合帶新人上手", text: "這不是背景知識地圖，而是降低第一次操作焦慮與失誤率的工作頁。" }
         ]
     }
 };
@@ -5636,17 +5636,17 @@ const currentState = {
 
 const HOME_HUB_CONFIG = {
     quickActions: [
-        { view: 'PatientQA', kicker: '高頻應對', title: '病人溝通與衛教', desc: '先講風險、目的，再交代配合事項。', variant: 'warning' },
+        { view: 'PatientQA', kicker: '衛教', title: '病人溝通與衛教', desc: '說清楚風險、目的與配合事項。', variant: 'warning' },
         { view: 'DosageTable', kicker: '工具', title: '藥物與劑量工具', desc: '快速查藥物、活度與兒科劑量公式。', variant: 'success' },
-        { view: 'NMBasics', kicker: '儀器與技術', title: '核醫設備導覽', desc: 'gamma camera、SPECT/CT、PET/CT 與 QC 一次看。', variant: 'info' },
+        { view: 'NMBasics', kicker: '儀器', title: '核醫設備導覽', desc: '查 gamma camera、SPECT/CT、PET/CT 與 QC。', variant: 'info' },
         { view: 'PET', kicker: '高頻檢查', title: 'FDG PET/CT', desc: '空腹、血糖與流程節點先一次看清。', variant: 'warning' },
-        { view: 'RadiationSafety', kicker: '安全底線', title: '輻射防護', desc: '新人最容易忽略的原則與限制。', variant: 'success' },
-        { view: 'DocumentControl', kicker: '品質管理', title: '文件與品質管理', desc: '先分清版本、責任與紀錄，文件才真的保護現場。', variant: 'info' }
+        { view: 'RadiationSafety', kicker: '安全', title: '輻射防護', desc: '查常用限制、污染處理與治療後注意事項。', variant: 'success' },
+        { view: 'DocumentControl', kicker: '品質', title: '文件與品質管理', desc: '查版本、責任、表單與紀錄管理。', variant: 'info' }
     ],
     heroMetrics: [
-        { label: '首頁定位', value: '高頻任務優先', desc: '先知道現在做什麼，再慢慢展開完整知識樹。' },
-        { label: '值班節奏', value: '提醒與工具同屏', desc: '碎片時間也能快速核對條件與打開常用工具。' },
-        { label: '閱讀策略', value: '先做對，再做快', desc: '把焦慮改成順序，把順序改成可執行動作。' }
+        { label: '常用入口', value: '高頻任務優先', desc: '先放值班、排檢與衛教最常用的內容。' },
+        { label: '快速核對', value: '提醒與工具同屏', desc: '血糖、空腹、治療限制與常用工具集中查。' },
+        { label: '工作順序', value: '先做對，再做快', desc: '先分流風險，再處理流程與細節。' }
     ],
     heroChecks: [
         {
@@ -5780,8 +5780,8 @@ function buildConceptDiagramHTML(diagram) {
     return `
         <section class="concept-diagram is-${type}" aria-label="${diagram.title || '內容圖解'}">
             <div class="concept-diagram-header">
-                <span class="concept-diagram-kicker">${diagram.kicker || '先看圖解'}</span>
-                <h2>${diagram.title || '先把這頁的大圖看懂'}</h2>
+                <span class="concept-diagram-kicker">${diagram.kicker || '圖解'}</span>
+                <h2>${diagram.title || '重點關係'}</h2>
                 ${diagram.lead ? `<p>${diagram.lead}</p>` : ''}
             </div>
             <div class="concept-diagram-body">
@@ -5801,6 +5801,92 @@ function getHeroInsightCards(guide, maxCards = 3) {
     return guide.cards.slice(0, maxCards);
 }
 
+function shouldUseImmersiveReading(key, data) {
+    return data && !data.isHomeHub && !data.isDosageCalc && !data.isCalendar;
+}
+
+function getReadableBlockTitle(block, index) {
+    if (!block) return `第 ${index + 1} 段`;
+    if (block.title) return block.title;
+    if (typeof block.html === 'string') {
+        const headingMatch = block.html.match(/<h[3-5][^>]*>(.*?)<\/h[3-5]>/i);
+        if (headingMatch && headingMatch[1]) {
+            return headingMatch[1].replace(/<[^>]*>/g, '').trim();
+        }
+    }
+    return index === 0 ? '重點' : `補充說明 ${index + 1}`;
+}
+
+function getReadingTocHTML(blocks) {
+    return '';
+}
+
+function renderContentBlock(block, index) {
+    switch (block.type) {
+        case 'info-box-blue':
+            return `<div id="section-${index + 1}" class="info-box info-box-blue">${block.html}</div>`;
+        case 'info-box-emerald':
+            return `<div id="section-${index + 1}" class="info-box info-box-emerald">${block.html}</div>`;
+        case 'info-box-amber':
+            return `<div id="section-${index + 1}" class="info-box info-box-amber">${block.html}</div>`;
+        case 'info-box-rose':
+            return `<div id="section-${index + 1}" class="info-box info-box-rose">${block.html}</div>`;
+        case 'info-box-purple':
+            return `<div id="section-${index + 1}" class="info-box info-box-purple">${block.html}</div>`;
+        case 'section':
+            return `<section id="section-${index + 1}" class="content-section">
+                <h3 class="section-heading">${block.title}</h3>
+                ${block.html}
+            </section>`;
+        case 'qa':
+            return `<section id="section-${index + 1}" class="qa-section">
+                <h3 class="section-heading">常見問題</h3>
+                ${block.items.map(item => `
+                    <div class="qa-item">
+                        <button type="button" class="qa-question" aria-expanded="false" onclick="toggleQA(this)">
+                            <span class="qa-question-text">${item.q}</span>
+                            <span class="qa-chevron" aria-hidden="true">＋</span>
+                        </button>
+                        <div class="qa-answer">${item.a}</div>
+                    </div>
+                `).join('')}
+            </section>`;
+        default:
+            return block.html || '';
+    }
+}
+
+function renderProgressiveBlockBody(block) {
+    switch (block.type) {
+        case 'info-box-blue':
+        case 'info-box-emerald':
+        case 'info-box-amber':
+        case 'info-box-rose':
+        case 'info-box-purple':
+        case 'section':
+            return block.html || '';
+        default:
+            return block.html || '';
+    }
+}
+
+function renderImmersiveContentBlock(block, index) {
+    const html = renderContentBlock(block, index);
+    if (index < 1 || block.type === 'qa') return html;
+
+    const title = getReadableBlockTitle(block, index);
+    return `
+        <details id="section-${index + 1}" class="progressive-section">
+            <summary>
+                <span>${title}</span>
+            </summary>
+            <div class="progressive-section-body">
+                ${renderProgressiveBlockBody(block)}
+            </div>
+        </details>
+    `;
+}
+
 function buildReaderGuideHTML(key, data) {
     const guide = getReaderGuideData(key);
     const heroCards = getHeroInsightCards(guide);
@@ -5809,8 +5895,7 @@ function buildReaderGuideHTML(key, data) {
     return `
         <section class="reader-guide">
             <div class="reader-guide-header">
-                <span class="reader-guide-eyebrow">${guide.eyebrow || '先讀這裡'}</span>
-                <h2>${guide.title || '先看這幾個重點'}</h2>
+                <h2>${guide.title || '重點'}</h2>
                 ${guide.lead ? `<p>${guide.lead}</p>` : ''}
             </div>
             <div class="reader-guide-grid">
@@ -6054,52 +6139,52 @@ const EXAM_INLINE_GUIDE_IMAGES = {
 
 const LEARNING_PAGE_PLANS = {
     NMBasics: {
-        label: '推薦讀法',
-        title: '先看核醫在看什麼，再看設備與 QC。',
-        desc: '先理解功能影像、常見設備與 QC 的基本概念，後面讀各種檢查會比較容易。',
-        steps: ['先看核醫到底在回答什麼問題', '再看主流設備與技術差異', '最後把 QC 與治療安全接起來']
+        label: '重點',
+        title: '核醫看的是功能，設備與 QC 會影響影像可信度。',
+        desc: '先理解功能影像、常見設備與 QC，後面讀各種檢查會比較容易。',
+        steps: ['功能影像在看什麼', '常見設備與技術差異', 'QC 怎麼影響影像']
     },
     DocumentControl: {
-        label: '推薦讀法',
-        title: '先分清文件種類，再看版本與紀錄管理。',
+        label: '重點',
+        title: '文件要分清種類、版本、責任與紀錄。',
         desc: '先懂品質手冊、程序書、作業規範、表單與紀錄各自在做什麼，後面才不容易混亂。',
-        steps: ['先看文件分階', '再看外來文件與修訂控制', '最後確認紀錄保存與追溯邏輯']
+        steps: ['文件分階', '外來文件與修訂控制', '紀錄保存與追溯']
     },
     Radiopharmacy: {
-        label: '作業順序',
-        title: '先看到貨、分裝、放行與污染控制的順序。',
-        desc: '熱核室工作重點在順序與紀錄。先看主要流程，再補細節。',
-        steps: ['先看到貨與驗收', '再看分裝、貼標與放行', '最後看污染偵測、料帳與廢棄處理']
+        label: '重點',
+        title: '熱核室要把到貨、分裝、放行與污染控制做清楚。',
+        desc: '熱核室工作重點在順序與紀錄。主要流程清楚，細節才不會漏。',
+        steps: ['到貨與驗收', '分裝、貼標與放行', '污染偵測、料帳與廢棄處理']
     },
     PatientQA: {
-        label: '溝通順序',
-        title: '先辨識風險，再解釋目的，最後交代配合事項。',
+        label: '重點',
+        title: '病人需要知道風險、目的與配合事項。',
         desc: '病人通常先需要知道要注意什麼、為什麼要做、以及今天要怎麼配合。',
-        steps: ['先辨識高風險與禁忌', '再翻成病人聽得懂的目的', '最後講當天流程與檢後提醒']
+        steps: ['高風險與禁忌', '檢查目的', '當天流程與檢後提醒']
     },
     RadiationSafety: {
-        label: '閱讀節奏',
-        title: '先看場景，再看數字與處理方式。',
-        desc: '先把法規放回日常工作場景，再記劑量與通報規則，會比較好理解。',
-        steps: ['先看核醫科最常遇到的法規場景', '再抓常用數字與門檻', '最後把 ALARA 變成每天真的做得到的動作']
+        label: '重點',
+        title: '輻射防護要能落到日常工作。',
+        desc: '把法規、劑量、污染處理與治療後限制放在實際工作情境中看。',
+        steps: ['常見法規場景', '常用數字與門檻', 'ALARA 的日常做法']
     },
     I131Ward: {
-        label: '閱讀順序',
-        title: '先看完整住院流程，再看各段重點。',
+        label: '重點',
+        title: 'I-131 病房要一起看準備、污染控制與出院安排。',
         desc: 'I-131 病房需要一起看住院前準備、住院期間污染控制與出院安排。',
-        steps: ['先確認誰適合進病房', '再看住院期間的污染與照護節奏', '最後看出院與返家怎麼個別化交代']
+        steps: ['入院條件', '住院污染與照護', '出院與返家限制']
     },
     DosageTable: {
-        label: '安全讀法',
-        title: '先確認藥物與情境，再用表格與工具交叉核對。',
+        label: '重點',
+        title: '劑量表要和藥物、情境與醫囑一起看。',
         desc: '先把藥物、成人或兒科情境與 protocol 對上，再用表格或計算器核對。',
-        steps: ['先確認檢查與藥物是不是同一種', '再分成人與兒科邏輯', '最後用表格與計算器一起核對']
+        steps: ['檢查與藥物', '成人或兒科', '表格與計算器核對']
     },
     DosageCalc: {
-        label: '使用提醒',
-        title: '先選對檢查，再輸入體重，最後回頭核對結果。',
+        label: '重點',
+        title: '計算器只做核對，不能取代醫囑與科內規範。',
         desc: '計算器是核對工具，結果仍要再對照公式、protocol 與醫囑。',
-        steps: ['先選正確檢查項目', '若是兒科再輸入體重', '輸出後仍回頭核對公式、科內 protocol 與醫囑']
+        steps: ['選檢查項目', '兒科輸入體重', '回頭核對公式與醫囑']
     },
     Calendar: {
         label: '使用方式',
@@ -6108,10 +6193,10 @@ const LEARNING_PAGE_PLANS = {
         steps: ['先找日期與月份', '再看停診、補班或行政休假', '最後再回到病人通知與排藥安排']
     },
     default: {
-        label: '推薦讀法',
-        title: '先看主題，再往細節讀。',
-        desc: '先知道這一頁在解什麼問題，再挑需要的區塊往下看。',
-        steps: ['先看這頁在解什麼問題', '再挑你現在最需要的區塊', '最後順著延伸導覽往下讀']
+        label: '重點',
+        title: '先確認目的，再看流程、限制與注意事項。',
+        desc: '頁面會先放最常用的判斷，再接細節與補充資料。',
+        steps: ['目的', '流程與限制', '注意事項']
     }
 };
 
@@ -6263,7 +6348,7 @@ function buildExamFlowHTML(key, data) {
     const supportLinks = getExamFlowSupportLinks(data.category);
 
     return `
-        <article class="exam-article exam-flow-page">
+        <article class="exam-article exam-flow-page is-immersive-reading">
             <section class="exam-flow-hero">
                 <div class="exam-flow-hero-grid">
                     <div class="exam-flow-copy">
@@ -6284,7 +6369,7 @@ function buildExamFlowHTML(key, data) {
                     <aside class="exam-flow-panel">
                         ${data.timeArchitecture?.steps ? `
                             <div class="exam-flow-panel-block">
-                                <span class="exam-flow-panel-kicker">先知道流程怎麼走</span>
+                                <span class="exam-flow-panel-kicker">流程</span>
                                 <div class="exam-flow-timeline">
                                     ${data.timeArchitecture.steps.map((step) => `
                                         <div class="exam-flow-timeline-step">
@@ -6399,11 +6484,11 @@ function buildLearningGuideHTML(key, data) {
     const specialHTML = buildSpecialContentHTML(key, data);
 
     return `
-        <article class="exam-article learning-guide-page">
+        <article class="exam-article learning-guide-page is-immersive-reading">
             <section class="learning-hero">
                 <div class="learning-hero-grid">
                     <div class="learning-hero-copy">
-                        <span class="learning-eyebrow">${guide.eyebrow || '學習導覽頁'}</span>
+                        <span class="learning-eyebrow">${guide.eyebrow || ''}</span>
                         <h1>${guide.title || data.title}</h1>
                         <p class="learning-hero-lead">${guide.lead || data.subtitle || ''}</p>
                         ${heroCards.length > 0 ? `
@@ -6419,7 +6504,6 @@ function buildLearningGuideHTML(key, data) {
                     </div>
                     <aside class="learning-hero-panel">
                         <div class="learning-panel-block">
-                            <span class="learning-panel-kicker">${plan.label}</span>
                             <h2>${plan.title}</h2>
                             <p>${plan.desc}</p>
                             <ol class="learning-route-list">
@@ -6428,7 +6512,7 @@ function buildLearningGuideHTML(key, data) {
                         </div>
                         ${nextSteps.length > 0 ? `
                             <div class="learning-panel-block">
-                                <span class="learning-panel-kicker">接著讀什麼</span>
+                                <span class="learning-panel-kicker">相關內容</span>
                                 <div class="guide-nav-grid">
                                     ${nextSteps.map((item) => renderGuideNavCard(item)).join('')}
                                 </div>
@@ -6444,8 +6528,8 @@ function buildLearningGuideHTML(key, data) {
                 <section class="learning-section">
                     <div class="learning-section-heading">
                         <div>
-                            <h2>先建立框架，不要一開始就背細節</h2>
-                            <p>這些提醒先幫讀者定位：現在該先懂什麼、哪些內容值得先看，才能把後面的資訊接住。</p>
+                            <h2>重點提醒</h2>
+                            <p>先看容易出錯或需要先判斷的內容。</p>
                         </div>
                     </div>
                     <div class="learning-callout-grid">
@@ -6462,8 +6546,8 @@ function buildLearningGuideHTML(key, data) {
                 <section class="learning-section">
                     <div class="learning-section-heading">
                         <div>
-                            <h2>先用工具把不確定感降下來</h2>
-                            <p>工具型頁面先回答眼前問題，能降低認知負擔，也更容易把人留在站內繼續讀下去。</p>
+                            <h2>工具</h2>
+                            <p>需要計算或核對時，先在這裡處理。</p>
                         </div>
                     </div>
                     <div class="learning-special-surface">
@@ -6476,8 +6560,8 @@ function buildLearningGuideHTML(key, data) {
                 <section class="learning-section">
                     <div class="learning-section-heading">
                         <div>
-                            <h2>把內容拆成可吸收的模組，再往下讀</h2>
-                            <p>這一批頁面不再像教科書連續堆疊，而是把知識切成讀者能停留、比較、回來重讀的小單位。</p>
+                            <h2>詳細內容</h2>
+                            <p>依主題分段閱讀，需要更多資料時再打開補充內容。</p>
                         </div>
                     </div>
                     <div class="learning-module-grid">
@@ -6495,8 +6579,8 @@ function buildLearningGuideHTML(key, data) {
                 <section class="learning-section">
                     <div class="learning-section-heading">
                         <div>
-                            <h2>把常見卡點留在最後，方便反覆回來查</h2>
-                            <p>FAQ 放在尾段，能讓讀者先建立主幹，再回頭釐清個別問題，不會一開始就被很多問句打散注意力。</p>
+                            <h2>常見問題</h2>
+                            <p>把容易問錯或容易漏講的內容集中放在這裡。</p>
                         </div>
                     </div>
                     <div class="qa-section">
@@ -6524,14 +6608,13 @@ function buildHomeHubHTML() {
             <section class="home-hero">
                 <div class="home-hero-grid">
                     <div class="home-hero-copy">
-                        <span class="home-eyebrow">今日工作入口</span>
-                        <p class="home-hero-kicker">先把順序排清楚，再往每一個細節深入。</p>
-                        <h1>把今天要做的事排成順序，再往每一個細節深入。</h1>
-                        <p class="home-hero-lead">首頁先幫你定位：高頻任務放前面、高風險條件放旁邊、常用工具留在同一屏。忙的時候先做對，空下來再回到完整知識樹慢慢讀。</p>
+                        <span class="home-eyebrow">首頁總覽</span>
+                        <h1>先查常用工作，再進入完整內容。</h1>
+                        <p class="home-hero-lead">高風險條件、病人衛教、劑量工具與常用檢查放在最前面。需要細節時，再從左側單元進入。</p>
                         <div class="home-hero-actions">
-                            ${renderHomeLinkCard({ view: 'PatientQA', title: '先看病人溝通與衛教', desc: '櫃台、電話與檢前說明最常用。', kicker: '立即上手' }, 'home-action-card')}
-                            ${renderHomeLinkCard({ view: 'DosageTable', title: '直接開藥物與劑量工具', desc: '劑量表與兒科計算器放在同一頁。', kicker: '工具' }, 'home-action-card')}
-                            ${renderHomeLinkCard({ view: 'NMBasics', title: '先看核醫儀器與技術', desc: 'gamma camera、SPECT/CT、PET 與 QC 一次看。', kicker: '導覽' }, 'home-action-card')}
+                            ${renderHomeLinkCard({ view: 'PatientQA', title: '病人溝通與衛教', desc: '櫃台、電話與檢前說明最常用。', kicker: '衛教' }, 'home-action-card')}
+                            ${renderHomeLinkCard({ view: 'DosageTable', title: '藥物與劑量工具', desc: '查藥物、活度與兒科劑量公式。', kicker: '工具' }, 'home-action-card')}
+                            ${renderHomeLinkCard({ view: 'RadiationSafety', title: '輻射防護與治療安全', desc: '查污染處理、返家限制與治療型輻防。', kicker: '安全' }, 'home-action-card')}
                         </div>
                         <div class="home-hero-metrics">
                             ${HOME_HUB_CONFIG.heroMetrics.map((item) => `
@@ -6545,9 +6628,8 @@ function buildHomeHubHTML() {
                     </div>
                     <aside class="home-hero-panel">
                         <div class="home-panel-header">
-                            <span class="home-panel-label">值班視角</span>
-                            <h2>這一屏先給你定位、提醒與入口。</h2>
-                            <p>不用先在整棵知識樹裡找方向；先把今天會用到的條件、工具與最近動線收在右側。</p>
+                            <h2>先核對高風險條件</h2>
+                            <p>懷孕、哺乳、治療性核醫、血糖與空腹條件，先確認再安排流程。</p>
                         </div>
                         <div class="home-panel-section">
                             <div class="home-panel-section-heading">
@@ -6636,7 +6718,7 @@ function buildI131TreatmentHTML(data) {
     const inlineGuideImageHTML = getInlineGuideImageHTML('I131');
 
     return `
-        <article class="exam-article i131-therapy-page">
+        <article class="exam-article i131-therapy-page is-immersive-reading">
             <section class="i131-hero">
                 <div class="i131-hero-copy">
                     <span class="i131-eyebrow">${guide?.eyebrow || 'I-131 不是只把藥喝下去而已'}</span>
@@ -6655,7 +6737,7 @@ function buildI131TreatmentHTML(data) {
                 <div class="i131-hero-grid is-panel-only">
                     <aside class="i131-hero-panel">
                         <div class="i131-panel-block">
-                            <span class="i131-panel-kicker">先擋住的風險</span>
+                            <span class="i131-panel-kicker">風險提醒</span>
                             <div class="i131-alert-stack">
                                 ${data.safetyAlerts.slice(0, 2).map((item) => `
                                     <div class="i131-alert-card is-${item.level}">
@@ -6667,7 +6749,7 @@ function buildI131TreatmentHTML(data) {
                             </div>
                         </div>
                         <div class="i131-panel-block">
-                            <span class="i131-panel-kicker">排程與病房底線</span>
+                            <span class="i131-panel-kicker">排程與病房限制</span>
                             <div class="i131-rule-list">
                                 ${data.operationalRules.map((item) => `
                                     <div class="i131-rule-item">
@@ -6687,8 +6769,8 @@ function buildI131TreatmentHTML(data) {
             <section class="i131-section">
                 <div class="i131-section-heading">
                     <div>
-                        <h2>先分清楚這次 I-131 在解哪一個問題</h2>
-                        <p>只要治療目的沒分清，後面的解釋、期待與風險溝通就會一路混掉。</p>
+                        <h2>I-131 治療目的</h2>
+                        <p>先分清楚是甲亢、殘餘組織消融，還是復發或轉移治療。</p>
                     </div>
                 </div>
                 <div class="i131-goal-grid">
@@ -6705,8 +6787,8 @@ function buildI131TreatmentHTML(data) {
             <section class="i131-section">
                 <div class="i131-section-heading">
                     <div>
-                        <h2>治療成立前，先把這三件事做對</h2>
-                        <p>真正要管理的不是單一活度數字，而是入口、競爭條件與安全邊界。</p>
+                        <h2>治療前要確認的事</h2>
+                        <p>確認適應症、停藥與低碘準備、病房與返家限制。</p>
                     </div>
                 </div>
                 <div class="i131-decision-grid">
@@ -6722,8 +6804,8 @@ function buildI131TreatmentHTML(data) {
             <section class="i131-section">
                 <div class="i131-section-heading">
                     <div>
-                        <h2>把病人的旅程一次講完整</h2>
-                        <p>這頁最怕的不是資訊不夠，而是把病人真正會遇到的節點拆散講，最後誰都記不住。</p>
+                        <h2>病人會經過哪些步驟</h2>
+                        <p>把治療前、住院中、出院後的注意事項連在一起看。</p>
                     </div>
                 </div>
                 <div class="i131-journey-grid">
@@ -6742,8 +6824,8 @@ function buildI131TreatmentHTML(data) {
             <section class="i131-section">
                 <div class="i131-section-heading">
                     <div>
-                        <h2>病安提醒與工作現場防呆</h2>
-                        <p>這一區不是補充資料，而是值班與排程時最不該漏掉的內容。</p>
+                        <h2>病安提醒與工作核對</h2>
+                        <p>把值班與排程時最容易漏掉的內容集中核對。</p>
                     </div>
                 </div>
                 <div class="i131-bottom-grid">
@@ -6809,7 +6891,7 @@ function buildTherapySafetyHTML(key, data) {
     const remainingCallouts = callouts.slice(2);
 
     return `
-        <article class="exam-article i131-therapy-page therapy-page">
+        <article class="exam-article i131-therapy-page therapy-page is-immersive-reading">
             <section class="i131-hero">
                 <div class="i131-hero-copy">
                     <span class="i131-eyebrow">${guide?.eyebrow || data.title}</span>
@@ -6843,7 +6925,7 @@ function buildTherapySafetyHTML(key, data) {
                         ` : ''}
                         ${featuredCallouts.length > 0 ? `
                             <div class="i131-panel-block">
-                                <span class="i131-panel-kicker">先抓住的提醒</span>
+                                <span class="i131-panel-kicker">重點提醒</span>
                                 <div class="i131-alert-stack">
                                     ${featuredCallouts.map((block) => `
                                         <div class="i131-alert-card is-${getTherapyToneFromBlock(block.type)}">
@@ -6863,8 +6945,8 @@ function buildTherapySafetyHTML(key, data) {
                 <section class="i131-section">
                     <div class="i131-section-heading">
                         <div>
-                            <h2>治療成立前，先把前提與風險講清楚</h2>
-                            <p>這些內容不是補充欄，而是判斷現在這位病人值不值得進入這條治療路徑的核心。</p>
+                            <h2>治療前評估</h2>
+                            <p>確認適應症、禁忌、風險與病人能不能配合流程。</p>
                         </div>
                     </div>
                     <div class="therapy-info-grid">
@@ -6881,8 +6963,8 @@ function buildTherapySafetyHTML(key, data) {
                 <section class="i131-section">
                     <div class="i131-section-heading">
                         <div>
-                            <h2>臨床判斷、工作重點與病人衛教</h2>
-                            <p>把原理、適應症、病房管理、返家限制與跨科合作放回同一頁脈絡中，不再拆成零散資料框。</p>
+                            <h2>流程、照護與衛教</h2>
+                            <p>整理治療流程、病房管理、返家限制與跨科合作。</p>
                         </div>
                     </div>
                     <div class="therapy-section-grid">
@@ -6905,12 +6987,7 @@ function attachHomeHubListeners() {
             const targetView = button.dataset.homeView;
             if (!targetView) return;
 
-            document.querySelectorAll('.nav-item').forEach((item) => {
-                item.classList.toggle('active', item.dataset.category === targetView);
-            });
-
-            renderView(targetView);
-            closeMobileMenu();
+            navigateToView(targetView);
         });
     });
 }
@@ -6921,12 +6998,7 @@ function attachGuideNavListeners() {
             const targetView = button.dataset.guideView;
             if (!targetView) return;
 
-            document.querySelectorAll('.nav-item').forEach((item) => {
-                item.classList.toggle('active', item.dataset.category === targetView);
-            });
-
-            renderView(targetView);
-            closeMobileMenu();
+            navigateToView(targetView);
         });
     });
 }
@@ -6996,50 +7068,28 @@ function buildContentHTML(key, data) {
 
     const galleryHTML = buildGalleryHTML(data);
     const specialHTML = buildSpecialContentHTML(key, data);
+    const useImmersiveReading = shouldUseImmersiveReading(key, data);
 
     // Content blocks
     const allContentBlocks = getCombinedContentBlocks(key, data);
 
     let blocksHTML = '';
     if (allContentBlocks.length > 0) {
-        blocksHTML = allContentBlocks.map(block => {
-            switch (block.type) {
-                case 'info-box-blue':
-                    return `<div class="info-box info-box-blue">${block.html}</div>`;
-                case 'info-box-emerald':
-                    return `<div class="info-box info-box-emerald">${block.html}</div>`;
-                case 'info-box-amber':
-                    return `<div class="info-box info-box-amber">${block.html}</div>`;
-                case 'info-box-rose':
-                    return `<div class="info-box info-box-rose">${block.html}</div>`;
-                case 'info-box-purple':
-                    return `<div class="info-box info-box-purple">${block.html}</div>`;
-                case 'section':
-                    return `<div class="content-section">
-                        <h3 class="section-heading">${block.title}</h3>
-                        ${block.html}
-                    </div>`;
-                case 'qa':
-                    return `<div class="qa-section">
-                        <h3 class="section-heading">常見問題</h3>
-                        ${block.items.map(item => `
-                            <div class="qa-item">
-                                <button type="button" class="qa-question" aria-expanded="false" onclick="toggleQA(this)">
-                                    <span class="qa-question-text">${item.q}</span>
-                                    <span class="qa-chevron" aria-hidden="true">＋</span>
-                                </button>
-                                <div class="qa-answer">${item.a}</div>
-                            </div>
-                        `).join('')}
-                    </div>`;
-                default:
-                    return block.html || '';
-            }
-        }).join('');
+        const renderedBlocks = allContentBlocks
+            .map((block, index) => useImmersiveReading
+                ? renderImmersiveContentBlock(block, index)
+                : renderContentBlock(block, index))
+            .join('');
+
+        blocksHTML = useImmersiveReading
+            ? `<div class="immersive-reading-shell">
+                <div class="immersive-reading-body">${renderedBlocks}</div>
+            </div>`
+            : renderedBlocks;
     }
 
     return `
-        <article class="exam-article">
+        <article class="exam-article${useImmersiveReading ? ' is-immersive-reading' : ''}">
             ${headerHTML}
             ${readerGuideHTML}
             ${conceptDiagramHTML}
@@ -7055,13 +7105,16 @@ function renderView(viewName) {
     const container = document.getElementById('content-display');
     const data = EXAM_DATA[viewName];
 
+    if (!container || !data) return;
+    container.setAttribute('aria-busy', 'true');
     container.style.opacity = '0';
-    container.style.transform = 'translateY(8px)';
+    container.style.transform = 'translateY(4px)';
 
     setTimeout(() => {
         container.innerHTML = buildContentHTML(viewName, data);
         container.style.opacity = '1';
         container.style.transform = 'translateY(0)';
+        container.setAttribute('aria-busy', 'false');
 
         // Attach special listeners
         if (viewName === 'HomeHub') attachHomeHubListeners();
@@ -7070,9 +7123,7 @@ function renderView(viewName) {
         if (viewName === 'DosageCalc') attachDosageCalcListeners();
         if (data && data.isI131Calc) attachI131Listeners();
 
-        // Scroll to top
-        container.scrollTop = 0;
-        document.querySelector('.content-scroll')?.scrollTo(0, 0);
+        jumpContentToTop(container);
 
         if (viewName !== 'HomeHub') {
             currentState.viewHistory = [
@@ -7082,7 +7133,39 @@ function renderView(viewName) {
         }
 
         currentState.activeView = viewName;
-    }, 150);
+    }, 90);
+}
+
+function jumpContentToTop(container) {
+    if (container) container.scrollTop = 0;
+    const scroller = document.querySelector('.content-scroll');
+    if (!scroller) return;
+
+    const previousBehavior = scroller.style.scrollBehavior;
+    scroller.style.scrollBehavior = 'auto';
+    scroller.scrollTop = 0;
+    scroller.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+    scroller.style.scrollBehavior = previousBehavior;
+}
+
+function setActiveNavItem(viewName) {
+    document.querySelectorAll('.nav-item').forEach((item) => {
+        const isActive = item.dataset.category === viewName;
+        item.classList.toggle('active', isActive);
+        if (isActive) {
+            item.setAttribute('aria-current', 'page');
+            item.scrollIntoView({ block: 'nearest' });
+        } else {
+            item.removeAttribute('aria-current');
+        }
+    });
+}
+
+function navigateToView(viewName) {
+    if (!viewName || !EXAM_DATA[viewName]) return;
+    setActiveNavItem(viewName);
+    renderView(viewName);
+    closeMobileMenu();
 }
 
 // ================================================================
@@ -7493,10 +7576,7 @@ function setSidebarOpen(isOpen) {
     // Nav item clicks
     document.querySelectorAll('.nav-item').forEach(btn => {
         btn.addEventListener('click', () => {
-            document.querySelectorAll('.nav-item').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            renderView(btn.dataset.category);
-            closeMobileMenu();
+            navigateToView(btn.dataset.category);
         });
     });
 
@@ -7531,46 +7611,6 @@ function closeMobileMenu() {
 }
 
 // ================================================================
-// 🕐 CLOCK
-// ================================================================
-function updateClock() {
-    const now = new Date();
-    const days = ['日', '一', '二', '三', '四', '五', '六'];
-    const month = (now.getMonth() + 1).toString().padStart(2, '0');
-    const date = now.getDate().toString().padStart(2, '0');
-    const day = days[now.getDay()];
-    const hour = now.getHours().toString().padStart(2, '0');
-    const min = now.getMinutes().toString().padStart(2, '0');
-    const el = document.getElementById('clock-display');
-    if (el) el.textContent = `${month}/${date}（週${day}）${hour}:${min}`;
-}
-setInterval(updateClock, 1000);
-updateClock();
-
-// ================================================================
-// 💬 GREETING
-// ================================================================
-function initRandomGreeting() {
-    const el = document.getElementById('smart-greeting');
-    if (!el) return;
-    const greetings = [
-        "忙碌中也要記得深呼吸，您辛苦了。",
-        "每一個細心的檢查，都是病人的安心。",
-        "今天把流程顧穩，就是最好的專業。",
-        "您的專業與耐心，是病人最大的支持。",
-        "別忘了喝杯水，照顧好自己。",
-        "今天也讓排檢更順、更清楚。",
-        "休息一下，充飽電再出發。",
-        "遇事不慌，您是最棒的核醫夥伴。",
-        "把每件小事做好，就是最偉大的成就。",
-        "祝您今天工作順利，心情平穩。"
-    ];
-    const selected = greetings[Math.floor(Math.random() * greetings.length)];
-    el.textContent = selected;
-}
-initRandomGreeting();
-
-// ================================================================
 // ❓ Q&A TOGGLE
 // ================================================================
 window.toggleQA = function(element) {
@@ -7587,9 +7627,5 @@ window.toggleQA = function(element) {
 // Open first nav group by default
 setNavGroupState(document.querySelector('.nav-group'), true);
 
-// Set first item active
-const firstItem = document.querySelector('.nav-item');
-if (firstItem) firstItem.classList.add('active');
-
 // Render default view
-renderView('HomeHub');
+navigateToView('HomeHub');
