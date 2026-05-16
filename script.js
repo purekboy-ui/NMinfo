@@ -5871,20 +5871,8 @@ function renderProgressiveBlockBody(block) {
 }
 
 function renderImmersiveContentBlock(block, index) {
-    const html = renderContentBlock(block, index);
-    if (index < 1 || block.type === 'qa') return html;
-
-    const title = getReadableBlockTitle(block, index);
-    return `
-        <details id="section-${index + 1}" class="progressive-section">
-            <summary>
-                <span>${title}</span>
-            </summary>
-            <div class="progressive-section-body">
-                ${renderProgressiveBlockBody(block)}
-            </div>
-        </details>
-    `;
+    // Keep the main reading layer expanded; QA and protocol summaries handle progressive disclosure separately.
+    return renderContentBlock(block, index);
 }
 
 function buildReaderGuideHTML(key, data) {
@@ -6606,42 +6594,48 @@ function buildHomeHubHTML() {
     return `
         <article class="home-hub">
             <section class="home-hero">
-                <div class="home-hero-copy">
-                    <span class="home-eyebrow">首頁總覽</span>
-                    <p class="home-hero-kicker">作者：Chun-Yin Huang</p>
-                    <h1>這個網站整理了核醫科日常工作裡最常反覆查閱的內容。</h1>
-                    <div class="prose">
-                        <p>這個網站最初的目的，不是做成一個花俏的展示頁，而是把科內真正會用到、也真的會忘記的資訊整理在一起。排檢、收像、後處理、衛教、治療安全、劑量換算，這些事情平常都夾在忙碌的工作裡，很少有人有空從頭翻 guideline，所以才需要一個能夠隨手打開、很快找到重點的地方。</p>
-                        <p>如果你是第一次使用，建議先把左側分類看過一輪。現在大致分成幾個區塊：PET、心臟、內分泌、骨骼與腎泌尿、胃腸肝膽、神經與肺部感染，另外還有核醫小學堂與治療單元。每個檢查頁會放適應症、時間架構、判讀重點，也會逐步補上給放射師與核醫醫師使用的技術 protocol 摘要，方便在上機前或判讀前快速核對。</p>
-                        <p>站內另外有幾個比較偏工作支援的頁面。像「病人溝通與衛教」適合櫃台、電話通知或檢查前說明時使用；「藥物與劑量工具」整理了常用放射藥物、成人與兒科劑量；「輻射防護與治療安全」則比較適合碰到治療型核醫、返家限制、污染處理或特殊情境時回來查。這些內容不一定每天都要用到，但真正需要的時候，通常都很急，所以我把它們也放進同一個網站裡。</p>
-                        <p>另外，平常會用到的工具與外部連結，我也直接放在這裡，避免還要多切一次單元。下面這些都可以直接點開：</p>
-                        <div class="home-link-card-grid">
-                            <a class="home-link-card" href="patient-education/" target="_blank" rel="noopener noreferrer">
-                                <strong>民眾版核醫衛教</strong>
-                                <span>提供病人與家屬閱讀的簡化說明，適合在衛教或電話溝通時直接分享。</span>
-                            </a>
-                            <a class="home-link-card" href="https://gen-lang-client-0435635260.web.app/" target="_blank" rel="noopener noreferrer">
-                                <strong>AI 文字辨識</strong>
-                                <span>協助把圖片或文件中的文字快速抓出來，適合整理資料時搭配使用。</span>
-                            </a>
-                            <a class="home-link-card" href="https://i131-ward-scheduler.web.app/" target="_blank" rel="noopener noreferrer">
-                                <strong>I-131 病房排程</strong>
-                                <span>用來確認住院日期、病房安排與治療節奏，避免排程來回重算。</span>
-                            </a>
-                            <a class="home-link-card" href="https://nminfo-examp.web.app/" target="_blank" rel="noopener noreferrer">
-                                <strong>核醫排檢 DEMO</strong>
-                                <span>適合做流程展示，或拿來快速說明排檢邏輯。</span>
-                            </a>
-                            <a class="home-link-card" href="https://nminfo-petarr.web.app/" target="_blank" rel="noopener noreferrer">
-                                <strong>PET 智慧排程</strong>
-                                <span>整理 PET 檢查安排時常見的時間與流程條件，適合排程前先核對。</span>
-                            </a>
-                            <a class="home-link-card" href="https://www.snm.org.tw/" target="_blank" rel="noopener noreferrer">
-                                <strong>台灣核醫學會</strong>
-                                <span>回查學會公告、研討會與正式專業消息時最直接的入口。</span>
-                            </a>
+                <div class="home-hero-grid">
+                    <div class="home-hero-copy">
+                        <span class="home-eyebrow">首頁總覽</span>
+                        <p class="home-hero-kicker">作者：Chun-Yin Huang</p>
+                        <h1>這個網站整理了核醫科日常工作裡最常反覆查閱的內容。</h1>
+                        <p class="home-hero-lead">把核醫科真正高頻、容易忘、又常在忙碌中臨時要查的資訊，集中成一個能快速打開、快速定位、快速回到工作現場的入口。</p>
+                        <div class="prose">
+                            <p>這個網站最初的目的，不是做成一個花俏的展示頁，而是把科內真正會用到、也真的會忘記的資訊整理在一起。排檢、收像、後處理、衛教、治療安全、劑量換算，這些事情平常都夾在忙碌的工作裡，很少有人有空從頭翻 guideline，所以才需要一個能夠隨手打開、很快找到重點的地方。</p>
+                            <p>如果你是第一次使用，建議先把左側分類看過一輪。現在大致分成幾個區塊：PET、心臟、內分泌、骨骼與腎泌尿、胃腸肝膽、神經與肺部感染，另外還有核醫小學堂與治療單元。每個檢查頁會放適應症、時間架構、判讀重點，也會逐步補上給放射師與核醫醫師使用的技術 protocol 摘要，方便在上機前或判讀前快速核對。</p>
+                            <p>站內另外有幾個比較偏工作支援的頁面。像「病人溝通與衛教」適合櫃台、電話通知或檢查前說明時使用；「藥物與劑量工具」整理了常用放射藥物、成人與兒科劑量；「輻射防護與治療安全」則比較適合碰到治療型核醫、返家限制、污染處理或特殊情境時回來查。這些內容不一定每天都要用到，但真正需要的時候，通常都很急，所以我把它們也放進同一個網站裡。</p>
+                            <p>另外，平常會用到的工具與外部連結，我也直接放在這裡，避免還要多切一次單元。下面這些都可以直接點開：</p>
+                            <div class="home-link-card-grid">
+                                <a class="home-link-card" href="patient-education/" target="_blank" rel="noopener noreferrer">
+                                    <strong>民眾版核醫衛教</strong>
+                                    <span>提供病人與家屬閱讀的簡化說明，適合在衛教或電話溝通時直接分享。</span>
+                                </a>
+                                <a class="home-link-card" href="https://gen-lang-client-0435635260.web.app/" target="_blank" rel="noopener noreferrer">
+                                    <strong>AI 文字辨識</strong>
+                                    <span>協助把圖片或文件中的文字快速抓出來，適合整理資料時搭配使用。</span>
+                                </a>
+                                <a class="home-link-card" href="https://i131-ward-scheduler.web.app/" target="_blank" rel="noopener noreferrer">
+                                    <strong>I-131 病房排程</strong>
+                                    <span>用來確認住院日期、病房安排與治療節奏，避免排程來回重算。</span>
+                                </a>
+                                <a class="home-link-card" href="https://nminfo-examp.web.app/" target="_blank" rel="noopener noreferrer">
+                                    <strong>核醫排檢 DEMO</strong>
+                                    <span>適合做流程展示，或拿來快速說明排檢邏輯。</span>
+                                </a>
+                                <a class="home-link-card" href="https://nminfo-petarr.web.app/" target="_blank" rel="noopener noreferrer">
+                                    <strong>PET 智慧排程</strong>
+                                    <span>整理 PET 檢查安排時常見的時間與流程條件，適合排程前先核對。</span>
+                                </a>
+                                <a class="home-link-card" href="https://www.snm.org.tw/" target="_blank" rel="noopener noreferrer">
+                                    <strong>台灣核醫學會</strong>
+                                    <span>回查學會公告、研討會與正式專業消息時最直接的入口。</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
+                    <figure class="home-hero-art">
+                        <img src="assets/home/home-hero-stand-guide.png" alt="漫畫風核醫首頁主視覺：一名以召喚姿勢登場的專業講者，身後出現由 PET/CT、gamma camera 與原子軌道構成的替身式守護者。" loading="eager" decoding="async">
+                    </figure>
                 </div>
             </section>
         </article>

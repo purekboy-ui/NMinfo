@@ -2432,6 +2432,13 @@ a:hover { text-decoration: underline; }
     padding: 32px;
 }
 
+.home-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.12fr) minmax(320px, 0.88fr);
+    align-items: start;
+    gap: 28px;
+}
+
 .home-eyebrow {
     display: inline-flex;
     align-items: center;
@@ -2450,8 +2457,7 @@ a:hover { text-decoration: underline; }
     display: grid;
     align-content: start;
     gap: 18px;
-    max-width: 46rem;
-    margin: 0 auto;
+    min-width: 0;
 }
 
 .home-hero-kicker {
@@ -2478,6 +2484,31 @@ a:hover { text-decoration: underline; }
 
 .home-hero .prose {
     max-width: none;
+}
+
+.home-hero-art {
+    position: relative;
+    margin: 0;
+    align-self: stretch;
+}
+
+.home-hero-art::before {
+    content: "";
+    position: absolute;
+    inset: 6% 7% 9%;
+    background: radial-gradient(circle at center, rgba(255,255,255,0.6), rgba(255,255,255,0));
+    filter: blur(20px);
+    pointer-events: none;
+}
+
+.home-hero-art img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+    filter: drop-shadow(0 18px 30px rgba(86,43,59,0.16));
 }
 
 .home-link-list {
@@ -2942,6 +2973,12 @@ a:hover { text-decoration: underline; }
     .home-panel-recent {
         grid-template-columns: 1fr;
     }
+
+    .home-hero-art {
+        order: -1;
+        max-width: 720px;
+        justify-self: center;
+    }
 }
 
 @media (max-width: 768px) {
@@ -2956,9 +2993,17 @@ a:hover { text-decoration: underline; }
         border-radius: 24px;
     }
 
+    .home-hero-grid {
+        gap: 20px;
+    }
+
     .home-hero h1 {
         max-width: none;
         font-size: clamp(1.9rem, 8vw, 2.45rem);
+    }
+
+    .home-hero-art img {
+        border-radius: 20px;
     }
 
     .home-hero-metric,
@@ -2988,6 +3033,10 @@ a:hover { text-decoration: underline; }
     .home-hero,
     .home-hero-panel {
         padding: 20px 16px;
+    }
+
+    .home-hero-grid {
+        gap: 16px;
     }
 
     .home-panel-section-heading {
