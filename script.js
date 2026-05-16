@@ -7027,44 +7027,61 @@ function buildProtocolSummaryHTML(key) {
     const protocol = getProtocolData(key);
     if (!protocol) return '';
 
+    const sections = [
+        {
+            title: '收像參數基線',
+            body: `
+                <div class="protocol-table-wrap">
+                    <table class="protocol-table">
+                        <tbody>${renderProtocolRows(protocol.acquisition)}</tbody>
+                    </table>
+                </div>
+            `
+        },
+        {
+            title: '影像處理',
+            body: `
+                <div class="protocol-table-wrap">
+                    <table class="protocol-table">
+                        <tbody>${renderProtocolRows(protocol.processing)}</tbody>
+                    </table>
+                </div>
+            `
+        },
+        {
+            title: 'QC 檢查清單',
+            body: renderProtocolList(protocol.qc)
+        },
+        {
+            title: '常見假影與陷阱',
+            body: renderProtocolList(protocol.pitfalls)
+        },
+        {
+            title: '科內落地時最該固定',
+            body: renderProtocolList(protocol.localFixedFields)
+        }
+    ];
+
     return `
         <section class="protocol-summary-section" aria-labelledby="protocol-summary-title">
             <div class="protocol-summary-heading">
                 <span class="protocol-summary-kicker">技術 Protocol 摘要</span>
                 <div>
                     <h2 id="protocol-summary-title">${protocol.title}</h2>
-                    <p>給放射師與核醫醫師快速核對 acquisition、processing、QC 與 artifact。這裡是研究底稿轉成網站的第一層摘要，仍需對照科內機型與正式 SOP。</p>
+                    <p>給放射師與核醫醫師快速核對收像、後處理、QC 與常見陷阱。這裡是研究底稿轉成網站的第一層摘要，仍需對照科內機型與正式 SOP。</p>
                 </div>
             </div>
-            <div class="protocol-summary-grid">
-                <article class="protocol-summary-card is-wide">
-                    <h3>Acquisition baseline</h3>
-                    <div class="protocol-table-wrap">
-                        <table class="protocol-table">
-                            <tbody>${renderProtocolRows(protocol.acquisition)}</tbody>
-                        </table>
-                    </div>
-                </article>
-                <article class="protocol-summary-card is-wide">
-                    <h3>Image processing</h3>
-                    <div class="protocol-table-wrap">
-                        <table class="protocol-table">
-                            <tbody>${renderProtocolRows(protocol.processing)}</tbody>
-                        </table>
-                    </div>
-                </article>
-                <article class="protocol-summary-card">
-                    <h3>QC checklist</h3>
-                    ${renderProtocolList(protocol.qc)}
-                </article>
-                <article class="protocol-summary-card">
-                    <h3>Artifact / pitfall</h3>
-                    ${renderProtocolList(protocol.pitfalls)}
-                </article>
-                <article class="protocol-summary-card is-wide">
-                    <h3>科內落地時最該固定</h3>
-                    ${renderProtocolList(protocol.localFixedFields)}
-                </article>
+            <div class="protocol-summary-stack">
+                ${sections.map((section, index) => `
+                    <details class="protocol-summary-details progressive-section"${index === 0 ? ' open' : ''}>
+                        <summary>
+                            <span>${section.title}</span>
+                        </summary>
+                        <div class="protocol-summary-body">
+                            ${section.body}
+                        </div>
+                    </details>
+                `).join('')}
             </div>
             ${protocol.source ? `<p class="protocol-summary-source">主要來源：${protocol.source}</p>` : ''}
         </section>

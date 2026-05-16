@@ -3521,39 +3521,45 @@ a:hover { text-decoration: underline; }
     line-height: var(--zh-body-leading-dense);
 }
 
-.protocol-summary-grid {
+.protocol-summary-stack {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px;
 }
 
-.protocol-summary-card {
-    display: grid;
-    align-content: start;
-    gap: 12px;
-    padding: 18px;
+.protocol-summary-details {
+    margin: 0;
     border: 1px solid var(--border-light);
     border-radius: 18px;
     background: rgba(247,241,239,0.64);
+    overflow: hidden;
 }
 
-.protocol-summary-card.is-wide {
-    grid-column: 1 / -1;
+.protocol-summary-details summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 18px 20px;
 }
 
-.protocol-summary-card h3 {
+.protocol-summary-details summary span {
     color: var(--text-primary);
     font-size: 1rem;
+    font-weight: 700;
     line-height: 1.4;
 }
 
-.protocol-summary-card ul {
+.protocol-summary-body {
+    padding: 0 20px 18px;
+}
+
+.protocol-summary-body ul {
     display: grid;
     gap: 8px;
     padding-left: 20px;
 }
 
-.protocol-summary-card li {
+.protocol-summary-body li {
     color: var(--text-secondary);
     font-size: 0.96rem;
     line-height: var(--zh-body-leading-dense);
@@ -3605,12 +3611,12 @@ a:hover { text-decoration: underline; }
         border-radius: 20px;
     }
 
-    .protocol-summary-grid {
-        grid-template-columns: 1fr;
+    .protocol-summary-details summary {
+        padding: 16px;
     }
 
-    .protocol-summary-card {
-        padding: 16px;
+    .protocol-summary-body {
+        padding: 0 16px 16px;
     }
 
     .therapy-rich-card,
