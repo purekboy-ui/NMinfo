@@ -7,7 +7,7 @@ const EXAM_DATA = {
 
 HomeHub: {
     title: "首頁總覽",
-    subtitle: "先做對，再做快。把高頻任務、高風險提醒與常用工具收在同一頁。",
+    subtitle: "整合核醫科常用檢查、治療、工作支援工具與衛教資源的總覽頁。",
     category: "home",
     isHomeHub: true,
     content: []
@@ -19,44 +19,26 @@ HomeHub: {
 
 NMBasics: {
     title: "核醫原理、儀器與技術",
-    subtitle: "從功能影像、gamma camera 到 PET/CT 與 QC，建立核醫設備與成像的基本觀念",
+    subtitle: "從功能影像、加馬攝影機（gamma camera）到正子電腦斷層（PET/CT）與品質控制（QC），建立核醫設備與成像的基本觀念",
     category: "learning",
     content: [
         {
             type: "info-box-emerald",
-            html: `<h4>📚 先抓住三個基本觀念：功能影像、設備差異與 QC</h4>
-            <p>新人先掌握三件事：<strong>核醫在看功能</strong>、<strong>不同設備各自在解不同問題</strong>、以及<strong>QC 沒做好時，影像看起來像病人的問題，其實可能是設備或流程的問題</strong>。</p>
-            <p>國際上目前的主流趨勢很清楚：一般核醫仍以<strong>雙 detector Anger camera 搭配 SPECT/CT</strong>為主力；高階系統朝<strong>數位化與定量化</strong>前進；心肌專科則已大量使用<strong>CZT 專門系統</strong>來換取更高靈敏度、更短掃描時間與更低劑量可能性。</p>`
+            html: `<h4>基本觀念：功能影像、設備差異與品質控制</h4>
+            <p>核醫工作的基礎可先從三個觀念建立：<strong>核醫影像著重功能資訊</strong>、<strong>不同設備對應不同臨床問題</strong>、以及<strong>品質控制會直接影響影像是否可信</strong>。</p>
+            <p>國際上目前的主流趨勢很清楚：一般核醫仍以<strong>雙探頭安格型加馬攝影機（Anger gamma camera）搭配單光子電腦斷層（SPECT/CT）</strong>為主力；高階系統朝<strong>數位化與定量化</strong>前進；心肌專科則常使用<strong>碲鋅鎘偵測器系統（CZT）</strong>，以提升靈敏度、縮短掃描時間並降低劑量。</p>`
         },
         {
             type: "section",
             title: "小學堂怎麼讀",
             icon: "🗺️",
-            html: `<div class="learning-card-grid">
-                <div class="learning-card">
-                    <h4>1. 核醫原理、儀器與技術</h4>
-                    <p>先弄懂功能影像、gamma camera、SPECT/CT、PET/CT、PET/MR 與 QC 的基本邏輯。</p>
-                </div>
-                <div class="learning-card">
-                    <h4>2. 文件與品質管理</h4>
-                    <p>先分清品質手冊、程序書、作業規範、表單與紀錄各自在做什麼，避免文件寫得很多卻不好用。</p>
-                </div>
-                <div class="learning-card">
-                    <h4>3. 熱核室與製劑作業</h4>
-                    <p>收貨、分裝、放行、運送、污染偵測與廢棄處理，這些是 hot lab 最常真的出錯的地方。</p>
-                </div>
-                <div class="learning-card">
-                    <h4>4. 病人溝通與衛教</h4>
-                    <p>把電話、櫃台、檢前交代與治療後注意事項，翻成病人真的聽得懂的語言。</p>
-                </div>
-                <div class="learning-card">
-                    <h4>5. 輻射防護與治療安全</h4>
-                    <p>從台灣法規、劑量、事故、紀錄，一路接到 I-131、Lu-177 與 Ra-223 的治療安全邏輯。</p>
-                </div>
-                <div class="learning-card">
-                    <h4>6. 藥物與劑量工具</h4>
-                    <p>快速查藥物、成人與兒科活度，並用計算器交叉核對，不把表格當成唯一答案。</p>
-                </div>
+            html: `<div class="prose">
+                <p>建議先把核醫成像與設備的基本觀念讀完，再往文件管理、熱核室、病人衛教、輻射防護與藥物劑量工具延伸。這樣後面遇到各種檢查或治療頁時，比較容易判斷哪些是成像問題、哪些是流程問題、哪些屬於病安與輻防要求。</p>
+                <ol class="learning-route-list">
+                    <li><strong>先讀成像與設備：</strong>功能影像、加馬攝影機（gamma camera）、單光子電腦斷層（SPECT/CT）、正子電腦斷層（PET/CT）、正子磁振造影（PET/MR）與品質控制（QC），是後續各頁的共同基礎。</li>
+                    <li><strong>再讀流程與管理：</strong>文件系統、熱核室與品質控制可對應到日常工作中的可追溯與標準化需求。</li>
+                    <li><strong>最後連到臨床應用：</strong>病人溝通、輻射防護、治療安全與劑量工具，會把前面的原理帶回實際照護與作業情境。</li>
+                </ol>
             </div>`
         },
         {
@@ -64,187 +46,126 @@ NMBasics: {
             title: "核醫到底在看什麼？",
             icon: "🧪",
             html: `<div class="prose">
-                <p><strong>核醫不是先看器官長什麼樣，而是先看它有沒有在正常運作。</strong>同樣是胸痛、骨痛、腎積水或腫瘤追蹤，CT / MRI 常擅長看結構，核醫則擅長看<strong>灌流、代謝、排泄、受體表現、骨重塑或發炎活性</strong>。</p>
+                <p><strong>核醫影像的重點在於器官或病灶的功能狀態，而不只是在結構外觀。</strong>同樣是胸痛、骨痛、腎積水或腫瘤追蹤，電腦斷層（CT）與磁振造影（MRI）多用於結構判讀，核醫則常用於評估<strong>灌流、代謝、排泄、受體表現、骨重塑或發炎活性</strong>。</p>
                 <ul>
-                    <li><strong>CT / MRI（Anatomy）：</strong>看到大小、位置、形狀、結構破壞。</li>
-                    <li><strong>NM / PET（Physiology）：</strong>看到器官在做什麼、病灶有多活躍、治療後還剩多少功能訊號。</li>
+                    <li><strong>電腦斷層／磁振造影（CT / MRI）：</strong>看到大小、位置、形狀與結構破壞。</li>
+                    <li><strong>核醫／正子造影（NM / PET）：</strong>看到器官在做什麼、病灶有多活躍，以及治療後是否仍有功能訊號。</li>
                 </ul>
-                <p>臨床上最重要的觀念是：<strong>功能改變常早於結構改變</strong>。例如骨轉移還沒在 X 光明顯溶骨時，骨掃描可能已經先看到成骨活性增加；腎臟超音波看到腎盂擴張時，MAG3 / DTPA 才能回答「到底是擴張還是真的阻塞」。</p>
+                <p>臨床上最重要的觀念是：<strong>功能改變常早於結構改變</strong>。例如骨轉移還沒在 X 光明顯溶骨時，骨掃描可能已先看到成骨活性增加；腎臟超音波看到腎盂擴張時，巰基乙醯三甘胺酸（MAG3）或二乙烯三胺五乙酸（DTPA）腎圖才能回答是否已形成真正阻塞。</p>
             </div>`
         },
         {
             type: "section",
             title: "現在主流的核醫設備大致分成這幾類",
             icon: "📷",
-            html: `<div class="learning-card-grid">
-                <div class="learning-card">
-                    <h4>雙 detector Anger gamma camera</h4>
-                    <p>目前仍是最常見的一般核醫主力。兩個大探頭繞病人旋轉，可做 planar、whole-body、SPECT 與 SPECT/CT，是大多數醫院的通用型工作馬。</p>
+            html: `<div class="prose">
+                <p>目前臨床常見設備可先依用途分成五類：一般核醫的雙探頭安格型加馬攝影機（Anger gamma camera）、通用型碲鋅鎘單光子電腦斷層（CZT SPECT/CT）、心肌專用 CZT 系統、數位正子電腦斷層（PET/CT）與正子磁振造影（PET/MR）。前兩者是一般核醫與混合影像的主力，心肌專用 CZT 著重高計數效率與較短掃描時間，數位 PET/CT 則是當代腫瘤正子造影的主流高階平台。</p>
+                <div class="protocol-table-wrap">
+                    <table class="protocol-table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">雙探頭安格型加馬攝影機</th>
+                                <td>大多數醫院最常見的通用型設備，可執行平面影像、全身掃描、單光子斷層（SPECT）與單光子電腦斷層（SPECT/CT）。</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">通用型 CZT 單光子電腦斷層</th>
+                                <td>以直接轉換偵測器提高能量解析度、靈敏度與定量穩定性，近年開始進入一般核醫平台。</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">心肌專用 CZT 系統</th>
+                                <td>針對心肌灌流造影（myocardial perfusion imaging）最佳化，以高計數效率、短時間掃描與低劑量流程為重點。</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">數位 PET/CT</th>
+                                <td>大量採用矽光子倍增器（SiPM）、飛行時間技術（TOF）與更成熟的定量能力，讓小病灶偵測、低劑量與較短掃描時間更可行。</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">PET/MR</th>
+                                <td>多見於腦部、骨盆、兒科與特定軟組織問題，重點在正子造影（PET）與磁振造影（MRI）的同步資訊整合。</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="learning-card">
-                    <h4>一般核醫用 CZT SPECT/CT</h4>
-                    <p>CZT 以直接轉換偵測器取代傳統閃爍晶體加 PMT，目標是提高能量解析度、靈敏度與定量穩定性。它不是只給心肌用，也開始進入通用型 SPECT/CT。</p>
-                </div>
-                <div class="learning-card">
-                    <h4>心肌專用 CZT 系統</h4>
-                    <p>像 D-SPECT 這類系統不是萬用核醫相機，而是專門優化 myocardial perfusion imaging。它的價值在更高計數效率、更短掃描時間與 stress-first / low-dose 的彈性。</p>
-                </div>
-                <div class="learning-card">
-                    <h4>數位 PET/CT</h4>
-                    <p>現在主流高階 PET/CT 已大量使用 SiPM、TOF 與更強的定量能力。這些進步不只是畫質漂亮，而是讓小病灶偵測、低劑量與短時間掃描更可行。</p>
-                </div>
-                <div class="learning-card">
-                    <h4>PET/MR</h4>
-                    <p>PET/MR 不常是第一線量體設備，但在腦部、骨盆、兒科與特定軟組織問題上有獨特位置。它的賣點不是取代 PET/CT，而是把 PET 與 MRI 同步整合。</p>
-                </div>
-                <div class="learning-card">
-                    <h4>混合影像已是主流，不是附加選配</h4>
-                    <p>今天真正有臨床競爭力的核醫設備，幾乎都在往 SPECT/CT、PET/CT 或 PET/MR 走。單獨功能影像仍重要，但定位、衰減校正與定量需求已讓 hybrid 變成日常。</p>
-                </div>
+                <p class="reading-note"><strong>整體方向是混合影像平台已成主流。</strong> 單獨功能影像仍重要，但定位、衰減校正與定量需求，讓單光子電腦斷層（SPECT/CT）、正子電腦斷層（PET/CT）與正子磁振造影（PET/MR）成為日常臨床工作中的核心配置。</p>
             </div>`
         },
         {
             type: "section",
-            title: "主流機型與實機圖來源卡",
-            icon: "🖼️",
-            html: `<div class="equipment-source-grid">
-                <a class="equipment-source-card" href="https://www.siemens-healthineers.com/en-us/molecular-imaging/xspect/symbia-intevo?stc=ushcc800202" target="_blank" rel="noopener noreferrer">
-                    <span class="equipment-source-badge">雙 detector SPECT/CT</span>
-                    <h4>Siemens Symbia Intevo</h4>
-                    <p>代表性的通用型 SPECT/CT。適合拿來理解 today’s mainstream dual-head hybrid workflow。</p>
-                    <span class="equipment-source-link">查看官方實機圖與產品頁</span>
-                </a>
-                <a class="equipment-source-card" href="https://www.gehealthcare.com/en/products/molecular-imaging/nuclear-medicine/nm-ct-870-dr.html" target="_blank" rel="noopener noreferrer">
-                    <span class="equipment-source-badge">雙 detector SPECT/CT</span>
-                    <h4>GE NM/CT 870 DR</h4>
-                    <p>GE 現行主力之一，可用來理解一般核醫 hybrid camera 朝數位工作流與 quantitative SPECT 前進的方向。</p>
-                    <span class="equipment-source-link">查看官方實機圖與產品頁</span>
-                </a>
-                <a class="equipment-source-card" href="https://www.gehealthcare.com/en-gb/products/molecular-imaging/nuclear-medicine/nm-ct-870-czt" target="_blank" rel="noopener noreferrer">
-                    <span class="equipment-source-badge">通用型 CZT</span>
-                    <h4>GE NM/CT 870 CZT</h4>
-                    <p>讓讀者知道 CZT 並不只存在於心肌專機，也開始進到通用型 SPECT/CT 平台。</p>
-                    <span class="equipment-source-link">查看官方實機圖與產品頁</span>
-                </a>
-                <a class="equipment-source-card" href="https://spectrum-dynamics.com/wp-content/uploads/2021/05/Cardiac-Digital-SPECT-D-SPECT-Spectrum-Dynamics.pdf" target="_blank" rel="noopener noreferrer">
-                    <span class="equipment-source-badge">心肌專用 CZT</span>
-                    <h4>Spectrum Dynamics D-SPECT</h4>
-                    <p>代表性的 cardiac CZT 系統。適合用來理解為什麼 MPI 會出現「專機」而不是只靠傳統 gamma camera 升級。</p>
-                    <span class="equipment-source-link">查看官方圖文資料</span>
-                </a>
-                <a class="equipment-source-card" href="https://www.siemens-healthineers.com/molecular-imaging/pet-ct/biograph-vision?stc=wwhc219972" target="_blank" rel="noopener noreferrer">
-                    <span class="equipment-source-badge">數位 PET/CT</span>
-                    <h4>Siemens Biograph Vision</h4>
-                    <p>適合拿來示範當代 PET/CT 的關鍵字：SiPM、TOF、較高靈敏度與定量能力。</p>
-                    <span class="equipment-source-link">查看官方實機圖與產品頁</span>
-                </a>
-                <a class="equipment-source-card" href="https://www.siemens-healthineers.com/en-us/magnetic-resonance-imaging/mr-pet-scanner/biograph-mmr" target="_blank" rel="noopener noreferrer">
-                    <span class="equipment-source-badge">PET/MR</span>
-                    <h4>Siemens Biograph mMR</h4>
-                    <p>作為 PET/MR 的代表機型，適合介紹同步 PET 與 MRI 的臨床定位與場景，而不是把它講成單純更貴的 PET/CT。</p>
-                    <span class="equipment-source-link">查看官方實機圖與產品頁</span>
-                </a>
-            </div>
-            <p class="reading-note">這一區刻意做成<strong>圖片來源卡</strong>而不是直接複製原廠圖片。原因是官方產品圖多半受版權與使用條款限制；站內先提供來源卡，比較安全，也較不容易因外部圖檔失效而壞版。</p>`
-        },
-        {
-            type: "section",
-            title: "Gamma camera、準直儀與 CZT，到底差在哪裡？",
+            title: "加馬攝影機、準直儀與 CZT",
             icon: "🔬",
-            html: `<div class="two-col">
-                <div class="detail-card">
-                    <h4>傳統 Anger gamma camera</h4>
-                    <p>核心是<strong>準直儀 + NaI(Tl) 閃爍晶體 + PMT</strong>。gamma photon 先被 collimator 篩方向，再在晶體發光，最後由 PMT 把光訊號轉成電訊號。它成熟、通用、維修與臨床經驗都很完整。</p>
-                </div>
-                <div class="detail-card">
-                    <h4>CZT 系統</h4>
-                    <p>CZT（cadmium zinc telluride）是<strong>直接轉換偵測器</strong>，不必先把 gamma photon 變成光再放大。好處通常是能量解析度與靈敏度更好，也更有利於高效率採集與定量。</p>
-                </div>
-                <div class="detail-card">
-                    <h4>LEHR、LEGP、MEGP、HEGP 在講什麼</h4>
-                    <p>準直儀不是附件，而是影像性格。<strong>LEHR</strong>偏重低能高解析、<strong>LEGP</strong>是傳統通用型、<strong>MEGP / HEGP</strong>則用在較高能量核種。孔徑、孔長與 septa 厚度，決定你拿到的是解析度還是計數效率。</p>
-                </div>
-                <div class="detail-card">
-                    <h4>為什麼 MPI 會有專門的 CZT 心機</h4>
-                    <p>因為心肌 perfusion 需要高計數效率、較短時間與固定解剖任務。當設備只專注心臟，就能用幾何設計、偵測器排列與 workflow 把效率往上推，不必像通用型相機那樣兼顧全身各類檢查。</p>
-                </div>
+            html: `<div class="prose">
+                <p>傳統安格型加馬攝影機（Anger gamma camera）的核心是<strong>準直儀、碘化鈉閃爍晶體（NaI(Tl)）與光電倍增管（PMT）</strong>；偵測到的 gamma photon 先被 collimator 篩選方向，再轉成光訊號與電訊號。它成熟、通用，仍是一般核醫最常見的設備基礎。</p>
+                <p>碲鋅鎘偵測器（CZT, cadmium zinc telluride）則屬於<strong>直接轉換偵測器</strong>，不需要先把 gamma photon 轉成光再放大，通常可帶來較好的能量解析度、靈敏度與定量穩定性。若設備只聚焦於心肌灌流等固定任務，還能進一步利用幾何設計與流程設計提高採集效率。</p>
+                <ul>
+                    <li><strong>準直儀決定影像風格：</strong>低能高解析（LEHR）偏重低能高解析，低能通用型（LEGP）為常見通用型，中能／高能通用型（MEGP / HEGP）用於較高能量核種。</li>
+                    <li><strong>探測器決定訊號品質：</strong>傳統閃爍晶體系統重視成熟度與通用性，CZT 更強調效率與定量。</li>
+                    <li><strong>專用系統的價值在任務聚焦：</strong>例如心肌專用 CZT，並非取代通用型相機，而是針對固定臨床需求提高速度與計數效率。</li>
+                </ul>
             </div>`
         },
         {
             type: "section",
-            title: "什麼是 SPECT、SPECT/CT、PET/CT、PET/MR？",
+            title: "主要成像平台比較",
             icon: "🧭",
-            html: `<div class="learning-card-grid">
-                <div class="learning-card">
-                    <h4>SPECT</h4>
-                    <p>讓 gamma camera 繞病人取得多角度資料，再重建成單光子斷層影像。它回答的是「放射藥物在三維空間裡分布在哪裡」。</p>
-                </div>
-                <div class="learning-card">
-                    <h4>SPECT/CT</h4>
-                    <p>不是把 CT 當附贈圖，而是把<strong>定位、衰減校正與部分 artefact 辨識</strong>一起納進來。很多檢查一旦沒有 CT，判讀信心就會大幅下降。</p>
-                </div>
-                <div class="learning-card">
-                    <h4>PET/CT</h4>
-                    <p>PET 看正子核種與 coincidence detection，PET/CT 則把代謝 / 受體訊號和解剖位置、衰減校正與定量整合起來。現在已是腫瘤 PET 的主流配置。</p>
-                </div>
-                <div class="learning-card">
-                    <h4>PET/MR</h4>
-                    <p>適合軟組織對比、腦部、骨盆與特定研究或兒科場景。它的強項不只是少一點 CT，而是 PET 與 MRI 的同步資訊能回答某些 PET/CT 不擅長的問題。</p>
-                </div>
+            html: `<div class="protocol-table-wrap">
+                <table class="protocol-table">
+                    <tbody>
+                        <tr>
+                            <th scope="row">單光子斷層（SPECT）</th>
+                            <td>由加馬攝影機（gamma camera）取得多角度資料後重建成單光子斷層影像，重點是看放射藥物在三維空間中的分布。</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">單光子電腦斷層（SPECT/CT）</th>
+                            <td>在功能影像之外加入定位、衰減校正與部分人工假影（artefact）辨識，許多檢查若缺少電腦斷層（CT），判讀信心會下降。</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">正子電腦斷層（PET/CT）</th>
+                            <td>將正子核種的代謝或受體訊號與解剖位置、衰減校正及定量整合，是目前腫瘤正子造影的主流配置。</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">正子磁振造影（PET/MR）</th>
+                            <td>適合腦部、骨盆、兒科與特定軟組織問題，強項在於正子造影（PET）與磁振造影（MRI）的同步資訊整合。</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <p class="reading-note">一句話抓差異：<strong>SPECT / PET 是功能成像方法；SPECT/CT、PET/CT、PET/MR 是把功能訊號放回解剖與定量脈絡中的混合平台。</strong></p>`
+            <p class="reading-note"><strong>單光子斷層（SPECT）與正子造影（PET）是功能成像方法；SPECT/CT、PET/CT、PET/MR 則是把功能訊號放回解剖與定量脈絡中的混合平台。</strong></p>`
         },
         {
             type: "section",
-            title: "QC 不是工程師的事，而是影像可信度的底線",
+            title: "品質控制（QC）的目的與節奏",
             icon: "🧪",
-            html: `<div class="two-col">
-                <div class="detail-card">
-                    <h4>為什麼要做 QC</h4>
-                    <p>IAEA 對 gamma camera QC 的核心說法很直接：你要確定病人影像上的異常來自病人，而不是來自相機本身。若均勻度、COR、能峰、CT 數值或 PET normalization 漂掉，最後的假陽性與假陰性看起來都會像病灶。</p>
-                </div>
-                <div class="detail-card">
-                    <h4>QC 不是只在裝機那天做一次</h4>
-                    <p>新機驗收很重要，但真正保護臨床的是<strong>例行 QC</strong>。設備今天能開機，不代表今天的影像就一定可信。尤其 hybrid 系統的風險是 SPECT、PET、CT 任一端漂掉，都可能影響融合與定量。</p>
-                </div>
-            </div>`
-        },
-        {
-            type: "section",
-            title: "常見 QC 節奏：每天、每週、定期各在守什麼",
-            icon: "📋",
-            html: `<div class="learning-card-grid">
-                <div class="learning-card">
-                    <h4>Gamma camera / SPECT 每日</h4>
-                    <p>常見重點包括<strong>能峰確認、intrinsic / extrinsic flood uniformity</strong>。目標是盡早抓出 PMT 漂移、晶體問題或均勻度異常，不要等病人影像出現環狀或大片不均才發現。</p>
-                </div>
-                <div class="learning-card">
-                    <h4>SPECT 每週或定期</h4>
-                    <p><strong>COR（center of rotation）</strong>、多探頭對位、tomographic uniformity 與部分 phantom 測試，都是在守三維重建的幾何正確性。COR 漂掉時，影像會看起來像病灶模糊或錯位。</p>
-                </div>
-                <div class="learning-card">
-                    <h4>CT 端的 QC</h4>
-                    <p>CT number accuracy、noise、均勻性、對位與 artefact 檢查不是 radiology 才需要。因為在 hybrid 影像裡，CT 問題會一路污染 attenuation correction、定位與融合品質。</p>
-                </div>
-                <div class="learning-card">
-                    <h4>PET / PET-CT 的日常 QC</h4>
-                    <p>daily QC、normalization / calibration、blank / detector stability 等程序是在守計數穩定與定量可信度。PET 的問題若沒抓到，SUV 與小病灶可視性都會被影響。</p>
-                </div>
-                <div class="learning-card">
-                    <h4>年度或醫學物理師層級測試</h4>
-                    <p>空間解析度、靈敏度、系統性能、NEMA / 驗收級項目與完整 performance survey，通常不會每天做，但它們決定設備是否仍在規格與可接受趨勢內。</p>
-                </div>
-                <div class="learning-card">
-                    <h4>QC 的真正意義</h4>
-                    <p>不是為了把表單填滿，而是讓你在病人上機前就知道：今天這台機器的數據，還值不值得你信。</p>
-                </div>
+            html: `<div class="prose">
+                <p>品質控制（QC）的核心目的，是確認影像上的異常來自病人本身，而不是來自設備漂移或重建失真。新機驗收固然重要，但真正保護臨床判讀的是<strong>例行 QC</strong>；設備能開機，不等於當天的影像一定可信。</p>
+                <p>對混合影像系統而言，只要單光子斷層（SPECT）、正子造影（PET）或電腦斷層（CT）其中一端出現問題，就可能一路影響定位、融合、衰減校正與定量，因此 QC 不能只停留在裝機或年度檢查。</p>
             </div>
-            <div class="source-badges">
-                <span class="guide-tag local">IAEA PET/CT QA</span>
-                <span class="guide-tag local">IAEA SPECT/CT Atlas</span>
-                <span class="guide-tag local">NEMA NU 1-2023</span>
-                <span class="guide-tag local">AAPM Report 249</span>
-            </div>`
+            <div class="protocol-table-wrap">
+                <table class="protocol-table">
+                    <tbody>
+                        <tr>
+                            <th scope="row">加馬攝影機／SPECT 每日</th>
+                            <td>常見重點包括能峰確認與本體／外部均勻度（intrinsic / extrinsic flood uniformity），用來及早抓出 PMT 漂移、晶體問題與均勻度異常。</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">SPECT 每週或定期</th>
+                            <td>旋轉中心（COR）、多探頭對位、斷層均勻度與假體（phantom）測試，主要維持三維重建的幾何正確性。</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">CT 端 QC</th>
+                            <td>CT 數值準確度、雜訊、均勻性、對位與人工假影（artefact）檢查，會直接影響衰減校正、定位與融合品質。</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">PET / PET-CT 日常 QC</th>
+                            <td>每日品質控制（daily QC）、標準化／校正（normalization / calibration）、blank 與探測器穩定度，重點在維持計數穩定與定量可信度。</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">年度或醫學物理師層級測試</th>
+                            <td>空間解析度、靈敏度、系統性能與驗收級項目，用來確認設備仍在規格與可接受趨勢內。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="reading-note">品質控制（QC）的意義不在於填表，而在於病人上機前就知道：今天這台設備的數據是否仍值得信任。</p>`
         }
     ]
 },
@@ -1160,17 +1081,23 @@ PET: {
         },
         {
             type: "section",
-            title: "排程與行政",
+            title: "前置條件與流程節點",
             icon: "��",
             html: `<div class="prose">
                 <ul>
-                    <li><span class="badge badge-rose">⚠️ 重要</span> <strong>每日截止 15:30 前</strong>完成訂藥 & 電話通知隔日病人</li>
-                    <li>病人於打藥前 15 分鐘再進入注射室躺好</li>
-                    <li><strong>顯影劑泡製：</strong>1 劑泡 500cc 水。Cr 過高者改為「喝水」並修改給藥紀錄單</li>
-                    <li>NG 管病人請家屬自備<strong>灌食空針</strong></li>
-                    <li><span class="badge badge-rose">⚠️ 淋巴癌</span> 淋巴癌病人務必在排程表上註記</li>
+                    <li><span class="badge badge-rose">⚠️ 重要</span> 先核對<strong>空腹時間、血糖、近期胰島素使用</strong>與是否能平躺不動，這些比排到哪一天更先決。</li>
+                    <li>糖尿病、近期化療 / 放療、感染、發炎、G-CSF、類固醇或劇烈運動史，都可能讓影像失真，排檢時就要先問。</li>
+                    <li>注射後應安排在<strong>安靜、溫暖、低刺激</strong>的等待環境，避免走動、說話、咀嚼或滑手機，降低肌肉與棕色脂肪攝取。</li>
+                    <li>若要合併口服對比、延遲影像或特殊 protocol，請在給藥前就把流程講清楚，不要等 FDG 已經進去才臨時改劇本。</li>
+                    <li>吞嚥困難、NG 管、無法閉眼安靜休息或需要鎮靜者，應提早和臨床團隊確認配套。</li>
                 </ul>
             </div>`
+        },
+        {
+            type: "info-box-rose",
+            html: `<h4>台灣健保給付重點</h4>
+            <p>依健保署公開說明，腫瘤相關正子造影給付重點包括：<strong>乳癌、淋巴癌</strong>之分期、治療評估及懷疑復發或再分期；以及<strong>大腸癌、直腸癌、食道癌、頭頸部癌（不含腦瘤）、原發性肺癌、黑色素瘤、甲狀腺癌、子宮頸癌</strong>之分期及懷疑復發或再分期。</p>
+            <p>非腫瘤面另有<strong>存活心肌偵測</strong>與<strong>難治型癲癇術前評估</strong>等給付情境；若是拿 FDG PET/CT 做健康檢查式篩癌，通常<strong>不屬健保給付</strong>。實際申報仍要回到當期支付標準、備註規定與院內審查流程核對。</p>`
         },
         {
             type: "section",
@@ -1188,9 +1115,9 @@ PET: {
         },
         {
             type: "info-box-amber",
-            html: `<h4>📋 藥物劑量規則</h4>
-            <p>標準上限：<strong>15 mCi</strong>。體重 > 80kg 紅筆標示。體重 < 40kg 請示主任（通常 7 mCi）。</p>
-            <p><strong>禁食至少 6 小時，血糖 > 200 mg/dL 當下回報。</strong></p>`
+            html: `<h4>📋 給藥與影像品質提醒</h4>
+            <p>FDG 的實際投與活度不應只背一個固定數字。機型靈敏度、掃描時間、重建條件、病人體型與臨床問題都會影響設計；<strong>高 BMI 可能需要調整活度或延長 acquisition</strong>，兒科也不能直接拿成人數字硬縮小。</p>
+            <p><strong>禁食、血糖與胰島素時機</strong>比數字本身更常決定影像能不能看。若血糖偏高、剛打胰島素或病人無法安靜休息，先處理前置條件，通常比勉強把藥打下去更重要。</p>`
         },
         {
             type: "section",
@@ -3177,29 +3104,29 @@ I131: {
     ],
     operationalRules: [
         {
-            label: "入院日",
-            value: "僅限週二、週五",
-            note: "配合病房、輻防與出院追蹤的固定節奏。"
+            label: "收治模式",
+            value: "先分清門診還是住院",
+            note: "低活度門診與高活度住院不是同一個劇本，前置評估與放行規則也不同。"
         },
         {
-            label: "床位量能",
-            value: "每週上限 4 人",
-            note: "高活度隔離病房不是隨到隨排。"
+            label: "住院條件",
+            value: "活度、病房設施、家庭情境一起看",
+            note: "不是只有有床就能收；病人能否安全返家、是否有幼兒孕婦同住，也要先問。"
         },
         {
-            label: "行政前置",
-            value: "至少提前 3 週預約",
-            note: "要先卡住病房、藥物、檢驗與衛教節點。"
+            label: "出院判斷",
+            value: "量測與衛教缺一不可",
+            note: "1 公尺劑量率、污染控制能力與書面衛教，要一起決定能不能放行。"
         },
         {
-            label: "WBS 追蹤",
-            value: "出院後 1 週安排",
-            note: "不是出院後再想起來補約。"
+            label: "返家限制",
+            value: "接觸距離、交通、衛浴先講清楚",
+            note: "真正困難常在回家後怎麼睡、怎麼搭車、能不能共用廁所，而不是住院當天。"
         },
         {
-            label: "出院測量",
-            value: "記錄 1 公尺劑量率",
-            note: "返家限制與接觸安排要依測量值與家中情境個別化。"
+            label: "追蹤影像",
+            value: "是否安排 post-therapy WBS 依醫囑與 protocol",
+            note: "不要把治療後掃描當附贈彩蛋，應在治療計畫裡一起講清楚。"
         }
     ],
     journeyStages: [
@@ -4488,13 +4415,13 @@ const EXAM_TEACHING_SUPPLEMENTS = {
 const EXAM_READER_GUIDES = {
     NMBasics: {
         eyebrow: "先看基本觀念",
-        title: "核醫常看功能，設備與 QC 會影響影像品質",
-        lead: "核醫檢查看功能；設備決定影像怎麼取得；QC 決定影像能不能被信任。先懂這三件事，後面讀 SPECT、PET 或各種檢查會比較容易。",
+        title: "核醫常看功能，設備與品質控制（QC）會影響影像品質",
+        lead: "核醫檢查看功能；設備決定影像怎麼取得；品質控制（QC）決定影像能不能被信任。先懂這三件事，後面讀單光子斷層（SPECT）、正子造影（PET）或各種檢查會比較容易。",
         cards: [
-            { title: "先抓核心價值", text: "核醫最擅長回答的是器官有沒有在正常運作、病灶有沒有活性，而不只是長得像不像。" },
-            { title: "再分清主流設備", text: "雙 detector gamma camera、通用型 CZT、心肌專用 CZT、PET/CT 與 PET/MR，各自在解不同的臨床與技術問題。" },
-            { title: "最後把 QC 放回核心", text: "QC 不是附屬行政，而是保證病人影像異常來自病人，不是來自設備本身。" },
-            { title: "下一步怎麼接", text: "想弄懂文件和紀錄怎麼管理，就接文件與品質管理；想知道藥物怎麼在 hot lab 被安全處理，就接熱核室與製劑作業。" }
+            { title: "先看功能資訊", text: "核醫最擅長回答的是器官是否正常運作、病灶是否具有活性，而不只是外觀像不像。" },
+            { title: "再分清主流設備", text: "雙探頭加馬攝影機、通用型 CZT、心肌專用 CZT、正子電腦斷層（PET/CT）與正子磁振造影（PET/MR），各自對應不同的臨床與技術問題。" },
+            { title: "把品質控制放回核心", text: "品質控制（QC）不是附屬行政，而是確認病人影像異常來自病人，不是來自設備本身。" },
+            { title: "延伸閱讀方向", text: "若要理解文件與紀錄管理，可接文件與品質管理；若要理解藥物如何在熱核室安全處理，可接熱核室與製劑作業。" }
         ]
     },
     DocumentControl: {
@@ -5619,31 +5546,120 @@ const currentState = {
     viewHistory: []
 };
 
+let motherSiteMotionContext = null;
+let sidebarMotionBound = false;
+let readingTocCleanup = null;
+
+function canUseGsapMotion() {
+    return Boolean(window.gsap)
+        && document.visibilityState === 'visible'
+        && !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+}
+
+function resetNavMotionState(element) {
+    if (!element) return;
+    element.style.removeProperty('--nav-shift');
+}
+
+function initSidebarMotion() {
+    if (sidebarMotionBound) return;
+    sidebarMotionBound = true;
+
+    const interactiveItems = document.querySelectorAll('.nav-item, .nav-group-toggle');
+    interactiveItems.forEach((element) => {
+        resetNavMotionState(element);
+        if (!canUseGsapMotion()) return;
+
+        const shiftTo = window.gsap.quickTo(element, '--nav-shift', {
+            duration: 0.22,
+            ease: 'power2.out',
+            unit: 'px'
+        });
+
+        element.addEventListener('pointermove', (event) => {
+            const rect = element.getBoundingClientRect();
+            const ratio = rect.width ? (event.clientX - rect.left) / rect.width : 0;
+            shiftTo(Math.max(0, Math.min(6, ratio * 6)));
+        });
+
+        element.addEventListener('pointerleave', () => shiftTo(0));
+        element.addEventListener('blur', () => shiftTo(0));
+    });
+}
+
+function animateSidebarSelection(viewName) {
+    if (!canUseGsapMotion()) return;
+    const activeItem = document.querySelector(`.nav-item[data-category="${viewName}"]`);
+    if (!activeItem) return;
+
+    window.gsap.killTweensOf(activeItem);
+    window.gsap.fromTo(activeItem, {
+        x: -8,
+        opacity: 0.88
+    }, {
+        x: 0,
+        opacity: 1,
+        duration: 0.28,
+        ease: 'power2.out',
+        clearProps: 'x,opacity'
+    });
+}
+
+function runMotherSiteMotion(viewName, container) {
+    motherSiteMotionContext?.revert();
+    motherSiteMotionContext = null;
+
+    if (!container || !canUseGsapMotion()) return;
+
+    motherSiteMotionContext = window.gsap.context(() => {
+        const homeHero = container.querySelector('.home-hero');
+        if (viewName === 'HomeHub' && homeHero) {
+            const tl = window.gsap.timeline({
+                defaults: {
+                    ease: 'power2.out'
+                }
+            });
+
+            tl.from('.home-hero h1', { autoAlpha: 0, y: 22, duration: 0.45 })
+                .from('.home-hero-lead', { autoAlpha: 0, y: 18, duration: 0.4 }, '-=0.16')
+                .from('.home-hero .prose p', { autoAlpha: 0, y: 18, duration: 0.34, stagger: 0.07 }, '-=0.2')
+                .from('.home-hero-art', { autoAlpha: 0, y: 18, scale: 0.985, duration: 0.52 }, '-=0.34')
+                .from('.home-hero-metric', { autoAlpha: 0, y: 14, duration: 0.32, stagger: 0.06 }, '-=0.24')
+                .from('.home-resource-link', { autoAlpha: 0, y: 16, duration: 0.32, stagger: 0.05 }, '-=0.18');
+
+            homeHero.style.setProperty('--hero-sheen-opacity', '1');
+            window.gsap.fromTo(homeHero, {
+                '--hero-sheen-x': '-130%'
+            }, {
+                '--hero-sheen-x': '130%',
+                duration: 1.35,
+                ease: 'power2.inOut',
+                delay: 0.36,
+                onComplete: () => {
+                    homeHero.style.removeProperty('--hero-sheen-x');
+                    homeHero.style.removeProperty('--hero-sheen-opacity');
+                }
+            });
+        }
+
+        const sections = container.querySelectorAll('.home-section, .content-section, .info-box, .qa-item');
+        if (sections.length) {
+            window.gsap.from(sections, {
+                autoAlpha: 0,
+                y: 18,
+                duration: 0.38,
+                ease: 'power2.out',
+                stagger: 0.04
+            });
+        }
+    }, container);
+}
+
 const HOME_HUB_CONFIG = {
-    quickActions: [
-        { view: 'PatientQA', kicker: '衛教', title: '病人溝通與衛教', desc: '說清楚風險、目的與配合事項。', variant: 'warning' },
-        { view: 'DosageTable', kicker: '工具', title: '藥物與劑量工具', desc: '快速查藥物、活度與兒科劑量公式。', variant: 'success' },
-        { view: 'NMBasics', kicker: '儀器', title: '核醫設備導覽', desc: '查 gamma camera、SPECT/CT、PET/CT 與 QC。', variant: 'info' },
-        { view: 'PET', kicker: '高頻檢查', title: 'FDG PET/CT', desc: '空腹、血糖與流程節點先一次看清。', variant: 'warning' },
-        { view: 'RadiationSafety', kicker: '安全', title: '輻射防護', desc: '查常用限制、污染處理與治療後注意事項。', variant: 'success' },
-        { view: 'DocumentControl', kicker: '品質', title: '文件與品質管理', desc: '查版本、責任、表單與紀錄管理。', variant: 'info' }
-    ],
     heroMetrics: [
         { label: '常用入口', value: '高頻任務優先', desc: '先放值班、排檢與衛教最常用的內容。' },
         { label: '快速核對', value: '提醒與工具同屏', desc: '血糖、空腹、治療限制與常用工具集中查。' },
         { label: '工作順序', value: '先做對，再做快', desc: '先分流風險，再處理流程與細節。' }
-    ],
-    heroChecks: [
-        {
-            level: 'critical',
-            title: '懷孕、哺乳、治療性核醫要先分流',
-            desc: '先分清診斷或治療，再回到醫囑與單位規範，不能靠印象回答。'
-        },
-        {
-            level: 'caution',
-            title: 'PET 前先問血糖、空腹、胰島素與近期治療',
-            desc: '流程只要錯一段，影像就可能失真；這些條件要比原理更早確認。'
-        }
     ],
     resourceLinks: [
         {
@@ -5661,48 +5677,41 @@ const HOME_HUB_CONFIG = {
             variant: 'success'
         },
         {
+            href: 'patient-education/',
+            kicker: '子網站',
+            title: '核醫衛教陪伴站',
+            desc: '給一般民眾與家屬閱讀的核醫檢查、治療與輻射衛教。',
+            variant: 'info'
+        },
+        {
+            href: 'ai-village/',
+            kicker: '子網站',
+            title: 'AI 新手村',
+            desc: '整理 AI 工具、追蹤資訊與實作題材的工作區。',
+            variant: 'info'
+        },
+        {
+            href: 'nucmed-ai-research/',
+            kicker: '子網站',
+            title: '核醫 AI 研究室',
+            desc: '整理核醫 AI 文獻、研究方向與競品觀察。',
+            variant: 'info'
+        },
+        {
+            href: 'nucmed-storylab/',
+            kicker: '子網站',
+            title: '核醫腳本工坊',
+            desc: '集中查看核醫衛教影片腳本與鏡頭分鏡。',
+            variant: 'info'
+        },
+        {
             href: 'https://www.snm.org.tw/',
             kicker: '專業連結',
             title: '台灣核醫學會',
             desc: '回查學會公告、活動與專業資訊。',
             variant: 'info'
         }
-    ],
-    criticalChecks: [
-        {
-            level: 'critical',
-            title: '懷孕、哺乳、治療性核醫不要靠印象回答',
-            desc: '先辨識是否為診斷或治療，再依藥物與醫囑回答；模糊時直接升級回報。'
-        },
-        {
-            level: 'caution',
-            title: 'PET 前先核對血糖、空腹、胰島素與近期治療',
-            desc: '流程錯一次，結果就可能不可信；這類條件要比背景原理更早確認。'
-        },
-        {
-            level: 'guidance',
-            title: '把病人的不確定感轉成 3 句話',
-            desc: '先說今天做什麼，再說為什麼要等，最後說做完要注意什麼。'
-        }
-    ],
-    workflow: [
-        {
-            step: '第一步',
-            title: '先辨識風險',
-            desc: '懷孕、哺乳、糖尿病、含碘顯影史、無法平躺，以及是否有該檢查特定限制，要先分清楚再說明。'
-        },
-        {
-            step: '第二步',
-            title: '再確認流程',
-            desc: '讓對方知道打藥後不會立刻拍，等待時間是檢查設計的一部分。'
-        },
-        {
-            step: '第三步',
-            title: '最後交代檢後',
-            desc: '多喝水、多排尿、是否需要與幼兒保持距離，要講清楚且分診斷與治療。'
-        }
-    ],
-    starterPack: ['NMBasics', 'DocumentControl', 'Radiopharmacy', 'PatientQA']
+    ]
 };
 
 function renderHomeLinkCard(item, className = 'home-link-card') {
@@ -5786,6 +5795,22 @@ function getHeroInsightCards(guide, maxCards = 3) {
     return guide.cards.slice(0, maxCards);
 }
 
+function renderInsightCards(cards = [], gridClassName, cardClassName) {
+    const entries = (cards || []).filter((card) => card && (card.title || card.text));
+    if (!entries.length) return '';
+
+    return `
+        <div class="${gridClassName}">
+            ${entries.map((card) => `
+                <div class="${cardClassName}">
+                    ${card.title ? `<h3>${card.title}</h3>` : ''}
+                    ${card.text ? `<p>${card.text}</p>` : ''}
+                </div>
+            `).join('')}
+        </div>
+    `;
+}
+
 function shouldUseImmersiveReading(key, data) {
     return data && !data.isHomeHub && !data.isDosageCalc && !data.isCalendar;
 }
@@ -5802,29 +5827,172 @@ function getReadableBlockTitle(block, index) {
     return index === 0 ? '重點' : `補充說明 ${index + 1}`;
 }
 
-function getReadingTocHTML(blocks) {
-    return '';
+function getReadingTargetId(prefix, index) {
+    return `${prefix}-${index + 1}`;
+}
+
+function getReadingTocItems(blocks, prefix = 'section', options = {}) {
+    const includeInfoBoxes = options.includeInfoBoxes !== false;
+    return (blocks || []).reduce((items, block, index) => {
+        const isIndexedBlock = block
+            && (block.type === 'section'
+                || block.type === 'qa'
+                || (includeInfoBoxes && typeof block.type === 'string' && block.type.startsWith('info-box')));
+
+        if (!isIndexedBlock) return items;
+
+        items.push({
+            id: getReadingTargetId(prefix, index),
+            label: getReadableBlockTitle(block, index)
+        });
+        return items;
+    }, []);
+}
+
+function limitReadingTocItems(items, maxItems = 7) {
+    const normalizedItems = (items || []).filter(Boolean);
+    if (normalizedItems.length <= maxItems) return normalizedItems;
+    if (maxItems <= 1) return normalizedItems.slice(0, 1);
+
+    const headItems = normalizedItems.slice(0, maxItems - 1);
+    const lastItem = normalizedItems[normalizedItems.length - 1];
+    if (headItems.some((item) => item.id === lastItem.id)) return headItems;
+    return [...headItems, lastItem];
+}
+
+function getReadingTocHTML(items, options = {}) {
+    const normalizedItems = limitReadingTocItems((items || [])
+        .map((item, index) => {
+            if (!item) return null;
+            if (item.id && item.label) return item;
+            return {
+                id: getReadingTargetId(options.prefix || 'section', index),
+                label: getReadableBlockTitle(item, index)
+            };
+        })
+        .filter(Boolean), options.maxItems || 7);
+
+    if (normalizedItems.length < 2) return '';
+
+    return `
+        <aside class="reading-toc" aria-label="${options.ariaLabel || '閱讀索引'}">
+            <div class="reading-toc-header">
+                <span class="reading-toc-label">閱讀索引</span>
+                ${options.title ? `<p class="reading-toc-title">${options.title}</p>` : ''}
+                ${options.note ? `<p class="reading-toc-note">${options.note}</p>` : ''}
+            </div>
+            <div class="reading-toc-list">
+                ${normalizedItems.map((item) => `
+                    <button type="button" class="reading-toc-link" data-reading-target="${item.id}">
+                        ${item.label}
+                    </button>
+                `).join('')}
+            </div>
+        </aside>
+    `;
+}
+
+function setActiveReadingTocLink(container, sectionId) {
+    if (!container || !sectionId) return;
+    container.querySelectorAll('.reading-toc-link').forEach((link) => {
+        const isActive = link.dataset.readingTarget === sectionId;
+        link.classList.toggle('is-active', isActive);
+        if (isActive) {
+            link.setAttribute('aria-current', 'true');
+        } else {
+            link.removeAttribute('aria-current');
+        }
+    });
+}
+
+function initReadingToc(container) {
+    readingTocCleanup?.();
+    readingTocCleanup = null;
+
+    if (!container) return;
+
+    const scroller = document.querySelector('.content-scroll');
+    const links = Array.from(container.querySelectorAll('.reading-toc-link'));
+    const sections = Array.from(container.querySelectorAll('[data-reading-section]')).filter((section) => section.id);
+
+    if (!scroller || links.length === 0 || sections.length === 0) {
+        return;
+    }
+
+    const updateActive = () => {
+        const scrollerRect = scroller.getBoundingClientRect();
+        const threshold = scrollerRect.top + 96;
+        let activeSection = sections[0];
+
+        if (scroller.scrollTop + scroller.clientHeight >= scroller.scrollHeight - 24) {
+            activeSection = sections[sections.length - 1];
+        } else {
+            sections.forEach((section) => {
+                if (section.getBoundingClientRect().top <= threshold) {
+                    activeSection = section;
+                }
+            });
+        }
+
+        setActiveReadingTocLink(container, activeSection.id);
+    };
+
+    let ticking = false;
+    const requestUpdate = () => {
+        if (ticking) return;
+        ticking = true;
+        window.requestAnimationFrame(() => {
+            ticking = false;
+            updateActive();
+        });
+    };
+
+    const handleClick = (event) => {
+        const button = event.currentTarget;
+        const target = container.querySelector(`#${button.dataset.readingTarget}`);
+        if (!target) return;
+
+        const top = target.getBoundingClientRect().top
+            - scroller.getBoundingClientRect().top
+            + scroller.scrollTop
+            - 18;
+
+        setActiveReadingTocLink(container, button.dataset.readingTarget);
+        scroller.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+    };
+
+    links.forEach((link) => link.addEventListener('click', handleClick));
+    scroller.addEventListener('scroll', requestUpdate, { passive: true });
+    window.addEventListener('resize', requestUpdate);
+    updateActive();
+
+    readingTocCleanup = () => {
+        links.forEach((link) => link.removeEventListener('click', handleClick));
+        scroller.removeEventListener('scroll', requestUpdate);
+        window.removeEventListener('resize', requestUpdate);
+    };
 }
 
 function renderContentBlock(block, index) {
+    const sectionId = block?.readingId || getReadingTargetId('section', index);
     switch (block.type) {
         case 'info-box-blue':
-            return `<div id="section-${index + 1}" class="info-box info-box-blue">${block.html}</div>`;
+            return `<div id="${sectionId}" data-reading-section class="info-box info-box-blue">${block.html}</div>`;
         case 'info-box-emerald':
-            return `<div id="section-${index + 1}" class="info-box info-box-emerald">${block.html}</div>`;
+            return `<div id="${sectionId}" data-reading-section class="info-box info-box-emerald">${block.html}</div>`;
         case 'info-box-amber':
-            return `<div id="section-${index + 1}" class="info-box info-box-amber">${block.html}</div>`;
+            return `<div id="${sectionId}" data-reading-section class="info-box info-box-amber">${block.html}</div>`;
         case 'info-box-rose':
-            return `<div id="section-${index + 1}" class="info-box info-box-rose">${block.html}</div>`;
+            return `<div id="${sectionId}" data-reading-section class="info-box info-box-rose">${block.html}</div>`;
         case 'info-box-purple':
-            return `<div id="section-${index + 1}" class="info-box info-box-purple">${block.html}</div>`;
+            return `<div id="${sectionId}" data-reading-section class="info-box info-box-purple">${block.html}</div>`;
         case 'section':
-            return `<section id="section-${index + 1}" class="content-section">
+            return `<section id="${sectionId}" data-reading-section class="content-section">
                 <h3 class="section-heading">${block.title}</h3>
                 ${block.html}
             </section>`;
         case 'qa':
-            return `<section id="section-${index + 1}" class="qa-section">
+            return `<section id="${sectionId}" data-reading-section class="qa-section">
                 <h3 class="section-heading">常見問題</h3>
                 ${block.items.map(item => `
                     <div class="qa-item">
@@ -5863,25 +6031,18 @@ function renderImmersiveContentBlock(block, index) {
 function buildReaderGuideHTML(key, data) {
     const guide = getReaderGuideData(key);
     const heroCards = getHeroInsightCards(guide);
-    if (!guide || heroCards.length === 0) return '';
+    if (!guide) return '';
 
     return `
         <section class="reader-guide">
             <div class="reader-guide-header">
-                <h2>${guide.title || '重點'}</h2>
+                <h2>本頁摘要</h2>
                 ${guide.lead ? `<p>${guide.lead}</p>` : ''}
             </div>
-            <div class="reader-guide-grid">
-                ${heroCards.map((card) => `
-                    <div class="reader-guide-card">
-                        <h3>${card.title}</h3>
-                        <p>${card.text}</p>
-                    </div>
-                `).join('')}
-            </div>
+            ${renderInsightCards(heroCards, 'reader-guide-grid', 'reader-guide-card')}
             ${guide.tellUs ? `
                 <div class="reader-guide-alert">
-                    <strong>請先告訴我們：</strong>
+                    <strong>需要先確認的事項</strong>
                     <span>${guide.tellUs}</span>
                 </div>
             ` : ''}
@@ -6114,61 +6275,61 @@ const LEARNING_PAGE_PLANS = {
     NMBasics: {
         label: '重點',
         title: '核醫看的是功能，設備與 QC 會影響影像可信度。',
-        desc: '先理解功能影像、常見設備與 QC，後面讀各種檢查會比較容易。',
+        desc: '先建立功能影像、常見設備與品質控制的基本觀念，再進入各項檢查會較容易掌握。',
         steps: ['功能影像在看什麼', '常見設備與技術差異', 'QC 怎麼影響影像']
     },
     DocumentControl: {
         label: '重點',
         title: '文件要分清種類、版本、責任與紀錄。',
-        desc: '先懂品質手冊、程序書、作業規範、表單與紀錄各自在做什麼，後面才不容易混亂。',
+        desc: '先區分品質手冊、程序書、作業規範、表單與紀錄的用途，文件管理才會清楚。',
         steps: ['文件分階', '外來文件與修訂控制', '紀錄保存與追溯']
     },
     Radiopharmacy: {
         label: '重點',
         title: '熱核室要把到貨、分裝、放行與污染控制做清楚。',
-        desc: '熱核室工作重點在順序與紀錄。主要流程清楚，細節才不會漏。',
+        desc: '熱核室工作重點在於順序、核對與紀錄；主要流程清楚，細節較不易遺漏。',
         steps: ['到貨與驗收', '分裝、貼標與放行', '污染偵測、料帳與廢棄處理']
     },
     PatientQA: {
         label: '重點',
         title: '病人需要知道風險、目的與配合事項。',
-        desc: '病人通常先需要知道要注意什麼、為什麼要做、以及今天要怎麼配合。',
+        desc: '病人溝通應先說明風險、檢查目的與配合方式，再進一步交代流程細節。',
         steps: ['高風險與禁忌', '檢查目的', '當天流程與檢後提醒']
     },
     RadiationSafety: {
         label: '重點',
         title: '輻射防護要能落到日常工作。',
-        desc: '把法規、劑量、污染處理與治療後限制放在實際工作情境中看。',
+        desc: '將法規、劑量、污染處理與治療後限制放回實際工作情境，較容易落實。',
         steps: ['常見法規場景', '常用數字與門檻', 'ALARA 的日常做法']
     },
     I131Ward: {
         label: '重點',
         title: 'I-131 病房要一起看準備、污染控制與出院安排。',
-        desc: 'I-131 病房需要一起看住院前準備、住院期間污染控制與出院安排。',
+        desc: 'I-131 病房須整合住院前準備、住院期間污染控制與出院安排。',
         steps: ['入院條件', '住院污染與照護', '出院與返家限制']
     },
     DosageTable: {
         label: '重點',
         title: '劑量表要和藥物、情境與醫囑一起看。',
-        desc: '先把藥物、成人或兒科情境與 protocol 對上，再用表格或計算器核對。',
+        desc: '先對照藥物、成人或兒科情境與 protocol，再以表格或計算器核對。',
         steps: ['檢查與藥物', '成人或兒科', '表格與計算器核對']
     },
     DosageCalc: {
         label: '重點',
         title: '計算器只做核對，不能取代醫囑與科內規範。',
-        desc: '計算器是核對工具，結果仍要再對照公式、protocol 與醫囑。',
+        desc: '計算器僅作為核對工具，結果仍須再對照公式、protocol 與醫囑。',
         steps: ['選檢查項目', '兒科輸入體重', '回頭核對公式與醫囑']
     },
     Calendar: {
         label: '使用方式',
         title: '先定位日期，再看門診狀態與排程影響。',
-        desc: '排程頁的價值在降低不確定感，所以介面要先幫你回答今天能不能排、會不會撞節日。',
+        desc: '排程頁應先協助確認日期、門診狀態與行政假期，再安排病人流程。',
         steps: ['先找日期與月份', '再看停診、補班或行政休假', '最後再回到病人通知與排藥安排']
     },
     default: {
         label: '重點',
         title: '先確認目的，再看流程、限制與注意事項。',
-        desc: '頁面會先放最常用的判斷，再接細節與補充資料。',
+        desc: '頁面先整理最常用的判斷，再接流程細節與補充資料。',
         steps: ['目的', '流程與限制', '注意事項']
     }
 };
@@ -6224,14 +6385,13 @@ function buildSpecialContentHTML(key, data) {
 function renderGuideNavCard(item, className = 'guide-nav-card') {
     return `
         <button type="button" class="${className}" data-guide-view="${item.view}">
-            ${item.kicker ? `<span class="guide-nav-kicker">${item.kicker}</span>` : ''}
             <strong>${item.title}</strong>
             <span>${item.desc}</span>
         </button>
     `;
 }
 
-function getGuideNavItems(views, kicker = '接著讀') {
+function getGuideNavItems(views, kicker = '') {
     return (views || [])
         .map((view) => {
             const item = EXAM_DATA[view];
@@ -6271,10 +6431,10 @@ function getExamFlowSupportLinks(category) {
 
 function getExamFlowToneLabel(type) {
     const labels = {
-        'info-box-blue': '先理解',
-        'info-box-emerald': '可以照做',
-        'info-box-amber': '容易卡住',
-        'info-box-rose': '高風險',
+        'info-box-blue': '重點',
+        'info-box-emerald': '處置',
+        'info-box-amber': '注意事項',
+        'info-box-rose': '風險',
         'info-box-purple': '補充提醒'
     };
     return labels[type] || '重點';
@@ -6319,70 +6479,24 @@ function buildExamFlowHTML(key, data) {
     const { prepSections, patientSections, clinicalSections } = classifyExamFlowSections(sections);
     const patientBlocks = [...patientSections, ...patientEduBlocks];
     const supportLinks = getExamFlowSupportLinks(data.category);
+    const tocItems = [];
 
-    return `
-        <article class="exam-article exam-flow-page is-immersive-reading">
-            <section class="exam-flow-hero">
-                <div class="exam-flow-hero-grid">
-                    <div class="exam-flow-copy">
-                        <span class="exam-flow-eyebrow">${guide.eyebrow || '檢查流程頁'}</span>
-                        <h1>${guide.title || data.title}</h1>
-                        <p class="exam-flow-lead">${guide.lead || data.subtitle || ''}</p>
-                        ${heroCards.length > 0 ? `
-                            <div class="exam-flow-insight-grid">
-                                ${heroCards.map((card) => `
-                                    <div class="exam-flow-insight-card">
-                                        <h3>${card.title}</h3>
-                                        <p>${card.text}</p>
-                                    </div>
-                                `).join('')}
-                            </div>
-                        ` : ''}
-                    </div>
-                    <aside class="exam-flow-panel">
-                        ${data.timeArchitecture?.steps ? `
-                            <div class="exam-flow-panel-block">
-                                <span class="exam-flow-panel-kicker">流程</span>
-                                <div class="exam-flow-timeline">
-                                    ${data.timeArchitecture.steps.map((step) => `
-                                        <div class="exam-flow-timeline-step">
-                                            <span>${step.label}</span>
-                                            <strong>${step.value}</strong>
-                                        </div>
-                                    `).join('')}
-                                </div>
-                                ${data.timeArchitecture.note ? `<p class="exam-flow-note">${data.timeArchitecture.note}</p>` : ''}
-                            </div>
-                        ` : ''}
-                        ${guide.tellUs ? `
-                            <div class="exam-flow-panel-block">
-                                <span class="exam-flow-panel-kicker">排檢前先告知</span>
-                                <div class="exam-flow-alert">
-                                    <strong>這些條件不要等到現場才說</strong>
-                                    <p>${guide.tellUs}</p>
-                                </div>
-                            </div>
-                        ` : ''}
-                        ${supportLinks.length > 0 ? `
-                            <div class="exam-flow-panel-block">
-                                <span class="exam-flow-panel-kicker">如果你正在排檢</span>
-                                <div class="guide-nav-grid is-compact">
-                                    ${supportLinks.map((item) => renderGuideNavCard(item)).join('')}
-                                </div>
-                            </div>
-                        ` : ''}
-                    </aside>
-                </div>
-            </section>
+    const conceptSectionHTML = conceptDiagramHTML
+        ? (() => {
+            tocItems.push({ id: 'exam-flow-concept', label: '圖解' });
+            return `<div id="exam-flow-concept" data-reading-section class="reading-anchor-block">${conceptDiagramHTML}</div>`;
+        })()
+        : '';
 
-            ${conceptDiagramHTML}
-
-            ${(callouts.length > 0 || prepSections.length > 0) ? `
-                <section class="exam-flow-section">
+    const prepSectionHTML = (callouts.length > 0 || prepSections.length > 0)
+        ? (() => {
+            tocItems.push({ id: 'exam-flow-prep', label: '檢前評估' });
+            return `
+                <section id="exam-flow-prep" data-reading-section class="exam-flow-section">
                     <div class="exam-flow-section-heading">
                         <div>
-                            <h2>排檢前先抓住，讓錯誤不要跑到後面</h2>
-                            <p>先把前提、禁忌、行政條件與容易漏掉的點放前面，能直接降低病人焦慮與現場返工。</p>
+                            <h2>檢查前評估與前置條件</h2>
+                            <p>本節整理排檢條件、禁忌症、行政流程與檢查前需要先確認的事項。</p>
                         </div>
                     </div>
                     <div class="exam-flow-section-grid">
@@ -6400,14 +6514,19 @@ function buildExamFlowHTML(key, data) {
                         `).join('')}
                     </div>
                 </section>
-            ` : ''}
+            `;
+        })()
+        : '';
 
-            ${clinicalSections.length > 0 ? `
-                <section class="exam-flow-section">
+    const clinicalSectionHTML = clinicalSections.length > 0
+        ? (() => {
+            tocItems.push({ id: 'exam-flow-clinical', label: '原理與判讀' });
+            return `
+                <section id="exam-flow-clinical" data-reading-section class="exam-flow-section">
                     <div class="exam-flow-section-heading">
                         <div>
-                            <h2>理解原理、適應症與判讀線索</h2>
-                            <p>等讀者先有順序感，再把臨床判斷與判讀重點放進來，記憶負擔會比較低，也更容易願意往下讀。</p>
+                            <h2>原理、適應症與判讀重點</h2>
+                            <p>本節整理檢查目的、臨床適應症與影像判讀時需要掌握的主要線索。</p>
                         </div>
                     </div>
                     <div class="exam-flow-section-grid">
@@ -6419,14 +6538,19 @@ function buildExamFlowHTML(key, data) {
                         `).join('')}
                     </div>
                 </section>
-            ` : ''}
+            `;
+        })()
+        : '';
 
-            ${(patientBlocks.length > 0 || guide.evidence) ? `
-                <section class="exam-flow-section">
+    const patientSectionHTML = (patientBlocks.length > 0 || guide.evidence)
+        ? (() => {
+            tocItems.push({ id: 'exam-flow-patient', label: '病人衛教' });
+            return `
+                <section id="exam-flow-patient" data-reading-section class="exam-flow-section">
                     <div class="exam-flow-section-heading">
                         <div>
-                            <h2>把病人的不確定感，翻成清楚的配合事項</h2>
-                            <p>這一區刻意放在後段，讓讀者已經知道自己在做什麼之後，再把對病人的說法與檢後提醒接上。</p>
+                            <h2>病人衛教與檢後說明</h2>
+                            <p>本節整理病人配合事項、返家說明與常用衛教重點。</p>
                         </div>
                     </div>
                     <div class="exam-flow-section-grid">
@@ -6439,7 +6563,71 @@ function buildExamFlowHTML(key, data) {
                     </div>
                     ${guide.evidence ? `<p class="exam-flow-source">${guide.evidence}</p>` : ''}
                 </section>
-            ` : ''}
+            `;
+        })()
+        : '';
+
+    const readingTocHTML = getReadingTocHTML(tocItems, {
+        title: data.title,
+        note: '依序閱讀前置條件、判讀重點與衛教內容。',
+        ariaLabel: `${data.title} 閱讀索引`
+    });
+
+    return `
+        <article class="exam-article exam-flow-page is-immersive-reading">
+            <section class="exam-flow-hero">
+                <div class="exam-flow-hero-grid">
+                    <div class="exam-flow-copy">
+                        <span class="exam-flow-eyebrow">${guide.eyebrow || '檢查資訊'}</span>
+                        <h1>${guide.title || data.title}</h1>
+                        <p class="exam-flow-lead">${guide.lead || data.subtitle || ''}</p>
+                        ${renderInsightCards(heroCards, 'exam-flow-insight-grid', 'exam-flow-insight-card')}
+                    </div>
+                    <aside class="exam-flow-panel">
+                        ${data.timeArchitecture?.steps ? `
+                            <div class="exam-flow-panel-block">
+                                <span class="exam-flow-panel-kicker">檢查流程</span>
+                                <div class="exam-flow-timeline">
+                                    ${data.timeArchitecture.steps.map((step) => `
+                                        <div class="exam-flow-timeline-step">
+                                            <span>${step.label}</span>
+                                            <strong>${step.value}</strong>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                                ${data.timeArchitecture.note ? `<p class="exam-flow-note">${data.timeArchitecture.note}</p>` : ''}
+                            </div>
+                        ` : ''}
+                        ${guide.tellUs ? `
+                            <div class="exam-flow-panel-block">
+                                <span class="exam-flow-panel-kicker">檢查前需主動告知</span>
+                                <div class="exam-flow-alert">
+                                    <strong>以下情況應於排檢或報到前說明</strong>
+                                    <p>${guide.tellUs}</p>
+                                </div>
+                            </div>
+                        ` : ''}
+                        ${supportLinks.length > 0 ? `
+                            <div class="exam-flow-panel-block">
+                                <span class="exam-flow-panel-kicker">相關頁面</span>
+                                <div class="guide-nav-grid is-compact">
+                                    ${supportLinks.map((item) => renderGuideNavCard(item)).join('')}
+                                </div>
+                            </div>
+                        ` : ''}
+                    </aside>
+                </div>
+            </section>
+
+            <div class="immersive-reading-shell${readingTocHTML ? ' has-reading-toc' : ''}">
+                ${readingTocHTML}
+                <div class="immersive-reading-body">
+                    ${conceptSectionHTML}
+                    ${prepSectionHTML}
+                    ${clinicalSectionHTML}
+                    ${patientSectionHTML}
+                </div>
+            </div>
         </article>
     `;
 }
@@ -6455,54 +6643,24 @@ function buildLearningGuideHTML(key, data) {
     const plan = getLearningPagePlan(key);
     const nextSteps = getLearningNextSteps(key);
     const specialHTML = buildSpecialContentHTML(key, data);
+    const tocItems = [];
 
-    return `
-        <article class="exam-article learning-guide-page is-immersive-reading">
-            <section class="learning-hero">
-                <div class="learning-hero-grid">
-                    <div class="learning-hero-copy">
-                        <span class="learning-eyebrow">${guide.eyebrow || ''}</span>
-                        <h1>${guide.title || data.title}</h1>
-                        <p class="learning-hero-lead">${guide.lead || data.subtitle || ''}</p>
-                        ${heroCards.length > 0 ? `
-                            <div class="learning-focus-grid">
-                                ${heroCards.map((card) => `
-                                    <div class="learning-focus-card">
-                                        <h3>${card.title}</h3>
-                                        <p>${card.text}</p>
-                                    </div>
-                                `).join('')}
-                            </div>
-                        ` : ''}
-                    </div>
-                    <aside class="learning-hero-panel">
-                        <div class="learning-panel-block">
-                            <h2>${plan.title}</h2>
-                            <p>${plan.desc}</p>
-                            <ol class="learning-route-list">
-                                ${plan.steps.map((step) => `<li>${step}</li>`).join('')}
-                            </ol>
-                        </div>
-                        ${nextSteps.length > 0 ? `
-                            <div class="learning-panel-block">
-                                <span class="learning-panel-kicker">相關內容</span>
-                                <div class="guide-nav-grid">
-                                    ${nextSteps.map((item) => renderGuideNavCard(item)).join('')}
-                                </div>
-                            </div>
-                        ` : ''}
-                    </aside>
-                </div>
-            </section>
+    const conceptSectionHTML = conceptDiagramHTML
+        ? (() => {
+            tocItems.push({ id: 'learning-concept', label: '圖解' });
+            return `<div id="learning-concept" data-reading-section class="reading-anchor-block">${conceptDiagramHTML}</div>`;
+        })()
+        : '';
 
-            ${conceptDiagramHTML}
-
-            ${callouts.length > 0 ? `
-                <section class="learning-section">
+    const calloutSectionHTML = callouts.length > 0
+        ? (() => {
+            tocItems.push({ id: 'learning-callouts', label: '重要原則' });
+            return `
+                <section id="learning-callouts" data-reading-section class="learning-section">
                     <div class="learning-section-heading">
                         <div>
-                            <h2>重點提醒</h2>
-                            <p>先看容易出錯或需要先判斷的內容。</p>
+                            <h2>重要原則</h2>
+                            <p>本節整理該主題最重要的概念、限制與注意事項。</p>
                         </div>
                     </div>
                     <div class="learning-callout-grid">
@@ -6513,28 +6671,38 @@ function buildLearningGuideHTML(key, data) {
                         `).join('')}
                     </div>
                 </section>
-            ` : ''}
+            `;
+        })()
+        : '';
 
-            ${specialHTML ? `
-                <section class="learning-section">
+    const specialSectionHTML = specialHTML
+        ? (() => {
+            tocItems.push({ id: 'learning-tools', label: '工具' });
+            return `
+                <section id="learning-tools" data-reading-section class="learning-section">
                     <div class="learning-section-heading">
                         <div>
                             <h2>工具</h2>
-                            <p>需要計算或核對時，先在這裡處理。</p>
+                            <p>需要計算、核對或查詢時，可先使用本節工具。</p>
                         </div>
                     </div>
                     <div class="learning-special-surface">
                         ${specialHTML}
                     </div>
                 </section>
-            ` : ''}
+            `;
+        })()
+        : '';
 
-            ${sections.length > 0 ? `
-                <section class="learning-section">
+    const detailSectionHTML = sections.length > 0
+        ? (() => {
+            tocItems.push({ id: 'learning-details', label: '主體內容' });
+            return `
+                <section id="learning-details" data-reading-section class="learning-section">
                     <div class="learning-section-heading">
                         <div>
                             <h2>詳細內容</h2>
-                            <p>依主題分段閱讀，需要更多資料時再打開補充內容。</p>
+                            <p>本節依主題整理主要內容，作為後續查閱與複習的主體。</p>
                         </div>
                     </div>
                     <div class="learning-module-grid">
@@ -6546,18 +6714,24 @@ function buildLearningGuideHTML(key, data) {
                         `).join('')}
                     </div>
                 </section>
-            ` : ''}
+            `;
+        })()
+        : '';
 
-            ${qaBlocks.map((block) => `
-                <section class="learning-section">
+    const qaItems = qaBlocks.flatMap((block) => block.items || []);
+    const qaSectionsHTML = qaItems.length > 0
+        ? (() => {
+            tocItems.push({ id: 'learning-qa', label: '常見問題' });
+            return `
+                <section id="learning-qa" data-reading-section class="learning-section">
                     <div class="learning-section-heading">
                         <div>
                             <h2>常見問題</h2>
-                            <p>把容易問錯或容易漏講的內容集中放在這裡。</p>
+                            <p>集中整理該主題常見疑問與標準說明方式。</p>
                         </div>
                     </div>
                     <div class="qa-section">
-                        ${block.items.map((item) => `
+                        ${qaItems.map((item) => `
                             <div class="qa-item">
                                 <button type="button" class="qa-question" aria-expanded="false" onclick="toggleQA(this)">
                                     <span class="qa-question-text">${item.q}</span>
@@ -6568,24 +6742,68 @@ function buildLearningGuideHTML(key, data) {
                         `).join('')}
                     </div>
                 </section>
-            `).join('')}
+            `;
+        })()
+        : '';
 
-            ${buildGalleryHTML(data)}
+    const galleryHTML = buildGalleryHTML(data);
+    if (galleryHTML) {
+        tocItems.push({ id: 'learning-gallery', label: '圖卡' });
+    }
+
+    const readingTocHTML = getReadingTocHTML(tocItems, {
+        title: data.title,
+        note: '依序閱讀重要原則、工具與詳細內容。',
+        ariaLabel: `${data.title} 閱讀索引`
+    });
+
+    return `
+        <article class="exam-article learning-guide-page is-immersive-reading" data-guide-key="${key}">
+            <section class="learning-hero">
+                <div class="learning-hero-grid">
+                    <div class="learning-hero-copy">
+                        <span class="learning-eyebrow">${guide.eyebrow || ''}</span>
+                        <h1>${guide.title || data.title}</h1>
+                        <p class="learning-hero-lead">${guide.lead || data.subtitle || ''}</p>
+                        ${renderInsightCards(heroCards, 'learning-focus-grid', 'learning-focus-card')}
+                    </div>
+                    <aside class="learning-hero-panel">
+                        <div class="learning-panel-block">
+                            <h2>${plan.title}</h2>
+                            <p>${plan.desc}</p>
+                            <ol class="learning-route-list">
+                                ${plan.steps.map((step) => `<li>${step}</li>`).join('')}
+                            </ol>
+                        </div>
+                        ${nextSteps.length > 0 ? `
+                            <div class="learning-panel-block">
+                                <span class="learning-panel-kicker">延伸閱讀</span>
+                                <div class="guide-nav-grid">
+                                    ${nextSteps.map((item) => renderGuideNavCard(item)).join('')}
+                                </div>
+                            </div>
+                        ` : ''}
+                    </aside>
+                </div>
+            </section>
+
+            <div class="immersive-reading-shell${readingTocHTML ? ' has-reading-toc' : ''}">
+                ${readingTocHTML}
+                <div class="immersive-reading-body">
+                    ${conceptSectionHTML}
+                    ${calloutSectionHTML}
+                    ${specialSectionHTML}
+                    ${detailSectionHTML}
+                    ${qaSectionsHTML}
+                    ${galleryHTML ? `<div id="learning-gallery" data-reading-section class="reading-anchor-block">${galleryHTML}</div>` : ''}
+                </div>
+            </div>
         </article>
     `;
 }
 
 function buildHomeHubHTML() {
-    const starterActions = HOME_HUB_CONFIG.quickActions.filter((item) => HOME_HUB_CONFIG.starterPack.includes(item.view));
-    const criticalChecks = HOME_HUB_CONFIG.criticalChecks;
     const resourceLinks = [
-        {
-            href: 'patient-education/',
-            kicker: '病人版',
-            title: '民眾版核醫衛教',
-            desc: '提供病人與家屬閱讀的簡化說明，適合在衛教或電話溝通時直接分享。',
-            variant: 'warning'
-        },
         {
             href: 'https://gen-lang-client-0435635260.web.app/',
             kicker: '輔助工具',
@@ -6605,66 +6823,40 @@ function buildHomeHubHTML() {
 
     return `
         <article class="home-hub">
-            <section class="home-hero">
+            <div class="immersive-reading-shell home-reading-shell">
+                <div class="immersive-reading-body">
+            <section id="home-hub-overview" data-reading-section class="home-hero">
                 <div class="home-hero-grid">
-                    <figure class="home-hero-art">
-                        <img src="assets/home/home-hero-stand-guide.png" alt="漫畫風核醫首頁主視覺：一名以召喚姿勢登場的專業講者，身後出現由 PET/CT、gamma camera 與原子軌道構成的替身式守護者。" loading="eager" decoding="async">
-                    </figure>
                     <div class="home-hero-copy">
                         <span class="home-eyebrow">首頁總覽</span>
                         <p class="home-hero-kicker">作者：Chun-Yin Huang</p>
-                        <h1>這個網站整理了核醫科日常工作裡最常反覆查閱的內容。</h1>
-                        <p class="home-hero-lead">把核醫科真正高頻、容易忘、又常在忙碌中臨時要查的資訊，集中成一個能快速打開、快速定位、快速回到工作現場的入口。</p>
+                        <h1>這個網站整理了核醫科日常工作中最常查閱的內容。</h1>
+                        <p class="home-hero-lead">頁面依工作情境與臨床主題編排，方便在需要時迅速找到相對應的檢查、治療、工具或衛教資訊。</p>
                         <div class="prose">
-                            <p>這個網站最初的目的，不是做成一個花俏的展示頁，而是把科內真正會用到、也真的會忘記的資訊整理在一起。排檢、收像、後處理、衛教、治療安全、劑量換算，這些事情平常都夾在忙碌的工作裡，很少有人有空從頭翻 guideline，所以才需要一個能夠隨手打開、很快找到重點的地方。</p>
-                            <p>如果你是第一次使用，建議先把左側分類看過一輪。現在大致分成幾個區塊：PET、心臟、內分泌、骨骼與腎泌尿、胃腸肝膽、神經與肺部感染，另外還有核醫小學堂與治療單元。每個檢查頁會放適應症、時間架構、判讀重點，也會逐步補上給放射師與核醫醫師使用的技術 protocol 摘要，方便在上機前或判讀前快速核對。</p>
-                            <p>站內另外有幾個比較偏工作支援的頁面。像「病人溝通與衛教」適合櫃台、電話通知或檢查前說明時使用；「藥物與劑量工具」整理了常用放射藥物、成人與兒科劑量；「輻射防護與治療安全」則比較適合碰到治療型核醫、返家限制、污染處理或特殊情境時回來查。這些內容不一定每天都要用到，但真正需要的時候通常都很急，所以首頁先把最值得先看的入口拆出來。</p>
+                            <p>主體內容依工作內容分區，例如 PET、心臟、內分泌、骨骼與腎泌尿、胃腸肝膽、神經、肺部感染與治療單元，讓閱讀順序與臨床工作流程較一致。</p>
+                            <p>各檢查頁面會整理適應症、前置條件、時間安排、影像重點與常見操作問題，協助快速掌握當前需要確認的事項。</p>
+                            <p>除檢查與治療頁外，站內亦收錄病人溝通與衛教、藥物與劑量工具、輻射防護、文件與品質管理等支援頁面，供日常工作查閱使用。</p>
                         </div>
                     </div>
+                    <figure class="home-hero-art">
+                        <img src="assets/home/home-hero-stand-guide.png" alt="核醫科主題首頁主視覺，結合 PET/CT、gamma camera 與原子結構元素。" loading="eager" decoding="async">
+                    </figure>
                 </div>
             </section>
 
-            <section class="home-section">
-                <div class="home-section-heading">
-                    <div>
-                        <h2>先看這 3 件事</h2>
-                        <p>第一次進站時，先把高風險分流、PET 前置條件與病人說明節奏抓住，後面很多流程會順很多。</p>
-                    </div>
-                </div>
-                <div class="home-critical-grid">
-                    ${criticalChecks.map((item) => `
-                        <article class="home-critical-card is-${item.level}">
-                            <span class="home-critical-label">${getHomeLevelLabel(item.level)}</span>
-                            <h3>${item.title}</h3>
-                            <p>${item.desc}</p>
-                        </article>
-                    `).join('')}
-                </div>
-            </section>
-
-            <section class="home-section">
-                <div class="home-section-heading">
-                    <div>
-                        <h2>第一次使用建議先從這裡開始</h2>
-                        <p>先熟悉工作骨架，再回到單一檢查或治療細節，會比直接硬讀長文有效。</p>
-                    </div>
-                </div>
-                <div class="home-card-grid">
-                    ${starterActions.map((item) => renderHomeLinkCard(item)).join('')}
-                </div>
-            </section>
-
-            <section class="home-section">
+            <section id="home-hub-resources" data-reading-section class="home-section">
                 <div class="home-section-heading">
                     <div>
                         <h2>常用工具與外部連結</h2>
-                        <p>把高頻工具獨立出來，避免它們插在正文中間打斷閱讀節奏。</p>
+                        <p>整理常用工具、子網站與外部資源，方便直接前往所需頁面。</p>
                     </div>
                 </div>
                 <div class="home-card-grid">
                     ${resourceLinks.map((item) => renderHomeResourceLink(item)).join('')}
                 </div>
             </section>
+                </div>
+            </div>
         </article>
     `;
 }
@@ -6674,28 +6866,42 @@ function buildI131TreatmentHTML(data) {
     const heroCards = getHeroInsightCards(guide);
     const conceptDiagramHTML = buildConceptDiagramHTML(getConceptDiagramData('I131'));
     const inlineGuideImageHTML = getInlineGuideImageHTML('I131');
+    const tocItems = [];
+
+    const conceptSectionHTML = conceptDiagramHTML
+        ? (() => {
+            tocItems.push({ id: 'i131-concept', label: '圖解' });
+            return `<div id="i131-concept" data-reading-section class="reading-anchor-block">${conceptDiagramHTML}</div>`;
+        })()
+        : '';
+
+    tocItems.push(
+        { id: 'i131-goals', label: '治療目的' },
+        { id: 'i131-prepare', label: '治療前評估' },
+        { id: 'i131-journey', label: '治療流程' },
+        { id: 'i131-safety', label: '病安提醒與核對' }
+    );
+
+    const readingTocHTML = getReadingTocHTML(tocItems, {
+        title: data.title,
+        note: '依序閱讀治療目的、前置準備、流程與病安核對。',
+        ariaLabel: `${data.title} 閱讀索引`
+    });
 
     return `
         <article class="exam-article i131-therapy-page is-immersive-reading">
             <section class="i131-hero">
                 <div class="i131-hero-copy">
-                    <span class="i131-eyebrow">${guide?.eyebrow || 'I-131 不是只把藥喝下去而已'}</span>
+                    <span class="i131-eyebrow">${guide?.eyebrow || 'I-131 治療資訊'}</span>
                     <h1>${guide?.title || data.title}</h1>
                     <p class="i131-hero-lead">${guide?.lead || data.subtitle}</p>
-                    ${heroCards.length > 0 ? `<div class="i131-insight-grid">
-                        ${heroCards.map((card) => `
-                            <div class="i131-insight-card">
-                                <h3>${card.title}</h3>
-                                <p>${card.text}</p>
-                            </div>
-                        `).join('')}
-                    </div>` : ''}
+                    ${renderInsightCards(heroCards, 'i131-insight-grid', 'i131-insight-card')}
                     ${inlineGuideImageHTML}
                 </div>
                 <div class="i131-hero-grid is-panel-only">
                     <aside class="i131-hero-panel">
                         <div class="i131-panel-block">
-                            <span class="i131-panel-kicker">風險提醒</span>
+                            <span class="i131-panel-kicker">重要提醒</span>
                             <div class="i131-alert-stack">
                                 ${data.safetyAlerts.slice(0, 2).map((item) => `
                                     <div class="i131-alert-card is-${item.level}">
@@ -6707,7 +6913,7 @@ function buildI131TreatmentHTML(data) {
                             </div>
                         </div>
                         <div class="i131-panel-block">
-                            <span class="i131-panel-kicker">排程與病房限制</span>
+                            <span class="i131-panel-kicker">住院與放行重點</span>
                             <div class="i131-rule-list">
                                 ${data.operationalRules.map((item) => `
                                     <div class="i131-rule-item">
@@ -6722,13 +6928,16 @@ function buildI131TreatmentHTML(data) {
                 </div>
             </section>
 
-            ${conceptDiagramHTML}
+            <div class="immersive-reading-shell${readingTocHTML ? ' has-reading-toc' : ''}">
+                ${readingTocHTML}
+                <div class="immersive-reading-body">
+            ${conceptSectionHTML}
 
-            <section class="i131-section">
+            <section id="i131-goals" data-reading-section class="i131-section">
                 <div class="i131-section-heading">
                     <div>
                         <h2>I-131 治療目的</h2>
-                        <p>先分清楚是甲亢、殘餘組織消融，還是復發或轉移治療。</p>
+                        <p>整理不同臨床情境下的 I-131 治療目的與治療策略。</p>
                     </div>
                 </div>
                 <div class="i131-goal-grid">
@@ -6742,11 +6951,11 @@ function buildI131TreatmentHTML(data) {
                 </div>
             </section>
 
-            <section class="i131-section">
+            <section id="i131-prepare" data-reading-section class="i131-section">
                 <div class="i131-section-heading">
                     <div>
                         <h2>治療前要確認的事</h2>
-                        <p>確認適應症、停藥與低碘準備、病房與返家限制。</p>
+                        <p>治療前需確認適應症、停藥與低碘準備，以及住院與返家安排。</p>
                     </div>
                 </div>
                 <div class="i131-decision-grid">
@@ -6759,11 +6968,11 @@ function buildI131TreatmentHTML(data) {
                 </div>
             </section>
 
-            <section class="i131-section">
+            <section id="i131-journey" data-reading-section class="i131-section">
                 <div class="i131-section-heading">
                     <div>
                         <h2>病人會經過哪些步驟</h2>
-                        <p>把治療前、住院中、出院後的注意事項連在一起看。</p>
+                        <p>依時間順序整理治療前、住院中與出院後的流程與注意事項。</p>
                     </div>
                 </div>
                 <div class="i131-journey-grid">
@@ -6779,11 +6988,11 @@ function buildI131TreatmentHTML(data) {
                 </div>
             </section>
 
-            <section class="i131-section">
+            <section id="i131-safety" data-reading-section class="i131-section">
                 <div class="i131-section-heading">
                     <div>
                         <h2>病安提醒與工作核對</h2>
-                        <p>把值班與排程時最容易漏掉的內容集中核對。</p>
+                        <p>集中整理排程、值班與照護過程中需要反覆核對的病安重點。</p>
                     </div>
                 </div>
                 <div class="i131-bottom-grid">
@@ -6800,7 +7009,7 @@ function buildI131TreatmentHTML(data) {
                     </div>
                     <div class="i131-bottom-column">
                         <div class="i131-checklist-card">
-                            <span class="i131-panel-kicker">工作人員最怕漏掉</span>
+                            <span class="i131-panel-kicker">工作核對清單</span>
                             <ul class="checklist">
                                 ${data.staffChecklist.map((item) => `<li>${item}</li>`).join('')}
                             </ul>
@@ -6809,6 +7018,8 @@ function buildI131TreatmentHTML(data) {
                     </div>
                 </div>
             </section>
+                </div>
+            </div>
         </article>
     `;
 }
@@ -6847,6 +7058,67 @@ function buildTherapySafetyHTML(key, data) {
     const sections = blocks.filter((block) => block.type === 'section');
     const featuredCallouts = callouts.slice(0, 2);
     const remainingCallouts = callouts.slice(2);
+    const tocItems = [];
+
+    const conceptSectionHTML = conceptDiagramHTML
+        ? (() => {
+            tocItems.push({ id: `${key}-concept`, label: '圖解' });
+            return `<div id="${key}-concept" data-reading-section class="reading-anchor-block">${conceptDiagramHTML}</div>`;
+        })()
+        : '';
+
+    const evaluationSectionHTML = remainingCallouts.length > 0
+        ? (() => {
+            tocItems.push({ id: `${key}-evaluation`, label: '治療前評估' });
+            return `
+                <section id="${key}-evaluation" data-reading-section class="i131-section">
+                    <div class="i131-section-heading">
+                        <div>
+                            <h2>治療前評估</h2>
+                            <p>整理適應症、禁忌症、風險與治療前需要完成的評估項目。</p>
+                        </div>
+                    </div>
+                    <div class="therapy-info-grid">
+                        ${remainingCallouts.map((block) => `
+                            <div class="therapy-rich-card is-${getTherapyToneFromBlock(block.type)}">
+                                ${block.html}
+                            </div>
+                        `).join('')}
+                    </div>
+                </section>
+            `;
+        })()
+        : '';
+
+    const careSectionHTML = sections.length > 0
+        ? (() => {
+            tocItems.push({ id: `${key}-care`, label: '照護與衛教' });
+            return `
+                <section id="${key}-care" data-reading-section class="i131-section">
+                    <div class="i131-section-heading">
+                        <div>
+                            <h2>治療流程、照護與衛教</h2>
+                            <p>依序整理治療流程、照護重點、返家注意事項與跨團隊合作內容。</p>
+                        </div>
+                    </div>
+                    <div class="therapy-section-grid">
+                        ${sections.map((block) => `
+                            <div class="${getTherapySectionCardClass(block)}">
+                                <h3>${block.title}</h3>
+                                ${block.html}
+                            </div>
+                        `).join('')}
+                    </div>
+                </section>
+            `;
+        })()
+        : '';
+
+    const readingTocHTML = getReadingTocHTML(tocItems, {
+        title: data.title,
+        note: '依序閱讀圖解、治療前評估與照護安排。',
+        ariaLabel: `${data.title} 閱讀索引`
+    });
 
     return `
         <article class="exam-article i131-therapy-page therapy-page is-immersive-reading">
@@ -6855,21 +7127,14 @@ function buildTherapySafetyHTML(key, data) {
                     <span class="i131-eyebrow">${guide?.eyebrow || data.title}</span>
                     <h1>${guide?.title || data.title}</h1>
                     <p class="i131-hero-lead">${guide?.lead || data.subtitle || ''}</p>
-                    ${heroCards.length > 0 ? `<div class="i131-insight-grid">
-                        ${heroCards.map((card) => `
-                            <div class="i131-insight-card">
-                                <h3>${card.title}</h3>
-                                <p>${card.text}</p>
-                            </div>
-                        `).join('')}
-                    </div>` : ''}
+                    ${renderInsightCards(heroCards, 'i131-insight-grid', 'i131-insight-card')}
                     ${inlineGuideImageHTML}
                 </div>
                 <div class="i131-hero-grid is-panel-only">
                     <aside class="i131-hero-panel">
                         ${data.timeArchitecture?.steps ? `
                             <div class="i131-panel-block">
-                                <span class="i131-panel-kicker">治療節奏</span>
+                                <span class="i131-panel-kicker">治療流程</span>
                                 <div class="therapy-timeline">
                                     ${data.timeArchitecture.steps.map((step) => `
                                         <div class="therapy-timeline-step">
@@ -6883,7 +7148,7 @@ function buildTherapySafetyHTML(key, data) {
                         ` : ''}
                         ${featuredCallouts.length > 0 ? `
                             <div class="i131-panel-block">
-                                <span class="i131-panel-kicker">重點提醒</span>
+                                <span class="i131-panel-kicker">重要提醒</span>
                                 <div class="i131-alert-stack">
                                     ${featuredCallouts.map((block) => `
                                         <div class="i131-alert-card is-${getTherapyToneFromBlock(block.type)}">
@@ -6897,44 +7162,14 @@ function buildTherapySafetyHTML(key, data) {
                 </div>
             </section>
 
-            ${conceptDiagramHTML}
-
-            ${remainingCallouts.length > 0 ? `
-                <section class="i131-section">
-                    <div class="i131-section-heading">
-                        <div>
-                            <h2>治療前評估</h2>
-                            <p>確認適應症、禁忌、風險與病人能不能配合流程。</p>
-                        </div>
-                    </div>
-                    <div class="therapy-info-grid">
-                        ${remainingCallouts.map((block) => `
-                            <div class="therapy-rich-card is-${getTherapyToneFromBlock(block.type)}">
-                                ${block.html}
-                            </div>
-                        `).join('')}
-                    </div>
-                </section>
-            ` : ''}
-
-            ${sections.length > 0 ? `
-                <section class="i131-section">
-                    <div class="i131-section-heading">
-                        <div>
-                            <h2>流程、照護與衛教</h2>
-                            <p>整理治療流程、病房管理、返家限制與跨科合作。</p>
-                        </div>
-                    </div>
-                    <div class="therapy-section-grid">
-                        ${sections.map((block) => `
-                            <div class="${getTherapySectionCardClass(block)}">
-                                <h3>${block.title}</h3>
-                                ${block.html}
-                            </div>
-                        `).join('')}
-                    </div>
-                </section>
-            ` : ''}
+            <div class="immersive-reading-shell${readingTocHTML ? ' has-reading-toc' : ''}">
+                ${readingTocHTML}
+                <div class="immersive-reading-body">
+                    ${conceptSectionHTML}
+                    ${evaluationSectionHTML}
+                    ${careSectionHTML}
+                </div>
+            </div>
         </article>
     `;
 }
@@ -7089,9 +7324,9 @@ function buildContentHTML(key, data) {
     // Header
     let headerHTML = `
         <header class="article-intro">
-            ${imgHTML}
             <h1 class="content-title">${data.title}</h1>
             ${data.subtitle ? `<p class="content-subtitle">${data.subtitle}</p>` : ''}
+            ${imgHTML}
         </header>
     `;
 
@@ -7125,29 +7360,64 @@ function buildContentHTML(key, data) {
 
     let blocksHTML = '';
     if (allContentBlocks.length > 0) {
+        const tocItems = useImmersiveReading ? getReadingTocItems(allContentBlocks, 'section', { includeInfoBoxes: false }) : [];
         const renderedBlocks = allContentBlocks
             .map((block, index) => useImmersiveReading
                 ? renderImmersiveContentBlock(block, index)
                 : renderContentBlock(block, index))
             .join('');
 
-        blocksHTML = useImmersiveReading
-            ? `<div class="immersive-reading-shell">
-                <div class="immersive-reading-body">${renderedBlocks}</div>
-            </div>`
-            : renderedBlocks;
+        if (useImmersiveReading) {
+            const immersiveSections = [];
+
+            if (timeHTML) {
+                tocItems.push({ id: 'time-architecture', label: '檢查流程' });
+                immersiveSections.push(`<div id="time-architecture" data-reading-section class="reading-anchor-block">${timeHTML}</div>`);
+            }
+
+            if (conceptDiagramHTML) {
+                tocItems.push({ id: 'concept-diagram', label: '圖解' });
+                immersiveSections.push(`<div id="concept-diagram" data-reading-section class="reading-anchor-block">${conceptDiagramHTML}</div>`);
+            }
+
+            if (protocolSummaryHTML) {
+                tocItems.push({ id: 'protocol-summary', label: '技術摘要' });
+                immersiveSections.push(`<div id="protocol-summary" data-reading-section class="reading-anchor-block">${protocolSummaryHTML}</div>`);
+            }
+
+            if (specialHTML) {
+                tocItems.push({ id: 'special-tools', label: '工具' });
+                immersiveSections.push(`<div id="special-tools" data-reading-section class="reading-anchor-block">${specialHTML}</div>`);
+            }
+
+            immersiveSections.push(renderedBlocks);
+
+            if (galleryHTML) {
+                tocItems.push({ id: 'guide-gallery', label: '圖卡' });
+                immersiveSections.push(`<div id="guide-gallery" data-reading-section class="reading-anchor-block">${galleryHTML}</div>`);
+            }
+
+            const readingTocHTML = getReadingTocHTML(tocItems, {
+                title: data.title,
+                note: '可直接跳到流程、技術摘要或正文段落。',
+                ariaLabel: `${data.title} 閱讀索引`
+            });
+
+            blocksHTML = `<div class="immersive-reading-shell${readingTocHTML ? ' has-reading-toc' : ''}">
+                ${readingTocHTML}
+                <div class="immersive-reading-body">${immersiveSections.join('')}</div>
+            </div>`;
+        } else {
+            blocksHTML = renderedBlocks;
+        }
     }
 
     return `
         <article class="exam-article${useImmersiveReading ? ' is-immersive-reading' : ''}">
             ${headerHTML}
             ${readerGuideHTML}
-            ${conceptDiagramHTML}
-            ${timeHTML}
-            ${protocolSummaryHTML}
-            ${specialHTML}
             ${blocksHTML}
-            ${galleryHTML}
+            ${useImmersiveReading ? '' : `${conceptDiagramHTML}${timeHTML}${protocolSummaryHTML}${specialHTML}${galleryHTML}`}
         </article>
     `;
 }
@@ -7171,10 +7441,12 @@ function renderView(viewName) {
         if (viewName === 'HomeHub') attachHomeHubListeners();
         attachGuideNavListeners();
         if (viewName === 'Calendar') initCalendar();
-        if (viewName === 'DosageCalc') attachDosageCalcListeners();
+        if (container.querySelector('#dosage-calc-btn')) attachDosageCalcListeners();
         if (data && data.isI131Calc) attachI131Listeners();
 
         jumpContentToTop(container);
+        initReadingToc(container);
+        runMotherSiteMotion(viewName, container);
 
         if (viewName !== 'HomeHub') {
             currentState.viewHistory = [
@@ -7210,6 +7482,7 @@ function setActiveNavItem(viewName) {
             item.removeAttribute('aria-current');
         }
     });
+    animateSidebarSelection(viewName);
 }
 
 function navigateToView(viewName) {
@@ -7603,8 +7876,49 @@ function setNavGroupState(group, isOpen) {
     const toggle = group.querySelector('.nav-group-toggle');
     const items = group.querySelector('.nav-group-items');
     toggle?.classList.toggle('open', isOpen);
-    items?.classList.toggle('open', isOpen);
     toggle?.setAttribute('aria-expanded', String(isOpen));
+
+    if (!items) return;
+
+    if (!canUseGsapMotion()) {
+        items.classList.toggle('open', isOpen);
+        return;
+    }
+
+    window.gsap.killTweensOf(items);
+    if (isOpen) {
+        items.classList.add('open');
+        window.gsap.fromTo(items, {
+            height: 0,
+            autoAlpha: 0,
+            y: -6
+        }, {
+            height: items.scrollHeight,
+            autoAlpha: 1,
+            y: 0,
+            duration: 0.28,
+            ease: 'power2.out',
+            onComplete: () => {
+                items.style.height = 'auto';
+            }
+        });
+        return;
+    }
+
+    window.gsap.fromTo(items, {
+        height: items.offsetHeight,
+        autoAlpha: 1,
+        y: 0
+    }, {
+        height: 0,
+        autoAlpha: 0,
+        y: -6,
+        duration: 0.22,
+        ease: 'power2.inOut',
+        onComplete: () => {
+            items.classList.remove('open');
+        }
+    });
 }
 
 function setSidebarOpen(isOpen) {
@@ -7614,6 +7928,8 @@ function setSidebarOpen(isOpen) {
 }
 
 (function initNavigation() {
+    initSidebarMotion();
+
     // Nav group toggles
     document.querySelectorAll('.nav-group-toggle').forEach(toggle => {
         toggle.setAttribute('aria-expanded', 'false');

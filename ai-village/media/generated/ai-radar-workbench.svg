@@ -1,0 +1,69 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="40" fill="#FFF7E7"/>
+  <rect x="28" y="28" width="1144" height="704" rx="34" fill="url(#bg)"/>
+  <circle cx="1042" cy="124" r="74" fill="#FFE8A3"/>
+  <circle cx="183" cy="133" r="56" fill="#DDEAD5"/>
+  <path d="M85 598C207 518 376 562 445 633" stroke="#73A08C" stroke-width="10" stroke-linecap="round" stroke-dasharray="18 24"/>
+  <path d="M750 113C832 86 912 96 997 143" stroke="#F2B356" stroke-width="8" stroke-linecap="round" stroke-dasharray="12 16"/>
+
+  <rect x="104" y="170" width="332" height="246" rx="28" fill="#FFFDF7" stroke="#224E46" stroke-width="4"/>
+  <rect x="136" y="204" width="146" height="28" rx="14" fill="#DFF1E7"/>
+  <text x="164" y="224" fill="#224E46" font-family="'Noto Sans TC', sans-serif" font-size="28" font-weight="700">YouTube</text>
+  <text x="136" y="284" fill="#1B2D3C" font-family="'Noto Sans TC', sans-serif" font-size="54" font-weight="900">看別人</text>
+  <text x="136" y="350" fill="#1B2D3C" font-family="'Noto Sans TC', sans-serif" font-size="54" font-weight="900">怎麼做</text>
+  <text x="136" y="394" fill="#65716D" font-family="'Noto Sans TC', sans-serif" font-size="24" font-weight="500">教學、示範、開箱，</text>
+  <text x="136" y="426" fill="#65716D" font-family="'Noto Sans TC', sans-serif" font-size="24" font-weight="500">新手最容易有感。</text>
+  <circle cx="354" cy="272" r="42" fill="#FF5A54"/>
+  <polygon points="344,252 344,292 378,272" fill="#FFF8EA"/>
+
+  <rect x="457" y="106" width="286" height="204" rx="28" fill="#FFFDF7" stroke="#224E46" stroke-width="4" transform="rotate(-5 457 106)"/>
+  <rect x="497" y="148" width="104" height="26" rx="13" fill="#FCE3EB"/>
+  <text x="531" y="168" fill="#9B4562" font-family="'Noto Sans TC', sans-serif" font-size="26" font-weight="700">X</text>
+  <text x="498" y="232" fill="#1B2D3C" font-family="'Noto Sans TC', sans-serif" font-size="42" font-weight="900">看看最近</text>
+  <text x="498" y="284" fill="#1B2D3C" font-family="'Noto Sans TC', sans-serif" font-size="42" font-weight="900">大家在聊啥</text>
+  <text x="498" y="326" fill="#65716D" font-family="'Noto Sans TC', sans-serif" font-size="22" font-weight="500">先有興趣，再回頭找完整介紹。</text>
+
+  <rect x="778" y="190" width="320" height="244" rx="28" fill="#FFFDF7" stroke="#224E46" stroke-width="4"/>
+  <rect x="810" y="224" width="126" height="28" rx="14" fill="#E3E8FB"/>
+  <text x="834" y="244" fill="#4258A8" font-family="'Noto Sans TC', sans-serif" font-size="26" font-weight="700">GitHub</text>
+  <text x="810" y="304" fill="#1B2D3C" font-family="'Noto Sans TC', sans-serif" font-size="50" font-weight="900">想深挖</text>
+  <text x="810" y="364" fill="#1B2D3C" font-family="'Noto Sans TC', sans-serif" font-size="50" font-weight="900">再來逛</text>
+  <text x="810" y="406" fill="#65716D" font-family="'Noto Sans TC', sans-serif" font-size="22" font-weight="500">工具、prompt、範例，</text>
+  <text x="810" y="436" fill="#65716D" font-family="'Noto Sans TC', sans-serif" font-size="22" font-weight="500">很多寶都藏在這。</text>
+
+  <rect x="312" y="464" width="574" height="192" rx="36" fill="#17352F"/>
+  <rect x="340" y="492" width="518" height="136" rx="24" fill="#23473F"/>
+  <rect x="390" y="550" width="420" height="18" rx="9" fill="#0F2622"/>
+  <rect x="418" y="523" width="364" height="18" rx="9" fill="#F3C84F"/>
+  <rect x="434" y="502" width="130" height="10" rx="5" fill="#FFF7E7" opacity="0.82"/>
+  <rect x="580" y="502" width="90" height="10" rx="5" fill="#FFF7E7" opacity="0.58"/>
+  <rect x="684" y="502" width="72" height="10" rx="5" fill="#FFF7E7" opacity="0.36"/>
+
+  <ellipse cx="205" cy="553" rx="124" ry="116" fill="#EFC36A"/>
+  <path d="M169 620C167 585 164 552 170 518C174 496 190 482 214 482C238 482 255 496 259 518C264 552 262 585 260 620" fill="#FFF3DD"/>
+  <path d="M190 514C204 523 228 523 240 514" stroke="#224E46" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="193" cy="550" r="7" fill="#1B2D3C"/>
+  <circle cx="236" cy="550" r="7" fill="#1B2D3C"/>
+  <path d="M199 584C210 592 223 592 232 584" stroke="#1B2D3C" stroke-width="7" stroke-linecap="round"/>
+  <path d="M158 518C166 470 202 446 246 454C268 458 284 470 292 492C284 498 275 502 265 504C256 480 237 470 216 470C194 470 175 482 167 506C157 504 150 498 144 489C148 476 153 468 158 518Z" fill="#1B2D3C"/>
+  <rect x="148" y="625" width="131" height="60" rx="30" fill="#FFFDF7" stroke="#224E46" stroke-width="4"/>
+  <text x="173" y="663" fill="#224E46" font-family="'Noto Sans TC', sans-serif" font-size="28" font-weight="700">慢慢逛</text>
+
+  <g opacity="0.95">
+    <circle cx="1040" cy="534" r="15" fill="#F2B356"/>
+    <circle cx="1008" cy="560" r="11" fill="#224E46"/>
+    <circle cx="1086" cy="566" r="13" fill="#73A08C"/>
+    <path d="M1040 478L1040 512" stroke="#224E46" stroke-width="8" stroke-linecap="round"/>
+    <path d="M1022 496L1058 496" stroke="#224E46" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <text x="354" y="702" fill="#17352F" font-family="'Noto Sans TC', sans-serif" font-size="42" font-weight="900">追新東西，不用追到氣喘吁吁。</text>
+
+  <defs>
+    <linearGradient id="bg" x1="84" y1="82" x2="1115" y2="679" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF6DB"/>
+      <stop offset="0.52" stop-color="#FFFDF7"/>
+      <stop offset="1" stop-color="#E7F0E3"/>
+    </linearGradient>
+  </defs>
+</svg>

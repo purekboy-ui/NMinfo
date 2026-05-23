@@ -6,7 +6,10 @@ const staticTargets = [
   ['assets/home', 'dist/assets/home'],
   ['assets/logo', 'dist/assets/logo'],
   ['assets/lu177-prrt-figures', 'dist/assets/lu177-prrt-figures'],
-  ['patient-education', 'dist/patient-education']
+  ['ai-village', 'dist/ai-village'],
+  ['patient-education', 'dist/patient-education'],
+  ['nucmed-ai-research', 'dist/nucmed-ai-research'],
+  ['nucmed-storylab', 'dist/nucmed-storylab']
 ];
 
 await mkdir('dist', { recursive: true });

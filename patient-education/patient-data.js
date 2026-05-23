@@ -1,15 +1,11 @@
 window.PATIENT_TOPIC_DATA = {
   "groups": [
     {
-      "label": "正子影像 PET",
+      "label": "正子電腦斷層 / 正子造影",
       "items": [
-        "PET",
-        "BrainPET",
-        "POSLUMA",
-        "Ga68DOTATOC",
-        "AmyloidPET",
-        "NaFPET",
-        "CardiacPET"
+        "FDGPETCT",
+        "PSMAPETCT",
+        "OtherPET"
       ]
     },
     {
@@ -84,6 +80,252 @@ window.PATIENT_TOPIC_DATA = {
     }
   ],
   "sections": {
+    "FDGPETCT": {
+      "key": "FDGPETCT",
+      "title": "FDG 正子電腦斷層",
+      "navLabel": "FDG 正子電腦斷層",
+      "eyebrow": "正子電腦斷層",
+      "subtitle": "這是臨床上最常見的正子檢查之一，常用來看癌症分布、治療反應、復發追蹤，也可能用在感染或發炎評估。",
+      "lead": "FDG 可以把身體裡葡萄糖利用較旺盛的地方顯示出來，所以這項檢查看的不只是有沒有腫塊，還在看病灶現在有多活躍。也因為如此，血糖、肌肉活動、發炎與感染都可能一起影響影像。",
+      "tellUs": "糖尿病、胰島素或降血糖藥物使用、近期發燒或感染、剛做完劇烈運動、怕密閉、無法久躺、排尿困難、懷孕或哺乳，都請在到院前先說。",
+      "evidenceText": "糖尿病病人、住院病人、兒童，或最近剛接受治療的人，準備方式可能和一般門診病人不同；若通知單和別人的經驗不一樣，通常是因為醫療情境不同。",
+      "cards": [
+        {
+          "title": "為什麼要做",
+          "text": "常見用途包括癌症初次分期、治療反應評估、疑似復發追蹤，也可能協助評估感染、發炎或找出原因不明的病灶。"
+        },
+        {
+          "title": "檢查前",
+          "text": "多數情況需要空腹至少 4 到 6 小時，只能喝白開水；檢查前一天避免劇烈運動，當天保持身體溫暖與安靜休息。若有糖尿病，通常需要另外安排飲食與用藥時程。"
+        },
+        {
+          "title": "檢查中",
+          "text": "到院後通常會先確認血糖、打藥，再安靜休息約 45 到 60 分鐘，之後進行掃描約 20 到 30 分鐘。等待期間盡量少走動、少說話、不要一直滑手機，目的是避免非必要肌肉與腦部攝取。"
+        },
+        {
+          "title": "檢查後",
+          "text": "多數人做完即可返家，通常可以恢復飲食與原本藥物。請多喝水、多排尿，若院方有另外交代哺乳暫停或短時間避免和嬰幼兒長時間緊密接觸，請依當次指示執行。"
+        }
+      ],
+      "supplements": [
+        {
+          "title": "哪些情況最容易影響 FDG 影像品質",
+          "html": `
+            <div class="fact-list">
+              <section class="fact-item">
+                <h4>血糖太高</h4>
+                <p>FDG 和葡萄糖會互相競爭。血糖太高時，病灶和正常組織的對比可能變差，檢查也可能被迫延後。</p>
+              </section>
+              <section class="fact-item">
+                <h4>檢查前一天劇烈運動</h4>
+                <p>肌肉會因活動後代謝增加而攝取 FDG，影像上可能出現不必要的亮點，增加判讀困難。</p>
+              </section>
+              <section class="fact-item">
+                <h4>等待期間一直走動、講話或受冷發抖</h4>
+                <p>這些都會讓肌肉、聲帶或褐色脂肪攝取增加，所以注射後那段安靜休息不是形式，而是影像品質的一部分。</p>
+              </section>
+              <section class="fact-item">
+                <h4>感染或發炎</h4>
+                <p>FDG 亮起來不一定代表癌症，感染與發炎也會攝取，所以判讀一定要和病史、抽血與其他影像一起看。</p>
+              </section>
+            </div>
+          `
+        },
+        {
+          "title": "很多病人做完後最常問的事",
+          "html": `
+            <div class="checklist">
+              <div class="checklist-item">
+                <strong>做完能不能吃東西、吃藥？</strong>
+                大多數情況可以，只要這次通知單沒有另外限制，通常做完就能恢復平常飲食與用藥。
+              </div>
+              <div class="checklist-item">
+                <strong>會不會對家人有影響？</strong>
+                診斷性 FDG 正子使用的放射性藥物量相對少，多數做完即可正常返家；若有哺乳或嬰幼兒接觸的特別限制，院方會個別提醒。
+              </div>
+              <div class="checklist-item">
+                <strong>什麼時候知道結果？</strong>
+                正式報告通常仍要由核醫科判讀後回原主治醫師整合說明，不一定會在現場立刻完整解釋。
+              </div>
+            </div>
+          `
+        }
+      ]
+    },
+    "PSMAPETCT": {
+      "key": "PSMAPETCT",
+      "title": "PSMA 正子電腦斷層",
+      "navLabel": "PSMA 正子電腦斷層",
+      "eyebrow": "正子電腦斷層",
+      "subtitle": "這項檢查主要用在前列腺癌，幫助醫療團隊更清楚找出病灶分布、復發位置，以及後續治療規劃。",
+      "lead": "PSMA 正子不是在看一般葡萄糖代謝，而是在看前列腺癌細胞表面的 PSMA 表現，因此它和 FDG 正子看到的是不同訊息。對病人來說，最重要的不是去背藥名，而是知道這張影像常常直接影響下一步治療怎麼選。",
+      "tellUs": "是否有排尿困難、導尿、腎功能異常、近期泌尿道感染、無法平躺、怕密閉、懷孕或哺乳，以及最近接受過哪些前列腺癌治療，都請先告知。",
+      "evidenceText": "不同醫院對禁食、喝水與排尿安排可能略有不同；真正需要遵守的是這次通知單上的規定，而不是其他人的經驗。",
+      "cards": [
+        {
+          "title": "為什麼要做",
+          "text": "常見用途包括前列腺癌初次分期、生化復發時找病灶位置、評估是否有遠端轉移，以及規劃放療、手術或核醫治療。"
+        },
+        {
+          "title": "檢查前",
+          "text": "很多情況不需要像 FDG 正子那樣長時間空腹，但通常會鼓勵補充水分，並依照通知單處理排尿或其他特殊準備。平常藥物是否照常服用，請依醫師或安排單位指示。"
+        },
+        {
+          "title": "檢查中",
+          "text": "通常會先注射藥物，等待約 45 到 60 分鐘後開始掃描。等待期間可能會請你喝水，並在正式拍攝前先排尿，以減少骨盆區背景干擾。"
+        },
+        {
+          "title": "檢查後",
+          "text": "大多數人做完即可返家，建議當天多喝水、多排尿。若有短暫疲倦、頭痛或味覺改變，多半先觀察即可；若症狀明顯或持續，再回頭聯絡安排單位。"
+        }
+      ],
+      "supplements": [
+        {
+          "title": "這項檢查最常在哪些情況派上用場",
+          "html": `
+            <div class="fact-list">
+              <section class="fact-item">
+                <h4>初次分期</h4>
+                <p>當病人屬於較高風險族群時，PSMA 正子可以幫助確認病灶是不是已經超出前列腺本身。</p>
+              </section>
+              <section class="fact-item">
+                <h4>PSA 上升但傳統影像不清楚</h4>
+                <p>這是臨床上常見情境之一。PSMA 正子能幫忙找出生化復發可能藏在哪裡，讓後續治療更精準。</p>
+              </section>
+              <section class="fact-item">
+                <h4>後續治療規劃</h4>
+                <p>對部分病人來說，這張影像不只是「找到病灶」，還直接影響放療範圍、手術策略，甚至是否考慮 Lu-177 PSMA 類治療。</p>
+              </section>
+            </div>
+          `
+        },
+        {
+          "title": "病人最常搞混的事",
+          "html": `
+            <div class="checklist">
+              <div class="checklist-item">
+                <strong>PSMA 正子不是抽血 PSA</strong>
+                一個是血液指標，一個是影像檢查，兩者會互相參考，但不是同一件事。
+              </div>
+              <div class="checklist-item">
+                <strong>不是每個亮點都等於一定要治療</strong>
+                影像結果仍要和病程、症狀、抽血及其他治療選項一起討論，不能只看有沒有亮。
+              </div>
+              <div class="checklist-item">
+                <strong>看到很亮，也不代表一定適合核醫治療</strong>
+                是否適合 Lu-177 類治療，還要看整體病灶分布、器官功能與治療目標，而不是單靠一個亮點決定。
+              </div>
+            </div>
+          `
+        }
+      ]
+    },
+    "OtherPET": {
+      "key": "OtherPET",
+      "title": "其他正子造影",
+      "navLabel": "其他正子造影",
+      "eyebrow": "正子造影",
+      "subtitle": "這一頁整合較少見但臨床上很重要的正子造影，包含神經內分泌腫瘤、失智相關、骨骼與心臟正子檢查。",
+      "lead": "不是所有正子造影都用來看癌症分期。對有些病人來說，正子造影是在看受體有沒有保留、腦部是不是有特定病理訊號、骨骼變化夠不夠敏感，或心肌血流是否真的有問題。這一群檢查差異很大，所以通知單上的準備事項一定比別人的經驗更重要。",
+      "tellUs": "你這次到底是哪一種正子造影、是否需禁食、能不能喝咖啡、最近是否打過長效針劑、是否有糖尿病、心臟藥物調整、懷孕或哺乳，這些都要依實際檢查種類逐項確認。",
+      "evidenceText": "這一群檢查差異很大：有些需要空腹，有些不需要；有些在意咖啡因，有些在意長效藥物注射時間。最重要的仍是你手上的通知單。",
+      "cards": [
+        {
+          "title": "為什麼要做",
+          "text": "這一類正子造影通常是在傳統影像不夠回答問題時，進一步看受體表現、腦部代謝或病理線索、骨轉移敏感度，或心肌整體血流與微血管功能。"
+        },
+        {
+          "title": "檢查前",
+          "text": "先弄清楚是哪一種造影劑，再依通知單準備。部分檢查需要空腹、部分要避免咖啡因、部分要注意長效藥物施打時間，也有些幾乎不需禁食。"
+        },
+        {
+          "title": "檢查中",
+          "text": "大多數流程都包含注射、等待一段時間、再進行掃描；但等待時間、是否要先排尿、是否需要壓力試驗或特殊環境控制，會依檢查種類不同。"
+        },
+        {
+          "title": "檢查後",
+          "text": "多數情況可以直接返家，通常會建議多喝水、多排尿。若有哺乳、心臟藥物恢復時點、或需要短時間觀察的不適，院方會另外交代。"
+        }
+      ],
+      "supplements": [
+        {
+          "title": "神經內分泌腫瘤正子造影",
+          "html": `
+            <div class="fact-list">
+              <section class="fact-item">
+                <h4>常見藥物：Ga-68 DOTATATE / DOTATOC</h4>
+                <p>這類檢查主要看腫瘤表面有沒有保留 somatostatin receptor。它不只是幫忙找病灶，也常在評估後續是否可能接 PRRT 治療。</p>
+              </section>
+              <section class="fact-item">
+                <h4>長效針劑時程很重要</h4>
+                <p>若最近剛打過長效體抑素類似物，常需要先和醫師確認是否會影響排程。不要等到當天才想起來。</p>
+              </section>
+              <section class="fact-item">
+                <h4>影像會有正常生理攝取</h4>
+                <p>脾臟、肝臟、腎臟等部位本來就可能有生理攝取，所以報告一定要由專業醫師整體解讀。</p>
+              </section>
+            </div>
+          `
+        },
+        {
+          "title": "失智相關正子造影",
+          "html": `
+            <div class="fact-list">
+              <section class="fact-item">
+                <h4>腦部 FDG 正子</h4>
+                <p>看的是腦區代謝分布模式。很多時候是在幫助醫師分辨失智症型態、癲癇術前定位，或某些特殊神經疾病。</p>
+              </section>
+              <section class="fact-item">
+                <h4>Amyloid 正子造影</h4>
+                <p>看的是腦內有沒有類澱粉沉積。它可以提供重要線索，但陽性不等於所有記憶問題都由阿茲海默病理造成。</p>
+              </section>
+              <section class="fact-item">
+                <h4>環境控制比很多人想像中更重要</h4>
+                <p>對腦部正子來說，注射前後安靜、少刺激、少交談，都是影像品質的一部分。</p>
+              </section>
+            </div>
+          `
+        },
+        {
+          "title": "骨骼與心臟正子造影",
+          "html": `
+            <div class="fact-list">
+              <section class="fact-item">
+                <h4>F-18 NaF 正子造影</h4>
+                <p>對骨轉移與骨代謝變化很敏感，常比傳統骨掃描更早看到異常；但退化性病變也可能攝取，所以亮不一定代表轉移。</p>
+              </section>
+              <section class="fact-item">
+                <h4>心臟正子造影</h4>
+                <p>常用來看心肌血流、微血管功能或部分發炎問題。和一般正子很不同的是，它常會牽涉壓力試驗與咖啡因限制。</p>
+              </section>
+              <section class="fact-item">
+                <h4>喝水、排尿與咖啡因限制常是關鍵</h4>
+                <p>骨骼正子常重視補水與排尿；心臟正子則常重視咖啡因與部分心臟藥物。看到別人說「不用空腹」或「不用停藥」時，不能直接套用。</p>
+              </section>
+            </div>
+          `
+        },
+        {
+          "title": "如果你不確定自己是哪一種正子造影，先這樣做",
+          "html": `
+            <div class="checklist">
+              <div class="checklist-item">
+                <strong>先看通知單上藥物或檢查全名</strong>
+                例如 FDG、PSMA、DOTATATE、Amyloid、NaF、心臟正子，看到的名稱不一樣，準備事項通常也不同。
+              </div>
+              <div class="checklist-item">
+                <strong>直接打回原安排單位確認</strong>
+                問清楚要不要空腹、能不能喝咖啡、平常藥物要不要照吃、到院前是否要先排尿或補水。
+              </div>
+              <div class="checklist-item">
+                <strong>不要用別人的正子經驗替自己做決定</strong>
+                尤其是失智、心臟、神經內分泌腫瘤與骨骼正子，差異非常大。
+              </div>
+            </div>
+          `
+        }
+      ]
+    },
     "PET": {
       "key": "PET",
       "title": "FDG PET/CT (腫瘤)",
@@ -264,7 +506,7 @@ window.PATIENT_TOPIC_DATA = {
       "navLabel": "心臟正子掃描",
       "eyebrow": "正子影像 PET",
       "subtitle": "心臟正子掃描 是核醫檢查的一種。先看它通常在看什麼、到院前要先說什麼，以及做完後的基本照顧。",
-      "lead": "Cardiac PET 與一般心肌灌流影像最大的差別，不只是解析度，而是它能把心肌血流與冠狀動脈微血管功能用數值拉到桌面上。這讓『看起來還好』和『其實已經不夠』之間有了更清楚的界線。",
+      "lead": "心臟正子掃描可以更仔細看心肌血流，幫助醫師判斷心臟供血是否足夠，也能補足其他檢查還看不清楚的地方。",
       "tellUs": "",
       "evidenceText": "",
       "cards": [
@@ -274,15 +516,15 @@ window.PATIENT_TOPIC_DATA = {
         },
         {
           "title": "微血管疾病在這裡更容易浮現",
-          "text": "當大血管沒有明顯狹窄，但病人仍有典型症狀時，Cardiac PET 的量化能力特別有價值。"
+          "text": "當大血管沒有明顯狹窄，但病人仍有典型症狀時，這項檢查有機會幫忙看出微血管的問題。"
         },
         {
           "title": "前處理是為了保留壓力反應",
           "text": "咖啡因、部分藥物與呼吸狀態會直接影響血管擴張藥反應，所以前處理錯了，數值也會被一起帶歪。"
         },
         {
-          "title": "讀這頁時要先分清 protocol",
-          "text": "不同 tracer、不同壓力藥物與是否做 flow quantification，會讓檢查目的和解讀層次完全不同。"
+          "title": "通知單上的藥物和做法要先看清楚",
+          "text": "不同藥物、不同壓力方式，想回答的問題也會不一樣，所以不要把別人的經驗直接套到自己身上。"
         }
       ],
       "supplements": []
@@ -316,7 +558,7 @@ window.PATIENT_TOPIC_DATA = {
       ],
       "supplements": [
         {
-          "title": "甲狀腺 uptake / scan 更新版",
+          "title": "甲狀腺 uptake / scan 重點說明",
           "html": "<div class=\"prose\">\n                <ul>\n                    <li><strong>最近兩個月內的含碘顯影是高優先問題：</strong>這比當天有沒有空腹更常決定結果能不能用。</li>\n                    <li><strong>Methimazole / PTU 不要自行停：</strong>停藥時間要依臨床問題與醫師指示調整。</li>\n                    <li><strong>病人需理解這是兩階段流程：</strong>先吞服，再於數小時後甚至隔天回來量測。</li>\n                </ul>\n            </div>"
         }
       ]
@@ -350,7 +592,7 @@ window.PATIENT_TOPIC_DATA = {
       ],
       "supplements": [
         {
-          "title": "副甲狀腺掃描更新版",
+          "title": "副甲狀腺掃描重點說明",
           "html": "<div class=\"prose\">\n                <ul>\n                    <li><strong>先說明這通常是定位，不是單獨做診斷：</strong>病人才不會把檢查期待放錯位置。</li>\n                    <li><strong>可能要拍不只一次：</strong>不同時間點影像是為了比較示蹤劑保留情形。</li>\n                    <li><strong>後續常會回到外科與內分泌評估：</strong>這份檢查多半是協助定位，後續治療仍要和外科與內分泌團隊一起判斷。</li>\n                </ul>\n            </div>"
         }
       ]
@@ -396,15 +638,15 @@ window.PATIENT_TOPIC_DATA = {
       "cards": [
         {
           "title": "功能偏側比大小更重要",
-          "text": "對 Conn syndrome 或 Cushing workup 來說，真正要知道的是哪一側在過度工作。"
+          "text": "這類檢查最重要的，是看左右哪一側比較活躍，而不是只看腎上腺大不大。"
         },
         {
           "title": "這是一條多日時間軸",
           "text": "Day 3、Day 5、Day 7 不是繁瑣，而是讓皮質攝取模式自己長出判讀價值。"
         },
         {
-          "title": "前置 protocol 不能拆開看",
-          "text": "Lugol 與 dexamethasone 抑制若沒先講清楚，檢查品質和病人配合度都會一起掉下來。"
+          "title": "前面的準備要一起完成",
+          "text": "像 Lugol 和 dexamethasone 這些前置安排若沒照做，檢查結果就可能不夠清楚。"
         },
         {
           "title": "現在少見，不代表不重要",
@@ -424,8 +666,8 @@ window.PATIENT_TOPIC_DATA = {
       "evidenceText": "",
       "cards": [
         {
-          "title": "先讓門真的打開",
-          "text": "TSH 沒被拉高，代表病灶未必願意攝碘；這時候影像再漂亮也可能低估病情。"
+          "title": "前面的準備會影響掃描結果",
+          "text": "如果 TSH 沒有到適合的程度，病灶可能比較不容易顯現，掃描結果也可能低估實際情況。"
         },
         {
           "title": "低碘飲食是在替病灶騰位置",
@@ -449,7 +691,7 @@ window.PATIENT_TOPIC_DATA = {
       "eyebrow": "內分泌 / 甲狀腺",
       "subtitle": "唾液腺掃描 是核醫檢查的一種。先看它通常在看什麼、到院前要先說什麼，以及做完後的基本照顧。",
       "lead": "",
-      "tellUs": "如果哺乳中，通常需暫停哺乳 1 到 2 天並依指示 pump and dump。",
+      "tellUs": "如果正在哺乳，通常需要暫停哺乳 1 到 2 天，並依醫囑把這段時間的乳汁擠出丟棄。",
       "evidenceText": "更新依據：Cleveland Clinic salivary gland scan patient education（2026）。",
       "cards": [
         {
@@ -471,7 +713,7 @@ window.PATIENT_TOPIC_DATA = {
       ],
       "supplements": [
         {
-          "title": "唾液腺掃描更新版",
+          "title": "唾液腺掃描補充說明",
           "html": "<div class=\"prose\">\n                <ul>\n                    <li><strong>先說會用酸物刺激：</strong>多數病人聽到檸檬糖或檸檬汁後就比較能理解流程。</li>\n                    <li><strong>檢後 24 小時加強沖水與洗手：</strong>因為少量示蹤劑可能從尿液與糞便排出。</li>\n                    <li><strong>哺乳者需特別提早準備：</strong>部分指引建議暫停哺乳 1 到 2 天。</li>\n                </ul>\n            </div>"
         }
       ]
@@ -484,7 +726,7 @@ window.PATIENT_TOPIC_DATA = {
       "subtitle": "心肌灌流 Tc-99m 是核醫檢查的一種。先看它通常在看什麼、到院前要先說什麼，以及做完後的基本照顧。",
       "lead": "",
       "tellUs": "若最近有喝咖啡、茶、能量飲、可樂、吃巧克力，或有氣喘、心律不整、走路不穩，請檢查前先說。",
-      "evidenceText": "更新依據：現有 MPI protocol、SNMMI cardiac SPECT practice 與本院流程。",
+      "evidenceText": "更新依據：現有心肌灌流檢查指引、SNMMI cardiac SPECT practice 與本院流程。",
       "cards": [
         {
           "title": "為什麼要做",
@@ -713,8 +955,8 @@ window.PATIENT_TOPIC_DATA = {
       ],
       "supplements": [
         {
-          "title": "胃排空掃描最新重點",
-          "html": "<div class=\"prose\">\n                <ul>\n                    <li><strong>標準餐與時間點要固定：</strong>目前標準化 protocol 仍是結果可比較、可追蹤的核心。</li>\n                    <li><strong>至少空腹 4 小時：</strong>糖尿病病人最好攜帶血糖機與胰島素，現場需評估血糖再進行。</li>\n                    <li><strong>不要忽略吸菸與藥物：</strong>抽菸、促蠕動藥、止吐藥、鴉片類止痛藥都可能改變胃排空速度。</li>\n                    <li><strong>教學上要說清楚：</strong>病人不是只吃一餐就結束，而是要在接下來 2 到 4 小時依時點回來拍照。</li>\n                </ul>\n            </div>"
+          "title": "胃排空掃描重點整理",
+          "html": "<div class=\"prose\">\n                <ul>\n                    <li><strong>檢查餐和拍照時間要照表進行：</strong>這樣前後結果才比較容易比較。</li>\n                    <li><strong>至少空腹 4 小時：</strong>糖尿病病人最好攜帶血糖機與胰島素，現場會先評估血糖再進行。</li>\n                    <li><strong>吸菸與部分藥物會影響結果：</strong>抽菸、促蠕動藥、止吐藥、鴉片類止痛藥都可能改變胃排空速度。</li>\n                    <li><strong>這項檢查通常不只拍一次：</strong>吃完檢查餐後，接下來 2 到 4 小時還會依時點回來拍照。</li>\n                </ul>\n            </div>"
         }
       ]
     },
@@ -724,12 +966,12 @@ window.PATIENT_TOPIC_DATA = {
       "navLabel": "腸胃道出血",
       "eyebrow": "消化 / 肝膽",
       "subtitle": "腸胃道出血 是核醫檢查的一種。先看它通常在看什麼、到院前要先說什麼，以及做完後的基本照顧。",
-      "lead": "腸胃道出血掃描最迷人的地方，在於它不是看一顆病灶，而是在追一條正在移動的血流。真正的陽性，不是亮而已，而是亮點隨腸道走向改變位置。",
+      "lead": "腸胃道出血掃描是在幫忙找出血的位置。醫師不只看哪裡有亮點，也會看亮點是不是隨著腸道位置改變。",
       "tellUs": "",
       "evidenceText": "",
       "cards": [
         {
-          "title": "RBC 標記是為了陪它等",
+          "title": "標記紅血球是為了拉長觀察時間",
           "text": "因為出血可能間歇發生，所以標記紅血球的價值就在能拉長觀察時間。"
         },
         {
@@ -738,7 +980,7 @@ window.PATIENT_TOPIC_DATA = {
         },
         {
           "title": "真正出血點會移動",
-          "text": "先出現、再沿著腸道方向擴散，是這頁判讀最核心的敘事線索。"
+          "text": "如果亮點先出現，之後又沿著腸道方向移動，會比較像真正的出血。"
         },
         {
           "title": "排檢前先問目前還在不在流",
@@ -753,7 +995,7 @@ window.PATIENT_TOPIC_DATA = {
       "navLabel": "梅克爾憩室",
       "eyebrow": "消化 / 肝膽",
       "subtitle": "梅克爾憩室 是核醫檢查的一種。先看它通常在看什麼、到院前要先說什麼，以及做完後的基本照顧。",
-      "lead": "Meckel diverticulum 之所以能被核醫抓到，不是因為憩室這個形狀，而是因為其中常藏著會攝取 pertechnetate 的異位胃黏膜。懂這層邏輯後，影像就不再只是腹部有個點。",
+      "lead": "這項檢查主要是在找梅克爾憩室裡可能存在的異位胃黏膜，所以醫師看的不只是腹部有沒有亮點，也會看它出現的時間和位置。",
       "tellUs": "",
       "evidenceText": "",
       "cards": [
@@ -767,7 +1009,7 @@ window.PATIENT_TOPIC_DATA = {
         },
         {
           "title": "前處理藥物是在提高停留率",
-          "text": "H2 blocker 或其他輔助藥物不是裝飾性 protocol，而是在幫異位胃黏膜把訊號留久一點。"
+          "text": "H2 blocker 或其他輔助藥物的作用，是讓影像更清楚，不是可有可無的步驟。"
         },
         {
           "title": "太晚出現或會移動要小心",
@@ -799,8 +1041,8 @@ window.PATIENT_TOPIC_DATA = {
           "text": "在術前術後或不明脾組織問題時，這頁仍能提供結構影像不一定給得出的功能線索。"
         },
         {
-          "title": "它更適合教功能概念",
-          "text": "這頁最好用來教新人把肝病理解成系統分工，而不是只記某個器官亮不亮。"
+          "title": "它看的是功能，不只是一張影像",
+          "text": "這項檢查的價值，在於幫忙看清楚器官有沒有正常分工運作，而不只是看哪裡亮、哪裡不亮。"
         }
       ],
       "supplements": []
@@ -863,8 +1105,8 @@ window.PATIENT_TOPIC_DATA = {
       ],
       "supplements": [
         {
-          "title": "HIDA 衛教更新版",
-          "html": "<div class=\"prose\">\n                <ul>\n                    <li><strong>至少空腹 4 小時：</strong>太短或太長都可能影響膽囊顯影與功能判讀。</li>\n                    <li><strong>鴉片類止痛藥要先問：</strong>Morphine、codeine 等藥物會改變膽道動力，可能需要延後或調整流程。</li>\n                    <li><strong>過程可能不痛，但給藥後可能短暫腹部悶痛：</strong>要先說，病人才不會把正常反應誤認為出大事。</li>\n                    <li><strong>哺乳者請先安排備用乳品：</strong>不少單位會建議檢後 24 小時 pump and dump。</li>\n                </ul>\n            </div>"
+          "title": "HIDA 衛教重點",
+          "html": "<div class=\"prose\">\n                <ul>\n                    <li><strong>至少空腹 4 小時：</strong>太短或太長都可能影響膽囊顯影與功能判讀。</li>\n                    <li><strong>鴉片類止痛藥要先問：</strong>Morphine、codeine 等藥物會改變膽道動力，可能需要延後或調整流程。</li>\n                    <li><strong>過程可能不痛，但給藥後可能短暫腹部悶痛：</strong>先知道這件事，通常比較不會被嚇到。</li>\n                    <li><strong>哺乳者請先安排備用乳品：</strong>不少單位會建議檢後 24 小時暫停哺乳，並把這段時間的乳汁擠出丟棄。</li>\n                </ul>\n            </div>"
         }
       ]
     },
@@ -891,8 +1133,8 @@ window.PATIENT_TOPIC_DATA = {
           "text": "從內分泌分類讀它，焦點可能是功能測試；從消化分類讀它，更像是在理解口腔前段功能。"
         },
         {
-          "title": "所以這頁需要自己的敘事",
-          "text": "不是因為技術不同，而是因為讀者此刻真正想知道的問題不同。"
+          "title": "這一頁最常回答的是日常困擾",
+          "text": "很多人做這項檢查時，最在意的其實是口乾、吃東西不舒服或唾液分泌變少，這些問題本來就需要單獨說清楚。"
         }
       ],
       "supplements": []
@@ -1236,8 +1478,8 @@ window.PATIENT_TOPIC_DATA = {
       ],
       "supplements": [
         {
-          "title": "V/Q 更新版病人說法",
-          "html": "<div class=\"prose\">\n                <ul>\n                    <li><strong>通常會先做胸部 X 光：</strong>這一步是為了幫助後面判讀，不是重複檢查。</li>\n                    <li><strong>分兩段：</strong>先吸入示蹤劑看通氣，再打針看灌流，兩者一起看才有意義。</li>\n                    <li><strong>不一定要禁食：</strong>但必須能安靜配合呼吸與保持不動。</li>\n                    <li><strong>PE 報告語言要教新人看懂：</strong>normal、low probability、indeterminate、high probability 各自代表不同後續處置。</li>\n                </ul>\n            </div>"
+          "title": "V/Q 病人常見疑問",
+          "html": "<div class=\"prose\">\n                <ul>\n                    <li><strong>通常會先做胸部 X 光：</strong>這一步是為了幫助後面判讀，不是重複檢查。</li>\n                    <li><strong>分兩段：</strong>先吸入藥物看通氣，再打針看灌流，兩者一起看才有意義。</li>\n                    <li><strong>不一定要禁食：</strong>但必須能安靜配合呼吸與保持不動。</li>\n                    <li><strong>報告結果還要和臨床狀況一起看：</strong>醫師會再結合症狀、胸部 X 光和其他檢查一起判斷。</li>\n                </ul>\n            </div>"
         }
       ]
     },
@@ -1306,8 +1548,8 @@ window.PATIENT_TOPIC_DATA = {
       "eyebrow": "核醫治療",
       "subtitle": "I-131 甲狀腺治療 是核醫治療的一種。先看治療想處理什麼、哪些事要提早說，以及回家後通常要怎麼照顧自己和家人。",
       "lead": "I-131 之所以經典，不只是因為甲狀腺會抓碘，而是因為整套治療把生理攝取、TSH 操作、住院隔離、污染管理和返家限制串成同一條線。這頁不是單次給藥，而是完整生活設計。",
-      "tellUs": "",
-      "evidenceText": "",
+      "tellUs": "是否正在哺乳、近兩個月是否做過含碘顯影檢查、是否服用甲狀腺素或抗甲狀腺藥、家中是否有幼兒或孕婦、近期是否安排長程出國，這些都要在治療前就先說。",
+      "evidenceText": "整理依據含 RadiologyInfo、American Thyroid Association、台灣甲狀腺醫護衛教暨健康促進協會與中華民國核醫學學會公開衛教資料。實際低碘飲食天數、停藥方式與住院天數仍以院方規範為準。",
       "cards": [
         {
           "title": "攝碘能力是治療成立的入口",
@@ -1326,7 +1568,52 @@ window.PATIENT_TOPIC_DATA = {
           "text": "核醫治療少數會把家庭空間、睡眠距離與幼兒接觸一起納入規劃的，就是 I-131。"
         }
       ],
-      "supplements": []
+      "sourceKeys": [
+        "radioiodine",
+        "thyroidAssociationRai",
+        "taiwanThyroidSupport",
+        "taiwanNuclearMedicine"
+      ],
+      "supplements": [
+        {
+          "title": "治療前，最常需要先安排的是這些事",
+          "html": `
+            <div class="checklist">
+              <div class="checklist-item">
+                <strong>低碘飲食與藥物調整</strong>
+                目的是讓真正要治療的甲狀腺組織更容易抓到碘。很多人最容易卡在醬料、海藻、保健食品或停藥時程，最好把通知單放在餐桌或冰箱旁反覆對照。
+              </div>
+              <div class="checklist-item">
+                <strong>家裡誰會和你近距離接觸</strong>
+                如果家中有幼兒、孕婦、需要你夜間陪睡的人，或回家後無法獨立使用衛浴，這些都不是小事，而是治療能不能順利安排的前提。
+              </div>
+              <div class="checklist-item">
+                <strong>哺乳、生育與近期旅行</strong>
+                哺乳要事前和團隊確認停止時點；若近期要出國，也要先問清楚機場輻射偵測與證明文件安排。
+              </div>
+            </div>
+          `
+        },
+        {
+          "title": "治療後回家，最實際的日常安排",
+          "html": `
+            <div class="fact-list">
+              <section class="fact-item">
+                <h4>多喝水、採坐姿如廁、依指示沖水</h4>
+                <p>放射性碘多會經尿液排出。返家後前幾天如廁清潔、衣物分開處理與手部衛生，往往比你想像中更重要。</p>
+              </section>
+              <section class="fact-item">
+                <h4>睡眠距離、親密接觸與抱小孩都要先想好</h4>
+                <p>不同醫院對距離與天數的說明會略有差異，但共同原則都是減少長時間近距離接觸，尤其是孕婦與年幼孩子。</p>
+              </section>
+              <section class="fact-item">
+                <h4>口乾、味覺改變、噁心通常有機會逐漸緩解</h4>
+                <p>多數副作用不是永久性的，但若症狀明顯、持續吃不下、嘔吐或唾液腺腫痛加劇，還是要回頭聯絡醫療團隊。</p>
+              </section>
+            </div>
+          `
+        }
+      ]
     },
     "I131MIBG": {
       "key": "I131MIBG",
@@ -1393,8 +1680,8 @@ window.PATIENT_TOPIC_DATA = {
       "eyebrow": "核醫治療",
       "subtitle": "Ra-223 骨轉移治療 是核醫治療的一種。先看治療想處理什麼、哪些事要提早說，以及回家後通常要怎麼照顧自己和家人。",
       "lead": "Ra-223 用的是 alpha 粒子的短程高能量優勢，但它真正適合的情境很窄：症狀性骨轉移、沒有內臟轉移，而且病人的主要臨床負擔確實來自骨病灶本身。",
-      "tellUs": "",
-      "evidenceText": "",
+      "tellUs": "最近的抽血報告、是否有持續腹瀉或失禁、是否裝有尿布或造口、是否合併其他全身性治療，以及最近骨痛是否快速惡化，這些都要在每次治療前重新告知。",
+      "evidenceText": "整理依據含中華民國核醫學學會 Ra-223 民眾版衛教手冊與台灣多家醫學中心公開衛教資料。是否延後或終止療程，仍以每輪抽血與病程評估決定。",
       "cards": [
         {
           "title": "類鈣性質讓它走向骨轉移微環境",
@@ -1405,15 +1692,54 @@ window.PATIENT_TOPIC_DATA = {
           "text": "因為當病程已由肝肺等器官主導，Ra-223 的優勢就很難真正轉成臨床獲益。"
         },
         {
-          "title": "沒有隔離，不代表沒有衛教",
-          "text": "主要糞便排泄、如廁清潔與血球監測，仍是每個 cycle 都要重複確認的事。"
+          "title": "回家後還是有幾件事要記得",
+          "text": "糞便排泄、如廁清潔和抽血追蹤，都是每次治療後仍要持續注意的事。"
         },
         {
-          "title": "CBC 是每一輪的門票",
-          "text": "骨髓能不能撐住，常比病人主觀想不想做更早決定療程能否延續。"
+          "title": "每次治療前都要先看抽血",
+          "text": "骨髓和血球狀況能不能承受，常會影響下一次治療能不能如期進行。"
         }
       ],
-      "supplements": []
+      "sourceKeys": [
+        "taiwanRa223Guide",
+        "taiwanNuclearMedicine"
+      ],
+      "supplements": [
+        {
+          "title": "真正的療程感受，通常不是打一針就結束",
+          "html": `
+            <div class="checklist">
+              <div class="checklist-item">
+                <strong>多數是每四週一次，連續數個療程</strong>
+                治療能不能走完整個療程，除了症狀有沒有改善，更取決於每次抽血後血球是否還有餘裕。
+              </div>
+              <div class="checklist-item">
+                <strong>疼痛不一定立刻下降</strong>
+                有些人會先覺得差不多，甚至短暫不舒服。這不一定代表沒效，但若疼痛惡化很快，仍要讓團隊知道是不是病程改變。
+              </div>
+              <div class="checklist-item">
+                <strong>骨轉移以外的病情也要同步追蹤</strong>
+                因為 Ra-223 的優勢在骨病灶；若病程已轉向肝、肺或其他器官，治療方向可能必須改變。
+              </div>
+            </div>
+          `
+        },
+        {
+          "title": "回家後，最常被忽略的是排泄衛教",
+          "html": `
+            <div class="fact-list">
+              <section class="fact-item">
+                <h4>糞便處理與如廁清潔要照規則做</h4>
+                <p>Ra-223 主要由腸道排出，因此如廁衛生、排泄物處理與照護者手部清潔要比平常更仔細。</p>
+              </section>
+              <section class="fact-item">
+                <h4>沒有隔離，不代表完全沒有注意事項</h4>
+                <p>大部分人不需要像 I-131 那樣住院隔離，但每輪都還是要確認家中照護情境、血球變化與出血感染風險。</p>
+              </section>
+            </div>
+          `
+        }
+      ]
     },
     "Lu177PSMA": {
       "key": "Lu177PSMA",
@@ -1422,8 +1748,8 @@ window.PATIENT_TOPIC_DATA = {
       "eyebrow": "核醫治療",
       "subtitle": "Lu-177 PSMA 治療 是核醫治療的一種。先看治療想處理什麼、哪些事要提早說，以及回家後通常要怎麼照顧自己和家人。",
       "lead": "當 mCRPC 走到後線治療，PSMA 影像看起來很亮不一定就代表一定受益。這頁的決策核心在於：全身病灶有多少仍屬於 PSMA 可治療疾病，哪些器官又會先替它付代價。",
-      "tellUs": "",
-      "evidenceText": "",
+      "tellUs": "是否有尿路阻塞、長期導尿、腎功能下降、明顯口乾、近期感染、骨髓功能偏低，或最近疼痛與體重掉得很快，這些都會影響治療安全與安排。",
+      "evidenceText": "整理依據含台灣核醫學會 Lu-177 衛教資料與國內醫學中心公開治療說明。是否適合治療，仍要回到 PSMA 影像表現、腎功能、血球與整體病程目標。",
       "cards": [
         {
           "title": "不是有亮點就夠",
@@ -1442,7 +1768,46 @@ window.PATIENT_TOPIC_DATA = {
           "text": "有時候治療目標是延長控制，有時候是減症狀，兩者會改變你怎麼和病人談風險與期待。"
         }
       ],
-      "supplements": []
+      "sourceKeys": [
+        "taiwanLu177Guide",
+        "taiwanNuclearMedicine"
+      ],
+      "supplements": [
+        {
+          "title": "治療前，團隊真正想確認的是這三件事",
+          "html": `
+            <div class="checklist">
+              <div class="checklist-item">
+                <strong>PSMA 影像是否真的支持治療</strong>
+                不是只有一兩個病灶亮就算通過，團隊會看整體病灶分布，確認主要病程仍屬於 PSMA 可標靶疾病。
+              </div>
+              <div class="checklist-item">
+                <strong>腎臟、骨髓、唾液腺是否承受得起</strong>
+                這些正常器官會一起承受劑量，所以抽血、腎功能與症狀追蹤缺一不可。
+              </div>
+              <div class="checklist-item">
+                <strong>這次治療追求的是什麼</strong>
+                如果目標是延長控制，會更重視療程連續性；如果目標是減輕症狀，對副作用與生活品質的權衡也會不同。
+              </div>
+            </div>
+          `
+        },
+        {
+          "title": "病人最常遇到的日常問題",
+          "html": `
+            <div class="fact-list">
+              <section class="fact-item">
+                <h4>口乾、味覺改變與疲倦</h4>
+                <p>這些症狀不一定每個人都明顯，但出現時會很影響生活，最好在每一輪回診時具體描述，而不是只說「還好」。</p>
+              </section>
+              <section class="fact-item">
+                <h4>返家後的排尿與接觸衛教</h4>
+                <p>因為藥物會隨尿液排出，如廁衛生、補水與短期接觸注意事項都要照單張或醫師指示做，不要自己縮短天數。</p>
+              </section>
+            </div>
+          `
+        }
+      ]
     },
     "Lu177DOTATATE": {
       "key": "Lu177DOTATATE",
@@ -1450,13 +1815,13 @@ window.PATIENT_TOPIC_DATA = {
       "navLabel": "Lu-177 PRRT 治療",
       "eyebrow": "核醫治療",
       "subtitle": "Lu-177 PRRT 治療 是核醫治療的一種。先看治療想處理什麼、哪些事要提早說，以及回家後通常要怎麼照顧自己和家人。",
-      "lead": "Lu-177 DOTATATE 讓人著迷的地方，在於它很精準；但也因此它對前提很挑。受體表現、腎功能、骨髓儲備與多 cycle 治療耐受度，缺一個，這條路就不再那麼直。",
-      "tellUs": "",
-      "evidenceText": "",
+      "lead": "Lu-177 DOTATATE 治療不是每個人都適合。醫師通常會先看受體表現、腎功能、骨髓狀況，以及身體能不能承受分次治療。",
+      "tellUs": "長效體抑素針劑最後一次施打時間、腎功能、近期噁心嘔吐、是否容易脫水、以及以往治療後血球恢復速度，都要在排程前先說。",
+      "evidenceText": "整理依據含台灣神經內分泌腫瘤病友關懷協會公開衛教與台灣核醫學會 Lu-177 資料。實際療程間距、腎保護方案與是否繼續下一輪，仍以受體影像與抽血結果決定。",
       "cards": [
         {
-          "title": "DOTATATE PET 其實像資格考",
-          "text": "Krenning score 與受體分布不只是影像資訊，而是在替治療劃線。"
+          "title": "先看受體表現夠不夠",
+          "text": "DOTATATE / DOTATOC PET 的結果，會影響醫師判斷這項治療值不值得做。"
         },
         {
           "title": "氨基酸保腎不是配角",
@@ -1467,11 +1832,47 @@ window.PATIENT_TOPIC_DATA = {
           "text": "很多病人最不舒服的不是放射藥物，而是腎保護輸液與整體療程負擔。"
         },
         {
-          "title": "這頁要用長程視角讀",
-          "text": "PRRT 少有一針見效的戲劇性，它更像一場分段完成的控制策略。"
+          "title": "通常需要分次治療",
+          "text": "PRRT 比較常是分好幾次完成，治療效果和副作用也需要一路追蹤。"
         }
       ],
-      "supplements": []
+      "sourceKeys": [
+        "taiwanNetPrrt",
+        "taiwanLu177Guide",
+        "taiwanNuclearMedicine"
+      ],
+      "supplements": [
+        {
+          "title": "開始前先確認：不是每個 NET 都會走到 PRRT",
+          "html": `
+            <div class="fact-list">
+              <section class="fact-item">
+                <h4>先有受體，再談治療</h4>
+                <p>DOTATATE / DOTATOC PET 看到的受體表現，不只是影像結果，也是後續治療是否值得進行的關鍵條件。</p>
+              </section>
+              <section class="fact-item">
+                <h4>腎功能與骨髓餘裕要留得住</h4>
+                <p>PRRT 常不是只做一次，因此團隊看的是你能不能一路完成多次治療，而不是只過第一輪。</p>
+              </section>
+            </div>
+          `
+        },
+        {
+          "title": "治療當天，很多人最不舒服的是保護流程",
+          "html": `
+            <div class="checklist">
+              <div class="checklist-item">
+                <strong>氨基酸輸液是為了保護腎，不是多餘程序</strong>
+                它會拉長治療時間，也可能帶來噁心、腹脹或不適，所以通常需要事先準備止吐與補水。
+              </div>
+              <div class="checklist-item">
+                <strong>療程後不是立刻忘記這件事</strong>
+                下一輪能不能接著做，要看血球、腎功能與症狀有沒有回到安全範圍。
+              </div>
+            </div>
+          `
+        }
+      ]
     },
     "Y90SIRT": {
       "key": "Y90SIRT",
