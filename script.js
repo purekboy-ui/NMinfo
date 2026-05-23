@@ -5815,16 +5815,28 @@ function shouldUseImmersiveReading(key, data) {
     return data && !data.isHomeHub && !data.isDosageCalc && !data.isCalendar;
 }
 
-function getReadableBlockTitle(block, index) {
-    if (!block) return `第 ${index + 1} 段`;
-    if (block.title) return block.title;
-    if (typeof block.html === 'string') {
-        const headingMatch = block.html.match(/<h[3-5][^>]*>(.*?)<\/h[3-5]>/i);
-        if (headingMatch && headingMatch[1]) {
-            return headingMatch[1].replace(/<[^>]*>/g, '').trim();
-        }
+function getHeadingTextFromHTML(html) {
+    if (typeof html !== 'string') return '';
+    const headingMatch = html.match(/<h[2-5][^>]*>(.*?)<\/h[2-5]>/i);
+    if (!headingMatch?.[1]) return '';
+    return headingMatch[1].replace(/<[^>]*>/g, '').trim();
+}
+
+function getReadingSectionLabel(source, fallback = '重點', index = 0) {
+    if (!source) return fallback || `第 ${index + 1} 段`;
+    if (typeof source === 'string') {
+        return getHeadingTextFromHTML(source) || fallback || `第 ${index + 1} 段`;
     }
-    return index === 0 ? '重點' : `補充說明 ${index + 1}`;
+    if (source.type === 'qa') return '常見問題';
+    if (source.title) return source.title;
+    if (typeof source.html === 'string') {
+        return getHeadingTextFromHTML(source.html) || fallback || `第 ${index + 1} 段`;
+    }
+    return fallback || `第 ${index + 1} 段`;
+}
+
+function getReadableBlockTitle(block, index) {
+    return getReadingSectionLabel(block, index === 0 ? '重點' : `補充說明 ${index + 1}`, index);
 }
 
 function getReadingTargetId(prefix, index) {
@@ -5913,7 +5925,11 @@ function initReadingToc(container) {
 
     const scroller = document.querySelector('.content-scroll');
     const links = Array.from(container.querySelectorAll('.reading-toc-link'));
-    const sections = Array.from(container.querySelectorAll('[data-reading-section]')).filter((section) => section.id);
+    const readingTargets = new Set(links
+        .map((link) => link.dataset.readingTarget)
+        .filter(Boolean));
+    const sections = Array.from(container.querySelectorAll('[data-reading-section]'))
+        .filter((section) => section.id && readingTargets.has(section.id));
 
     if (!scroller || links.length === 0 || sections.length === 0) {
         return;
@@ -5973,19 +5989,20 @@ function initReadingToc(container) {
     };
 }
 
-function renderContentBlock(block, index) {
+function renderContentBlock(block, index, options = {}) {
     const sectionId = block?.readingId || getReadingTargetId('section', index);
+    const shouldIndexInfoBoxes = options.indexInfoBoxes !== false;
     switch (block.type) {
         case 'info-box-blue':
-            return `<div id="${sectionId}" data-reading-section class="info-box info-box-blue">${block.html}</div>`;
+            return `<div${shouldIndexInfoBoxes ? ` id="${sectionId}" data-reading-section` : ''} class="info-box info-box-blue">${block.html}</div>`;
         case 'info-box-emerald':
-            return `<div id="${sectionId}" data-reading-section class="info-box info-box-emerald">${block.html}</div>`;
+            return `<div${shouldIndexInfoBoxes ? ` id="${sectionId}" data-reading-section` : ''} class="info-box info-box-emerald">${block.html}</div>`;
         case 'info-box-amber':
-            return `<div id="${sectionId}" data-reading-section class="info-box info-box-amber">${block.html}</div>`;
+            return `<div${shouldIndexInfoBoxes ? ` id="${sectionId}" data-reading-section` : ''} class="info-box info-box-amber">${block.html}</div>`;
         case 'info-box-rose':
-            return `<div id="${sectionId}" data-reading-section class="info-box info-box-rose">${block.html}</div>`;
+            return `<div${shouldIndexInfoBoxes ? ` id="${sectionId}" data-reading-section` : ''} class="info-box info-box-rose">${block.html}</div>`;
         case 'info-box-purple':
-            return `<div id="${sectionId}" data-reading-section class="info-box info-box-purple">${block.html}</div>`;
+            return `<div${shouldIndexInfoBoxes ? ` id="${sectionId}" data-reading-section` : ''} class="info-box info-box-purple">${block.html}</div>`;
         case 'section':
             return `<section id="${sectionId}" data-reading-section class="content-section">
                 <h3 class="section-heading">${block.title}</h3>
@@ -6025,7 +6042,7 @@ function renderProgressiveBlockBody(block) {
 
 function renderImmersiveContentBlock(block, index) {
     // Keep the main reading layer expanded; QA and protocol summaries handle progressive disclosure separately.
-    return renderContentBlock(block, index);
+    return renderContentBlock(block, index, { indexInfoBoxes: false });
 }
 
 function buildReaderGuideHTML(key, data) {
@@ -6483,14 +6500,14 @@ function buildExamFlowHTML(key, data) {
 
     const conceptSectionHTML = conceptDiagramHTML
         ? (() => {
-            tocItems.push({ id: 'exam-flow-concept', label: '圖解' });
+            tocItems.push({ id: 'exam-flow-concept', label: getReadingSectionLabel(conceptDiagramHTML, '圖解') });
             return `<div id="exam-flow-concept" data-reading-section class="reading-anchor-block">${conceptDiagramHTML}</div>`;
         })()
         : '';
 
     const prepSectionHTML = (callouts.length > 0 || prepSections.length > 0)
         ? (() => {
-            tocItems.push({ id: 'exam-flow-prep', label: '檢前評估' });
+            tocItems.push({ id: 'exam-flow-prep', label: '檢查前評估與前置條件' });
             return `
                 <section id="exam-flow-prep" data-reading-section class="exam-flow-section">
                     <div class="exam-flow-section-heading">
@@ -6520,7 +6537,7 @@ function buildExamFlowHTML(key, data) {
 
     const clinicalSectionHTML = clinicalSections.length > 0
         ? (() => {
-            tocItems.push({ id: 'exam-flow-clinical', label: '原理與判讀' });
+            tocItems.push({ id: 'exam-flow-clinical', label: '原理、適應症與判讀重點' });
             return `
                 <section id="exam-flow-clinical" data-reading-section class="exam-flow-section">
                     <div class="exam-flow-section-heading">
@@ -6544,7 +6561,7 @@ function buildExamFlowHTML(key, data) {
 
     const patientSectionHTML = (patientBlocks.length > 0 || guide.evidence)
         ? (() => {
-            tocItems.push({ id: 'exam-flow-patient', label: '病人衛教' });
+            tocItems.push({ id: 'exam-flow-patient', label: '病人衛教與檢後說明' });
             return `
                 <section id="exam-flow-patient" data-reading-section class="exam-flow-section">
                     <div class="exam-flow-section-heading">
@@ -6647,7 +6664,7 @@ function buildLearningGuideHTML(key, data) {
 
     const conceptSectionHTML = conceptDiagramHTML
         ? (() => {
-            tocItems.push({ id: 'learning-concept', label: '圖解' });
+            tocItems.push({ id: 'learning-concept', label: getReadingSectionLabel(conceptDiagramHTML, '圖解') });
             return `<div id="learning-concept" data-reading-section class="reading-anchor-block">${conceptDiagramHTML}</div>`;
         })()
         : '';
@@ -6696,7 +6713,7 @@ function buildLearningGuideHTML(key, data) {
 
     const detailSectionHTML = sections.length > 0
         ? (() => {
-            tocItems.push({ id: 'learning-details', label: '主體內容' });
+            tocItems.push({ id: 'learning-details', label: '詳細內容' });
             return `
                 <section id="learning-details" data-reading-section class="learning-section">
                     <div class="learning-section-heading">
@@ -6870,16 +6887,16 @@ function buildI131TreatmentHTML(data) {
 
     const conceptSectionHTML = conceptDiagramHTML
         ? (() => {
-            tocItems.push({ id: 'i131-concept', label: '圖解' });
+            tocItems.push({ id: 'i131-concept', label: getReadingSectionLabel(conceptDiagramHTML, '圖解') });
             return `<div id="i131-concept" data-reading-section class="reading-anchor-block">${conceptDiagramHTML}</div>`;
         })()
         : '';
 
     tocItems.push(
-        { id: 'i131-goals', label: '治療目的' },
-        { id: 'i131-prepare', label: '治療前評估' },
-        { id: 'i131-journey', label: '治療流程' },
-        { id: 'i131-safety', label: '病安提醒與核對' }
+        { id: 'i131-goals', label: 'I-131 治療目的' },
+        { id: 'i131-prepare', label: '治療前要確認的事' },
+        { id: 'i131-journey', label: '病人會經過哪些步驟' },
+        { id: 'i131-safety', label: '病安提醒與工作核對' }
     );
 
     const readingTocHTML = getReadingTocHTML(tocItems, {
@@ -7062,7 +7079,7 @@ function buildTherapySafetyHTML(key, data) {
 
     const conceptSectionHTML = conceptDiagramHTML
         ? (() => {
-            tocItems.push({ id: `${key}-concept`, label: '圖解' });
+            tocItems.push({ id: `${key}-concept`, label: getReadingSectionLabel(conceptDiagramHTML, '圖解') });
             return `<div id="${key}-concept" data-reading-section class="reading-anchor-block">${conceptDiagramHTML}</div>`;
         })()
         : '';
@@ -7092,7 +7109,7 @@ function buildTherapySafetyHTML(key, data) {
 
     const careSectionHTML = sections.length > 0
         ? (() => {
-            tocItems.push({ id: `${key}-care`, label: '照護與衛教' });
+            tocItems.push({ id: `${key}-care`, label: '治療流程、照護與衛教' });
             return `
                 <section id="${key}-care" data-reading-section class="i131-section">
                     <div class="i131-section-heading">
@@ -7360,7 +7377,7 @@ function buildContentHTML(key, data) {
 
     let blocksHTML = '';
     if (allContentBlocks.length > 0) {
-        const tocItems = useImmersiveReading ? getReadingTocItems(allContentBlocks, 'section', { includeInfoBoxes: false }) : [];
+        const contentTocItems = useImmersiveReading ? getReadingTocItems(allContentBlocks, 'section', { includeInfoBoxes: false }) : [];
         const renderedBlocks = allContentBlocks
             .map((block, index) => useImmersiveReading
                 ? renderImmersiveContentBlock(block, index)
@@ -7368,6 +7385,7 @@ function buildContentHTML(key, data) {
             .join('');
 
         if (useImmersiveReading) {
+            const tocItems = [];
             const immersiveSections = [];
 
             if (timeHTML) {
@@ -7376,20 +7394,21 @@ function buildContentHTML(key, data) {
             }
 
             if (conceptDiagramHTML) {
-                tocItems.push({ id: 'concept-diagram', label: '圖解' });
+                tocItems.push({ id: 'concept-diagram', label: getReadingSectionLabel(conceptDiagramHTML, '圖解') });
                 immersiveSections.push(`<div id="concept-diagram" data-reading-section class="reading-anchor-block">${conceptDiagramHTML}</div>`);
             }
 
             if (protocolSummaryHTML) {
-                tocItems.push({ id: 'protocol-summary', label: '技術摘要' });
+                tocItems.push({ id: 'protocol-summary', label: getReadingSectionLabel(protocolSummaryHTML, '技術摘要') });
                 immersiveSections.push(`<div id="protocol-summary" data-reading-section class="reading-anchor-block">${protocolSummaryHTML}</div>`);
             }
 
             if (specialHTML) {
-                tocItems.push({ id: 'special-tools', label: '工具' });
+                tocItems.push({ id: 'special-tools', label: getReadingSectionLabel(specialHTML, '工具') });
                 immersiveSections.push(`<div id="special-tools" data-reading-section class="reading-anchor-block">${specialHTML}</div>`);
             }
 
+            tocItems.push(...contentTocItems);
             immersiveSections.push(renderedBlocks);
 
             if (galleryHTML) {
