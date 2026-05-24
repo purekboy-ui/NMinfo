@@ -96,7 +96,7 @@ body {
     background: var(--bg-page);
     color: var(--text-primary);
     line-height: var(--zh-body-leading);
-    font-size: 18px;
+    font-size: 19px;
     letter-spacing: 0;
     height: 100vh;
     overflow: hidden;
@@ -175,7 +175,7 @@ a:hover { text-decoration: underline; }
 }
 
 .sidebar-brand h1 {
-    font-size: 1.6rem;
+    font-size: 1.72rem;
     font-weight: 800;
     color: var(--text-inverse);
     letter-spacing: 0;
@@ -183,7 +183,7 @@ a:hover { text-decoration: underline; }
 }
 
 .brand-subtitle {
-    font-size: 1.04rem;
+    font-size: 1.12rem;
     color: var(--sidebar-text);
     font-weight: 600;
     letter-spacing: 0.01em;
@@ -212,7 +212,7 @@ a:hover { text-decoration: underline; }
     background: var(--bg-surface);
     border: 1px solid rgba(143,94,103,0.14);
     border-radius: 12px;
-    font-size: 1rem;
+    font-size: 1.06rem;
     color: var(--text-primary);
     transition: all 0.2s;
     font-family: var(--font-sans);
@@ -254,7 +254,7 @@ a:hover { text-decoration: underline; }
 .sidebar-priority-label {
     display: block;
     margin: 0 8px 8px;
-    font-size: 0.98rem;
+    font-size: 1.04rem;
     font-weight: 700;
     letter-spacing: var(--zh-label-spacing);
     color: var(--text-tertiary);
@@ -299,7 +299,7 @@ a:hover { text-decoration: underline; }
     width: 100%;
     padding: 10px 12px;
     border-radius: 10px;
-    font-size: 1.12rem;
+    font-size: 1.18rem;
     font-weight: 700;
     color: var(--sidebar-text);
     transition: all 0.15s;
@@ -326,7 +326,7 @@ a:hover { text-decoration: underline; }
 .nav-group-label { flex: 1; text-align: left; }
 
 .nav-group-count {
-    font-size: 0.98rem;
+    font-size: 1rem;
     font-weight: 700;
     background: rgba(255,255,255,0.64);
     color: var(--sidebar-text);
@@ -370,7 +370,7 @@ a:hover { text-decoration: underline; }
     width: 100%;
     text-align: left;
     padding: 10px 12px 10px 22px;
-    font-size: 1.08rem;
+    font-size: 1.14rem;
     font-weight: 550;
     color: var(--sidebar-text);
     border-radius: 10px;
@@ -417,7 +417,7 @@ a:hover { text-decoration: underline; }
 .nav-external {
     display: block;
     padding: 9px 12px 9px 22px;
-    font-size: 1rem;
+    font-size: 1.06rem;
     font-weight: 500;
     color: var(--sidebar-text);
     border-radius: 10px;
@@ -439,7 +439,7 @@ a:hover { text-decoration: underline; }
 }
 
 .sidebar-footer p {
-    font-size: 0.98rem;
+    font-size: 1rem;
     color: rgba(148,163,184,0.6);
     text-align: left;
     line-height: 1.6;
@@ -475,6 +475,7 @@ a:hover { text-decoration: underline; }
 
 .content-area :where(h1, h2, h3, h4, p, li) {
     text-wrap: pretty;
+    overflow-wrap: break-word;
 }
 
 /* ================================================================
@@ -489,7 +490,7 @@ a:hover { text-decoration: underline; }
 }
 
 .article-header h1 {
-    font-size: 2rem;
+    font-size: 2.12rem;
     font-weight: 900;
     line-height: var(--zh-heading-leading);
     color: var(--text-primary);
@@ -498,7 +499,7 @@ a:hover { text-decoration: underline; }
 }
 
 .article-header .subtitle {
-    font-size: 1.06rem;
+    font-size: 1.12rem;
     color: var(--text-secondary);
     line-height: var(--zh-body-leading);
     max-width: var(--reading-measure);
@@ -939,14 +940,14 @@ a:hover { text-decoration: underline; }
 
 /* Prose content */
 .prose {
-    font-size: 1.02rem;
+    font-size: 1.08rem;
     line-height: var(--zh-body-leading-loose);
     color: var(--text-secondary);
     max-width: var(--reading-measure);
 }
 
 .prose h3 {
-    font-size: 1.22rem;
+    font-size: 1.3rem;
     font-weight: 700;
     color: var(--text-primary);
     margin: 28px 0 12px;
@@ -954,7 +955,7 @@ a:hover { text-decoration: underline; }
 }
 
 .prose h4 {
-    font-size: 1.08rem;
+    font-size: 1.14rem;
     font-weight: 700;
     color: var(--text-primary);
     margin: 20px 0 8px;
@@ -1850,6 +1851,11 @@ a:hover { text-decoration: underline; }
 .sidebar-overlay.visible { display: block; }
 
 @media (max-width: 768px) {
+    .app-container {
+        display: block;
+        width: 100%;
+    }
+
     .mobile-menu-toggle {
         display: flex;
         top: calc(env(safe-area-inset-top, 0px) + 12px);
@@ -1868,8 +1874,16 @@ a:hover { text-decoration: underline; }
 
     .sidebar.open { transform: translateX(0); }
 
+    .main-panel,
+    .content-scroll,
+    .content-area {
+        width: 100%;
+        max-width: 100%;
+    }
+
     .content-area {
         padding: calc(env(safe-area-inset-top, 0px) + 84px) 20px 60px;
+        overflow-x: hidden;
     }
 
     .two-col { grid-template-columns: 1fr; }
@@ -2531,7 +2545,7 @@ a:hover { text-decoration: underline; }
         linear-gradient(135deg, rgba(255,252,251,0.96), rgba(242,231,227,0.92));
     border: 1px solid rgba(143,94,103,0.14);
     border-radius: 28px;
-    padding: 32px;
+    padding: 36px;
 }
 
 .home-hero::after {
@@ -2560,7 +2574,7 @@ a:hover { text-decoration: underline; }
     border-radius: var(--radius-full);
     background: rgba(255,252,251,0.82);
     color: var(--brand-primary);
-    font-size: 0.92rem;
+    font-size: 0.98rem;
     font-weight: 700;
     letter-spacing: var(--zh-label-spacing);
 }
@@ -2570,29 +2584,31 @@ a:hover { text-decoration: underline; }
     align-content: start;
     gap: 18px;
     min-width: 0;
-    max-width: 70ch;
+    max-width: 72ch;
     margin: 0 auto;
 }
 
 .home-hero-kicker {
     color: var(--text-tertiary);
-    font-size: 0.94rem;
+    font-size: 1rem;
     font-weight: 700;
     letter-spacing: var(--zh-label-spacing);
 }
 
 .home-hero h1 {
-    font-size: clamp(1.9rem, 2.7vw, 2.55rem);
-    line-height: 1.18;
+    font-size: clamp(2.08rem, 2.9vw, 2.8rem);
+    line-height: 1.22;
     letter-spacing: 0;
     color: var(--text-primary);
     max-width: 100%;
-    text-wrap: balance;
+    text-wrap: pretty;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .home-hero-lead {
     color: var(--text-secondary);
-    font-size: 1.04rem;
+    font-size: 1.14rem;
     line-height: var(--zh-body-leading);
     max-width: 100%;
     text-wrap: pretty;
@@ -2684,13 +2700,13 @@ a:hover { text-decoration: underline; }
 
 .home-link-card strong {
     color: var(--text-primary);
-    font-size: 1rem;
+    font-size: 1.08rem;
     line-height: 1.45;
 }
 
 .home-link-card span {
     color: var(--text-secondary);
-    font-size: 0.96rem;
+    font-size: 1.02rem;
     line-height: var(--zh-body-leading-dense);
 }
 
@@ -2709,28 +2725,29 @@ a:hover { text-decoration: underline; }
 .home-hero-metric {
     display: grid;
     gap: 6px;
-    padding: 18px;
+    padding: 20px;
     border-radius: 18px;
     border: 1px solid rgba(143,94,103,0.12);
     background: rgba(255,252,251,0.68);
+    min-width: 0;
 }
 
 .home-hero-metric span {
     color: var(--text-tertiary);
-    font-size: 0.82rem;
+    font-size: 0.88rem;
     font-weight: 700;
     letter-spacing: var(--zh-label-spacing);
 }
 
 .home-hero-metric strong {
     color: var(--text-primary);
-    font-size: 1.02rem;
+    font-size: 1.08rem;
     line-height: 1.4;
 }
 
 .home-hero-metric p {
     color: var(--text-secondary);
-    font-size: 0.94rem;
+    font-size: 1rem;
     line-height: var(--zh-body-leading-dense);
 }
 
@@ -2754,14 +2771,14 @@ a:hover { text-decoration: underline; }
 
 .home-panel-header h2 {
     color: var(--text-primary);
-    font-size: 1.35rem;
+    font-size: 1.46rem;
     line-height: var(--zh-section-leading);
     letter-spacing: 0;
 }
 
 .home-panel-header p {
     color: var(--text-secondary);
-    font-size: 0.97rem;
+    font-size: 1.03rem;
     line-height: var(--zh-body-leading-dense);
 }
 
@@ -2786,7 +2803,7 @@ a:hover { text-decoration: underline; }
 
 .home-panel-section-heading h3 {
     color: var(--text-primary);
-    font-size: 1rem;
+    font-size: 1.08rem;
     line-height: 1.35;
 }
 
@@ -2831,13 +2848,13 @@ a:hover { text-decoration: underline; }
 
 .home-panel-check strong {
     color: var(--text-primary);
-    font-size: 1rem;
+    font-size: 1.08rem;
     line-height: 1.45;
 }
 
 .home-panel-check p {
     color: var(--text-secondary);
-    font-size: 0.94rem;
+    font-size: 1rem;
     line-height: var(--zh-body-leading-dense);
 }
 
@@ -2890,7 +2907,7 @@ a:hover { text-decoration: underline; }
 .home-panel-link strong,
 .home-resource-link strong {
     display: block;
-    font-size: 1.02rem;
+    font-size: 1.1rem;
     color: var(--text-primary);
     margin-bottom: 6px;
     line-height: 1.4;
@@ -2904,7 +2921,7 @@ a:hover { text-decoration: underline; }
     display: block;
     color: var(--text-secondary);
     line-height: 1.6;
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 
 .home-section {
@@ -2923,20 +2940,20 @@ a:hover { text-decoration: underline; }
 }
 
 .home-section-heading h2 {
-    font-size: 1.28rem;
+    font-size: 1.42rem;
     line-height: var(--zh-section-leading);
     color: var(--text-primary);
 }
 
 .home-section-heading p {
     color: var(--text-secondary);
-    font-size: 0.98rem;
+    font-size: 1.04rem;
     line-height: var(--zh-body-leading-dense);
 }
 
 .home-card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 18px;
     align-items: stretch;
 }
@@ -2954,7 +2971,7 @@ a:hover { text-decoration: underline; }
     border-radius: var(--radius-full);
     background: var(--brand-primary-soft);
     color: var(--brand-primary);
-    font-size: 0.9rem;
+    font-size: 0.96rem;
     font-weight: 700;
     letter-spacing: var(--zh-label-spacing);
 }
@@ -2978,8 +2995,9 @@ a:hover { text-decoration: underline; }
     display: grid;
     align-content: start;
     gap: 2px;
-    min-height: 172px;
-    padding: 18px 18px 20px;
+    min-height: 196px;
+    min-width: 0;
+    padding: 20px 20px 22px;
     border-radius: 22px;
     background:
         linear-gradient(180deg, rgba(255,255,255,0.92), rgba(251,246,244,0.94));
@@ -3004,12 +3022,12 @@ a:hover { text-decoration: underline; }
 .home-resource-link strong {
     margin-top: 2px;
     margin-bottom: 10px;
-    font-size: 1.12rem;
+    font-size: 1.18rem;
 }
 
 .home-resource-link span:last-child {
-    font-size: 0.98rem;
-    line-height: 1.72;
+    font-size: 1.04rem;
+    line-height: 1.76;
 }
 
 .home-critical-grid {
@@ -3050,7 +3068,7 @@ a:hover { text-decoration: underline; }
 }
 
 .home-critical-card h3 {
-    font-size: 1.02rem;
+    font-size: 1.1rem;
     line-height: 1.4;
     color: var(--text-primary);
 }
@@ -3058,7 +3076,7 @@ a:hover { text-decoration: underline; }
 .home-critical-card p {
     color: var(--text-secondary);
     line-height: var(--zh-body-leading-dense);
-    font-size: 0.98rem;
+    font-size: 1.02rem;
 }
 
 .home-workflow-grid {
@@ -3139,7 +3157,9 @@ a:hover { text-decoration: underline; }
 
     .home-hero h1 {
         max-width: none;
-        font-size: clamp(1.9rem, 8vw, 2.45rem);
+        width: 100%;
+        font-size: clamp(1.58rem, 6.6vw, 2rem);
+        text-wrap: wrap;
     }
 
     .home-hero-art img {
@@ -3173,6 +3193,10 @@ a:hover { text-decoration: underline; }
     .home-hero,
     .home-hero-panel {
         padding: 20px 16px;
+    }
+
+    .content-area {
+        padding: calc(env(safe-area-inset-top, 0px) + 80px) 16px 56px;
     }
 
     .home-hero-grid {

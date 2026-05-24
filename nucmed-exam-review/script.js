@@ -122,7 +122,7 @@ const renderHome = () => {
         </p>
       </div>
       <figure class="hero-figure">
-        <img src="./assets/hero-study-stand.svg" alt="熱血漫畫感的 K 書插圖，主角與替身一起讀書整理重點" />
+        <img src="./assets/hero-study-stand.webp" alt="圖書館 K 書情境插圖，主角在桌前讀書，後方有守護者意象。" />
       </figure>
     </section>
 
