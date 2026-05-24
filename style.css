@@ -4803,11 +4803,14 @@ a:hover { text-decoration: underline; }
 
 /* Main site editorial refresh: keep late to override older card-first layouts. */
 :root {
-    --content-max-width: 1320px;
+    --content-max-width: 1260px;
+    --reading-measure: 44ic;
+    --reading-measure-wide: 52ic;
 }
 
 body {
     font-size: 19px;
+    line-height: 2;
 }
 
 .home-hub,
@@ -4815,7 +4818,21 @@ body {
 .reader-guide,
 .protocol-summary-section,
 .content-section {
-    line-height: 1.9;
+    line-height: 2;
+}
+
+.content-area {
+    padding-top: 38px;
+}
+
+.article-header,
+.reader-guide-header,
+.protocol-summary-heading,
+.exam-flow-copy,
+.learning-hero-copy,
+.i131-hero-copy,
+.home-hero-copy {
+    max-width: 56rem;
 }
 
 .home-hero h1,
@@ -4831,24 +4848,62 @@ body {
 .reader-guide-header h2 {
     text-wrap: pretty;
     word-break: keep-all;
+    overflow-wrap: anywhere;
 }
 
-.home-hero-copy,
-.exam-flow-copy,
-.learning-hero-copy,
-.i131-hero-copy,
-.reader-guide-header {
-    max-width: 54rem;
+.article-header h1,
+.home-hero h1,
+.learning-hero h1,
+.exam-flow-hero h1,
+.i131-hero h1 {
+    line-height: 1.18;
+}
+
+.article-header h1 {
+    font-size: clamp(2.25rem, 3vw, 3rem);
+}
+
+.reader-guide-header h2,
+.protocol-summary-heading h2,
+.home-section-heading h2,
+.learning-section-heading h2,
+.exam-flow-section-heading h2,
+.i131-section-heading h2 {
+    font-size: 1.72rem;
+    line-height: 1.35;
+}
+
+.section-heading,
+.section-heading h2,
+.progressive-section summary span {
+    font-size: 1.45rem;
+    line-height: 1.35;
+}
+
+.home-hero-grid {
+    grid-template-columns: minmax(0, 1.08fr) minmax(300px, 0.72fr);
+    align-items: center;
+    gap: 32px;
 }
 
 .home-hero-art {
-    order: 2;
+    order: initial;
+    max-width: 30rem;
+}
+
+.home-hero .prose p,
+.home-hero-art,
+.home-hero-art img {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
 }
 
 .home-hero-art img {
     width: 100%;
-    max-height: none;
-    object-fit: contain;
+    max-height: 360px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
 }
 
 .home-hero,
@@ -4890,18 +4945,83 @@ body {
 .i131-hero-lead,
 .reader-guide-header p,
 .protocol-summary-heading p {
-    font-size: 1.08rem;
+    font-size: 1.12rem;
     line-height: 1.95;
 }
 
 .prose p,
+.prose li,
+.info-box,
+.info-box p,
+.info-box li,
 .content-section p,
 .content-section li,
 .reader-guide p,
+.reader-guide-card p,
+.reader-guide-alert span,
 .protocol-summary-body,
 .protocol-summary-body li,
-.therapy-note {
-    font-size: 1.04rem;
+.therapy-note,
+.data-list li,
+.qa-item p,
+.exam-flow-insight-card p,
+.exam-flow-section-card p,
+.exam-flow-section-card li,
+.learning-focus-card p,
+.learning-module-card p,
+.learning-module-card li,
+.learning-callout-card p,
+.learning-callout-card li,
+.exam-flow-callout-card p,
+.exam-flow-callout-card li,
+.i131-insight-card p,
+.i131-goal-card p,
+.i131-decision-card p,
+.i131-journey-card p,
+.therapy-section-card p,
+.therapy-section-card li,
+.therapy-rich-card p,
+.therapy-rich-card li {
+    font-size: 1.12rem;
+    line-height: 1.92;
+}
+
+.reader-guide-card h3,
+.exam-flow-insight-card h3,
+.learning-focus-card h3,
+.exam-flow-section-card h3,
+.learning-module-card h3,
+.exam-flow-callout-card h4,
+.learning-callout-card h4,
+.i131-insight-card h3,
+.i131-goal-card h3,
+.i131-decision-card h3,
+.i131-journey-card h3,
+.therapy-section-card h3 {
+    font-size: 1.24rem;
+    line-height: 1.42;
+}
+
+.reader-guide-grid,
+.exam-flow-insight-grid,
+.learning-focus-grid,
+.home-card-grid,
+.exam-flow-section-grid,
+.learning-module-grid,
+.learning-callout-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.reader-guide-card,
+.exam-flow-insight-card,
+.learning-focus-card,
+.exam-flow-section-card,
+.learning-module-card,
+.exam-flow-callout-card,
+.learning-callout-card,
+.home-resource-link {
+    min-width: 0;
+    padding: 22px;
 }
 
 [data-guide-key="NMBasics"] .learning-module-grid {
@@ -4910,15 +5030,41 @@ body {
 
 @media (max-width: 980px) {
     body {
-        font-size: 18px;
+        font-size: 18.5px;
     }
 
     .home-hero-art img {
-        max-height: none;
+        max-height: 300px;
     }
 }
 
 @media (max-width: 768px) {
+    .content-area {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .article-header h1,
+    .home-hero h1,
+    .learning-hero h1,
+    .exam-flow-hero h1,
+    .i131-hero h1 {
+        font-size: 2rem;
+        word-break: keep-all;
+        overflow-wrap: anywhere;
+    }
+
+    .reader-guide-grid,
+    .exam-flow-insight-grid,
+    .learning-focus-grid,
+    .home-card-grid,
+    .home-hero-grid,
+    .exam-flow-section-grid,
+    .learning-module-grid,
+    .learning-callout-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
     .reading-toc {
         border-radius: 18px;
     }
@@ -4935,4 +5081,33 @@ body {
         border-radius: 20px;
     }
 
+}
+
+@media (max-width: 560px) {
+    body {
+        font-size: 18px;
+    }
+
+    .content-subtitle,
+    .home-hero-lead,
+    .learning-hero-lead,
+    .exam-flow-lead,
+    .i131-hero-lead,
+    .reader-guide-header p,
+    .protocol-summary-heading p,
+    .prose p,
+    .prose li,
+    .content-section p,
+    .content-section li,
+    .reader-guide p,
+    .reader-guide-card p,
+    .protocol-summary-body,
+    .protocol-summary-body li {
+        font-size: 1.06rem;
+        line-height: 1.88;
+    }
+
+    .home-hero-art img {
+        max-height: 220px;
+    }
 }
