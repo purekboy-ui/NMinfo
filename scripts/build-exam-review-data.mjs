@@ -1,5 +1,6 @@
 import { mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
+import { NUCMED_EXPLANATION_PATCHES } from './exam-review-explanation-patches.mjs';
 
 const ROOT = process.cwd();
 const OUTPUT_DIR = path.join(ROOT, 'nucmed-exam-review', 'data');
@@ -298,6 +299,8 @@ const applyQuestionPatch = (question, patch = {}) => {
   if (patch.options) next.options = normalizeOptionList(patch.options);
   if (Object.prototype.hasOwnProperty.call(patch, 'answer')) next.answer = patch.answer;
   if (patch.acceptedAnswers) next.acceptedAnswers = patch.acceptedAnswers;
+  if (Object.prototype.hasOwnProperty.call(patch, 'explanation')) next.explanation = patch.explanation;
+  if (Object.prototype.hasOwnProperty.call(patch, 'explanationStatus')) next.explanationStatus = patch.explanationStatus;
   if (patch.figureImage) next.figureImage = patch.figureImage;
   if (patch.figureAlt) next.figureAlt = patch.figureAlt;
 
@@ -434,14 +437,18 @@ const buildNucmedPaper = ({ legacyPaper, externalPaper, mdPaper }) => {
   const mdQuestionMap = new Map((mdPaper?.questions || []).map((question) => [question.number, question]));
   const questions = sourceQuestions.map((question, index) => {
     const mdQuestion = mdQuestionMap.get(question.number || index + 1);
-    const patch = NUCMED_QUESTION_PATCHES[id]?.[question.number || index + 1];
+    const questionNumber = question.number || index + 1;
+    const patch = {
+      ...(NUCMED_QUESTION_PATCHES[id]?.[questionNumber] || {}),
+      ...(NUCMED_EXPLANATION_PATCHES[id]?.[questionNumber] || {})
+    };
     const mergedOptions = mdQuestion?.options?.length ? mdQuestion.options : question.options || [];
     const mergedAnswer = mdQuestion?.answer ? normalizeNucmedAnswer(mdQuestion.answer) : normalizeNucmedAnswer(question.answer);
     const baseQuestion = {
       ...question,
       kind: 'mcq',
       section: 'mcq',
-      number: question.number || index + 1,
+      number: questionNumber,
       stem: mdQuestion?.stem || normalizeInline(question.stem),
       options: mergedOptions.map((option, optionIndex) => ({
         key: option.key || ['A', 'B', 'C', 'D'][optionIndex],

@@ -371,7 +371,7 @@ window.NM_EXAM_BANK["radiographer-110-1"] = {
         "C",
         "D"
       ],
-      "explanation": "本題正解為 A，因為選項內容「111In-pentetrotide」最符合「下列何者最適合評估腫瘤somatostati…」的核心判斷。 其餘選項常把「111In-DTPA」與「18F-FDOPA」這類概念直接套用，忽略題幹限定條件。 解題時應先對齊題幹限定條件，再排除概念相近但情境不符的選項。 本題屬更正/給分題，官方接受 A、B、C、D；作答時仍應回到「下列何者最適合評估腫瘤somatostati…」的判斷邏輯。",
+      "explanation": "111In-pentetreotide 是體抑素類似物，可和 somatostatin receptor 結合，因此最適合評估腫瘤的受體表現。其餘選項不是 somatostatin 受體顯像藥物；本題雖官方送分，臨床上最接近的答案仍是 A。",
       "explanationStatus": "bonus",
       "kind": "mcq",
       "section": "mcq",

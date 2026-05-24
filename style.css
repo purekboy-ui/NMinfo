@@ -2645,7 +2645,7 @@ a:hover { text-decoration: underline; }
     position: relative;
     margin: 0;
     align-self: start;
-    max-width: 54rem;
+    max-width: 72ch;
     width: 100%;
     justify-self: center;
     transform-origin: center top;
@@ -5017,14 +5017,14 @@ body {
 }
 
 .home-hero-grid {
-    grid-template-columns: minmax(0, 1.08fr) minmax(300px, 0.72fr);
-    align-items: center;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
     gap: 32px;
 }
 
 .home-hero-art {
-    order: initial;
-    max-width: 30rem;
+    order: -1;
+    max-width: 72ch;
 }
 
 .home-hero .prose p,
@@ -5037,9 +5037,9 @@ body {
 
 .home-hero-art img {
     width: 100%;
-    max-height: 360px;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
+    max-height: none;
+    aspect-ratio: auto;
+    object-fit: contain;
 }
 
 .home-hero,

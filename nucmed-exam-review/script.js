@@ -55,6 +55,12 @@ const getPaperMeta = (paperId) => state.manifest?.papers.find((paper) => paper.i
 const getPaperSync = (paperId) => window.NM_EXAM_BANK?.[paperId] || null;
 const getGuideIdForTrack = (trackId) => state.manifest?.guides.find((guide) => guide.trackIds.includes(trackId))?.id || null;
 
+const getAnswerChipLabel = (question) => {
+  if (question.answer === '#') return '答案：送分';
+  if (question.acceptedAnswers?.length) return `答案：${question.acceptedAnswers.join(' / ')}`;
+  return '';
+};
+
 const ensurePaperLoaded = async (paperId) => {
   if (getPaperSync(paperId)) return getPaperSync(paperId);
   await createDataScript(`./data/${paperId}.js`);
@@ -202,8 +208,8 @@ const renderQuestionBlock = (question) => {
     <article class="question-card">
       <div class="question-meta">
         <span class="question-number">第 ${question.number} 題</span>
-        ${question.acceptedAnswers?.length
-          ? `<span class="answer-chip">答案：${escapeHtml(question.acceptedAnswers.join(' / '))}</span>`
+        ${getAnswerChipLabel(question)
+          ? `<span class="answer-chip">${escapeHtml(getAnswerChipLabel(question))}</span>`
           : ''}
       </div>
       <h4>${escapeHtml(question.stem)}</h4>
@@ -216,7 +222,7 @@ const renderQuestionBlock = (question) => {
           </div>
         `).join('')}
       </div>
-      ${question.explanationStatus === 'ready' && question.explanation
+      ${question.explanation
         ? `<p class="explanation">${escapeHtml(question.explanation)}</p>`
         : ''}
     </article>

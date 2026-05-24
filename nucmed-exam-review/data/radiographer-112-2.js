@@ -1457,7 +1457,7 @@ window.NM_EXAM_BANK["radiographer-112-2"] = {
         "B",
         "C"
       ],
-      "explanation": "本題為更正/給分題，acceptedAnswers含B與C，兩個答案皆可得分。臨床多在口服131I後約24小時進行診斷性全身掃描，但部分流程也會延後至48～72小時以提升病灶對比，因此B、C皆有合理性。",
+      "explanation": "診斷性 131I-NaI 全身掃描常見作法是在口服後約 24 小時開始，也有部分流程會延後到 48 到 72 小時再補拍延遲影像。因臨床流程依適應症與機構慣例略有差異，所以本題官方接受 B、C。",
       "explanationStatus": "bonus",
       "kind": "mcq",
       "section": "mcq",

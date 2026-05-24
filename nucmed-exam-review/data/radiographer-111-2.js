@@ -83,7 +83,7 @@ window.NM_EXAM_BANK["radiographer-111-2"] = {
         "C",
         "D"
       ],
-      "explanation": "本題正解為 A，因為選項內容「18Ｆ＞ 11C＞ 68 Ga＞ 13N＞ 82Rb」最符合「下列無載體（carrier-free）放射核…」的核心判斷。 其餘選項常把「15O＞ 82 Rb＞ 13…」與「82Rb＞ 15O＞ 11C…」這類概念直接套用，忽略題幹限定條件。 判斷時要以核種物理特性為主，避免把不同放射核種的參數混用。 本題屬更正/給分題，官方接受 A、B、C、D；作答時仍應回到「下列無載體（carrier-free）放射核…」的判斷邏輯。",
+      "explanation": "carrier-free 核種的比活度會受半衰期、原子量與是否真正無載體等條件影響，原題排序缺少足夠前提，選項也有格式與數值爭議，因此官方列為送分。實務上此類題目若未明確給出計算假設，不宜硬判單一排序。",
       "explanationStatus": "bonus",
       "kind": "mcq",
       "section": "mcq",
