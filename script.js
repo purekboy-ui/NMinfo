@@ -5705,10 +5705,10 @@ const HOME_HUB_CONFIG = {
             variant: 'info'
         },
         {
-            href: 'https://www.snm.org.tw/',
-            kicker: '專業連結',
-            title: '台灣核醫學會',
-            desc: '回查學會公告、活動與專業資訊。',
+            href: 'nucmed-exam-review/',
+            kicker: '子網站',
+            title: '核醫國考題研究',
+            desc: '依年度查看放射師與醫師國考題，逐題核對正解與選項解析。',
             variant: 'info'
         }
     ]

@@ -9,7 +9,8 @@ const staticTargets = [
   ['ai-village', 'dist/ai-village'],
   ['patient-education', 'dist/patient-education'],
   ['nucmed-ai-research', 'dist/nucmed-ai-research'],
-  ['nucmed-storylab', 'dist/nucmed-storylab']
+  ['nucmed-storylab', 'dist/nucmed-storylab'],
+  ['nucmed-exam-review', 'dist/nucmed-exam-review']
 ];
 
 await mkdir('dist', { recursive: true });

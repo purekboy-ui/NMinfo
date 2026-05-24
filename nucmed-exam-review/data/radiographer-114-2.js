@@ -1,0 +1,2586 @@
+window.NM_EXAM_BANK = window.NM_EXAM_BANK || {};
+window.NM_EXAM_BANK["radiographer-114-2"] = {
+  "id": "radiographer-114-2",
+  "trackId": "nucmed",
+  "title": "114-2 核子醫學診療原理與技術學",
+  "year": 114,
+  "session": 2,
+  "yearLabel": "114-2",
+  "examYearCe": 2025,
+  "examName": "114年第二次專門職業及技術人員高等考試醫師中醫師考試分階段考試（第一階段考試）、牙醫師藥師考試分階段考試、醫事檢驗師、醫事放射師、物理治療師考試、114年專門職業及技術人員高等考試職能治療師、呼吸治療師、獸醫師、助產師考試",
+  "subjectName": "核子醫學診療原理與技術學",
+  "paperType": "paper",
+  "subjectCode": "nucmed",
+  "questionCount": 80,
+  "testableQuestionCount": 80,
+  "invalidQuestionCount": 0,
+  "source": {
+    "twinklePaperId": "114_114090_309_06",
+    "questionPdfUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=114090&c=309&s=0605&q=1",
+    "answerPdfUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=S&code=114090&c=309&s=0605&q=1",
+    "questionSource": "official:question_pdf",
+    "answerSource": "official:answer_pdf"
+  },
+  "questions": [
+    {
+      "id": "rg-114-2-q001",
+      "number": 1,
+      "stem": "82Rb-RbCl 可評估心肌灌注的原因， 最可能為下列何者？",
+      "options": [
+        {
+          "key": "A",
+          "text": "82Rb 的化學性質類似於鈣離子"
+        },
+        {
+          "key": "B",
+          "text": "82Rb 的化學性質類似於鉀離子"
+        },
+        {
+          "key": "C",
+          "text": "82Rb 的物理性質類似於白血球"
+        },
+        {
+          "key": "D",
+          "text": "82Rb 的物理性質類似於紅血球"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "本題正解為 B，因為選項內容「82Rb 的化學性質類似於鉀離子」最符合「82Rb-RbCl 可評估心肌灌注的原因， …」的核心判斷。 其餘選項常把「82Rb 的化學性質類似於鈣…」與「82Rb 的物理性質類似於白…」這類概念直接套用，忽略題幹限定條件。 解題時應先對齊題幹限定條件，再排除概念相近但情境不符的選項。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q002",
+      "number": 2,
+      "stem": "經迴旋加速器製造的核種， 下列何者半衰期最短？",
+      "options": [
+        {
+          "key": "A",
+          "text": "以質子射束轟擊 16O 靶， 進行(p, α) 反應"
+        },
+        {
+          "key": "B",
+          "text": "以質子射束轟擊 14N 靶， 進行(p, α) 反應"
+        },
+        {
+          "key": "C",
+          "text": "以質子射束轟擊 15N 靶， 進行(p, n) 反應"
+        },
+        {
+          "key": "D",
+          "text": "以質子射束轟擊 18O 靶， 進行(p, n) 反應"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "本題正解為 C，因為選項內容「以質子射束轟擊 15N 靶， 進行（p, n）反應」最符合「經迴旋加速器製造的核種，」的核心判斷。 其餘選項常把「以質子射束轟擊 16O 靶，…」與「以質子射束轟擊 14N 靶，…」這類概念直接套用，忽略題幹限定條件。 判斷時要以核種物理特性為主，避免把不同放射核種的參數混用。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q003",
+      "number": 3,
+      "stem": "131I-NaI 甲狀腺攝入造影的定位機轉為何？",
+      "options": [
+        {
+          "key": "A",
+          "text": "離子交換(ion exchange)"
+        },
+        {
+          "key": "B",
+          "text": "主動運輸(active transport)"
+        },
+        {
+          "key": "C",
+          "text": "吞噬(phagocytosis)"
+        },
+        {
+          "key": "D",
+          "text": "微血管阻塞(capillary blockage)"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "本題正解為 B，因為選項內容「主動運輸（active transport）」最符合「131I-NaI 甲狀腺攝入造影的定位機轉為…」的核心判斷。 其餘選項常把「離子交換（ion excha…」與「吞噬（phagocytosi…」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q004",
+      "number": 4,
+      "stem": "子核種 90Y 與母核種 90Sr 在 90Sr/ 90Y 孳生器(generator) 中達到何種平衡狀態？",
+      "options": [
+        {
+          "key": "A",
+          "text": "永久平衡"
+        },
+        {
+          "key": "B",
+          "text": "暫態平衡"
+        },
+        {
+          "key": "C",
+          "text": "不連續平衡"
+        },
+        {
+          "key": "D",
+          "text": "不平衡"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "本題正解為 A，因為選項內容「永久平衡」最符合「子核種 90Y 與母核種 90Sr 在 90…」的核心判斷。 其餘選項常把「暫態平衡」與「不連續平衡」這類概念直接套用，忽略題幹限定條件。 判斷時要以核種物理特性為主，避免把不同放射核種的參數混用。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q005",
+      "number": 5,
+      "stem": "下列何者最適合用於骨骼造影？",
+      "options": [
+        {
+          "key": "A",
+          "text": "18F-NaF"
+        },
+        {
+          "key": "B",
+          "text": "18F-FDG"
+        },
+        {
+          "key": "C",
+          "text": "13N-NH3"
+        },
+        {
+          "key": "D",
+          "text": "82Rb-RbCl"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "本題正解為 A，因為選項內容「18F-NaF」最符合「下列何者最適合用於骨骼造影」的核心判斷。 其餘選項常把「18F-FDG」與「13N-NH3」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q006",
+      "number": 6,
+      "stem": "有關臨床常規骨骼造影的敘述， 下列何者最不適當？",
+      "options": [
+        {
+          "key": "A",
+          "text": "18F-NaF 的影像品質較 89Sr-SrCl2佳"
+        },
+        {
+          "key": "B",
+          "text": "18F-NaF 可用於偵測前列腺癌是否發生骨轉移"
+        },
+        {
+          "key": "C",
+          "text": "18F-NaF 的 18F 核種是由迴旋加速器生產"
+        },
+        {
+          "key": "D",
+          "text": "相較於 99mTc-MDP 造影， 18F-NaF 正子造影所需注射活性較高"
+        }
+      ],
+      "answer": "D",
+      "acceptedAnswers": [
+        "D"
+      ],
+      "explanation": "本題正解為 D，因為選項內容「相較於 99mTc-MDP 造影， 18F-NaF 正子造影所需注射活性較高」最符合「有關臨床常規骨骼造影的敘述， 下列何者最不適…」的核心判斷。 其餘選項常把「18F-NaF 的影像品質較…」與「18F-NaF 可用於偵測前…」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q007",
+      "number": 7,
+      "stem": "有關孳生器生產的核種， 下列敘述何者錯誤？",
+      "options": [
+        {
+          "key": "A",
+          "text": "62Cu 可由 62Zn 衰變獲得"
+        },
+        {
+          "key": "B",
+          "text": "68Ga 可由 68Ge 衰變獲得"
+        },
+        {
+          "key": "C",
+          "text": "82Rb 可由 82Sr 衰變獲得"
+        },
+        {
+          "key": "D",
+          "text": "90Sr 可由 90Y 衰變獲得"
+        }
+      ],
+      "answer": "D",
+      "acceptedAnswers": [
+        "D"
+      ],
+      "explanation": "本題正解為 D，因為選項內容「90Sr 可由 90Y 衰變獲得」最符合「有關孳生器生產的核種， 下列敘述何者錯誤」的核心判斷。 其餘選項常把「62Cu 可由 62Zn 衰…」與「68Ga 可由 68Ge 衰…」這類概念直接套用，忽略題幹限定條件。 判斷時要以核種物理特性為主，避免把不同放射核種的參數混用。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q008",
+      "number": 8,
+      "stem": "下列何種核醫藥物不屬於抗體的類似物(antibody analog) ？",
+      "options": [
+        {
+          "key": "A",
+          "text": "111In-Capromab Pendetide"
+        },
+        {
+          "key": "B",
+          "text": "99mTc-MAA"
+        },
+        {
+          "key": "C",
+          "text": "90Y-Zevalin"
+        },
+        {
+          "key": "D",
+          "text": "111In-ibritumomab tiuxetan"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "本題正解為 B，因為選項內容「99mTc-MAA」最符合「下列何種核醫藥物不屬於抗體的類似物（anti…」的核心判斷。 其餘選項常把「111In-Capromab…」與「90Y-Zevalin」這類概念直接套用，忽略題幹限定條件。 解題時應先對齊題幹限定條件，再排除概念相近但情境不符的選項。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q009",
+      "number": 9,
+      "stem": "下列何種放射性碘可用於製備PET 放射藥物？",
+      "options": [
+        {
+          "key": "A",
+          "text": "123I"
+        },
+        {
+          "key": "B",
+          "text": "124I"
+        },
+        {
+          "key": "C",
+          "text": "125I"
+        },
+        {
+          "key": "D",
+          "text": "131I"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "本題正解為 B，因為選項內容「124I」最符合「下列何種放射性碘可用於製備PET 放射藥物」的核心判斷。 其餘選項常把「123I」與「125I」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q010",
+      "number": 10,
+      "stem": "下列放射藥物， 何者臨床用途與巴金森氏病(Parkinson's disease) 檢查無關？",
+      "options": [
+        {
+          "key": "A",
+          "text": "99mTc-TRODAT-1"
+        },
+        {
+          "key": "B",
+          "text": "18F-fluorodopa"
+        },
+        {
+          "key": "C",
+          "text": "18F-fluciclovine"
+        },
+        {
+          "key": "D",
+          "text": "123I-ioflupane( 123I-FP-CIT)"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "本題正解為 C，因為選項內容「18F-fluciclovine」最符合「下列放射藥物， 何者臨床用途與巴金森氏病（P…」的核心判斷。 其餘選項常把「99mTc-TRODAT-1」與「18F-fluorodopa」這類概念直接套用，忽略題幹限定條件。 解題時應先對齊題幹限定條件，再排除概念相近但情境不符的選項。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q011",
+      "number": 11,
+      "stem": "下列孳生器中何者母核半衰期最長？",
+      "options": [
+        {
+          "key": "A",
+          "text": "99Mo- 99mTc"
+        },
+        {
+          "key": "B",
+          "text": "62Zn- 62Cu"
+        },
+        {
+          "key": "C",
+          "text": "81Rb- 81mKr"
+        },
+        {
+          "key": "D",
+          "text": "82Sr- 82Rb"
+        }
+      ],
+      "answer": "D",
+      "acceptedAnswers": [
+        "D"
+      ],
+      "explanation": "本題正解為 D，因為選項內容「82Sr- 82Rb」最符合「下列孳生器中何者母核半衰期最長」的核心判斷。 其餘選項常把「99Mo- 99mTc」與「62Zn- 62Cu」這類概念直接套用，忽略題幹限定條件。 判斷時要以核種物理特性為主，避免把不同放射核種的參數混用。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q012",
+      "number": 12,
+      "stem": "下列何者屬於胜肽類標幟之核醫製劑？",
+      "options": [
+        {
+          "key": "A",
+          "text": "99mTc-tetrofosmin"
+        },
+        {
+          "key": "B",
+          "text": "123I-MIBG"
+        },
+        {
+          "key": "C",
+          "text": "111In-pentetreotide"
+        },
+        {
+          "key": "D",
+          "text": "131I-tositumomab"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "本題正解為 C，因為選項內容「111In-pentetreotide」最符合「下列何者屬於胜肽類標幟之核醫製劑」的核心判斷。 其餘選項常把「99mTc-tetrofos…」與「123I-MIBG」這類概念直接套用，忽略題幹限定條件。 解題時應先對齊題幹限定條件，再排除概念相近但情境不符的選項。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q013",
+      "number": 13,
+      "stem": "有關 99mTc-DTPA aerosol 之敘述， 下列何者錯誤？",
+      "options": [
+        {
+          "key": "A",
+          "text": "臨床應用與 133Xe 相似"
+        },
+        {
+          "key": "B",
+          "text": "製劑微粒大小為50～100 μm"
+        },
+        {
+          "key": "C",
+          "text": "需於噴霧器中通入空氣或氧氣加壓(30～50 psi)"
+        },
+        {
+          "key": "D",
+          "text": "在吸菸者體內的生物半衰期較不吸菸者短"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "本題正解為 B，因為選項內容「製劑微粒大小為50～100 μm」最符合「有關 99mTc-DTPA aerosol …」的核心判斷。 其餘選項常把「臨床應用與 133Xe 相似」與「需於噴霧器中通入空氣或氧氣加…」這類概念直接套用，忽略題幹限定條件。 關鍵在放射藥物的生物分布、標記特性與臨床適應症是否一致。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q014",
+      "number": 14,
+      "stem": "下列心肌灌注造影製劑， 何者是透過血液擴散進入心肌細胞粒線體並產生滯留效應， 缺血心肌細胞對其攝取 會減少？",
+      "options": [
+        {
+          "key": "A",
+          "text": "18F-FDG"
+        },
+        {
+          "key": "B",
+          "text": "201Tl-TlCl"
+        },
+        {
+          "key": "C",
+          "text": "99mTc-sestamibi"
+        },
+        {
+          "key": "D",
+          "text": "99mTc-PYP"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "本題正解為 C，因為選項內容「99mTc-sestamibi」最符合「下列心肌灌注造影製劑， 何者是透過血液擴散進…」的核心判斷。 其餘選項常把「18F-FDG」與「201Tl-TlCl」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q015",
+      "number": 15,
+      "stem": "單光子電腦斷層掃描(SPECT) 的心肌灌注造影所使用的影像分析軟體通常將左心室心肌分為17 個節段， 下 列各節段何者對應到右冠狀動脈？ ①mid inferior ②apical anterior ③basal anterolateral ④basal anteroseptal ⑤basal inferoseptal",
+      "options": [
+        {
+          "key": "A",
+          "text": "①⑤"
+        },
+        {
+          "key": "B",
+          "text": "②③"
+        },
+        {
+          "key": "C",
+          "text": "②④"
+        },
+        {
+          "key": "D",
+          "text": "③④"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "本題正解為 A，因為選項內容「①⑤」最符合「單光子電腦斷層掃描（SPECT）的心肌灌注造…」的核心判斷。 其餘選項常把「②③」與「②④」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q016",
+      "number": 16,
+      "stem": "ECG-gated 心肌灌注造影無法獲得下列資訊？",
+      "options": [
+        {
+          "key": "A",
+          "text": "左心室代謝情形"
+        },
+        {
+          "key": "B",
+          "text": "左心室之射出分率(LVEF)"
+        },
+        {
+          "key": "C",
+          "text": "左心室之體積(volume)"
+        },
+        {
+          "key": "D",
+          "text": "左心室壁運動情形(wall motion)"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "本題正解為 A，因為選項內容「左心室代謝情形」最符合「ECG-gated 心肌灌注造影無法獲得」的核心判斷。 其餘選項常把「左心室之射出分率（LVEF）」與「左心室之體積（volume）」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q017",
+      "number": 17,
+      "stem": "有關心肌灌注造影所用的 201Tl-TlCl 和 99mTc-sestamibi 比較， 下列何者錯誤？",
+      "options": [
+        {
+          "key": "A",
+          "text": "201Tl-TlCl 能峰分布約在60～80 keV； 99mTc-sestamibi 能峰為140 keV"
+        },
+        {
+          "key": "B",
+          "text": "201Tl-TlCl 物理半衰期約73 小時； 99mTc-sestamibi 物理半衰期約6 小時"
+        },
+        {
+          "key": "C",
+          "text": "201Tl-TlCl 由孳生器(generator) 產生； 99mTc 由迴旋加速器(cyclotron) 產生"
+        },
+        {
+          "key": "D",
+          "text": "201Tl-TlCl 對受檢者的輻射吸收劑量較 99mTc-sestamibi 高"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "本題正解為 C，因為選項內容「201Tl-TlCl 由孳生器（generator）產生； 99mTc 由迴旋加速器（cyclotron）產生」最符合「有關心肌灌注造影所用的 201Tl-TlCl…」的核心判斷。 其餘選項常把「201Tl-TlCl 能峰分…」與「201Tl-TlCl 物理半…」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q018",
+      "number": 18,
+      "stem": "有關巴金森氏病(Parkinson's disease) 影像檢查， 下列敘述何者正確？",
+      "options": [
+        {
+          "key": "A",
+          "text": "99mTc-TRODAT-1 SPECT 可評量多巴胺運轉器(dopamine transporter, DAT) 功能"
+        },
+        {
+          "key": "B",
+          "text": "99mTc-ECD SPECT 可評量多巴胺受體功能"
+        },
+        {
+          "key": "C",
+          "text": "123I-beta-CIT SPECT 不可評量多巴胺運轉器功能"
+        },
+        {
+          "key": "D",
+          "text": "多巴胺運轉器造影常呈現紋狀體(striatum) 受體功能正常"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "本題正解為 A，因為選項內容「99mTc-TRODAT-1 SPECT 可評量多巴胺運轉器（dopamine transporter, DAT）功能」最符合「有關巴金森氏病（Parkinson's di…」的核心判斷。 其餘選項常把「99mTc-ECD SPEC…」與「123I-beta-CIT …」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q019",
+      "number": 19,
+      "stem": "有關心肌灌注造影的各種假影(artifact) ， 下列敘述何者錯誤？",
+      "options": [
+        {
+          "key": "A",
+          "text": "左分支束阻斷(LBBB) 在運動壓力心肌灌注造影所造成的假影是在隔壁(septal wall) 或是前隔壁 (anteroseptal wall) 的可逆性缺損"
+        },
+        {
+          "key": "B",
+          "text": "腸胃道的活性有可能會和左心下壁重疊， 而遮蓋下壁(inferior wall) 的灌注缺損"
+        },
+        {
+          "key": "C",
+          "text": "男性的左心側壁(lateral wall) 的固定性缺損(fixed defect) ， 可排除心肌缺血"
+        },
+        {
+          "key": "D",
+          "text": "若在心臟附近有腸胃道的局部亮點， 使用濾波反投影(filtered back projection) 方法重組時， 通常會在 心臟下壁造成缺損假影"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "本題正解為 C，因為選項內容「男性的左心側壁（lateral wall）的固定性缺損（fixed defect）， 可排除心肌缺血」最符合「有關心肌灌注造影的各種假影（artifact…」的核心判斷。 其餘選項常把「左分支束阻斷（LBBB）在運…」與「腸胃道的活性有可能會和左心下…」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q020",
+      "number": 20,
+      "stem": "有關核醫心臟造影製劑臨床用途之敘述， 下列配對何者錯誤？",
+      "options": [
+        {
+          "key": "A",
+          "text": "99mTc-sestamibi 心肌灌注掃描： 心肌存活評估"
+        },
+        {
+          "key": "B",
+          "text": "201Tl-TlCl 心肌灌注掃描： 心肌缺血評估"
+        },
+        {
+          "key": "C",
+          "text": "99mTc-PYP 心肌掃描： 心臟類澱粉沉積評估"
+        },
+        {
+          "key": "D",
+          "text": "18F-FDG 心臟正子掃描： 心肌發炎評估"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "本題正解為 A，因為選項內容「99mTc-sestamibi 心肌灌注掃描： 心肌存活評估」最符合「有關核醫心臟造影製劑臨床用途之敘述， 下列配…」的核心判斷。 其餘選項常把「201Tl-TlCl 心肌灌…」與「99mTc-PYP 心肌掃描…」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q021",
+      "number": 21,
+      "stem": "下列何種核醫製劑無法通過完整血腦障壁？",
+      "options": [
+        {
+          "key": "A",
+          "text": "18F-FDG"
+        },
+        {
+          "key": "B",
+          "text": "99mTc-HMPAO"
+        },
+        {
+          "key": "C",
+          "text": "99mTc-DTPA"
+        },
+        {
+          "key": "D",
+          "text": "99mTc-florbetaben"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "本題正解為 C，因為選項內容「99mTc-DTPA」最符合「下列何種核醫製劑無法通過完整血腦障壁」的核心判斷。 其餘選項常把「18F-FDG」與「99mTc-HMPAO」這類概念直接套用，忽略題幹限定條件。 解題時應先對齊題幹限定條件，再排除概念相近但情境不符的選項。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q022",
+      "number": 22,
+      "stem": "有關腦瘤PET 造影檢查， 下列敘述何者錯誤？",
+      "options": [
+        {
+          "key": "A",
+          "text": "惡性度高的腦瘤 18F-FDG 攝取較高"
+        },
+        {
+          "key": "B",
+          "text": "18F-FDG 在高惡性腦瘤攝取， 與細胞增生率(proliferative rate) 最相關"
+        },
+        {
+          "key": "C",
+          "text": "放射治療後， CT 顯影劑增強， 但 18F-FDG 攝取低， 可能是腫瘤壞死"
+        },
+        {
+          "key": "D",
+          "text": "大部份腦膜瘤(meningioma) 18F-FDG 攝取低於腦灰質"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "本題正解為 B，因為選項內容「18F-FDG 在高惡性腦瘤攝取， 與細胞增生率（proliferative rate）最相關」最符合「有關腦瘤PET 造影檢查， 下列敘述何者錯誤」的核心判斷。 其餘選項常把「惡性度高的腦瘤 18F-FD…」與「放射治療後， CT 顯影劑增…」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q023",
+      "number": 23,
+      "stem": "阿茲海默氏病(Alzheimer's disease) 病人的腦血流灌注檢查， 下列區域何者不會呈現異常？",
+      "options": [
+        {
+          "key": "A",
+          "text": "頂葉皮質(parietal cortex)"
+        },
+        {
+          "key": "B",
+          "text": "顳葉皮質(temporal cortex)"
+        },
+        {
+          "key": "C",
+          "text": "紋狀體(striatum)"
+        },
+        {
+          "key": "D",
+          "text": "後扣帶皮質(posterior cingulate cortex)"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "本題正解為 C，因為選項內容「紋狀體（striatum）」最符合「阿茲海默氏病（Alzheimer's dis…」的核心判斷。 其餘選項常把「頂葉皮質（parietal …」與「顳葉皮質（temporal …」這類概念直接套用，忽略題幹限定條件。 解題時應先對齊題幹限定條件，再排除概念相近但情境不符的選項。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q024",
+      "number": 24,
+      "stem": "進行心肌灌注造影， 若懷疑左心室下壁的灌注缺損是下列何種假影造成時， 可採俯臥(prone) 姿勢再次掃描 加以辨認？",
+      "options": [
+        {
+          "key": "A",
+          "text": "橫膈衰減假影"
+        },
+        {
+          "key": "B",
+          "text": "乳房衰減假影"
+        },
+        {
+          "key": "C",
+          "text": "散射假影"
+        },
+        {
+          "key": "D",
+          "text": "低計數假影"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "本題正解為 A，因為選項內容「橫膈衰減假影」最符合「進行心肌灌注造影， 若懷疑左心室下壁的灌注缺…」的核心判斷。 其餘選項常把「乳房衰減假影」與「散射假影」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q025",
+      "number": 25,
+      "stem": "有關 99mTc-MDP 及 18F-NaF 之比較， 下列何者最不適當？",
+      "options": [
+        {
+          "key": "A",
+          "text": "二者皆能定位在羥基磷灰石(hydroxyapatite) 結合骨基質"
+        },
+        {
+          "key": "B",
+          "text": "99mTc-MDP 與血漿蛋白鍵結率較 18F-NaF 低， 從腎臟排除速率較 18F-NaF 快"
+        },
+        {
+          "key": "C",
+          "text": "成人常用劑量： 99mTc-MDP 20 mCi； 18F-NaF 10 mCi"
+        },
+        {
+          "key": "D",
+          "text": "注射後造影等候時間： 99mTc-MDP 3 小時； 18F-NaF 1 小時"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "本題正解為 B，因為選項內容「99mTc-MDP 與血漿蛋白鍵結率較 18F-NaF 低， 從腎臟排除速率較 18F-NaF 快」最符合「有關 99mTc-MDP 及 18F-NaF…」的核心判斷。 其餘選項常把「二者皆能定位在羥基磷灰石（h…」與「成人常用劑量： 99mTc-…」這類概念直接套用，忽略題幹限定條件。 關鍵在放射藥物的生物分布、標記特性與臨床適應症是否一致。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q026",
+      "number": 26,
+      "stem": "病人接受 18F-FDG PET， 出現圖中紅色箭頭標註之生理性攝取現象， 下列敘述何者錯誤？",
+      "options": [
+        {
+          "key": "A",
+          "text": "可能會降低該區域腫瘤偵測的準確度"
+        },
+        {
+          "key": "B",
+          "text": "常見於寒冷天氣和年輕、瘦弱的患者"
+        },
+        {
+          "key": "C",
+          "text": "使用鎮靜劑可能造成此類現象較容易發生"
+        },
+        {
+          "key": "D",
+          "text": "為減少此現象， 可在注射前給患者保持溫暖30～60 分鐘"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "本題正解為 C，因為選項內容「使用鎮靜劑可能造成此類現象較容易發生」最符合「病人接受 18F-FDG PET， 出現圖中…」的核心判斷。 其餘選項常把「可能會降低該區域腫瘤偵測的準…」與「常見於寒冷天氣和年輕、瘦弱的…」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q027",
+      "number": 27,
+      "stem": "施行診斷用甲狀腺癌的 123I-NaI 全身造影， 下列何者為給藥後最適合造影時間？",
+      "options": [
+        {
+          "key": "A",
+          "text": "5～7 天"
+        },
+        {
+          "key": "B",
+          "text": "4～24 小時"
+        },
+        {
+          "key": "C",
+          "text": "2～5 小時"
+        },
+        {
+          "key": "D",
+          "text": "72 小時"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "本題正解為 B，因為選項內容「4～24 小時」最符合「施行診斷用甲狀腺癌的 123I-NaI 全身…」的核心判斷。 其餘選項常把「5～7 天」與「2～5 小時」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q028",
+      "number": 28,
+      "stem": "關於三相式骨骼造影於感染症的應用， 下列敘述何者最不適當？",
+      "options": [
+        {
+          "key": "A",
+          "text": "疑似部位在第一及第二相持續有累積活性， 但第三相時該部位無明顯的累積活性， 應可診斷為蜂窩性組織炎"
+        },
+        {
+          "key": "B",
+          "text": "在感染性關節炎部位， 關節腔周圍的組織在第二相會出現活性增加， 且在延遲相也可能持續活性增加"
+        },
+        {
+          "key": "C",
+          "text": "在骨髓炎部位， 第三相的累積活性通常比第二相更強烈"
+        },
+        {
+          "key": "D",
+          "text": "小孩骨髓炎， 疑似部位出現局部攝取低於正常， 該部位即可排除骨髓炎的可能性"
+        }
+      ],
+      "answer": "D",
+      "acceptedAnswers": [
+        "D"
+      ],
+      "explanation": "本題正解為 D，因為選項內容「小孩骨髓炎， 疑似部位出現局部攝取低於正常， 該部位即可排除骨髓炎的可能性」最符合「關於三相式骨骼造影於感染症的應用， 下列敘述…」的核心判斷。 其餘選項常把「疑似部位在第一及第二相持續有…」與「在感染性關節炎部位， 關節腔…」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q029",
+      "number": 29,
+      "stem": "使用 99mTc-MDP 進行全身造影後， 發現下列器官出現放射活性聚集， 應考慮游離態 99mTc(free Tc) 過多， 下 列何者例外？",
+      "options": [
+        {
+          "key": "A",
+          "text": "唾液腺"
+        },
+        {
+          "key": "B",
+          "text": "甲狀腺"
+        },
+        {
+          "key": "C",
+          "text": "肝臟"
+        },
+        {
+          "key": "D",
+          "text": "胃"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "本題正解為 C，因為選項內容「肝臟」最符合「使用 99mTc-MDP 進行全身造影後， …」的核心判斷。 其餘選項常把「唾液腺」與「甲狀腺」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q030",
+      "number": 30,
+      "stem": "有關骨骼腫瘤造影會呈現冷區病灶的敘述， 下列何者錯誤？",
+      "options": [
+        {
+          "key": "A",
+          "text": "侵襲性、純骨噬型、完全被腫瘤取代病灶"
+        },
+        {
+          "key": "B",
+          "text": "晚期骨頭壞死、晚期梗塞病灶"
+        },
+        {
+          "key": "C",
+          "text": "腫瘤骨髓侵犯病灶"
+        },
+        {
+          "key": "D",
+          "text": "囊腫病灶"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "本題正解為 B，因為選項內容「晚期骨頭壞死、晚期梗塞病灶」最符合「有關骨骼腫瘤造影會呈現冷區病灶的敘述， 下列…」的核心判斷。 其餘選項常把「侵襲性、純骨噬型、完全被腫瘤…」與「腫瘤骨髓侵犯病灶」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q031",
+      "number": 31,
+      "stem": "進行 18F-FDG PET 時， 下列何種因素較不會影響病灶處的標準攝取值(SUV) ？",
+      "options": [
+        {
+          "key": "A",
+          "text": "受檢者身體質量(body mass)"
+        },
+        {
+          "key": "B",
+          "text": "受檢者血清葡萄糖濃度(serum glucose level)"
+        },
+        {
+          "key": "C",
+          "text": "受檢者體溫(body temperature)"
+        },
+        {
+          "key": "D",
+          "text": "注射後等待造影時間(uptake period)"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "本題正解為 C，因為選項內容「受檢者體溫（body temperature）」最符合「進行 18F-FDG PET 時，」的核心判斷。 其餘選項常把「受檢者身體質量（body m…」與「受檢者血清葡萄糖濃度（ser…」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q032",
+      "number": 32,
+      "stem": "下列何者不屬於中軸骨？",
+      "options": [
+        {
+          "key": "A",
+          "text": "股骨"
+        },
+        {
+          "key": "B",
+          "text": "頭骨"
+        },
+        {
+          "key": "C",
+          "text": "肋骨"
+        },
+        {
+          "key": "D",
+          "text": "胸骨"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "本題正解為 A，因為選項內容「股骨」最符合「下列何者不屬於中軸骨」的核心判斷。 其餘選項常把「頭骨」與「肋骨」這類概念直接套用，忽略題幹限定條件。 解題時應先對齊題幹限定條件，再排除概念相近但情境不符的選項。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q033",
+      "number": 33,
+      "stem": "99mTc-MDP 被骨頭攝取的機轉為下列何者？",
+      "options": [
+        {
+          "key": "A",
+          "text": "主動運輸"
+        },
+        {
+          "key": "B",
+          "text": "化學吸附"
+        },
+        {
+          "key": "C",
+          "text": "細胞巨噬作用"
+        },
+        {
+          "key": "D",
+          "text": "微血管阻塞"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "本題正解為 B，因為選項內容「化學吸附」最符合「99mTc-MDP 被骨頭攝取的機轉為」的核心判斷。 其餘選項常把「主動運輸」與「細胞巨噬作用」這類概念直接套用，忽略題幹限定條件。 關鍵在放射藥物的生物分布、標記特性與臨床適應症是否一致。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q034",
+      "number": 34,
+      "stem": "淋巴癌患者治療後， 下列那一類淋巴癌較可能於 18F-FDG 正子影像追蹤復發出現偽陰性之結果？",
+      "options": [
+        {
+          "key": "A",
+          "text": "何杰金氏淋巴癌(Hodgkin's lymphoma)"
+        },
+        {
+          "key": "B",
+          "text": "巨大B 細胞型淋巴癌(large B cell lymphoma)"
+        },
+        {
+          "key": "C",
+          "text": "結外邊緣區淋巴癌(extranodal marginal zone lymphoma)"
+        },
+        {
+          "key": "D",
+          "text": "T 細胞淋巴癌(T cell lymphoma)"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "本題正解為 C，因為選項內容「結外邊緣區淋巴癌（extranodal marginal zone lymphoma）」最符合「淋巴癌患者治療後，」的核心判斷。 其餘選項常把「何杰金氏淋巴癌（Hodgki…」與「巨大B 細胞型淋巴癌（lar…」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q035",
+      "number": 35,
+      "stem": "有關嗜鉻細胞瘤(pheochromocytoma) 造影， 下列藥物何者最不適當？",
+      "options": [
+        {
+          "key": "A",
+          "text": "131I-NP-59"
+        },
+        {
+          "key": "B",
+          "text": "68Ga-DOTATAE"
+        },
+        {
+          "key": "C",
+          "text": "131I-MIBG"
+        },
+        {
+          "key": "D",
+          "text": "18F-fluorodopa"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "本題正解為 A，因為選項內容「131I-NP-59」最符合「有關嗜鉻細胞瘤（pheochromocyto…」的核心判斷。 其餘選項常把「68Ga-DOTATAE」與「131I-MIBG」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q036",
+      "number": 36,
+      "stem": "99mTc-DMSA 主要聚集在下列何者， 因此適用於腎臟皮質造影？",
+      "options": [
+        {
+          "key": "A",
+          "text": "腎絲球(glomerulus)"
+        },
+        {
+          "key": "B",
+          "text": "近端小管(proximal tubule)"
+        },
+        {
+          "key": "C",
+          "text": "亨利式管(loop of Henle)"
+        },
+        {
+          "key": "D",
+          "text": "遠端小管(distal tubule)"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "本題正解為 B，因為選項內容「近端小管（proximal tubule）」最符合「99mTc-DMSA 主要聚集在」的核心判斷。 其餘選項常把「腎絲球（glomerulus…」與「亨利式管（loop of H…」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q037",
+      "number": 37,
+      "stem": "有關副甲狀腺造影(parathyroid scintigraphy) ， 下列何者最適合進行雙時間(dual time) 造影？",
+      "options": [
+        {
+          "key": "A",
+          "text": "99mTc-sestamibi"
+        },
+        {
+          "key": "B",
+          "text": "123I-NaI"
+        },
+        {
+          "key": "C",
+          "text": "201T1-TlCl"
+        },
+        {
+          "key": "D",
+          "text": "99mTc-pertechnetate"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "本題正解為 A，因為選項內容「99mTc-sestamibi」最符合「有關副甲狀腺造影（parathyroid s…」的核心判斷。 其餘選項常把「123I-NaI」與「201T1-TlCl」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q038",
+      "number": 38,
+      "stem": "有關正常腎圖(renogram) 三個時期的曲線斜率敘述， 下列何者正確？",
+      "options": [
+        {
+          "key": "A",
+          "text": "時期2 曲線斜率比時期1 曲線斜率陡"
+        },
+        {
+          "key": "B",
+          "text": "時期1 曲線斜率可反映腎絲球過濾率(GFR)"
+        },
+        {
+          "key": "C",
+          "text": "時期2 曲線斜率可反映腎臟血流速度"
+        },
+        {
+          "key": "D",
+          "text": "時期3 曲線斜率可反映清除率(elimination rate)"
+        }
+      ],
+      "answer": "D",
+      "acceptedAnswers": [
+        "D"
+      ],
+      "explanation": "本題正解為 D，因為選項內容「時期3 曲線斜率可反映清除率（elimination rate）」最符合「有關正常腎圖（renogram）三個時期的曲…」的核心判斷。 其餘選項常把「時期2 曲線斜率比時期1 曲…」與「時期1 曲線斜率可反映腎絲球…」這類概念直接套用，忽略題幹限定條件。 解題時應先對齊題幹限定條件，再排除概念相近但情境不符的選項。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q039",
+      "number": 39,
+      "stem": "關於放射碘甲狀腺攝取率檢查， 下列何者最有可能量測到攝取異常偏低的情形？",
+      "options": [
+        {
+          "key": "A",
+          "text": "卵巢甲狀腺瘤(struma ovarii)"
+        },
+        {
+          "key": "B",
+          "text": "葛瑞夫茲症(Graves disease)"
+        },
+        {
+          "key": "C",
+          "text": "毒性結節性甲狀腺腫(toxic nodular goiter)"
+        },
+        {
+          "key": "D",
+          "text": "橋本甲亢(Hashitoxicosis)"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "本題正解為 A，因為選項內容「卵巢甲狀腺瘤（struma ovarii ）」最符合「關於放射碘甲狀腺攝取率檢查， 下列何者最有可…」的核心判斷。 其餘選項常把「葛瑞夫茲症（Graves d…」與「毒性結節性甲狀腺腫（toxi…」這類概念直接套用，忽略題幹限定條件。 判斷時要以核種物理特性為主，避免把不同放射核種的參數混用。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q040",
+      "number": 40,
+      "stem": "有關甲狀腺造影檢查(thyroid scintigraphy) ， 下列何者是最有可能的診斷？",
+      "options": [
+        {
+          "key": "A",
+          "text": "葛瑞夫茲症(Graves disease)"
+        },
+        {
+          "key": "B",
+          "text": "毒性結節性甲狀腺腫(toxic nodular goiter)"
+        },
+        {
+          "key": "C",
+          "text": "橋本甲亢(Hashitoxicosis)"
+        },
+        {
+          "key": "D",
+          "text": "亞急性甲狀腺炎(subacute thyroiditis)"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "本題正解為 B，因為選項內容「毒性結節性甲狀腺腫（toxic nodular goiter）」最符合「有關甲狀腺造影檢查（thyroid scin…」的核心判斷。 其餘選項常把「葛瑞夫茲症（Graves d…」與「橋本甲亢（Hashitoxi…」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q041",
+      "number": 41,
+      "stem": "甲狀腺功能亢進病人， 131I-NaI 造影在頸／胸部出現下列影像(標記處為上胸骨切跡) ， 最可能臆斷為何？",
+      "options": [
+        {
+          "key": "A",
+          "text": "葛瑞夫茲症(Graves disease)"
+        },
+        {
+          "key": "B",
+          "text": "正常心臟攝取"
+        },
+        {
+          "key": "C",
+          "text": "毒性結節(toxic nodular goiter)"
+        },
+        {
+          "key": "D",
+          "text": "胸內甲狀腺結節(intra-thoracic goiter)"
+        }
+      ],
+      "answer": "D",
+      "acceptedAnswers": [
+        "D"
+      ],
+      "explanation": "本題正解為 D，因為選項內容「胸內甲狀腺結節（intra-thoracic goiter）」最符合「甲狀腺功能亢進病人， 131I-NaI 造影…」的核心判斷。 其餘選項常把「葛瑞夫茲症（Graves d…」與「正常心臟攝取」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q042",
+      "number": 42,
+      "stem": "關於 99mTc-MAG3(mercaptoacetyltriglycine) 動態腎臟造影(dynamic renography) ， 下列敘述何者錯誤？",
+      "options": [
+        {
+          "key": "A",
+          "text": "成人的投予劑量不超過20 mCi"
+        },
+        {
+          "key": "B",
+          "text": "近乎100％的 99mTc-MAG3 經由腎小管分泌(tubular secretion)"
+        },
+        {
+          "key": "C",
+          "text": "可評估個別腎臟功能(split function)"
+        },
+        {
+          "key": "D",
+          "text": "可同時評估腎絲球過濾率與有效腎臟血漿流量(ERPF)"
+        }
+      ],
+      "answer": "D",
+      "acceptedAnswers": [
+        "D"
+      ],
+      "explanation": "本題正解為 D，因為選項內容「可同時評估腎絲球過濾率與有效腎臟血漿流量（ERPF）」最符合「關於 99mTc-MAG3（mercapto…」的核心判斷。 其餘選項常把「成人的投予劑量不超過20 m…」與「近乎100％的 99mTc-…」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q043",
+      "number": 43,
+      "stem": "計算甲狀腺攝取率時， 假設週一15： 00 測得 131I-膠囊計數為A counts 並讓病人立即服下， 週二15： 00 量測 病人甲狀腺計數為B counts， 大腿計數為C counts， 週一環境背景量測計數為D counts， 該病人24 小時的 甲狀腺攝取率應如何計算？",
+      "options": [
+        {
+          "key": "A",
+          "text": "(A-B) /(C-D) ×100％"
+        },
+        {
+          "key": "B",
+          "text": "(B-C) /〔(A-D) ×0.918〕×100％"
+        },
+        {
+          "key": "C",
+          "text": "(B-A) /〔(C-D) ×0.918〕×100％"
+        },
+        {
+          "key": "D",
+          "text": "(A-D) /〔(B-C) ×0.918〕×100％"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "本題正解為 B，因為選項內容「(B-C)/〔(A-D)×0.918〕×100％」最符合「計算甲狀腺攝取率時， 假設週一15 00 測…」的核心判斷。 其餘選項常把「(A-B)/(C-D)×10…」與「(B-A)/〔(C-D)×0…」這類概念直接套用，忽略題幹限定條件。 關鍵在放射藥物的生物分布、標記特性與臨床適應症是否一致。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q044",
+      "number": 44,
+      "stem": "相對於其他 99mTc 標幟的腎臟造影劑， 99mTc-DMSA 對腎臟會造成較大的輻射劑量， 原因為何？",
+      "options": [
+        {
+          "key": "A",
+          "text": "通常注射20 mCi 進行造影"
+        },
+        {
+          "key": "B",
+          "text": "有效半衰期較長"
+        },
+        {
+          "key": "C",
+          "text": "物理半衰期較長"
+        },
+        {
+          "key": "D",
+          "text": "所釋放的光子能量較高"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "本題正解為 B，因為選項內容「有效半衰期較長」最符合「相對於其他 99mTc 標幟的腎臟造影劑， …」的核心判斷。 其餘選項常把「通常注射20 mCi 進行造…」與「物理半衰期較長」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q045",
+      "number": 45,
+      "stem": "下圖為 111In-WBC(標幟白血球) 18 小時全身影像， 依圖示可能為下列何種疾病？",
+      "options": [
+        {
+          "key": "A",
+          "text": "正常分布情況"
+        },
+        {
+          "key": "B",
+          "text": "腹膜炎"
+        },
+        {
+          "key": "C",
+          "text": "肝臟與脾臟膿瘍"
+        },
+        {
+          "key": "D",
+          "text": "克隆氏症(Crohn's disease)"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "本題正解為 A，因為選項內容「正常分布情況」最符合「下圖為 111In-WBC（標幟白血球）18…」的核心判斷。 其餘選項常把「腹膜炎」與「肝臟與脾臟膿瘍」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q046",
+      "number": 46,
+      "stem": "紅血球存活期(red blood cell survival) 測定常用於下列何種病患？",
+      "options": [
+        {
+          "key": "A",
+          "text": "腸吸收不良"
+        },
+        {
+          "key": "B",
+          "text": "溶血性貧血"
+        },
+        {
+          "key": "C",
+          "text": "鐵質缺乏貧血"
+        },
+        {
+          "key": "D",
+          "text": "惡性貧血"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "本題正解為 B，因為選項內容「溶血性貧血」最符合「紅血球存活期（red blood cell …」的核心判斷。 其餘選項常把「腸吸收不良」與「鐵質缺乏貧血」這類概念直接套用，忽略題幹限定條件。 解題時應先對齊題幹限定條件，再排除概念相近但情境不符的選項。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q047",
+      "number": 47,
+      "stem": "核醫Schilling test， 是用以測定病人對何種物質的吸收是否正常(即有無惡性貧血) ？",
+      "options": [
+        {
+          "key": "A",
+          "text": "血管加壓素(angiotensin)"
+        },
+        {
+          "key": "B",
+          "text": "胃泌素(gastrin)"
+        },
+        {
+          "key": "C",
+          "text": "維生素B12(cyanocobalamin)"
+        },
+        {
+          "key": "D",
+          "text": "皮質醇激素(aldosterone)"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "本題正解為 C，因為選項內容「維生素B12（cyanocobalamin）」最符合「核醫Schilling test， 是用以測…」的核心判斷。 其餘選項常把「血管加壓素（angioten…」與「胃泌素（gastrin）」這類概念直接套用，忽略題幹限定條件。 解題時應先對齊題幹限定條件，再排除概念相近但情境不符的選項。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q048",
+      "number": 48,
+      "stem": "有關核醫應用於後天免疫不全症候群(AIDS) 檢查， 下列何者最不適當？",
+      "options": [
+        {
+          "key": "A",
+          "text": "受檢者因免疫力下降， 不適合進行核醫檢查"
+        },
+        {
+          "key": "B",
+          "text": "疑似罹患卡氏肺囊蟲肺炎可考慮 67Ga-Citrate 造影評估"
+        },
+        {
+          "key": "C",
+          "text": "111In-WBC 造影可用於併發之細菌性肺炎評估"
+        },
+        {
+          "key": "D",
+          "text": "併發卡波西(Kaposi's) 肉瘤可考慮 201Tl-TlCl 造影評估"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "本題正解為 A，因為選項內容「受檢者因免疫力下降， 不適合進行核醫檢查」最符合「有關核醫應用於後天免疫不全症候群（AIDS）…」的核心判斷。 其餘選項常把「疑似罹患卡氏肺囊蟲肺炎可考慮…」與「111In-WBC 造影可用…」這類概念直接套用，忽略題幹限定條件。 解題時應先對齊題幹限定條件，再排除概念相近但情境不符的選項。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q049",
+      "number": 49,
+      "stem": "下圖為胃排空效率使用的modified power exponential fitting function 方程式， 圖中A 代表下列何者？",
+      "options": [
+        {
+          "key": "A",
+          "text": "ascending phase"
+        },
+        {
+          "key": "B",
+          "text": "lag phase"
+        },
+        {
+          "key": "C",
+          "text": "filling phase"
+        },
+        {
+          "key": "D",
+          "text": "delay phase"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "本題正解為 B，因為選項內容「lag phase」最符合「下圖為胃排空效率使用的modified po…」的核心判斷。 其餘選項常把「ascending phas…」與「filling phase」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q050",
+      "number": 50,
+      "stem": "下列何種核醫製劑不會在唾液腺明顯吸收？",
+      "options": [
+        {
+          "key": "A",
+          "text": "99mTc-pertechnetate"
+        },
+        {
+          "key": "B",
+          "text": "67Ga-citrate"
+        },
+        {
+          "key": "C",
+          "text": "123I-NaI"
+        },
+        {
+          "key": "D",
+          "text": "99mTc-MDP"
+        }
+      ],
+      "answer": "D",
+      "acceptedAnswers": [
+        "D"
+      ],
+      "explanation": "本題正解為 D，因為選項內容「99mTc-MDP」最符合「下列何種核醫製劑不會在唾液腺明顯吸收」的核心判斷。 其餘選項常把「99mTc-pertechn…」與「67Ga-citrate」這類概念直接套用，忽略題幹限定條件。 解題時應先對齊題幹限定條件，再排除概念相近但情境不符的選項。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q051",
+      "number": 51,
+      "stem": "一孩童接受 67Ga 腹腔造影結果如下圖， 試判斷其可能疾病為何？",
+      "options": [
+        {
+          "key": "A",
+          "text": "蜂窩組織炎(cellulitis)"
+        },
+        {
+          "key": "B",
+          "text": "腫瘍(abscesses)"
+        },
+        {
+          "key": "C",
+          "text": "腹膜炎(peritonitis)"
+        },
+        {
+          "key": "D",
+          "text": "腸胃基質瘤(gastrointestinal stromal tumor)"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "本題正解為 C，因為選項內容「腹膜炎（peritonitis）」最符合「一孩童接受 67Ga 腹腔造影結果如下圖， …」的核心判斷。 其餘選項常把「蜂窩組織炎（cellulit…」與「腫瘍（abscesses）」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q052",
+      "number": 52,
+      "stem": "陽性 14C 尿素呼氣檢驗( 14C urea breath test) 代表幽門螺旋桿菌的存在， 下列敘述何者正確？",
+      "options": [
+        {
+          "key": "A",
+          "text": "幽門螺旋桿菌需要在含氨豐富的環境生存"
+        },
+        {
+          "key": "B",
+          "text": "14C 無法以二氧化碳形式存在"
+        },
+        {
+          "key": "C",
+          "text": "有幽門螺旋桿菌存在的胃部無法產生尿素"
+        },
+        {
+          "key": "D",
+          "text": "幽門螺旋桿菌會將尿素分解成氨與二氧化碳"
+        }
+      ],
+      "answer": "D",
+      "acceptedAnswers": [
+        "D"
+      ],
+      "explanation": "本題正解為 D，因為選項內容「幽門螺旋桿菌會將尿素分解成氨與二氧化碳」最符合「陽性 14C 尿素呼氣檢驗（ 14C ure…」的核心判斷。 其餘選項常把「幽門螺旋桿菌需要在含氨豐富的…」與「14C 無法以二氧化碳形式存…」這類概念直接套用，忽略題幹限定條件。 解題時應先對齊題幹限定條件，再排除概念相近但情境不符的選項。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q053",
+      "number": 53,
+      "stem": "下列何種肝臟細胞主要負責 99mTc-DISIDA 的吸收？",
+      "options": [
+        {
+          "key": "A",
+          "text": "Kupffer cells"
+        },
+        {
+          "key": "B",
+          "text": "hepatic sinusoidal endothelial cells"
+        },
+        {
+          "key": "C",
+          "text": "hepatocytes"
+        },
+        {
+          "key": "D",
+          "text": "hepatic stellate cells"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "本題正解為 C，因為選項內容「hepatocytes」最符合「下列何種肝臟細胞主要負責 99mTc-DIS…」的核心判斷。 其餘選項常把「Kupffer cells」與「hepatic sinuso…」這類概念直接套用，忽略題幹限定條件。 關鍵在放射藥物的生物分布、標記特性與臨床適應症是否一致。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q054",
+      "number": 54,
+      "stem": "用於評估食道功能的核醫製劑與給藥途徑， 下列何者正確？",
+      "options": [
+        {
+          "key": "A",
+          "text": "99mTc-sulfur colloid 經靜脈注射"
+        },
+        {
+          "key": "B",
+          "text": "99mTc-sulfur colloid 經口服吞嚥"
+        },
+        {
+          "key": "C",
+          "text": "99mTc-DTPA 經鼻胃管注入"
+        },
+        {
+          "key": "D",
+          "text": "99mTc-DTPA 經靜脈注射"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "本題正解為 B，因為選項內容「99mTc-sulfur colloid 經口服吞嚥」最符合「用於評估食道功能的核醫製劑與給藥途徑，」的核心判斷。 其餘選項常把「99mTc-sulfur c…」與「99mTc-DTPA 經鼻胃…」這類概念直接套用，忽略題幹限定條件。 解題時應先對齊題幹限定條件，再排除概念相近但情境不符的選項。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q055",
+      "number": 55,
+      "stem": "放射免疫分析若為非競爭反應(IRMA) ， 反應過程中， 非標幟抗原量越少， 在反應後經加馬計數器測得的計 數值通常會如何？",
+      "options": [
+        {
+          "key": "A",
+          "text": "越低"
+        },
+        {
+          "key": "B",
+          "text": "越高"
+        },
+        {
+          "key": "C",
+          "text": "相同"
+        },
+        {
+          "key": "D",
+          "text": "無法計測"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "本題正解為 A，因為選項內容「越低」最符合「放射免疫分析若為非競爭反應（IRMA）， 反…」的核心判斷。 其餘選項常把「越高」與「相同」這類概念直接套用，忽略題幹限定條件。 判斷時要以核種物理特性為主，避免把不同放射核種的參數混用。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q056",
+      "number": 56,
+      "stem": "由免疫動物身上所得到的抗體， 如何評估其抗體效價？",
+      "options": [
+        {
+          "key": "A",
+          "text": "利用聚合酶連鎖反應法(polymerase chain reaction, PCR) 評估"
+        },
+        {
+          "key": "B",
+          "text": "利用毛細管電泳法(capillary electrophoresis, CE) 評估"
+        },
+        {
+          "key": "C",
+          "text": "通過Dot Blot 或ELISA 與抗原進行半定量或定量檢測"
+        },
+        {
+          "key": "D",
+          "text": "利用密度梯度離心法(density gradient centrifugation) 評估"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "本題正解為 C，因為選項內容「通過Dot Blot 或ELISA 與抗原進行半定量或定量檢測」最符合「由免疫動物身上所得到的抗體， 如何評估其抗體…」的核心判斷。 其餘選項常把「利用聚合酶連鎖反應法（pol…」與「利用毛細管電泳法（capil…」這類概念直接套用，忽略題幹限定條件。 解題時應先對齊題幹限定條件，再排除概念相近但情境不符的選項。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q057",
+      "number": 57,
+      "stem": "Immunoradiometric assay(IRMA) 中， 若經評估已發生“hook effect”， 下列處理方式何者最適當？",
+      "options": [
+        {
+          "key": "A",
+          "text": "換試劑重做"
+        },
+        {
+          "key": "B",
+          "text": "逕自發報告， 註明“hook effect”"
+        },
+        {
+          "key": "C",
+          "text": "將檢體稀釋， 重做"
+        },
+        {
+          "key": "D",
+          "text": "依經驗， 乘上轉換因子發報告"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "本題正解為 C，因為選項內容「將檢體稀釋， 重做」最符合「Immunoradiometric assa…」的核心判斷。 其餘選項常把「換試劑重做」與「逕自發報告， 註明“hook…」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q058",
+      "number": 58,
+      "stem": "放射免疫分析實驗室為評估多井(multi-well) 加馬計數器， 將校正射源放入計數器檢測， 其檢測結果用下 列何種統計方法評估？",
+      "options": [
+        {
+          "key": "A",
+          "text": "卡方測試"
+        },
+        {
+          "key": "B",
+          "text": "迴歸分析"
+        },
+        {
+          "key": "C",
+          "text": "符號測試"
+        },
+        {
+          "key": "D",
+          "text": "t-測試"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "本題正解為 A，因為選項內容「卡方測試」最符合「放射免疫分析實驗室為評估多井（multi-w…」的核心判斷。 其餘選項常把「迴歸分析」與「符號測試」這類概念直接套用，忽略題幹限定條件。 判斷時要以核種物理特性為主，避免把不同放射核種的參數混用。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q059",
+      "number": 59,
+      "stem": "下列那種製劑可用於放射性碘的標幟？",
+      "options": [
+        {
+          "key": "A",
+          "text": "iodogen"
+        },
+        {
+          "key": "B",
+          "text": "urea"
+        },
+        {
+          "key": "C",
+          "text": "ammonium phosphate"
+        },
+        {
+          "key": "D",
+          "text": "stannous chloride"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "本題正解為 A，因為選項內容「iodogen」最符合「下列那種製劑可用於放射性碘的標幟」的核心判斷。 其餘選項常把「urea」與「ammonium phosp…」這類概念直接套用，忽略題幹限定條件。 解題時應先對齊題幹限定條件，再排除概念相近但情境不符的選項。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q060",
+      "number": 60,
+      "stem": "下列放射核種， 何者主要以釋放α粒子來治療腫瘤？",
+      "options": [
+        {
+          "key": "A",
+          "text": "223Ra"
+        },
+        {
+          "key": "B",
+          "text": "177Lu"
+        },
+        {
+          "key": "C",
+          "text": "131I"
+        },
+        {
+          "key": "D",
+          "text": "90Y"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "本題正解為 A，因為選項內容「223Ra」最符合「下列放射核種， 何者主要以釋放α粒子來治療腫…」的核心判斷。 其餘選項常把「177Lu」與「131I」這類概念直接套用，忽略題幹限定條件。 判斷時要以核種物理特性為主，避免把不同放射核種的參數混用。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q061",
+      "number": 61,
+      "stem": "醫學體內輻射劑量(medical internal radiation dose, MIRD) 中的S value 與下列何者有關？ ①absorbed fraction ②organ mass ③mean energy of the particle ④radioactivity ⑤effective half-life",
+      "options": [
+        {
+          "key": "A",
+          "text": "①②③④⑤"
+        },
+        {
+          "key": "B",
+          "text": "僅①②③④"
+        },
+        {
+          "key": "C",
+          "text": "僅①②③"
+        },
+        {
+          "key": "D",
+          "text": "僅②③④"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "本題正解為 C，因為選項內容「僅①②③」最符合「醫學體內輻射劑量（medical inter…」的核心判斷。 其餘選項常把「①②③④⑤」與「僅①②③④」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q062",
+      "number": 62,
+      "stem": "203Hg 蒸氣因意外攝入體內， 攝入量的8％分布於腎臟並導致該處的累積活度(cumulated activity) 為1.65× 10 7 Bq．day， 攝入量的92％分布於全身並導致該處的累積活度1.903×10 8 Bq．day。 已知S(kidney← kidney) 為8.1×10 -4 rad/μCi×h， S(kidney←body) 為6.1×10 -6 rad/μCi×h， 試問這次事件對腎臟所產生的 劑量負擔(dose commitment) 為多少Gy？",
+      "options": [
+        {
+          "key": "A",
+          "text": "6.32×10 -2"
+        },
+        {
+          "key": "B",
+          "text": "7.45×10 -2"
+        },
+        {
+          "key": "C",
+          "text": "8.70×10 -2"
+        },
+        {
+          "key": "D",
+          "text": "9.48×10 -2"
+        }
+      ],
+      "answer": "D",
+      "acceptedAnswers": [
+        "D"
+      ],
+      "explanation": "本題正解為 D，因為選項內容「9.48×10 -2」最符合「203Hg 蒸氣因意外攝入體內， 攝入量的8…」的核心判斷。 其餘選項常把「6.32×10 -2」與「7.45×10 -2」這類概念直接套用，忽略題幹限定條件。 判斷時要以核種物理特性為主，避免把不同放射核種的參數混用。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q063",
+      "number": 63,
+      "stem": "單純性甲狀腺亢進病人， 接受放射碘治療後， 下列器官何者曝露劑量(mSv/MBq) 最高？",
+      "options": [
+        {
+          "key": "A",
+          "text": "胃"
+        },
+        {
+          "key": "B",
+          "text": "小腸"
+        },
+        {
+          "key": "C",
+          "text": "睪丸"
+        },
+        {
+          "key": "D",
+          "text": "膀胱"
+        }
+      ],
+      "answer": "D",
+      "acceptedAnswers": [
+        "D"
+      ],
+      "explanation": "本題正解為 D，因為選項內容「膀胱」最符合「單純性甲狀腺亢進病人， 接受放射碘治療後，」的核心判斷。 其餘選項常把「胃」與「小腸」這類概念直接套用，忽略題幹限定條件。 作答重點是防護原則與操作條件並行，不能只看單一數值。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q064",
+      "number": 64,
+      "stem": "關於胜肽受體放射核種治療(peptide receptor radionuclide therapy) 的優勢， 下列何者錯誤？",
+      "options": [
+        {
+          "key": "A",
+          "text": "與化學治療藥物相比， 胜肽受體放射核種治療有更高的腫瘤特異性"
+        },
+        {
+          "key": "B",
+          "text": "與傳統的體外放射線治療相比， 胜肽受體放射核種治療標靶之腫瘤的周邊組織傷害(放射劑量) 更少"
+        },
+        {
+          "key": "C",
+          "text": "與抗體類的藥物相比， 胜肽受體放射核種治療較不易被人體的胜肽酶或蛋白酶分解"
+        },
+        {
+          "key": "D",
+          "text": "與放射性單株抗體類的藥物相比， 胜肽受體放射核種治療較不會產生人體的免疫反應"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "本題正解為 C，因為選項內容「與抗體類的藥物相比， 胜肽受體放射核種治療較不易被人體的胜肽酶或蛋白酶分解」最符合「關於胜肽受體放射核種治療（peptide r…」的核心判斷。 其餘選項常把「與化學治療藥物相比， 胜肽受…」與「與傳統的體外放射線治療相比，…」這類概念直接套用，忽略題幹限定條件。 判斷時要以核種物理特性為主，避免把不同放射核種的參數混用。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q065",
+      "number": 65,
+      "stem": "關於 131I 治療甲狀腺癌使用的病灶劑量學(lesion-based dosimetry) ， 下列敘述何者錯誤？",
+      "options": [
+        {
+          "key": "A",
+          "text": "需估算病灶內初始吸收的 131I 劑量"
+        },
+        {
+          "key": "B",
+          "text": "需估算病灶本身代謝 131I 的有效半衰期(effective half-life)"
+        },
+        {
+          "key": "C",
+          "text": "使用 131I 全身平面造影(whole-body planar scintigraphy) 估算的病灶體積與實際體積誤差非常小"
+        },
+        {
+          "key": "D",
+          "text": "除 131I 造影， 也可使用 124I 正子造影進行病灶劑量的估算"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "本題正解為 C，因為選項內容「使用 131I 全身平面造影（whole-body planar scintigraphy）估算的病灶體積與實際體積誤差非常小」最符合「關於 131I 治療甲狀腺癌使用的病灶劑量學…」的核心判斷。 其餘選項常把「需估算病灶內初始吸收的 13…」與「需估算病灶本身代謝 131I…」這類概念直接套用，忽略題幹限定條件。 作答重點是防護原則與操作條件並行，不能只看單一數值。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q066",
+      "number": 66,
+      "stem": "根據游離輻射防護法中， 指人體受游離輻射照射或接觸、攝入放射性物質之過程為下列何者名詞定義？",
+      "options": [
+        {
+          "key": "A",
+          "text": "曝露"
+        },
+        {
+          "key": "B",
+          "text": "職業曝露"
+        },
+        {
+          "key": "C",
+          "text": "醫療曝露"
+        },
+        {
+          "key": "D",
+          "text": "緊急曝露"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "本題正解為 A，因為選項內容「曝露」最符合「根據游離輻射防護法中， 指人體受游離輻射照射…」的核心判斷。 其餘選項常把「職業曝露」與「醫療曝露」這類概念直接套用，忽略題幹限定條件。 作答重點是防護原則與操作條件並行，不能只看單一數值。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q067",
+      "number": 67,
+      "stem": "目前臨床使用β射出的趨骨性核醫藥物(bone seeking radiopharmaceutical, BSR) 緩解骨轉移疼痛時， 下 列何者為劑量限制器官(dose-limiting organ) ？",
+      "options": [
+        {
+          "key": "A",
+          "text": "膀胱"
+        },
+        {
+          "key": "B",
+          "text": "腎臟"
+        },
+        {
+          "key": "C",
+          "text": "骨髓"
+        },
+        {
+          "key": "D",
+          "text": "肺臟"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "本題正解為 C，因為選項內容「骨髓」最符合「目前臨床使用β射出的趨骨性核醫藥物（bone…」的核心判斷。 其餘選項常把「膀胱」與「腎臟」這類概念直接套用，忽略題幹限定條件。 作答重點是防護原則與操作條件並行，不能只看單一數值。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q068",
+      "number": 68,
+      "stem": "閃爍造影儀之均勻性(uniformity) 應多久檢測一次較適宜？",
+      "options": [
+        {
+          "key": "A",
+          "text": "每天"
+        },
+        {
+          "key": "B",
+          "text": "每週"
+        },
+        {
+          "key": "C",
+          "text": "每月"
+        },
+        {
+          "key": "D",
+          "text": "每季"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "本題正解為 A，因為選項內容「每天」最符合「閃爍造影儀之均勻性（uniformity）應…」的核心判斷。 其餘選項常把「每週」與「每月」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q069",
+      "number": 69,
+      "stem": "針對附圖的準直儀而言， 下列敘述何者錯誤？",
+      "options": [
+        {
+          "key": "A",
+          "text": "空間解析度優於平行孔準直儀"
+        },
+        {
+          "key": "B",
+          "text": "靈敏度優於平行孔準直儀"
+        },
+        {
+          "key": "C",
+          "text": "空間解析度優於針孔準直儀"
+        },
+        {
+          "key": "D",
+          "text": "靈敏度優於針孔準直儀"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "本題正解為 C，因為選項內容「空間解析度優於針孔準直儀」最符合「針對附圖的準直儀而言，」的核心判斷。 其餘選項常把「空間解析度優於平行孔準直儀」與「靈敏度優於平行孔準直儀」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q070",
+      "number": 70,
+      "stem": "已知加馬攝影機的內在空間解析度為3.9 mm， 準直儀的空間解析度為8.7 mm， 試問整個造影系統的空間解析 度為何？",
+      "options": [
+        {
+          "key": "A",
+          "text": "5.8 mm"
+        },
+        {
+          "key": "B",
+          "text": "6.3 mm"
+        },
+        {
+          "key": "C",
+          "text": "9.5 mm"
+        },
+        {
+          "key": "D",
+          "text": "12.6 mm"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "本題正解為 C，因為選項內容「9.5 mm」最符合「已知加馬攝影機的內在空間解析度為3.9 mm…」的核心判斷。 其餘選項常把「5.8 mm」與「6.3 mm」這類概念直接套用，忽略題幹限定條件。 判斷時要以核種物理特性為主，避免把不同放射核種的參數混用。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q071",
+      "number": 71,
+      "stem": "關於正子影像系統二維與三維掃描模式的描述， 下列何者錯誤？",
+      "options": [
+        {
+          "key": "A",
+          "text": "兩者的差別在於有無偵測環之間的鎢或鉛隔板(septa)"
+        },
+        {
+          "key": "B",
+          "text": "相較於三維掃描模式， 二維模式的散射事件比率較高"
+        },
+        {
+          "key": "C",
+          "text": "使用三維掃描模式時， 隨機事件亦隨之增加"
+        },
+        {
+          "key": "D",
+          "text": "三維掃描模式的靈敏度較高"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "本題正解為 B，因為選項內容「相較於三維掃描模式， 二維模式的散射事件比率較高」最符合「關於正子影像系統二維與三維掃描模式的描述， …」的核心判斷。 其餘選項常把「兩者的差別在於有無偵測環之間…」與「使用三維掃描模式時， 隨機事…」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q072",
+      "number": 72,
+      "stem": "充氣式偵檢器外加電壓與產生的離子數曲線， 可分成數個特徵區域， 下列敘述何者最不適當？",
+      "options": [
+        {
+          "key": "A",
+          "text": "在結合區並不適用輻射偵測的應用"
+        },
+        {
+          "key": "B",
+          "text": "在飽和區域運作的輻射偵檢器無法偵測個別輻射事件， 乃因訊號過於微弱"
+        },
+        {
+          "key": "C",
+          "text": "運用比例計數區的偵檢器， 能鑑別α與β放射性核種"
+        },
+        {
+          "key": "D",
+          "text": "因蓋革區內游離腔對偵測離子的高敏感度， 所以蓋革偵檢器最適用於偵測高輻射區域"
+        }
+      ],
+      "answer": "D",
+      "acceptedAnswers": [
+        "D"
+      ],
+      "explanation": "本題正解為 D，因為選項內容「因蓋革區內游離腔對偵測離子的高敏感度， 所以蓋革偵檢器最適用於偵測高輻射區域」最符合「充氣式偵檢器外加電壓與產生的離子數曲線， 可…」的核心判斷。 其餘選項常把「在結合區並不適用輻射偵測的應…」與「在飽和區域運作的輻射偵檢器無…」這類概念直接套用，忽略題幹限定條件。 解題時應先對齊題幹限定條件，再排除概念相近但情境不符的選項。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q073",
+      "number": 73,
+      "stem": "假設在相同條件下， 使用下列何種同位素標幟的藥物所得到的正子影像， 擁有最佳的影像解析度？",
+      "options": [
+        {
+          "key": "A",
+          "text": "15O"
+        },
+        {
+          "key": "B",
+          "text": "11C"
+        },
+        {
+          "key": "C",
+          "text": "13N"
+        },
+        {
+          "key": "D",
+          "text": "82Rb"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "本題正解為 B，因為選項內容「11C」最符合「假設在相同條件下， 使用」的核心判斷。 其餘選項常把「15O」與「13N」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q074",
+      "number": 74,
+      "stem": "下列何種蛻變方式會釋放出微中子？",
+      "options": [
+        {
+          "key": "A",
+          "text": "[223Ra → 219Rn]"
+        },
+        {
+          "key": "B",
+          "text": "[62Cu → 62Ni]"
+        },
+        {
+          "key": "C",
+          "text": "[99mTc → 99Tc]"
+        },
+        {
+          "key": "D",
+          "text": "[177Lu → 177Hf]"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "本題正解為 B，關鍵在於「下列何種蛻變方式會釋放出微中子」的定義與應用條件。 其餘選項的主要陷阱是把相近名詞或流程條件混為一談，與題幹要求不一致。 解題時應先對齊題幹限定條件，再排除概念相近但情境不符的選項。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q075",
+      "number": 75,
+      "stem": "有關核醫SPECT 與PET 的敘述， 下列何者錯誤？",
+      "options": [
+        {
+          "key": "A",
+          "text": "SPECT 偵測晶體大多使用NaI(Tl)"
+        },
+        {
+          "key": "B",
+          "text": "SPECT 用於偵測γ標幟之核醫製劑"
+        },
+        {
+          "key": "C",
+          "text": "PET 偵測晶體是在偵測正電子"
+        },
+        {
+          "key": "D",
+          "text": "PET 用於偵測β +射源標幟之核醫製劑"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "本題正解為 C，因為選項內容「PET 偵測晶體是在偵測正電子」最符合「有關核醫SPECT 與PET 的敘述， 下列…」的核心判斷。 其餘選項常把「SPECT 偵測晶體大多使用…」與「SPECT 用於偵測γ標幟之…」這類概念直接套用，忽略題幹限定條件。 此題核心在影像形成與設備特性，不能只憑檢查名稱直覺作答。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q076",
+      "number": 76,
+      "stem": "以瞬間薄層色析法(ITLC) 偵測核醫製劑標幟產率， 已知 99mTc-MDP 是用ITLC-SG 試紙和丙酮來做測試。 測試 紙條從中間分為兩個部分： (1) 溶劑之外的活性為3, 500 cpm， (2) 溶劑中活性為38, 000 cpm。 試算該樣品的 標幟率(％) ？",
+      "options": [
+        {
+          "key": "A",
+          "text": "8.4"
+        },
+        {
+          "key": "B",
+          "text": "91.6"
+        },
+        {
+          "key": "C",
+          "text": "9.2"
+        },
+        {
+          "key": "D",
+          "text": "90.8"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "本題正解為 B，因為選項內容「91.6」最符合「以瞬間薄層色析法（ITLC）偵測核醫製劑標幟…」的核心判斷。 其餘選項常把「8.4」與「9.2」這類概念直接套用，忽略題幹限定條件。 關鍵在放射藥物的生物分布、標記特性與臨床適應症是否一致。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q077",
+      "number": 77,
+      "stem": "如有5, 000 Bq 的 35S 均勻分布於質量為25 克的睪丸中， 已知 35S 衰變時β粒子的最大能量為167 keV 且平均 能量為48.7 keV， 35S 的物理半衰期為87.51 天， 35S 於睪丸的生物半衰期為623 天， 試問睪丸的劑量負擔 (dose commitment) 為多少Gy?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1.25×10 -2"
+        },
+        {
+          "key": "B",
+          "text": "1.50×10 -2"
+        },
+        {
+          "key": "C",
+          "text": "1.75×10 -2"
+        },
+        {
+          "key": "D",
+          "text": "2.00×10 -2"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "本題正解為 B，因為選項內容「1.50×10 -2」最符合「如有5, 000 Bq 的 35S 均勻分布…」的核心判斷。 其餘選項常把「1.25×10 -2」與「1.75×10 -2」這類概念直接套用，忽略題幹限定條件。 判斷時要以核種物理特性為主，避免把不同放射核種的參數混用。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q078",
+      "number": 78,
+      "stem": "下列PET 心臟檢查藥物， 成年人在注射相同活度下， 何者造成之有效劑量最高？",
+      "options": [
+        {
+          "key": "A",
+          "text": "18F-FDG"
+        },
+        {
+          "key": "B",
+          "text": "82Rb-RbCl"
+        },
+        {
+          "key": "C",
+          "text": "15O-H2O"
+        },
+        {
+          "key": "D",
+          "text": "13N-NH3"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "本題正解為 A，因為選項內容「18F-FDG」最符合「下列PET 心臟檢查藥物， 成年人在注射相同…」的核心判斷。 其餘選項常把「82Rb-RbCl」與「15O-H2O」這類概念直接套用，忽略題幹限定條件。 判斷時要以核種物理特性為主，避免把不同放射核種的參數混用。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q079",
+      "number": 79,
+      "stem": "下圖 226Ra 核種最有可能進行何種衰變？",
+      "options": [
+        {
+          "key": "A",
+          "text": "α及γ"
+        },
+        {
+          "key": "B",
+          "text": "電子捕獲及γ"
+        },
+        {
+          "key": "C",
+          "text": "電子捕獲及β +"
+        },
+        {
+          "key": "D",
+          "text": "β +及γ"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "本題正解為 A，因為選項內容「α及γ」最符合「下圖 226Ra 核種最有可能進行」的核心判斷。 其餘選項常把「電子捕獲及γ」與「電子捕獲及β +」這類概念直接套用，忽略題幹限定條件。 判斷時要以核種物理特性為主，避免把不同放射核種的參數混用。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    },
+    {
+      "id": "rg-114-2-q080",
+      "number": 80,
+      "stem": "關於正子(β +) 的能量的敘述， 下列何者錯誤？",
+      "options": [
+        {
+          "key": "A",
+          "text": "能量越高， 受檢者的體內劑量越高"
+        },
+        {
+          "key": "B",
+          "text": "能量越高， 影像品質越好"
+        },
+        {
+          "key": "C",
+          "text": "能量與造影時間無關"
+        },
+        {
+          "key": "D",
+          "text": "能量與核種半衰期無關"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "本題正解為 B，因為選項內容「能量越高， 影像品質越好」最符合「關於正子（β +）的能量的敘述， 下列何者錯…」的核心判斷。 其餘選項常把「能量越高， 受檢者的體內劑量…」與「能量與造影時間無關」這類概念直接套用，忽略題幹限定條件。 判斷時要以核種物理特性為主，避免把不同放射核種的參數混用。",
+      "explanationStatus": "ready",
+      "kind": "mcq",
+      "section": "mcq",
+      "isComplete": true
+    }
+  ]
+};

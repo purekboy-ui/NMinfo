@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>醫放與輻防考古題整理站</title>
+    <meta
+      name="description"
+      content="收錄醫放師核醫、輻防師與輻防員歷屆考題與輻防大補帖，提供卷別閱讀、題目回查與考前整理。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;800&family=Noto+Serif+TC:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <aside class="sidebar">
+        <div class="brand-block">
+          <p class="brand-kicker">Past Papers · Reading Mode</p>
+          <h1>醫放與輻防考古題整理站</h1>
+          <p class="brand-copy">
+            以卷別閱讀、題目回查與考前整理為主，不提供自動評分。
+          </p>
+        </div>
+
+        <nav class="sidebar-nav" aria-label="考古題單元">
+          <button class="nav-link is-active" type="button" data-action="open-home">首頁</button>
+
+          <section class="nav-section">
+            <button class="nav-link" type="button" data-action="open-track" data-track-id="nucmed">
+              醫放師考古題
+            </button>
+            <div id="paper-tree-nucmed" class="paper-tree" aria-label="醫放師卷別"></div>
+          </section>
+
+          <section class="nav-section">
+            <button class="nav-link" type="button" data-action="open-track" data-track-id="rps">
+              輻防師考古題
+            </button>
+            <div id="paper-tree-rps" class="paper-tree" aria-label="輻防師卷別"></div>
+          </section>
+
+          <section class="nav-section">
+            <button class="nav-link" type="button" data-action="open-track" data-track-id="rpo">
+              輻防員考古題
+            </button>
+            <div id="paper-tree-rpo" class="paper-tree" aria-label="輻防員卷別"></div>
+          </section>
+
+          <button class="nav-link" type="button" data-action="open-guide">輻防大補帖</button>
+        </nav>
+
+        <footer class="sidebar-footer">
+          <p>題目資料以整理稿與原始題本交叉比對為主，若遇圖題或答案爭議，仍建議回看原始題本。</p>
+          <p><a href="../">返回主網站</a></p>
+        </footer>
+      </aside>
+
+      <main class="main-panel">
+        <div class="page-head">
+          <p id="page-kicker" class="page-kicker">首頁</p>
+          <h2 id="page-title" class="page-title">考古題與考前整理</h2>
+        </div>
+        <div id="app" class="page-body">
+          <section class="loading-state">
+            <h3>載入中</h3>
+            <p>正在整理考古題資料。</p>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

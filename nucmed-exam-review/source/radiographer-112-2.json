@@ -1,0 +1,2343 @@
+{
+  "id": "radiographer-112-2",
+  "paperId": "112_112100_309_6",
+  "year": 112,
+  "session": 2,
+  "yearLabel": "112-2",
+  "title": "112-2 核子醫學診療原理與技術學",
+  "examYearCe": 2023,
+  "examName": "112年第二次專門職業及技術人員高等考試醫師中醫師考試分階段考試（第一階段考試）、牙醫師藥師考試分階段考試、醫事檢驗師、醫事放射師、物理治療師考試、112年專門職業及技術人員高等考試職能治療師、呼吸治療師、獸醫師、助產師、心理師考試",
+  "subjectName": "核子醫學診療原理與技術學",
+  "questionType": "測驗題",
+  "questionCount": 80,
+  "source": {
+    "twinklePaperId": "112_112100_309_6",
+    "questionPdfUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=Q&code=112100&c=309&s=66&q=1",
+    "answerPdfUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?t=M&code=112100&c=309&s=66&q=1",
+    "questionSource": "official:question_pdf",
+    "answerSource": "official:answer_pdf"
+  },
+  "questions": [
+    {
+      "id": "rg-112-2-q001",
+      "number": 1,
+      "stem": "有關99mTc-HMPAO的安定性敘述， 下列何者正確？",
+      "options": [
+        {
+          "key": "A",
+          "text": "相當不穩定， 必須在製備後60分鐘內使用"
+        },
+        {
+          "key": "B",
+          "text": "標幟效率＞70%為品質合格標準"
+        },
+        {
+          "key": "C",
+          "text": "加入磷酸鹽緩衝液（phosphate buffer）及甲烯藍（methylene blue）有助於改善其安定性"
+        },
+        {
+          "key": "D",
+          "text": "降解產物以99mTc-pertechnetate為主"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "99mTc-HMPAO本身配製後穩定度有限，加入phosphate buffer與methylene blue可抑制分解、延長可用時間，所以C正確。常見陷阱是把品質門檻或分解型態記錯，像B的標幟效率門檻過低、D也把主要降解物誤寫成pertechnetate。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q002",
+      "number": 2,
+      "stem": "有關99mTc-ECD的敘述， 下列何者正確？",
+      "options": [
+        {
+          "key": "A",
+          "text": "99mTc-l, l-ECD在人腦中不會被酵素催化代謝成極性分子， 所以化學穩定性優於99mTc-HMPAO"
+        },
+        {
+          "key": "B",
+          "text": "核心結構為Tc=ONS3之中性分子"
+        },
+        {
+          "key": "C",
+          "text": "適用於腦血流造影"
+        },
+        {
+          "key": "D",
+          "text": "在腦與血中活度清除速率都快"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "99mTc-ECD是臨床常用腦灌流SPECT藥物，因此C正確。陷阱在於把其腦內代謝與結構特性混淆：A把「不被代謝」說反，D又誤導成腦內也快速清除而不利滯留成像。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q003",
+      "number": 3,
+      "stem": "有關放射性碘標幟MIBG的敘述， 下列何者正確？",
+      "options": [
+        {
+          "key": "A",
+          "text": "131I-MIBG以氧化性碘化反應（oxidative iodination）法製備"
+        },
+        {
+          "key": "B",
+          "text": "放射性碘標幟MIBG可用以診斷嗜鉻細胞瘤（pheochromocytoma）"
+        },
+        {
+          "key": "C",
+          "text": "放射性碘標幟MIBG主要被腎上腺皮質攝取"
+        },
+        {
+          "key": "D",
+          "text": "123I-MIBG可用以檢查心肌的副交感神經功能"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "放射性碘標幟MIBG可藉由交感神經/腎上腺髓質相關機制偵測嗜鉻細胞瘤，故B正確。常見誤解是把標的寫成腎上腺皮質或副交感功能，這會把C、D誤當正確。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q004",
+      "number": 4,
+      "stem": "有關99mTc-DMSA的敘述， 下列何者正確？",
+      "options": [
+        {
+          "key": "A",
+          "text": "酸性下製備的99mTc+3 DMSA會被腎臟髓質攝取"
+        },
+        {
+          "key": "B",
+          "text": "鹼性下製備的99mTc+5 DMSA用於甲狀腺髓質癌（medullary thyroid cancer）檢查"
+        },
+        {
+          "key": "C",
+          "text": "DMSA kit不須避光儲存"
+        },
+        {
+          "key": "D",
+          "text": "99mTc+5 DMSA為電中性分子"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "鹼性條件製備的99mTc(+5)-DMSA可用於甲狀腺髓質癌等腫瘤評估，所以B正確。陷阱是把酸性與鹼性製備用途對調，或誤認+5態為電中性分子。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q005",
+      "number": 5,
+      "stem": "有關99mTc標幟紅血球之敘述， 下列何者最適當？",
+      "options": [
+        {
+          "key": "A",
+          "text": "可用於血池造影（blood pool imaging）"
+        },
+        {
+          "key": "B",
+          "text": "檢查腸胃道出血的靈敏度優於99mTc標幟硫膠體"
+        },
+        {
+          "key": "C",
+          "text": "製備只能使用99mTc-pyrophosphate（PYP）進行體外標幟紅血球"
+        },
+        {
+          "key": "D",
+          "text": "不適用於脾臟造影"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "99mTc標幟紅血球最典型用途就是血池造影，因此A最適當。其他選項的陷阱在於把製備法說成只能某單一路徑，或忽略其可用於特定脾臟相關檢查的事實。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q006",
+      "number": 6,
+      "stem": "有關131I-sodium iodide治療甲狀腺癌的敘述， 下列何者最適當？",
+      "options": [
+        {
+          "key": "A",
+          "text": "甲狀腺髓質癌可以使用131I-sodium iodide治療"
+        },
+        {
+          "key": "B",
+          "text": "使用131I-sodium iodide治療甲狀腺癌前， 讓病人服用碳酸鋰可以抑制甲狀腺癌釋出碘離子"
+        },
+        {
+          "key": "C",
+          "text": "使用131I-sodium iodide治療甲狀腺癌不會發生骨髓抑制副作用"
+        },
+        {
+          "key": "D",
+          "text": "過氯酸鈉會促進甲狀腺癌攝取131I-sodium iodide"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "分化型甲狀腺癌治療前可用碳酸鋰減少碘外流、提升腫瘤滯留，因此B正確。陷阱是把不攝碘的髓質癌也當作適應症，或把過氯酸鹽這類抑制攝碘藥誤認為促進劑。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q007",
+      "number": 7,
+      "stem": "有關188Re的敘述， 下列何者最適當？",
+      "options": [
+        {
+          "key": "A",
+          "text": "188Re化學性質類似99mTc"
+        },
+        {
+          "key": "B",
+          "text": "以迴旋加速器生產188W做成孳生器提供188Re"
+        },
+        {
+          "key": "C",
+          "text": "188Re衰變時只放出貝他粒子， 無加馬光子釋出"
+        },
+        {
+          "key": "D",
+          "text": "188Re貝他粒子能量低於32P"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "188Re與99mTc同屬第7族元素，化學行為相近，故A正確。常見陷阱是把其生成來源、放射線型態與能量記錯，例如誤以為只有β射線或β能量低於32P。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q008",
+      "number": 8,
+      "stem": "111In-pentetreotide結構中， pentetreotide為octreotide與下列何者結合後之結構？",
+      "options": [
+        {
+          "key": "A",
+          "text": "EDTA"
+        },
+        {
+          "key": "B",
+          "text": "DTPA"
+        },
+        {
+          "key": "C",
+          "text": "DMSA"
+        },
+        {
+          "key": "D",
+          "text": "DOTA"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "Pentetreotide是octreotide接上DTPA螯合基團後的結構，因此答案為B。陷阱是把EDTA或DOTA與其他放射藥物配體混用。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q009",
+      "number": 9,
+      "stem": "下列核醫藥物， 何者最不適合作為癌症骨轉移診斷或疼痛緩解治療？",
+      "options": [
+        {
+          "key": "A",
+          "text": "186Re-HEDP"
+        },
+        {
+          "key": "B",
+          "text": "153Sm-EDTMP"
+        },
+        {
+          "key": "C",
+          "text": "89SrCl2"
+        },
+        {
+          "key": "D",
+          "text": "177Lu-DOTATOC"
+        }
+      ],
+      "answer": "D",
+      "acceptedAnswers": [
+        "D"
+      ],
+      "explanation": "177Lu-DOTATOC主要標靶體抑素受體，用於神經內分泌腫瘤而非骨轉移止痛首選，所以最不適合的是D。A到C皆屬骨轉移疼痛緩解常見放射治療藥物類型。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q010",
+      "number": 10,
+      "stem": "下列何種核醫藥物是經由主動運輸機制攝入特定組織或器官？",
+      "options": [
+        {
+          "key": "A",
+          "text": "99mTc-DTPA"
+        },
+        {
+          "key": "B",
+          "text": "99mTc-MAA"
+        },
+        {
+          "key": "C",
+          "text": "123I-NaI"
+        },
+        {
+          "key": "D",
+          "text": "18F-florbetaben"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "123I-NaI進入甲狀腺主要靠鈉碘同向轉運子，屬主動運輸，故C正確。其餘藥物多為過濾分布、顆粒栓塞或被動分布機轉，容易被誤判。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q011",
+      "number": 11,
+      "stem": "下圖為何種99mTc標幟之核醫藥物？",
+      "options": [
+        {
+          "key": "A",
+          "text": "99mTc-ECD"
+        },
+        {
+          "key": "B",
+          "text": "99mTc-MDP"
+        },
+        {
+          "key": "C",
+          "text": "99mTc-MAG3"
+        },
+        {
+          "key": "D",
+          "text": "99mTc-HMPAO"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "題圖所示為99mTc-MAG3的配位結構與臨床腎小管分泌用途，因此選C。常見陷阱是與腦灌流藥ECD/HMPAO或骨掃描MDP混淆。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q012",
+      "number": 12,
+      "stem": "關於DOTATATE標幟核醫藥物之描述， 下列何者錯誤？",
+      "options": [
+        {
+          "key": "A",
+          "text": "68Ga-DOTATATE與177Lu-DOTATATE可分別用於神經內分泌腫瘤之個人化診療使用"
+        },
+        {
+          "key": "B",
+          "text": "此藥物可作為胜肽受體放射性核種治療（PRRT）"
+        },
+        {
+          "key": "C",
+          "text": "其為天然體抑素（somatotatin）之合成類似物， 因此可與體抑素受體（SSTR）結合"
+        },
+        {
+          "key": "D",
+          "text": "111In-capromab pendetide 與此藥物有相同作用機制， 亦可作為神經內分泌腫瘤造影使用"
+        }
+      ],
+      "answer": "D",
+      "acceptedAnswers": [
+        "D"
+      ],
+      "explanation": "111In-capromab pendetide的標靶是前列腺相關抗原，與DOTATATE的SSTR機制不同，所以D是錯誤敘述。A到C描述的是DOTATATE在診療一體化與PRRT上的正確概念。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q013",
+      "number": 13,
+      "stem": "下列何者最適合用於偵測轉移性的前列腺癌？",
+      "options": [
+        {
+          "key": "A",
+          "text": "11C-choline"
+        },
+        {
+          "key": "B",
+          "text": "18F-FDOPA"
+        },
+        {
+          "key": "C",
+          "text": "13N-NH3"
+        },
+        {
+          "key": "D",
+          "text": "15O-H2O"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "11C-choline可反映前列腺癌細胞膜合成活性，常用於轉移性前列腺癌評估，因此A最適合。其餘選項多用於其他腫瘤或心肌灌流，不是此情境首選。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q014",
+      "number": 14,
+      "stem": "下列何者最容易與血液中運鐵蛋白（transferrin）結合？",
+      "options": [
+        {
+          "key": "A",
+          "text": "18F-FDG"
+        },
+        {
+          "key": "B",
+          "text": "67Ga-citrate"
+        },
+        {
+          "key": "C",
+          "text": "99mTc-MAA"
+        },
+        {
+          "key": "D",
+          "text": "11C-choline"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "67Ga-citrate在血中會與transferrin結合並再分布至病灶，因此B正確。陷阱是把代謝型PET藥物或微粒藥物誤當成會高度結合運鐵蛋白。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q015",
+      "number": 15,
+      "stem": "使用下列何種肺部換氣掃描（ventilation scan）放射藥物， 可以觀察氣體進入肺臟與從肺臟清除（washout） 之變化？",
+      "options": [
+        {
+          "key": "A",
+          "text": "99mTc-technegas"
+        },
+        {
+          "key": "B",
+          "text": "99mTc-DTPA aerosol"
+        },
+        {
+          "key": "C",
+          "text": "99mTc-MAA"
+        },
+        {
+          "key": "D",
+          "text": "133Xe"
+        }
+      ],
+      "answer": "D",
+      "acceptedAnswers": [
+        "D"
+      ],
+      "explanation": "133Xe為惰性氣體，可直接觀察肺部進氣與washout動態，所以D正確。aerosol類藥物較偏沉積分布評估，無法像氣體那樣完整呈現清除動力學。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q016",
+      "number": 16,
+      "stem": "下列何者與放射藥物能否通過血腦屏障（blood-brain barrier）的能力無關？",
+      "options": [
+        {
+          "key": "A",
+          "text": "分子大小"
+        },
+        {
+          "key": "B",
+          "text": "分子的極性"
+        },
+        {
+          "key": "C",
+          "text": "溶劑的成分"
+        },
+        {
+          "key": "D",
+          "text": "分子的電價"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "血腦屏障通透性主要受分子大小、脂溶性/極性與電荷影響，因此C所述溶劑成分不是關鍵本質條件。常見陷阱是把給藥配方因素誤當成分子跨BBB能力本身。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q017",
+      "number": 17,
+      "stem": "有關201Tl心肌灌注造影檢查藥物壓力（pharmacologic stress）測試的藥劑， 下列何者錯誤？",
+      "options": [
+        {
+          "key": "A",
+          "text": "dipyridamole"
+        },
+        {
+          "key": "B",
+          "text": "dobutamine"
+        },
+        {
+          "key": "C",
+          "text": "aminophylline"
+        },
+        {
+          "key": "D",
+          "text": "adenosine"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "Adenosine與dipyridamole屬血管擴張型壓力藥，dobutamine則為替代性心臟刺激藥；aminophylline主要是逆轉副作用用藥，所以C為錯。陷阱在於把解毒/拮抗藥誤當壓力藥。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q018",
+      "number": 18,
+      "stem": "下列那些疾病可能會造成99mTc-TRODAT-1在紋狀體（striatum）的攝取降低？ ①阿茲海默氏症 ②進行性核 上麻痺 ③巴金森氏病 ④多發性神經系統萎縮症",
+      "options": [
+        {
+          "key": "A",
+          "text": "①②③"
+        },
+        {
+          "key": "B",
+          "text": "①②④"
+        },
+        {
+          "key": "C",
+          "text": "②③④"
+        },
+        {
+          "key": "D",
+          "text": "①③④"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "99mTc-TRODAT-1反映DAT功能，巴金森症、進行性核上麻痺與多系統萎縮都可見紋狀體攝取下降，因此②③④正確。陷阱是把阿茲海默症當成典型DAT顯著下降疾病。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q019",
+      "number": 19,
+      "stem": "有關99mTc-ECD SPECT造影前準備工作之敘述， 下列何者正確？",
+      "options": [
+        {
+          "key": "A",
+          "text": "應先讓病人待在一間安靜且幽暗的房間內"
+        },
+        {
+          "key": "B",
+          "text": "注射放射藥物前應請病人聽柔和輕音樂"
+        },
+        {
+          "key": "C",
+          "text": "病人應避免閱讀， 但可以說話"
+        },
+        {
+          "key": "D",
+          "text": "應請病人走路10分鐘以上， 再進行藥物注射"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "腦灌流注射前需讓病人處於安靜、低刺激環境，以減少非目標腦區活化，故A正確。交談、閱讀或走動都會改變局部血流分布，是常見前處理陷阱。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q020",
+      "number": 20,
+      "stem": "99mTc-TRODAT-1 SPECT用在巴金森氏病的評估， 該藥物的標靶是在：",
+      "options": [
+        {
+          "key": "A",
+          "text": "多巴胺受體（dopamine receptor）"
+        },
+        {
+          "key": "B",
+          "text": "芳香族L-胺基酸脫羧酵素（aromatic L-amino acid decarboxylase）"
+        },
+        {
+          "key": "C",
+          "text": "多巴胺轉運體（dopamine transporter）"
+        },
+        {
+          "key": "D",
+          "text": "囊泡單胺轉運體（vesicular monoamine transporter）"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "TRODAT-1的標靶是突觸前多巴胺轉運體（DAT），故選C。常見混淆是把它誤認為評估受體、AADC或囊泡轉運體。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q021",
+      "number": 21,
+      "stem": "201Tl-TlCl 是心臟灌流造影常用的藥物之一， 其衰變模式為何？",
+      "options": [
+        {
+          "key": "A",
+          "text": "正子衰變（β+ decay）"
+        },
+        {
+          "key": "B",
+          "text": "電子捕獲（electron capture）"
+        },
+        {
+          "key": "C",
+          "text": "異構過渡（isomeric transition）"
+        },
+        {
+          "key": "D",
+          "text": "貝他衰變（β- decay）"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "201Tl主要經電子捕獲衰變，故B正確。陷阱是把它與常見β+正子核種或β-治療核種混為一談。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q022",
+      "number": 22,
+      "stem": "99mTc-pyrophosphate（PYP）不適用於下列何者？",
+      "options": [
+        {
+          "key": "A",
+          "text": "骨骼掃描"
+        },
+        {
+          "key": "B",
+          "text": "偵測急性心肌梗塞"
+        },
+        {
+          "key": "C",
+          "text": "偵測心臟類澱粉病變"
+        },
+        {
+          "key": "D",
+          "text": "偵測心臟交感神經分布"
+        }
+      ],
+      "answer": "D",
+      "acceptedAnswers": [
+        "D"
+      ],
+      "explanation": "99mTc-PYP可用於骨骼、急性心肌梗塞與特定心臟澱粉樣變評估，但不拿來看交感神經分布，因此D不適用。心臟交感神經影像典型藥物是MIBG而非PYP。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q023",
+      "number": 23,
+      "stem": "做心臟灌流造影檢查可以藥物壓力相取代運動壓力相， 藥物的機轉主要為冠狀動脈血管擴張， 下列何者錯 誤？",
+      "options": [
+        {
+          "key": "A",
+          "text": "dipyridamole"
+        },
+        {
+          "key": "B",
+          "text": "adenosine"
+        },
+        {
+          "key": "C",
+          "text": "dobutamine"
+        },
+        {
+          "key": "D",
+          "text": "regadenoson"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "冠脈擴張壓力藥的核心機轉是血管擴張，dipyridamole、adenosine與regadenoson都符合。dobutamine主要提高心肌耗氧與心跳，不是此機轉，所以C錯。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q024",
+      "number": 24,
+      "stem": "下圖為核醫心臟血流灌注影像， 此圖為心臟何種解剖切片顯示方向？",
+      "options": [
+        {
+          "key": "A",
+          "text": "short axis slices"
+        },
+        {
+          "key": "B",
+          "text": "vertical long axis slices"
+        },
+        {
+          "key": "C",
+          "text": "high long axis slices"
+        },
+        {
+          "key": "D",
+          "text": "horizontal long axis slices"
+        }
+      ],
+      "answer": "D",
+      "acceptedAnswers": [
+        "D"
+      ],
+      "explanation": "此影像呈現的是horizontal long axis切面，因此D正確。陷阱在於把水平長軸與垂直長軸名稱對調。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q025",
+      "number": 25,
+      "stem": "下列何種患者不適合使用adenosine作為心肌灌注掃描的負壓藥物？",
+      "options": [
+        {
+          "key": "A",
+          "text": "高血壓"
+        },
+        {
+          "key": "B",
+          "text": "糖尿病"
+        },
+        {
+          "key": "C",
+          "text": "氣喘"
+        },
+        {
+          "key": "D",
+          "text": "癌症"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "Adenosine可能誘發支氣管痙攣，氣喘患者屬相對禁忌，所以C正確。陷阱是只注意心血管適應症而忽略呼吸道副作用。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q026",
+      "number": 26,
+      "stem": "進行99mTc-MIBI心肌灌注造影檢查時， 下列何種措施對於移動假影（motion artifact）的預防或事後補救沒有 幫助？",
+      "options": [
+        {
+          "key": "A",
+          "text": "進行運動負荷後， 儘量在5分鐘之內開始掃描工作"
+        },
+        {
+          "key": "B",
+          "text": "使用手架或腳墊， 幫病人調整至舒服的姿勢後再開始掃描工作"
+        },
+        {
+          "key": "C",
+          "text": "使用移動校正（motion correction）軟體"
+        },
+        {
+          "key": "D",
+          "text": "向病患詳細說明原因後， 重新掃描並請病人注意避免移動"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "移動假影的重點在固定姿勢、移動校正與必要時重掃，B、C、D都能幫助。A把「越早掃越好」當成預防移動的手段並不成立，所以是錯誤選項。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q027",
+      "number": 27,
+      "stem": "Amyloid PET可偵測腦內β類澱粉蛋白（β-amyloid proteins）的沉積， 以早期評估阿茲海默氏病， 近年來有許 多這類的放射藥物被開發出來， 下列何者不屬這類藥物？",
+      "options": [
+        {
+          "key": "A",
+          "text": "11C-PIB"
+        },
+        {
+          "key": "B",
+          "text": "18F-AV-1（florbetaben）"
+        },
+        {
+          "key": "C",
+          "text": "18F-AV-45（florbetapir）"
+        },
+        {
+          "key": "D",
+          "text": "18F-dopa（fluorodopa）"
+        }
+      ],
+      "answer": "D",
+      "acceptedAnswers": [
+        "D"
+      ],
+      "explanation": "11C-PIB與18F-florbetaben、18F-florbetapir都屬β-amyloid PET示蹤劑。18F-FDOPA主要評估多巴胺代謝或特定腫瘤，不屬於amyloid tracer，因此D正確。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q028",
+      "number": 28,
+      "stem": "123I- MIBG用於偵測嗜鉻細胞瘤（pheochromocytoma）， 其進入腫瘤細胞的主要途徑為何？",
+      "options": [
+        {
+          "key": "A",
+          "text": "正腎上腺素轉運體（noradrenaline transporter）"
+        },
+        {
+          "key": "B",
+          "text": "鈉碘轉運體（sodium iodide symporter）"
+        },
+        {
+          "key": "C",
+          "text": "鈉鉀幫浦（Na+/K+ pump）"
+        },
+        {
+          "key": "D",
+          "text": "鈣離子通道（calcium channel）"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "123I-MIBG進入嗜鉻細胞瘤細胞主要依賴正腎上腺素轉運體（NET），故A正確。陷阱是把甲狀腺的NIS或一般離子通道機制套用到MIBG。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q029",
+      "number": 29,
+      "stem": "有關核醫骨骼掃描的優點， 下列敘述何者錯誤？",
+      "options": [
+        {
+          "key": "A",
+          "text": "對偵測骨骼病變的靈敏度（sensitivity）高"
+        },
+        {
+          "key": "B",
+          "text": "全身骨骼掃描搭配單光子電腦斷層掃描（SPECT）可提高檢查靈敏度"
+        },
+        {
+          "key": "C",
+          "text": "辨別骨骼病變原因的專一性（specificity）高"
+        },
+        {
+          "key": "D",
+          "text": "全身骨骼掃描搭配單光子電腦斷層掃描（SPECT）可提高檢查專一性"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "骨掃描優勢是高敏感度，但單靠平面影像對病因鑑別的專一性有限，所以C這句「專一性高」是錯的。SPECT/CT可提升定位與專一性，常被拿來與此陷阱對照。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q030",
+      "number": 30,
+      "stem": "有關99mTc-MDP骨骼造影， 下列敘述何者錯誤？",
+      "options": [
+        {
+          "key": "A",
+          "text": "大約有50%注射劑量被骨頭攝取， 其餘由腎臟排除"
+        },
+        {
+          "key": "B",
+          "text": "大約在注射後1小時骨頭攝取達最高峰"
+        },
+        {
+          "key": "C",
+          "text": "大約在注射後6～24小時骨頭－背景攝取比例（taget-to-background）達最高峰"
+        },
+        {
+          "key": "D",
+          "text": "考量背景活性的影響及99mTc半衰期， 通常建議於注射後 6小時實施掃描"
+        }
+      ],
+      "answer": "D",
+      "acceptedAnswers": [
+        "D"
+      ],
+      "explanation": "99mTc-MDP通常在注射後約2～4小時進行骨掃描以兼顧骨/背景比與計數品質，因此D所述「通常6小時」不恰當。陷阱是把晚期骨背景比高的概念直接套成常規掃描時點。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q031",
+      "number": 31,
+      "stem": "18F-FDG正子斷層造影， 對偵測下列何種癌症的敏感度最高？",
+      "options": [
+        {
+          "key": "A",
+          "text": "攝護腺癌"
+        },
+        {
+          "key": "B",
+          "text": "腎細胞癌"
+        },
+        {
+          "key": "C",
+          "text": "原發性肝癌"
+        },
+        {
+          "key": "D",
+          "text": "非小細胞肺癌"
+        }
+      ],
+      "answer": "D",
+      "acceptedAnswers": [
+        "D"
+      ],
+      "explanation": "18F-FDG對非小細胞肺癌整體敏感度通常高於題目其餘癌種，因此D正確。前列腺癌、腎細胞癌與原發性肝癌常受代謝特性或背景活度影響而較不敏感。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q032",
+      "number": 32,
+      "stem": "下圖為常規核醫骨骼掃描影像， 下列解剖位置的標示何者正確？",
+      "options": [
+        {
+          "key": "A",
+          "text": "a、b都是posterior views"
+        },
+        {
+          "key": "B",
+          "text": "a為 anterior view； b為 posterior view"
+        },
+        {
+          "key": "C",
+          "text": "a為 posterior view； b為 anterior view"
+        },
+        {
+          "key": "D",
+          "text": "a、b都是 anterior views"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "常規全身骨掃描慣例會同時取得前位與後位影像，題圖標示為a前位、b後位，因此B正確。陷阱在於把左右方向或體位標示與影像顯示方向混淆。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q033",
+      "number": 33,
+      "stem": "18F-fluoro-L-thymidine（FLT）進行正子腫瘤造影之主要機制為何？",
+      "options": [
+        {
+          "key": "A",
+          "text": "腫瘤缺氧（tumor hypoxia）"
+        },
+        {
+          "key": "B",
+          "text": "細胞增生（cell proliferation）"
+        },
+        {
+          "key": "C",
+          "text": "血管新生（angiogenesis）"
+        },
+        {
+          "key": "D",
+          "text": "葡萄糖代謝（glucose metabolism）"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "18F-FLT是胸苷類似物，受TK1活性影響，可反映DNA合成與細胞增生，所以B正確。它不是以缺氧、血管新生或葡萄糖代謝為主要成像機轉。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q034",
+      "number": 34,
+      "stem": "111In-pentetreotide用於神經內分泌腫瘤檢查， 係因該藥品為下列何種物質之類似物？",
+      "options": [
+        {
+          "key": "A",
+          "text": "somatostatin"
+        },
+        {
+          "key": "B",
+          "text": "dopamine"
+        },
+        {
+          "key": "C",
+          "text": "glucose"
+        },
+        {
+          "key": "D",
+          "text": "tumor necrosis factor"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "111In-pentetreotide是體抑素（somatostatin）類似物，藉與SSTR結合進行神經內分泌腫瘤造影，所以A正確。陷阱是把神經傳導物質或代謝底物當成其配體來源。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q035",
+      "number": 35,
+      "stem": "針對甲狀腺髓質瘤及腦瘤患者， 分別建議使用99mTc-sestamibi注射後幾分鐘收取影像？",
+      "options": [
+        {
+          "key": "A",
+          "text": "甲狀腺髓質瘤： 20～30分鐘， 腦瘤： 5～60分鐘"
+        },
+        {
+          "key": "B",
+          "text": "甲狀腺髓質瘤： 5～60分鐘， 腦瘤： 20～30分鐘"
+        },
+        {
+          "key": "C",
+          "text": "兩者皆20～30分鐘"
+        },
+        {
+          "key": "D",
+          "text": "兩者皆5～60分鐘"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "99mTc-sestamibi在甲狀腺髓質瘤與腦瘤常建議於注射後20～30分鐘收像，因此C正確。陷阱是把較寬泛的「5～60分鐘」誤認為標準建議時窗。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q036",
+      "number": 36,
+      "stem": "進行11C-choline造影檢查前是否需要禁食？",
+      "options": [
+        {
+          "key": "A",
+          "text": "不需要"
+        },
+        {
+          "key": "B",
+          "text": "需要禁食1小時"
+        },
+        {
+          "key": "C",
+          "text": "需要禁食3小時"
+        },
+        {
+          "key": "D",
+          "text": "需要禁食6小時"
+        }
+      ],
+      "answer": "D",
+      "acceptedAnswers": [
+        "D"
+      ],
+      "explanation": "11C-choline檢查前通常需禁食約6小時，以降低餐後代謝變化與非特異背景干擾，所以D正確。陷阱是套用FDG或其他檢查的較短禁食規則。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q037",
+      "number": 37,
+      "stem": "下列何種情況比較不會造成18F-FDG肌肉攝取增加？",
+      "options": [
+        {
+          "key": "A",
+          "text": "劇烈運動後"
+        },
+        {
+          "key": "B",
+          "text": "檢查前有吃了高血壓藥"
+        },
+        {
+          "key": "C",
+          "text": "檢查前剛吃了一塊蛋糕"
+        },
+        {
+          "key": "D",
+          "text": "糖尿病患者在正子造影前兩小時內有施打胰島素"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "高血壓藥一般不會顯著增加骨骼肌FDG攝取，因此B是較不會造成肌肉攝取升高的情況。相對地，運動、高糖飲食與檢查前近時段胰島素都會把葡萄糖驅向肌肉。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q038",
+      "number": 38,
+      "stem": "99mTc-pertechnetate甲狀腺掃描， 當甲狀腺攝取99mTc-pertechnetate後， 會因為無法進行那一過程而被甲狀腺濾 泡細胞排出？",
+      "options": [
+        {
+          "key": "A",
+          "text": "氧化"
+        },
+        {
+          "key": "B",
+          "text": "有機化"
+        },
+        {
+          "key": "C",
+          "text": "偶合"
+        },
+        {
+          "key": "D",
+          "text": "水解"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "99mTc-pertechnetate可被甲狀腺「攝取」但不能像碘一樣被有機化，因此會再被洗出，故B正確。陷阱是把氧化、偶合等碘化步驟混成其主要缺陷。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q039",
+      "number": 39,
+      "stem": "利用核子醫學測量腎移植病人的腎臟功能， 準直儀應放在病人的那一個方向？",
+      "options": [
+        {
+          "key": "A",
+          "text": "正面（anterior）"
+        },
+        {
+          "key": "B",
+          "text": "背面（posterior）"
+        },
+        {
+          "key": "C",
+          "text": "左側面（left lateral）"
+        },
+        {
+          "key": "D",
+          "text": "右側面（right lateral）"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "腎移植腎多位於髂窩前方，評估功能時以前位偵測最能貼近器官、減少衰減誤差，所以A正確。若用後位容易把原生腎位置概念誤套到移植腎。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q040",
+      "number": 40,
+      "stem": "有關99mTc-DTPA腎臟造影藥物之敘述， 下列何者錯誤？",
+      "options": [
+        {
+          "key": "A",
+          "text": "經由腎絲球過濾及腎小管分泌作用排出血漿"
+        },
+        {
+          "key": "B",
+          "text": "蛋白質的結合率約為5～10%"
+        },
+        {
+          "key": "C",
+          "text": "用於腎功能不佳的患者時， 99mTc-DTPA影像品質較99mTc-MAG3差"
+        },
+        {
+          "key": "D",
+          "text": "注射後24小時， 約有90%以上的藥劑被排泄到尿液中"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "99mTc-DTPA幾乎只經腎絲球過濾，不具明顯腎小管分泌，因此A為錯誤敘述。其餘選項反映了DTPA在腎功能差時影像較MAG3差及主要尿排泄特性。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q041",
+      "number": 41,
+      "stem": "99mTc-pertechnetate與碘具有相似的離子特性， 在靜脈注射後不會積聚在何種組織？",
+      "options": [
+        {
+          "key": "A",
+          "text": "甲狀腺"
+        },
+        {
+          "key": "B",
+          "text": "胃黏膜"
+        },
+        {
+          "key": "C",
+          "text": "腦部脈絡叢"
+        },
+        {
+          "key": "D",
+          "text": "副甲狀腺"
+        }
+      ],
+      "answer": "D",
+      "acceptedAnswers": [
+        "D"
+      ],
+      "explanation": "99mTc-pertechnetate會集中於甲狀腺、胃黏膜與脈絡叢等NIS相關組織，但不會特異性積聚於副甲狀腺，因此D正確。陷阱是把甲狀腺旁腺病灶成像與過鎝酸鹽分布混為一談。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q042",
+      "number": 42,
+      "stem": "有關嗜鉻細胞瘤核醫影像檢查的敘述， 下列何者正確？",
+      "options": [
+        {
+          "key": "A",
+          "text": "該腫瘤會大量分泌兒茶酚胺產物， 如腎上腺素或正腎上腺素"
+        },
+        {
+          "key": "B",
+          "text": "主要好發於腎上腺皮質"
+        },
+        {
+          "key": "C",
+          "text": "使用131I-MIBI或123I-MIBI進行造影"
+        },
+        {
+          "key": "D",
+          "text": "造影前病患不須搭配口服Lugol或碘化鉀溶液"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "嗜鉻細胞瘤典型特徵是分泌兒茶酚胺（腎上腺素/正腎上腺素），所以A正確。常見陷阱包括把發生部位說成腎上腺皮質，或把用藥名稱寫成MIBI而非MIBG。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q043",
+      "number": 43,
+      "stem": "臨床甲狀腺檢查的放射性製劑中， 何者造成甲狀腺的輻射吸收劑量最低？",
+      "options": [
+        {
+          "key": "A",
+          "text": "123I-NaI"
+        },
+        {
+          "key": "B",
+          "text": "124I-NaI"
+        },
+        {
+          "key": "C",
+          "text": "99mTc-pertechnetate"
+        },
+        {
+          "key": "D",
+          "text": "131I-NaI"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "99mTc-pertechnetate在甲狀腺不被有機化且半衰期短，整體甲狀腺吸收劑量通常最低，所以C正確。放射碘類（尤其131I）因能被有機化與停留較久，劑量相對較高。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q044",
+      "number": 44,
+      "stem": "人的兩側腎約有170～240萬個腎元， 每個腎元包括絲球體（glomerulus）、鮑氏囊（Bowman's capsule）、近 端和遠端腎小管（proximal and distal tubules）。 有關腎臟核醫藥物的功能， 下列敘述何者正確？",
+      "options": [
+        {
+          "key": "A",
+          "text": "99m Tc-DTPA用於腎絲球過濾率； 99mTc-MAG3用於腎小管分泌； 99mTc-DMSA用於腎皮質結合（cortical binding）"
+        },
+        {
+          "key": "B",
+          "text": "99mTc-DMSA用於腎絲球過濾率； 99mTc-MAG3用於腎小管分泌； 99m Tc-DTPA用於腎皮質結合（cortical binding）"
+        },
+        {
+          "key": "C",
+          "text": "131I-OIH用於腎絲球過濾率； 99mTc-MAG3用於腎小管分泌； 99mTc-DMSA用於腎皮質結合（cortical binding）"
+        },
+        {
+          "key": "D",
+          "text": "99mTc-DTPA用於腎絲球過濾率； 99mTc-DMSA用於腎小管分泌； 131I-OIH用於腎皮質結合（cortical binding）"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "腎臟藥物功能分工是DTPA看GFR、MAG3看腎小管分泌、DMSA看腎皮質結合，故A正確。陷阱在於把DMSA與DTPA/OIH用途互換。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q045",
+      "number": 45,
+      "stem": "施行診斷性131I-NaI全身掃描時， 通常於口服131I-NaI多久後開始掃描？",
+      "options": [
+        {
+          "key": "A",
+          "text": "3～4小時"
+        },
+        {
+          "key": "B",
+          "text": "24小時"
+        },
+        {
+          "key": "C",
+          "text": "2～3天"
+        },
+        {
+          "key": "D",
+          "text": "7～10天"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B",
+        "C"
+      ],
+      "explanation": "本題為更正/給分題，acceptedAnswers含B與C，兩個答案皆可得分。臨床多在口服131I後約24小時進行診斷性全身掃描，但部分流程也會延後至48～72小時以提升病灶對比，因此B、C皆有合理性。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q046",
+      "number": 46,
+      "stem": "有關99mTc-MAG3及123I-OIH作為腎臟造影製劑的敘述， 下列何者錯誤？",
+      "options": [
+        {
+          "key": "A",
+          "text": "前者於注射後有較高的腎絲球過濾率（glomerular filtration rate）"
+        },
+        {
+          "key": "B",
+          "text": "前者於注射後有較高的血漿清除率（plasma clearance rate）"
+        },
+        {
+          "key": "C",
+          "text": "前者於注射後有高達90%在腎小管泌出"
+        },
+        {
+          "key": "D",
+          "text": "前者於注射3小時後仍有部分存留在肝臟及腸道等處"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "99mTc-MAG3作為腎造影藥物重點是高腎小管分泌與高有效腎血漿清除，並非較高腎絲球過濾率，所以A錯。陷阱是把DTPA的GFR概念誤套到MAG3。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q047",
+      "number": 47,
+      "stem": "下列何者不是甲狀腺機能亢進之症狀？",
+      "options": [
+        {
+          "key": "A",
+          "text": "食慾、食量增加且體重增加"
+        },
+        {
+          "key": "B",
+          "text": "睡眠不佳"
+        },
+        {
+          "key": "C",
+          "text": "排便及腹瀉次數增加"
+        },
+        {
+          "key": "D",
+          "text": "手震顫及心悸"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "甲亢常見「食慾增加但體重下降」，因此A所述體重增加不是典型症狀。其餘如失眠、腹瀉增加與心悸手抖都符合甲狀腺機能亢進表現。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q048",
+      "number": 48,
+      "stem": "有關99mTc-MAA臨床適應症及注射方式， 下列何者錯誤？",
+      "options": [
+        {
+          "key": "A",
+          "text": "偵測肝–肺分流（liver-lung shunt）： 肝動脈導管注射"
+        },
+        {
+          "key": "B",
+          "text": "偵測心臟左–右分流（left-to-right shunt）： 頸靜脈注射"
+        },
+        {
+          "key": "C",
+          "text": "偵測下肢深部靜脈血栓症（deep vein thrombosis）： 足部靜脈注射"
+        },
+        {
+          "key": "D",
+          "text": "偵測肺栓塞（pulmonary embolism）： 周邊靜脈注射"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "99mTc-MAA可用於肺栓塞、DVT輔助及肝肺分流評估，但B把心臟分流型態與注射方式配對錯誤，所以為錯。常見陷阱是把右向左分流評估概念寫成左向右分流。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q049",
+      "number": 49,
+      "stem": "有關核醫製劑於肝臟積聚之機制及主要臨床檢查的組合， 下列何者最適當？",
+      "options": [
+        {
+          "key": "A",
+          "text": "99mTc-disofenin： Kupffer細胞攝取， 膽道閃爍攝影"
+        },
+        {
+          "key": "B",
+          "text": "99mTc red blood cells： 肝臟血池分布， 肝臟動脈瘤掃描"
+        },
+        {
+          "key": "C",
+          "text": "99mTc-sulfur colloid： 肝臟細胞攝取， 肝臟實質掃描"
+        },
+        {
+          "key": "D",
+          "text": "67Ga-citrate： 鐵離子結合， 肝膿瘍掃描"
+        }
+      ],
+      "answer": "D",
+      "acceptedAnswers": [
+        "D"
+      ],
+      "explanation": "67Ga-citrate可藉鐵結合蛋白相關機制聚集於感染發炎灶，臨床可用於肝膿瘍評估，因此D最適當。其餘選項多把肝臟攝取機轉寫錯，例如把Kupffer細胞與肝細胞機制對調。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q050",
+      "number": 50,
+      "stem": "有關核醫造影前禁食的建議， 下列何者最不適當？",
+      "options": [
+        {
+          "key": "A",
+          "text": "梅克爾憩室（Meckel's diverticulum）檢查： 檢查前禁食4小時"
+        },
+        {
+          "key": "B",
+          "text": "食道穿流： 檢查前隔夜空腹"
+        },
+        {
+          "key": "C",
+          "text": "胃排空檢查： 檢查前禁食8小時"
+        },
+        {
+          "key": "D",
+          "text": "膽道閃爍攝影： 檢查前禁食24小時"
+        }
+      ],
+      "answer": "D",
+      "acceptedAnswers": [
+        "D"
+      ],
+      "explanation": "膽道閃爍攝影通常禁食約4～6小時，禁食到24小時反而可能造成假陽性，因此D最不適當。陷阱是把「需要空腹」誤解成「空腹越久越好」。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q051",
+      "number": 51,
+      "stem": "有關核醫膽囊攝影的敘述， 下列何者正確？",
+      "options": [
+        {
+          "key": "A",
+          "text": "檢查前不需特別禁食"
+        },
+        {
+          "key": "B",
+          "text": "99mTc-DISIDA藥物注射後3～4小時仍未見膽囊影像， 則可考慮為急性膽囊炎"
+        },
+        {
+          "key": "C",
+          "text": "99mTc-MAG3為常用的造影藥物， 被肝臟代謝的方式類似膽紅素"
+        },
+        {
+          "key": "D",
+          "text": "若病人禁食超過24小時， 可使用phenobarbital來幫助膽囊排空， 以利膽囊攝取造影藥物"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "99mTc-DISIDA注射後延遲3～4小時仍不見膽囊，支持急性膽囊炎判讀，因此B正確。陷阱是把腎臟藥MAG3當膽道藥，或誤用不合適的前處置藥物。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q052",
+      "number": 52,
+      "stem": "下列那一個濾波矩陣可以強化或使目標器官的邊緣銳利化？",
+      "options": [
+        {
+          "key": "A",
+          "text": "1 1 1 1 1 1 1 1 1"
+        },
+        {
+          "key": "B",
+          "text": "1 1 1 1 8 1 1 1 1"
+        },
+        {
+          "key": "C",
+          "text": "1 2 1 2 4 2 1 2 1"
+        },
+        {
+          "key": "D",
+          "text": "-1 -1 -1 -1 5 -1 -1 -1 -1"
+        }
+      ],
+      "answer": "D",
+      "acceptedAnswers": [
+        "D"
+      ],
+      "explanation": "中心強正值、周圍負值的高通/銳化核可強化邊緣，故D正確。其他矩陣多屬平均化或平滑化，會降低細節銳利度。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q053",
+      "number": 53,
+      "stem": "當進行閘控血池掃描， 其舒張末期（ED）目標區域占586個像素， 其計數為89, 485， 而在收縮末期（ES）目 標區域占416個像素， 其計數為56, 375， 在不考慮身體背景值的情況下， 左心室射出率（EF）約為多少%？",
+      "options": [
+        {
+          "key": "A",
+          "text": "24"
+        },
+        {
+          "key": "B",
+          "text": "37"
+        },
+        {
+          "key": "C",
+          "text": "53"
+        },
+        {
+          "key": "D",
+          "text": "74"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "未扣背景時左室射出率以總計數估算：EF=(ED-ES)/ED=(89485-56375)/89485≈37%，故選B。陷阱是把像素數或背景校正提前混入本題，會得到不符題意的數值。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q054",
+      "number": 54,
+      "stem": "承上題， 若考慮扣除身體背景值， 背景區域占89個像素， 其計數為9, 134， 則在標準化扣除背景值後之左心室 射出率（EF）約為多少%？",
+      "options": [
+        {
+          "key": "A",
+          "text": "24"
+        },
+        {
+          "key": "B",
+          "text": "37"
+        },
+        {
+          "key": "C",
+          "text": "53"
+        },
+        {
+          "key": "D",
+          "text": "74"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "先以背景每像素計數（9134/89）標準化後，分別扣除ED與ES區背景，再計算EF可得約53%，故C正確。這題重點陷阱是若未做像素標準化背景扣除，會低估或高估射出率。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q055",
+      "number": 55,
+      "stem": "正子電腦斷層影像（PET）可被重建成一系列橫切面、冠狀面及矢狀面的影像， 其重建方法為何？",
+      "options": [
+        {
+          "key": "A",
+          "text": "MPR（multi-planner reformation）"
+        },
+        {
+          "key": "B",
+          "text": "MIP（maximum intensity projection）"
+        },
+        {
+          "key": "C",
+          "text": "SSD（shaded surface display）"
+        },
+        {
+          "key": "D",
+          "text": "VR（volume rendering）"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "PET重建成橫切、冠狀、矢狀三正交切面的技術是MPR，因此A正確。MIP、SSD、VR偏向投影或體繪製顯示，不是該題描述的標準重切面流程。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q056",
+      "number": 56,
+      "stem": "下列藥物何者可作為小兒病患接受核醫檢查之鎮靜劑？ ①captopril ②pentobarbital ③chloral hydrate",
+      "options": [
+        {
+          "key": "A",
+          "text": "僅①②"
+        },
+        {
+          "key": "B",
+          "text": "僅①③"
+        },
+        {
+          "key": "C",
+          "text": "僅②③"
+        },
+        {
+          "key": "D",
+          "text": "①②③"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "小兒核醫鎮靜常用pentobarbital與chloral hydrate，因此②③正確。captopril是腎素血管張力系統用藥，常見於腎血管性高血壓評估，不是鎮靜劑。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q057",
+      "number": 57,
+      "stem": "正子掃描的訊號來源中， 下列何者為隨機偶合事件（random coincidence events）？",
+      "options": [
+        {
+          "key": "A",
+          "text": ""
+        },
+        {
+          "key": "B",
+          "text": ""
+        },
+        {
+          "key": "C",
+          "text": ""
+        },
+        {
+          "key": "D",
+          "text": ""
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "隨機偶合事件是兩個互不相關湮滅光子恰在同一時間窗內被誤判為一對，故答案B所示情境正確。主要陷阱是把真偶合或散射偶合誤認為random。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q058",
+      "number": 58,
+      "stem": "通常以三明治（sandwich）法進行放射免疫分析檢查時， 若抗原的量越低， 則處理過的樣品計測值為何？",
+      "options": [
+        {
+          "key": "A",
+          "text": "越高"
+        },
+        {
+          "key": "B",
+          "text": "越低"
+        },
+        {
+          "key": "C",
+          "text": "相同"
+        },
+        {
+          "key": "D",
+          "text": "無法判別"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "三明治法中訊號與抗原量通常正相關，抗原越低形成的夾心複合體越少，計測值就越低，因此B正確。陷阱是把競爭法RIA的反向關係套用到三明治法。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q059",
+      "number": 59,
+      "stem": "放射免疫分析的試劑中， 我們常將125I標幟於抗原的那個胺基酸上？",
+      "options": [
+        {
+          "key": "A",
+          "text": "lysine"
+        },
+        {
+          "key": "B",
+          "text": "methionine"
+        },
+        {
+          "key": "C",
+          "text": "asparagine"
+        },
+        {
+          "key": "D",
+          "text": "tyrosine"
+        }
+      ],
+      "answer": "D",
+      "acceptedAnswers": [
+        "D"
+      ],
+      "explanation": "125I常以電親取代反應標幟蛋白中的tyrosine酚環，所以D正確。其他胺基酸側鏈反應性與標記穩定性通常不如tyrosine常用。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q060",
+      "number": 60,
+      "stem": "單株抗體之製備過程中， 何種物質可促進細胞膜之融合（fusion）？",
+      "options": [
+        {
+          "key": "A",
+          "text": "HAT培養基"
+        },
+        {
+          "key": "B",
+          "text": "PEG"
+        },
+        {
+          "key": "C",
+          "text": "Freund's complete adjuvant"
+        },
+        {
+          "key": "D",
+          "text": "phosphate buffer"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "單株抗體製備時以PEG促進細胞膜融合形成雜交瘤，因此B正確。HAT是篩選培養基而非融合促進劑，常是考題陷阱。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q061",
+      "number": 61,
+      "stem": "下列何種方法不適於純化抗體？",
+      "options": [
+        {
+          "key": "A",
+          "text": "蒸餾法"
+        },
+        {
+          "key": "B",
+          "text": "膠體過濾法"
+        },
+        {
+          "key": "C",
+          "text": "離子交換法"
+        },
+        {
+          "key": "D",
+          "text": "親和層析法"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "抗體純化依賴層析等分離技術，蒸餾法不適合處理蛋白質，因此A正確。蒸餾涉及揮發分離，易使抗體變性且無法達到功能性純化。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q062",
+      "number": 62,
+      "stem": "放射免疫分析檢驗， 對相同檢體進行重複分析， 主要是用於評估下列何者？",
+      "options": [
+        {
+          "key": "A",
+          "text": "線性（linearity）"
+        },
+        {
+          "key": "B",
+          "text": "準確度（accuracy）"
+        },
+        {
+          "key": "C",
+          "text": "精密度（precision）"
+        },
+        {
+          "key": "D",
+          "text": "穩定度（stability）"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "同一檢體重複分析主要看結果再現性，評估的是精密度（precision），故C正確。準確度需對照真值或參考方法，概念不同。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q063",
+      "number": 63,
+      "stem": "下列何種情況可刺激甲狀腺組織（含分化型癌）吸收放射碘？",
+      "options": [
+        {
+          "key": "A",
+          "text": "提高血中之抗甲狀腺球蛋白抗體效價"
+        },
+        {
+          "key": "B",
+          "text": "提高血中甲促素濃度"
+        },
+        {
+          "key": "C",
+          "text": "降低血中甲狀腺球蛋白濃度"
+        },
+        {
+          "key": "D",
+          "text": "降低血中鈉離子濃度"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "提高TSH可上調甲狀腺細胞（含分化型癌）攝碘能力，因此B正確。陷阱是把抗體效價或甲狀腺球蛋白濃度當作直接促進攝碘的主因。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q064",
+      "number": 64,
+      "stem": "有關223Ra-radium dichloride（223Ra-RaCl2）用於骨轉移病灶之敘述， 下列何者錯誤？",
+      "options": [
+        {
+          "key": "A",
+          "text": "此放射鐳治療係直接注射於骨病灶處或鄰近組織逐漸滲透至腫瘤以殺死癌細胞"
+        },
+        {
+          "key": "B",
+          "text": "放射鐳同位素與鈣同屬鹼土族金屬且有類似化學性質， 故可標靶至骨骼代謝旺盛處"
+        },
+        {
+          "key": "C",
+          "text": "放射鐳對於標靶病灶外正常組織之放射劑量相對較低"
+        },
+        {
+          "key": "D",
+          "text": "放射鐳對於骨轉移外的臟器或淋巴轉移病灶無明顯療效"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "223Ra-RaCl2是經靜脈注射後全身分布並選擇性沉積於骨轉移處，不是局部直接注射病灶，所以A錯。其餘敘述符合其鈣擬態與短程α粒子治療特性。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q065",
+      "number": 65,
+      "stem": "進行90Y微球體肝臟腫瘤放射栓塞（radioembolization）治療前， 如發現肺分流（pulmonary shunt）偏高， 通常 會採取下列何種措施？",
+      "options": [
+        {
+          "key": "A",
+          "text": "減少藥物劑量（放射活度）或停止90Y微球體治療"
+        },
+        {
+          "key": "B",
+          "text": "施藥時降低注射速率"
+        },
+        {
+          "key": "C",
+          "text": "給與患者預防性抗生素"
+        },
+        {
+          "key": "D",
+          "text": "給與患者抗凝血劑"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "肺分流偏高代表微球可能大量進入肺循環，增加放射性肺損傷風險，因此通常要降劑量或停止治療，A正確。單純調整注射速度無法根本解決高分流風險。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q066",
+      "number": 66,
+      "stem": "美國核醫學會Stabin and Siegel（2003）建議計算放射核種藥物在人體內之吸收劑量計算公式如下， 其中Ns可 以藉由下列何者定量核醫影像作為估算？ DT= ΣNs×DF（T←S） DT 代表標的器官或區域所受輻射之吸收劑量（dose to target region） NS 代表聚集該核種藥物之區域輻射源所發生之核衰變量（nuclear transition） DF（T←S）代表聚集該核種藥物之區域輻射源照射至標的器官或區域之劑量因子（dose factor）",
+      "options": [
+        {
+          "key": "A",
+          "text": "圈選特定區域計算標的背景比例"
+        },
+        {
+          "key": "B",
+          "text": "圈選特定區域， 計算其時間–活度曲線下面積（area under the curve）"
+        },
+        {
+          "key": "C",
+          "text": "測量血液–尿液放射核種之活度比例"
+        },
+        {
+          "key": "D",
+          "text": "測量施藥前後圈選特定區域放射核種之活度比例"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "公式中的Ns是來源區總核衰變數，實務上由該區時間－活度曲線下面積（AUC）估算，所以B正確。只看單一時間點比例或血尿比都不足以代表總衰變量。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q067",
+      "number": 67,
+      "stem": "承上題， 核醫專家依據該公式估算人體注射99mTc雙磷酸鹽藥物後， 產生吸收劑量較高的器官除骨骼外， 還有 下列何者？",
+      "options": [
+        {
+          "key": "A",
+          "text": "大腸"
+        },
+        {
+          "key": "B",
+          "text": "腎臟"
+        },
+        {
+          "key": "C",
+          "text": "膀胱"
+        },
+        {
+          "key": "D",
+          "text": "腎上腺"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "99mTc雙磷酸鹽除骨骼外，因主要經尿路排泄，膀胱常承受較高吸收劑量，因此C正確。陷阱是直覺選腎臟而忽略尿液在膀胱滯留的劑量累積。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q068",
+      "number": 68,
+      "stem": "有關中子與質子比值（n/p）的敘述， 下列何者錯誤？",
+      "options": [
+        {
+          "key": "A",
+          "text": "原子序小於20的穩定元素， 其n/p約等於1"
+        },
+        {
+          "key": "B",
+          "text": "當n/p太低導致原子核不穩定時， 原子核可經由電子捕獲衰變趨於穩定"
+        },
+        {
+          "key": "C",
+          "text": "當元素質量數愈重時， 其n/p會從1降低至約0.7"
+        },
+        {
+          "key": "D",
+          "text": "當n/p太高導致原子核不穩定時， 原子核可經由β- 衰變趨於穩定"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "較重元素為抵銷質子間斥力，穩定核種的n/p應上升而非下降，所以C錯。A、B、D分別對應輕核近1與低/高n:p時常見的EC與β-趨穩機制。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q069",
+      "number": 69,
+      "stem": "有關輻射曝露的名詞與定義， 下列何者正確？",
+      "options": [
+        {
+          "key": "A",
+          "text": "吸收劑量定義為單位質量物質所吸收輻射之平均能量， 其單位為西弗"
+        },
+        {
+          "key": "B",
+          "text": "輻射加權因數是依輻射種類與能量而定， 亦代表各種輻射之相對生物效應"
+        },
+        {
+          "key": "C",
+          "text": "等價劑量定義為器官劑量與對應輻射加權因數乘積之和， 其單位為戈雷"
+        },
+        {
+          "key": "D",
+          "text": "射質因數是以ICRP-60號報告中規定之空氣中非限定線性能量轉移表示之"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "輻射加權因數依輻射種類與能量而定，用來反映相對生物效應，因此B正確。常見陷阱是把吸收劑量與等價劑量單位對調：前者是Gy、後者是Sv。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q070",
+      "number": 70,
+      "stem": "使用單光子電腦斷層掃描（SPECT）進行造影， 其光子從病人體內進入到偵測器後之順序為何？ ①閃爍晶 體 ②光電倍增管 ③脈高分析儀 ④準直儀 ⑤定位電路",
+      "options": [
+        {
+          "key": "A",
+          "text": "①②③④⑤"
+        },
+        {
+          "key": "B",
+          "text": "①④②③⑤"
+        },
+        {
+          "key": "C",
+          "text": "④①②⑤③"
+        },
+        {
+          "key": "D",
+          "text": "④①③②⑤"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "SPECT光子路徑為準直儀→閃爍晶體→光電倍增管→定位電路→脈高分析，因此順序是C。陷阱在於把PHA位置提前，忽略先要完成位置與脈衝形成。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q071",
+      "number": 71,
+      "stem": "當正子影像出現高攝取的皮膚輪廓（hot skin）， 且肺部有高攝取及縱膈腔有低攝取的影像特徵時， 其為下列 何種影像？",
+      "options": [
+        {
+          "key": "A",
+          "text": "non attenuation corrected（NAC）images"
+        },
+        {
+          "key": "B",
+          "text": "attenuation corrected（AC）images"
+        },
+        {
+          "key": "C",
+          "text": "maximum intensity projection（MIP）images"
+        },
+        {
+          "key": "D",
+          "text": "volume rendering（VR）images"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "hot skin合併肺部偏高、縱膈偏低是PET未做衰減校正時常見外觀，因此A（NAC）正確。AC影像會用CT衰減資訊校正，不應呈現這種典型分布。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q072",
+      "number": 72,
+      "stem": "15 rem等同於下列何者？",
+      "options": [
+        {
+          "key": "A",
+          "text": "150 mSv"
+        },
+        {
+          "key": "B",
+          "text": "15 grays"
+        },
+        {
+          "key": "C",
+          "text": "15 Sv"
+        },
+        {
+          "key": "D",
+          "text": "150 MBq"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "1 rem = 10 mSv，所以15 rem = 150 mSv，答案A正確。其餘選項混入Gy、Sv或活度單位，屬不同物理量。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q073",
+      "number": 73,
+      "stem": "已知99mTc的鉛半值層是0.27 mm， 一個鉛罐厚度為1.35 mm， 若裝入輻射曝露率為100 mR/h的99mTc藥品， 經 過鉛罐屏蔽後的曝露率約為下列何者？",
+      "options": [
+        {
+          "key": "A",
+          "text": "1.6 mR/h"
+        },
+        {
+          "key": "B",
+          "text": "3.1 mR/h"
+        },
+        {
+          "key": "C",
+          "text": "6.3 mR/h"
+        },
+        {
+          "key": "D",
+          "text": "12.5 mR/h"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "鉛厚1.35 mm相當於5個半值層（1.35/0.27），曝露率衰減為100×(1/2)^5≈3.1 mR/h，因此B正確。陷阱是把半值層當線性相減而非指數衰減。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q074",
+      "number": 74,
+      "stem": "下列何種準直儀（collimators）可將小器官影像放大？",
+      "options": [
+        {
+          "key": "A",
+          "text": "high sensitivity"
+        },
+        {
+          "key": "B",
+          "text": "diverging"
+        },
+        {
+          "key": "C",
+          "text": "converging"
+        },
+        {
+          "key": "D",
+          "text": "high resolution"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "Converging準直儀可把小器官影像放大到探測器視野上，因此C正確。高解析或高靈敏準直儀主要在解析度與計數效率取捨，非幾何放大。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q075",
+      "number": 75,
+      "stem": "有關劑量校正器之敘述， 下列何者正確？",
+      "options": [
+        {
+          "key": "A",
+          "text": "可用於環境污染偵測"
+        },
+        {
+          "key": "B",
+          "text": "須使用長半衰期核種執行一致性（constancy）校正"
+        },
+        {
+          "key": "C",
+          "text": "常使用57Co執行線性度（linearity）評估"
+        },
+        {
+          "key": "D",
+          "text": "因與造影無關， 無須進行幾何（geometry）校正"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "劑量校正器的一致性（constancy）通常用長半衰期標準源每日檢查，所以B正確。陷阱是把它當污染偵測器，或忽略線性與幾何校正同樣是必要品保。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q076",
+      "number": 76,
+      "stem": "若某1克組織對輻射的吸收劑量為0.5 Gy， 則5克的該組織對相同輻射的吸收劑量為何？",
+      "options": [
+        {
+          "key": "A",
+          "text": "0.1 Gy"
+        },
+        {
+          "key": "B",
+          "text": "0.5 Gy"
+        },
+        {
+          "key": "C",
+          "text": "1.0 Gy"
+        },
+        {
+          "key": "D",
+          "text": "2.5 Gy"
+        }
+      ],
+      "answer": "B",
+      "acceptedAnswers": [
+        "B"
+      ],
+      "explanation": "Gy是每公斤吸收能量（J/kg），在題目給定同一照射條件下，吸收劑量不因樣品質量改變而改變，所以仍是0.5 Gy，選B。陷阱是把總吸收能量與吸收劑量混為一談。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q077",
+      "number": 77,
+      "stem": "5 mCi的131I約具有多少個原子？ （t1/2=8天）",
+      "options": [
+        {
+          "key": "A",
+          "text": "1.85 ×1011"
+        },
+        {
+          "key": "B",
+          "text": "1.85 ×1012"
+        },
+        {
+          "key": "C",
+          "text": "1.85 ×1013"
+        },
+        {
+          "key": "D",
+          "text": "1.85 ×1014"
+        }
+      ],
+      "answer": "D",
+      "acceptedAnswers": [
+        "D"
+      ],
+      "explanation": "由A=λN可得N=A/λ，5 mCi=1.85×10^8 Bq，131I半衰期8天對應λ約1.0×10^-6 s^-1，計算約1.85×10^14個原子，因此D正確。常見陷阱是只做mCi轉Bq而漏掉衰變常數換算。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q078",
+      "number": 78,
+      "stem": "有關濾波反投影（FBP）影像重建法， 其濾波器（filter）特性的敘述， 下列何者正確？",
+      "options": [
+        {
+          "key": "A",
+          "text": "對於計數總量高的影像， 應採用較高截止頻率（cut-off frequency）的濾波器"
+        },
+        {
+          "key": "B",
+          "text": "濾波器之截止頻率越高， 其影像越模糊"
+        },
+        {
+          "key": "C",
+          "text": "影像太過模糊時， 增加截止頻率可降低影像之對比度"
+        },
+        {
+          "key": "D",
+          "text": "欲降低雜訊， 可增加濾波器之截止頻率"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "FBP中計數高、訊雜比較佳時可用較高cut-off保留更多高頻細節，因此A正確。陷阱是把高cut-off誤認為一定更模糊或更低雜訊，實際上通常是解析度上升但噪聲也上升。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q079",
+      "number": 79,
+      "stem": "下圖為假體經過SPECT掃描後的橫切面影像， 圖中白色箭頭處為一假影， 此假影最可能是下列何因素不佳所 致？",
+      "options": [
+        {
+          "key": "A",
+          "text": "均勻度（uniformity）"
+        },
+        {
+          "key": "B",
+          "text": "空間解析度（spatial resolution）"
+        },
+        {
+          "key": "C",
+          "text": "靈敏度（sensitivity）"
+        },
+        {
+          "key": "D",
+          "text": "能量解析度（energy resolution）"
+        }
+      ],
+      "answer": "A",
+      "acceptedAnswers": [
+        "A"
+      ],
+      "explanation": "白箭頭所示SPECT假影最常見於均勻度校正不良，故A正確。若把它誤判成解析度或能量解析問題，通常無法解釋其固定形態的環狀或條紋假影。",
+      "explanationStatus": "ready"
+    },
+    {
+      "id": "rg-112-2-q080",
+      "number": 80,
+      "stem": "關於旋轉中心（center of rotation）測試， 下列敘述何者錯誤？",
+      "options": [
+        {
+          "key": "A",
+          "text": "單頭攝影機較易出現偏移現象"
+        },
+        {
+          "key": "B",
+          "text": "雙頭攝影機較不易出現偏移現象"
+        },
+        {
+          "key": "C",
+          "text": "須使用四象限假體進行測試"
+        },
+        {
+          "key": "D",
+          "text": "旋轉中心測試目的為校正中心偏移"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "COR測試通常用點源或線源評估旋轉軸偏移，不是使用四象限假體，所以C為錯誤敘述。A、B、D都符合COR品保的基本目的與現象。",
+      "explanationStatus": "ready"
+    }
+  ]
+}
