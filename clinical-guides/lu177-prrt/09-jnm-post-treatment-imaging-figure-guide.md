@@ -8,7 +8,7 @@
 
 ## Figure 1：治療中出現新病灶，且反應呈現不均一
 
-![Figure 1](../../assets/lu177-prrt-figures/figure-1-new-lesion-and-mixed-response.png)
+![Figure 1](../../assets/lu177-prrt-figures/figure-1-new-lesion-and-mixed-response.webp)
 
 - **原文重點**：同一位 grade 3 pancreatic NET 病人，在 serial posttreatment SPECT 中可看到肝病灶體積逐 cycle 增加，但腹部另一個病灶攝取反而下降，最後導致 **提早停止 PRRT**。（JNM 2025，第3頁）
 - **臨床圖解**：
@@ -23,7 +23,7 @@
 
 ## Figure 2：反應很好時，可思考暫停後續 cycle
 
-![Figure 2](../../assets/lu177-prrt-figures/figure-2-marked-response-and-treatment-pause.png)
+![Figure 2](../../assets/lu177-prrt-figures/figure-2-marked-response-and-treatment-pause.webp)
 
 - **原文重點**：同樣是 pancreatic NET 個案，cycle 1 到 cycle 3 的 posttreatment SPECT 顯示明顯反應，最後 **不再給第 4 cycle**。（JNM 2025，第4頁）
 - **臨床圖解**：
@@ -34,7 +34,7 @@
 
 ## Figure 3：診斷 PET 到治療啟動之間，病人可能已經進展
 
-![Figure 3](../../assets/lu177-prrt-figures/figure-3-cycle-1-baseline-reset.png)
+![Figure 3](../../assets/lu177-prrt-figures/figure-3-cycle-1-baseline-reset.webp)
 
 - **原文重點**：病人的 68Ga-PSMA PET 與第一個治療 cycle 之間相隔 2.5 個月；cycle 1 後 24h SPECT/CT 顯示新的 PSMA-avid 骨病灶。（JNM 2025，第5頁）
 - **圖要傳達的決策訊息**：
@@ -43,7 +43,7 @@
 
 ## Figure 4：成像時間點不一致，本身就會製造假性差異
 
-![Figure 4](../../assets/lu177-prrt-figures/figure-4-timing-consistency.png)
+![Figure 4](../../assets/lu177-prrt-figures/figure-4-timing-consistency.webp)
 
 - **原文重點**：同一病人跨 cycle 有些在 24h 拍、有些在 2h 拍；2h 影像看起來病灶較不明顯、blood pool activity 較高，容易誤判。（JNM 2025，第6頁）
 - **圖要傳達的決策訊息**：
@@ -52,7 +52,7 @@
 
 ## Figure 5：PSA 下降，不代表所有病灶都在改善
 
-![Figure 5](../../assets/lu177-prrt-figures/figure-5-imaging-vs-psa-discordance.png)
+![Figure 5](../../assets/lu177-prrt-figures/figure-5-imaging-vs-psa-discordance.webp)
 
 - **原文重點**：病人 PSA 從 60.9 降到 12.1、再降到 7.6，但影像上肝病灶與骨病灶反應並不一致，後面甚至進展。（JNM 2025，第6頁）
 - **圖要傳達的決策訊息**：
@@ -61,7 +61,7 @@
 
 ## Figure 6：CT 成分能抓出 PSMA-negative / 低表現病灶
 
-![Figure 6](../../assets/lu177-prrt-figures/figure-6-psma-positive-and-negative-lesions.png)
+![Figure 6](../../assets/lu177-prrt-figures/figure-6-psma-positive-and-negative-lesions.webp)
 
 - **原文重點**：cycle 2 出現新的 PSMA-avid 骨病灶，同時 CT / fused SPECT/CT 顯示新的 **non-PSMA-avid hepatic lesion**；到 cycle 3 又進一步增大並新增更多肝病灶。（JNM 2025，第7頁）
 - **圖要傳達的決策訊息**：

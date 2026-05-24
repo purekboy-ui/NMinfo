@@ -2061,6 +2061,24 @@ a:hover { text-decoration: underline; }
         grid-template-columns: 1fr;
     }
 
+    .zoomable-frame::after {
+        opacity: 1;
+        transform: translateY(0);
+        right: 12px;
+        bottom: 12px;
+        font-size: 0.84rem;
+    }
+
+    .image-lightbox-shell {
+        padding: 16px;
+        border-radius: 22px;
+    }
+
+    .image-lightbox-media {
+        max-height: 68vh;
+        border-radius: 16px;
+    }
+
     .progressive-section {
         margin-bottom: 14px;
         border-radius: 16px;
@@ -4461,6 +4479,124 @@ a:hover { text-decoration: underline; }
     color: var(--text-primary);
     font-size: 0.98rem;
     line-height: 1.45;
+}
+
+.zoomable-frame {
+    position: relative;
+    cursor: zoom-in;
+}
+
+.zoomable-frame::after {
+    content: "放大檢視";
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    padding: 7px 12px;
+    border-radius: 999px;
+    background: rgba(24, 34, 43, 0.76);
+    color: #fffdfb;
+    font-size: 0.9rem;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    pointer-events: none;
+}
+
+.zoomable-frame:hover::after,
+.zoomable-frame:focus-visible::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.zoomable-media {
+    transition: transform 0.28s ease, filter 0.28s ease;
+}
+
+.zoomable-frame:hover .zoomable-media,
+.zoomable-frame:focus-visible .zoomable-media {
+    transform: scale(1.012);
+    filter: saturate(1.02);
+}
+
+.image-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 1900;
+    display: grid;
+    place-items: center;
+    padding: clamp(18px, 3vw, 34px);
+    background: rgba(14, 20, 28, 0.78);
+    backdrop-filter: blur(18px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.22s ease;
+}
+
+.image-lightbox.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.image-lightbox-shell {
+    position: relative;
+    width: min(1220px, 100%);
+    padding: clamp(18px, 2vw, 26px);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 28px;
+    background: linear-gradient(180deg, rgba(28,36,44,0.9), rgba(15,20,28,0.96));
+    box-shadow: 0 38px 120px rgba(0,0,0,0.42);
+}
+
+.image-lightbox-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.12);
+    color: #fff;
+    cursor: pointer;
+}
+
+.image-lightbox-figure {
+    margin: 0;
+    display: grid;
+    gap: 14px;
+}
+
+.image-lightbox-media {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    max-height: min(76vh, 1080px);
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 22px 60px rgba(0,0,0,0.32);
+    background: rgba(255,255,255,0.04);
+}
+
+.image-lightbox-caption {
+    margin: 0 auto;
+    width: min(920px, 100%);
+    color: rgba(244, 239, 231, 0.92);
+    font-size: 1.02rem;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.image-lightbox-hint {
+    margin: 10px 0 0;
+    color: rgba(244, 239, 231, 0.62);
+    font-size: 0.92rem;
+    text-align: center;
+}
+
+body.is-lightbox-open {
+    overflow: hidden;
 }
 
 .learning-special-surface {

@@ -3429,7 +3429,7 @@ Lu177PSMA: {
                         <h4>cycle 1 後治療影像要被當成新的真實基線</h4>
                         <p>這張圖最重要的訊息不是「有沒有攝取」，而是提醒你：從診斷 PSMA PET 到真正進入治療，中間病程可能已經變了。</p>
                     </div>
-                    <img src="assets/lu177-prrt-figures/figure-3-cycle-1-baseline-reset.png" alt="Lu-177 後治療影像示意：治療啟動時的 cycle 1 影像可重設真正基線">
+                    <img src="assets/lu177-prrt-figures/figure-3-cycle-1-baseline-reset.webp" alt="Lu-177 後治療影像示意：治療啟動時的 cycle 1 影像可重設真正基線">
                     <figcaption>
                         <strong>臨床情境</strong>
                         <span>病人雖然已經完成治療前 PSMA PET 篩選，但正式進到第 1 個 cycle 時，病灶分布與活性不一定還停在原本那個樣子。</span>
@@ -3445,7 +3445,7 @@ Lu177PSMA: {
                         <h4>PSA 下降不等於所有病灶都在改善</h4>
                         <p>這張圖最適合拿來教「生化反應」和「病灶層級反應」不是同一件事。</p>
                     </div>
-                    <img src="assets/lu177-prrt-figures/figure-5-imaging-vs-psa-discordance.png" alt="Lu-177 後治療影像示意：PSA 下降但不同病灶反應不一致">
+                    <img src="assets/lu177-prrt-figures/figure-5-imaging-vs-psa-discordance.webp" alt="Lu-177 後治療影像示意：PSA 下降但不同病灶反應不一致">
                     <figcaption>
                         <strong>臨床情境</strong>
                         <span>病人抽血數字變好時，團隊很容易直覺認為治療正在全面受益。</span>
@@ -3461,7 +3461,7 @@ Lu177PSMA: {
                         <h4>SPECT/CT 的價值在於抓出 target-positive 與 target-negative 分化</h4>
                         <p>這張圖要讀者警覺：不是全身病灶只要有一部分很亮，就代表整體都還屬於可治療疾病。</p>
                     </div>
-                    <img src="assets/lu177-prrt-figures/figure-6-psma-positive-and-negative-lesions.png" alt="Lu-177 後治療影像示意：同時存在 PSMA 陽性與陰性病灶">
+                    <img src="assets/lu177-prrt-figures/figure-6-psma-positive-and-negative-lesions.webp" alt="Lu-177 後治療影像示意：同時存在 PSMA 陽性與陰性病灶">
                     <figcaption>
                         <strong>臨床情境</strong>
                         <span>後線 mCRPC 很可能同時存在仍保有 PSMA 的病灶，以及已去分化、幾乎不再屬於同一路徑的病灶。</span>
@@ -3598,7 +3598,7 @@ Lu177DOTATATE: {
                         <h4>有些病灶變好，不代表整體仍在同一條受益軌道上</h4>
                         <p>這張圖最適合拿來教 PRRT 的 mixed response，因為它會直接挑戰「只要某些病灶縮小就算成功」的直覺。</p>
                     </div>
-                    <img src="assets/lu177-prrt-figures/figure-1-new-lesion-and-mixed-response.png" alt="Lu-177 PRRT 後治療影像示意：新病灶與 mixed response">
+                    <img src="assets/lu177-prrt-figures/figure-1-new-lesion-and-mixed-response.webp" alt="Lu-177 PRRT 後治療影像示意：新病灶與 mixed response">
                     <figcaption>
                         <strong>臨床情境</strong>
                         <span>NET 病人接受 PRRT 後，某些病灶攝取下降或體積變小，但另一些病灶卻冒出新訊號或開始走不同方向。</span>
@@ -3614,7 +3614,7 @@ Lu177DOTATATE: {
                         <h4>反應非常好時，可以討論暫停，但不是自動少打一針</h4>
                         <p>這張圖的價值在於提醒團隊：PRRT 並不是每位病人都一定要機械式打到同一個 cycle 數。</p>
                     </div>
-                    <img src="assets/lu177-prrt-figures/figure-2-marked-response-and-treatment-pause.png" alt="Lu-177 PRRT 後治療影像示意：反應明顯時可考慮暫停療程">
+                    <img src="assets/lu177-prrt-figures/figure-2-marked-response-and-treatment-pause.webp" alt="Lu-177 PRRT 後治療影像示意：反應明顯時可考慮暫停療程">
                     <figcaption>
                         <strong>臨床情境</strong>
                         <span>部分病人在早期 cycle 就出現非常明顯的影像反應，這時臨床上會開始出現「是否還要照原計畫繼續」的問題。</span>
@@ -3630,7 +3630,7 @@ Lu177DOTATATE: {
                         <h4>跨 cycle 成像時點不一致，會製造假性差異</h4>
                         <p>這張圖對院內流程教育很重要，因為它在說明「看起來變了」有時候只是方法學不一致。</p>
                     </div>
-                    <img src="assets/lu177-prrt-figures/figure-4-timing-consistency.png" alt="Lu-177 後治療影像示意：不同時間點成像造成假性差異">
+                    <img src="assets/lu177-prrt-figures/figure-4-timing-consistency.webp" alt="Lu-177 後治療影像示意：不同時間點成像造成假性差異">
                     <figcaption>
                         <strong>臨床情境</strong>
                         <span>如果第 1 次和第 2 次 posttreatment SPECT/CT 拍攝時間不同，病灶與背景比就可能因時間差而看起來不一樣。</span>
@@ -3776,12 +3776,12 @@ OperationGuide: {
     category: "toolbox",
     isGallery: true,
     gallery: [
-        { src: "assets/guide/01.png", desc: "第一步" },
-        { src: "assets/guide/02.png", desc: "第二步" },
-        { src: "assets/guide/03.png", desc: "第三步" },
-        { src: "assets/guide/04.png", desc: "第四步" },
-        { src: "assets/guide/05.png", desc: "第五步" },
-        { src: "assets/guide/06.png", desc: "第六步" }
+        { src: "assets/guide/01.webp", desc: "第一步" },
+        { src: "assets/guide/02.webp", desc: "第二步" },
+        { src: "assets/guide/03.webp", desc: "第三步" },
+        { src: "assets/guide/04.webp", desc: "第四步" },
+        { src: "assets/guide/05.webp", desc: "第五步" },
+        { src: "assets/guide/06.webp", desc: "第六步" }
     ],
     content: []
 }
@@ -6071,219 +6071,219 @@ const EXAM_FLOW_CATEGORIES = new Set(['pet', 'endocrine', 'cardiac', 'gi', 'bone
 
 const EXAM_INLINE_GUIDE_IMAGES = {
     NMBasics: {
-        src: 'assets/guide/nm-basics-guide.png',
+        src: 'assets/guide/nm-basics-guide.webp',
         alt: '核醫原理、儀器與技術導覽圖解，說明功能影像、gamma camera、SPECT、PET、QC 與後續小學堂學習順序。'
     },
     DocumentControl: {
-        src: 'assets/guide/document-control-guide.png',
+        src: 'assets/guide/document-control-guide.webp',
         alt: '文件管理圖解，說明品質手冊、程序書、作業規範、表單與紀錄的角色，並提醒外來文件與品質目標也要受控與可追溯。'
     },
     PatientQA: {
-        src: 'assets/guide/patient-qa-guide.png',
+        src: 'assets/guide/patient-qa-guide.webp',
         alt: '病人衛教圖解，說明核醫溝通順序應先辨識風險，再解釋檢查目的、交代配合事項，最後確認病人真的理解。'
     },
     Radiopharmacy: {
-        src: 'assets/guide/radiopharmacy-guide.png',
+        src: 'assets/guide/radiopharmacy-guide.webp',
         alt: '熱核室實務圖解，說明到貨與放行、抽藥與貼標、運送與交接，以及污染偵測與廢棄紀錄等核心流程。'
     },
     RadiationSafety: {
-        src: 'assets/guide/radiation-safety-guide.png',
+        src: 'assets/guide/radiation-safety-guide.webp',
         alt: '輻射防護圖解，說明核醫科日常的開工條件、劑量監測、事故處理、特殊族群保護與紀錄追溯等重點。'
     },
     I131Ward: {
-        src: 'assets/guide/i131-ward-guide.png',
+        src: 'assets/guide/i131-ward-guide.webp',
         alt: 'I-131 病房圖解，說明住院前準備、給藥、補水與排尿、污染管理，以及出院量測與返家限制的完整流程。'
     },
     EmergencyCart: {
-        src: 'assets/guide/emergency-cart-guide.png',
+        src: 'assets/guide/emergency-cart-guide.webp',
         alt: '急救車管理圖解，說明每日檢查、3 月與 9 月單位自行盤點、6 月與 12 月聯合藥劑科盤點，以及異常通報與重整。'
     },
     Bone: {
-        src: 'assets/guide/bone-scan-indications.png',
+        src: 'assets/guide/bone-scan-indications.webp',
         alt: 'Bone scan 適應症圖解，說明骨轉移搜尋、不明骨痛或壓力性骨折、骨髓炎或感染評估，以及全身多發骨病灶篩查。'
     },
     Brain: {
-        src: 'assets/guide/brain-perfusion-indications.png',
+        src: 'assets/guide/brain-perfusion-indications.webp',
         alt: '腦灌流掃描適應症圖解，說明失智症輔助評估、癲癇病灶定位、腦血管功能或局部腦灌流異常，以及腦死判定或特殊神經個案。'
     },
     BrainPET: {
-        src: 'assets/guide/brain-fdg-pet-indications.png',
+        src: 'assets/guide/brain-fdg-pet-indications.webp',
         alt: 'Brain FDG PET 適應症圖解，說明失智症鑑別、癲癇術前定位、腦腫瘤治療後評估，以及腦炎或特殊神經代謝疾病評估。'
     },
     POSLUMA: {
-        src: 'assets/guide/psma-pet-indications.png',
+        src: 'assets/guide/psma-pet-indications.webp',
         alt: 'PSMA PET 適應症圖解，說明初始高風險分期、生化復發、治療規劃，以及標靶治療前的 PSMA 表現評估。'
     },
     Ga68DOTATOC: {
-        src: 'assets/guide/ga68-dotatoc-indications.png',
+        src: 'assets/guide/ga68-dotatoc-indications.webp',
         alt: 'Ga-68 DOTATOC PET 適應症圖解，說明神經內分泌腫瘤定位、初始分期、PRRT 前受體評估，以及復發或追蹤。'
     },
     AmyloidPET: {
-        src: 'assets/guide/amyloid-pet-indications.png',
+        src: 'assets/guide/amyloid-pet-indications.webp',
         alt: 'Amyloid PET 適應症圖解，說明不典型或年輕型認知障礙、失智症鑑別困難、特定 MCI 個案，以及抗 amyloid 治療評估脈絡。'
     },
     NaFPET: {
-        src: 'assets/guide/naf-pet-indications.png',
+        src: 'assets/guide/naf-pet-indications.webp',
         alt: 'F-18 NaF PET/CT 適應症圖解，說明骨轉移更敏感搜尋、傳統骨掃描不夠清楚、高風險癌症骨病灶評估，以及複雜骨病變定位。'
     },
     CardiacPET: {
-        src: 'assets/guide/cardiac-pet-indications.png',
+        src: 'assets/guide/cardiac-pet-indications.webp',
         alt: 'Cardiac PET 適應症圖解，說明冠心病灌流評估、心肌存活性、複雜或高 BMI 個案的更精準定量，以及特定心臟發炎或浸潤問題。'
     },
     Thyroid: {
-        src: 'assets/guide/thyroid-scan-indications.png',
+        src: 'assets/guide/thyroid-scan-indications.webp',
         alt: '甲狀腺掃描適應症圖解，說明甲狀腺亢進原因判斷、甲狀腺結節功能判斷、異位或殘餘功能組織定位，以及放射碘治療前攝碘評估。'
     },
     DMSA: {
-        src: 'assets/guide/dmsa-indications.png',
+        src: 'assets/guide/dmsa-indications.webp',
         alt: 'DMSA 腎皮質掃描適應症圖解，說明急性腎盂腎炎、腎疤痕追蹤、單側腎功能比例，以及先天或結構異常腎臟評估。'
     },
     DTPA: {
-        src: 'assets/guide/dtpa-indications.png',
+        src: 'assets/guide/dtpa-indications.webp',
         alt: 'DTPA 腎圖適應症圖解，說明水腎或阻塞懷疑、分腎功能評估、術前術後追蹤，以及腎灌流與 GFR 相關評估。'
     },
     MAG3: {
-        src: 'assets/guide/mag3-indications.png',
+        src: 'assets/guide/mag3-indications.webp',
         alt: 'MAG3 腎動態掃描適應症圖解，說明水腎或阻塞疑問、術前術後追蹤、分腎功能評估，以及移植腎或複雜尿路評估。'
     },
     Cystography: {
-        src: 'assets/guide/cystography-indications.png',
+        src: 'assets/guide/cystography-indications.webp',
         alt: '膀胱尿路逆流檢查適應症圖解，說明反覆泌尿道感染兒童、已知 VUR 追蹤、先天泌尿道異常，以及神經性膀胱或高風險個案。'
     },
     Scrotal: {
-        src: 'assets/guide/scrotal-scan-indications.png',
+        src: 'assets/guide/scrotal-scan-indications.webp',
         alt: '睪丸掃描適應症圖解，說明睪丸扭轉懷疑、副睪炎或睪丸炎、超音波不明確的急症，以及兒童或年輕男性急診鑑別。'
     },
     LungVQ: {
-        src: 'assets/guide/lung-vq-indications.png',
+        src: 'assets/guide/lung-vq-indications.webp',
         alt: 'Lung V/Q 掃描適應症圖解，說明肺栓塞評估、不能做顯影 CT 的病人、慢性血栓或肺高壓篩查，以及術前肺功能分區評估。'
     },
     Lung: {
-        src: 'assets/guide/lung-perfusion-indications.png',
+        src: 'assets/guide/lung-perfusion-indications.webp',
         alt: '肺灌注掃描適應症圖解，說明肺栓塞懷疑、術前肺功能分區、肺血流分布不均，以及無法做其他顯影檢查時的肺灌流評估。'
     },
     CardiacAmyloid: {
-        src: 'assets/guide/cardiac-amyloid-indications.png',
+        src: 'assets/guide/cardiac-amyloid-indications.webp',
         alt: '心臟類澱粉沉積影像適應症圖解，說明厚心室與心衰竭病人、可疑浸潤性心肌病、周邊神經症狀合併心臟問題，以及疑似 ATTR 的非侵入性診斷路徑。'
     },
     Parathyroid: {
-        src: 'assets/guide/parathyroid-indications.png',
+        src: 'assets/guide/parathyroid-indications.webp',
         alt: '副甲狀腺掃描適應症圖解，說明原發性副甲狀腺機能亢進術前定位、疑似副甲狀腺腺瘤、再手術或解剖複雜個案，以及異位副甲狀腺搜尋。'
     },
     MIBG: {
-        src: 'assets/guide/mibg-indications.png',
+        src: 'assets/guide/mibg-indications.webp',
         alt: 'MIBG 掃描適應症圖解，說明嗜鉻細胞瘤或副神經節瘤、神經母細胞瘤分期、多發或轉移病灶搜尋，以及治療前攝取能力評估。'
     },
     TRODAT: {
-        src: 'assets/guide/trodat-indications.png',
+        src: 'assets/guide/trodat-indications.webp',
         alt: 'TRODAT 適應症圖解，說明巴金森症候群鑑別、原發性巴金森病與本態性顫抖區分、不典型動作症狀，以及臨床診斷輔助。'
     },
     NP59: {
-        src: 'assets/guide/np59-indications.png',
+        src: 'assets/guide/np59-indications.webp',
         alt: 'NP-59 腎上腺皮質掃描適應症圖解，說明原發性醛固酮增多症、Cushing syndrome 皮質功能評估、單側與雙側功能性病灶分流，以及特殊腎上腺皮質個案定位。'
     },
     I131WBS: {
-        src: 'assets/guide/i131-wbs-indications.png',
+        src: 'assets/guide/i131-wbs-indications.webp',
         alt: 'I-131 全身掃描適應症圖解，說明術後殘餘組織搜尋、復發偵測、轉移病灶搜尋，以及治療後評估。'
     },
     Salivary: {
-        src: 'assets/guide/salivary-scan-indications.png',
+        src: 'assets/guide/salivary-scan-indications.webp',
         alt: '唾液腺掃描適應症圖解，說明 Sjogren syndrome 評估、口乾症狀功能檢查、治療後功能追蹤，以及雙側大唾液腺整體功能比較。'
     },
     Salivary2: {
-        src: 'assets/guide/salivary-scan-indications.png',
+        src: 'assets/guide/salivary-scan-indications.webp',
         alt: '唾液腺掃描適應症圖解，說明 Sjogren syndrome 評估、口乾症狀功能檢查、治療後功能追蹤，以及雙側大唾液腺整體功能比較。'
     },
     Cisternography: {
-        src: 'assets/guide/cisternography-indications.png',
+        src: 'assets/guide/cisternography-indications.webp',
         alt: '腦脊髓液池掃描適應症圖解，說明腦脊髓液漏、正常壓力水腦症輔助評估、分流術前後問題，以及特殊腦脊髓液循環障礙。'
     },
     MPI_Tc99m: {
-        src: 'assets/guide/mpi-indications.png',
+        src: 'assets/guide/mpi-indications.webp',
         alt: 'MPI 適應症圖解，說明胸痛或疑似冠心病、活動後症狀、已知冠心病風險分層，以及治療後追蹤。'
     },
     MPI_Tl201: {
-        src: 'assets/guide/mpi-tl201-indications.png',
+        src: 'assets/guide/mpi-tl201-indications.webp',
         alt: 'Tl-201 MPI 適應症圖解，說明冠心病缺血評估、心肌存活性評估、血管重建前決策，以及既有冠心病追蹤。'
     },
     MUGA: {
-        src: 'assets/guide/muga-indications.png',
+        src: 'assets/guide/muga-indications.webp',
         alt: 'MUGA 適應症圖解，說明化療前基準評估、化療中追蹤、需要高重現性射出分率量測，以及特定心室功能監測。'
     },
     Venography: {
-        src: 'assets/guide/venography-indications.png',
+        src: 'assets/guide/venography-indications.webp',
         alt: '靜脈造影掃描適應症圖解，說明深層靜脈栓塞懷疑、超音波結果不清楚、骨盆或近端靜脈阻塞評估，以及側枝循環或靜脈通暢性追蹤。'
     },
     Lymphedema: {
-        src: 'assets/guide/lymphedema-indications.png',
+        src: 'assets/guide/lymphedema-indications.webp',
         alt: '淋巴水腫掃描適應症圖解，說明原發性淋巴水腫、術後或放療後腫脹、單側肢體慢性腫脹鑑別，以及治療與復健規劃。'
     },
     SLN: {
-        src: 'assets/guide/sentinel-node-indications.png',
+        src: 'assets/guide/sentinel-node-indications.webp',
         alt: '前哨淋巴結掃描適應症圖解，說明乳癌、黑色素瘤、部分婦癌或特殊腫瘤定位，以及微創分期與手術規劃。'
     },
     PET: {
-        src: 'assets/guide/fdg-pet-indications.png',
+        src: 'assets/guide/fdg-pet-indications.webp',
         alt: 'FDG PET/CT 適應症圖解，說明初始分期、治療反應評估、復發或再分期，以及不明原發灶或全身活躍病灶搜尋。'
     },
     Gastric: {
-        src: 'assets/guide/gastric-emptying-indications.png',
+        src: 'assets/guide/gastric-emptying-indications.webp',
         alt: '胃排空掃描適應症圖解，說明疑似胃輕癱、糖尿病相關胃動力問題、手術後或功能性上腹不適，以及治療前後追蹤。'
     },
     GIBleed: {
-        src: 'assets/guide/gi-bleed-indications.png',
+        src: 'assets/guide/gi-bleed-indications.webp',
         alt: '腸胃道出血掃描適應症圖解，說明間歇性下消化道出血、內視鏡找不到出血點、反覆血便或黑便，以及介入或手術前定位輔助。'
     },
     Meckel: {
-        src: 'assets/guide/meckel-indications.png',
+        src: 'assets/guide/meckel-indications.webp',
         alt: 'Meckel 掃描適應症圖解，說明兒童無痛性下消化道出血、不明原因反覆血便、年輕病人出血來源追查，以及手術前診斷線索。'
     },
     Liver: {
-        src: 'assets/guide/liver-scan-indications.png',
+        src: 'assets/guide/liver-scan-indications.webp',
         alt: '肝脾掃描適應症圖解，說明肝脾分布異常、肝臟網狀內皮功能評估、脾組織定位，以及特殊網狀內皮系統病變輔助評估。'
     },
     LiverHemangioma: {
-        src: 'assets/guide/liver-hemangioma-indications.png',
+        src: 'assets/guide/liver-hemangioma-indications.webp',
         alt: '肝血管瘤核醫檢查適應症圖解，說明可疑肝腫塊鑑別、CT 或 MRI 不典型、良性病灶確認輔助，以及多發肝病灶中鎖定特定病灶。'
     },
     Biliary: {
-        src: 'assets/guide/biliary-indications.png',
+        src: 'assets/guide/biliary-indications.webp',
         alt: '膽道掃描適應症圖解，說明急性膽囊炎懷疑、膽道阻塞或膽漏、膽囊功能評估，以及術後或移植後膽道問題。'
     },
     Ga67: {
-        src: 'assets/guide/ga67-indications.png',
+        src: 'assets/guide/ga67-indications.webp',
         alt: 'Ga-67 掃描適應症圖解，說明慢性感染或發炎、脊椎骨髓炎或深部感染、肺部或縱膈腔慢性發炎問題，以及特定腫瘤或發炎性疾病追蹤。'
     },
     WBCScan: {
-        src: 'assets/guide/wbc-scan-indications.png',
+        src: 'assets/guide/wbc-scan-indications.webp',
         alt: '白血球掃描適應症圖解，說明骨髓炎、發燒找不到原因、術後或植入物相關感染，以及腹部或軟組織深部感染。'
     },
     I131MIBG: {
-        src: 'assets/guide/i131-mibg-indications.png',
+        src: 'assets/guide/i131-mibg-indications.webp',
         alt: 'I-131 MIBG 治療適應症圖解，說明高風險或復發神經母細胞瘤、轉移性嗜鉻細胞瘤或副神經節瘤，以及治療前需確認 MIBG 攝取與骨髓腎功能條件。'
     },
     Sm153: {
-        src: 'assets/guide/sm153-indications.png',
+        src: 'assets/guide/sm153-indications.webp',
         alt: 'Sm-153 骨痛緩解治療適應症圖解，說明多發成骨性骨轉移、疼痛已影響生活品質，以及治療前需確認骨掃描攝取與骨髓儲備。'
     },
     I131: {
-        src: 'assets/guide/i131-indications.png',
+        src: 'assets/guide/i131-indications.webp',
         alt: 'I-131 治療適應症圖解，說明 Graves disease、toxic nodule 或 multinodular goiter、甲狀腺癌術後殘餘組織消融，以及仍會攝碘的復發或轉移性分化型甲狀腺癌。'
     },
     Ra223: {
-        src: 'assets/guide/ra223-indications.png',
+        src: 'assets/guide/ra223-indications.webp',
         alt: 'Ra-223 治療適應症圖解，說明 mCRPC 合併症狀性骨轉移、無已知內臟轉移，以及治療前需評估骨髓儲備。'
     },
     Lu177PSMA: {
-        src: 'assets/guide/lu177-psma-indications.png',
+        src: 'assets/guide/lu177-psma-indications.webp',
         alt: 'Lu-177 PSMA 治療適應症圖解，說明 mCRPC、PSMA 影像陽性、標準治療後仍進展，以及整體病灶仍屬 PSMA 可標靶疾病。'
     },
     Lu177DOTATATE: {
-        src: 'assets/guide/lu177-dotatate-indications.png',
+        src: 'assets/guide/lu177-dotatate-indications.webp',
         alt: 'Lu-177 PRRT 適應症圖解，說明無法切除或轉移性神經內分泌腫瘤、Somatostatin analog 後仍進展、Ga-68 DOTATOC 或 DOTATATE PET 陽性，以及治療前需確認腎功能與血球條件。'
     },
     Y90SIRT: {
-        src: 'assets/guide/y90-sirt-indications.png',
+        src: 'assets/guide/y90-sirt-indications.webp',
         alt: 'Y-90 肝動脈放射栓塞適應症圖解，說明原發性肝癌、肝轉移、肝臟主導病程，以及適合肝動脈局部治療的解剖與肝功能條件。'
     }
 };
@@ -6856,7 +6856,7 @@ function buildHomeHubHTML() {
                         </div>
                     </div>
                     <figure class="home-hero-art">
-                        <img src="assets/home/home-hero-stand-guide.png" alt="核醫科主題首頁主視覺，結合 PET/CT、gamma camera 與原子結構元素。" loading="eager" decoding="async">
+                        <img src="assets/home/home-hero-stand-guide.webp" alt="核醫科主題首頁主視覺，結合 PET/CT、gamma camera 與原子結構元素。" loading="eager" decoding="async">
                     </figure>
                 </div>
             </section>
@@ -7452,6 +7452,7 @@ function renderView(viewName) {
 
     setTimeout(() => {
         container.innerHTML = buildContentHTML(viewName, data);
+        decorateLightboxTargets(container);
         container.style.opacity = '1';
         container.style.transform = 'translateY(0)';
         container.setAttribute('aria-busy', 'false');
@@ -7946,8 +7947,107 @@ function setSidebarOpen(isOpen) {
     document.getElementById('mobile-menu-toggle')?.classList.toggle('active', isOpen);
 }
 
+function ensureImageLightbox() {
+    if (document.getElementById('image-lightbox')) return;
+
+    const lightbox = document.createElement('div');
+    lightbox.id = 'image-lightbox';
+    lightbox.className = 'image-lightbox';
+    lightbox.setAttribute('aria-hidden', 'true');
+    lightbox.innerHTML = `
+        <div class="image-lightbox-shell">
+            <button type="button" class="image-lightbox-close image-lightbox-dismiss" aria-label="關閉圖片">✕</button>
+            <figure class="image-lightbox-figure">
+                <img class="image-lightbox-media" src="" alt="">
+                <figcaption class="image-lightbox-caption"></figcaption>
+            </figure>
+            <p class="image-lightbox-hint">點空白處關閉</p>
+        </div>
+    `;
+    document.body.appendChild(lightbox);
+
+    const media = lightbox.querySelector('.image-lightbox-media');
+    const caption = lightbox.querySelector('.image-lightbox-caption');
+
+    const closeLightbox = () => {
+        lightbox.classList.remove('is-open');
+        lightbox.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('is-lightbox-open');
+        media.setAttribute('src', '');
+        media.setAttribute('alt', '');
+        caption.textContent = '';
+    };
+
+    const openLightbox = (target) => {
+        if (!target) return;
+        media.setAttribute('src', target.dataset.lightboxSrc || '');
+        media.setAttribute('alt', target.dataset.lightboxAlt || '');
+        caption.textContent = target.dataset.lightboxCaption || target.dataset.lightboxAlt || '';
+        lightbox.classList.add('is-open');
+        lightbox.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('is-lightbox-open');
+    };
+
+    document.addEventListener('click', (event) => {
+        const trigger = event.target.closest('[data-lightboxable="true"]');
+        if (trigger) {
+            event.preventDefault();
+            openLightbox(trigger);
+            return;
+        }
+
+        if (
+            lightbox.classList.contains('is-open') &&
+            (
+                event.target === lightbox ||
+                event.target.closest('.image-lightbox-dismiss') ||
+                !event.target.closest('.image-lightbox-figure')
+            )
+        ) {
+            closeLightbox();
+        }
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if ((event.key === 'Enter' || event.key === ' ') && event.target.closest('[data-lightboxable="true"]')) {
+            event.preventDefault();
+            openLightbox(event.target.closest('[data-lightboxable="true"]'));
+            return;
+        }
+
+        if (event.key === 'Escape' && lightbox.classList.contains('is-open')) {
+            closeLightbox();
+        }
+    });
+}
+
+function registerLightboxTarget(element, caption = '') {
+    const image = element?.querySelector('img');
+    if (!element || !image) return;
+
+    const resolvedCaption = caption || image.getAttribute('alt') || '放大圖片';
+    element.dataset.lightboxable = 'true';
+    element.dataset.lightboxSrc = image.getAttribute('src') || '';
+    element.dataset.lightboxAlt = image.getAttribute('alt') || '';
+    element.dataset.lightboxCaption = resolvedCaption;
+    element.classList.add('zoomable-frame');
+    if (!element.hasAttribute('tabindex')) element.tabIndex = 0;
+    element.setAttribute('role', 'button');
+    element.setAttribute('aria-label', `放大檢視：${resolvedCaption}`);
+    image.classList.add('zoomable-media');
+    image.setAttribute('draggable', 'false');
+}
+
+function decorateLightboxTargets(root = document) {
+    root.querySelectorAll('.home-hero-art, .inline-guide-figure, .therapy-figure-card, .guide-step-card').forEach((element) => {
+        const captionText = element.querySelector('figcaption, .guide-step-desc, .therapy-figure-header h4')?.textContent?.trim() || '';
+        registerLightboxTarget(element, captionText);
+    });
+}
+
 (function initNavigation() {
     initSidebarMotion();
+    ensureImageLightbox();
 
     // Nav group toggles
     document.querySelectorAll('.nav-group-toggle').forEach(toggle => {
