@@ -5663,20 +5663,6 @@ const HOME_HUB_CONFIG = {
     ],
     resourceLinks: [
         {
-            href: 'https://i131-ward-scheduler.web.app/',
-            kicker: '排程工具',
-            title: 'I-131 病房排程',
-            desc: '先核對可入院日、住院節奏與病房安排。',
-            variant: 'warning'
-        },
-        {
-            href: 'https://nminfo-petarr.web.app/',
-            kicker: '智慧排程',
-            title: 'PET 智慧排程',
-            desc: '把檢查時段、流程條件與安排順序快速拉齊。',
-            variant: 'success'
-        },
-        {
             href: 'patient-education/',
             kicker: '子網站',
             title: '核醫衛教陪伴站',
@@ -5710,6 +5696,20 @@ const HOME_HUB_CONFIG = {
             title: '核醫國考題研究',
             desc: '依年度查看放射師與醫師國考題，逐題核對正解與選項解析。',
             variant: 'info'
+        },
+        {
+            href: 'https://i131-ward-scheduler.web.app/',
+            kicker: '排程工具',
+            title: 'I-131 病房排程',
+            desc: '先核對可入院日、住院節奏與病房安排。',
+            variant: 'warning'
+        },
+        {
+            href: 'https://nminfo-petarr.web.app/',
+            kicker: '智慧排程',
+            title: 'PET 智慧排程',
+            desc: '把檢查時段、流程條件與安排順序快速拉齊。',
+            variant: 'success'
         }
     ]
 };
@@ -6821,6 +6821,7 @@ function buildLearningGuideHTML(key, data) {
 
 function buildHomeHubHTML() {
     const resourceLinks = [
+        ...HOME_HUB_CONFIG.resourceLinks,
         {
             href: 'https://gen-lang-client-0435635260.web.app/',
             kicker: '輔助工具',
@@ -6834,8 +6835,7 @@ function buildHomeHubHTML() {
             title: '核醫排檢 DEMO',
             desc: '適合做流程展示，或拿來快速說明排檢邏輯。',
             variant: 'success'
-        },
-        ...HOME_HUB_CONFIG.resourceLinks
+        }
     ];
 
     return `

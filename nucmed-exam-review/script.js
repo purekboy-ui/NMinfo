@@ -103,40 +103,6 @@ const renderSidebar = () => {
     const isActiveTrack = button.dataset.trackId === state.selectedTrackId && ['track', 'paper'].includes(state.route);
     button.classList.toggle('is-active', isActiveTrack);
   });
-
-  ['nucmed', 'rps', 'rpo'].forEach((trackId) => {
-    const tree = document.getElementById(`paper-tree-${trackId}`);
-    const track = getTrack(trackId);
-    const papers = getSortedTrackPapers(trackId);
-    const groups = [...groupPapersByYear(papers).entries()];
-    const isCurrentTrack = trackId === state.selectedTrackId && ['track', 'paper'].includes(state.route);
-
-    tree.classList.toggle('is-visible', isCurrentTrack);
-    tree.innerHTML = `
-      <div class="paper-tree-intro">
-        <span>${track?.latestYearLabel || ''}</span>
-        <span>${papers.length} 份</span>
-      </div>
-      ${groups.map(([year, items], index) => `
-        <details class="paper-group" ${index === 0 ? 'open' : ''}>
-          <summary>${year} 年</summary>
-          <div class="paper-group-list">
-            ${items.map((paper) => `
-              <button
-                type="button"
-                class="paper-link ${state.selectedPaperId === paper.id && state.route === 'paper' ? 'is-active' : ''}"
-                data-action="open-paper"
-                data-paper-id="${paper.id}"
-              >
-                <strong>${paper.yearLabel}</strong>
-                <span>${getSubjectLabel(paper)}</span>
-              </button>
-            `).join('')}
-          </div>
-        </details>
-      `).join('')}
-    `;
-  });
 };
 
 const renderHome = () => {
@@ -145,14 +111,14 @@ const renderHome = () => {
     <section class="home-hero">
       <div class="home-copy">
         <p class="section-kicker">Site Overview</p>
-        <h3>這裡整理的是卷別、題目本體與考前回查資料，不是線上測驗平台。</h3>
+        <h3>本站彙整醫放師核子醫學、輻防師與輻防員歷屆考題，並補充考前整理資料。</h3>
         <p>
-          網站目前收錄三條主線：醫放師核子醫學、輻射防護師、輻射防護員。醫放師卷別以整卷方式呈現；
-          輻防師與輻防員則分法規與專業科目，另整理一份可快速翻閱的輻防大補帖。
+          內容依卷別與考科分流，方便回看各年度題型、法規題比例、圖題分布與常見核心觀念。
+          醫放師卷別以整卷方式整理；輻防師與輻防員則區分法規與專業科目，另附輻防大補帖供考前集中翻閱。
         </p>
         <p>
-          這一版把重點放回閱讀與回查。右側主畫面直接展示卷別內容，左側只保留單元導航與收合式歷屆索引；
-          若遇圖片題、答案疑義或法規版本差異，仍建議回到原始題本或法規原文核對。
+          各卷頁面保留題幹、選項、附圖與已整理答案，適合用來做年份回顧、法規版本對照與高頻題型快速回查。
+          若遇圖片題、答案疑義或法規版本差異，仍建議回到原始題本與法規原文再確認。
         </p>
       </div>
       <figure class="hero-figure">
@@ -180,11 +146,6 @@ const renderHome = () => {
           <p>集中整理高頻數字、劑量限度、運送標誌與常見公式，供考前壓縮複習。</p>
         </article>
       </div>
-    </section>
-
-    <section class="home-section home-note">
-      <h3>使用方式</h3>
-      <p>左側點選單元後，卷別索引會展開最新年份。若只想看最新題型，從最上方卷別開始；若要比對法規變動，再往較早年份回溯。</p>
     </section>
   `;
 };

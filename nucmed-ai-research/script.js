@@ -416,9 +416,9 @@ const RESEARCH_PAGES = {
   },
   clinical: {
     title: "AI 醫材臨床試驗與合規",
-    subtitle: "把 AI 醫療器材從 intended use、TFDA 分類、IRB、試驗設計到上市後監測串成一條真正可執行的路徑。",
+    subtitle: "整理 AI 醫療器材自預期用途界定、臨床試驗設計、IRB 審查、技術文件準備至上市後監測的主要架構。",
     railTitle: "合規工作流",
-    railNote: "PDF 主幹加上 3 份整理稿的法規、IRB 與案例資訊，重點放在臨床團隊實際要做什麼。",
+    railNote: "以課文版內容為主軸，整合另外三份整理稿中的法規、IRB、技術文件與案例資訊。",
     railItems: [
       { id: "clinical-scope", label: "起點與用途定義" },
       { id: "clinical-tier", label: "影響層級與研究問題" },
@@ -430,20 +430,20 @@ const RESEARCH_PAGES = {
     ],
     body: `
       <section class="workspace-intro reveal-block">
-        <h2>這個單元不是在講模型做得多漂亮，而是在講一個 AI 工具要怎麼從研究題目變成可以進臨床、可以過審、可以持續維運的產品。</h2>
-        <p>內容主幹以你提供的「AI 醫療應用與產品臨床試驗執行」課文版為核心，再把另外三份整理稿中的 TFDA 指引、IRB SOP、受試者同意、軟體確效與產業案例合併成一頁可執行的合規地圖。</p>
+        <h2>本單元整理 AI 醫療器材由研究開發進入臨床應用時，臨床試驗與法規合規需要同步處理的核心工作。</h2>
+        <p>內容主幹以「AI 醫療應用與產品臨床試驗執行」課文版為基礎，並整合另外三份整理稿中的 TFDA 指引、IRB 審查、受試者保護、軟體確效與產業案例，形成一份可供教學與專題規劃使用的摘要。</p>
         <div class="hero-line"></div>
       </section>
 
       <section class="essay-section reveal-block" id="clinical-scope" data-rail-title="起點與用途定義">
-        <h3>先寫清楚 intended use，再談模型、試驗與送件</h3>
-        <p>四份文件共同指向同一件事：AI 醫療產品的起點不是模型準確率，而是 <strong>intended use</strong>。也就是誰要用、在什麼場景用、吃什麼輸入、輸出什麼結果、會不會改變診斷或治療。這一句話如果寫不清楚，後面的 TFDA 分類、IRB 風險、endpoint 與樣本數估算都會失焦。</p>
-        <p>對臨床團隊來說，最實用的問法是：這個工具是 workflow 輔助、病人參與工具，還是會真正改變決策？如果它只是在整理病歷或報告草稿，法規與試驗強度可以較低；如果它會影響醫師是否開檢查、是否治療、是否住院，那就要用更高規格去看。</p>
+        <h3>預期用途界定是後續分類、試驗與送件的起點</h3>
+        <p>四份文件均指出，AI 醫療器材的起點不在於模型分數本身，而在於 <strong>intended use</strong>，亦即預期用途的明確界定。預期用途應包含使用者、使用場域、輸入資料型態、輸出形式，以及該輸出是否會影響臨床診斷、治療或照護流程。</p>
+        <p>若預期用途界定不清，後續的 TFDA 分類、IRB 風險判定、主要終點設定與樣本數估算都容易失準。因此，臨床團隊在規劃初期即需先確認該工具究竟屬於流程輔助、病人參與支持，或直接介入臨床決策的產品。</p>
       </section>
 
       <section class="essay-section reveal-block" id="clinical-tier" data-rail-title="影響層級與研究問題">
-        <h3>Tier A / B / C 不是名詞遊戲，而是研究設計的分水嶺</h3>
-        <p>課文版把 AI 影響分成三層：<strong>Tier A workflow tool</strong>、<strong>Tier B engagement / health promotion</strong>、<strong>Tier C decision / clinical outcome</strong>。這個分類很有用，因為它直接決定你該量什麼結果。</p>
+        <h3>Tier A / B / C 分類可作為研究設計與終點選擇的基礎</h3>
+        <p>課文版將 AI 影響分為三層：<strong>Tier A workflow tool</strong>、<strong>Tier B engagement / health promotion</strong>、<strong>Tier C decision / clinical outcome</strong>。此一分類的價值，在於可協助研究者依風險與影響程度選擇合適的試驗設計與評估指標。</p>
         <div class="mini-table">
           <table>
             <thead>
@@ -456,34 +456,34 @@ const RESEARCH_PAGES = {
             </tbody>
           </table>
         </div>
-        <p>這也解釋了為什麼很多 AI 論文看起來成績不錯，卻很難落地：因為只做了模型層驗證，沒有往 workflow 與 clinical utility 走。</p>
+        <p>若僅停留於模型層驗證，而未進一步評估工作流程改變、採納情形與臨床效益，則即使技術表現良好，也未必足以支持實際導入。</p>
       </section>
 
       <section class="essay-section reveal-block" id="clinical-trial" data-rail-title="試驗設計選擇">
-        <h3>試驗設計要配合風險層級，不要一開始就迷信 RCT</h3>
-        <p>四份文件與課文版的共識很一致：<strong>match the design to the AI tier</strong>。流程工具不一定要一開始就做 RCT，但會影響病人行為或醫療決策的工具，不能只拿 before-after 敷衍。</p>
+        <h3>試驗設計應配合風險層級與產品定位</h3>
+        <p>四份文件與課文版的共識均為：<strong>match the design to the AI tier</strong>。流程型工具未必一開始即需要隨機對照試驗，但若工具會影響病人行為、醫療資源配置或臨床決策，則不宜僅以簡單前後比較作為主要證據。</p>
         <ul>
-          <li><strong>Before-after / controlled before-after</strong>：最適合報告草稿、清單排序、排程、行政流程類 AI。若能加控制單位，會比單純前後比較更可信。</li>
-          <li><strong>Pragmatic RCT</strong>：適合病人提醒、臨床決策支援、風險分層等會影響行為與判斷的工具。重點是看真實世界有沒有被採納，而不只是模型分數。</li>
-          <li><strong>Stepped-wedge cluster RCT</strong>：適合跨院導入、政策型導入與系統層產品。因為它允許所有院區最後都導入，同時保留比較基礎。</li>
+          <li><strong>Before-after / controlled before-after</strong>：適用於報告草稿、清單排序、排程與行政流程輔助等工作流程工具。若能加入對照單位，可提升推論可信度。</li>
+          <li><strong>Pragmatic RCT</strong>：適用於病人提醒、臨床決策支援、風險分層等可能影響行為與判斷的工具。評估重點除模型分數外，亦包括實際採納率與流程結果。</li>
+          <li><strong>Stepped-wedge cluster RCT</strong>：適用於跨院導入、政策型導入與系統層產品，可在逐步全面上線的同時保留比較基礎。</li>
         </ul>
-        <p>真正常見的錯不是沒做 RCT，而是 endpoint 選錯。自動病摘如果還在看 BLEU score，等於把產品問題退回成 NLP 技術題。</p>
+        <p>常見問題並非是否進行 RCT，而是主要終點設定是否與產品定位一致。例如自動病摘工具若僅以文字相似度衡量，而未評估時間節省、錯誤率或工作負荷，則難以支持臨床價值主張。</p>
       </section>
 
       <section class="essay-section reveal-block" id="clinical-irb" data-rail-title="IRB 與受試者保護">
-        <h3>IRB 看的不是你多懂 AI，而是病人風險、責任分工與資料治理有沒有寫清楚</h3>
-        <p>三份 Markdown 都強調臨床機構 SOP，這部分與課文版完全互補。IRB 最在乎的是：資料是否可識別、是否需要同意、AI 輸出是否會進入臨床決策、人類是否仍可 override，以及異常事件如何通報。</p>
+        <h3>IRB 審查的核心在於風險、責任分工與資料治理</h3>
+        <p>三份 Markdown 均強調臨床機構 SOP 與受試者保護要求，與課文版內容相互補充。IRB 審查關注的重點包括：資料是否可識別、是否需取得知情同意、AI 輸出是否進入臨床決策、人員是否保有覆核與修正權限，以及異常事件通報機制是否明確。</p>
         <ul>
           <li>若使用病歷、影像、檢驗或跨系統資料，必須交代去識別化、重連權限、保存期限與存取控管。</li>
           <li>若要申請免除知情同意，理由不能只寫「回溯性」；還要說明最小風險、無法實際逐一取得同意，以及免同意不會損及受試者權益。</li>
           <li>若涉及脆弱族群、未成年人或會影響治療選擇的高風險工具，IRB 與院內網路科技審查都會更嚴格。</li>
         </ul>
-        <p>一句話總結：AI 可以輔助，但責任不會因此消失。最危險的情況不是 AI 出錯，而是臨床團隊以為 AI 一定對，所以沒有人再檢查。</p>
+        <p>就治理觀點而言，AI 可作為輔助工具，但臨床責任並不因此移轉。故研究計畫中需明確記載人工覆核機制與責任歸屬。</p>
       </section>
 
       <section class="essay-section reveal-block" id="clinical-validation" data-rail-title="技術文件與軟體確效">
-        <h3>TFDA、IEC 62304、可用性驗證與技術文件，是臨床試驗前就要並行的工作</h3>
-        <p>另外三份整理稿把技術文件講得更具體。若產品被歸到 SaMD 或 AI/ML 醫材，至少要面對幾件事：<strong>Software Validation</strong>、<strong>Usability Validation</strong>、資安與版本管理、測試資料與訓練資料分離、以及禁止 data leakage。</p>
+        <h3>技術文件、軟體確效與可用性驗證應與臨床試驗同步規劃</h3>
+        <p>另外三份整理稿對技術文件要求有較具體的整理。若產品屬於 SaMD 或 AI/ML 醫材，通常需同步處理 <strong>Software Validation</strong>、<strong>Usability Validation</strong>、資安與版本管理、訓練與測試資料分離，以及資料外洩防範等事項。</p>
         <div class="mini-table">
           <table>
             <thead>
@@ -497,17 +497,17 @@ const RESEARCH_PAGES = {
             </tbody>
           </table>
         </div>
-        <p>這也是為什麼「Compliance by Design」比最後才補文件更有效：你越早把法規與 IRB 要求嵌進流程，後面就越不容易返工。</p>
+        <p>因此，將法規、IRB 與技術文件要求自專案初期即納入規劃，通常比於開發後期再補件更能降低返工風險。</p>
       </section>
 
       <section class="essay-section reveal-block" id="clinical-cases" data-rail-title="Deep01 / aetherAI">
-        <h3>Deep01 與 aetherAI 值得看的不是宣傳詞，而是它們怎麼走完驗證、送件與臨床整合</h3>
-        <p>三份整理稿都把 <strong>Deep01 DeepCT</strong> 與 <strong>aetherAI Endo</strong> 當成台灣最適合拆解的案例。它們提供的不是單一性能數字，而是一條相對完整的產品路徑：明確的 CADe / CADx 定位、臨床情境切得夠窄、法規文件可追、而且能跟院內系統整合。</p>
+        <h3>Deep01 與 aetherAI 可作為台灣 AI 醫材導入流程的案例</h3>
+        <p>三份整理稿皆以 <strong>Deep01 DeepCT</strong> 與 <strong>aetherAI Endo</strong> 作為台灣較具代表性的案例。其參考價值不僅在於效能數據，而在於可觀察其如何完成 CADe / CADx 定位、臨床場景聚焦、法規文件準備與院內系統整合。</p>
         <ul>
-          <li><strong>Deep01</strong>：代表影像分流與異常偵測類產品，價值在於把 AI 輸出接到 HIS / PACS / 臨床工作流，而不是只停在論文表現。</li>
-          <li><strong>aetherAI Endo</strong>：代表即時輔助與 CADe 類產品，關鍵不只是敏感度，而是如何處理 false positive、聲光提示、使用者學習曲線與實際操作負荷。</li>
+          <li><strong>Deep01</strong>：可代表影像分流與異常偵測類產品，觀察重點包括 AI 輸出如何接入 HIS、PACS 與臨床工作流程。</li>
+          <li><strong>aetherAI Endo</strong>：可代表即時輔助與 CADe 類產品，觀察重點包括敏感度之外的誤報處理、提示方式、學習曲線與操作負荷。</li>
         </ul>
-        <p>對核醫團隊的啟發是：如果未來要做 PSMA、177Lu、甲狀腺或 workflow 工具，研究設計最好一開始就想像自己要如何回答「你不是只有做模型，而是在做產品」這個問題。</p>
+        <p>對核醫團隊而言，這些案例可用來理解 AI 工具若要從研究題目進一步發展為可部署產品，通常需同時滿足技術可行性、法規可追溯性與臨床整合性。</p>
       </section>
 
       <section class="essay-section reveal-block" id="clinical-checklist" data-rail-title="執行查核表">
@@ -522,7 +522,7 @@ const RESEARCH_PAGES = {
           <li>我有資料治理、知情同意、免同意條件、權限控管與資安規劃。</li>
           <li>我有模型漂移、異常事件、停用條件與版本管理機制。</li>
         </ul>
-        <p class="work-note">如果以上任何一條答不出來，代表目前還比較像研究題目，而不是可以進臨床試驗或送件的 AI 醫材方案。</p>
+        <p class="work-note">若上述任一項目尚未明確，通常表示該方案仍停留在研究規劃階段，尚不足以直接進入正式臨床試驗或醫材送件流程。</p>
       </section>
     `
   }

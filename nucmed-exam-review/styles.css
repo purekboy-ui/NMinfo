@@ -14,7 +14,7 @@
   --success: #49684a;
   --radius-sm: 8px;
   --radius-md: 14px;
-  --radius-lg: 22px;
+  --radius-lg: 18px;
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 12px;
@@ -39,6 +39,7 @@ body {
     linear-gradient(180deg, #f7f3ec 0%, var(--bg-page) 100%);
   color: var(--ink);
   font-family: var(--font-sans);
+  font-size: 18px;
 }
 
 body {
@@ -118,8 +119,8 @@ a {
 }
 
 .brand-block h1 {
-  font-size: 1.52rem;
-  line-height: 1.25;
+  font-size: 1.68rem;
+  line-height: 1.2;
 }
 
 .brand-copy,
@@ -140,12 +141,11 @@ a {
 
 .sidebar-nav {
   display: grid;
-  gap: var(--space-3);
+  gap: 10px;
 }
 
 .nav-section {
-  display: grid;
-  gap: var(--space-2);
+  display: block;
 }
 
 .nav-link,
@@ -156,12 +156,13 @@ a {
 }
 
 .nav-link {
-  padding: 11px 12px;
+  padding: 13px 14px;
   border: 1px solid var(--line);
   border-radius: var(--radius-sm);
   background: rgba(255, 253, 248, 0.9);
   color: var(--ink);
   font-weight: 800;
+  font-size: 1rem;
   text-align: left;
   transition: border-color 0.2s ease, background 0.2s ease;
 }
@@ -176,72 +177,6 @@ a {
   border-color: var(--accent);
   background: var(--answer);
   color: var(--accent-deep);
-}
-
-.paper-tree {
-  display: none;
-  gap: var(--space-2);
-  padding-left: var(--space-2);
-}
-
-.paper-tree.is-visible {
-  display: grid;
-}
-
-.paper-tree-intro {
-  display: flex;
-  justify-content: space-between;
-  gap: var(--space-2);
-  color: var(--ink-muted);
-  font-size: 0.82rem;
-}
-
-.paper-group {
-  border: 1px solid rgba(154, 126, 88, 0.18);
-  border-radius: var(--radius-sm);
-  background: rgba(255, 252, 246, 0.82);
-}
-
-.paper-group summary {
-  padding: 10px 12px;
-  color: var(--accent-deep);
-  font-weight: 700;
-  cursor: pointer;
-  list-style: none;
-}
-
-.paper-group summary::-webkit-details-marker {
-  display: none;
-}
-
-.paper-group-list {
-  display: grid;
-  gap: 6px;
-  padding: 0 8px 8px;
-}
-
-.paper-link {
-  display: grid;
-  gap: 2px;
-  padding: 8px 10px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-sm);
-  background: var(--bg-surface);
-  text-align: left;
-}
-
-.paper-link strong {
-  font-size: 0.92rem;
-}
-
-.paper-link span {
-  color: var(--ink-muted);
-  font-size: 0.8rem;
-}
-
-.paper-link.is-active {
-  border-color: var(--accent);
-  background: var(--answer);
 }
 
 .sidebar-footer {
@@ -271,8 +206,8 @@ a {
 }
 
 .page-title {
-  font-size: 1.48rem;
-  line-height: 1.28;
+  font-size: 1.74rem;
+  line-height: 1.24;
 }
 
 .page-body {
@@ -315,8 +250,8 @@ a {
 .home-copy h3,
 .track-section h3,
 .paper-header h3 {
-  font-size: 1.38rem;
-  line-height: 1.4;
+  font-size: 1.62rem;
+  line-height: 1.34;
 }
 
 .hero-figure {
@@ -355,6 +290,10 @@ a {
   color: var(--accent-deep);
 }
 
+.home-card strong {
+  font-size: 1.08rem;
+}
+
 .home-note {
   background: var(--bg-soft);
 }
@@ -377,7 +316,7 @@ a {
   grid-template-columns: 92px minmax(0, 1fr) auto;
   gap: var(--space-3);
   align-items: center;
-  padding: 12px 14px;
+  padding: 14px 16px;
   border: 1px solid var(--line);
   border-radius: var(--radius-sm);
   background: var(--bg-surface);
@@ -388,6 +327,7 @@ a {
 .paper-row em {
   color: var(--ink-soft);
   font-style: normal;
+  font-size: 0.96rem;
 }
 
 .paper-header {
@@ -415,7 +355,7 @@ a {
   border-radius: 999px;
   background: var(--bg-soft);
   color: var(--accent-deep);
-  font-size: 0.84rem;
+  font-size: 0.9rem;
   font-weight: 800;
 }
 
@@ -440,8 +380,8 @@ a {
 }
 
 .question-card h4 {
-  font-size: 1.14rem;
-  line-height: 1.56;
+  font-size: 1.24rem;
+  line-height: 1.68;
 }
 
 .question-figure {
@@ -469,10 +409,11 @@ a {
   grid-template-columns: 34px 1fr;
   gap: var(--space-2);
   align-items: start;
-  padding: 10px 12px;
+  padding: 12px 14px;
   border: 1px solid var(--line);
   border-radius: var(--radius-sm);
   background: var(--bg-surface);
+  font-size: 1rem;
 }
 
 .option-key {
@@ -503,6 +444,7 @@ a {
 .guide-body {
   display: grid;
   gap: var(--space-3);
+  font-size: 1rem;
 }
 
 .guide-body h2,
@@ -518,7 +460,7 @@ a {
 .markdown-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .markdown-table th,
@@ -602,7 +544,7 @@ summary:focus-visible {
   .home-copy h3,
   .track-section h3,
   .paper-header h3 {
-    font-size: 1.24rem;
+    font-size: 1.4rem;
   }
 
   .home-hero,
