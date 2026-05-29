@@ -717,6 +717,10 @@ a:hover { text-decoration: underline; }
     margin-bottom: 36px;
 }
 
+.exam-article:not(.is-immersive-reading) .content-section {
+    margin-bottom: 44px;
+}
+
 .immersive-reading-shell {
     display: grid;
     grid-template-columns: 0 minmax(0, 1fr);
@@ -1074,6 +1078,10 @@ a:hover { text-decoration: underline; }
     margin-bottom: 12px;
 }
 
+.exam-article:not(.is-immersive-reading) .prose p {
+    margin-bottom: 14px;
+}
+
 .prose ul, .prose ol {
     padding-left: 24px;
     margin-bottom: 12px;
@@ -1357,27 +1365,27 @@ a:hover { text-decoration: underline; }
     min-width: 720px;
     border-collapse: collapse;
     table-layout: auto;
-    font-size: 0.95rem;
+    font-size: 0.97rem;
 }
 
 .data-table th {
     background: rgba(242, 231, 227, 0.58);
     font-weight: 700;
     text-align: left;
-    padding: 14px 16px 12px;
-    color: var(--text-tertiary);
+    padding: 15px 18px 13px;
+    color: var(--text-secondary);
     border-bottom: 1px solid var(--border-light);
     white-space: nowrap;
-    font-size: 0.83rem;
+    font-size: 0.86rem;
     letter-spacing: 0.04em;
     vertical-align: bottom;
 }
 
 .data-table td {
-    padding: 14px 16px;
+    padding: 16px 18px;
     border-bottom: 1px solid var(--border-light);
     color: var(--text-secondary);
-    line-height: var(--zh-body-leading-dense);
+    line-height: 1.72;
     vertical-align: top;
     min-width: 120px;
 }
