@@ -5698,7 +5698,7 @@ const HOME_HUB_CONFIG = {
             variant: 'info'
         },
         {
-            href: 'https://i131-ward-scheduler.web.app/',
+            href: 'https://purekboy-ui.github.io/I131-Ward-Scheduler/',
             kicker: '排程工具',
             title: 'I-131 病房排程',
             desc: '用於核對可入院日期、住院節奏與病房安排條件。',
