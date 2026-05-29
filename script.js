@@ -934,6 +934,113 @@ I131Ward: {
     ]
 },
 
+WomenRadiationPractice: {
+    title: "女性、懷孕與醫療輻射實務",
+    subtitle: "Clinical Workflow for Potential or Confirmed Pregnancy in Radiology and Nuclear Medicine",
+    category: "learning",
+    content: [
+        {
+            type: "info-box-amber",
+            html: `<h4>先說結論：這是「正當化 + 最適化 + 文件化」的臨床流程，不是口號</h4>
+            <p>育齡女性遇到含游離輻射檢查或治療時，核心不是「一律禁止」或「照單全做」，而是：</p>
+            <ul>
+                <li><strong>正當化（Justification）：</strong>檢查是否真的回答臨床問題，且效益大於風險。</li>
+                <li><strong>最適化（Optimization）：</strong>若需要做，採最低可達成診斷品質的曝露策略。</li>
+                <li><strong>文件化（Documentation）：</strong>懷孕評估、決策理由、告知內容與替代方案需可追溯。</li>
+            </ul>
+            <div class="source-badges">
+                <span class="guide-tag acr">ACR Practice Parameter 2018 (amended 2023)</span>
+                <span class="guide-tag iaea">IAEA RPoP</span>
+                <span class="guide-tag icrp">ICRP 84</span>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "10 日法則現在還能不能用？",
+            icon: "📅",
+            html: `<div class="prose">
+                <p><strong>截至 2026 年 5 月</strong>，主流國際指引已不再把「10 日法則」當成普遍硬性規則。</p>
+                <ul>
+                    <li><strong>IAEA RPoP（引述 ICRP 84）：</strong>目前主張對多數診斷檢查採較寬鬆且更可執行的作法，不建議把傳統 10 日規則作為全面限制。</li>
+                    <li><strong>ACR（2018，2023 修訂）：</strong>改採「依檢查對子宮曝露風險分級」與「是否必要」的決策模式，而非單一天數規則。</li>
+                </ul>
+                <p class="reading-note">實務重點：不要再用「月經第幾天」單一條件決定全部檢查；要回到<strong>檢查部位、胎兒可能劑量、臨床急迫性、替代影像可行性</strong>。</p>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "放射科與核醫科共用的分級決策架構",
+            icon: "🧭",
+            html: `<div class="data-table-wrapper">
+                <table class="data-table">
+                    <thead><tr><th>風險分級</th><th>典型情境</th><th>臨床流程重點</th></tr></thead>
+                    <tbody>
+                        <tr>
+                            <td>子宮曝露可忽略</td>
+                            <td>頭顱、頸部、胸廓、四肢（非骨盆近端）等檢查</td>
+                            <td>完成懷孕問診即可；通常不需因懷孕疑慮而全面延後。</td>
+                        </tr>
+                        <tr>
+                            <td>子宮低曝露</td>
+                            <td>子宮在照野邊緣或僅少量散射曝露</td>
+                            <td>視病史與臨床問題，決定是否加做驗孕與是否改用替代影像。</td>
+                        </tr>
+                        <tr>
+                            <td>子宮可能較高曝露</td>
+                            <td>骨盆 / 下腹部 CT、介入程序、治療性核醫等</td>
+                            <td>需升級到醫師層級確認；先評估替代方案。若不得不做，必須記錄正當化與風險告知。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="reading-note">以上分級邏輯對應 ACR 參數中的低風險 / 高風險路徑設計，目的是避免「過度延誤」與「不必要曝露」同時發生。</p>`
+        },
+        {
+            type: "section",
+            title: "門診與檢查排程的標準問診與升級條件",
+            icon: "📋",
+            html: `<div class="prose">
+                <ul>
+                    <li><strong>第一層（所有育齡女性）</strong>：確認是否已知懷孕、末次月經、是否可能受孕、是否哺乳。</li>
+                    <li><strong>第二層（中高子宮曝露檢查）</strong>：必要時加做當日驗孕，並由開單醫師或執行醫師確認檢查急迫性。</li>
+                    <li><strong>第三層（治療或高劑量程序）</strong>：未排除懷孕不得照常放行；需重新評估適應症、替代方案與時機。</li>
+                    <li><strong>文件要求</strong>：問診結果、驗孕結果、告知重點、最終決策與決策者身分應可追溯。</li>
+                </ul>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "若已懷孕但臨床必須影像檢查：如何做才嚴謹",
+            icon: "⚕️",
+            html: `<div class="prose">
+                <ul>
+                    <li><strong>先問是否有非電離替代：</strong>優先考慮超音波或 MRI（依臨床問題與可近性）。</li>
+                    <li><strong>若含電離檢查不可避免：</strong>限制掃描範圍、避免重複相位、控制參數，並由影像醫師與臨床醫師共同正當化。</li>
+                    <li><strong>風險溝通要具體：</strong>依 ICRP / ACR 框架，說明多數診斷檢查胎兒劑量遠低於確定性效應區間；避免使用誤導性的絕對語句。</li>
+                    <li><strong>需要劑量估算時：</strong>由醫療物理或具資格專業人員估算胎兒劑量，作為後續產科追蹤與諮詢依據。</li>
+                </ul>
+                <p class="reading-note">ACR 與 IAEA 都強調：若為急重症且影像結果會改變治療，<strong>不應因未確定懷孕狀態而不當延誤必要檢查</strong>；但必須完成可追溯的決策與優化措施。</p>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "核醫科額外重點：診斷核醫與治療核醫要分開處理",
+            icon: "☢️",
+            html: `<div class="two-col">
+                <div class="detail-card">
+                    <h4>診斷性核醫（多數情境）</h4>
+                    <p>可在嚴格正當化下執行，但需核種別評估胎兒與哺乳影響，並提供檢後接觸與排泄衛教。不可用單一 SOP 套所有藥物。</p>
+                </div>
+                <div class="detail-card">
+                    <h4>治療性核醫（高警戒情境）</h4>
+                    <p>多數屬於懷孕禁忌或高度限制。尤其放射碘治療前，須完成懷孕排除與哺乳評估，避免造成可預期且可避免的胎兒 / 嬰兒曝露。</p>
+                </div>
+            </div>
+            <p class="reading-note">IAEA 核醫章節強調：對可能懷孕者，治療性程序需要比診斷程序更高層級審查與防呆機制。</p>`
+        }
+    ]
+},
+
 EmergencyCart: {
     title: "急救車管理",
     subtitle: "Emergency Cart — 日常檢查與盤點流程",
@@ -1151,6 +1258,312 @@ PET: {
                     <li>目前更重視同流程下的縱向比較；療效評估傾向使用 PERCIST 與 SULpeak，而不是只盯著單次 SUVmax。</li>
                 </ul>
             </div>`
+        }
+    ]
+},
+
+PETCTRadiation: {
+    title: "PET/CT 輻射探討",
+    subtitle: "FDG PET/CT 中 CT component、DLP / CTDIvol 與 protocol optimization",
+    category: "pet",
+    content: [
+        {
+            type: "info-box-rose",
+            html: `<h4>先校正三件事：拆 CT component、先看 raw metrics、不要把單一個案直接判成「安全低劑量」</h4>
+            <p>依 <strong>EANM 2025 version 3.0</strong> 與 <strong>ACR–ACNM–SNMMI–SPR 2021</strong> 的框架，FDG PET/CT 的 dose review 應先把 <strong>PET radiopharmaceutical</strong> 與 <strong>CT component</strong> 分開看；而 CT 又要再區分是 <strong>attenuation correction / anatomic localization</strong>，還是 <strong>diagnostic CT</strong>。</p>
+            <p>因此，這頁主軸不是替單一 dose report 下「合理、安全、低劑量」的結論，而是回到 <strong>DLP、CTDIvol、scan length、irradiation events 與 CT purpose</strong>，用於研究、教學與 protocol audit。</p>
+            <div class="source-badges">
+                <span class="guide-tag eanm">EANM 2025</span>
+                <span class="guide-tag snmmi">ACR / SNMMI / ACNM / SPR</span>
+                <span class="guide-tag snmmi">ADS / ANZSNM 2024</span>
+                <span class="guide-tag local">Siemens dose report</span>
+            </div>`
+        },
+        {
+            type: "info-box-blue",
+            html: `<h4>這頁的判讀原則</h4>
+            <ul>
+                <li><strong>DLP、CTDIvol、scan length、event count</strong> 是主分析指標；effective dose 只能作 population-level 溝通估算。</li>
+                <li>真全身分段掃描時，不應把 torso 與下肢 DLP 全部套進同一個 conversion factor。</li>
+                <li>若沒有 indication、requested body region、病人體型與 local benchmark，不能只憑單一 report 就宣稱 protocol「很安全」或「一定過高」。</li>
+            </ul>`
+        },
+        {
+            type: "section",
+            title: "哪些敘述現在可以直接說？哪些不能？",
+            html: `<div class="prose">
+                <div class="two-col">
+                    <div class="detail-card">
+                        <h4>可以直接說的事</h4>
+                        <ul>
+                            <li>CT performed as part of PET/CT 可能只是 low-dose AC / localization，也可能是完整 diagnostic CT。</li>
+                            <li>PET/CT 的總照射來自 PET radiopharmaceutical 與 CT 兩部分，不應只報單一總 mSv。</li>
+                            <li>dose report 已能可靠拆出 <strong>DLP、CTDIvol、掃描長度、event count、modulation</strong>。</li>
+                            <li>分段掃描、repeat CT、過長 range，確實可能讓 cumulative DLP 顯著增加。</li>
+                        </ul>
+                    </div>
+                    <div class="detail-card">
+                        <h4>不能直接跳的結論</h4>
+                        <ul>
+                            <li>不能只因 CTDIvol 9.76 mGy 或 DLP 1078 / 1617 mGy·cm，就直接說「非常標準且安全」。</li>
+                            <li>不能把 torso 與 thigh 的 DLP 全都套用同一個 torso k 值，再當成精確 effective dose。</li>
+                            <li>不能把 delayed PET 直接等同於一定要 repeat CT；是否追加 CT 應回到臨床問題與 body region。</li>
+                            <li>不能沒有 local DRL 或院內分布資料，就武斷判定 protocol 優劣。</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="reading-note">這正是 ChatGPT 式「一份 report 就直接下安全結論」最容易失真的地方：它跳過了 CT 目的、requested body region 與本院基準資料。</p>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "權威依據與版本狀態",
+            html: `<div class="prose">
+                <div class="evidence-grid">
+                    <article class="evidence-card">
+                        <div class="authority-meta">最新總綱</div>
+                        <h4>EANM 2025：version 3.0</h4>
+                        <p>目前可確認到的最新版 FDG PET/CT tumour imaging guideline 是 <strong>[18F]FDG PET/CT: EANM procedure guidelines for tumour imaging: version 3.0</strong>，DOI 為 <strong>10.1016/j.eanmj.2025.100006</strong>。本頁用它作為「最新版版本狀態」的上位依據。</p>
+                    </article>
+                    <article class="evidence-card">
+                        <div class="authority-meta">可直接核對條文的臨床實作依據</div>
+                        <h4>ACR–ACNM–SNMMI–SPR 2021</h4>
+                        <p>這份現行 practice parameter 明確寫到：PET/CT 的 CT 可能是 <strong>low-dose AC / localization</strong>，也可能是 <strong>diagnostic CT</strong>；如果要求的是 diagnostic CT，就應使用該 body region 適當的 CT protocol。</p>
+                    </article>
+                    <article class="evidence-card">
+                        <div class="authority-meta">糖尿病與血糖管理</div>
+                        <h4>ADS / ANZSNM 2024</h4>
+                        <p>這份 2024 聯合指引對 <strong>glucose target、insulin timing、pump、delayed acquisition 後可否進食與恢復 insulin</strong> 提供了可直接落地的流程，是臨床操作面最有用的補強。</p>
+                    </article>
+                    <article class="evidence-card">
+                        <div class="authority-meta">補充交叉驗證</div>
+                        <h4>SNMMI / EANM Brain FDG 2024</h4>
+                        <p>雖然它是 <strong>brain FDG PET</strong> 文件，不適合直接拿來做 whole-body oncology dose benchmark，但其對 fasting、安靜環境、movement control 與 consistency 的要求，可作為當代 FDG patient-prep 原則的補充核對。</p>
+                    </article>
+                </div>
+                <p class="reading-note">嚴謹做法是：<strong>最新版版本狀態</strong> 由 EANM 2025 掛帥；<strong>具體可執行條文</strong> 以 ACR 2021 與 ADS/ANZSNM 2024 逐條核對；brain FDG 2024 只作補充，不拿來替 whole-body CT 定基準。</p>
+            </div>
+            <div class="source-badges">
+                <a class="guide-tag eanm" href="https://doi.org/10.1016/j.eanmj.2025.100006" target="_blank" rel="noreferrer">EANM 2025 DOI</a>
+                <a class="guide-tag snmmi" href="https://gravitas.acr.org/PPTS/DownloadPreviewDocument?DocId=136" target="_blank" rel="noreferrer">ACR 2021 PDF</a>
+                <a class="guide-tag snmmi" href="https://www.diabetessociety.com.au/guideline/joint-ads-anzsnm-guideline-for-fdg-pet-ct-imaging-in-patients-with-type-1-and-type-2-diabetes-august-2024/" target="_blank" rel="noreferrer">ADS / ANZSNM 2024</a>
+                <a class="guide-tag snmmi" href="https://doi.org/10.2967/jnumed.124.268754" target="_blank" rel="noreferrer">Brain FDG 2024 DOI</a>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "臨床上可直接落地的操作指引",
+            html: `<div class="evidence-grid">
+                <article class="evidence-card">
+                    <div class="authority-meta">檢查前一天到到院前</div>
+                    <h4>避免把背景攝取自己做高</h4>
+                    <ul>
+                        <li>避免劇烈運動至少 24 小時。</li>
+                        <li>至少禁食 4 小時，避免含糖口服 / 靜脈補液與 parenteral nutrition。</li>
+                        <li>鼓勵喝水，並盡量保持溫暖，以減少肌肉與棕色脂肪攝取。</li>
+                        <li>ACR 2021 建議檢查前提供 low-carbohydrate meals 指示。</li>
+                    </ul>
+                </article>
+                <article class="evidence-card">
+                    <div class="authority-meta">血糖與糖尿病流程</div>
+                    <h4>不要把所有 insulin 病人用同一條規則處理</h4>
+                    <ul>
+                        <li>ADS / ANZSNM 2024 以 <strong>&le; 12.0 mmol/L</strong> 作為一般 FDG PET/CT 的建議目標，<strong>&gt; 16.0 mmol/L</strong> 可考慮 reschedule。</li>
+                        <li>insulin-treated 病人優先安排早上；若使用短效或 correction insulin，FDG injection 通常需與 insulin <strong>至少間隔 4 小時</strong>。</li>
+                        <li>type 1 diabetes 不應任意停掉長效 insulin；pump 與 sensor 也不應過早拆除。</li>
+                        <li>metformin 是否停用，ACR 2021 與 ADS 2024 寬嚴不同，院內最好寫成 indication-based policy。</li>
+                    </ul>
+                </article>
+                <article class="evidence-card">
+                    <div class="authority-meta">uptake period 與攝影前</div>
+                    <h4>60 分鐘不是空等，是品質控制</h4>
+                    <ul>
+                        <li>ACR 2021 建議 uptake period 讓病人安靜坐著或躺著，避免說話與大動作。</li>
+                        <li>PET 通常在注射後約 <strong>60 分鐘</strong> 開始；特殊情況可短於 60 分，但原則上不低於 45 分鐘。</li>
+                        <li>掃描前應先排尿；必要時可用 hydration、diuretic 或 bladder management 以減少膀胱與輸尿管干擾。</li>
+                        <li>若要做 serial SUV comparison，uptake time 必須盡量一致。</li>
+                    </ul>
+                </article>
+                <article class="evidence-card">
+                    <div class="authority-meta">two acquisitions / delayed imaging</div>
+                    <h4>delayed PET 不等於 routine repeat CT</h4>
+                    <ul>
+                        <li>ADS / ANZSNM 2024 明確提到，部分 study 會有第一次 acquisition 後再做 delayed acquisition 的流程。</li>
+                        <li>若病人因早晨檢查而持續空腹、且省略了原本 insulin，可在第一次 acquisition 完成後進食並恢復原本 insulin。</li>
+                        <li>真正要追的是：第二次 acquisition 是否真的需要再做 CT，以及 CT field 是否只限於要回答的問題。</li>
+                    </ul>
+                </article>
+            </div>
+            <p class="reading-note">臨床操作指引的核心不是把所有病人「流程化到一模一樣」，而是把 <strong>會直接影響 FDG biodistribution 的變因</strong> 寫進 protocol：exercise、fasting、glucose、insulin、movement、voiding、delayed workflow。</p>`
+        },
+        {
+            type: "section",
+            title: "CT component 的臨床操作框架",
+            html: `<div class="data-table-wrapper">
+                <table class="data-table">
+                    <thead>
+                        <tr><th>CT 目的</th><th>權威文件支持的做法</th><th>audit 時要追的問題</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>attenuation correction / anatomic localization</td>
+                            <td>ACR 2021 明確指出可使用 low-dose CT，主要任務是 attenuation correction 與 localization。</td>
+                            <td>院內是否已與 diagnostic CT 分流？preset、mA 與 range 是否真的較低？</td>
+                        </tr>
+                        <tr>
+                            <td>diagnostic CT requested</td>
+                            <td>若臨床確實要求 diagnostic CT，就應使用該 body region 適當的 CT protocol；必要時可用 oral / IV contrast。</td>
+                            <td>有沒有明確 indication？是否把 diagnostic CT 與 PET CTAC 混成同一套默認流程？</td>
+                        </tr>
+                        <tr>
+                            <td>breathing / registration control</td>
+                            <td>CT acquisition 應盡量讓 PET / CT diaphragm position 對齊；若不做 breath-hold，應教 shallow / quiet breathing。</td>
+                            <td>高 SUV 病灶是否其實是 misregistration artifact？是否常見胸腹交界錯位？</td>
+                        </tr>
+                        <tr>
+                            <td>delayed / problem-solving CT</td>
+                            <td>權威文件支持的是 <strong>依臨床問題選 protocol</strong>，而不是把 delayed acquisition 預設成 repeat whole-body CT。</td>
+                            <td>第二段 CT 是否必要？能否 limited-field？是否只是因工作流程慣性而重做全範圍 CT？</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "本院示範 dose report 可以怎麼拆讀？",
+            html: `<div class="prose">
+                <p>下面把你提供的 Siemens Biograph 16 PET/CT dose report 拆成兩種臨床上最值得注意的情境：<strong>單段 CT event</strong> 與 <strong>真全身分段掃描</strong>。重點不是背 mSv，而是先看事件數量、掃描範圍與每段 DLP。</p>
+            </div>
+            <div class="data-table-wrapper">
+                <table class="data-table">
+                    <thead>
+                        <tr><th>示範案例 A：單段 CT event</th><th>CTDIvol</th><th>DLP</th><th>掃描範圍 / 備註</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Topogram</td><td>0.08 mGy</td><td>12.30 mGy·cm</td><td>1536 mm，定位用</td></tr>
+                        <tr><td>Spiral CT Early Thigh</td><td>4.36 mGy</td><td>475.58 mGy·cm</td><td>約 1113 mm，130 kV，mean 83 mA</td></tr>
+                        <tr><td><strong>Total</strong></td><td>—</td><td><strong>487.88 mGy·cm</strong></td><td>總 irradiation events = 2</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="data-table-wrapper">
+                <table class="data-table">
+                    <thead>
+                        <tr><th>示範案例 B：真全身分段掃描</th><th>CTDIvol</th><th>DLP</th><th>掃描範圍 / 備註</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Torso / Whole-body CT</td><td>9.76 mGy</td><td>1078.07 mGy·cm</td><td>約 1113 mm，130 kV，mean 186 mA</td></tr>
+                        <tr><td>CT Early Thigh</td><td>5.25 mGy</td><td>538.58 mGy·cm</td><td>約 1003 mm，mean 100 mA</td></tr>
+                        <tr><td><strong>Combined</strong></td><td>—</td><td><strong>1616.65 mGy·cm</strong></td><td>軀幹 + 下肢兩段相加</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="reading-note">這兩份 report 已能證明兩件事：<strong>Topogram 佔比通常很小，真正 burden 主要來自長範圍 spiral CT；分段掃描時 cumulative DLP 會快速上升。</strong> 但它們仍不足以單獨判定「安全」或「過高」；還要回到 indication、CT purpose 與本院分布資料比較。</p>`
+        },
+        {
+            type: "section",
+            title: "回溯分析時，最少要抓哪些欄位？",
+            html: `<div class="two-col">
+                <div class="detail-card">
+                    <h4>Study level</h4>
+                    <ul>
+                        <li>Study date / month trend</li>
+                        <li>去識別化病歷號或 accession linkage</li>
+                        <li>Total DLP</li>
+                        <li>Total number of irradiation events</li>
+                        <li>body region requested / indication</li>
+                        <li>是否為 whole-body、split scan、delayed study</li>
+                    </ul>
+                </div>
+                <div class="detail-card">
+                    <h4>Event level</h4>
+                    <ul>
+                        <li>Acquisition protocol name</li>
+                        <li>Topogram / Spiral / Additional CT</li>
+                        <li>kVp、mean / max mA、pitch、rotation time</li>
+                        <li>CTDIvol、DLP、scan length / exposed range</li>
+                        <li>是否使用 oral / IV contrast</li>
+                        <li>modulation type（例如 XYZ_EC / CARE Dose）</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="reading-note">只看總 DLP 不夠，因為真正可改善的點，通常藏在 event-level 的 protocol、range 與 repeat pattern 裡。</p>`
+        },
+        {
+            type: "section",
+            title: "主要 outcome、outlier 與 dashboard",
+            html: `<div class="two-col">
+                <div class="detail-card">
+                    <h4>Primary / secondary outcomes</h4>
+                    <ul>
+                        <li><strong>Primary：</strong>每次 FDG PET/CT 的 total CT DLP、event count 與 protocol class</li>
+                        <li><strong>Secondary：</strong>CTDIvol distribution、scan length、單段 vs 分段掃描、delayed / additional CT rate</li>
+                        <li><strong>補充：</strong>必要時才做 effective dose estimate，而且要清楚標示為 communication use。</li>
+                    </ul>
+                </div>
+                <div class="detail-card">
+                    <h4>優先盯的 outlier 與 dashboard</h4>
+                    <ul>
+                        <li>上下半身分段，各段都各自做 CT</li>
+                        <li>scan range 過長或有 overlap 區域</li>
+                        <li>delayed PET/CT 又重做全範圍 CT</li>
+                        <li>topogram / additional CT / repeat CT 缺乏明確理由</li>
+                        <li>monthly dashboard：median DLP、75th / 95th percentile、split scan rate、repeat CT rate</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="reading-note">如果你的目標是科內改善，raw metrics 與 repeat pattern 比單一 effective dose 更能找到真正可改的地方。</p>`
+        },
+        {
+            type: "section",
+            title: "protocol optimization 可以先從哪裡下手？",
+            html: `<div class="data-table-wrapper">
+                <table class="data-table">
+                    <thead>
+                        <tr><th>情境</th><th>優化方向</th><th>想解決的問題</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CT 只做 attenuation correction / localization</td>
+                            <td>與 diagnostic CT 分流，改用 ultra-low-dose 或 low-dose preset</td>
+                            <td>避免非必要地把定位 CT 做成接近診斷 CT</td>
+                        </tr>
+                        <tr>
+                            <td>上下半身分段掃描</td>
+                            <td>重新檢視第二段 CT 是否必要、能否降 mA、縮短 range、避免 overlap</td>
+                            <td>控制 DLP 疊加與重複照射</td>
+                        </tr>
+                        <tr>
+                            <td>Delayed PET/CT</td>
+                            <td>優先考慮 PET-only delayed 或 limited-field low-dose CT</td>
+                            <td>避免為局部 problem-solving 例行重做全身 CT</td>
+                        </tr>
+                        <tr>
+                            <td>高劑量 outlier case</td>
+                            <td>建立 monthly dashboard：median DLP、95th percentile、repeat CT rate</td>
+                            <td>把異常從單一個案變成可追蹤的系統指標</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="reading-note">這裡最值得做的不是先爭論「到底幾 mSv 才算高」，而是先把 <strong>哪一種 CT purpose、哪一段 acquisition、哪一種 delayed workflow</strong> 正在把 DLP 推高找出來。</p>`
+        },
+        {
+            type: "section",
+            title: "權威參考文獻",
+            html: `<ol class="reference-list">
+                <li><strong>Boellaard R, Herrmann K, Barrington SF, et al.</strong> <a href="https://doi.org/10.1016/j.eanmj.2025.100006" target="_blank" rel="noreferrer">[18F]FDG PET/CT: EANM procedure guidelines for tumour imaging: version 3.0</a>. <em>The EANM Journal</em>. 2025. DOI: 10.1016/j.eanmj.2025.100006.</li>
+                <li><strong>American College of Radiology; American College of Nuclear Medicine; Society of Nuclear Medicine and Molecular Imaging; Society for Pediatric Radiology.</strong> <a href="https://gravitas.acr.org/PPTS/DownloadPreviewDocument?DocId=136" target="_blank" rel="noreferrer">ACR–ACNM–SNMMI–SPR Practice Parameter for Performing FDG-PET/CT in Oncology</a>. Revised 2021.</li>
+                <li><strong>Australian Diabetes Society; Australian and New Zealand Society of Nuclear Medicine.</strong> <a href="https://www.diabetessociety.com.au/guideline/joint-ads-anzsnm-guideline-for-fdg-pet-ct-imaging-in-patients-with-type-1-and-type-2-diabetes-august-2024/" target="_blank" rel="noreferrer">Joint ADS/ANZSNM guideline for FDG PET/CT imaging in patients with type 1 and type 2 diabetes</a>. 1 August 2024.</li>
+                <li><strong>Arbizu J, et al.</strong> <a href="https://doi.org/10.2967/jnumed.124.268754" target="_blank" rel="noreferrer">SNMMI Procedure Standard / EANM Practice Guideline for Brain [18F]FDG PET Imaging, Version 2.0</a>. <em>Journal of Nuclear Medicine</em>. 2024. DOI: 10.2967/jnumed.124.268754.</li>
+            </ol>
+            <p class="reading-note">本頁把 <strong>最新版版本狀態</strong>、<strong>whole-body oncology 操作條文</strong>、<strong>diabetes workflow</strong> 與 <strong>補充性 contemporary FDG prep 原則</strong> 分開引用，避免用單一文件硬撐全部結論。</p>`
+        },
+        {
+            type: "info-box-amber",
+            html: `<h4>比較穩妥的結論寫法</h4>
+            <p><strong>PET/CT 的 CT component 應依臨床目的分層管理。</strong>當 CT 只作 attenuation correction 或 localization 時，應使用最低足夠劑量；當流程涉及上下半身分段、delayed imaging 或 repeat CT 時，應特別監測累積 DLP、scan length 與 repeat rate。對單一 dose report，較嚴謹的做法是先描述 raw metrics 與 CT purpose，再與本院 protocol 分布或 local DRL 概念比較，而不是直接把它判成「安全低劑量」或「一定過高」。</p>`
         }
     ]
 },
@@ -4481,6 +4894,17 @@ const EXAM_READER_GUIDES = {
             note: "視覺讀法：從左到右先判斷問題類型，再往下讀對應段落。"
         }
     },
+    WomenRadiationPractice: {
+        eyebrow: "先看臨床決策順序",
+        title: "女性與懷孕相關輻射檢查，核心是分級與正當化",
+        lead: "先辨識是否可能懷孕，再依子宮曝露風險分級決策，最後把問診、告知與決策文件化，避免過度延誤與不必要曝露。",
+        cards: [
+            { title: "10 日法則已非主流硬規則", text: "截至 2026 年，IAEA/ICRP 與 ACR 路徑皆以風險分級與臨床必要性為主，不建議只靠月經天數一刀切。" },
+            { title: "先分檢查風險層級", text: "子宮可忽略曝露、低曝露、可能較高曝露三層，對應不同問診與驗孕深度。" },
+            { title: "高風險程序一定要升級", text: "骨盆 CT、介入或治療性核醫若未排除懷孕，不可由第一線自行放行。" },
+            { title: "診斷與治療核醫分開管理", text: "診斷核醫可在正當化下執行；治療核醫多屬禁忌或高度限制，流程不可混用。" }
+        ]
+    },
     EmergencyCart: {
         eyebrow: "先看日常檢查",
         title: "急救車管理重點在平時檢查是否確實",
@@ -4537,6 +4961,32 @@ const EXAM_READER_GUIDES = {
             note: "視覺讀法：先看紅色變因，再看等待與攝影；這能防止讀者只記得檢查時間，忘記前處理才是關鍵。"
         },
         evidence: "更新依據：Cleveland Clinic PET scan patient education（2026）與近期 PET 品質研究。"
+    },
+    PETCTRadiation: {
+        eyebrow: "先拆 CT component，再談總 dose",
+        title: "PET/CT 輻射探討：真正該監測的是 DLP、CTDIvol、scan length 與 event count",
+        lead: "這頁不是把 PET/CT 混成一個總 mSv，而是拆開看 FDG 與 CT、單段與分段掃描、delayed CT 與 protocol optimization，讓研究與品質改善有明確指標可追。",
+        cards: [
+            { title: "raw metrics 先行", text: "研究與 audit 時，先看 DLP、CTDIvol、scan length 與 irradiation events，不要先跳到單一 mSv 數字。" },
+            { title: "分段掃描是關鍵變因", text: "CTDIvol 不一定很高，但只要 range 長、event 多，累積 DLP 仍會快速上升。" },
+            { title: "delayed CT 常是隱性來源", text: "額外負擔常不是多一段 PET，而是為了 delayed problem-solving 又 routine 重做 CT。" },
+            { title: "重點是 protocol 分流", text: "attenuation-only、localization、diagnostic CT 與 limited delayed CT 應分層管理。" }
+        ],
+        conceptDiagram: {
+            type: "chain",
+            kicker: "audit 思考路徑",
+            title: "PET/CT dose review：先判 CT 目的，再追 event、range 與 repeat CT",
+            lead: "別先問這份 report 幾 mSv；先問這段 CT 用來做什麼、做了幾次、掃了多長。",
+            items: [
+                { label: "1 目的", tone: "warning", title: "先判 CT 目的", text: "CTAC、定位與 diagnostic CT，不該沿用同一套 preset。" },
+                { label: "2 事件", tone: "info", title: "再數掃描事件", text: "分段、delayed 與 additional CT，會直接把 DLP 往上推。" },
+                { label: "3 範圍", tone: "warning", title: "確認 scan range", text: "range 過長或 overlap，就算 CTDIvol 不高也會吃掉 DLP。" },
+                { label: "4 重做", tone: "critical", title: "優先抓 repeat CT", text: "最常見可改善來源，是沒有明確理由的 repeat whole-body CT。" },
+                { label: "5 優化", tone: "success", title: "最後才做優化", text: "再分流 preset、縮短範圍、降低第二段 CT 強度與做 dashboard。" }
+            ],
+            note: "讀法：先看 CT 目的，再看 event 與 range，最後才討論 mSv 與優化。"
+        },
+        evidence: "更新依據：EANM 2025 v3.0、ACR–ACNM–SNMMI–SPR 2021、ADS / ANZSNM 2024，並以本院 Siemens Biograph dose report 作案例拆讀。"
     },
     POSLUMA: {
         title: "PSMA PET：多半不用禁食，但排尿與靜止仍很重要",
@@ -5268,9 +5718,11 @@ const SEARCH_KEYWORDS = {
     Radiopharmacy: ['hot lab', 'radiopharmacy', '熱核室', '製劑室', '分裝', '放行', '污染偵測', '廢棄', '收貨', 'labeling'],
     PatientQA: ['qa', '問答', 'question', '問題', 'patient', '病人', 'faq'],
     RadiationSafety: ['radiation', '輻射', 'safety', '安全', 'protection', '防護', 'dose', '劑量'],
+    WomenRadiationPractice: ['女性輻射', '懷孕輻射', '孕婦影像', '10日法則', '十日法則', '10 day rule', 'pregnancy radiation', 'pregnant patient imaging', '胎兒劑量', '哺乳輻射'],
     DosageTable: ['dosage', '劑量', 'dose', '劑量表', 'snmmi', 'eanm', 'mci', 'mbq'],
     DosageCalc: ['calculator', '計算', 'dosage', '劑量', 'weight', '體重', 'pediatric', '兒科'],
     PET: ['cancer', 'tumor', '腫瘤', '癌', 'fdg', 'glucose', '葡萄糖', 'staging', '分期', 'pet'],
+    PETCTRadiation: ['pet/ct 輻射', 'pet ct radiation', 'fdg ct dose', 'ct component', 'dose report', 'dlp', 'ctdivol', 'ct dose', 'protocol optimization', 'delayed ct', '分段掃描', '輻射劑量'],
     BrainPET: ['brain', '腦', 'fdg', 'dementia', '失智', 'pet', '腦部'],
     POSLUMA: ['prostate', '攝護腺', 'psma', 'psa', '前列腺', 'posluma'],
     Ga68DOTATOC: ['net', 'neuroendocrine', '神經內分泌', 'somatostatin', 'dotatoc', 'ga68', '體抑素'],
@@ -5887,26 +6339,50 @@ function getReadingTocHTML(items, options = {}) {
     if (normalizedItems.length < 2) return '';
 
     return `
-        <aside class="reading-toc" aria-label="${options.ariaLabel || '閱讀索引'}">
-            <div class="reading-toc-header">
-                <span class="reading-toc-label">閱讀索引</span>
-                ${options.title ? `<p class="reading-toc-title">${options.title}</p>` : ''}
-                ${options.note ? `<p class="reading-toc-note">${options.note}</p>` : ''}
+        <div class="reading-nav-shell" data-reading-nav>
+            <aside class="reading-progress-rail" aria-hidden="true">
+                <div class="reading-progress-track">
+                    ${normalizedItems.map((item) => `
+                        <button
+                            type="button"
+                            class="reading-progress-link"
+                            data-reading-target="${item.id}"
+                            title="${item.label}"
+                        >
+                            <span class="sr-only">${item.label}</span>
+                        </button>
+                    `).join('')}
+                </div>
+            </aside>
+            <div class="reading-fab-stack" aria-label="${options.ariaLabel || '閱讀索引'} 操作">
+                <button type="button" class="reading-fab reading-fab--toc" data-reading-action="toggle-drawer">目錄</button>
+                <button type="button" class="reading-fab reading-fab--top" data-reading-action="scroll-top" aria-label="回到頁首">↑</button>
             </div>
-            <div class="reading-toc-list">
-                ${normalizedItems.map((item) => `
-                    <button type="button" class="reading-toc-link" data-reading-target="${item.id}">
-                        ${item.label}
-                    </button>
-                `).join('')}
-            </div>
-        </aside>
+            <button type="button" class="reading-drawer-backdrop" data-reading-action="close-drawer" aria-hidden="true" tabindex="-1"></button>
+            <aside class="reading-toc-drawer" aria-label="${options.ariaLabel || '閱讀索引'}" aria-hidden="true">
+                <div class="reading-toc-header">
+                    <div class="reading-toc-copy">
+                        <span class="reading-toc-label">閱讀索引</span>
+                        ${options.title ? `<p class="reading-toc-title">${options.title}</p>` : ''}
+                        ${options.note ? `<p class="reading-toc-note">${options.note}</p>` : ''}
+                    </div>
+                    <button type="button" class="reading-drawer-close" data-reading-action="close-drawer" aria-label="關閉目錄">×</button>
+                </div>
+                <div class="reading-toc-list">
+                    ${normalizedItems.map((item) => `
+                        <button type="button" class="reading-toc-link" data-reading-target="${item.id}">
+                            ${item.label}
+                        </button>
+                    `).join('')}
+                </div>
+            </aside>
+        </div>
     `;
 }
 
 function setActiveReadingTocLink(container, sectionId) {
     if (!container || !sectionId) return;
-    container.querySelectorAll('.reading-toc-link').forEach((link) => {
+    container.querySelectorAll('.reading-toc-link, .reading-progress-link').forEach((link) => {
         const isActive = link.dataset.readingTarget === sectionId;
         link.classList.toggle('is-active', isActive);
         if (isActive) {
@@ -5924,7 +6400,10 @@ function initReadingToc(container) {
     if (!container) return;
 
     const scroller = document.querySelector('.content-scroll');
-    const links = Array.from(container.querySelectorAll('.reading-toc-link'));
+    const navShell = container.querySelector('[data-reading-nav]');
+    const links = Array.from(container.querySelectorAll('.reading-toc-link, .reading-progress-link'));
+    const drawer = container.querySelector('.reading-toc-drawer');
+    const actionButtons = Array.from(container.querySelectorAll('[data-reading-action]'));
     const readingTargets = new Set(links
         .map((link) => link.dataset.readingTarget)
         .filter(Boolean));
@@ -5934,6 +6413,12 @@ function initReadingToc(container) {
     if (!scroller || links.length === 0 || sections.length === 0) {
         return;
     }
+
+    const setDrawerOpen = (isOpen) => {
+        if (!navShell || !drawer) return;
+        navShell.classList.toggle('is-drawer-open', isOpen);
+        drawer.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+    };
 
     const updateActive = () => {
         const scrollerRect = scroller.getBoundingClientRect();
@@ -5951,6 +6436,9 @@ function initReadingToc(container) {
         }
 
         setActiveReadingTocLink(container, activeSection.id);
+        if (navShell) {
+            navShell.classList.toggle('can-scroll-top', scroller.scrollTop > 180);
+        }
     };
 
     let ticking = false;
@@ -5975,15 +6463,36 @@ function initReadingToc(container) {
 
         setActiveReadingTocLink(container, button.dataset.readingTarget);
         scroller.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+        if (button.classList.contains('reading-toc-link')) {
+            setDrawerOpen(false);
+        }
+    };
+
+    const handleAction = (event) => {
+        const action = event.currentTarget.dataset.readingAction;
+        if (action === 'toggle-drawer') {
+            setDrawerOpen(!navShell?.classList.contains('is-drawer-open'));
+            return;
+        }
+        if (action === 'close-drawer') {
+            setDrawerOpen(false);
+            return;
+        }
+        if (action === 'scroll-top') {
+            scroller.scrollTo({ top: 0, behavior: 'smooth' });
+        }
     };
 
     links.forEach((link) => link.addEventListener('click', handleClick));
+    actionButtons.forEach((button) => button.addEventListener('click', handleAction));
     scroller.addEventListener('scroll', requestUpdate, { passive: true });
     window.addEventListener('resize', requestUpdate);
+    setDrawerOpen(false);
     updateActive();
 
     readingTocCleanup = () => {
         links.forEach((link) => link.removeEventListener('click', handleClick));
+        actionButtons.forEach((button) => button.removeEventListener('click', handleAction));
         scroller.removeEventListener('scroll', requestUpdate);
         window.removeEventListener('resize', requestUpdate);
     };
@@ -6357,6 +6866,7 @@ const LEARNING_NEXT_STEP_VIEWS = {
     Radiopharmacy: ['DocumentControl', 'RadiationSafety', 'DosageTable'],
     PatientQA: ['NMBasics', 'RadiationSafety', 'DosageTable'],
     RadiationSafety: ['I131Ward', 'DocumentControl', 'PatientQA'],
+    WomenRadiationPractice: ['RadiationSafety', 'PatientQA', 'I131Ward'],
     I131Ward: ['RadiationSafety', 'PatientQA', 'DosageTable'],
     DosageTable: ['PatientQA', 'Radiopharmacy', 'NMBasics'],
     DosageCalc: ['DosageTable', 'PatientQA', 'NMBasics'],
@@ -7455,6 +7965,11 @@ function renderView(viewName) {
         decorateLightboxTargets(container);
         container.style.opacity = '1';
         container.style.transform = 'translateY(0)';
+        window.setTimeout(() => {
+            if (container.style.transform === 'translateY(0px)' || container.style.transform === 'translateY(0)') {
+                container.style.transform = '';
+            }
+        }, 180);
         container.setAttribute('aria-busy', 'false');
 
         // Attach special listeners

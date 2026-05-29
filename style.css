@@ -719,8 +719,8 @@ a:hover { text-decoration: underline; }
 
 .immersive-reading-shell {
     display: grid;
-    grid-template-columns: 224px minmax(0, 1fr);
-    gap: 30px;
+    grid-template-columns: 0 minmax(0, 1fr);
+    gap: 0;
     align-items: start;
 }
 
@@ -734,23 +734,120 @@ a:hover { text-decoration: underline; }
     gap: 30px;
 }
 
-.reading-toc {
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.reading-nav-shell {
+    position: relative;
+    width: 0;
+    min-width: 0;
+}
+
+.reading-progress-rail {
+    display: none;
+}
+
+.reading-fab-stack {
+    position: fixed;
+    right: 22px;
+    bottom: 26px;
+    z-index: 1400;
     display: grid;
-    position: sticky;
-    top: 22px;
+    gap: 10px;
+}
+
+.reading-fab {
+    min-width: 60px;
+    min-height: 44px;
+    padding: 0 16px;
+    border: 1px solid rgba(143,94,103,0.18);
+    border-radius: 999px;
+    background:
+        linear-gradient(180deg, rgba(255,255,255,0.88), rgba(255,246,243,0.96)),
+        rgba(255,252,251,0.92);
+    color: var(--text-primary);
+    font-weight: 800;
+    box-shadow: 0 18px 34px rgba(125,79,87,0.14);
+    backdrop-filter: blur(12px);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease;
+}
+
+.reading-fab:hover,
+.reading-fab:focus-visible {
+    transform: translateY(-1px);
+    box-shadow: 0 22px 40px rgba(125,79,87,0.18);
+}
+
+.reading-fab--top {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.reading-nav-shell.can-scroll-top .reading-fab--top {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.reading-drawer-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 40;
+    background: rgba(70, 43, 51, 0.18);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.reading-toc-drawer {
+    position: fixed;
+    right: 22px;
+    bottom: 132px;
+    z-index: 41;
+    display: grid;
     gap: 12px;
-    max-height: calc(100vh - 72px);
+    width: min(320px, calc(100vw - 32px));
+    max-height: min(68vh, 560px);
     padding: 16px 14px 14px;
     border: 1px solid rgba(143,94,103,0.12);
     border-radius: 22px;
     background:
-        linear-gradient(180deg, rgba(255,255,255,0.74), rgba(255,249,247,0.92)),
-        rgba(255,252,251,0.86);
-    box-shadow: 0 18px 34px rgba(125,79,87,0.08);
-    backdrop-filter: blur(12px);
+        linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,249,247,0.96)),
+        rgba(255,252,251,0.94);
+    box-shadow: 0 24px 44px rgba(125,79,87,0.16);
+    backdrop-filter: blur(14px);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(14px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.reading-nav-shell.is-drawer-open .reading-drawer-backdrop {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.reading-nav-shell.is-drawer-open .reading-toc-drawer {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
 }
 
 .reading-toc-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.reading-toc-copy {
     display: grid;
     gap: 6px;
 }
@@ -774,6 +871,17 @@ a:hover { text-decoration: underline; }
     color: var(--text-secondary);
     font-size: 0.86rem;
     line-height: 1.55;
+}
+
+.reading-drawer-close {
+    width: 36px;
+    height: 36px;
+    flex: 0 0 auto;
+    border-radius: 999px;
+    background: rgba(143,94,103,0.08);
+    color: var(--brand-primary);
+    font-size: 1.4rem;
+    line-height: 1;
 }
 
 .reading-toc-list {
@@ -1065,6 +1173,7 @@ a:hover { text-decoration: underline; }
 
 @media (max-width: 768px) {
     .two-col { grid-template-columns: 1fr; gap: 24px; }
+    .evidence-grid { grid-template-columns: 1fr; }
 }
 
 .learning-card-grid {
@@ -1167,6 +1276,71 @@ a:hover { text-decoration: underline; }
     color: var(--text-secondary);
 }
 
+.evidence-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin: 16px 0 10px;
+}
+
+.evidence-card {
+    background: rgba(255, 252, 251, 0.92);
+    border: 1px solid var(--border-light);
+    border-radius: 18px;
+    padding: 18px 20px;
+}
+
+.authority-meta {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 4px 10px;
+    border-radius: var(--radius-full);
+    background: rgba(242, 231, 227, 0.75);
+    color: var(--text-tertiary);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.evidence-card h4 {
+    margin-bottom: 8px;
+    color: var(--text-primary);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.evidence-card p,
+.evidence-card ul {
+    color: var(--text-secondary);
+    font-size: 0.97rem;
+    line-height: 1.78;
+}
+
+.evidence-card ul {
+    margin-top: 8px;
+    padding-left: 20px;
+}
+
+.evidence-card li + li {
+    margin-top: 4px;
+}
+
+.reference-list {
+    margin: 8px 0 0;
+    padding-left: 24px;
+    max-width: var(--reading-measure-wide);
+}
+
+.reference-list li {
+    color: var(--text-secondary);
+    font-size: 0.97rem;
+    line-height: 1.82;
+}
+
+.reference-list li + li {
+    margin-top: 12px;
+}
+
 /* Tables */
 .data-table-wrapper {
     overflow-x: auto;
@@ -1205,6 +1379,7 @@ a:hover { text-decoration: underline; }
     color: var(--text-secondary);
     line-height: var(--zh-body-leading-dense);
     vertical-align: top;
+    min-width: 120px;
 }
 
 .data-table tr:last-child td { border-bottom: none; }
@@ -1743,6 +1918,24 @@ a:hover { text-decoration: underline; }
     color: #5f7161;
 }
 
+.guide-tag.acr {
+    background: #f5f8fd;
+    border-color: #d6deed;
+    color: #506681;
+}
+
+.guide-tag.iaea {
+    background: #eef8f6;
+    border-color: #d4e8e2;
+    color: #4f6f69;
+}
+
+.guide-tag.icrp {
+    background: #f8f3f8;
+    border-color: #e5d7e6;
+    color: #6d5c72;
+}
+
 .guide-tag.local {
     background: #fff9f3;
     border-color: #eadcca;
@@ -1957,13 +2150,8 @@ a:hover { text-decoration: underline; }
 
 @media (max-width: 1080px) {
     .immersive-reading-shell.has-reading-toc {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .reading-toc {
-        position: static;
-        max-height: none;
+        grid-template-columns: 0 minmax(0, 1fr);
+        gap: 0;
     }
 }
 
@@ -2022,34 +2210,19 @@ a:hover { text-decoration: underline; }
     }
 
     .immersive-reading-shell {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
         gap: 18px;
     }
 
-    .reading-toc {
-        position: static;
-        padding: 14px;
-        max-height: none;
+    .reading-fab-stack {
+        right: 16px;
+        bottom: 18px;
     }
 
-    .reading-toc-list {
-        display: flex;
-        gap: 8px;
-        overflow-x: auto;
-        overflow-y: hidden;
-        padding-bottom: 2px;
-        scroll-snap-type: x proximity;
-    }
-
-    .reading-toc-link {
-        flex: 0 0 auto;
-        max-width: 72vw;
-        padding: 7px 10px;
-        border: 1px solid var(--border-light);
-        border-radius: var(--radius-full);
-        background: rgba(255,255,255,0.58);
-        scroll-snap-align: start;
-        white-space: nowrap;
+    .reading-toc-drawer {
+        right: 16px;
+        bottom: 122px;
+        width: min(340px, calc(100vw - 24px));
     }
 
     .is-immersive-reading .reader-guide {
@@ -2113,13 +2286,8 @@ a:hover { text-decoration: underline; }
 
 @media (max-width: 1080px) {
     .immersive-reading-shell.has-reading-toc {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .reading-toc {
-        position: static;
-        max-height: none;
+        grid-template-columns: 0 minmax(0, 1fr);
+        gap: 0;
     }
 }
 
@@ -4674,7 +4842,7 @@ body.is-lightbox-open {
 }
 
 .concept-diagram.is-chain .concept-diagram-body {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     align-items: stretch;
 }
 
@@ -5201,7 +5369,7 @@ body {
         grid-template-columns: minmax(0, 1fr);
     }
 
-    .reading-toc {
+    .reading-toc-drawer {
         border-radius: 18px;
     }
 
