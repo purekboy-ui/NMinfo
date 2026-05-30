@@ -946,9 +946,9 @@ WomenRadiationPractice: {
             type: "section",
             title: "基本原則",
             html: `<div class="prose">
-            <p>女性、懷孕與醫療輻射相關議題的核心，不是以單一口訣或固定日期代替判斷，而是回到三個基本原則：<strong>正當化</strong>、<strong>最適化</strong>與<strong>文件化</strong>。正當化是確認檢查或治療是否足以回答目前的臨床問題；最適化是當程序確有必要時，以足夠完成診斷或治療目的的最低合理曝露條件執行；文件化則是確保問診、驗孕、告知、替代方案與最終決策均可追溯。</p>
-            <p>在臨床現場，真正困難的通常不是「已知懷孕是否應避免不必要曝露」，而是「尚未確定是否懷孕」或「已知懷孕但影像結果可能立即改變治療」這兩類情境。這些情況不適合以一律延期或一律照常執行處理，而應根據照野是否接近子宮、檢查急迫性、替代影像可近性，以及結果是否改變當下處置來分層判斷。</p>
-            <p>ACR、IAEA 與 ICRP 的當代路徑均強調：多數診斷程序需要的是風險分級與可追溯決策，而不是將所有育齡女性視為同一風險族群。</p>
+            <p>這個主題先抓三件事就好：<strong>先判斷要不要做（正當化）</strong>、<strong>要做就用最少但夠用的輻射（最適化）</strong>、<strong>整個過程要寫清楚（文件化）</strong>。</p>
+            <p>現場最常卡住的，不是已經確定懷孕的病人，而是「可能懷孕但還沒確認」的病人。這時不能只靠口訣，也不能一律取消；要看檢查急不急、照射部位、能不能改做超音波或 MRI，再做決定。</p>
+            <p>國際指引的重點很一致：不是把所有育齡女性都當成同一種風險，而是分級處理、留下可追蹤紀錄。</p>
             <div class="source-badges">
                 <span class="guide-tag acr">ACR Practice Parameter 2018 (amended 2023)</span>
                 <span class="guide-tag iaea">IAEA RPoP</span>
@@ -960,9 +960,9 @@ WomenRadiationPractice: {
             type: "section",
             title: "10 日法則與當代指引",
             html: `<div class="prose">
-                <p>傳統所稱的「10 日法則」，是指將腹部或骨盆相關程序安排於月經開始後 10 日內，以降低在未知早期妊娠狀態下照射胚胎的機會。此作法在早期防護教育中具有歷史背景，但現行權威指引已不將其作為多數診斷檢查的通用硬性規則。</p>
-                <p>IAEA 的病人輻射防護資料庫引用 ICRP 84 的精神，指出目前對大多數診斷性檢查更重視實際子宮曝露風險與臨床可執行性，而非以單一天數規則全面限制。ACR 的實務參數則明確採用風險分級路徑：若子宮曝露可忽略，通常不應因懷孕疑慮而造成不必要延誤；若照野接近骨盆或程序可能帶來較高子宮曝露，則應升級問診、驗孕與醫師層級決策。</p>
-                <p class="reading-note">因此，臨床工作人員不宜再以「月經第幾天」作為唯一放行或取消依據。較合理的做法是同時評估檢查部位、可能胚胎或胎兒劑量、臨床急迫性與替代影像方案。</p>
+                <p>「10 日法則」是早期做法，重點是盡量避開不明早孕的風險。到現在，主流指引已改成「看風險分級」，不再把它當成所有檢查都要硬套的規則。</p>
+                <p>白話來說：不要只看月經第幾天。要同時看檢查部位、劑量可能高不高、病情急不急、能不能改別種檢查。</p>
+                <p class="reading-note">結論：10 日法則可以當提醒，但不能當唯一決策標準。</p>
             </div>`
         },
         {
@@ -991,16 +991,48 @@ WomenRadiationPractice: {
                 </table>
             </div>
             <div class="prose">
-                <p>上述分級的實際用途，是把「所有育齡女性」區分為不同工作流程，而不是要求第一線人員自行估算胎兒劑量。對於照野遠離骨盆的程序，重點在完成基本問診與辨識是否已有明確懷孕資訊；對於骨盆、下腹部、介入程序或治療性核醫，則應將流程升級到可做最終決策的醫師或部門 SOP。</p>
-                <p>這類分級設計的目的，是同時避免兩種錯誤：一是因防護焦慮而無差別延後必要影像；二是因流程過度簡化而忽略高曝露程序的防護要求。</p>
+                <p>這個分級是給現場快速分流用，不是要第一線人員自己算胎兒劑量。低風險就照流程問診；中高風險就升級驗孕與醫師覆核。</p>
+                <p>這樣做可同時避免兩件事：該做的檢查被拖到，或高風險檢查被太快放行。</p>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "常見核醫檢查落在哪一級（排程版）",
+            html: `<div class="prose">
+                <p>以下為「排程與放行」用途的實務分級，目的是決定是否需當日驗孕、醫師覆核與是否先改做其他檢查；不是取代個別劑量計算。</p>
+            </div>
+            <div class="data-table-wrapper">
+                <table class="data-table">
+                    <thead><tr><th>分級</th><th>常見核醫檢查</th><th>第一線建議作法</th></tr></thead>
+                    <tbody>
+                        <tr>
+                            <td>A 級<br>低風險、可在正當化下執行</td>
+                            <td>Tc-99m 骨掃描、DTPA/MAG3、DMSA、HIDA、肺灌流（非治療性）</td>
+                            <td>完成懷孕問診；若有「月經過期或受孕可能」則升級醫師確認是否需先驗孕。</td>
+                        </tr>
+                        <tr>
+                            <td>B 級<br>中風險、建議先驗孕或先覆核</td>
+                            <td>FDG PET/CT、Ga-67、Tl-201、In-111/WBC 等較高活度或較高全身劑量檢查</td>
+                            <td>優先做當日驗孕或醫師覆核；確認檢查急迫性與替代方案，再決定是否執行。</td>
+                        </tr>
+                        <tr>
+                            <td>C 級<br>高風險或原則禁忌</td>
+                            <td>I-131 診斷高活度掃描與 I-131 治療、其他治療性核醫程序</td>
+                            <td>未排除懷孕不得放行。需醫師與部門流程重新評估，必要時改期或改策略。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="prose">
+                <p class="reading-note">說明：核醫即使不是照骨盆，若已懷孕仍可能有胎兒受照，因此分級核心是「藥物與活度」而不只是「照哪個部位」。</p>
             </div>`
         },
         {
             type: "section",
             title: "可能懷孕但尚未確認時的實務流程",
             html: `<div class="prose">
-                <p>門診或排檢階段應先完成基本問診，包括是否已知懷孕、末次月經、近期是否有受孕可能、是否哺乳，以及本次程序是否屬於高子宮曝露情境。若程序屬於頭部、胸部或四肢等子宮曝露可忽略的類型，通常完成問診即可進入一般流程；若照野接近骨盆、可能涉及多相位 CT、介入或治療性程序，則不應由櫃台或技術人員單獨以經驗值決定是否繼續。</p>
-                <p>在這類中高風險情境下，常見做法是於當日加做驗孕，並由開單醫師、執行醫師或部門指定流程確認檢查急迫性與替代方案。若臨床問題可以由超音波或 MRI 回答，應優先考慮非電離檢查；若延後可能影響急診處置、手術決策或抗感染治療，則應將理由記錄清楚後再進行最適化執行。</p>
+                <p>排檢時先問四件事：有沒有已知懷孕、月經時間、最近有沒有可能受孕、是否哺乳。接著看這次檢查是低風險還是中高風險。</p>
+                <p>若是中高風險檢查，通常要當日驗孕或升級醫師判斷，不能只靠櫃台或技術人員口頭放行。若可用超音波或 MRI 回答問題，優先改做；若病況急、不能延後，就在記錄完整前提下執行最適化流程。</p>
                 <h4>常見情境</h4>
                 <p><strong>情境一：</strong>病人接受胸部 X 光或頭部 CT，表示月經延遲但未確認懷孕。此類程序多半不需要因懷孕疑慮全面取消，但仍應完成問診與必要記錄。</p>
                 <p><strong>情境二：</strong>病人預定接受骨盆 CT，且近期有受孕可能。此時應依部門流程升級處理，必要時先驗孕，再決定是否延期、改做其他影像，或因急迫性而於最適化條件下執行。</p>
@@ -1010,9 +1042,15 @@ WomenRadiationPractice: {
             type: "section",
             title: "已知懷孕時的影像選擇、風險溝通與劑量估算",
             html: `<div class="prose">
-                <p>若病人已知懷孕，第一步仍是確認本次影像能否由超音波或 MRI 取代。若非電離檢查可以回答臨床問題，通常應優先考慮；但若臨床問題涉及外傷、肺栓塞、急腹症、腦中風或其他會立即改變治療的狀況，則不應因懷孕身分而不當延誤必要檢查。</p>
-                <p>在必須執行含電離程序時，最適化的重點包括：限制照野、避免不必要多相位、依臨床問題選擇適當技術參數，並使影像醫師與臨床團隊對程序必要性有一致理解。風險溝通時應避免使用「完全沒有風險」或「一定有害」這類絕對語句，而應根據程序性質與已知防護框架，客觀說明多數診斷檢查的胎兒劑量通常遠低於確定性效應門檻，但仍需避免不必要重複曝露。</p>
-                <p>若個案後續需要正式胎兒劑量評估，應由醫療物理或具資格專業人員依實際參數估算，而不是以一般性 conversion factor 對外推論。這類估算的目的，是支援臨床諮詢、產科追蹤與後續紀錄，而不是將每位病人都簡化成單一數字。</p>
+                <p>已知懷孕時，先確認能不能改做超音波或 MRI。若病況急、影像結果會立刻影響治療，則不應因懷孕而延誤必要檢查。</p>
+                <p>真的要做含游離輻射檢查時，重點是縮小範圍、減少不必要相位、參數依臨床問題調整，並把理由與說明寫清楚。對病人溝通時，不要說「完全沒風險」或「一定有害」，要用中立說法。</p>
+                <h4>輻防師實務：胎兒劑量怎麼算</h4>
+                <ul>
+                    <li><strong>放射科 CT/介入：</strong>先收集 DICOM 劑量報告（CTDIvol、DLP、掃描範圍、相位數、kV、mA、螺距），再以專業軟體或標準模型估算子宮/胎兒吸收劑量；不可只用單一 DLP 乘固定係數當最終答案。</li>
+                    <li><strong>核醫診斷：</strong>以「胎兒估算劑量（mGy） = 實際注射活度（MBq） × 妊娠期對應胎兒劑量係數（mGy/MBq）」為主框架，必要時加上膀胱停留與排尿條件修正；係數來源須註記（ICRP/學會資料庫）。</li>
+                    <li><strong>核醫治療：</strong>原則先回到是否應執行。若涉及意外曝露，需由醫療物理與核醫醫師共同估算並形成正式書面報告。</li>
+                    <li><strong>最小可交付清單：</strong>檢查日期、妊娠週數（或不確定）、檢查類型、參數來源、計算模型版本、估算值與不確定性、風險溝通紀錄。</li>
+                </ul>
                 <p class="reading-note">ACR 與 IAEA 均強調：急重症情境中，影像結果若會立即改變治療，不應因懷孕評估流程而導致不當延誤；但過程中的正當化、最適化與紀錄義務仍然存在。</p>
             </div>`
         },
@@ -1020,9 +1058,9 @@ WomenRadiationPractice: {
             type: "section",
             title: "核醫檢查與治療性核醫應分開處理",
             html: `<div class="prose">
-                <p>核醫程序不能一概而論。診斷性核醫檢查雖然同樣需要正當化，但其風險評估必須依核種、活度、是否經胎盤轉運、是否需要哺乳中止，以及檢後接觸與排泄衛教來個別判斷。相同的「核醫檢查」名稱，不代表可以套用單一 SOP 處理所有藥物。</p>
-                <p>治療性核醫則屬於更高警戒層級。以放射碘治療為例，懷孕排除與哺乳評估是程序前必要條件，不應在治療當日才以口頭確認帶過。若病人存在懷孕可能而尚未排除，通常應停止既定治療流程，先完成適應症重評估與必要檢查。</p>
-                <p>換言之，診斷核醫與治療核醫不僅在劑量上不同，在部門工作流程中的防呆等級、醫師覆核要求與病人告知深度也應不同。</p>
+                <p>核醫不能一概而論。診斷檢查和治療檢查要分開看，不能用同一張 SOP 套所有藥物。</p>
+                <p>治療性核醫的風險層級更高。以 I-131 為例，懷孕與哺乳評估必須在治療前完成，不能等到治療當天才口頭確認。</p>
+                <p>實務上，診斷核醫與治療核醫在審核強度、醫師覆核與病人告知深度，都應該不同。</p>
             </div>`
         },
         {
@@ -1031,6 +1069,48 @@ WomenRadiationPractice: {
             html: `<div class="prose">
                 <p>臨床工作人員最容易忽略的並非單一判斷，而是紀錄不完整。無論最後決定是照常執行、延期、改做其他影像，或升級到醫師重新評估，都應留下可追溯紀錄，包括：問診結果、驗孕結果、程序風險分級、替代方案評估、風險溝通重點、最終決策者與決策時間。</p>
                 <p>若部門希望降低現場爭議，最有效的方式通常不是再新增更多口訣，而是把上述流程寫成明確 SOP：哪些程序屬於高子宮曝露、哪些情形需當日驗孕、哪些情形必須醫師覆核、哪些核醫治療程序在未排除懷孕前不得進入給藥或治療程序。這種制度化做法，對第一線工作人員的幫助通常大於零散提醒。</p>
+                <h4>可直接貼用 SOP 範本（門診/排檢版）</h4>
+            </div>
+            <div class="data-table-wrapper">
+                <table class="data-table">
+                    <thead><tr><th>欄位</th><th>範本內容</th></tr></thead>
+                    <tbody>
+                        <tr><td>SOP 名稱</td><td>育齡女性於核醫與放射檢查之懷孕評估與放行流程</td></tr>
+                        <tr><td>目的</td><td>降低胎兒不必要曝露，並避免不當延誤必要醫療。</td></tr>
+                        <tr><td>適用範圍</td><td>所有可能使用游離輻射之診斷或治療程序。</td></tr>
+                        <tr><td>角色分工</td><td>櫃台/護理：初篩問診；放射師/技術師：程序確認；醫師：最終正當化決策；輻防師/醫療物理：劑量估算與文件審核。</td></tr>
+                        <tr><td>初篩問句</td><td>是否已知懷孕、末次月經、近期是否可能受孕、是否哺乳。</td></tr>
+                        <tr><td>升級條件</td><td>月經過期或受孕可能 + 中高風險程序；任何治療性核醫；任何需多相位或大範圍重掃程序。</td></tr>
+                        <tr><td>必填紀錄</td><td>問診結果、驗孕結果、風險分級、替代方案評估、告知摘要、最終決策者與時間戳記。</td></tr>
+                        <tr><td>禁止事項</td><td>未排除懷孕即執行 I-131 治療；無醫師覆核即執行中高風險程序；以口頭代替書面紀錄。</td></tr>
+                        <tr><td>品質指標</td><td>1. 中高風險程序驗孕完成率。2. 懷孕評估紀錄完整率。3. 不必要重掃率與延遲率。</td></tr>
+                    </tbody>
+                </table>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "情境模擬：當下醫療人員怎麼做",
+            html: `<div class="prose">
+                <h4>情境 A：預約 FDG PET/CT，病人表示月經晚 10 天</h4>
+                <ul>
+                    <li>櫃台/護理：標記為 B 級，立即啟動當日驗孕或醫師覆核，不直接取消也不直接放行。</li>
+                    <li>技術師：先暫停注射流程，回報主治醫師確認檢查急迫性與替代方案。</li>
+                    <li>醫師：若非急重症，可改期或改檢查；若急迫且必要，記錄正當化理由並採最適化參數。</li>
+                    <li>輻防師：補齊劑量文件欄位，必要時提供估算流程與後續追蹤建議。</li>
+                </ul>
+                <h4>情境 B：急診疑似肺栓塞，已知懷孕</h4>
+                <ul>
+                    <li>團隊先確認替代策略是否足以回答臨床問題；若不足，需立即執行必要影像，不可因流程遲滯。</li>
+                    <li>執行時採最適化：縮小範圍、減少不必要相位、紀錄參數。</li>
+                    <li>檢查後完成風險溝通與書面紀錄，必要時轉介產科與醫療物理追蹤。</li>
+                </ul>
+                <h4>情境 C：I-131 治療當日，病人懷孕狀態不明</h4>
+                <ul>
+                    <li>立即停止治療流程，先排除懷孕，不得先給藥再補文件。</li>
+                    <li>若無法當日排除，應改期並完成醫師重評估與病人說明。</li>
+                    <li>此情境屬高風險事件，需由科內主管與輻防機制共同追蹤。</li>
+                </ul>
             </div>`
         },
         {
@@ -1041,7 +1121,8 @@ WomenRadiationPractice: {
                 <li>International Atomic Energy Agency. <em>Radiation Protection of Patients (RPoP): Pregnant Women in Radiology</em>.</li>
                 <li>International Atomic Energy Agency. <em>Radiation Protection of Patients (RPoP): Pregnant Women in Nuclear Medicine</em>.</li>
                 <li>International Commission on Radiological Protection. <em>Pregnancy and Medical Radiation</em>. ICRP Publication 84.</li>
-            </ol>`
+            </ol>
+            <p class="reading-note">查核註記：本節內容已依 2026 年 5 月可取得之 ACR/IAEA/ICRP 權威文件核對；涉及個案劑量推估時，仍應以院內實測參數與醫療物理正式報告為準。</p>`
         }
     ]
 },
@@ -1269,7 +1350,7 @@ PET: {
 
 PETCTRadiation: {
     title: "PET/CT 輻射探討",
-    subtitle: "FDG PET/CT 之 CT component、dose report 判讀、臨床流程與品質改善重點",
+    subtitle: "FDG PET/CT 的 CT 部分、劑量報告判讀、重複全身掃描必要性與個案輻射估算",
     category: "pet",
     disableImmersiveReading: true,
     disableReaderGuide: true,
@@ -1279,127 +1360,140 @@ PETCTRadiation: {
             type: "section",
             title: "問題設定與閱讀方式",
             html: `<div class="prose">
-            <p>FDG PET/CT 的輻射暴露並非單一來源，而是至少包含兩個部分：一是放射性藥物本身，二是 CT component。因此，若要討論 PET/CT 的輻射負擔，不宜直接將所有結果化約為單一總 mSv，而應先分辨 PET 與 CT 的相對貢獻，再進一步檢視 CT 的用途、掃描範圍與事件數量。</p>
-            <p>現行權威文件明確指出，PET/CT 內的 CT 可能僅用於 attenuation correction 與解剖定位，也可能被要求為具有診斷目的的 CT。這兩種情境在技術參數、造影需求與可接受劑量水準上本來就不同，因此不能以相同標準判讀。臨床上若忽略 CT purpose，最常出現的錯誤是把單一 dose report 直接解讀為「很低劑量」或「一定太高」，但這種結論通常缺乏必要的背景條件。</p>
-            <p>本頁採用的閱讀方式，是先說明 dose report 的主要指標與限制，再討論哪些臨床流程最容易使 CT dose 上升，最後回到回溯分析與 protocol optimization 的實作重點。</p>
+            <p>FDG PET/CT 的輻射來源有兩個：FDG 藥物本身，以及 CT。看劑量時要分開看，才不會把問題混在一起。</p>
+            <p>PET/CT 裡的 CT 可能只是低劑量定位，也可能是正式診斷 CT。兩者目的不同、劑量也不同，所以不能用同一標準解讀。</p>
+            <p>本頁用同日三次 PET/CT 的 SR 案例，示範怎麼讀 CT 劑量，並說明延遲影像是否需要再做全身 CT。</p>
             <div class="source-badges">
                 <span class="guide-tag eanm">EANM 2025</span>
                 <span class="guide-tag snmmi">ACR / SNMMI / ACNM / SPR</span>
                 <span class="guide-tag snmmi">ADS / ANZSNM 2024</span>
-                <span class="guide-tag local">Siemens dose report</span>
+                <span class="guide-tag local">Siemens 劑量報告</span>
             </div>
             </div>`
         },
         {
             type: "section",
-            title: "判讀 dose report 時可以說與不能說的事",
+            title: "判讀劑量報告時可以說與不能說的事",
             html: `<div class="prose">
-                <p>可以直接由 dose report 說明的，包括：CTDIvol、DLP、scan length、irradiation event 數量、topogram 與 spiral acquisition 的區別、以及是否有 tube current modulation。這些資料對於回溯分析與 protocol audit 具有直接價值。</p>
-                <p>不能單獨由 dose report 推定的，包括：該 protocol 是否「安全」、是否「過高」、以及換算後 effective dose 是否足以代表個別病人的實際風險。原因是 effective dose 本質上屬於 population-based communication estimate，而 dose report 本身通常不包含病人體型、臨床 indication、requested body region、CT purpose 與院內分布基準。</p>
-                <p>特別是在真全身分段掃描情境下，軀幹與下肢的解剖組成不同，不宜將所有 DLP 直接套用單一 torso conversion factor 後再當成精確結論。因此，對 FDG PET/CT 的輻射分析，較穩妥的做法是先使用原始指標描述，再視需要補充 effective dose 的溝通性估算。</p>
+                <p>劑量報告可以直接看的重點有：CTDIvol、DLP、掃描長度、照射事件數、定位片與螺旋 CT。</p>
+                <p>但它不能單獨回答「這次檢查是不是安全」或「病人個人風險到底多高」。因為有效劑量是給流程比較和溝通用，不是個人精算值。</p>
+                <p>所以建議做法是：先看原始數字，再補充 mSv 粗估，並清楚標註是估算值。</p>
             </div>`
         },
         {
             type: "section",
-            title: "CT component 的臨床角色",
+            title: "CT 在 PET/CT 中的臨床角色",
             html: `<div class="prose">
-                <p>ACR–ACNM–SNMMI–SPR 的現行實務參數明確指出，PET/CT 內的 CT 可以扮演不同角色。若目的是 attenuation correction 與 anatomic localization，通常可採用 low-dose CT；若臨床要求的是具判讀價值的 diagnostic CT，則應依該 body region 的診斷需求選擇適當 protocol，必要時可搭配 oral 或 intravenous contrast。</p>
-                <p>這個區分之所以重要，是因為許多部門在工作流程上容易將 PET CTAC 與 diagnostic CT 混為同一預設。若本來只需定位用途卻沿用診斷 CT 條件，劑量會上升；反之，若 clinical indication 實際要求的是診斷 CT，卻以定位 CT 規格執行，也可能影響影像解讀。換言之，討論 PET/CT 劑量前，應先問清楚該段 CT 是為了回答什麼臨床問題。</p>
-                <p>在 audit 或研究設計中，將 CT purpose 分為 attenuation-only、localization、diagnostic CT、delayed/problem-solving CT 等類別，通常比單看總 DLP 更能找出真正可改善之處。</p>
+                <p>ACR–ACNM–SNMMI–SPR 實務參數指出，PET/CT 內的 CT 可作為衰減校正與解剖定位，也可作為診斷 CT。若只是衰減校正與定位，通常可採低劑量 CT；若臨床要求診斷 CT，則應依檢查部位選擇適當參數，必要時搭配口服或靜脈顯影劑。</p>
+                <p>這個區分很重要。若本來只需定位卻沿用診斷 CT 條件，劑量會上升；反之，若臨床問題需要診斷 CT，卻只用定位 CT，也可能影響判讀。因此，討論 PET/CT 劑量前，應先問：這一段 CT 到底要回答什麼臨床問題？</p>
+                <p>對延遲掃描而言，關鍵問題不是「是否做延遲 PET」，而是「延遲段是否需要再次做全身 CT」。這兩件事必須分開討論。</p>
             </div>`
         },
         {
             type: "section",
-            title: "dose report 的主要指標",
+            title: "國際最新建議：FDG PET/CT 何時需要延遲影像",
+            html: `<div class="prose">
+                <p>依 EANM 2025 與 ACR/ACNM/SNMMI/SPR 程序文件，重點不是「全面加做延遲影像」，而是<strong>問題導向、選擇性加做</strong>。也就是先回答臨床問題，再決定是否增加影像段次。</p>
+                <h4>目前主流做法</h4>
+                <ul>
+                    <li><strong>不建議把延遲全身 PET/CT 做成例行流程：</strong>一般腫瘤分期與追蹤，多數情況以標準時點全身 FDG PET/CT 即可。</li>
+                    <li><strong>可考慮延遲影像的情境：</strong>早期影像出現邊界不清、良惡性難分、尿路活性干擾骨盆判讀，或需要觀察可疑病灶隨時間的變化。</li>
+                    <li><strong>若只要釐清局部問題：</strong>優先考慮局部延遲 PET，必要時再加局部低劑量 CT，不建議直接重做延遲全身 CT。</li>
+                </ul>
+                <h4>為什麼要這樣做</h4>
+                <ul>
+                    <li><strong>可能的好處：</strong>延遲影像在特定個案可提升病灶對比，或協助區分部分非特異性攝取。</li>
+                    <li><strong>代價與風險：</strong>流程時間延長、病人移動造成比對困難，若重做全身 CT 會明顯增加可避免的 X 光劑量。</li>
+                    <li><strong>核心原則：</strong>延遲影像可用，但要有明確臨床問題，且影像範圍與 CT 強度要最小化。</li>
+                </ul>
+                <p class="reading-note">實務上可先在醫囑或檢查單明確寫出「延遲影像要回答的問題」。若問題只在單一區域，就不應例行擴大成全身延遲 CT。</p>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "劑量報告的主要指標",
             html: `<div class="data-table-wrapper">
                 <table class="data-table">
                     <thead>
                         <tr><th>指標</th><th>主要意義</th><th>判讀時的注意事項</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td>DLP</td><td>反映整段掃描的累積輸出，受 CTDIvol 與掃描長度共同影響。</td><td>最適合用於研究分布、分段掃描比較與 repeat CT 偵測，但不能單獨代表個別風險。</td></tr>
-                        <tr><td>CTDIvol</td><td>反映該段 CT 的局部劑量強度。</td><td>可用於比較 protocol 強度，但若 scan length 很長，總 DLP 仍可顯著上升。</td></tr>
-                        <tr><td>Scan length / exposed range</td><td>反映照射範圍。</td><td>對 PET/CT 特別重要，因為範圍過長、分段與 overlap 常是累積 DLP 上升主因。</td></tr>
-                        <tr><td>Irradiation events</td><td>反映 topogram、spiral CT、additional CT 等事件數量。</td><td>event 增加通常比單純 CTDIvol 增加更容易被忽略，卻常直接影響總 DLP。</td></tr>
+                        <tr><td>DLP</td><td>反映整段掃描的累積輸出，受 CTDIvol 與掃描長度共同影響。</td><td>最適合用於研究分布、分段掃描比較與重複 CT 偵測，但不能單獨代表個別風險。</td></tr>
+                        <tr><td>CTDIvol</td><td>反映該段 CT 的局部劑量強度。</td><td>可用於比較檢查條件強度，但若掃描長度很長，總 DLP 仍可顯著上升。</td></tr>
+                        <tr><td>掃描長度 / 照射範圍</td><td>反映實際照射範圍。</td><td>對 PET/CT 特別重要，因為範圍過長、分段與重疊常是累積 DLP 上升主因。</td></tr>
+                        <tr><td>照射事件數</td><td>反映定位片、螺旋 CT、追加 CT 等事件數量。</td><td>事件數增加通常比單純 CTDIvol 增加更容易被忽略，卻常直接影響總 DLP。</td></tr>
                     </tbody>
                 </table>
             </div>
             <div class="prose">
-                <p>在 PET/CT 的 CT dose review 中，DLP、CTDIvol、scan length 與 irradiation events 應視為最基本的原始指標。臨床上若只讀到「總 DLP」而未拆開事件內容，常會忽略 topogram 幾乎只占很小比例，而真正的負擔多半來自大範圍 spiral CT。</p>
-                <p>同樣地，若只看到 CTDIvol 在一般範圍內，也不能據此認定總 dose 負擔不高；因為 scan length、第二段掃描或 delayed additional CT，可能使 DLP 顯著增加。這是 PET/CT 與單一區域 CT 在流程判讀上的主要差異之一。</p>
+                <p>在 PET/CT 的 CT 劑量檢視中，DLP、CTDIvol、掃描長度與照射事件數是最基本的原始指標。若只讀到「總 DLP」而未拆開事件內容，常會忽略定位片只占很小比例，真正負擔多半來自大範圍螺旋 CT。</p>
+                <p>同樣地，若只看到 CTDIvol 在一般範圍內，也不能據此認定總劑量負擔不高；因為掃描長度、第二段掃描或延遲追加 CT，可能使 DLP 顯著增加。</p>
             </div>`
         },
         {
             type: "section",
             title: "臨床流程中常見的 CT dose 增加情境",
             html: `<div class="prose">
-                <p>第一類常見情境是真全身或上下半身分段掃描。這類流程不一定表示單段 CTDIvol 特別高，但只要多了一段 CT、第二段範圍過長，或兩段之間存在 overlap，累積 DLP 就會快速上升。對臨床工作人員而言，最值得追問的不是「第二段 PET 是否合理」，而是「第二段是否一定需要再做 CT，以及其範圍是否已被限制在必要區域」。</p>
-                <p>第二類常見情境是 delayed acquisition。追加 delayed PET 並不自動等於必須再做全範圍 CT；若臨床目的僅是釐清局部病灶，實務上更應評估 limited-field CT 或 PET-only delayed 是否足夠。將 delayed study 例行化為 repeat whole-body CT，通常會成為隱性但可避免的 dose source。</p>
-                <p>第三類情境是 diagnostic CT 與 CTAC 的流程混用。若部門沒有明確區分 attenuation/localization 與 diagnostic CT，容易讓所有病人都使用較高強度 preset；相反地，若 clinical indication 實際要求的是診斷 CT，卻以定位 CT 規格執行，也會使臨床資訊不足。這類問題若僅看單一病人的 mSv，通常不易察覺，必須回到 protocol class 與工作流程一起檢查。</p>
+                <p>第一類常見情境是真全身或上下半身分段掃描。這類流程不一定表示單段 CTDIvol 特別高，但只要多了一段 CT、第二段範圍過長，或兩段之間存在重疊，累積 DLP 就會快速上升。臨床上最值得追問的是：第二段是否一定需要再做 CT，以及範圍是否已限制在必要區域。</p>
+                <p>第二類常見情境是延遲掃描。追加延遲 PET 不自動等於必須再做全範圍 CT；若臨床目的只是釐清局部病灶，應評估延遲段單做 PET 或局部低劑量 CT 是否足夠。將延遲掃描例行化為重複全身 CT，常會成為可避免的劑量來源。</p>
+                <p>第三類情境是診斷 CT 與定位 CT 混用。若部門沒有明確區分衰減校正/定位與診斷 CT，容易讓所有病人都使用較高強度條件；相反地，若臨床問題需要診斷 CT，卻只用定位 CT，也會使臨床資訊不足。</p>
             </div>`
         },
         {
             type: "section",
             title: "病人前處理與 uptake consistency 對 CT review 的意義",
             html: `<div class="prose">
-                <p>雖然本頁主題是 CT component，但 PET/CT 的品質改善不能只看 CT dose。ACR 2021、ADS/ANZSNM 2024 與近期 FDG 指引都強調，前處理失控會直接影響 FDG biodistribution，進而改變臨床是否需要 additional imaging。換言之，若部門在 fasting、glucose control、insulin timing、warm environment、uptake period、movement control 與 voiding 上沒有一致流程，後續發生 repeat imaging 或 problem-solving CT 的機率會提高。</p>
-                <p>例如 insulin-treated 病人的安排若不當，可能因肌肉攝取升高而降低病灶對比；病人在 uptake period 走動、說話或受寒，也可能造成非預期攝取；若掃描前未排尿，膀胱與輸尿管活性可能干擾判讀。這些問題表面上看起來屬於 PET 端，但實際上會反過來影響是否追加 CT 或 delayed acquisition，因此在 CT dose audit 中不宜完全忽略。</p>
-                <p class="reading-note">臨床上真正可執行的作法，是將 exercise、fasting、glucose、insulin、uptake time、voiding 與 delayed workflow 一併寫入 protocol，而不是只在事後分析 dose report。</p>
+                <p>雖然本頁主題是 CT，但 PET/CT 的品質改善不能只看 CT 劑量。ACR 2021、ADS/ANZSNM 2024 與近期 FDG 指引都強調，前處理失控會直接影響 FDG 分布，進而改變臨床是否需要追加影像。若部門在禁食、血糖、胰島素時間、保暖、攝取等待時間、活動控制與排尿上沒有一致流程，後續發生重掃或問題釐清 CT 的機率會提高。</p>
+                <p>例如使用胰島素的病人若安排不當，可能因肌肉攝取升高而降低病灶對比；病人在攝取等待期走動、說話或受寒，也可能造成非預期攝取；若掃描前未排尿，膀胱與輸尿管活性可能干擾判讀。這些問題看似屬於 PET 端，實際上會反過來影響是否追加 CT。</p>
+                <p class="reading-note">臨床上真正可執行的作法，是把運動限制、禁食、血糖、胰島素、等待時間、排尿與延遲掃描流程寫入科內規範，而不是只在事後分析劑量報告。</p>
             </div>`
         },
         {
             type: "section",
-            title: "本院示範 dose report 的閱讀方式",
+            title: "南部醫學中心個案（SR）三次 PET/CT：完整輻射拆解",
             html: `<div class="prose">
-                <p>以下示範以你提供的 Siemens Biograph 16 PET/CT dose report 為例，分別說明單段 CT event 與真全身分段掃描的閱讀方式。其目的不是替單一報告下最終評價，而是展示臨床上應如何拆解事件數量、掃描範圍與各段 DLP。</p>
+                <p>使用某醫學中心某案例FDG PET/CT SR 檔作為示範個案。該組資料顯示同一天完成三次 PET/CT：早期大腿段、早期全身段、延遲全身段。每一段 CT 都包含 1 次定位片與 1 次螺旋 CT，因此同日共 6 個 CT 照射事件。</p>
+                <p class="reading-note">CT 有效劑量估算公式：<strong>估算有效劑量（mSv）= DLP（mGy·cm）× 換算係數 k（mSv / mGy·cm）</strong>。本頁係數採文獻常用範圍：頭到骨盆/軀幹段以 0.012 至 0.015；下肢段以 0.0002 粗估。此值用於臨床溝通與流程比較，不等於個人精確器官風險。</p>
             </div>
             <div class="data-table-wrapper">
                 <table class="data-table">
-                    <thead>
-                        <tr><th>示範案例 A：單段 CT event</th><th>CTDIvol</th><th>DLP</th><th>掃描範圍 / 備註</th></tr>
-                    </thead>
+                    <thead><tr><th>檢查段次</th><th>CT 事件數</th><th>CT 總 DLP</th><th>螺旋 CTDIvol / DLP</th><th>CT 估算有效劑量</th><th>重點</th></tr></thead>
                     <tbody>
-                        <tr><td>Topogram</td><td>0.08 mGy</td><td>12.30 mGy·cm</td><td>1536 mm，定位用</td></tr>
-                        <tr><td>Spiral CT Early Thigh</td><td>4.36 mGy</td><td>475.58 mGy·cm</td><td>約 1113 mm，130 kV，mean 83 mA</td></tr>
-                        <tr><td><strong>Total</strong></td><td>—</td><td><strong>487.88 mGy·cm</strong></td><td>總 irradiation events = 2</td></tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="data-table-wrapper">
-                <table class="data-table">
-                    <thead>
-                        <tr><th>示範案例 B：真全身分段掃描</th><th>CTDIvol</th><th>DLP</th><th>掃描範圍 / 備註</th></tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>Torso / Whole-body CT</td><td>9.76 mGy</td><td>1078.07 mGy·cm</td><td>約 1113 mm，130 kV，mean 186 mA</td></tr>
-                        <tr><td>CT Early Thigh</td><td>5.25 mGy</td><td>538.58 mGy·cm</td><td>約 1003 mm，mean 100 mA</td></tr>
-                        <tr><td><strong>Combined</strong></td><td>—</td><td><strong>1616.65 mGy·cm</strong></td><td>軀幹 + 下肢兩段相加</td></tr>
+                        <tr><td>早期大腿段</td><td>2（定位片 + 螺旋 CT）</td><td>380.69 mGy·cm</td><td>3.67 mGy / 368.39 mGy·cm</td><td>約 0.08 mSv</td><td>以下肢段為主，DLP 雖不低，但有效劑量貢獻相對小。</td></tr>
+                        <tr><td>早期全身段</td><td>2（定位片 + 螺旋 CT）</td><td>659.78 mGy·cm</td><td>5.93 mGy / 647.48 mGy·cm</td><td>約 7.9 至 9.9 mSv</td><td>第一次頭到骨盆/軀幹為主的 CT，是本次主要 CT 劑量來源之一。</td></tr>
+                        <tr><td>延遲全身段</td><td>2（定位片 + 螺旋 CT）</td><td>780.11 mGy·cm</td><td>7.03 mGy / 767.81 mGy·cm</td><td>約 9.4 至 11.7 mSv</td><td>延遲段再次做全身 CT，成為最需要檢討正當化的部分。</td></tr>
+                        <tr><td><strong>同日 CT 累積</strong></td><td><strong>6 事件</strong></td><td><strong>1820.58 mGy·cm</strong></td><td><strong>螺旋 DLP 合計 1783.68 mGy·cm</strong></td><td><strong>約 17.4 至 21.7 mSv</strong></td><td>CT 劑量主體來自兩次全身螺旋 CT；定位片貢獻很小。</td></tr>
                     </tbody>
                 </table>
             </div>
             <div class="prose">
-                <p>由此可見，topogram 的 DLP 通常只占很小比例，真正的 burden 主要來自大範圍 spiral CT；而一旦進入分段掃描，累積 DLP 便會明顯上升。這些資料足以支持「event count 與 range 很重要」這項結論，但仍不足以單獨判定 protocol 是否適當，因為尚需比對 clinical indication、CT purpose、病人體型與院內常模分布。</p>
+                <p>同份 PET SR 顯示 FDG 注射活度為 417.73 MBq，SR 內建 FDG 有效劑量約 7.94 mSv。若加上 CT 粗估，本次同日 PET/CT 總有效劑量約為 25.3 至 29.6 mSv。</p>
+                <p>這個數字主要用在流程比較，不是用來判定單一病人的確切風險。就品質改善來看，若延遲全身 CT 沒有明確臨床理由，改成局部低劑量 CT 或只做延遲 PET，通常更合理。</p>
+                <h4>估算可信度與限制</h4>
+                <ul>
+                    <li><strong>可信度：</strong>DLP 轉換為有效劑量是國際期刊與實務教學常用方法，適合比較流程前後、評估重複掃描影響。</li>
+                    <li><strong>限制：</strong>有效劑量屬族群平均概念，受體型、掃描範圍、機型與重建條件影響，不可直接代表個人確定風險。</li>
+                    <li><strong>正式需求：</strong>若要做個人化風險溝通或醫療決策，仍需醫療物理以原始參數與模型另行估算。</li>
+                </ul>
             </div>`
         },
         {
             type: "section",
-            title: "回溯分析與品質改善時應擷取的欄位",
+            title: "是否需要重複全身（至少頭到骨盆）CT？嚴格判準",
             html: `<div class="prose">
-                <p>若要將 PET/CT CT component 做成部門級分析，建議至少區分 study level 與 event level 兩個層次。study level 應包含檢查日期、去識別化連結資訊、total DLP、irradiation event 總數、requested body region、clinical indication，以及是否屬於 whole-body、split scan 或 delayed study。event level 則應包含 acquisition protocol name、topogram 或 spiral 類型、kVp、mean/max mA、pitch、rotation time、CTDIvol、DLP、scan length、contrast use 與 modulation type。</p>
-                <p>若只收 total DLP，最多只能找出高值個案，卻不容易知道問題到底來自哪一段。真正有助於 protocol optimization 的資訊，通常藏在 event-level 的 range、repeat pattern 與 acquisition class 裡。</p>
+                <p>依現行權威文件，PET/CT 的 CT 可以是定位衰減校正，也可以是診斷 CT。若早期全身 CT 已可回答臨床問題，延遲段是否重做全身 CT，建議至少符合下列一項條件：</p>
+                <ul>
+                    <li><strong>條件 1：</strong>延遲影像的臨床問題涉及多區域重新定位，且單做 PET 或局部低劑量 CT 無法回答。</li>
+                    <li><strong>條件 2：</strong>前次 CT 品質不足以支撐解剖判讀（例如嚴重運動、金屬假影、範圍漏掃）。</li>
+                    <li><strong>條件 3：</strong>醫師明確要求延遲期仍需診斷級 CT，而非僅病灶確認。</li>
+                </ul>
+                <p>若以上條件不成立，較一致的最適化方向是：<strong>延遲段單做 PET</strong> 或 <strong>延遲局部低劑量 CT</strong>，而非例行重做全身 CT。這是降低不必要 CT 累積劑量最直接的方法。</p>
+                <p class="reading-note">本個案在同日已做早期全身 CT 後，又再做延遲全身 CT。若病歷沒有明確理由，應列為流程檢討項目。</p>
             </div>`
         },
         {
             type: "section",
-            title: "品質改善可追蹤的 outcome",
-            html: `<div class="prose">
-                <p>若目的是品質改善而非單純個案解讀，primary outcome 可設定為每次 FDG PET/CT 的 total CT DLP、event count 與 protocol class；secondary outcome 則可包含 CTDIvol distribution、scan length、單段與分段掃描比例、delayed/additional CT rate，以及 repeat whole-body CT 的出現頻率。必要時可以補充 effective dose estimate，但應明確標示其用途為臨床溝通或研究比較，而非個別風險預測。</p>
-                <p>實務上最值得優先追蹤的 outlier，通常不是單純 CTDIvol 偏高，而是：上下半身分段且兩段都各自做 CT、scan range 過長或存在 overlap、delayed PET/CT 又追加全範圍 CT、以及 topogram 或 additional CT 缺乏清楚理由。將這些指標整理成 monthly dashboard，例如 median DLP、75th/95th percentile、split scan rate、repeat CT rate，通常比單次討論個案更容易推動部門調整。</p>
-            </div>`
-        },
-        {
-            type: "section",
-            title: "protocol optimization 的起點",
+            title: "流程優化的起點",
             html: `<div class="data-table-wrapper">
                 <table class="data-table">
                     <thead>
@@ -1407,30 +1501,30 @@ PETCTRadiation: {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>CT 只做 attenuation correction / localization</td>
-                            <td>與 diagnostic CT 分流，改用 ultra-low-dose 或 low-dose preset</td>
+                            <td>CT 只做衰減校正 / 定位</td>
+                            <td>與診斷 CT 分流，改用極低劑量或低劑量條件</td>
                             <td>避免非必要地把定位 CT 做成接近診斷 CT</td>
                         </tr>
                         <tr>
                             <td>上下半身分段掃描</td>
-                            <td>重新檢視第二段 CT 是否必要、能否降 mA、縮短 range、避免 overlap</td>
+                            <td>重新檢視第二段 CT 是否必要、能否降低管電流、縮短範圍、避免重疊</td>
                             <td>控制 DLP 疊加與重複照射</td>
                         </tr>
                         <tr>
-                            <td>Delayed PET/CT</td>
-                            <td>優先考慮 PET-only delayed 或 limited-field low-dose CT</td>
-                            <td>避免為局部 problem-solving 例行重做全身 CT</td>
+                            <td>延遲 PET/CT</td>
+                            <td>優先考慮延遲段單做 PET 或局部低劑量 CT</td>
+                            <td>避免為局部問題釐清而例行重做全身 CT</td>
                         </tr>
                         <tr>
-                            <td>高劑量 outlier case</td>
-                            <td>建立 monthly dashboard：median DLP、95th percentile、repeat CT rate</td>
+                            <td>高劑量離群個案</td>
+                            <td>建立每月儀表板：DLP 中位數、第 95 百分位、重複 CT 比率</td>
                             <td>把異常從單一個案變成可追蹤的系統指標</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div class="prose">
-                <p>從品質改善角度來看，最有價值的起點通常不是重新估算每位病人的總 mSv，而是確認 CTAC 與 diagnostic CT 是否已清楚分流、第二段 CT 是否真的必要、delayed study 是否能以局部或 PET-only 方式回答問題，以及是否已建立可持續監測的 dashboard。這些措施對於降低不必要 CT 曝露的效果，通常比事後爭論單一 conversion factor 更直接。</p>
+                <p>從品質改善角度來看，最有價值的起點通常不是重新估算每位病人的總 mSv，而是確認衰減校正 CT 與診斷 CT 是否已清楚分流、第二段 CT 是否真的必要、延遲掃描是否能以局部或單做 PET 回答問題，以及是否已建立可持續監測的儀表板。這些措施對降低不必要 CT 曝露的效果，通常比事後爭論單一換算係數更直接。</p>
             </div>`
         },
         {
@@ -1441,7 +1535,10 @@ PETCTRadiation: {
                 <li>American College of Radiology; American College of Nuclear Medicine; Society of Nuclear Medicine and Molecular Imaging; Society for Pediatric Radiology. <em>ACR–ACNM–SNMMI–SPR Practice Parameter for Performing FDG-PET/CT in Oncology</em>. Revised 2021.</li>
                 <li>Australian Diabetes Society; Australian and New Zealand Society of Nuclear Medicine. <em>Joint ADS/ANZSNM Guideline for FDG PET/CT Imaging in Patients with Type 1 and Type 2 Diabetes</em>. 1 August 2024.</li>
                 <li>Varrone A, et al. <em>SNMMI Procedure Standard/EANM Practice Guideline for Brain [18F]FDG PET Imaging, version 2.0</em>. 2024. DOI: 10.2967/jnumed.124.268754.</li>
-            </ol>`
+                <li>Huda W, et al. <em>Converting Dose-Length Product to Effective Dose at CT</em>. Radiology. 2008;248:995-1003.</li>
+                <li>Saltybaeva N, et al. <em>Estimates of Effective Dose for CT Scans of the Lower Extremities</em>. Radiology. 2014;273:153-159.</li>
+            </ol>
+            <p class="reading-note">查核註記：本節已依 2026 年 5 月可取得文獻更新。對「是否重做延遲全身 CT」的判斷，主依 EANM 2025 與 ACR/SNMMI 程序框架中的 CT 用途分流與正當化原則。</p>`
         }
     ]
 },
@@ -2299,62 +2396,122 @@ CardiacAmyloid: {
 },
 
 MUGA: {
-    title: "心室功能檢查 MUGA",
-    subtitle: "Multi-Gated Acquisition — 精準 LVEF 測量",
+    title: "心室功能檢查 MUGA / ERNA",
+    subtitle: "Equilibrium Radionuclide Angiography 的臨床與技術實作",
     category: "cardiac",
     timeArchitecture: {
         steps: [
-            { label: "PYP 注射", value: "活化紅血球" },
-            { label: "Tc-99m 注射", value: "體內標記" },
-            { label: "ECG 閘控攝影", value: "20 分鐘" }
+            { label: "RBC 標記", value: "in vivo / modified / in vitro" },
+            { label: "平衡後收像", value: "Planar LAO + multi-view 或 SPECT" },
+            { label: "ECG R-wave gating", value: "16–32 frames / R-R" }
         ]
     },
     content: [
         {
             type: "info-box-blue",
-            html: `<h4>原理</h4>
-            <p>先用 PYP 活化紅血球，再打 Tc-99m 進行體內標記。利用心電圖閘控（ECG Gating）技術，計算收縮與舒張時的放射性計數變化→精確求得 <strong>LVEF</strong>。</p>`
+            html: `<h4>先釐清名稱與定位</h4>
+            <p>ERNA（equilibrium radionuclide angiography）在臨床上常與 MUGA、radionuclide ventriculography、gated blood pool scan 混用。核心不是看灌流，而是以 Tc-99m 標幟紅血球後，讓血池活性達平衡，再用 ECG R-wave gating 疊代出平均心跳序列，定量左/右心室功能。</p>
+            <p>目前最重要的實務基準仍是 <strong>SNMMI/EANM 2020 指引</strong>。其重點是：ERNA 對 serial LVEF 追蹤重現性高（文內引用 inter/intraobserver variability &lt;5%），所以追蹤時要優先維持同一 protocol、同一儀器、同一分析軟體。</p>`
         },
         {
             type: "section",
-            title: "適應症",
+            title: "臨床適應症與限制",
             icon: "🎯",
             html: `<div class="prose">
                 <ul>
-                    <li>化療藥物心臟毒性監測（Doxorubicin/Adriamycin、Trastuzumab/Herceptin）</li>
-                    <li>LVEF 追蹤（重複性最佳，優於心臟超音波）</li>
-                    <li>心衰竭 EF 評估</li>
+                    <li><strong>最常見：</strong>癌症治療（特別是潛在心毒性藥物）前、中、後的 LVEF 追蹤。</li>
+                    <li>心肌病變、瓣膜病、缺血後心室功能追蹤，或需要高重現性數值比較的情境。</li>
+                    <li>當超音波窗不佳、CMR 不可行，ERNA 可作為穩定的功能定量工具。</li>
+                    <li>限制：ERNA 提供的是血池功能資訊，對瓣膜結構、心肌組織特徵與缺血病灶定位不如 echo/CMR/MPI。</li>
                 </ul>
             </div>`
         },
         {
             type: "section",
-            title: "行政重點",
+            title: "標準技術流程（教學版）",
             icon: "🩺",
             html: `<div class="prose">
+                <p><strong>病人準備：</strong>休息態通常不需禁食；若做運動或 dobutamine stress，建議禁食 3–4 小時並先檢核壓力檢查禁忌症。檢查前要主動確認心律不整、近期輸血、heparin/dextrose 靜脈路徑與可能干擾 RBC 標記之藥物/病史。</p>
+                <p><strong>RBC 標記：</strong>SNMMI/EANM 2020 指引列出三法：in vivo（約 60–70%）、modified in vivo/in vitro（約 90%）、in vitro（&gt;97%）。若任務是精準 serial 定量，in vitro 通常最穩定，但需嚴格病人與血液樣本辨識流程。</p>
+                <p><strong>劑量與擷取：</strong>成人常用活度約 555–1,110 MBq（15–30 mCi）。平面 ERNA 以 LAO best septal view 為 LVEF 核心角度，至少 16 frames/R-R（建議 24–32）；必要時補 anterior/lateral 以看區域壁運動。SPECT ERNA 在 RV 與雙心室體積分離常較有優勢。</p>
+                <p><strong>計算原理：</strong>平面 LVEF 屬 count-based，需正確圈 ED 與 ES 的 LV ROI 並做背景校正；背景 ROI 位置錯誤（例如含脾臟或大血管）會直接造成系統性偏差。</p>
                 <ul>
-                    <li>確認病人導管位置（Port-A, CVP）是否暢通，<strong>最好打周邊血管</strong></li>
-                    <li>無須禁食，可正常飲食</li>
-                    <li>需穩定心律（嚴重心律不整影響 ECG gating）</li>
+                    <li>公式：<strong>LVEF =（校正後 ED counts − 校正後 ES counts）/ 校正後 ED counts × 100%</strong></li>
+                    <li>平面追蹤最怕「角度漂移 + ROI 漂移 + gating 失真」同時發生。</li>
                 </ul>
             </div>`
         },
         {
             type: "section",
-            title: "判讀與教學重點",
+            title: "軟體比較與序列追蹤規則",
             icon: "📊",
             html: `<div class="prose">
+                <p>2025 年 J Nucl Med Technol 的研究（PMID:39814461）直接比較 <strong>Xeleris</strong> 與 <strong>Corridor4DM</strong>（以 CMR 為參考），發現同一批 ERNA 資料下，不同軟體可能出現顯著偏差；同軟體不同讀片者差異反而較小。研究結論明確指出：<strong>不同軟體不宜互換</strong>，切換時需高度警戒。</p>
+                <p>實務上建議把以下條件「鎖定」：camera/collimator、R-R acceptance、frame 數、LAO 幾何、ROI 規則、背景 ROI 位置、重建與濾波參數、分析軟體與版本。若這些條件改變，報告必須註明可比性受限。</p>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "MUGA 結果判讀（臨床決策版）",
+            icon: "🧭",
+            html: `<div class="prose">
+                <p><strong>先看可靠度，再看數值。</strong>判讀順序建議固定為：gating trigger 是否抓到 QRS、R-R histogram 是否集中、是否有 motion/frame drop-out、ROI 與背景 ROI 是否合理，最後才解讀 LVEF/RVEF。</p>
+                <p><strong>序列追蹤最關鍵的不是單點高低，而是變化是否超過方法誤差。</strong>依 SNMMI/EANM 2020，ERNA serial 重現性可達 &lt;5%，因此前後約 5 個百分點以上的 LVEF 改變，才較可視為具臨床意義的真實變化。</p>
                 <ul>
-                    <li><strong>LVEF 追蹤價值：</strong>同一病人前後比較誤差小，特別適合化療前、中、後序列監測</li>
-                    <li><strong>常見門檻：</strong>LVEF 明顯下降或跌破部門/腫瘤科設定門檻時，須回報主治醫師評估是否調整化療</li>
-                    <li><strong>技術陷阱：</strong>心房顫動、頻繁 PVC、ROI 畫錯、標記率差都會讓 EF 假性不準</li>
+                    <li>收縮功能：LVEF、RVEF、global/regional wall motion（normal/hypokinetic/akinetic/dyskinetic）。</li>
+                    <li>舒張功能：time-activity curve 形態、peak filling rate（PFR）與舒張充盈時間序列。</li>
+                    <li>同步性：phase image / phase histogram 的平均相位與離散度（SD）。</li>
+                    <li>壓力流程：同指引指出正常 stress LVEF 應較 rest 上升至少約 5 EF units。</li>
                 </ul>
             </div>`
         },
         {
-            type: "info-box-emerald",
-            html: `<h4>新人一定要知道</h4>
-            <p>MUGA 最大優勢不是「看起來很漂亮」，而是<strong>重複性高</strong>。臨床上最常見用途是乳癌、血液腫瘤病人在使用心毒性藥物前後，追蹤心臟能不能撐住治療。</p>`
+            type: "section",
+            title: "First-pass RNV（FPRNA）技術補充",
+            icon: "🚀",
+            html: `<div class="prose">
+                <p><strong>定位：</strong>first-pass 不是取代 ERNA，而是以快速動態擷取第一循環通過心肺大血管時的訊號，特別有助於右心室功能（RVEF）與分流相關評估。</p>
+                <p><strong>打藥與收像要點：</strong>重點是「緊實 bolus + 高時間解析」。靜脈路徑宜選通暢且靠近中心循環的路徑，避免外滲與過慢注射造成第一循環展寬。常見使用 RAO 投影取得右心分離較佳的時間活性曲線；數據處理仍須做背景校正並避免把心房/大血管訊號混入 RV ROI。</p>
+                <p><strong>與 ERNA 的互補：</strong>ERNA 在 serial LVEF 重現性更有優勢；FPRNA 在特定右心與流入流出動力學問題可補足資訊。若做長期追蹤，同一病人應避免在 FPRNA 與 ERNA 間來回切換作為同一序列比較。</p>
+                <ul>
+                    <li>注射品質不佳（外滲、過慢、殘留）是 first-pass 誤差第一來源。</li>
+                    <li>ROI 必須排除右心房與肺動脈重疊，否則 RVEF 會偏差。</li>
+                    <li>first-pass 與 ERNA 量到的是不同時相與幾何模型，報告需註明方法學差異。</li>
+                </ul>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "文獻圖像示例（ROI 與指引頁）",
+            icon: "🖼️",
+            html: `<div class="prose">
+                <p>以下改為「圖像重點裁切版」，只保留教學需要的影像區域；每張圖下方補上技術重點（實際讀片仍以原始 DICOM 與工作站分析為準）。</p>
+                <figure>
+                    <img src="assets/muga-paper-figures/ROI_dual_region_cropped.png" alt="MUGA 雙 ROI 示意圖（裁切）" loading="lazy" />
+                    <figcaption>ROI 畫法示例：左圖是 LV ventricular ROI，右圖是背景 ROI。背景 ROI 應避開脾臟與大血管，否則會造成 LVEF 系統性偏差。</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/muga-paper-figures/SNMMI_acquisition_keypoints_cropped.png" alt="SNMMI EANM 2020 擷取建議重點裁切" loading="lazy" />
+                    <figcaption>指引重點裁切：LAO best septal view 是平面 LVEF 核心角度；每個 R-R 至少 16 frames，實務常建議 24–32 frames 以穩定收縮/舒張分析。</figcaption>
+                </figure>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "Pitfalls 與報告最小必填",
+            icon: "⚠️",
+            html: `<div class="prose">
+                <p><strong>六大常見陷阱：</strong>（1）RBC 標記效率差、（2）LAO 角度未達 best septal separation、（3）ECG gating 把 T wave/PVC 誤判、（4）counts 不足或 frame drop-out、（5）背景 ROI 放錯、（6）跨機器/跨軟體混用。</p>
+                <p><strong>一份可用於治療決策的報告，不應只寫 LVEF。</strong>至少要有：indication、檢查型式（planar/SPECT）、藥物與活度、RBC 標記法、gating/影像品質、LV/RV size 與 wall motion、LVEF（必要時 RVEF/PFR/phase 分析）、與前次相比是否超出方法誤差。</p>
+                <p><strong>主要參考文獻（權威與原始研究）：</strong></p>
+                <ol>
+                    <li><a href="https://sites.snmmi.org/common/Uploaded%20files/Web/Clinical%20Practice/Procedure%20Standards/2020/jnmt_Gated%20ERNA.pdf" target="_blank" rel="noopener">SNMMI/EANM Procedure Standard for Gated ERNA, 2020</a>（J Nucl Med Technol 48:126-138）。</li>
+                    <li><a href="https://pubmed.ncbi.nlm.nih.gov/39814461/" target="_blank" rel="noopener">Kappel RH, et al. J Nucl Med Technol. 2025;53(1):36-43</a>（software discrepancy；PMID:39814461）。</li>
+                    <li><a href="https://snmmi.org/common/Uploaded%20files/Web/Clinical%20Practice/Procedure%20Standards/2009/Cardiac_Scintigraphy_1382731812393_3.pdf" target="_blank" rel="noopener">ACR-SNM-SPR Practice Guideline for Cardiac Scintigraphy</a>（2009 修訂版，SNMMI 官方發布）。</li>
+                    <li><a href="https://jnm.snmjournals.org/content/jnumed/38/10/1658.full.pdf" target="_blank" rel="noopener">SNM Procedure Guideline for Equilibrium Radionuclide Angiography, 1997</a>（J Nucl Med 38:1658-1661）。</li>
+                    <li><a href="https://www.snm.org.tw/files/file_pool/1/0o138510474209225653/1%20%282%29.pdf" target="_blank" rel="noopener">陳麗華等。核醫技學誌 2022;19:1-7</a>（台灣平面/斷層 MUGA 與心超相關性）。</li>
+                </ol>
+            </div>`
         }
     ]
 },
@@ -4841,30 +4998,30 @@ const EXAM_READER_GUIDES = {
         evidence: "更新依據：Cleveland Clinic PET scan patient education（2026）與近期 PET 品質研究。"
     },
     PETCTRadiation: {
-        eyebrow: "先拆 CT component，再談總 dose",
-        title: "PET/CT 輻射探討：真正該監測的是 DLP、CTDIvol、scan length 與 event count",
-        lead: "這頁不是把 PET/CT 混成一個總 mSv，而是拆開看 FDG 與 CT、單段與分段掃描、delayed CT 與 protocol optimization，讓研究與品質改善有明確指標可追。",
+        eyebrow: "先拆 CT 部分，再談總劑量",
+        title: "PET/CT 輻射探討：真正該監測的是 DLP、CTDIvol、掃描範圍與事件數",
+        lead: "這頁不是把 PET/CT 混成一個總 mSv，而是拆開看 FDG 與 CT、單段與分段掃描、延遲 CT 與流程優化，讓研究與品質改善有明確指標可追。",
         cards: [
-            { title: "raw metrics 先行", text: "研究與 audit 時，先看 DLP、CTDIvol、scan length 與 irradiation events，不要先跳到單一 mSv 數字。" },
-            { title: "分段掃描是關鍵變因", text: "CTDIvol 不一定很高，但只要 range 長、event 多，累積 DLP 仍會快速上升。" },
-            { title: "delayed CT 常是隱性來源", text: "額外負擔常不是多一段 PET，而是為了 delayed problem-solving 又 routine 重做 CT。" },
-            { title: "重點是 protocol 分流", text: "attenuation-only、localization、diagnostic CT 與 limited delayed CT 應分層管理。" }
+            { title: "原始指標先行", text: "研究與檢討時，先看 DLP、CTDIvol、掃描長度與照射事件，不要先跳到單一 mSv 數字。" },
+            { title: "分段掃描是關鍵變因", text: "CTDIvol 不一定很高，但只要範圍長、事件多，累積 DLP 仍會快速上升。" },
+            { title: "延遲 CT 常是隱性來源", text: "額外負擔常不是多一段 PET，而是為了延遲問題釐清又例行重做 CT。" },
+            { title: "重點是流程分流", text: "衰減校正、解剖定位、診斷 CT 與局部延遲 CT 應分層管理。" }
         ],
         conceptDiagram: {
             type: "chain",
-            kicker: "audit 思考路徑",
-            title: "PET/CT dose review：先判 CT 目的，再追 event、range 與 repeat CT",
-            lead: "別先問這份 report 幾 mSv；先問這段 CT 用來做什麼、做了幾次、掃了多長。",
+            kicker: "檢討思考路徑",
+            title: "PET/CT 劑量檢視：先判 CT 目的，再追事件、範圍與重複 CT",
+            lead: "別先問這份報告幾 mSv；先問這段 CT 用來做什麼、做了幾次、掃了多長。",
             items: [
-                { label: "1 目的", tone: "warning", title: "先判 CT 目的", text: "CTAC、定位與 diagnostic CT，不該沿用同一套 preset。" },
-                { label: "2 事件", tone: "info", title: "再數掃描事件", text: "分段、delayed 與 additional CT，會直接把 DLP 往上推。" },
-                { label: "3 範圍", tone: "warning", title: "確認 scan range", text: "range 過長或 overlap，就算 CTDIvol 不高也會吃掉 DLP。" },
-                { label: "4 重做", tone: "critical", title: "優先抓 repeat CT", text: "最常見可改善來源，是沒有明確理由的 repeat whole-body CT。" },
-                { label: "5 優化", tone: "success", title: "最後才做優化", text: "再分流 preset、縮短範圍、降低第二段 CT 強度與做 dashboard。" }
+                { label: "1 目的", tone: "warning", title: "先判 CT 目的", text: "衰減校正、定位與診斷 CT，不該沿用同一套條件。" },
+                { label: "2 事件", tone: "info", title: "再數掃描事件", text: "分段、延遲與追加 CT，會直接把 DLP 往上推。" },
+                { label: "3 範圍", tone: "warning", title: "確認掃描範圍", text: "範圍過長或重疊，就算 CTDIvol 不高也會吃掉 DLP。" },
+                { label: "4 重做", tone: "critical", title: "優先抓重複 CT", text: "最常見可改善來源，是沒有明確理由的重複全身 CT。" },
+                { label: "5 優化", tone: "success", title: "最後才做優化", text: "再分流條件、縮短範圍、降低第二段 CT 強度與做儀表板。" }
             ],
-            note: "讀法：先看 CT 目的，再看 event 與 range，最後才討論 mSv 與優化。"
+            note: "讀法：先看 CT 目的，再看事件與範圍，最後才討論 mSv 與優化。"
         },
-        evidence: "更新依據：EANM 2025 v3.0、ACR–ACNM–SNMMI–SPR 2021、ADS / ANZSNM 2024，並以本院 Siemens Biograph dose report 作案例拆讀。"
+        evidence: "更新依據：EANM 2025 v3.0、ACR–ACNM–SNMMI–SPR 2021、ADS / ANZSNM 2024，並以南部醫學中心 Siemens Biograph 劑量報告作案例拆讀。"
     },
     POSLUMA: {
         title: "PSMA PET：多半不用禁食，但排尿與靜止仍很重要",
@@ -6477,6 +6634,14 @@ const EXAM_INLINE_GUIDE_IMAGES = {
         src: 'assets/guide/radiation-safety-guide.webp',
         alt: '輻射防護圖解，說明核醫科日常的開工條件、劑量監測、事故處理、特殊族群保護與紀錄追溯等重點。'
     },
+    WomenRadiationPractice: {
+        src: 'assets/guide/women-radiation-practice.webp',
+        alt: '女性、懷孕與醫療輻射實務圖解，說明問診、驗孕、醫師覆核、輻射防護與文件化流程。'
+    },
+    PETCTRadiation: {
+        src: 'assets/guide/petct-radiation-sr-review.webp',
+        alt: 'PET/CT 輻射探討圖解，說明三次掃描、劑量報告、CT 事件拆解與品質改善判讀。'
+    },
     I131Ward: {
         src: 'assets/guide/i131-ward-guide.webp',
         alt: 'I-131 病房圖解，說明住院前準備、給藥、補水與排尿、污染管理，以及出院量測與返家限制的完整流程。'
@@ -7820,8 +7985,10 @@ function buildContentHTML(key, data) {
         }
     }
 
+    const emphasizeReadableText = key === 'WomenRadiationPractice' || key === 'PETCTRadiation';
+
     return `
-        <article class="exam-article${useImmersiveReading ? ' is-immersive-reading' : ''}">
+        <article class="exam-article${useImmersiveReading ? ' is-immersive-reading' : ''}${emphasizeReadableText ? ' module-text-lg' : ''}">
             ${headerHTML}
             ${readerGuideHTML}
             ${blocksHTML}

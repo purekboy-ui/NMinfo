@@ -6,6 +6,7 @@ const staticTargets = [
   ['assets/home', 'dist/assets/home'],
   ['assets/logo', 'dist/assets/logo'],
   ['assets/lu177-prrt-figures', 'dist/assets/lu177-prrt-figures'],
+  ['assets/muga-paper-figures', 'dist/assets/muga-paper-figures'],
   ['ai-village', 'dist/ai-village'],
   ['patient-education', 'dist/patient-education'],
   ['nucmed-ai-research', 'dist/nucmed-ai-research'],
