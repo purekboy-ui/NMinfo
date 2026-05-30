@@ -1199,6 +1199,8 @@ a:hover { text-decoration: underline; }
 }
 
 .exam-article.module-text-lg .inline-guide-figure img {
+    width: 100%;
+    max-height: 760px;
     aspect-ratio: auto;
     object-fit: contain;
     object-position: center center;
@@ -1238,6 +1240,7 @@ a:hover { text-decoration: underline; }
     }
 
     .exam-article.module-text-lg .inline-guide-figure img {
+        max-height: 520px;
         aspect-ratio: auto;
         object-fit: contain;
     }
@@ -2337,7 +2340,7 @@ a:hover { text-decoration: underline; }
 
 .inline-guide-figure {
     margin: 0 0 1.4rem;
-    overflow: hidden;
+    overflow: visible;
     border: 1px solid rgba(31,86,115,0.12);
     border-radius: 24px;
     background: linear-gradient(180deg, rgba(255,252,248,0.98), rgba(249,241,234,0.96));
@@ -2348,6 +2351,9 @@ a:hover { text-decoration: underline; }
     display: block;
     width: 100%;
     height: auto;
+    max-height: 760px;
+    object-fit: contain;
+    object-position: center center;
 }
 
 @media (max-width: 768px) {
