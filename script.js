@@ -2570,10 +2570,6 @@ MUGA: {
                     <img src="assets/muga-paper-figures/SNMMI_2020_ERNA_Fig1_views_tight.png" alt="SNMMI EANM ERNA standard views cropped" loading="lazy" />
                     <figcaption>來源：SNMMI/EANM Procedure Standard for Gated ERNA, J Nucl Med Technol 2020;48:126-138，p.130 Figure 1（LAO/Anterior/Lateral 標準視角）。</figcaption>
                 </figure>
-                <figure>
-                    <img src="assets/muga-paper-figures/SNMMI_2020_Fig2_Fig3_GatingPitfalls.png" alt="SNMMI EANM 2020 Figure 2 and image processing excerpt" loading="lazy" />
-                    <figcaption>來源：同篇 p.131（Figure 2 與 image processing 段落）。強調 ROI placement、背景校正與 frame drop-out 對 LVEF 的影響。</figcaption>
-                </figure>
             </div>`
         },
         {

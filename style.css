@@ -1199,9 +1199,9 @@ a:hover { text-decoration: underline; }
 }
 
 .exam-article.module-text-lg .inline-guide-figure img {
-    aspect-ratio: 16 / 8.6;
-    object-fit: cover;
-    object-position: center;
+    aspect-ratio: auto;
+    object-fit: contain;
+    object-position: center center;
 }
 
 @media (max-width: 768px) {
@@ -1238,7 +1238,8 @@ a:hover { text-decoration: underline; }
     }
 
     .exam-article.module-text-lg .inline-guide-figure img {
-        aspect-ratio: 16 / 10;
+        aspect-ratio: auto;
+        object-fit: contain;
     }
 }
 
