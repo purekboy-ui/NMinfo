@@ -2345,52 +2345,112 @@ CardiacAmyloid: {
     title: "心臟類澱粉 PYP",
     subtitle: "Tc-99m PYP — ATTR 型心臟類澱粉沉積症診斷",
     category: "cardiac",
+    readerGuideMode: "article",
+    readerGuideArticle: [
+        "心臟類澱粉沉積症不是單一疾病，而是多種蛋白錯誤摺疊後沉積在心肌間質造成的浸潤性心肌病。臨床最重要的兩類是 ATTR（transthyretin）與 AL（免疫球蛋白輕鏈）。",
+        "99mTc-PYP 在美國與部分國際實務中是非侵入診斷 ATTR-CM 的核心工具，但診斷前提是先排除單株漿細胞疾病；也就是說，PYP 陽性不代表可以跳過 AL 排除流程。",
+        "判讀的關鍵不是只看 planar 一張影像，而是整合平面、SPECT（最好含 SPECT/CT）、視覺分級、必要時 H/CL 比值與臨床背景。"
+    ],
     timeArchitecture: {
+        mode: "article",
         steps: [
             { label: "靜脈注射", value: "Tc-99m PYP 20 mCi" },
             { label: "等待", value: "3 小時" },
             { label: "SPECT/CT", value: "20–30 分鐘" }
         ],
-        note: "必須等滿 3 小時再照，提早照會有假陽性。"
+        article: [
+            "標準流程通常為注射骨親和性示蹤劑後進行延遲影像。臨床上若僅在較早時間點收像，殘餘血池活性可能讓心肌攝取被高估。",
+            "目前權威建議強調平面與 SPECT 需合併解讀，以區分真正心肌攝取和腔室內血池訊號；在血池干擾明顯個案，延後或補拍有助避免誤判。",
+            "報告應明確註記掃描時間點、是否含 SPECT/CT、視覺分級、是否執行 H/CL 比值、以及 AL 排除狀態。"
+        ],
+        note: "重點不是追求單一數字，而是把影像型態、時間點與血液檢驗前提整合判讀。"
     },
     content: [
         {
-            type: "info-box-blue",
-            html: `<h4>原理</h4>
-            <p>Tc-99m PYP（Pyrophosphate）會結合沉積在心肌中的<strong>transthyretin（ATTR）類澱粉蛋白</strong>。這是一種非侵入性診斷 ATTR 心臟類澱粉沉積症的方法，可避免心臟切片。</p>`
+            type: "section",
+            title: "疾病背景：ATTR 與 AL 為何一定要分開",
+            icon: "🧬",
+            html: `<div class="prose">
+                <p><strong>ATTR-CM</strong> 來自 transthyretin 蛋白沉積，分為野生型與遺傳型；臨床常見於 HFpEF、左室壁增厚、年長男性、雙側腕隧道或脊椎狹窄病史。<strong>AL amyloidosis</strong> 則是漿細胞疾病導致輕鏈沉積，進展更快、治療策略完全不同。</p>
+                <p>因此，PYP 的真正角色是「在排除 AL 後，支持 ATTR 的非侵入診斷」。這個前提來自多個共識文件與實證研究，不可省略。</p>
+            </div>`
         },
         {
             type: "section",
-            title: "適應症",
+            title: "何時應懷疑心臟類澱粉沉積症",
             icon: "🎯",
             html: `<div class="prose">
                 <ul>
-                    <li><strong>ATTR 心臟類澱粉沉積症：</strong>老年人不明原因心衰竭、左心室肥厚</li>
-                    <li>心臟超音波/MRI 懷疑 cardiac amyloidosis 時的確認檢查</li>
-                    <li><strong>注意：</strong>此檢查主要針對 ATTR 型，對 AL 型（輕鏈型）不敏感</li>
+                    <li>心衰竭合併左室增厚，但無法以高血壓/瓣膜病完整解釋。</li>
+                    <li>超音波或 CMR 出現浸潤性心肌病特徵（如特徵性晚期顯影或 ECV 增加）。</li>
+                    <li>合併神經病變、腕隧道、不明原因低血壓或傳導異常等 ATTR 線索。</li>
+                    <li>腫瘤或化療後個案若影像異常，需慎防其他原因造成的假陽性攝取。</li>
                 </ul>
             </div>`
         },
         {
             type: "section",
-            title: "判讀",
+            title: "PYP 判讀技巧：視覺分級、SPECT 與 H/CL 的角色",
             icon: "💎",
-            html: `<div class="data-table-wrapper">
+            html: `<div class="prose">
+                <p>判讀順序建議為：先看 SPECT 是否有真正心肌內攝取，再進行視覺分級（Grade 0–3），最後在適用時輔助 H/CL。若 SPECT 顯示只是血池殘留，不能直接以 planar 或 H/CL 判為陽性。</p>
+            </div>
+            <div class="data-table-wrapper">
                 <table class="data-table">
                     <thead><tr><th>Perugini Grade</th><th>影像表現</th><th>判讀</th></tr></thead>
                     <tbody>
                         <tr><td>Grade 0</td><td>心臟無攝取</td><td>陰性</td></tr>
-                        <tr><td>Grade 1</td><td>心臟攝取 < 肋骨</td><td>輕度（可能 ATTR 或 AL）</td></tr>
-                        <tr><td>Grade 2</td><td>心臟攝取 = 肋骨</td><td>強烈建議 ATTR</td></tr>
-                        <tr><td>Grade 3</td><td>心臟攝取 > 肋骨</td><td>診斷 ATTR（排除 AL 後）</td></tr>
+                        <tr><td>Grade 1</td><td>心臟攝取 < 肋骨</td><td>不確定，需整合臨床與 AL 排除</td></tr>
+                        <tr><td>Grade 2</td><td>心臟攝取 = 肋骨</td><td>若 AL 排除，可支持 ATTR</td></tr>
+                        <tr><td>Grade 3</td><td>心臟攝取 > 肋骨</td><td>若 AL 排除，可高度支持 ATTR</td></tr>
                     </tbody>
                 </table>
+            </div>
+            <div class="prose">
+                <p>ASNC 2022 更新亦強調：診斷 ATTR 不能只靠 H/CL；若視覺分級與 SPECT 結果不一致，應回到原始影像與血池干擾評估，必要時補充延遲影像與跨模態整合。</p>
             </div>`
         },
         {
-            type: "info-box-rose",
-            html: `<h4>⚠️ 重要提醒</h4>
-            <p><strong>必須排除 AL 型</strong>（血清/尿液免疫固定電泳 + 游離輕鏈比值）。Grade 2–3 + AL 排除 = 可不需切片即確診 ATTR。</p>`
+            type: "section",
+            title: "文獻圖像示例（PYP）",
+            icon: "🖼️",
+            html: `<div class="prose">
+                <p>以下改為只含影像本體與必要圖說的裁切。第一張示範 H/CL ROI 畫法，第二張示範 Grade 0–3 在 planar 與 SPECT 的分級外觀，第三張來自台灣 2025 共識，示範 planar 與 SPECT/CT 如何互補。</p>
+                <figure>
+                    <img src="assets/muga-paper-figures/ASNC_2022_PYP_Fig1_HCL_ROI.png" alt="ASNC 2022 PYP HCL ROI example" loading="lazy" />
+                    <figcaption>來源：ASNC Cardiac Amyloidosis Practice Points Update (May 19, 2022)，p.9 Figure 1。H/CL ROI 應避免胸骨、右心與肋骨重疊。</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/muga-paper-figures/ASNC_2022_PYP_Fig2_Grade_Planar_SPECT.png" alt="ASNC 2022 PYP grade 0 to 3 planar and SPECT" loading="lazy" />
+                    <figcaption>來源：同文件 p.9 Figure 2。上排為 planar、下排為 SPECT；Grade 2–3 必須搭配 AL 排除才可支持 ATTR-CM。</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/muga-paper-figures/Taiwan_2025_PYP_Fig3_SPECT_CT_VOI.png" alt="Taiwan 2025 PYP consensus SPECT CT and VOI analysis" loading="lazy" />
+                    <figcaption>來源：Wang et al. 2025 Update Taiwan Consensus of 99mTc-PYP Scintigraphy in ATTR-CM, Acta Cardiol Sin 2025;41:55-71，p.63 Figure 3。平面影像可有心肌與血池重疊，SPECT/CT 有助分辨真正心肌攝取。</figcaption>
+                </figure>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "Pitfalls：PYP 什麼時候會假陽性或誤判",
+            icon: "⚠️",
+            html: `<div class="prose">
+                <p><strong>殘餘血池活性</strong>是最常見陷阱之一。平面影像上心腔內血池可能看起來像心肌攝取，因此必須用 SPECT 或 SPECT/CT 確認攝取位於心肌，而不是心腔。</p>
+                <p><strong>AL amyloidosis 也可能有 PYP 攝取</strong>。ASNC practice points 指出任何程度的 PYP uptake 都可能見於 AL，因此需完成血清/尿液免疫固定電泳與游離輕鏈比值，不能只憑 Grade 2–3 就跳到 ATTR 結論。</p>
+                <p><strong>局部心肌傷害</strong>可造成假陽性或非典型攝取，包括近期心肌梗塞、心包炎、藥物或化療相關心肌毒性；這些常呈局部或不均勻攝取，需與病史、CMR、echo 與心肌酵素整合。</p>
+                <p><strong>骨骼或軟組織重疊</strong>也會干擾判讀，例如肋骨熱點、胸骨、肩部 amyloid deposition、鈣化或其他胸壁病灶。SPECT/CT 的 CT 定位能降低此類誤判。</p>
+                <p><strong>時間點不一致</strong>會影響 H/CL 與視覺判讀。台灣 2025 共識指出 3 小時影像可降低血池保留影響；若 1 小時影像血池低且含 SPECT/CT，也可作為可接受替代，但報告必須註明 protocol。</p>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "必做安全閘門與報告重點",
+            icon: "⚠️",
+            html: `<div class="prose">
+                <p><strong>必做安全閘門：</strong>血清與尿液免疫固定電泳 + 血清游離輕鏈比值。沒有完成 AL 排除，任何 Grade 2/3 都不能直接寫成 ATTR 確診。</p>
+                <p><strong>標準報告最少應包含：</strong>注射劑量與收像時間（1h/3h）、planar 與 SPECT(SPECT/CT) 結果、visual grade、H/CL（若有）、血池干擾評估、是否完成 AL 排除、結論與後續建議。</p>
+                <p><strong>核心參考：</strong><a href="https://www.asnc.org/wp-content/uploads/2024/05/19110-2021-ASNC-Amyloid-Practice-Points-PYP-MAY19-2022-1.pdf" target="_blank" rel="noopener">ASNC Practice Points 2022</a>；<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10194626/" target="_blank" rel="noopener">J Nucl Cardiol 2023（1h vs 3h, SPECT/CT）</a>；<a href="https://tech.snmjournals.org/content/51/2/102" target="_blank" rel="noopener">JNMT 2023 Part 3</a>。</p>
+            </div>`
         }
     ]
 },
@@ -2399,19 +2459,35 @@ MUGA: {
     title: "心室功能檢查 MUGA / ERNA",
     subtitle: "Equilibrium Radionuclide Angiography 的臨床與技術實作",
     category: "cardiac",
+    readerGuideMode: "article",
+    readerGuideArticle: [
+        "MUGA（ERNA）的價值在於可重現、可比較、可追蹤，不是只給一個 LVEF 數字。若同一病人要做治療前後序列監測，流程標準化比單次『看起來清楚』更重要。",
+        "臨床判讀上，先確認檢查品質（R-wave gating、R-R histogram、ROI 合理性、統計數）再解讀功能參數。品質失控時，數值再漂亮也可能是誤差。",
+        "近年重點已從『能不能量到 EF』轉向『不同軟體/流程能否互換』；2025 研究顯示跨軟體偏差可達臨床決策等級，故 serial 追蹤應避免任意切換平台。"
+    ],
     timeArchitecture: {
+        mode: "article",
         steps: [
             { label: "RBC 標記", value: "in vivo / modified / in vitro" },
             { label: "平衡後收像", value: "Planar LAO + multi-view 或 SPECT" },
             { label: "ECG R-wave gating", value: "16–32 frames / R-R" }
-        ]
+        ],
+        article: [
+            "第一階段是 RBC 標記：in vivo、modified in vivo/in vitro、in vitro 三法中，以 in vitro 標記效率最高，最利於高品質定量與 serial 追蹤。",
+            "第二階段是擷取：平面 ERNA 的 LVEF 核心視角為 LAO best septal view，並以 16–32 frames/R-R 進行 ECG gating；必要時增加 anterior/lateral 觀察區域壁運動。",
+            "第三階段是分析：平面採 count-based LVEF（ED/ES ROI + 背景校正），SPECT ERNA 則可用 3D 方式評估雙心室體積與 RVEF。"
+        ],
+        note: "同一病人序列追蹤時，應固定相機、收像參數、ROI 規則與分析軟體版本。"
     },
     content: [
         {
-            type: "info-box-blue",
-            html: `<h4>先釐清名稱與定位</h4>
-            <p>ERNA（equilibrium radionuclide angiography）在臨床上常與 MUGA、radionuclide ventriculography、gated blood pool scan 混用。核心不是看灌流，而是以 Tc-99m 標幟紅血球後，讓血池活性達平衡，再用 ECG R-wave gating 疊代出平均心跳序列，定量左/右心室功能。</p>
-            <p>目前最重要的實務基準仍是 <strong>SNMMI/EANM 2020 指引</strong>。其重點是：ERNA 對 serial LVEF 追蹤重現性高（文內引用 inter/intraobserver variability &lt;5%），所以追蹤時要優先維持同一 protocol、同一儀器、同一分析軟體。</p>`
+            type: "section",
+            title: "名稱與定位：ERNA、MUGA、RNV 是同一技術族群",
+            icon: "📘",
+            html: `<div class="prose">
+                <p>ERNA（equilibrium radionuclide angiography）與 MUGA（multigated acquisition）在實務上常互稱；核心都在以標記紅血球建立血池訊號，再透過 R-wave gating 取得心動週期平均影像以定量心室功能。</p>
+                <p>SNMMI/EANM 2020 指引指出，此法在 serial LVEF 的 reproducibility 極高（文獻引用 inter/intraobserver variability &lt;5%），因此特別適合化療心毒性監測與長期療效追蹤。</p>
+            </div>`
         },
         {
             type: "section",
@@ -2485,14 +2561,18 @@ MUGA: {
             title: "文獻圖像示例（ROI 與指引頁）",
             icon: "🖼️",
             html: `<div class="prose">
-                <p>以下改為「圖像重點裁切版」，只保留教學需要的影像區域；每張圖下方補上技術重點（實際讀片仍以原始 DICOM 與工作站分析為準）。</p>
+                <p>以下改為「Figure 級截圖 + 原文資訊」，避免段落式截圖不精確。每張圖都附篇名來源與頁碼。</p>
                 <figure>
-                    <img src="assets/muga-paper-figures/ROI_dual_region_cropped.png" alt="MUGA 雙 ROI 示意圖（裁切）" loading="lazy" />
-                    <figcaption>ROI 畫法示例：左圖是 LV ventricular ROI，右圖是背景 ROI。背景 ROI 應避開脾臟與大血管，否則會造成 LVEF 系統性偏差。</figcaption>
+                    <img src="assets/muga-paper-figures/Taiwan_2022_MUGA_Fig1_ROI_tight.png" alt="MUGA dual ROI figure cropped" loading="lazy" />
+                    <figcaption>來源：陳麗華等，核醫技學誌 2022;19:1-7，圖 1（雙 ROI 法）。左為 ventricular ROI，右為 background ROI。</figcaption>
                 </figure>
                 <figure>
-                    <img src="assets/muga-paper-figures/SNMMI_acquisition_keypoints_cropped.png" alt="SNMMI EANM 2020 擷取建議重點裁切" loading="lazy" />
-                    <figcaption>指引重點裁切：LAO best septal view 是平面 LVEF 核心角度；每個 R-R 至少 16 frames，實務常建議 24–32 frames 以穩定收縮/舒張分析。</figcaption>
+                    <img src="assets/muga-paper-figures/SNMMI_2020_ERNA_Fig1_views_tight.png" alt="SNMMI EANM ERNA standard views cropped" loading="lazy" />
+                    <figcaption>來源：SNMMI/EANM Procedure Standard for Gated ERNA, J Nucl Med Technol 2020;48:126-138，p.130 Figure 1（LAO/Anterior/Lateral 標準視角）。</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/muga-paper-figures/SNMMI_2020_Fig2_Fig3_GatingPitfalls.png" alt="SNMMI EANM 2020 Figure 2 and image processing excerpt" loading="lazy" />
+                    <figcaption>來源：同篇 p.131（Figure 2 與 image processing 段落）。強調 ROI placement、背景校正與 frame drop-out 對 LVEF 的影響。</figcaption>
                 </figure>
             </div>`
         },
@@ -6593,6 +6673,18 @@ function buildReaderGuideHTML(key, data) {
     const guide = getReaderGuideData(key);
     const heroCards = getHeroInsightCards(guide);
     if (!guide || data?.disableReaderGuide) return '';
+    if (data?.readerGuideMode === 'article') {
+        return `
+            <section class="reader-guide reader-guide-article">
+                <div class="reader-guide-header">
+                    <h2>本頁摘要</h2>
+                </div>
+                <div class="prose">
+                    ${(data.readerGuideArticle || []).map((p) => `<p>${p}</p>`).join('')}
+                </div>
+            </section>
+        `;
+    }
 
     return `
         <section class="reader-guide">
@@ -7157,14 +7249,17 @@ function buildExamFlowHTML(key, data) {
                         ${data.timeArchitecture?.steps ? `
                             <div class="exam-flow-panel-block">
                                 <span class="exam-flow-panel-kicker">檢查流程</span>
-                                <div class="exam-flow-timeline">
-                                    ${data.timeArchitecture.steps.map((step) => `
-                                        <div class="exam-flow-timeline-step">
-                                            <span>${step.label}</span>
-                                            <strong>${step.value}</strong>
-                                        </div>
-                                    `).join('')}
-                                </div>
+                                ${data.timeArchitecture.mode === 'article'
+                                    ? `<div class="prose">${(data.timeArchitecture.article || []).map((p) => `<p>${p}</p>`).join('')}</div>`
+                                    : `<div class="exam-flow-timeline">
+                                        ${data.timeArchitecture.steps.map((step) => `
+                                            <div class="exam-flow-timeline-step">
+                                                <span>${step.label}</span>
+                                                <strong>${step.value}</strong>
+                                            </div>
+                                        `).join('')}
+                                    </div>`
+                                }
                                 ${data.timeArchitecture.note ? `<p class="exam-flow-note">${data.timeArchitecture.note}</p>` : ''}
                             </div>
                         ` : ''}
@@ -7904,21 +7999,33 @@ function buildContentHTML(key, data) {
     // Time Architecture
     let timeHTML = '';
     if (data.timeArchitecture && data.timeArchitecture.steps) {
-        const stepsHTML = data.timeArchitecture.steps.map((s, i) => `
-            <div class="flow-step">
-                <div class="flow-step-label">${s.label}</div>
-                <div class="flow-step-value">${s.value}</div>
-            </div>
-            ${i < data.timeArchitecture.steps.length - 1 ? '<div class="flow-arrow">→</div>' : ''}
-        `).join('');
+        if (data.timeArchitecture.mode === 'article') {
+            timeHTML = `
+                <div class="flow-timeline-wrapper">
+                    <div class="flow-timeline-title">檢查流程</div>
+                    <div class="prose">
+                        ${(data.timeArchitecture.article || []).map((p) => `<p>${p}</p>`).join('')}
+                    </div>
+                    ${data.timeArchitecture.note ? `<div class="flow-note">${data.timeArchitecture.note}</div>` : ''}
+                </div>
+            `;
+        } else {
+            const stepsHTML = data.timeArchitecture.steps.map((s, i) => `
+                <div class="flow-step">
+                    <div class="flow-step-label">${s.label}</div>
+                    <div class="flow-step-value">${s.value}</div>
+                </div>
+                ${i < data.timeArchitecture.steps.length - 1 ? '<div class="flow-arrow">→</div>' : ''}
+            `).join('');
 
-        timeHTML = `
-            <div class="flow-timeline-wrapper">
-                <div class="flow-timeline-title">檢查流程</div>
-                <div class="flow-timeline">${stepsHTML}</div>
-                ${data.timeArchitecture.note ? `<div class="flow-note">${data.timeArchitecture.note}</div>` : ''}
-            </div>
-        `;
+            timeHTML = `
+                <div class="flow-timeline-wrapper">
+                    <div class="flow-timeline-title">檢查流程</div>
+                    <div class="flow-timeline">${stepsHTML}</div>
+                    ${data.timeArchitecture.note ? `<div class="flow-note">${data.timeArchitecture.note}</div>` : ''}
+                </div>
+            `;
+        }
     }
 
     const galleryHTML = buildGalleryHTML(data);
@@ -7985,7 +8092,7 @@ function buildContentHTML(key, data) {
         }
     }
 
-    const emphasizeReadableText = key === 'WomenRadiationPractice' || key === 'PETCTRadiation';
+    const emphasizeReadableText = key === 'WomenRadiationPractice' || key === 'PETCTRadiation' || key === 'MUGA' || key === 'CardiacAmyloid';
 
     return `
         <article class="exam-article${useImmersiveReading ? ' is-immersive-reading' : ''}${emphasizeReadableText ? ' module-text-lg' : ''}">

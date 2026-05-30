@@ -29,6 +29,7 @@ run.log
 results.tsv
 tmp-*/
 pdf/
+cloudflare*.txt
 
 # Research staging
 # Website-ready teaching assets should stay in assets/ or clinical-guides/
