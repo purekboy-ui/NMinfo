@@ -8454,6 +8454,104 @@ const ACADEMIC_FIGURE_SUPPLEMENTS = {
             </div>`
         }
     ],
+    POSLUMA: [
+        {
+            type: "section",
+            title: "學術影像圖例：PSMA PET 正常分布與假陽性",
+            icon: "🖼️",
+            html: `<div class="prose">
+                <p>PSMA PET 的高對比影像很容易讓人過度相信亮點；判讀時要先掌握正常唾液腺、腎臟、輸尿管、膀胱、小腸與肝膽背景，再分辨骨轉移、發炎感染、骨折與其他腫瘤造成的假陽性。</p>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/PSMA/Frontiers_2022_PSMA_Fig1_NormalBiodistribution.png" alt="Ga-68 PSMA PET normal biodistribution maximum intensity projection" loading="lazy" />
+                    <figcaption>圖 1．Ga-68 PSMA 正常生理分布。來源：<em>Normal Variants, Pitfalls, and Artifacts in Ga-68 PSMA PET/CT Imaging</em>, <em>Frontiers in Nuclear Medicine</em>. 2022; Figure 1。泌尿排泄與唾液腺攝取是判讀 baseline，骨盆與腹部病灶需特別小心尿液背景。</figcaption>
+                </figure>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/PSMA/Frontiers_2022_PSMA_Fig3_OsteoblasticMetastases.webp" alt="Widespread osteoblastic metastases on PSMA PET" loading="lazy" />
+                    <figcaption>圖 2．廣泛 osteoblastic metastases 的 PSMA PET 型態。來源：同上，Figure 3。骨轉移常呈多發骨性攝取，需與 CT 硬化灶、骨掃描與臨床 PSA 走勢整合。</figcaption>
+                </figure>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/PSMA/Frontiers_2022_PSMA_Fig4_TuberculosisFalsePositive.webp" alt="Tuberculosis inflammatory uptake as PSMA PET false positive pitfall" loading="lazy" />
+                    <figcaption>圖 3．肺結核/發炎相關 PSMA 攝取假陽性。來源：同上，Figure 4。PSMA 並非攝護腺癌專屬訊號；感染、發炎或其他腫瘤也可能攝取，報告需回到病史與 CT 形態。</figcaption>
+                </figure>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/PSMA/Frontiers_2022_PSMA_Fig5_RibFractureFalsePositive.webp" alt="Rib fracture PSMA PET uptake false positive pitfall" loading="lazy" />
+                    <figcaption>圖 4．肋骨骨折造成 PSMA uptake 假陽性。來源：同上，Figure 5。單一肋骨熱點若位於骨折或修復位置，不應直接等同骨轉移。</figcaption>
+                </figure>
+            </div>`
+        }
+    ],
+    Lu177PSMA: [
+        {
+            type: "section",
+            title: "學術影像圖例：Lu-177 PSMA 治療前 target 與陷阱",
+            icon: "🖼️",
+            html: `<div class="prose">
+                <p>Lu-177 PSMA 治療前 PSMA PET 要回答兩件事：病灶是否有足夠 target，以及有沒有明顯假陽性或影像不一致。發炎、骨折與其他非攝護腺癌病灶都可能讓治療決策被錯誤亮點帶偏。</p>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/PSMA/Frontiers_2022_PSMA_Fig3_OsteoblasticMetastases.webp" alt="PSMA-positive osteoblastic metastases relevant to Lu-177 PSMA therapy selection" loading="lazy" />
+                    <figcaption>圖 1．PSMA-positive 多發骨轉移示例。來源：<em>Frontiers in Nuclear Medicine</em> 2022 PSMA PET pitfalls review, Figure 3。治療前需確認病灶分布、攝取強度、骨髓儲備與臨床狀態，而不是只看單一熱點。</figcaption>
+                </figure>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/PSMA/Frontiers_2022_PSMA_Fig4_TuberculosisFalsePositive.webp" alt="Inflammatory PSMA uptake pitfall relevant to treatment eligibility" loading="lazy" />
+                    <figcaption>圖 2．發炎感染造成 PSMA 假陽性。來源：同上，Figure 4。治療資格評估若把非腫瘤攝取當作 target，會高估可治療腫瘤負荷。</figcaption>
+                </figure>
+            </div>`
+        }
+    ],
+    BrainPET: [
+        {
+            type: "section",
+            title: "學術影像圖例：腦部 FDG PET 失智型態",
+            icon: "🖼️",
+            html: `<div class="prose">
+                <p>腦 FDG PET 判讀重點是代謝分布型態，而不是單一亮點。AD、FTD、DLB 與血管性病灶可有不同低代謝分布；若 CT 顯示既有梗塞或結構病灶，也可能造成假性代謝缺損解讀。</p>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/BrainPET/BJR_2019_Fig4_FDG_AD_Patterns.jpg" alt="FDG PET hypometabolism patterns in Alzheimer's disease" loading="lazy" />
+                    <figcaption>圖 1．AD 相關 FDG PET 低代謝型態。來源：<em>Clinical 18F-FDG and amyloid brain PET/CT in cognitive impairment</em>, <em>British Journal of Radiology</em>. 2019; Figure 4。頂葉、顳葉、precuneus/posterior cingulate 分布有助於與其他失智型態鑑別。</figcaption>
+                </figure>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/BrainPET/BJR_2019_Fig7_FDG_FTD_Patterns.jpg" alt="FDG PET hypometabolism patterns in frontotemporal dementia subtypes" loading="lazy" />
+                    <figcaption>圖 2．FTD subtype 的 FDG PET 低代謝分布。來源：同上，Figure 7。額顳葉與語言網絡相關低代謝型態，可支持臨床與神經心理評估。</figcaption>
+                </figure>
+            </div>`
+        }
+    ],
+    AmyloidPET: [
+        {
+            type: "section",
+            title: "學術影像圖例：Amyloid PET 陽性/陰性判讀",
+            icon: "🖼️",
+            html: `<div class="prose">
+                <p>Amyloid PET 多以視覺判讀分成 amyloid positive 或 negative；重點是灰白質對比是否消失、皮質是否出現 amyloid tracer binding。陰性不等於完全沒有 amyloid，而是低於影像判讀門檻或不支持 amyloid 為主要病理。</p>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/AmyloidPET/BJR_2019_Fig5_Amyloid_Positive_Negative.jpg" alt="Positive and negative amyloid PET visual read examples" loading="lazy" />
+                    <figcaption>圖 1．Amyloid PET positive 與 negative 視覺判讀示例。來源：<em>British Journal of Radiology</em>. 2019; Figure 5。陽性掃描灰白質對比下降；陰性掃描保留較清楚灰白質差異。</figcaption>
+                </figure>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/AmyloidPET/BJR_2019_Fig6_Amyloid_ReadVariants.jpg" alt="Amyloid PET positive and negative read variants" loading="lazy" />
+                    <figcaption>圖 2．不同 amyloid PET 視覺讀片型態。來源：同上，Figure 6。報告需與臨床表現、MRI、FDG PET、CSF 或其他 biomarker 合併解讀。</figcaption>
+                </figure>
+            </div>`
+        }
+    ],
+    Parathyroid: [
+        {
+            type: "section",
+            title: "學術影像圖例：副甲狀腺 MIBI 與 SPECT/CT 定位",
+            icon: "🖼️",
+            html: `<div class="prose">
+                <p>副甲狀腺 scintigraphy 判讀不只是早期/延遲 washout；SPECT/CT 對 ectopic adenoma 定位很重要，而 thyroid nodule、甲狀腺癌、發炎或其他頸部病灶也會造成 MIBI 假陽性。</p>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/Parathyroid/FrontEndocrinol_2022_Fig6_Sestamibi_SPECTCT_EctopicPA.jpg" alt="Sestamibi planar and SPECT CT localization of ectopic parathyroid adenoma" loading="lazy" />
+                    <figcaption>圖 1．ectopic parathyroid adenoma 的 planar 與 SPECT/CT 定位。來源：<em>Parathyroid Imaging: Past, Present, and Future</em>, <em>Frontiers in Endocrinology</em>. 2022; Figure 6。掃描範圍應包含縱膈，SPECT/CT 可把 MIBI 攝取放回解剖位置。</figcaption>
+                </figure>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/Parathyroid/FrontEndocrinol_2022_Fig5_ThyroidNodulePitfall.jpg" alt="Thyroid nodule pitfall in sestamibi parathyroid imaging" loading="lazy" />
+                    <figcaption>圖 2．thyroid nodule 對副甲狀腺 MIBI 的干擾。來源：同上，Figure 5。甲狀腺結節可有變異 MIBI uptake，需配合 subtraction、超音波、SPECT/CT 與實驗室資料。</figcaption>
+                </figure>
+            </div>`
+        }
+    ],
     I131MIBG: [
         {
             type: "section",
