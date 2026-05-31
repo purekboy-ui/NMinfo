@@ -8327,6 +8327,146 @@ const ACADEMIC_FIGURE_SUPPLEMENTS = {
                 </figure>
             </div>`
         }
+    ],
+    PET: [
+        {
+            type: "section",
+            title: "學術影像圖例：FDG PET/CT 正常變異與偽影",
+            icon: "🖼️",
+            html: `<div class="prose">
+                <p>FDG PET/CT 的判讀不能只看 SUV 或亮點；腸胃道生理攝取、用藥造成的分布改變，以及 CT attenuation correction 相關偽影，都可能改變腫瘤判讀信心。本頁補入 open-access review 圖例，作為正常變異與 artifact related false findings 的教學基準。</p>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/PET/Frontiers_2022_FDG_Fig2_LargeBowelUptake.jpg" alt="FDG PET/CT large bowel physiologic uptake pattern" loading="lazy" />
+                    <figcaption>圖 1．大腸 FDG 攝取常見正常變異。來源：<em>F-18 FDG PET/CT Imaging in Normal Variants, Pitfalls and Artifacts in the Abdomen and Pelvis</em>, <em>Frontiers in Nuclear Medicine</em>. 2022; Figure 2。腸道攝取可呈局部或長段分布，需與 CT 壁厚、腫塊與臨床症狀整合，避免把生理或發炎背景誤作腫瘤。</figcaption>
+                </figure>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/PET/Frontiers_2022_FDG_Fig3_MetforminBowelUptake.jpg" alt="Metformin-associated bowel uptake on FDG PET maximum intensity projection image" loading="lazy" />
+                    <figcaption>圖 2．metformin 相關腸道攝取。來源：同上，Figure 3。糖尿病用藥會讓腸道背景升高，判讀時要回到病史與用藥時間，而不是只用 SUV 門檻裁決。</figcaption>
+                </figure>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/PET/Frontiers_2022_FDG_Fig5_AttenuationArtifact.jpg" alt="FDG PET/CT attenuation correction artifact from prosthesis" loading="lazy" />
+                    <figcaption>圖 3．衰減校正造成的 prosthesis artifact。來源：同上，Figure 5。金屬植入物附近的 FDG 假性增強要比對 non-attenuation-corrected PET、CT 與融合影像，這是 artifact related false positive 的典型檢核點。</figcaption>
+                </figure>
+            </div>`
+        }
+    ],
+    PETCTRadiation: [
+        {
+            type: "section",
+            title: "學術影像圖例：PET/CT 的 CT 校正與偽影",
+            icon: "🖼️",
+            html: `<div class="prose">
+                <p>PET/CT 劑量討論也必須理解 CT 在影像中的角色：CT 可作定位、衰減校正或診斷用途。若 CT-based attenuation correction 產生假性增強，可能導致追加掃描或錯誤判讀，因此劑量最適化與影像品質控制要一起看。</p>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/PET/Frontiers_2022_FDG_Fig5_AttenuationArtifact.jpg" alt="FDG PET/CT attenuation correction artifact illustrating CT-based correction pitfall" loading="lazy" />
+                    <figcaption>圖 1．CT attenuation correction artifact。來源：<em>Frontiers in Nuclear Medicine</em> 2022 FDG PET/CT pitfalls review, Figure 5。遇到金屬植入物附近熱點，應補看 non-AC PET 與 CT；這能避免把校正偽影誤認為病灶，也能減少不必要追加 CT。</figcaption>
+                </figure>
+            </div>`
+        }
+    ],
+    LungVQ: [
+        {
+            type: "section",
+            title: "學術影像圖例：V/Q mismatch 與肺栓塞",
+            icon: "🖼️",
+            html: `<div class="prose">
+                <p>V/Q scan 的核心判讀語言是通氣與灌流是否匹配。肺栓塞常見灌流缺損但通氣相對保留的 mismatch；若通氣與灌流同區下降，則要改思考肺實質病變、慢性阻塞、肺炎或其他非栓塞原因。</p>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/LungVQ/CardiolJ_2021_Fig6_VQ_PE_Mismatch.jpg" alt="Ventilation perfusion scan showing mismatch pattern in pulmonary embolism" loading="lazy" />
+                    <figcaption>圖 1．肺栓塞的 V/Q mismatch 圖例。來源：<em>Multimodality cardiovascular imaging in pulmonary embolism</em>, <em>Cardiology Journal</em>. 2021; Figure 6。灌流缺損與相對正常通氣形成不匹配，是 PE 機率分層的關鍵影像線索。</figcaption>
+                </figure>
+            </div>`
+        }
+    ],
+    Ga68DOTATOC: [
+        {
+            type: "section",
+            title: "學術影像圖例：SSTR PET 正常分布與陷阱",
+            icon: "🖼️",
+            html: `<div class="prose">
+                <p>Ga-68 DOTATOC/DOTATATE PET 不只是找神經內分泌腫瘤，也是在評估 somatostatin receptor 表現與 PRRT 可行性。正常脾臟、腎上腺、腎臟、肝臟、腦下垂體與胰臟 uncinate process 攝取，以及呼吸位移造成的 misregistration，都可能造成假陽性或定位錯誤。</p>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/Ga68DOTATOC/Frontiers_2022_DOTATATE_Fig1_NormalBiodistribution.jpg" alt="Ga-68 DOTATATE PET maximum intensity projection normal biodistribution" loading="lazy" />
+                    <figcaption>圖 1．Ga-68 DOTATATE 正常生理分布。來源：<em>Normal Variants, Pitfalls and Artifacts in Ga-68 DOTATATE PET/CT Imaging</em>, <em>Frontiers in Nuclear Medicine</em>. 2022; Figure 1。先熟悉正常高攝取器官，才能避免把生理攝取當成 NET 病灶。</figcaption>
+                </figure>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/Ga68DOTATOC/Frontiers_2022_DOTATATE_Fig3_RespMotionMisregistration.jpg" alt="Ga-68 DOTATATE PET CT respiratory motion misregistration pitfall" loading="lazy" />
+                    <figcaption>圖 2．呼吸位移造成 PET/CT misregistration。來源：同上，Figure 3。肝膈附近小病灶或胸腹交界攝取需看多平面融合與非融合 PET，避免定位到錯誤解剖位置。</figcaption>
+                </figure>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/Ga68DOTATOC/Frontiers_2022_DOTATATE_Fig4_UncinatePitfall.jpg" alt="Ga-68 DOTATATE uptake in pancreatic uncinate process pitfall" loading="lazy" />
+                    <figcaption>圖 3．胰臟 uncinate process 生理攝取陷阱。來源：同上，Figure 4。uncinate 攝取可模擬胰頭 NET；判讀需整合形態、強度、邊界與追蹤，而非單靠熱點存在。</figcaption>
+                </figure>
+            </div>`
+        }
+    ],
+    Lu177DOTATATE: [
+        {
+            type: "section",
+            title: "學術影像圖例：PRRT 治療前 SSTR 影像資格判讀",
+            icon: "🖼️",
+            html: `<div class="prose">
+                <p>Lu-177 DOTATATE PRRT 的前提是病灶具有足夠 SSTR 表現，因此治療頁同步補入 DOTATATE PET 圖例。判讀時要分清真正腫瘤攝取、生理高攝取器官、uncinate process 假陽性與 PET/CT 位移偽影，避免把錯誤 target 帶進治療決策。</p>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/Ga68DOTATOC/Frontiers_2022_DOTATATE_Fig1_NormalBiodistribution.jpg" alt="Ga-68 DOTATATE normal biodistribution used before PRRT eligibility assessment" loading="lazy" />
+                    <figcaption>圖 1．PRRT 治療前需先理解 SSTR PET 正常分布。來源：<em>Frontiers in Nuclear Medicine</em> 2022 Ga-68 DOTATATE pitfalls review, Figure 1。脾臟、腎臟、腎上腺與肝臟背景會影響 Krenning-like 視覺判讀與治療資格評估。</figcaption>
+                </figure>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/Ga68DOTATOC/Frontiers_2022_DOTATATE_Fig4_UncinatePitfall.jpg" alt="Uncinate process physiologic uptake relevant to PRRT target selection" loading="lazy" />
+                    <figcaption>圖 2．uncinate process 假陽性陷阱。來源：同上，Figure 4。治療前若把生理攝取誤判為胰臟病灶，會直接影響 staging 與 PRRT 適應症討論。</figcaption>
+                </figure>
+            </div>`
+        }
+    ],
+    WBCScan: [
+        {
+            type: "section",
+            title: "學術影像圖例：標記白血球定位感染",
+            icon: "🖼️",
+            html: `<div class="prose">
+                <p>WBC scan 的強項是把活躍感染與單純骨重塑或術後改變分開。骨掃描敏感但不特異；標記白血球 planar/SPECT 影像能提供更直接的感染定位，尤其在骨髓炎、糖尿病足、人工關節或 tumor prosthesis 周邊問題。</p>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/WBCScan/MIRT_2011_Fig1_WBC_Osteomyelitis.jpg" alt="Tc-99m MDP bone scintigraphy and Tc-99m WBC scan localizing infection and osteomyelitis" loading="lazy" />
+                    <figcaption>圖 1．骨掃描與 WBC scan 對感染定位的互補。來源：<em>Molecular Imaging and Radionuclide Therapy</em> 2011 open-access article, Figure 1。骨掃描顯示骨重塑，WBC uptake 更支持感染/骨髓炎位置。</figcaption>
+                </figure>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/WBCScan/MIRT_2011_Fig2_WBC_ProsthesisInfection.jpg" alt="SPECT WBC scan localizing prosthesis infection better than planar imaging" loading="lazy" />
+                    <figcaption>圖 2．prosthesis 周邊感染的 WBC SPECT 定位。來源：同上，Figure 2。SPECT 可改善 planar 重疊問題，協助判斷活性是否落在軟組織、骨端或人工物周邊。</figcaption>
+                </figure>
+            </div>`
+        }
+    ],
+    MIBG: [
+        {
+            type: "section",
+            title: "學術影像圖例：MIBG 攝取與病灶定位",
+            icon: "🖼️",
+            html: `<div class="prose">
+                <p>I-123 MIBG 的判讀重點是病灶是否保留 norepinephrine transporter 相關攝取路徑。這不只影響嗜鉻細胞瘤/副神經節瘤分期，也會影響 I-131 MIBG 治療是否有合理 target。</p>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/MIBG/JNM_2009_Fig1_MIBG_PheoParaganglioma.jpg" alt="I-123 MIBG whole-body images in pheochromocytoma and metastatic paraganglioma" loading="lazy" />
+                    <figcaption>圖 1．I-123 MIBG 全身影像示範嗜鉻細胞瘤與轉移性副神經節瘤攝取。來源：<em>Journal of Nuclear Medicine</em>. 2009 prospective multicenter trial, Figure 1。全身分布能協助辨識原發、轉移與多發病灶。</figcaption>
+                </figure>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/MIBG/JNM_2009_Fig2_MIBG_SPECTFocus.jpg" alt="I-123 MIBG planar and SPECT images localizing abdominal focus" loading="lazy" />
+                    <figcaption>圖 2．planar 與 SPECT 的定位差異。來源：同上，Figure 2。局部焦點需用 SPECT/CT 或融合資訊釐清解剖位置，避免被腸道、腎上腺或重疊結構誤導。</figcaption>
+                </figure>
+            </div>`
+        }
+    ],
+    I131MIBG: [
+        {
+            type: "section",
+            title: "學術影像圖例：I-131 MIBG 治療前 target 確認",
+            icon: "🖼️",
+            html: `<div class="prose">
+                <p>I-131 MIBG 治療不是看到腫瘤就能做；需要先確認病灶真的會攝取 MIBG。治療前診斷性 I-123 MIBG 可用來評估 target expression、病灶範圍與後續隔離/污染管理的風險溝通。</p>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/MIBG/JNM_2009_Fig1_MIBG_PheoParaganglioma.jpg" alt="Diagnostic I-123 MIBG uptake used as prerequisite concept before I-131 MIBG therapy" loading="lazy" />
+                    <figcaption>圖 1．治療前 MIBG uptake 確認。來源：<em>Journal of Nuclear Medicine</em>. 2009, Figure 1。若診斷性 MIBG 影像缺乏病灶攝取，I-131 MIBG 治療價值通常不足，需改評估其他影像或治療策略。</figcaption>
+                </figure>
+            </div>`
+        }
     ]
 };
 
