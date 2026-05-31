@@ -1902,6 +1902,27 @@ MPI: {
         },
         {
             type: "section",
+            title: "文獻影像圖例：normal / abnormal / attenuation false positive MPI",
+            icon: "🖼️",
+            html: `<div class="prose">
+                <p>以下圖例取自開放學術文獻並裁切為教學可讀範圍，用來對照正常灌流、可逆性缺血，以及 attenuation artifact 造成的 false positive hypoperfusion。判讀時務必同時檢查 raw cine、NAC/AC、gated wall motion、EF/TID 與臨床 stress 有效性。</p>
+                <figure class="inline-guide-figure mpi-literature-figure">
+                    <img src="assets/paper-figures/MPI/MPI_Figure14_NormalPerfusion_with_GastricActivity.jpg" alt="Normal stress and rest myocardial perfusion SPECT with adjacent gastric activity" loading="lazy" />
+                    <figcaption>圖 1：Normal MPI。取自 Henzlova MJ, et al. <em>Myocardial Perfusion Scintigraphy: Techniques, Interpretation, Indications and Reporting</em>. <em>J Saudi Heart Assoc</em>. 2013;25:13-32, Figure 14。Stress 與 rest short-axis slices 顯示左心室灌流均勻，旁側可見胃部 extracardiac activity；教學重點是不要把心外活性誤認為心肌灌流缺損。</figcaption>
+                </figure>
+                <figure class="inline-guide-figure mpi-literature-figure">
+                    <img src="assets/paper-figures/MPI/MPI_Figure17A_Reversible_Ischemia.jpg" alt="Reversible anterior and anteroseptal ischemia on attenuation-corrected myocardial perfusion SPECT" loading="lazy" />
+                    <figcaption>圖 2：Abnormal MPI，可逆性缺血。取自同文 Figure 17A。Stress 影像於 apex、anterior 與 anteroseptal wall 出現灌流下降，rest 影像改善，符合 stress-induced ischemia 的典型讀法；需整合血管分布、症狀與 ECG 變化。</figcaption>
+                </figure>
+                <figure class="inline-guide-figure mpi-literature-figure">
+                    <img src="assets/paper-figures/MPI/MPI_Figure5A_Shifting_Breast_Attenuation.jpg" alt="False-positive anterior wall defect on non-attenuation-corrected myocardial perfusion SPECT caused by shifting breast attenuation" loading="lazy" />
+                    <figcaption>圖 3：False positive MPI，attenuation-related false hypoperfusion。取自同文 Figure 5A。Non-attenuation-corrected 影像可呈現 anterior wall 可逆性缺損，容易被誤讀為 LAD ischemia；attenuation-corrected 影像恢復正常，提示 shifting breast attenuation artifact。</figcaption>
+                </figure>
+                <p class="citation-note">來源：Henzlova MJ, et al. <em>J Saudi Heart Assoc</em>. 2013;25:13-32. Open-access article via PubMed Central.</p>
+            </div>`
+        },
+        {
+            type: "section",
             title: "參考文獻",
             icon: "📚",
             html: `<div class="prose">
@@ -5604,66 +5625,6 @@ const EXAM_READER_GUIDES = {
         ],
         evidence: "更新依據：SNMMI/EANM renal scintigraphy / diuretic renography guideline 與 Cleveland Clinic renal scan patient education。"
     },
-    MUGA: {
-        title: "MUGA：重點不是記住縮寫，而是知道這檢查看的是心室功能",
-        cards: [
-            { title: "為什麼要做", text: "用來量測心室功能與射出分率，常見於化療前後追蹤或心臟功能評估。" },
-            { title: "檢查前", text: "通常不需要常規禁食，也沒有常規停咖啡因要求；重點是確認心律是否穩定、IV 是否通暢。" },
-            { title: "檢查中", text: "會接上 ECG 電極、注射標記紅血球示蹤劑，再從不同角度拍攝。" },
-            { title: "檢查後", text: "大多可立刻恢復日常活動，接下來 1 到 2 天多喝水即可。" }
-        ],
-        evidence: "更新依據：Cleveland Clinic MUGA scan patient education（2026）。"
-    },
-    MPI: {
-        title: "心肌灌流（Tl-201 / Tc-99m）：重點是 stress 是否有效、缺損可逆性與 artifact 排除",
-        cards: [
-            { title: "為什麼要做", text: "用來評估缺血、梗塞與風險分層；同時可在特定情境下評估心肌存活性，協助後續血管重建決策。" },
-            { title: "檢查前", text: "先核對咖啡因、methylxanthine、可否運動、氣喘/COPD 與心律狀態。stress 若失效，影像再漂亮也不可靠。" },
-            { title: "檢查中", text: "會依問題選擇運動或藥物壓力，再搭配 Tc-99m 或 Tl-201 protocol；必要時加 prone/upright 或延遲補拍釐清假影。" },
-            { title: "檢查後", text: "多數可返家；若壓力後持續胸悶、喘、頭暈或不適未緩解，需即刻告知醫療團隊。" }
-        ],
-        conceptDiagram: {
-            type: "decision",
-            kicker: "決策圖",
-            title: "MPI：先確認 stress 有效，再判讀缺損",
-            lead: "心肌灌流判讀不是先看亮不亮，而是先問「stress 有沒有成功」。接著才看可逆缺損、固定缺損與高風險訊號。",
-            items: [
-                { label: "入口", tone: "warning", title: "先核對咖啡因與禁忌", text: "咖啡因與 methylxanthine 會鈍化 vasodilator stress，造成假陰性。" },
-                { label: "分流", tone: "critical", title: "選對 stress 路徑", text: "能運動優先運動；不能運動再選藥物壓力，並完整監測 ECG/血壓/症狀。" },
-                { label: "Tracer", tone: "info", title: "選 Tc-99m 或 Tl-201", text: "Tc-99m 著重常規 CAD；Tl-201 可提供再分佈與 viability 訊息。" },
-                { label: "判讀", tone: "critical", title: "可逆 vs 固定缺損", text: "可逆缺損支持缺血；固定缺損偏向梗塞/瘢痕，需結合功能與臨床風險。" },
-                { label: "解題", tone: "success", title: "必要時補拍修正", text: "prone/upright、延遲補拍與 AC/NAC 對照可大幅減少假陽性。" }
-            ],
-            note: "視覺讀法：先看 stress 成功與否，再看 tracer 路徑，最後才進入缺損解讀。"
-        },
-        tellUs: "若最近有咖啡因攝取、使用茶鹼類藥物、氣喘/COPD、心律不整、胸痛不穩或無法運動，請檢查前主動告知。",
-        evidence: "更新依據：ASNC/SNMMI/EANM MPI 指引與 2021 AHA/ACC chest pain guideline。"
-    },
-    MPI_Tc99m: {
-        title: "Tc-99m MPI（已整併）",
-        cards: [
-            { title: "目前版本", text: "此頁已整併至「心肌灌流（Tl-201 / Tc-99m）」單元。" }
-        ],
-        evidence: "更新依據：主站心肌灌流整併策略。"
-    },
-    MPI_Tl201: {
-        title: "Tl-201 MPI（已整併）",
-        cards: [
-            { title: "目前版本", text: "此頁已整併至「心肌灌流（Tl-201 / Tc-99m）」單元。" }
-        ],
-        evidence: "更新依據：主站心肌灌流整併策略。"
-    },
-    CardiacAmyloid: {
-        title: "PYP：重點是 3 小時延遲與 AL 排除，不是停咖啡因",
-        cards: [
-            { title: "為什麼要做", text: "主要協助判斷是否為 ATTR 型心臟類澱粉沉積，尤其在心衰竭、左心室肥厚或影像懷疑時。" },
-            { title: "檢查前", text: "一般沒有常規停咖啡因要求，也通常不需特別空腹；重點是帶齊心臟檢查與單株蛋白相關評估資料。" },
-            { title: "檢查中", text: "注射 Tc-99m PYP 後通常要等約 3 小時，再做平面影像與 SPECT/CT；太早照容易增加血池干擾。" },
-            { title: "檢查後", text: "多數可直接返家，多喝水與正常排尿即可；後續結果仍需結合 AL 排除與心臟專科判讀。" }
-        ],
-        tellUs: "如果無法平躺、近期做過會影響判讀的心臟檢查，或尚未完成血清 / 尿液單株蛋白評估，請先告知。",
-        evidence: "更新依據：SNMMI/ASNC/ASE/EANM 等 PYP imaging practice points 與現有頁面內容。"
-    },
     LungVQ: {
         title: "V/Q：這個檢查分成通氣與灌注兩段",
         cards: [
@@ -7726,7 +7687,7 @@ CardiacAmyloid: {
     ]
 },
 
-    MUGA: {
+    MUGA_PatientEduDisabled: {
         title: "MUGA：重點不是記住縮寫，而是知道這檢查看的是心室功能",
         cards: [
             { title: "為什麼要做", text: "用來量測心室功能與射出分率，常見於化療前後追蹤或心臟功能評估。" },
@@ -7736,7 +7697,7 @@ CardiacAmyloid: {
         ],
         evidence: "更新依據：Cleveland Clinic MUGA scan patient education（2026）。"
     },
-    MPI: {
+    MPI_PatientEduDisabled: {
         title: "心肌灌流（Tl-201 / Tc-99m）：重點是 stress 是否有效、缺損可逆性與 artifact 排除",
         cards: [
             { title: "為什麼要做", text: "用來評估缺血、梗塞與風險分層；同時可在特定情境下評估心肌存活性，協助後續血管重建決策。" },
@@ -7761,21 +7722,21 @@ CardiacAmyloid: {
         tellUs: "若最近有咖啡因攝取、使用茶鹼類藥物、氣喘/COPD、心律不整、胸痛不穩或無法運動，請檢查前主動告知。",
         evidence: "更新依據：ASNC/SNMMI/EANM MPI 指引與 2021 AHA/ACC chest pain guideline。"
     },
-    MPI_Tc99m: {
+    MPI_Tc99m_PatientEduDisabled: {
         title: "Tc-99m MPI（已整併）",
         cards: [
             { title: "目前版本", text: "此頁已整併至「心肌灌流（Tl-201 / Tc-99m）」單元。" }
         ],
         evidence: "更新依據：主站心肌灌流整併策略。"
     },
-    MPI_Tl201: {
+    MPI_Tl201_PatientEduDisabled: {
         title: "Tl-201 MPI（已整併）",
         cards: [
             { title: "目前版本", text: "此頁已整併至「心肌灌流（Tl-201 / Tc-99m）」單元。" }
         ],
         evidence: "更新依據：主站心肌灌流整併策略。"
     },
-    CardiacAmyloid: {
+    CardiacAmyloid_PatientEduDisabled: {
         title: "PYP：重點是 3 小時延遲與 AL 排除，不是停咖啡因",
         cards: [
             { title: "為什麼要做", text: "主要協助判斷是否為 ATTR 型心臟類澱粉沉積，尤其在心衰竭、左心室肥厚或影像懷疑時。" },
@@ -9157,7 +9118,157 @@ function renderProtocolSectionBody(items) {
     return renderProtocolList(items);
 }
 
+function toProtocolBulletList(items) {
+    if (!Array.isArray(items) || !items.length) return '';
+    const normalized = items.map((item) => {
+        if (Array.isArray(item)) {
+            const [label, value] = item;
+            return `${label}：${value}`;
+        }
+        return item;
+    }).filter(Boolean);
+    if (!normalized.length) return '';
+    return `<ul>${normalized.map((item) => `<li>${item}</li>`).join('')}</ul>`;
+}
+
+function buildMpiProtocolNarrativeSummaryHTML() {
+    const protocolData = window.NMINFO_PROTOCOL_DATA || {};
+    const tc99m = protocolData.MPI_Tc99m || null;
+    const tl201 = protocolData.MPI_Tl201 || null;
+    if (!tc99m && !tl201) return '';
+
+    const sourceText = [
+        tc99m?.source,
+        'ASNC SPECT Stress Protocols and Tracers update (2016)',
+        'EANM procedural guideline for radionuclide myocardial perfusion imaging with SPECT/SPECT-CT (2015)',
+        'ASNC SPECT MPI Quality Metrics (2023) 與 Reporting Quick Reference (2024)',
+        'ESC Chronic Coronary Syndrome guideline (2019) 與 AHA/ACC Chest Pain guideline (2021)'
+    ].filter(Boolean).join('；');
+
+    return `
+        <section class="protocol-summary-section" aria-labelledby="protocol-summary-title">
+            <div class="protocol-summary-heading">
+                <span class="protocol-summary-kicker">MPI 教科書式 Protocol</span>
+                <div>
+                    <h2 id="protocol-summary-title">MPI（Tl-201 / Tc-99m）教科書式 protocol 與 stress 方法</h2>
+                    <p>國際指引的共同核心是：<strong>先確認 stress 有效，再判讀缺損</strong>。若 stress 條件失效（咖啡因、methylxanthine、未達負荷或藥物干擾），後面的 perfusion 分數與風險分層會被系統性低估。</p>
+                    <p class="protocol-summary-note">此段改為敘事型教學，將 stress 路徑、tracer 時序、QC 與陷阱放在同一個臨床決策框架。</p>
+                </div>
+            </div>
+            <div class="protocol-summary-stack">
+                <section class="content-section">
+                    <h3 class="section-heading">1. Stress method：先選對壓力路徑，再談影像判讀</h3>
+                    <div class="prose">
+                        <p>可運動且 ECG 可判讀者，優先使用運動壓力；不能運動、運動能力不足或 ECG 不可判讀者，再選藥物壓力。Vasodilator stress（regadenoson / adenosine / dipyridamole）前，應先完成咖啡因與 methylxanthine 核對；這是避免假陰性的第一道閘門。</p>
+                        <div class="protocol-table-wrap">
+                            <table class="protocol-table">
+                                <thead>
+                                    <tr>
+                                        <th>Stress 方法</th>
+                                        <th>國際常用做法（教學版）</th>
+                                        <th>常見不適與現場處理</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>運動 stress</td>
+                                        <td>Bruce / Modified Bruce 常見；目標常用預測最大心率 85% 或症狀限制終點；tracer 在峰值負荷附近注射。</td>
+                                        <td>胸悶、喘、腿部疲勞；達終止條件立即停止，依 ACLS 與科內急救路徑處置。</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Regadenoson</td>
+                                        <td>0.4 mg IV bolus（固定劑量）；常於 20–30 秒注入 tracer；可搭配低強度運動降低腸肝背景。</td>
+                                        <td>潮紅、頭痛、胸悶、呼吸不適；症狀持續可用 aminophylline 逆轉（常見總量上限 250 mg）。</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Adenosine</td>
+                                        <td>140 μg/kg/min 持續 6 分鐘；常於第 3 分鐘注入 tracer。</td>
+                                        <td>胸悶、AV block、呼吸不適；症狀重或傳導異常時停藥並處置。</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dipyridamole</td>
+                                        <td>0.56 mg/kg 4 分鐘輸注（部分中心用 0.84 mg/kg 延長方案）；常於輸注後 3–5 分鐘注 tracer。</td>
+                                        <td>頭痛、噁心、頭暈、胸悶；必要時 aminophylline 緩慢 IV 逆轉並持續監測。</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dobutamine</td>
+                                        <td>10→20→30→40 μg/kg/min，每 3 分鐘遞增；必要時加 atropine。</td>
+                                        <td>心悸、血壓上升、心律不整；需全程 ECG/血壓監測並嚴格終止條件。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>Vasodilator 路徑常見禁忌包含活動性支氣管痙攣、未置放節律器的高階 AV block、顯著低血壓；dobutamine 路徑則要特別注意不穩定心律、嚴重高血壓與活動性缺血。</p>
+                    </div>
+                </section>
+                <section class="content-section">
+                    <h3 class="section-heading">2. Tracer protocol：Tc-99m 與 Tl-201 的時序邏輯不同</h3>
+                    <div class="prose">
+                        <p><strong>Tc-99m（sestamibi / tetrofosmin）</strong>多用於常規 CAD 缺血與風險分層；<strong>Tl-201</strong>保留再分佈與存活性問題。重點不只在劑量大小，而是注射到收像的時間差、體位、是否需要延遲補拍與 AC/NAC 對照是否一致。</p>
+                        <div class="protocol-table-wrap">
+                            <table class="protocol-table">
+                                <thead>
+                                    <tr>
+                                        <th>Protocol 類型</th>
+                                        <th>常見流程重點</th>
+                                        <th>臨床用途</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Tc-99m 1-day rest/stress（或 stress/rest）</td>
+                                        <td>常採低-高劑量比例（常見至少約 1:3），避免 shine-through；stress 與 rest 的注射與收像時間需固定記錄。</td>
+                                        <td>常規 CAD 缺血評估與風險分層。</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tc-99m 2-day protocol</td>
+                                        <td>每次使用中高活度，降低同日殘留交互影響；適合高 BMI 或需要提升計數品質者。</td>
+                                        <td>畫質要求高、同日流程不易完成或需減少交互干擾的個案。</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tl-201 stress-redistribution</td>
+                                        <td>stress 後早期相 + 3–4 小時延遲相，必要時 24 小時延遲或 reinjection；時間點紀錄必須嚴格。</td>
+                                        <td>viability 與缺血/瘢痕鑑別。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>新一代實務會把 SPECT/CT AC、prone/upright 補拍、raw cine 檢查放入同一套流程控管，以降低軟組織衰減與 subdiaphragmatic activity 的判讀偏差。</p>
+                    </div>
+                </section>
+                <section class="content-section">
+                    <h3 class="section-heading">3. QC 與常見陷阱：影像漂亮不等於結論可靠</h3>
+                    <div class="prose">
+                        <p>MPI 報告品質主要取決於三層 QC：<strong>stress adequacy</strong>、<strong>gating/運動品質</strong>、<strong>AC 對位品質</strong>。實務判讀應固定先看 raw projection 與 cine，再看 perfusion map、gated function 與定量分數。</p>
+                        ${tc99m ? `
+                            <h4>Tc-99m MPI 技術核對清單</h4>
+                            ${toProtocolBulletList(tc99m.qc)}
+                        ` : ''}
+                        ${tl201 ? `
+                            <h4>Tl-201 MPI 技術核對清單</h4>
+                            ${toProtocolBulletList(tl201.qc)}
+                        ` : ''}
+                        <h4>報告最小必填（建議）</h4>
+                        <ul>
+                            <li>stress type、壓力品質與終止條件（含 caffeine/methylxanthine 核對）。</li>
+                            <li>tracer、活度、注射與收像時間差（rest/stress 各自獨立記錄）。</li>
+                            <li>是否使用 CT AC、是否有 AC/NAC 不一致、是否加做 prone/upright/延遲補拍。</li>
+                            <li>灌流缺損型態（可逆、固定、部分可逆）與高風險訊號（如 TID、stress EF 下降）。</li>
+                            <li>影像限制與可能 artifact，避免過度二分法結論。</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <p class="protocol-summary-source">主要來源：${sourceText}</p>
+        </section>
+    `;
+}
+
 function buildProtocolSummaryHTML(key) {
+    if (key === 'MPI') {
+        return buildMpiProtocolNarrativeSummaryHTML();
+    }
+
     const protocol = getProtocolData(key);
     if (!protocol) return '';
 
@@ -9867,9 +9978,27 @@ function setNavGroupState(group, isOpen) {
 }
 
 function setSidebarOpen(isOpen) {
-    document.getElementById('sidebar')?.classList.toggle('open', isOpen);
-    document.getElementById('sidebar-overlay')?.classList.toggle('active', isOpen);
-    document.getElementById('mobile-menu-toggle')?.classList.toggle('active', isOpen);
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('sidebar-overlay');
+    const toggle = document.getElementById('mobile-menu-toggle');
+    const open = Boolean(isOpen);
+
+    sidebar?.classList.toggle('open', open);
+    sidebar?.classList.toggle('is-open', open);
+    overlay?.classList.toggle('active', open);
+    overlay?.classList.toggle('is-open', open);
+    toggle?.classList.toggle('active', open);
+    toggle?.classList.toggle('is-open', open);
+    toggle?.setAttribute('aria-expanded', String(open));
+    document.body.classList.toggle('is-mobile-menu-open', open);
+
+    if (sidebar) {
+        sidebar.style.left = open ? '0px' : '';
+        sidebar.style.transform = open ? 'translateX(0)' : '';
+    }
+    if (overlay) {
+        overlay.style.display = open ? 'block' : '';
+    }
 }
 
 function ensureImageLightbox() {
@@ -10007,14 +10136,21 @@ function decorateLightboxTargets(root = document) {
     const overlay = document.getElementById('sidebar-overlay');
 
     if (toggle) {
+        toggle.setAttribute('aria-expanded', 'false');
         toggle.addEventListener('click', () => {
-            const isOpen = !document.getElementById('sidebar')?.classList.contains('open');
+            const sidebar = document.getElementById('sidebar');
+            const isOpen = !(sidebar?.classList.contains('open') || sidebar?.classList.contains('is-open'));
             setSidebarOpen(isOpen);
         });
     }
     if (overlay) {
         overlay.addEventListener('click', closeMobileMenu);
     }
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            closeMobileMenu();
+        }
+    });
 })();
 
 function closeMobileMenu() {
