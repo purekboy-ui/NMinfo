@@ -8219,9 +8219,121 @@ const EXAM_FLOW_SUPPORT_VIEWS = {
     default: ['PatientQA', 'RadiationSafety', 'NMBasics']
 };
 
+const ACADEMIC_FIGURE_SUPPLEMENTS = {
+    Thyroid: [
+        {
+            type: "section",
+            title: "學術來源判讀圖例：甲狀腺 uptake / scan",
+            icon: "🖼️",
+            html: `<div class="prose">
+                <p>以下使用期刊與 SNM procedure guideline 裁切圖，聚焦判讀時最容易需要圖像對照的型態：Graves、toxic multinodular goiter、hot nodule、cold nodule 與常見技術錯誤。</p>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/ThyroidUptake/IJEM_2012_Fig4_Graves.jpg" alt="Diffuse high uptake pattern in Graves disease thyroid scintigraphy" loading="lazy" />
+                    <figcaption>圖 1．Graves disease 典型瀰漫性高攝取。來源：Int J Endocrinol. 2012 open-access thyroid scintigraphy review, Figure 4。判讀重點是全腺相對均勻增強，而非單一結節主導。</figcaption>
+                </figure>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/ThyroidUptake/IJEM_2012_Fig1_Multinodular.jpg" alt="Toxic multinodular goiter pattern on thyroid scintigraphy" loading="lazy" />
+                    <figcaption>圖 2．Toxic multinodular goiter。來源：同篇 Figure 1。多個功能性結節造成不均勻攝取，判讀時要和 Graves 的 diffuse pattern 分開。</figcaption>
+                </figure>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/ThyroidUptake/IJEM_2012_Fig3_HotNodule.jpg" alt="Autonomous hot thyroid nodule with suppression of background thyroid tissue" loading="lazy" />
+                    <figcaption>圖 3．Autonomous hot nodule。來源：同篇 Figure 3。單一熱結節可壓抑周邊甲狀腺組織，和多結節型態的臨床意義不同。</figcaption>
+                </figure>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/ThyroidUptake/IJEM_2012_Fig2_ColdNodule.jpg" alt="Cold thyroid nodule on thyroid scintigraphy" loading="lazy" />
+                    <figcaption>圖 4．Cold nodule。來源：同篇 Figure 2。冷結節代表局部攝取缺損，不能由核醫影像單獨判定良惡性，需接續超音波與 FNA 風險分層。</figcaption>
+                </figure>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/ThyroidUptake/SNM_2002_SourcesOfError_excerpt.png" alt="SNM thyroid uptake procedure guideline excerpt listing common sources of error" loading="lazy" />
+                    <figcaption>圖 5．常見誤差來源。來源：SNM Procedure Guideline for Thyroid Uptake Measurement, 2002 excerpt。含碘暴露、藥物、幾何位置與校正流程都可能改變 uptake 數值，報告需註明限制。</figcaption>
+                </figure>
+            </div>`
+        }
+    ],
+    I131WBS: [
+        {
+            type: "section",
+            title: "學術來源判讀圖例：I-131 全身掃描前處理與誤差",
+            icon: "🖼️",
+            html: `<div class="prose">
+                <p>I-131 全身掃描的判讀可靠度高度依賴前處理與碘池控制；目前先以 SNM thyroid uptake procedure guideline 的誤差來源裁切作為前處理檢核圖例，後續再補治療後 WBS 病灶型態圖。</p>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/ThyroidUptake/SNM_2002_SourcesOfError_excerpt.png" alt="SNM thyroid uptake procedure guideline excerpt listing iodine and medication sources of error" loading="lazy" />
+                    <figcaption>圖 1．I-131 / thyroid uptake 相關誤差來源。來源：SNM Procedure Guideline for Thyroid Uptake Measurement, 2002 excerpt。含碘顯影、甲狀腺藥物、校正與幾何條件會直接影響殘餘甲狀腺或病灶攝取判讀。</figcaption>
+                </figure>
+            </div>`
+        }
+    ],
+    Meckel: [
+        {
+            type: "section",
+            title: "學術來源判讀圖例：Meckel 掃描診斷表現",
+            icon: "🖼️",
+            html: `<div class="prose">
+                <p>Meckel 掃描影像判讀仍需回到「異位胃黏膜是否會攝取 pertechnetate」與族群前測機率。下圖先補上經典 JNM 文獻的診斷表現表，作為報告解讀敏感度/特異度與陰性結果限制的依據。</p>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/Meckel/JNM_1981_Table2_Table3_diagnostic_performance.png" alt="Diagnostic performance tables for Meckel scintigraphy from JNM 1981" loading="lazy" />
+                    <figcaption>圖 1．Meckel scintigraphy 診斷表現。來源：J Nucl Med. 1981 經典臨床資料 Table 2/3 裁切。臨床上陰性結果不能排除不含異位胃黏膜或活性不足的 Meckel diverticulum；陽性也需確認與胃同步、位置合理且非泌尿道或腸道游離活性。</figcaption>
+                </figure>
+            </div>`
+        }
+    ],
+    DMSA: [
+        {
+            type: "section",
+            title: "學術來源判讀圖例：腎臟 ROI 與定量品質控制",
+            icon: "🖼️",
+            html: `<div class="prose">
+                <p>DMSA 與 renogram 的臨床問題不同，但腎臟 ROI、背景區與病人移動仍會影響相對功能與皮質缺損判讀。此處先補上 JNMT 2022 的 ROI 與 motion pitfall 作為處理品質圖例；後續需再補 DMSA cortical scar 的專屬病例圖。</p>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/Renogram/JNMT_2022_Fig5_ROI_Technique.png" alt="Kidney and background ROI technique from JNMT renal scintigraphy protocol" loading="lazy" />
+                    <figcaption>圖 1．腎臟與背景 ROI 畫法。來源：Banks KP, et al. <em>J Nucl Med Technol</em>. 2022;50:310-318, Figure 5。DMSA 報告若涉及相對腎功能，ROI 與背景區選擇仍是定量可信度的基礎。</figcaption>
+                </figure>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/Renogram/JNMT_2022_Fig7_Motion_Pitfall.png" alt="Motion artifact pitfall on renal scintigraphy processing" loading="lazy" />
+                    <figcaption>圖 2．motion artifact 對腎臟核醫處理的影響。來源：同篇 Figure 7。若小兒或疼痛病人無法固定，皮質缺損與相對功能都可能被移動偽影放大或模糊。</figcaption>
+                </figure>
+            </div>`
+        }
+    ],
+    Cystography: [
+        {
+            type: "section",
+            title: "學術來源判讀圖例：泌尿系統動態檢查品質",
+            icon: "🖼️",
+            html: `<div class="prose">
+                <p>膀胱逆流掃描仍需補專屬 reflux grade 圖例；目前先放入 JNMT 腎臟核醫處理圖，作為泌尿系統動態檢查中 ROI、病人移動與時間序列品質的共同檢核。</p>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/Renogram/JNMT_2022_Fig7_Motion_Pitfall.png" alt="Motion artifact pitfall relevant to dynamic urinary nuclear medicine studies" loading="lazy" />
+                    <figcaption>圖 1．動態泌尿核醫檢查中的 motion pitfall。來源：Banks KP, et al. <em>J Nucl Med Technol</em>. 2022;50:310-318, Figure 7。Radionuclide cystography 若病人移動或 ROI 失準，逆流時點與程度可能被誤估。</figcaption>
+                </figure>
+            </div>`
+        }
+    ],
+    NaFPET: [
+        {
+            type: "section",
+            title: "學術來源判讀圖例：骨骼攝取型態與 superscan 陷阱",
+            icon: "🖼️",
+            html: `<div class="prose">
+                <p>F-18 NaF PET 與 Tc-99m MDP bone scan 皆反映骨重塑活性；在尚未補入 NaF PET 專屬 open-access PET/CT 圖前，先共用 EANM bone scintigraphy 與 superscan review 的判讀型態圖，協助建立骨骼分布、瀰漫病灶與 hot-kidney 陷阱。</p>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/BoneScan/EANM_2016_Fig1_Normal_WholeBody.png" alt="Normal whole-body bone scintigraphy from EANM guideline used as skeletal uptake baseline" loading="lazy" />
+                    <figcaption>圖 1．正常骨骼核醫分布基準。來源：EANM bone scintigraphy practice guideline 2016, Figure 1。NaF PET 雖解析度更高，仍需先建立對稱骨重塑與泌尿排泄背景的正常概念。</figcaption>
+                </figure>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/BoneScan/Diagnostics_2024_Fig1_Superscan.jpg" alt="Metastatic superscan pattern relevant to skeletal nuclear imaging" loading="lazy" />
+                    <figcaption>圖 2．metastatic superscan 型態。來源：Zacho HD, et al. <em>Diagnostics</em>. 2024;14, Figure 1。瀰漫性骨轉移可能讓正常背景與泌尿系統相對變淡，PET 或 planar 判讀都要避免低估。</figcaption>
+                </figure>
+            </div>`
+        }
+    ]
+};
+
 function getCombinedContentBlocks(key, data, includeLatestPatientEdu = true) {
     return [
         ...(data.content || []),
+        ...(ACADEMIC_FIGURE_SUPPLEMENTS[key] || []),
         ...(EXAM_TEACHING_SUPPLEMENTS[key] || []),
         ...(includeLatestPatientEdu ? (LATEST_PATIENT_EDU_SUPPLEMENTS[key] || []) : [])
     ];
@@ -8334,6 +8446,7 @@ function buildExamFlowHTML(key, data) {
     const conceptDiagramHTML = buildConceptDiagramHTML(getConceptDiagramData(key));
     const baseBlocks = [
         ...(data.content || []),
+        ...(ACADEMIC_FIGURE_SUPPLEMENTS[key] || []),
         ...(EXAM_TEACHING_SUPPLEMENTS[key] || [])
     ];
     const patientEduBlocks = LATEST_PATIENT_EDU_SUPPLEMENTS[key] || [];
@@ -8882,6 +8995,7 @@ function buildI131TreatmentHTML(data) {
 function getTherapyPageBlocks(key, data) {
     return [
         ...(data.content || []),
+        ...(ACADEMIC_FIGURE_SUPPLEMENTS[key] || []),
         ...(EXAM_TEACHING_SUPPLEMENTS[key] || [])
     ];
 }
