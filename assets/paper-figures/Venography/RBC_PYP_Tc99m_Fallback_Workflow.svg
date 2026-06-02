@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="740" viewBox="0 0 1200 740" role="img" aria-labelledby="title desc">
+  <title id="title">RBC scan (PYP + Tc-99m) fallback workflow for difficult venous access</title>
+  <desc id="desc">Stepwise workflow for in-vivo RBC labeling with stannous pyrophosphate and Tc-99m pertechnetate when lower-limb venous cannulation is difficult.</desc>
+  <rect width="1200" height="740" fill="#fff8f8"/>
+  <text x="600" y="54" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" fill="#5b3d3d" font-weight="700">
+    RBC scan（PYP + Tc-99m）困難靜脈替代流程
+  </text>
+  <text x="600" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#7b5a5a">
+    文獻整合：Pavel 1977；Snarski 1989；Caner 1991；DailyMed PYP label
+  </text>
+
+  <defs>
+    <style>
+      .box { fill: #ffffff; stroke: #c29a9a; stroke-width: 2; rx: 18; ry: 18; }
+      .head { font-family: Arial, sans-serif; font-size: 24px; font-weight: 700; fill: #5b3d3d; }
+      .body { font-family: Arial, sans-serif; font-size: 20px; fill: #4a3a3a; }
+      .arrow { stroke: #a87e7e; stroke-width: 5; marker-end: url(#arrowhead); fill: none; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <polygon points="0 0, 10 5, 0 10" fill="#a87e7e"/>
+    </marker>
+  </defs>
+
+  <rect class="box" x="70" y="130" width="1060" height="95"/>
+  <text class="head" x="100" y="170">Step 1｜建立單一可用靜脈路徑（上肢周邊或中心靜脈）</text>
+  <text class="body" x="100" y="204">目的：避免足背反覆穿刺，先確保可完成藥物前處理與示蹤劑注射。</text>
+
+  <line class="arrow" x1="600" y1="228" x2="600" y2="262"/>
+
+  <rect class="box" x="70" y="262" width="1060" height="95"/>
+  <text class="head" x="100" y="302">Step 2｜注射 stannous pyrophosphate（PYP）</text>
+  <text class="body" x="100" y="336">常用 0.2 mg/kg（最大約 15.4 mg），待錫離子進入 RBC。</text>
+
+  <line class="arrow" x1="600" y1="360" x2="600" y2="394"/>
+
+  <rect class="box" x="70" y="394" width="1060" height="95"/>
+  <text class="head" x="100" y="434">Step 3｜等待 20–30 分鐘後注射 Tc-99m pertechnetate</text>
+  <text class="body" x="100" y="468">常用 555–740 MBq（15–20 mCi）；依院內 SOP 可調整至約 1110 MBq。</text>
+
+  <line class="arrow" x1="600" y1="492" x2="600" y2="526"/>
+
+  <rect class="box" x="70" y="526" width="1060" height="95"/>
+  <text class="head" x="100" y="566">Step 4｜立即動態 flow + 10–15 分鐘 blood-pool 影像</text>
+  <text class="body" x="100" y="600">2–5 秒/幀追蹤小腿到骨盆；必要時加 SPECT/CT 看近端阻塞與側枝。</text>
+
+  <text x="600" y="690" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#7b5a5a">
+    關鍵判讀：深靜脈主幹缺失/減弱 + 側枝顯影 = 高度懷疑阻塞；需與超音波/CTA 臨床整合
+  </text>
+</svg>

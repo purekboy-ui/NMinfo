@@ -48,7 +48,7 @@ window.NM_EXAM_BANK["rps-114-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "β\n(2)\n\n(1)制動輻射具連續能譜特性\n(3)電子方向改變時會產生制動輻射\n(4)會釋放很多連續能譜光子",
+      "answerText": "β\n(2)\n(1)制動輻射具連續能譜特性\n(3)電子方向改變時會產生制動輻射\n(4)會釋放很多連續能譜光子",
       "isComplete": true
     },
     {
@@ -60,15 +60,15 @@ window.NM_EXAM_BANK["rps-114-1-professional"] = {
       "options": [
         {
           "key": "A",
-          "text": "K = D / (1-b)"
+          "text": "K = D / ( 1 - b )"
         },
         {
           "key": "B",
-          "text": "D = Φ (/) (1-b)"
+          "text": "D = Φ ( μ / ρ ) ( 1 - b )"
         },
         {
           "key": "C",
-          "text": "K = Φ (/) E ab"
+          "text": "K = Φ ( μ / ρ ) E ab"
         },
         {
           "key": "D",
@@ -93,19 +93,19 @@ window.NM_EXAM_BANK["rps-114-1-professional"] = {
       "options": [
         {
           "key": "A",
-          "text": "1.84×103"
+          "text": "1.84 × 103"
         },
         {
           "key": "B",
-          "text": "粒子數 通量 6 37×10 𝑑𝑖𝑠×2 ⁄ 3 −2 𝑑𝑖𝑠 = 2 = 2 = 3.68×10 𝑐𝑚 4𝜋𝑟 4𝜋(40)"
+          "text": "粒子數 通量 637 × 10 𝑑𝑖𝑠 × 2 ⁄ 3 −2 𝑑𝑖𝑠 = 2 = 2 = 3.68 × 10 𝑐𝑚 4𝜋𝑟 4𝜋 ( 40 )"
         },
         {
           "key": "C",
-          "text": "1.84×107"
+          "text": "1.84 × 107"
         },
         {
           "key": "D",
-          "text": "3.68×107"
+          "text": "3.68 × 107"
         }
       ],
       "answer": "B",
@@ -114,7 +114,7 @@ window.NM_EXAM_BANK["rps-114-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\n粒子數\n通量\n6\n37×10 𝑑𝑖𝑠×2 ⁄ 3 −2\n𝑑𝑖𝑠\n= 2 = 2 = 3.68×10 𝑐𝑚\n4𝜋𝑟 4𝜋(40)",
+      "answerText": "(2)\n粒子數\n通量\n6\n37 × 10 𝑑𝑖𝑠 × 2 ⁄ 3 −2\n𝑑𝑖𝑠\n= 2 = 2 = 3.68 × 10 𝑐𝑚\n4𝜋𝑟 4𝜋(40)",
       "isComplete": true
     },
     {
@@ -200,7 +200,7 @@ window.NM_EXAM_BANK["rps-114-1-professional"] = {
         },
         {
           "key": "C",
-          "text": "γ射線的輻射加權因數為1 (全身組織加權因數為1) 。"
+          "text": "γ射線的輻射加權因數為1 ( 全身組織加權因數為1 ) 。"
         },
         {
           "key": "D",
@@ -213,7 +213,7 @@ window.NM_EXAM_BANK["rps-114-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(3)\nγ射線的輻射加權因數為1 (全身組織加權因數為1)。",
+      "answerText": "(3)\nγ射線的輻射加權因數為1 ( 全身組織加權因數為1 ) 。",
       "isComplete": true
     },
     {
@@ -229,7 +229,7 @@ window.NM_EXAM_BANK["rps-114-1-professional"] = {
         },
         {
           "key": "B",
-          "text": "(N/3) ( N /3) , 1200( 3600 /3) , 120020cpm, (20/1200) 100%1.67%"
+          "text": "( N / 3 ) ± ( N / 3 ) , ∴1200 ± ( 3600 / 3 ) , 1200 ± 20cpm, ( 20 / 1200 ) × 100% = 1.67%"
         },
         {
           "key": "C",
@@ -246,7 +246,7 @@ window.NM_EXAM_BANK["rps-114-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\n(N/3)( N /3),1200( 3600 /3),120020cpm,(20/1200)100%1.67%",
+      "answerText": "(2)\n( N / 3 ) ± ( N / 3 ) ,∴1200 ± ( 3600 / 3 ) ,1200 ± 20cpm, ( 20 / 1200 ) × 100% = 1.67%",
       "isComplete": true
     },
     {
@@ -270,7 +270,7 @@ window.NM_EXAM_BANK["rps-114-1-professional"] = {
         },
         {
           "key": "D",
-          "text": "Q = 4MnE/(M+n) 2 = [4×1×(1/1836) ]×4 MeV/ (1+1/1836) 2 = 8.7×10-3 MeV = 8.7 keV max"
+          "text": "Q = 4MnE / ( M + n ) 2 = [4 × 1 × ( 1 / 1836 ) ] × 4 MeV / ( 1 + 1 / 1836 ) 2 = 8.7 × 10^ - 3 MeV = 8.7 keV max"
         }
       ],
       "answer": "D",
@@ -279,7 +279,7 @@ window.NM_EXAM_BANK["rps-114-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(4)\nQ = 4MnE/(M+n)2 = [4×1×(1/1836)]×4 MeV/ (1+1/1836)2 = 8.7×10-3 MeV = 8.7 keV\nmax",
+      "answerText": "(4)\nQ = 4MnE / ( M + n ) 2 = [4 × 1 × ( 1 / 1836 ) ] × 4 MeV / ( 1 + 1 / 1836 ) 2 = 8.7 × 10^ - 3 MeV = 8.7 keV\nmax",
       "isComplete": true
     },
     {
@@ -353,7 +353,7 @@ window.NM_EXAM_BANK["rps-114-1-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 11,
-      "stem": "某種細胞的存活曲線符合線性二次模型(linear-quadratic model) ， 其 α=0.1 Gy-1、β=0.05\nGy-2， 請問單次照射多少\nGy 時線性與二次細胞致死的貢獻一樣， 此劑量下細胞的存活\n比例約為多少？",
+      "stem": "某種細胞的存活曲線符合線性二次模型 ( linear - quadraticmodel ) ， 其 α = 0.1 Gy - 1、β = 0.05\nGy-2， 請問單次照射多少\nGy 時線性與二次細胞致死的貢獻一樣， 此劑量下細胞的存活\n比例約為多少？",
       "options": [
         {
           "key": "A",
@@ -365,7 +365,7 @@ window.NM_EXAM_BANK["rps-114-1-professional"] = {
         },
         {
           "key": "C",
-          "text": "線性與二次細胞致死貢獻相同細胞致死所需要的劑量等於 的比率。 𝛼 𝛽 故其劑量為 Gy 𝛼 0.1 𝛽 = 0.05 = 2 又根據線性二次模型公式可得該劑量下的細胞存活比例， 2 2 −𝛼𝐷−𝛽𝐷 −0.1×2−0.05×2 S = 𝑒 = 𝑒 = 0.67 = 67%"
+          "text": "線性與二次細胞致死貢獻相同細胞致死所需要的劑量等於 的比率。 𝛼 𝛽 故其劑量為 Gy 𝛼 0.1 𝛽 = 0.05 = 2 又根據線性二次模型公式可得該劑量下的細胞存活比例， 22 −𝛼𝐷−𝛽𝐷 −0.1 × 2−0.05 × 2 S = 𝑒 = 𝑒 = 0.67 = 67%"
         },
         {
           "key": "D",
@@ -378,7 +378,7 @@ window.NM_EXAM_BANK["rps-114-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(3)\n線性與二次細胞致死貢獻相同細胞致死所需要的劑量等於 的比率。\n𝛼\n𝛽\n故其劑量為 Gy\n𝛼 0.1\n𝛽 = 0.05 = 2\n又根據線性二次模型公式可得該劑量下的細胞存活比例，\n\n2 2\n−𝛼𝐷−𝛽𝐷 −0.1×2−0.05×2\nS = 𝑒 = 𝑒 = 0.67 = 67%",
+      "answerText": "(3)\n線性與二次細胞致死貢獻相同細胞致死所需要的劑量等於 的比率。\n𝛼\n𝛽\n故其劑量為 Gy\n𝛼 0.1\n𝛽 = 0.05 = 2\n又根據線性二次模型公式可得該劑量下的細胞存活比例，\n2 2\n−𝛼𝐷−𝛽𝐷 −0.1 × 2−0.05 × 2\nS = 𝑒 = 𝑒 = 0.67 = 67%",
       "isComplete": true
     },
     {
@@ -398,7 +398,7 @@ window.NM_EXAM_BANK["rps-114-1-professional"] = {
         },
         {
           "key": "C",
-          "text": "1 1 1 1 X() 2 () 3 X  0.5 2 2 4"
+          "text": "1111 X × ( ) 2 × × ( ) 3 X = 0.5224"
         },
         {
           "key": "D",
@@ -411,7 +411,7 @@ window.NM_EXAM_BANK["rps-114-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(3)\n1 1 1 1\nX( )2 ( )3 X\n\n0.5 2 2 4",
+      "answerText": "(3)\n1 1 1 1\nX × ( ) 2 × × ( ) 3 X\n=\n0.5 2 2 4",
       "isComplete": true
     },
     {
@@ -419,23 +419,23 @@ window.NM_EXAM_BANK["rps-114-1-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 13,
-      "stem": "有一碳壁為材料的游離腔， 在碳裡面有一個小體積 V cm3 之空氣腔， 這塊碳曝露在鈷-\n60 所發射的加馬射線裡， 在空腔裡產生和收集到 X 庫侖之電量， 已知空氣的質量阻擋\n本領=S， 碳的質量阻擋本領=S， 空氣的密度= g/cm3， 在空氣中平均游離1離子對需\nair C\nW eV， 請問空氣腔若填充碳材料， 則此填充碳材料的吸收的劑量(Gy) ？ 1000XW S 1000XW S 1000X S 1000X S",
+      "stem": "有一碳壁為材料的游離腔， 在碳裡面有一個小體積 V cm3 之空氣腔， 這塊碳曝露在鈷-\n60 所發射的加馬射線裡， 在空腔裡產生和收集到 X 庫侖之電量， 已知空氣的質量阻擋\n本領 = S， 碳的質量阻擋本領 = S， 空氣的密度 = ρ g / cm3， 在空氣中平均游離1離子對需\nair C\nW eV， 請問空氣腔若填充碳材料， 則此填充碳材料的吸收的劑量 ( Gy ) ？ 1000·X·WS 1000·X·WS 1000·XS 1000·XS",
       "options": [
         {
           "key": "A",
-          "text": "S X(C) J S 1000XW S D D  C [ W() ] C   C C air S g 1kg C S V S air () V(cm3)  air air cm3 1000g"
+          "text": "SX ( C ) JS 1000·X·WSD = D · C = [·W ( ) ]· C = · CC air Sg 1kg CSρVS air ρ ( ) ·V ( cm3 ) · air air cm31000g"
         },
         {
           "key": "B",
-          "text": " air"
+          "text": "· air"
         },
         {
           "key": "C",
-          "text": " C"
+          "text": "· C"
         },
         {
           "key": "D",
-          "text": " air V S V S VW S VW S air C air C"
+          "text": "· air ρVSρVSρV·WSρV·WS air C air C"
         }
       ],
       "answer": "A",
@@ -444,7 +444,7 @@ window.NM_EXAM_BANK["rps-114-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(1)\nS X(C) J S 1000XW S\nD D  C [ W( )] C   C\nC air S g 1kg C S V S\nair ( )V(cm3) air air\ncm3 1000g",
+      "answerText": "(1)\nSX ( C ) JS 1000·X·WS\nD = D · C = [·W ( ) ]· C = · C\nC air Sg 1kg CSρVS\nair ρ ( ) ·V ( cm3 ) · air air\ncm3 1000g",
       "isComplete": true
     },
     {
@@ -493,15 +493,15 @@ window.NM_EXAM_BANK["rps-114-1-professional"] = {
         },
         {
           "key": "B",
-          "text": "4.2×10-3"
+          "text": "4.2 × 10^ - 3"
         },
         {
           "key": "C",
-          "text": "2.4×10-1"
+          "text": "2.4 × 10^ - 1"
         },
         {
           "key": "D",
-          "text": "0.24=1000×1×∆T ∆T=2.4×10-4"
+          "text": "0.24 = 1000 × 1 × ∆T ∆T = 2.4 × 10^ - 4"
         }
       ],
       "answer": "D",
@@ -510,7 +510,7 @@ window.NM_EXAM_BANK["rps-114-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(4)\n0.24=1000×1×∆T\n∆T=2.4×10-4",
+      "answerText": "(4)\n0.24 = 1000 × 1 × ∆T\n∆T = 2.4 × 10^ - 4",
       "isComplete": true
     },
     {
@@ -518,18 +518,34 @@ window.NM_EXAM_BANK["rps-114-1-professional"] = {
       "kind": "essay",
       "section": "essay",
       "number": 1,
-      "stem": "某人使用 5 年前購買 1/2 =5.26 yr)為標準射源，做蓋革計數器計數效\n率的實驗，結果以蓋革計數器測得標準射源活度為2104 cpm。假設此蓋革計數器的無\n感時間為300 s，試問：\n(1)請計算此計數器因為無感時間所損失的比率為多少%？\n(2)請計算此計數器的計數效率為多少%？",
-      "answerText": "標準射源經過5年剩餘活度\n0.693×5\n−𝜆𝑡 4 −\n𝐴0𝑒 5.26\n𝐴 = = 0.25×3.7×10 ×𝑒 = 4787 𝐵𝑞\n經無感時間修正後的計數率\n4\n𝑅0\n2×10\n4\n𝑅 = = = 22222 𝑐𝑝𝑚\n1−𝑅0𝜏 2×10 −6\n1− ×300×10\n(1)損失比率 60\n20000\n= 1−22222 = 0.1 = 10%\n(2)計數效率\ncpm 20000\nefficiency = = = 7 %\ndpm 4787×60",
-      "isComplete": true
+      "stem": "某人使用 5 年前購買 1 / 2 = 5.26 yr ) 為標準射源，做蓋革計數器計數效\n率的實驗，結果以蓋革計數器測得標準射源活度為2 × 104 cpm。假設此蓋革計數器的無\n感時間為300 μs，試問：\n(1)請計算此計數器因為無感時間所損失的比率為多少%？\n(2)請計算此計數器的計數效率為多少%？",
+      "answerText": "標準射源經過5年剩餘活度 0.693 × 5 −𝜆𝑡 4 − 𝐴0𝑒 5.26\n𝐴 = = 0.25 × 3.7 × 10 × 𝑒 = 4787 𝐵𝑞\n經無感時間修正後的計數率4 𝑅02 × 104\n𝑅 = = = 22222 𝑐𝑝𝑚 1−𝑅0𝜏 2 × 10 −61− × 300 × 10\n(1)損失比率 60 20000\n= 1−22222 = 0.1 = 10% ( 2 ) 計數效率 cpm20000\nefficiency = = = 7 % dpm 4787 × 60",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-114-1-professional/q1-1.webp",
+          "alt": "114-1 輻射防護師 專業 問答第 1 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rps-114-1-professional-essay-002",
       "kind": "essay",
       "section": "essay",
       "number": 2,
-      "stem": "光子和物質產生康普吞效應時，康普吞電子動能(K)和入射光子能量(E)之關係式如\n下，\n\n試問：\n(1) α和θ 代表的含意。\n(2)散射光子能量(E’)和入射光子能量(E)之關係式為何？\n(3)當E為511 keV時，散射光子的最小能量為何？",
-      "answerText": "(1) α為入射光子能量和靜止電子能量的比值，即E / (511 keV)。θ 為散射光子和入射光\n子行進方向的夾角。\n(2)\n1\n′\nE = E−K = E(1+𝛼(1−𝑐𝑜𝑠𝜃))\n\n(3)散射光子的最小能量發生在 =180o時\nE=511 keV時， =1\nθ\n散射光子的最小α能量=\n1\n\n511(1+2) = 170.3𝑘𝑒𝑉",
-      "isComplete": true
+      "stem": "光子和物質產生康普吞效應時，康普吞電子動能(K)和入射光子能量(E)之關係式如\n下，\n試問：\n( 1 ) α和θ 代表的含意。\n(2)散射光子能量(E’)和入射光子能量(E)之關係式為何？\n(3)當E為511 keV時，散射光子的最小能量為何？",
+      "answerText": "( 1 ) α為入射光子能量和靜止電子能量的比值，即E / ( 511 keV ) 。θ 為散射光子和入射光\n子行進方向的夾角。\n( 2 ) 1′ E = E−K = E ( 1 + 𝛼 ( 1−𝑐𝑜𝑠𝜃 ) )\n( 3 ) 散射光子的最小能量發生在 = 180o時 E = 511 keV時， = 1θ\n散射光子的最小α能量 = 1\n511 ( 1 + 2 ) = 170.3𝑘𝑒𝑉",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-114-1-professional/q2-1.webp",
+          "alt": "114-1 輻射防護師 專業 問答第 2 題原始解答截圖（第 1 張）"
+        },
+        {
+          "src": "./assets/radiation-answer-scans/rps-114-1-professional/q2-2.webp",
+          "alt": "114-1 輻射防護師 專業 問答第 2 題原始解答截圖（第 2 張）"
+        }
+      ]
     },
     {
       "id": "rps-114-1-professional-essay-003",
@@ -537,17 +553,29 @@ window.NM_EXAM_BANK["rps-114-1-professional"] = {
       "section": "essay",
       "number": 3,
       "stem": "某水泥廠將報廢一顆鈷-60密封射源，其活度剩 1 Ci，將其置於鉛罐進行貨車運送。鉛\n罐中心距離司機的位置為2公尺，若司機位置的輻射劑量率須小於 0.02 R h-1 時，請問\n鉛罐厚度至少須幾公分？ (鈷-60 曝露率常數為 13.2 R cm2 h-1 mCi-1 鉛密度11.3 g cm-3，\n鈷-60光子的與鉛作用的質量衰減係數 0.0581 cm2g-1，不考慮增建因數)",
-      "answerText": "13.2 R cm2 h-1 mCi-1 (1/ 200 cm)2 1000 mCi = 0.33 R/h\nµ =11.3 0.0581 = 0.66 cm-1\nI = I e-µx\n0\n0.02 = 0.33 e -0.66x x = 4.27 cm",
-      "isComplete": true
+      "answerText": "13.2 R cm2 h - 1 mCi - 1 × ( 1 / 200 cm ) 2 × 1000 mCi = 0.33 R / h\nµ = 11.3 × 0.0581 = 0.66 cm - 1 I = Ie - µx0\n0.02 = 0.33 e - 0.66x x = 4.27 cm",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-114-1-professional/q3-1.webp",
+          "alt": "114-1 輻射防護師 專業 問答第 3 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rps-114-1-professional-essay-004",
       "kind": "essay",
       "section": "essay",
       "number": 4,
-      "stem": "在空氣中，1 MeV光子束(µ = 0.0280 cm-1)和0.1 MeV光子束(µ = 0.0233 cm-1)產生相\nen en\n同的劑量，試問：(1)兩光子束能通量的比率是多少？ (2)兩光子束通量的比率是多少？",
-      "answerText": "(1)\n\n𝜑1 ×𝐸1 ×𝜇𝑒𝑛,1 𝜑0.1 ×𝐸0.1 𝜇𝑒𝑛,0.1\n= ×\n𝜑1 ×𝐸1 0.0233\n(2 ) = = 0.832\n𝜑0.1 ×𝐸0.1\n0.0280\n\n𝜑1 0.832\n= = 0.0832\n𝜑0.1\n10",
-      "isComplete": true
+      "stem": "在空氣中，1 MeV光子束 ( µ = 0.0280 cm - 1 ) 和0.1 MeV光子束 ( µ = 0.0233 cm - 1 ) 產生相\nen en\n同的劑量，試問：(1)兩光子束能通量的比率是多少？ (2)兩光子束通量的比率是多少？",
+      "answerText": "(1)\n𝜑1 × 𝐸1 × 𝜇𝑒𝑛,1 𝜑0.1 × 𝐸0.1 𝜇𝑒𝑛,0.1 = × 𝜑1 × 𝐸10.0233 ( 2 ) = = 0.832 𝜑0.1 × 𝐸0.10.0280 𝜑10.832 = = 0.0832 𝜑0.110",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-114-1-professional/q4-1.webp",
+          "alt": "114-1 輻射防護師 專業 問答第 4 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rps-114-1-professional-essay-005",
@@ -555,17 +583,29 @@ window.NM_EXAM_BANK["rps-114-1-professional"] = {
       "section": "essay",
       "number": 5,
       "stem": "(1)請詳細說明屏蔽快中子射束的各過程與其原理，並列出相對應之常用材料。\n(2)快中子與人體軟組織作用的機制為何？\n(3)熱中子與人體軟組織作用的機制中，哪一種機制中會釋出質子？",
-      "answerText": "(1)快中子以水、石蠟、石墨等含碳、氫等材料利用彈性碰撞原理將快中子速度緩速成熱\n中子，再利用10B (n, α) 7Li 反應捕獲熱中子，或是利用113Cd (n, γ) 114Cd\n反應捕獲熱\n中子，外圍再用鉛將加馬射線加以屏蔽。\n(2)快中子與人體的組成元素(C, H, N, O)行彈性碰撞被減速。\n(3)熱中子會進行14N (n, p) 14C 的反應，釋出質子。",
-      "isComplete": true
+      "answerText": "(1)快中子以水、石蠟、石墨等含碳、氫等材料利用彈性碰撞原理將快中子速度緩速成熱\n中子，再利用10B ( n, α ) 7Li 反應捕獲熱中子，或是利用113Cd ( n, γ ) 114Cd反應捕獲熱\n中子，外圍再用鉛將加馬射線加以屏蔽。\n(2)快中子與人體的組成元素(C, H, N, O)行彈性碰撞被減速。\n(3)熱中子會進行14N (n, p) 14C 的反應，釋出質子。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-114-1-professional/q5-1.webp",
+          "alt": "114-1 輻射防護師 專業 問答第 5 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rps-114-1-professional-essay-006",
       "kind": "essay",
       "section": "essay",
       "number": 6,
-      "stem": "若一能量 hv =600 keV 之光子在 1 g 靶體積內發生康普吞效應，散射光子能量 hv 為\n1 2\n450 keV，產生之康普吞電子初始動能T 1 為=150 keV；該電子在靶體積中發射出能量hv 3\n為 10 keV 之制動輻射(於靶體積內無任何交互作用)，該電子離開靶體積時尚有 50 keV\n之動能 T 。同時有另一能量 hv 為 80 keV 之光子在靶體積外發生光電效應，產生之光\n2 4\n電子初始動能T 約為80 keV，此光電子進入靶體積時之動能T 為50 keV。\n3 4\n請計算在此過程(如下圖)中靶體積內之(1)吸收劑量(Gy)、(2)總克馬(Gy)。",
-      "answerText": "(1)吸收劑量D  ( T  h v  T  T ) /1 μ g\n1 3 2 4\n=(150-10-50+50)keV/g\n=140 keV /10-9 kg =2.2410-5 J/kg=22.4 Gy\n/1g=150 keV/10-9 kg=2.410-5 J/kg=24 Gy\n(2)總克馬=T 1\n(克馬僅考慮在把體積內之初始能量轉移)",
-      "isComplete": true
+      "stem": "若一能量 hv = 600 keV 之光子在 1 μg 靶體積內發生康普吞效應，散射光子能量 hv 為\n1 2\n450 keV，產生之康普吞電子初始動能T 1 為 = 150 keV；該電子在靶體積中發射出能量hv 3\n為 10 keV 之制動輻射(於靶體積內無任何交互作用)，該電子離開靶體積時尚有 50 keV\n之動能 T 。同時有另一能量 hv 為 80 keV 之光子在靶體積外發生光電效應，產生之光\n2 4\n電子初始動能T 約為80 keV，此光電子進入靶體積時之動能T 為50 keV。\n3 4\n請計算在此過程 ( 如下圖 ) 中靶體積內之 ( 1 ) 吸收劑量 ( μGy ) 、 ( 2 ) 總克馬 ( μGy ) 。",
+      "answerText": "解：\n(1) 靶體積內真正留下的能量為\n= 康普吞電子初始動能 - 離開靶體積的制動輻射能量 - 電子離開時剩餘動能 + 外來光電子進入靶體積時帶入的動能\n= 150 - 10 - 50 + 50 = 140 keV。\n\n靶體積質量為 1 μg = 10^ - 9 kg，所以吸收劑量\nD = 140 keV / 10^ - 9 kg\n= 2.24 × 10^ - 5 J / kg = 22.4 μGy。\n\n(2) 總克馬只計算靶體積內由不帶電光子直接轉移給帶電粒子的初始動能，\n本題只有康普吞作用在靶體積內發生，因此\nK = 150 keV / 10^ - 9 kg = 2.4 × 10^ - 5 J / kg = 24 μGy。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-114-1-professional/q6-1.webp",
+          "alt": "114-1 輻射防護師 專業 問答第 6 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rps-114-1-professional-essay-007",
@@ -573,8 +613,14 @@ window.NM_EXAM_BANK["rps-114-1-professional"] = {
       "section": "essay",
       "number": 7,
       "stem": "某一實驗室規劃將使用鍶-90 (90Sr)放射性物質，請說明：\n(1)其衰變所產生之子核為何？\n(2)請簡述對90Sr及其子核應有之屏蔽考量。",
-      "answerText": "(1) 鍶-90 (90Sr)為純 衰變之放射性物質，其衰變會產生釔-90 (90Y)。\n(2) 90Sr 及 90Y 均為純 衰變之放射性物質，90Y 衰變為鋯-90 (90Zr)後成為穩定核種。故\nβ\n針對90Sr及其子核均僅需考慮發射之 輻射。對於 輻射屏蔽考量如下：\nβ\n因 粒子之屏蔽物質及厚度，決定於：\nβ β\n• 屏蔽物質的原子序必須很小，以減少制動輻射的產生。且屏蔽物質的厚度必須大\nβ\n於 粒子的最大射程，以完全阻擋 粒子。\n• 高原子序物質可有效衰減所產生之制動輻射的量。\nβ β\n故屏蔽 粒子時宜先用較低原子序數(Z)物質以完全阻擋 粒子，其後再接高原子序數物\n質，以有效阻擋磷-32發射出 粒子產生之制動輻射的影響。\nβ β\n\nβ",
-      "isComplete": true
+      "answerText": "解：\n( 1 ) 90Sr 以 β^ - 衰變生成 90Y；之後 90Y 再以 β^ - 衰變成穩定的 90Zr。\n\n( 2 ) 90Sr 與 90Y 都是 β 發射核種，因此屏蔽的重點是 β 粒子本身與其制動輻射。\n實務上應以 90Y 較高能的 β 粒子作為較嚴苛的設計條件。\n\n屏蔽考量可分為兩層：\n先用低原子序材料 ( 如壓克力、塑膠 ) 且厚度大於 β 粒子的最大射程，以降低制動輻射並完全阻擋 β 粒子；\n若需再降低制動輻射，則可在外層加上鉛等高原子序材料吸收這些 X 光。\n\n也就是說，對 90Sr / 90Y 的屏蔽原則是「先低 Z 擋 β，再視需要於外層加高 Z 擋制動輻射」，而不是去屏蔽其他核種。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-114-1-professional/q7-1.webp",
+          "alt": "114-1 輻射防護師 專業 問答第 7 題原始解答截圖（第 1 張）"
+        }
+      ]
     }
   ]
 };

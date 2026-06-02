@@ -1,0 +1,92 @@
+110
+
+
+
+6309
+
+
+
+
+
+1
+
+___________
+
+!
+
+ 
+
+1.123I-sodium iodide A.123Ielectron capture139 keV B. C. D.
+2. A. B.111In124I133Xe C.EC D.
+3.124I A.121Sb, 2n124I B.122Ted, 2n124I C.124Tep, n124I D.123Ted, n124I
+4.99mTc-MAG3G3 A.3glucose B.3glycine C.3glutamine D.3galactose
+5.133Xe A.3.5 B.81 keV C.5% 133Xe95% CO2lung ventilation D.133Xe
+6. A.99Mo-99mTc
+
+B.62Zn-62Cu C.81Rb-81mKr D.82Sr-82Rb 7.11C-choline11C-methyl iodide A.2-(dimethylamino)-ethanol B.2-(dimethylamino)-methanol C.2-(diethylamino)-ethanol D.2-(diethylamino)-methanol 8.99mTc A.99mTc B. C.99mTcO4- (+7)99mTcO2 (+4) D. 9. A.11C-methionine B.11C-acetate C.18F-FET D.18F-FDOPA 10.68Ge 68Ga68Ge/ 68Ga A. B. C. D. 11.somatostatin  A.111In-pentetrotide B.111In-DTPA C.18F-FDOPA D.99mTc-ECD 12.
+
+A. B. C. D.
+
+13.18F-FDG A. B.hexokinase18F-FDG-6-phosphate C.18F-FDG D.ischemic myocardium18F-FDG
+14.99mTc-MAG3 A.123I-hippuran B.GFR C. D.99mTc-MAG3
+15.99mTc A.DTPAdiethylenetriaminepentaacetic acid B.DMSAdimercaptosuccinic acid C.MDPmethylene diphosphonate D.citric acid
+16.131I-NaI A. B. C. D.
+17.2472 A.99mTc-pyrophosphate201Tl B.99mTc-pyrophosphate201Tl C.99mTc-pyrophosphate201Tl D.99mTc-pyrophosphate201Tl
+18. A. B. C. D.
+19.SPECT MPI
+cinematic display    
+A. B.
+
+C. D. 20.dipyridamole A.4 dipyridamole  B.dipyridamole C.24 D.dipyridamole 21.99mTc-HMPAO A.30 B.4060 C.70100 D.110140 22.blood-brain barrier A.99mTc-MAA B.99mTc-ECD C.99mTc-MAG3 D.99mTc-DTPA 23.99mTc-TRODAT-1 SPECT A.caudate nucleusputamen B. C.putamen D. 24.Lewy body dementia
+
+A.occipital lobe B.thalamus C.temporal lobe D.basal ganglia 25. A. B. C. D. >220 mmHg 26. A.99mTc-ECD brain SPECT B.99mTc-TRODAT-1 SPECT
+
+C.cisternography D.123I-ioflupane SPECT 27. A.dipyridamole B.adenosine C.dobutamine D.nitrate 28.hypoxia A. B.glycolytic metabolism C.anti-apoptotic D.angiogenesis 29.eluate
+
+A. B. C. D. 30.18F-FDG6
+
+A.tumor recurrence B.normal finding C.radiation necrosis D.scar tissue 31.201Tl-thallous chloride A. B. C. D. 32. A.32P-sodium orthophosphate B.67Ga-citrate C.133Xe gas D.123I-ioflupane 33. A.CA 125
+
+B.CA 15-3 C.CEA D.PSA 34.99mTc-MDP A.diphosphonateP-O-P B.235060% C. D.6 35.18F-FDG A.110 B. C. D. 36.18F-FDGstandard uptake valueSUV18F-FDG PETSUV
+
+A. B. C. D. 37.18F-FDG A. B. C. D. 38.ERPF A.99mTc-MAG3 B.99mTc-DMSA C.99mTc-MAA D.99mTc-phytate 39.99mTc-MAG3 A. B.99mTc-MAG3 C.99mTc-MAG3extraction fraction99mTc-DTPA D.GFR 40.
+
+A. 99mTc-DTPA B.99mTc-DMSA C.99mTc-GHglucoheptonate D.99mTc-MAG3 41. A.aspirin B.enalapril C.furosemide D.captopril 42. A.123I-NaI99mTc-pertechnetate B.99mTc-pertechnetate99mTc-MIBI C.99mTc-MIBI123I-NaI D.99mTc-pertechnetate131I-NaI 43.99mTc-MAG3
+
+A. B. C. D. 44. DOTATOC
+DOTATOC
+A.
+
+B. C. D. 45.
+
+RT: rightSSN: suprasternal notchANT: anteriorLAO: left anterior obliqueRAO: right anterior oblique
+A. B. C. D. 46.prostate-specific membrane antigen, PSMA PSMA
+
+A.PSMA PET/CT 177LuPSMA-based radioligand therapy 68Ga B.PSMA PET/CT 177LuPSMA-based radioligand therapy 18F C.PSMA PET/CT 90YPSMA-based radioligand therapy 18F D.PSMA PET/CT 68Ga 18FPSMA-based radioligand therapy 177Lu 47. A. B.ACEIangiotensin converting enzyme inhibitors C. D.ACEIangiotensin converting enzyme inhibitorsACEI 48.111In-oxine WBC A. B. C.
+
+D. 49.99mTc-MDP
+A.99mTc-MAA B.67Ga-citrate C.133Xe D.99mTc-MAG3 50.wordbit A.8 B.256 C.1,024 D.65,536 51.
+
+A.MPRmulti-planner reformation B.MIPmaximum intensity projection C.SSDshaded surface display D.VRvolume rendering 52. A.transmission scanemission scan B.blank scan C.blank scan D.PET68Getransmission scan 53.cavernous hemangioma A.99mTc-sulfur colloid B.99mTc-DISIDA C.99mTc-phytate D.99mTc-red blood cells 54.99mTc-annexin Vapoptosis A.fructose B.phenyalanine C.phosphatidylserine D.triglycerol 55.133Xe A.133Xe B.
+
+C. D.133Xe 56. A.8 B. C. D.perchlorate 57.67Ga-citrateplasma clearance A.67Gatranschelation B.67Ga C.67Ga D.citratereceptor 58. A.RIAYallowBerson B.IRMARIAIRMA C.RIA  D.RIA 59. A. B. C. D. 60. A.tyrosine B.T4 C.TRHthyrotropin-releasing hormone D.TSHthyroid stimulating hormone 61. A. B. C. D. 62. A. B. C.aldosterone D.B
+
+63.well counter2,439 cpm32%280 cpm
+dpm
+A.5,547 B.6,747 C.4,337 D.7,214 64.131I A. B. C. D. 65.targeted radionuclide therapy
+peritoneal carcinomatosis
+A.211At B.90Y C.67Cu D.131I 66.peptide receptor radionuclide therapydose-limiting
+organ
+A. B. C. D. 67. A.90Y-Zevalin B.131I-MIBG C.32P-sodium orthophosphate D.89Sr-SrCl2 68. A. B. C. D.24 69.SPECT A. B.
+
+C. D. 70.SPECT A.68Ge B.153Gd C.111In D.125I 71.linear attenuation coefficient A.stopping power B.energy resolution C.decay constant D.light output 72.18F-FDG PET A.a normal finding B.malignancy C.pregnancy D.ovulating ovary 73.201Tl-TlCl 7355 A.5 B.10 C.15 D.20 74. A. B. C. D. 75.  
+ 
+A. B. C. D. 76.dose equivlant A.Gy B.Bq
+
+C.R D.Sv 77.131I0.5 mGy-ray 0.01 mGy-ray
+0.03
+A.15.3 Sv B.15.3 mSv C.0.51 mSv D.18 Sv 78.10 mCi99mTc60 A.3.7�108 B.8.0�1012 C.1.2�1013 D.8.0�1013 79.region of interest
+x�y
+A.time vs. time B.time vs. activity C.activity vs. time D.activity vs. activity 80.relative light output A.NaI (Tl) B.BGO C.LSO D.GSO
+
+

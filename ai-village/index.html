@@ -49,7 +49,7 @@
 
         <footer class="side-note">
           <p>這不是工具百科。這是上完課還能回來找步驟的工作桌。</p>
-          <p class="side-credit">Made by Huang Chun-Yin</p>
+          <p class="side-credit">AI 新手村由 Huang Chun-Yin 與 Lee Hui Na 製作</p>
         </footer>
       </aside>
 
@@ -758,7 +758,63 @@
       const sidebarOverlay = document.getElementById("sidebar-overlay");
       let pageAnimationContext;
 
+      function getSafeId(value, fallback) {
+        const normalized = String(value || "")
+          .trim()
+          .toLowerCase()
+          .replace(/[^a-z0-9\u4e00-\u9fa5]+/g, "-")
+          .replace(/^-+|-+$/g, "");
+        return normalized || fallback;
+      }
+
+      function renderFloatingToc(items, title) {
+        if (items.length < 2) return "";
+        return `
+          <div class="reader-nav-shell" data-reader-nav>
+            <div class="reader-fab-stack" aria-label="閱讀索引操作">
+              <button type="button" class="reader-fab reader-fab--toc" data-reader-action="toggle-drawer">目錄</button>
+              <button type="button" class="reader-fab reader-fab--top" data-reader-action="scroll-top" aria-label="回到頁首">↑</button>
+            </div>
+            <button type="button" class="reader-drawer-backdrop" data-reader-action="close-drawer" aria-hidden="true" tabindex="-1"></button>
+            <aside class="reader-rail-drawer" aria-label="閱讀索引" aria-hidden="true">
+              <div class="reader-toc-header">
+                <div>
+                  <p class="rail-eyebrow">閱讀索引</p>
+                  <p class="rail-title">${title}</p>
+                  <p class="rail-note">本頁段落快速跳轉</p>
+                </div>
+                <button type="button" class="reader-drawer-close" data-reader-action="close-drawer" aria-label="關閉目錄">×</button>
+              </div>
+              <div class="reader-toc-list">
+                ${items.map((item) => `<button type="button" class="reader-toc-link" data-scroll-target="${item.id}">${item.label}</button>`).join("")}
+              </div>
+            </aside>
+          </div>
+        `;
+      }
+
+      function mountFloatingToc(article, page) {
+        const headings = Array.from(article.querySelectorAll(".lesson-block h3")).slice(0, 9);
+        const items = headings.map((heading, index) => {
+          const section = heading.closest(".lesson-block");
+          const id = section.id || getSafeId(heading.textContent, `section-${index + 1}`);
+          section.id = id;
+          return { id, label: heading.textContent.trim() };
+        });
+        article.parentElement.insertAdjacentHTML("afterbegin", renderFloatingToc(items, page.title));
+      }
+
       function attachDynamicHandlers() {
+        const reader = document.querySelector(".reader");
+        const navShell = document.querySelector("[data-reader-nav]");
+        const drawer = document.querySelector(".reader-rail-drawer");
+
+        const setDrawerOpen = (isOpen) => {
+          if (!navShell || !drawer) return;
+          navShell.classList.toggle("is-drawer-open", isOpen);
+          drawer.setAttribute("aria-hidden", isOpen ? "false" : "true");
+        };
+
         document.querySelectorAll(".prompt-panel").forEach((panel) => {
           if (panel.nextElementSibling?.classList?.contains("prompt-note")) return;
           const note = document.createElement("p");
@@ -774,6 +830,44 @@
             renderPage(el.dataset.jump);
           });
         });
+
+        document.querySelectorAll("[data-scroll-target]").forEach((button) => {
+          button.addEventListener("click", () => {
+            const target = document.getElementById(button.dataset.scrollTarget);
+            if (!target) return;
+            reader.scrollTo({ top: target.offsetTop - 22, behavior: "smooth" });
+            setDrawerOpen(false);
+          });
+        });
+
+        document.querySelectorAll("[data-reader-action]").forEach((button) => {
+          button.addEventListener("click", () => {
+            const action = button.dataset.readerAction;
+            if (action === "toggle-drawer") setDrawerOpen(!navShell?.classList.contains("is-drawer-open"));
+            if (action === "close-drawer") setDrawerOpen(false);
+            if (action === "scroll-top") {
+              reader.scrollTo({ top: 0, behavior: "smooth" });
+              setDrawerOpen(false);
+            }
+          });
+        });
+
+        const tocLinks = Array.from(document.querySelectorAll(".reader-toc-link"));
+        const tocSections = tocLinks
+          .map((button) => document.getElementById(button.dataset.scrollTarget))
+          .filter(Boolean);
+        const updateReaderNav = () => {
+          navShell?.classList.toggle("can-scroll-top", reader.scrollTop > 180);
+          let active = tocSections[0];
+          tocSections.forEach((section) => {
+            if (section.offsetTop - reader.scrollTop < 120) active = section;
+          });
+          tocLinks.forEach((button) => {
+            button.classList.toggle("is-active", button.dataset.scrollTarget === active?.id);
+          });
+        };
+        reader.addEventListener("scroll", updateReaderNav, { passive: true });
+        updateReaderNav();
 
         document.querySelectorAll(".copy-button").forEach((button) => {
           button.addEventListener("click", async () => {
@@ -876,7 +970,7 @@
             ${page.body}
             <footer class="page-footer">
               <p>提醒：AI 生成內容需要人工判斷。醫療、個資、費用與承諾性文字尤其要謹慎複核。</p>
-              <p class="author-credit">AI 新手村由 Huang Chun-Yin 製作。</p>
+              <p class="author-credit">AI 新手村由 Huang Chun-Yin 與 Lee Hui Na 製作</p>
               <p class="source-links">
                 參考：<a href="https://openai.com/academy/prompting/" target="_blank" rel="noreferrer">OpenAI Prompting Fundamentals</a>、
                 <a href="https://help.openai.com/en/articles/6950777-chatgpt-plus-" target="_blank" rel="noreferrer">ChatGPT Plus Help</a>、
@@ -900,6 +994,7 @@
           </article>
         `;
 
+        mountFloatingToc(contentDisplay.querySelector(".lesson-page"), page);
         navItems.forEach((item) => item.classList.toggle("active", item.dataset.page === key));
         attachDynamicHandlers();
         runPageAnimations();

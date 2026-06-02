@@ -607,24 +607,28 @@ let pageAnimationContext;
 
 function renderRail(items, title, note) {
   return `
-    <aside class="page-rail">
-      <div class="rail-shell">
-        <p class="rail-eyebrow">工作索引</p>
-        <p class="rail-title">${title}</p>
-        <p class="rail-note">${note}</p>
-        <ul class="rail-list">
-          ${items
-            .map(
-              (item) => `
-                <li>
-                  <button type="button" data-scroll-target="${item.id}">${item.label}</button>
-                </li>
-              `
-            )
-            .join("")}
-        </ul>
+    <div class="reader-nav-shell" data-reader-nav>
+      <div class="reader-fab-stack" aria-label="閱讀索引操作">
+        <button type="button" class="reader-fab reader-fab--toc" data-reader-action="toggle-drawer">目錄</button>
+        <button type="button" class="reader-fab reader-fab--top" data-reader-action="scroll-top" aria-label="回到頁首">↑</button>
       </div>
-    </aside>
+      <button type="button" class="reader-drawer-backdrop" data-reader-action="close-drawer" aria-hidden="true" tabindex="-1"></button>
+      <aside class="reader-rail-drawer" aria-label="閱讀索引" aria-hidden="true">
+        <div class="reader-toc-header">
+          <div>
+            <p class="rail-eyebrow">工作索引</p>
+            <p class="rail-title">${title}</p>
+            <p class="rail-note">${note}</p>
+          </div>
+          <button type="button" class="reader-drawer-close" data-reader-action="close-drawer" aria-label="關閉目錄">×</button>
+        </div>
+        <div class="reader-toc-list">
+          ${items
+            .map((item) => `<button type="button" class="reader-toc-link" data-scroll-target="${item.id}">${item.label}</button>`)
+            .join("")}
+        </div>
+      </aside>
+    </div>
   `;
 }
 
@@ -696,18 +700,46 @@ function renderOverviewPage(page) {
 
 function attachDynamicHandlers() {
   const reader = document.querySelector(".reader");
+  const navShell = document.querySelector("[data-reader-nav]");
+  const drawer = document.querySelector(".reader-rail-drawer");
+
+  const setDrawerOpen = (isOpen) => {
+    if (!navShell || !drawer) return;
+    navShell.classList.toggle("is-drawer-open", isOpen);
+    drawer.setAttribute("aria-hidden", isOpen ? "false" : "true");
+  };
+
   document.querySelectorAll("[data-scroll-target]").forEach((button) => {
     button.addEventListener("click", () => {
       const target = document.getElementById(button.dataset.scrollTarget);
       if (!target) return;
       const top = target.offsetTop - 22;
       reader.scrollTo({ top, behavior: "smooth" });
+      setDrawerOpen(false);
     });
   });
+
+  document.querySelectorAll("[data-reader-action]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const action = button.dataset.readerAction;
+      if (action === "toggle-drawer") setDrawerOpen(!navShell?.classList.contains("is-drawer-open"));
+      if (action === "close-drawer") setDrawerOpen(false);
+      if (action === "scroll-top") {
+        reader.scrollTo({ top: 0, behavior: "smooth" });
+        setDrawerOpen(false);
+      }
+    });
+  });
+
+  const updateScrollTopButton = () => {
+    navShell?.classList.toggle("can-scroll-top", reader.scrollTop > 180);
+  };
+  reader.addEventListener("scroll", updateScrollTopButton, { passive: true });
+  updateScrollTopButton();
 }
 
 function setActiveRail(id) {
-  document.querySelectorAll(".rail-list button").forEach((button) => {
+  document.querySelectorAll(".reader-toc-link").forEach((button) => {
     button.classList.toggle("is-active", button.dataset.scrollTarget === id);
   });
 }

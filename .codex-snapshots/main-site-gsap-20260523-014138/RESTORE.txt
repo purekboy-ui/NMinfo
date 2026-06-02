@@ -1,0 +1,10 @@
+Restore commands:
+Copy-Item "
+D:\NMDEV\NMINFO heavy\.codex-snapshots\main-site-gsap-20260523-014138\index.html
+" "D:\NMDEV\NMINFO heavy\index.html" -Force
+Copy-Item "
+D:\NMDEV\NMINFO heavy\.codex-snapshots\main-site-gsap-20260523-014138\style.css
+" "D:\NMDEV\NMINFO heavy\style.css" -Force
+Copy-Item "
+D:\NMDEV\NMINFO heavy\.codex-snapshots\main-site-gsap-20260523-014138\script.js
+" "D:\NMDEV\NMINFO heavy\script.js" -Force

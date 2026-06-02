@@ -12,8 +12,8 @@ window.NM_EXAM_BANK["rps-108-2-professional"] = {
   "paperType": "paper",
   "subjectCode": "professional",
   "questionCount": 22,
-  "testableQuestionCount": 15,
-  "invalidQuestionCount": 0,
+  "testableQuestionCount": 14,
+  "invalidQuestionCount": 1,
   "source": {
     "markdownFile": "108年_第2次_輻防師_專業_解答.md"
   },
@@ -35,7 +35,7 @@ window.NM_EXAM_BANK["rps-108-2-professional"] = {
         },
         {
           "key": "C",
-          "text": "4500 750 4500 750 ( ) ( ) 10 30 102 302 淨計數標準差 450.83 6.8 counts/分"
+          "text": "45007504500750 ( - ) ± ( + ) 1030102302 淨計數標準差 = 45 + 0.83 = 6.8 counts / 分"
         },
         {
           "key": "D",
@@ -48,7 +48,7 @@ window.NM_EXAM_BANK["rps-108-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(3)\n4500 750 4500 750\n(  )(  )\n10 30 102 302\n淨計數標準差 450.83 6.8 counts/分",
+      "answerText": "(3)\n4500 750 4500 750\n( - ) ± ( + )\n10 30 102 302\n淨計數標準差 = 45 + 0.83 = 6.8 counts / 分",
       "isComplete": true
     },
     {
@@ -97,7 +97,7 @@ window.NM_EXAM_BANK["rps-108-2-professional"] = {
         },
         {
           "key": "B",
-          "text": "kg J 600 cm32104 2 0.24 J cm3 kg"
+          "text": "kg J 600 cm3·2 × 10^ - 4 ·2 = 0.24 J cm3 kg"
         },
         {
           "key": "C",
@@ -114,7 +114,7 @@ window.NM_EXAM_BANK["rps-108-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\nkg J\n600 cm32104\n2 0.24 J\ncm3\nkg",
+      "answerText": "(2)\nkg J\n600 cm3·2 × 10^ - 4\n·2 = 0.24 J\ncm3\nkg",
       "isComplete": true
     },
     {
@@ -130,7 +130,7 @@ window.NM_EXAM_BANK["rps-108-2-professional"] = {
         },
         {
           "key": "B",
-          "text": "(0.210.1520) 0.050.16"
+          "text": "( 0.2 × 1 + 0.15 × 20 ) × 0.05 = 0.16"
         },
         {
           "key": "C",
@@ -147,7 +147,7 @@ window.NM_EXAM_BANK["rps-108-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\n(0.210.1520)0.050.16",
+      "answerText": "(2)\n( 0.2 × 1 + 0.15 × 20 ) × 0.05 = 0.16",
       "isComplete": true
     },
     {
@@ -155,7 +155,7 @@ window.NM_EXAM_BANK["rps-108-2-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 5,
-      "stem": "在單標靶單擊(single-target， single-hit) 模式中， 細胞存活分率為S eD/D 0， 請問下\n列敘述何者為真？",
+      "stem": "在單標靶單擊 ( single - target， single - hit ) 模式中， 細胞存活分率為S = e - D / D 0， 請問下\n列敘述何者為真？",
       "options": [
         {
           "key": "A",
@@ -167,11 +167,11 @@ window.NM_EXAM_BANK["rps-108-2-professional"] = {
         },
         {
           "key": "C",
-          "text": "靶被擊中的機率為eD/D 0"
+          "text": "靶被擊中的機率為e-D/D 0"
         },
         {
           "key": "D",
-          "text": "靶被擊中的機率為1eD/D 0"
+          "text": "靶被擊中的機率為1-e-D/D 0"
         }
       ],
       "answer": "D",
@@ -192,19 +192,19 @@ window.NM_EXAM_BANK["rps-108-2-professional"] = {
       "options": [
         {
           "key": "A",
-          "text": "6.87×1024 Bq/g"
+          "text": "6.87 × 1024 Bq / g"
         },
         {
           "key": "B",
-          "text": "1.32×1021 Bq/g"
+          "text": "1.32 × 1021 Bq / g"
         },
         {
           "key": "C",
-          "text": "ln2 A ln2 6.021023 1 dis. yr Bq 比活度S.A. v    4.191013 t A 5.26 60 yr g 365243600s g h"
+          "text": "ln2 A ln26.02 × 10231 dis. yr Bq 比活度S.A. = v = × × = 4.19 × 1013 tA 5.2660 yr g 365 × 24 × 3600s gh"
         },
         {
           "key": "D",
-          "text": "1.13×103 Bq/g"
+          "text": "1.13 × 103 Bq / g"
         }
       ],
       "answer": "C",
@@ -213,7 +213,7 @@ window.NM_EXAM_BANK["rps-108-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(3)\nln2 A ln2 6.021023 1 dis. yr Bq\n比活度S.A. v    4.191013\nt A 5.26 60 yr g 365243600s g\nh",
+      "answerText": "(3)\nln2 A ln26.02 × 10231 dis. yr Bq\n比活度S.A. = v = × × = 4.19 × 1013\ntA 5.2660 yr g 365 × 24 × 3600s g\nh",
       "isComplete": true
     },
     {
@@ -254,23 +254,23 @@ window.NM_EXAM_BANK["rps-108-2-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 8,
-      "stem": "一台空氣壁袖珍式游離腔內部含 7.5 mg 空氣， 其電容為 9.5 pF， 將游離腔充電， 試問多少的曝露量能使其電位下降 10 V？ (1 R = 2.58×10^-4 C/kg)",
+      "stem": "一台空氣壁袖珍式游離腔內部含 7.5 mg空氣， 其電容為 9.5 pF， 將游離腔充電， 試問\n多少的曝露量能使其電位下降 10 V？ ( 1 R = 2.58 × 10^ - 4C / kg ) 7.1 × 10^ - 15R",
       "options": [
         {
           "key": "A",
-          "text": "7.1×10^-15 R"
+          "text": ""
         },
         {
           "key": "B",
-          "text": "2.8×10^-12 R"
+          "text": "2.8 × 10^ - 12R"
         },
         {
           "key": "C",
-          "text": "1.3×10^-6 R"
+          "text": "1.3 × 10^ - 6R 4.9 × 10^ - 2R"
         },
         {
           "key": "D",
-          "text": "4.9×10^-2 R"
+          "text": "9.5 × 10^ - 12 × 10 = 4.9 × 10^ - 2R 7.5 × 10^ - 6 × 2.58 × 10^ - 4"
         }
       ],
       "answer": "D",
@@ -279,8 +279,8 @@ window.NM_EXAM_BANK["rps-108-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(4)\n9.51012\n10\n 4.9102R\n7.5106 2.58104",
-      "isComplete": true
+      "answerText": "(4)\n9.5 × 10^ - 12\n× 10\n= 4.9 × 10^ - 2R\n7.5 × 10^ - 6 × 2.58 × 10^ - 4",
+      "isComplete": false
     },
     {
       "id": "rps-108-2-professional-mcq-009",
@@ -291,19 +291,19 @@ window.NM_EXAM_BANK["rps-108-2-professional"] = {
       "options": [
         {
           "key": "A",
-          "text": "10 Gy/h=10 (J/kg) /h=2.39 (cal/kg) /h 10 Gy/h 劑量率， 即每小時給質量 m=1000 g的物質約 2.39 cal 的熱量 物質(水) 的比熱s 為 1 cal/(g ℃) 因每小時之熱量∆H = ms∆t ⇒ 2.39 cal = 1000 g×1 cal/(g ℃) ×∆t (℃) ∴溫度上升速率∆t = 2.39×10-3(℃/h)"
+          "text": "10 Gy / h = 10 ( J / kg ) / h = 2.39 ( cal / kg ) / h 10 Gy / h 劑量率， 即每小時給質量 m = 1000 g的物質約 2.39 cal 的熱量 物質 ( 水 ) 的比熱s 為 1 cal / ( g ℃ ) 因每小時之熱量∆H = ms∆t ⇒ 2.39 cal = 1000 g × 1 cal / ( g ℃ ) × ∆t ( ℃ ) ∴溫度上升速率∆t = 2.39 × 10^ - 3 ( ℃ / h )"
         },
         {
           "key": "B",
-          "text": "1  10-3"
+          "text": "1 × 10^ - 3"
         },
         {
           "key": "C",
-          "text": "2.39  10-4"
+          "text": "2.39 × 10^ - 4"
         },
         {
           "key": "D",
-          "text": "1  10-4"
+          "text": "1 × 10^ - 4"
         }
       ],
       "answer": "A",
@@ -312,7 +312,7 @@ window.NM_EXAM_BANK["rps-108-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(1)\n10 Gy/h=10 (J/kg)/h=2.39 (cal/kg)/h\n10 Gy/h 劑量率，即每小時給質量 m=1000 g的物質約 2.39 cal 的熱量\n物質(水)的比熱s 為 1 cal/(g ℃)\n因每小時之熱量∆H = ms∆t ⇒ 2.39 cal = 1000 g×1 cal/(g ℃)×∆t (℃)\n∴溫度上升速率∆t = 2.39×10-3(℃/h)",
+      "answerText": "(1)\n10 Gy / h = 10 ( J / kg ) / h = 2.39 ( cal / kg ) / h\n10 Gy / h 劑量率，即每小時給質量 m = 1000 g的物質約 2.39 cal 的熱量\n物質(水)的比熱s 為 1 cal/(g ℃)\n因每小時之熱量∆H = ms∆t ⇒ 2.39 cal = 1000 g × 1 cal / ( g ℃ ) × ∆t ( ℃ )\n∴溫度上升速率∆t = 2.39 × 10^ - 3 ( ℃ / h )",
       "isComplete": true
     },
     {
@@ -386,23 +386,23 @@ window.NM_EXAM_BANK["rps-108-2-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 12,
-      "stem": "若質量衰減係數為μ/ρ(m2/kg) ， 每公克含原子數為 N (atom/g) ， 該原子的原子序為 Z， 試問該元素的電子衰減係數 (m2/electron) 為何？",
+      "stem": "若質量衰減係數為μ / ρ ( m2 / kg ) ， 每公克含原子數為 N ( atom / g ) ， 該原子的原子序為 Z， 試問該元素的電子衰減係數 ( m2 / electron ) 為何？",
       "options": [
         {
           "key": "A",
-          "text": "μ/(ρN1000)"
+          "text": "μ / ( ρ × N × 1000 )"
         },
         {
           "key": "B",
-          "text": "μ/(ρNZ)"
+          "text": "μ / ( ρ × N × Z )"
         },
         {
           "key": "C",
-          "text": "μ/ρ( m2 / kg)  [ 1 / N ( atom/ g) ]  [ 1 / Z ( electron / atom) ]  [ 1/(1000 g/kg) ] =μ/(ρNZ1000) m2 / electron"
+          "text": "μ / ρ ( m2 / kg ) × [1 / N ( atom / g ) ] × [1 / Z ( electron / atom ) ] × [1 / ( 1000 g / kg ) ] = μ / ( ρ × N × Z × 1000 ) m2 / electron"
         },
         {
           "key": "D",
-          "text": "μ1000/(ρNZ)"
+          "text": "μ × 1000 / ( ρ × N × Z )"
         }
       ],
       "answer": "C",
@@ -411,7 +411,7 @@ window.NM_EXAM_BANK["rps-108-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(3)\nμ/ρ( m2 / kg)  [ 1 / N ( atom/ g) ]  [ 1 / Z ( electron / atom) ]  [ 1/(1000 g/kg)]\n=μ/(ρNZ1000) m2 / electron",
+      "answerText": "(3)\nμ / ρ ( m2 / kg ) × [1 / N ( atom / g ) ] × [1 / Z ( electron / atom ) ] × [1 / ( 1000 g / kg ) ]\n= μ / ( ρ × N × Z × 1000 ) m2 / electron",
       "isComplete": true
     },
     {
@@ -427,7 +427,7 @@ window.NM_EXAM_BANK["rps-108-2-professional"] = {
         },
         {
           "key": "B",
-          "text": "68Zn1p21n67Ga 1 0"
+          "text": "68Zn + 1p→21n + 67Ga 10"
         },
         {
           "key": "C",
@@ -444,7 +444,7 @@ window.NM_EXAM_BANK["rps-108-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\n68Zn1p21n67Ga\n1 0",
+      "answerText": "(2)\n68Zn + 1p→21n + 67Ga\n1 0",
       "isComplete": true
     },
     {
@@ -485,7 +485,7 @@ window.NM_EXAM_BANK["rps-108-2-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 15,
-      "stem": "下列敘述何者正確？ A.賀斯特計數器(Hurst counter) 可用來度量快中子之劑量率 B.\nCdTe 複合半導體偵檢器須於液態氮環境下操作 C.閃爍偵檢器將閃爍光轉化為電子\n的元件稱次陽極(dynode) D.液態閃爍偵檢器適合用於度量 α發射核種",
+      "stem": "下列敘述何者正確？ A.賀斯特計數器(Hurst counter) 可用來度量快中子之劑量率 B.\nCdTe 複合半導體偵檢器須於液態氮環境下操作 C.閃爍偵檢器將閃爍光轉化為電子\n的元件稱次陽極 ( dynode ) D.液態閃爍偵檢器適合用於度量 α發射核種",
       "options": [
         {
           "key": "A",
@@ -518,9 +518,15 @@ window.NM_EXAM_BANK["rps-108-2-professional"] = {
       "kind": "essay",
       "section": "essay",
       "number": 1,
-      "stem": "假設光子能量為1.25 MeV，光子通量率為108/cm2．s，光子與空氣作用的能量吸收係\n數為 3.1105 /cm。試求空氣的吸收劑量率等於多 mGy/s？人體軟組織的吸收劑\nen\n量率等於多少mGy/s？\nkg\n(註：1 MeV=1.6×10-13J，空氣密度=1.293×10-6 ，( ) 0.0280 cm2 /g)\ncm3\nen/ tissue",
-      "answerText": "光子 MeV 1 J\n108 3.110-5 1.610-13\n1.25\ncm2s\n光子 cm MeV\n(a)\ng kg\n1.293103 103\ncm3\ng\nJ\n4.8010-4\n0.48 mGy/s (空氣吸收劑量率)\nkgs\n光子 cm2\nMeV J g\n(b)108 1.25 0.0280 1.61013 103\ncm2s 光子 g MeV kg\nJ\n5.610-4 0.56 mGy/s (組織吸收劑量率)\nkgs",
-      "isComplete": true
+      "stem": "假設光子能量為 1.25 MeV，光子通量率為 10^8 / cm2·s，光子與空氣作用的能量吸收係數為 μen = 3.1 × 10^ - 5 / cm。試求空氣的吸收劑量率等於多少 mGy / s？人體軟組織的吸收劑量率等於多少 mGy / s？（註：1 MeV = 1.6 × 10^ - 13 J，空氣密度 = 1.293 × 10^ - 6 kg / cm3， ( μen / ρ ) tissue = 0.0280 cm2 / g）",
+      "answerText": "解：\n(a) 空氣吸收劑量率\nḊair = ΦEμen / ρair\n= ( 10^8 / cm2·s ) × ( 1.25 MeV ) × ( 1.6 × 10^ - 13 J / MeV ) × ( 3.1 × 10^ - 5 / cm ) / ( 1.293 × 10^ - 6 kg / cm3 )\n= 4.80 × 10^ - 4 Gy / s = 0.48 mGy / s。\n\n(b) 人體軟組織吸收劑量率\nḊtissue = ΦE ( μen / ρ ) tissue\n= ( 10^8 / cm2·s ) × ( 1.25 MeV ) × ( 1.6 × 10^ - 13 J / MeV ) × ( 0.0280 cm2 / g ) × ( 10^3 g / kg ) = 5.6 × 10^ - 4 Gy / s = 0.56 mGy / s。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-108-2-professional/q1-1.webp",
+          "alt": "108-2 輻射防護師 專業 問答第 1 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rps-108-2-professional-essay-002",
@@ -528,17 +534,29 @@ window.NM_EXAM_BANK["rps-108-2-professional"] = {
       "section": "essay",
       "number": 2,
       "stem": "I-125的半化期為 60 天，請問8 MBq的 I-125 經過多少天後，活度會變成原來的 0.2 %？",
-      "answerText": "Aet\nA\no\n0.693\nln(0.002) t\n60\n60\nt  6.2146538 d\n0.693",
-      "isComplete": true
+      "answerText": "Ae - λtA = o 0.693 ln ( 0.002 ) = - t6060 t = × 6.2146 = 538 d 0.693",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-108-2-professional/q2-1.webp",
+          "alt": "108-2 輻射防護師 專業 問答第 2 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rps-108-2-professional-essay-003",
       "kind": "essay",
       "section": "essay",
       "number": 3,
-      "stem": "有一加馬射線點射源 0.07 Ci，某人在距離80 cm 處工作50分鐘，得空氣克馬\n0.1052 毫戈雷(mGy)，試計算此射源的空氣克馬率常數( mGy·m2 / h·Ci )。",
-      "answerText": "Γ( mGy·m2 / h·Ci ) × 0.07Ci × [ 1 / (0.8m)2 ] × ( 50 /60 ) h ＝ 0.1052 mGy\nΓ( mGy·m2 / h·Ci ) ＝0.1052 × ( 60 / 50 ) × ( 0.8m )2 × 1 /0.07\n＝1.154 mGy·m2 / h·Ci",
-      "isComplete": true
+      "stem": "有一加馬射線點射源 0.07 Ci，某人在距離80 cm 處工作50分鐘，得空氣克馬\n0.1052 毫戈雷 ( mGy ) ，試計算此射源的空氣克馬率常數 ( mGy·m2 / h·Ci ) 。",
+      "answerText": "Γ ( mGy·m2 / h·Ci ) × 0.07Ci × [1 / ( 0.8m ) 2] × ( 50 / 60 ) h ＝ 0.1052 mGy\nΓ ( mGy·m2 / h·Ci ) ＝0.1052 × ( 60 / 50 ) × ( 0.8m ) 2 × 1 / 0.07\n＝1.154 mGy·m2 / h·Ci",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-108-2-professional/q3-1.webp",
+          "alt": "108-2 輻射防護師 專業 問答第 3 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rps-108-2-professional-essay-004",
@@ -546,35 +564,59 @@ window.NM_EXAM_BANK["rps-108-2-professional"] = {
       "section": "essay",
       "number": 4,
       "stem": "請繪圖並說明蓋格計數器的無感時間(dead time)、分辨時間(resolving time)與復原\n時間(recovery time)的關係與意義。",
-      "answerText": "無感時間(dead time)：從前一個脈衝開始到GM 計數管恢復到可以產生最小脈衝為止的\n那段時間。\n分辨時間(resolving time)：當脈衝大小超過脈衝閾值 H 時，偵檢器即可偵測到信號，從\nd\n前一個脈衝開始到GM計數管產生脈衝可偵測到的最小時間。\n復原時間(recovery time)：從前一個脈衝開始到可以再次產生滿脈衝為止的那段時間。\n三者之關係如下圖：",
-      "isComplete": true
+      "answerText": "無感時間(dead time)：從前一個脈衝開始到GM 計數管恢復到可以產生最小脈衝為止的\n那段時間。\n分辨時間(resolving time)：當脈衝大小超過脈衝閾值 H 時，偵檢器即可偵測到信號，從d\n前一個脈衝開始到GM計數管產生脈衝可偵測到的最小時間。\n復原時間(recovery time)：從前一個脈衝開始到可以再次產生滿脈衝為止的那段時間。\n三者之關係如下圖：",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-108-2-professional/q4-1.webp",
+          "alt": "108-2 輻射防護師 專業 問答第 4 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rps-108-2-professional-essay-005",
       "kind": "essay",
       "section": "essay",
       "number": 5,
-      "stem": "一含有2.7 Ci 活度的 137Cs，均勻散佈在半徑 30公分的球體純水溶液中，已知 137Cs 的\n比加馬發射(specific gamma-ray emission)為7.8210-8 Svm2MBq-1h-1，662 keV的-ray\n對水的直線衰減係數為 3.27 m-1，請問球心處的劑量率(Svh-1)？",
-      "answerText": "4\n\nD C (1eR)\n\n3.7104MBq\n2.7Ci\n1Ci 7.82108Svm2 4 Sv\n   (1e3.270.3)0.166\n4 MBqh 3.27m1 h\n(0.3m)3\n3",
-      "isComplete": true
+      "stem": "一含有2.7 Ci 活度的 137Cs，均勻散佈在半徑 30公分的球體純水溶液中，已知 137Cs 的\n比加馬發射 ( specific gamma - ray emission ) 為7.82 × 10^ - 8 Sv·m2·MBq - 1·h - 1，662 keV的γ - ray\n對水的直線衰減係數為 3.27 m - 1，請問球心處的劑量率 ( Sv·h - 1 ) ？",
+      "answerText": "4π̇ D = CΓ· ( 1 - e - μR )\nμ 3.7 × 104MBq 2.7Ci ×\n1Ci 7.82 × 10^ - 8Sv·m24π Sv\n= · · · ( 1 - e - 3.27 × 0.3 ) = 0.1664 MBq·h 3.27m - 1 h π ( 0.3m ) 33",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-108-2-professional/q5-1.webp",
+          "alt": "108-2 輻射防護師 專業 問答第 5 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rps-108-2-professional-essay-006",
       "kind": "essay",
       "section": "essay",
       "number": 6,
-      "stem": "以NaI偵檢器度量137Cs 射源所發出的光子，已知碘(I)的K =28 keV，請問能譜的(1)全\n\n能峰(total-energy peak)、(2)回散射峰(backscattered radiation peak)、(3)逃逸峰(escape\npeak)之峰值各為多少？",
-      "answerText": "(1)全能峰 662 keV\n2E2 20.6622\n(2)compton edge  0.478 (MeV)\n0.5112E 0.51120.662\n回散射峰 662 keV - 478 keV=184 keV\n(3)逃逸峰\n662 - 28 = 634 (keV)",
-      "isComplete": true
+      "stem": "以NaI偵檢器度量137Cs 射源所發出的光子，已知碘 ( I ) 的K = 28 keV，請問能譜的 ( 1 ) 全\nα\n能峰(total-energy peak)、(2)回散射峰(backscattered radiation peak)、(3)逃逸峰(escape\npeak)之峰值各為多少？",
+      "answerText": "( 1 ) 全能峰 662 keV 2E22 × 0.6622\n( 2 ) compton edge = = = 0.478 ( MeV )\n0.511 + 2E 0.511 + 2 × 0.662\n回散射峰 662 keV - 478 keV = 184 keV ( 3 ) 逃逸峰\n662 - 28 = 634 ( keV )",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-108-2-professional/q6-1.webp",
+          "alt": "108-2 輻射防護師 專業 問答第 6 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rps-108-2-professional-essay-007",
       "kind": "essay",
       "section": "essay",
       "number": 7,
-      "stem": "下圖為X核種之蛻變圖，請計算或回答下列問題：\n(a)設X核種的原子序為 Z、原子量為 A，請說明其子核種 Y的原子序與原子量。\n(b)計算圖中γ-ray的能量為多少 keV？\n(c)計算X核種平均每次蛻變射出的γ-ray產率為多少％？\n(d)圖中的？號之數值是多少，請計算出。\n(e)圖中K(7.7%)，代表何意義？\n(蛻變圖中能量單位為 MeV)",
-      "answerText": "(a) β-的蛻變，代表X 核種的中子數太多，蛻變為質子與貝他粒子，所以原子序增加 1，\n成為Z+1；原子量不變，仍為 A。\n(b)γ-ray的能量E=1.176 - 0.514 = 0.662 MeV = 662 keV\n(c) X核種平均每次蛻變射出的γ-ray產率為0.946 - (0.077 + 0.014 + 0.005)=0.85 = 85%。\n(d)？號之數值為100 - 94.6 = 5.4。\n(e) K(7.7%)代表662 keV的γ-ray使 K層電子游離的比例為7.7%，此現象稱為內轉換。",
-      "isComplete": true
+      "stem": "下圖為X核種之蛻變圖，請計算或回答下列問題：\n(a)設X核種的原子序為 Z、原子量為 A，請說明其子核種 Y的原子序與原子量。\n( b ) 計算圖中γ - ray的能量為多少 keV？\n( c ) 計算X核種平均每次蛻變射出的γ - ray產率為多少％？\n(d)圖中的？號之數值是多少，請計算出。\n(e)圖中K(7.7%)，代表何意義？\n(蛻變圖中能量單位為 MeV)",
+      "answerText": "( a ) β - 的蛻變，代表X 核種的中子數太多，蛻變為質子與貝他粒子，所以原子序增加 1，\n成為Z+1；原子量不變，仍為 A。\n( b ) γ - ray的能量E = 1.176 - 0.514 = 0.662 MeV = 662 keV\n( c ) X核種平均每次蛻變射出的γ - ray產率為0.946 - ( 0.077 + 0.014 + 0.005 ) = 0.85 = 85%。\n( d ) ？號之數值為100 - 94.6 = 5.4。\n( e ) K ( 7.7% ) 代表662 keV的γ - ray使 K層電子游離的比例為7.7%，此現象稱為內轉換。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-108-2-professional/q7-1.webp",
+          "alt": "108-2 輻射防護師 專業 問答第 7 題原始解答截圖（第 1 張）"
+        }
+      ]
     }
   ]
 };

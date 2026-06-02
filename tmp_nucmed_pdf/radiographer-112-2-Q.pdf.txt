@@ -1,0 +1,116 @@
+112
+
+112
+
+
+
+6309
+
+
+
+
+
+1
+
+___________
+
+ 
+
+
+
+1.99mTc-HMPAO A.60 B.70% C.phosphate buffermethylene blue D.99mTc-pertechnetate
+2.99mTc-ECD A.99mTc-l, l-ECD99mTc-HMPAO B.Tc=ONS3 C. D.
+3.MIBG A.131I-MIBGoxidative iodination B.MIBGpheochromocytoma C.MIBG D.123I-MIBG
+4.99mTc-DMSA A.99mTc+3 DMSA B.99mTc+5 DMSAmedullary thyroid cancer C.DMSA kit D.99mTc+5 DMSA
+5.99mTc A.blood pool imaging
+
+B.99mTc C.99mTc-pyrophosphatePYP D. 6.131I-sodium iodide A.131I-sodium iodide B.131I-sodium iodide C.131I-sodium iodide D.131I-sodium iodide 7.188Re A.188Re99mTc B.188W188Re C.188Re D.188Re32P 8.111In-pentetreotidepentetreotideoctreotide A.EDTA B.DTPA C.DMSA D.DOTA 9. A.186Re-HEDP B.153Sm-EDTMP C.89SrCl2 D.177Lu-DOTATOC 10. A.99mTc-DTPA B.99mTc-MAA C.123I-NaI
+
+D.18F-florbetaben 11.99mTc
+A.99mTc-ECD B.99mTc-MDP C.99mTc-MAG3 D.99mTc-HMPAO 12.DOTATATE A.68Ga-DOTATATE177Lu-DOTATATE B.PRRT C.somatotatinSSTR D.111In-capromab pendetide  13. A.11C-choline B.18F-FDOPA C.13N-NH3 D.15O-H2O 14.transferrin A.18F-FDG B.67Ga-citrate C.99mTc-MAA
+
+D.11C-choline 15.ventilation scanwashout
+
+A.99mTc-technegas B.99mTc-DTPA aerosol C.99mTc-MAA D.133Xe 16.blood-brain barrier A. B. C. D. 17.201Tlpharmacologic stress A.dipyridamole B.dobutamine C.aminophylline D.adenosine 18.99mTc-TRODAT-1striatum 
+  
+A. B. C. D. 19.99mTc-ECD SPECT A. B. C. D.10 20.99mTc-TRODAT-1 SPECT A.dopamine receptor
+
+B.L-aromatic L-amino acid decarboxylase C.dopamine transporter D.vesicular monoamine transporter 21.201Tl-TlCl  A.+ decay B.electron capture C.isomeric transition D.- decay 22.99mTc-pyrophosphatePYP A. B. C. D. 23.
+
+A.dipyridamole B.adenosine C.dobutamine D.regadenoson 24.
+A.short axis slices B.vertical long axis slices C.high long axis slices D.horizontal long axis slices 25.adenosine A.
+
+B. C. D. 26.99mTc-MIBImotion artifact
+
+A.5 B. C.motion correction D. 27.Amyloid PET-amyloid proteins
+
+A.11C-PIB B.18F-AV-1florbetaben C.18F-AV-45florbetapir D.18F-dopafluorodopa 28.123I- MIBGpheochromocytoma A.noradrenaline transporter B.sodium iodide symporter C.Na+/K+ pump D.calcium channel 29. A.sensitivity B.SPECT C.specificity D.SPECT 30.99mTc-MDP A.50% B.1 C.624taget-to-background D.99mTc 6
+
+31.18F-FDG A. B. C. D.
+32.
+A.abposterior views B.a anterior viewb posterior view C.a posterior viewb anterior view D.ab anterior views 33.18F-fluoro-L-thymidineFLT A.tumor hypoxia B.cell proliferation C.angiogenesis D.glucose metabolism 34.111In-pentetreotide A.somatostatin B.dopamine C.glucose D.tumor necrosis factor 35.99mTc-sestamibi A.2030560 B.5602030 C.2030 D.560 36.11C-choline A.
+
+B.1 C.3 D.6 37.18F-FDG A. B. C. D. 38.99mTc-pertechnetate99mTc-pertechnetate
+
+A. B. C. D. 39. A.anterior B.posterior C.left lateral D.right lateral 40.99mTc-DTPA A. B.510% C.99mTc-DTPA99mTc-MAG3 D.2490% 41.99mTc-pertechnetate A. B. C. D. 42.
+
+A. B. C.131I-MIBI123I-MIBI D.Lugol 43. A.123I-NaI B.124I-NaI C.99mTc-pertechnetate D.131I-NaI 44.170240glomerulusBowman's capsule
+proximal and distal tubules
+A.99m Tc-DTPA99mTc-MAG399mTc-DMSAcortical
+binding
+B.99mTc-DMSA99mTc-MAG399m Tc-DTPAcortical
+binding
+C.131I-OIH99mTc-MAG399mTc-DMSAcortical
+binding
+D.99mTc-DTPA99mTc-DMSA131I-OIHcortical
+binding
+45.131I-NaI131I-NaI A.34 B.24 C.23 D.710
+46.99mTc-MAG3123I-OIH A.glomerular filtration rate B.plasma clearance rate C.90% D.3
+47.
+
+A. B. C. D. 48.99mTc-MAA A.�liver-lung shunt B.�left-to-right shunt C.deep vein thrombosis D.pulmonary embolism 49. A.99mTc-disofeninKupffer B.99mTc red blood cells C.99mTc-sulfur colloid D.67Ga-citrate 50. A.Meckel's diverticulum4 B. C.8 D.24 51. A. B.99mTc-DISIDA34 C.99mTc-MAG3 D.24phenobarbital 52. A.1 1 1
+111 111
+B.1 1 1
+181
+
+111
+C.1 2 1
+242 121
+D.-1 -1 -1
+-1 5 -1 -1 -1 -1
+53.ED58689,485ES
+41656,375EF%
+A.24 B.37 C.53 D.74 54.899,134
+EF%
+A.24 B.37 C.53 D.74 55.PET A.MPRmulti-planner reformation B.MIPmaximum intensity projection C.SSDshaded surface display D.VRvolume rendering 56.captopril pentobarbital chloral hydrate A. B. C. D. 57.random coincidence events A.
+
+B.
+C.
+D.
+58.sandwich A. B. C. D.
+59.125I A.lysine
+
+B.methionine C.asparagine D.tyrosine 60.fusion A.HAT B.PEG C.Freund's complete adjuvant D.phosphate buffer 61. A. B. C. D. 62. A.linearity B.accuracy C.precision D.stability 63. A. B. C. D. 64.223Ra-radium dichloride223Ra-RaCl2 A. B. C. D. 65.90Yradioembolizationpulmonary shunt
+
+
+A.90Y B. C. D. 66.Stabin and Siegel2003Ns
+ DT= Ns�DFTS DT dose to target region NS nuclear transition DFTSdose factor
+A. B.�area under the curve C.� D. 67.99mTc
+
+A. B. C. D. 68.n/p A.20n/p1 B.n/p C.n/p10.7 D.n/p-  69. A. B. C. D.ICRP-60 70.SPECT
+
+    
+A. B. C. D. 71.hot skin
+
+A.non attenuation correctedNACimages B.attenuation correctedACimages C.maximum intensity projectionMIPimages D.volume renderingVRimages 72.15 rem A.150 mSv B.15 grays C.15 Sv D.150 MBq 73.99mTc0.27 mm1.35 mm100 mR/h99mTc
+
+A.1.6 mR/h B.3.1 mR/h C.6.3 mR/h D.12.5 mR/h 74.collimators A.high sensitivity B.diverging C.converging D.high resolution 75. A. B.constancy C.57Colinearity
+
+D.geometry 76.10.5 Gy5
+A.0.1 Gy B.0.5 Gy C.1.0 Gy D.2.5 Gy 77.5 mCi131It1/2=8 A.1.85 �1011 B.1.85 �1012 C.1.85 �1013 D.1.85 �1014 78.FBPfilter A.cut-off frequency B. C. D. 79.SPECT
+
+A.uniformity B.spatial resolution C.sensitivity D.energy resolution 80.center of rotation
+
+A. B. C. D.
+
+

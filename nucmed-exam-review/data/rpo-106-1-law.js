@@ -56,7 +56,7 @@ window.NM_EXAM_BANK["rpo-106-1-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 2,
-      "stem": "依游離輻射防護法， 放射性物質之生產或製造， 應於開始之日起多少日內， 報請主管機 關備查?",
+      "stem": "依游離輻射防護法， 放射性物質之生產或製造， 應於開始之日起多少日內， 報請主管機\n關備查?",
       "options": [
         {
           "key": "A",
@@ -155,7 +155,7 @@ window.NM_EXAM_BANK["rpo-106-1-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 5,
-      "stem": "申請放射性物質之生產許可者， 依規定進行試運轉完成後， 應於計畫開始生產日期多久 之前填具申請書， 並檢附試運轉報告， 向主管機關申請生產許可審查?",
+      "stem": "申請放射性物質之生產許可者， 依規定進行試運轉完成後， 應於計畫開始生產日期多久\n之前填具申請書， 並檢附試運轉報告， 向主管機關申請生產許可審查?",
       "options": [
         {
           "key": "A",
@@ -180,7 +180,7 @@ window.NM_EXAM_BANK["rpo-106-1-law"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(3)\n\n1",
+      "answerText": "(3)\n1",
       "isComplete": true
     },
     {
@@ -188,7 +188,7 @@ window.NM_EXAM_BANK["rpo-106-1-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 6,
-      "stem": "下列那些劑量的單位為戈雷？ A. 吸收劑量 B. 等效劑量 C. 器官劑量 D. 有效劑 量",
+      "stem": "下列那些劑量的單位為戈雷？ A. 吸收劑量 B. 等效劑量 C. 器官劑量 D. 有效劑\n量",
       "options": [
         {
           "key": "A",
@@ -287,7 +287,7 @@ window.NM_EXAM_BANK["rpo-106-1-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 9,
-      "stem": "含放射性物質之廢水排入污水下水道， 依游離輻射防護安全標準之規定， 除氚與碳-14 外， 每年排入污水下水道之放射性物質活度總和不得超過多少居里(Ci) ？",
+      "stem": "含放射性物質之廢水排入污水下水道， 依游離輻射防護安全標準之規定， 除氚與碳-14\n外， 每年排入污水下水道之放射性物質活度總和不得超過多少居里(Ci) ？",
       "options": [
         {
           "key": "A",
@@ -357,7 +357,7 @@ window.NM_EXAM_BANK["rpo-106-1-law"] = {
       "options": [
         {
           "key": "A",
-          "text": "小於 5 微西弗/小時, TI=0 2"
+          "text": "小於 5 微西弗 / 小時, TI = 02"
         },
         {
           "key": "B",
@@ -378,7 +378,7 @@ window.NM_EXAM_BANK["rpo-106-1-law"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(1)\n小於 5 微西弗/小時, TI=0\n\n2",
+      "answerText": "(1)\n小於 5 微西弗 / 小時, TI = 0\n2",
       "isComplete": true
     },
     {
@@ -518,7 +518,7 @@ window.NM_EXAM_BANK["rpo-106-1-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 16,
-      "stem": "設有放射診斷、核子醫學、放射治療任二項診療業務以上之醫療院所， 應設置 X 人以 上輻射防護管理委員會， 該委員會應至少每 Y 個月開會一次。 其中 X 與 Y 分別為多少？",
+      "stem": "設有放射診斷、核子醫學、放射治療任二項診療業務以上之醫療院所， 應設置 X 人以\n上輻射防護管理委員會， 該委員會應至少每 Y 個月開會一次。 其中 X 與 Y 分別為多少？",
       "options": [
         {
           "key": "A",
@@ -617,7 +617,7 @@ window.NM_EXAM_BANK["rpo-106-1-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 19,
-      "stem": "未依規定進行輻射作業而造成輻射工作場所外空氣中二小時內之平均放射性核種濃度 超過主管機關公告之年連續空氣中排放物濃度多少倍， 為嚴重污染環境？",
+      "stem": "未依規定進行輻射作業而造成輻射工作場所外空氣中二小時內之平均放射性核種濃度\n超過主管機關公告之年連續空氣中排放物濃度多少倍， 為嚴重污染環境？",
       "options": [
         {
           "key": "A",
@@ -683,7 +683,7 @@ window.NM_EXAM_BANK["rpo-106-1-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 21,
-      "stem": "一 X 光設備被用來進行產品檢測， 若經偵測其可接近表面五公分處劑量率約為每小時 7 微西弗， 則其應向主管機關申請何種類別輻射作業？",
+      "stem": "一 X 光設備被用來進行產品檢測， 若經偵測其可接近表面五公分處劑量率約為每小時 7\n微西弗， 則其應向主管機關申請何種類別輻射作業？",
       "options": [
         {
           "key": "A",
@@ -749,7 +749,7 @@ window.NM_EXAM_BANK["rpo-106-1-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 23,
-      "stem": "從事「可發生游離輻射設備、放射性物質及其工作場所之輻射防護偵測」， 依輻射防護 4 服務相關業務管理辦法之規定， 應置 X 及 Y 至少各一人。 X 與 Y 分別為：",
+      "stem": "從事「可發生游離輻射設備、放射性物質及其工作場所之輻射防護偵測」， 依輻射防護\n4\n服務相關業務管理辦法之規定， 應置 X 及 Y 至少各一人。 X 與 Y 分別為：",
       "options": [
         {
           "key": "A",
@@ -815,7 +815,7 @@ window.NM_EXAM_BANK["rpo-106-1-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 25,
-      "stem": "輻射工作場所內規劃之各項偵測及監測， 其結果超過何種基準時， 應立即採取應變措 施？",
+      "stem": "輻射工作場所內規劃之各項偵測及監測， 其結果超過何種基準時， 應立即採取應變措\n施？",
       "options": [
         {
           "key": "A",
@@ -914,7 +914,7 @@ window.NM_EXAM_BANK["rpo-106-1-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 28,
-      "stem": "在正常操作情況下， 距其任何可接近之表面 10 公分處之劑量率每小時不超過一微西 弗， 且其公稱電壓不超過三萬伏特之 X 光檢測設備屬於下列何者？",
+      "stem": "在正常操作情況下， 距其任何可接近之表面 10 公分處之劑量率每小時不超過一微西\n弗， 且其公稱電壓不超過三萬伏特之 X 光檢測設備屬於下列何者？",
       "options": [
         {
           "key": "A",
@@ -972,7 +972,7 @@ window.NM_EXAM_BANK["rpo-106-1-law"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "5\n\n(1)",
+      "answerText": "5\n(1)",
       "isComplete": true
     },
     {

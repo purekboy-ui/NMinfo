@@ -180,7 +180,7 @@ window.NM_EXAM_BANK["rps-106-2-law"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "1\n\n(2)",
+      "answerText": "1\n(2)",
       "isComplete": true
     },
     {
@@ -543,7 +543,7 @@ window.NM_EXAM_BANK["rps-106-2-law"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(4)\n\n3",
+      "answerText": "(4)\n3",
       "isComplete": true
     },
     {

@@ -56,7 +56,7 @@ window.NM_EXAM_BANK["rpo-106-2-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 2,
-      "stem": "放射性物質之生產與其設施之建造及可發生游離輻射設備之製造， 應於開始之日起多少 日內， 報請主管機關備查？",
+      "stem": "放射性物質之生產與其設施之建造及可發生游離輻射設備之製造， 應於開始之日起多少\n日內， 報請主管機關備查？",
       "options": [
         {
           "key": "A",
@@ -122,7 +122,7 @@ window.NM_EXAM_BANK["rpo-106-2-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 4,
-      "stem": "輻射工作人員一年之輻射曝露經評估後不可能超過劑量限度之一定比例者， 得以作業環 境監測或個別劑量抽樣監測代替個別劑量監測， 此一定比例為：",
+      "stem": "輻射工作人員一年之輻射曝露經評估後不可能超過劑量限度之一定比例者， 得以作業環\n境監測或個別劑量抽樣監測代替個別劑量監測， 此一定比例為：",
       "options": [
         {
           "key": "A",
@@ -221,7 +221,7 @@ window.NM_EXAM_BANK["rpo-106-2-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 7,
-      "stem": "人體中受曝露之各組織或器官之等價劑量與各該組織或器官之組織加權因數乘積之和 稱為?",
+      "stem": "人體中受曝露之各組織或器官之等價劑量與各該組織或器官之組織加權因數乘積之和\n稱為?",
       "options": [
         {
           "key": "A",
@@ -254,7 +254,7 @@ window.NM_EXAM_BANK["rpo-106-2-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 8,
-      "stem": "十六歲以上未滿十八歲者接受輻射作業教學或工作訓練， 其個人年劑量限度， 眼球水晶 體之等價劑量不得超過多少？",
+      "stem": "十六歲以上未滿十八歲者接受輻射作業教學或工作訓練， 其個人年劑量限度， 眼球水晶\n體之等價劑量不得超過多少？",
       "options": [
         {
           "key": "A",
@@ -287,7 +287,7 @@ window.NM_EXAM_BANK["rpo-106-2-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 9,
-      "stem": "雇主於接獲女性輻射工作人員告知懷孕後， 女性輻射工作人員， 其賸餘妊娠期間下腹部 表面之 X 劑量， 不得超過 Y 毫西弗。 X 與 Y 分別為：",
+      "stem": "雇主於接獲女性輻射工作人員告知懷孕後， 女性輻射工作人員， 其賸餘妊娠期間下腹部\n表面之 X 劑量， 不得超過 Y 毫西弗。 X 與 Y 分別為：",
       "options": [
         {
           "key": "A",
@@ -345,7 +345,7 @@ window.NM_EXAM_BANK["rpo-106-2-law"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\n\n2",
+      "answerText": "(2)\n2",
       "isComplete": true
     },
     {
@@ -353,7 +353,7 @@ window.NM_EXAM_BANK["rpo-106-2-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 11,
-      "stem": "裝載託運物品之車輛為專用者， 若為開敞式車輛， 在載運物品上表面， 車體下表面任一 點， 劑量率不得超過多少 mSv/h?",
+      "stem": "裝載託運物品之車輛為專用者， 若為開敞式車輛， 在載運物品上表面， 車體下表面任一\n點， 劑量率不得超過多少 mSv/h?",
       "options": [
         {
           "key": "A",
@@ -419,7 +419,7 @@ window.NM_EXAM_BANK["rpo-106-2-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 13,
-      "stem": "下列何者屬放射性物質安全運送規則所定義之可分裂物質? A： 鈾二三三、B： 鈽二三九、 C： 未照射之耗乏鈾、D： 僅在熱中子反應器中照射之天然鈾",
+      "stem": "下列何者屬放射性物質安全運送規則所定義之可分裂物質? A： 鈾二三三、B： 鈽二三九、\nC： 未照射之耗乏鈾、D： 僅在熱中子反應器中照射之天然鈾",
       "options": [
         {
           "key": "A",
@@ -485,23 +485,23 @@ window.NM_EXAM_BANK["rpo-106-2-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 15,
-      "stem": "依規定應設立輻射防護管理組織者， 應設置 X 人以上輻射防護管理委員會， 其中至少 有 Y 名以上之專職輻射防護人員。 則 X 與 Y 為?",
+      "stem": "依規定應設立輻射防護管理組織者， 應設置 X 人以上輻射防護管理委員會， 其中至少\n有 Y 名以上之專職輻射防護人員。 則 X 與 Y 為?",
       "options": [
         {
           "key": "A",
-          "text": "X=5, Y=1"
+          "text": "X = 5, Y = 1"
         },
         {
           "key": "B",
-          "text": "X=5, Y=1"
+          "text": "X = 5, Y = 1"
         },
         {
           "key": "C",
-          "text": "X=7, Y=1"
+          "text": "X = 7, Y = 1"
         },
         {
           "key": "D",
-          "text": "X=7, Y=2"
+          "text": "X = 7, Y = 2"
         }
       ],
       "answer": "D",
@@ -518,7 +518,7 @@ window.NM_EXAM_BANK["rpo-106-2-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 16,
-      "stem": "假設某持有 10 部 X 光機及 10 部 Ir-192 射源之放射照相檢驗公司， 依規定該公司應至 少設置多少位輻射防護人員?",
+      "stem": "假設某持有 10 部 X 光機及 10 部 Ir-192 射源之放射照相檢驗公司， 依規定該公司應至\n少設置多少位輻射防護人員?",
       "options": [
         {
           "key": "A",
@@ -543,7 +543,7 @@ window.NM_EXAM_BANK["rpo-106-2-law"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(1)\n\n3",
+      "answerText": "(1)\n3",
       "isComplete": true
     },
     {
@@ -584,7 +584,7 @@ window.NM_EXAM_BANK["rpo-106-2-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 18,
-      "stem": "輻射防護工作訓練證明文件須經哪些人(至少一人) 進行簽章即可? A 設施經營負責 人、B 兼任之輻防人員、C 雇主、D 工安管理人員",
+      "stem": "輻射防護工作訓練證明文件須經哪些人(至少一人) 進行簽章即可? A 設施經營負責\n人、B 兼任之輻防人員、C 雇主、D 工安管理人員",
       "options": [
         {
           "key": "A",
@@ -716,7 +716,7 @@ window.NM_EXAM_BANK["rpo-106-2-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 22,
-      "stem": "有關放射性物質或可發生游離輻射設備之作業， 下列哪一項不一定需要主管機關審查發 給許可？",
+      "stem": "有關放射性物質或可發生游離輻射設備之作業， 下列哪一項不一定需要主管機關審查發\n給許可？",
       "options": [
         {
           "key": "A",
@@ -741,7 +741,7 @@ window.NM_EXAM_BANK["rpo-106-2-law"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(1)\n登記備查類輻射源之使用不需發給許可。\n\n4",
+      "answerText": "(1)\n登記備查類輻射源之使用不需發給許可。\n4",
       "isComplete": true
     },
     {
@@ -881,7 +881,7 @@ window.NM_EXAM_BANK["rpo-106-2-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 27,
-      "stem": "操作人員輻射安全證書經主管機關撤銷或廢止者， 自撤銷或廢止之日起幾年內不得申 請？",
+      "stem": "操作人員輻射安全證書經主管機關撤銷或廢止者， 自撤銷或廢止之日起幾年內不得申\n請？",
       "options": [
         {
           "key": "A",
@@ -914,7 +914,7 @@ window.NM_EXAM_BANK["rpo-106-2-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 28,
-      "stem": "公稱電壓為 2.5 萬伏特的可發生游離輻射設備， 在正常操作情況下， 距其任何可接近之 表面 0.1 公尺處之劑量率為 0.5 微西弗/小時， 屬下列何者？",
+      "stem": "公稱電壓為 2.5 萬伏特的可發生游離輻射設備， 在正常操作情況下， 距其任何可接近之\n表面 0.1 公尺處之劑量率為 0.5 微西弗/小時， 屬下列何者？",
       "options": [
         {
           "key": "A",
@@ -947,7 +947,7 @@ window.NM_EXAM_BANK["rpo-106-2-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 29,
-      "stem": "依據「天然放射性物質管理辦法」之規定， 從事開採、處理、貯存天然放射性物質等場 所轉作其他用途， 造成一般人之年有效劑量不得超過多少？ 5",
+      "stem": "依據「天然放射性物質管理辦法」之規定， 從事開採、處理、貯存天然放射性物質等場\n所轉作其他用途， 造成一般人之年有效劑量不得超過多少？ 5",
       "options": [
         {
           "key": "A",

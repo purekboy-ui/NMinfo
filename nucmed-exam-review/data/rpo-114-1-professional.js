@@ -56,23 +56,23 @@ window.NM_EXAM_BANK["rpo-114-1-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 2,
-      "stem": "若有一加馬光子射束， 其能量為 500 keV， 通量率為103 cm-2s-1， 若空氣的質量能量吸\n收係數為 0.029 cm2g-1， 使空氣產生一離子對之平均能量為 34 eV， 則該射束造成之曝\n露率(Ckg-1s-1) 為何？",
+      "stem": "若有一加馬光子射束， 其能量為 500 keV， 通量率為103 cm - 2·s - 1， 若空氣的質量能量吸\n收係數為 0.029 cm2·g - 1， 使空氣產生一離子對之平均能量為 34 eV， 則該射束造成之曝\n露率 ( C·kg - 1·s - 1 ) 為何？",
       "options": [
         {
           "key": "A",
-          "text": "2.5×10-12"
+          "text": "2.5 × 10^ - 12"
         },
         {
           "key": "B",
-          "text": "J 1 C g R = 500 keV×1.6×10−16 ×103 cm−2 ∙𝑠−1 ×0.029 cm2 ∙g−1 × ×1000 keV 34 J kg = 6.8×10−11 Ckg−1 ∙𝑠−1"
+          "text": "J 1 CgR = 500 keV × 1.6 × 10−16 × 103 cm−2 ∙𝑠−1 × 0.029 cm2 ∙g−1 × × 1000 keV 34 J kg = 6.8 × 10−11 C·kg−1 ∙𝑠−1"
         },
         {
           "key": "C",
-          "text": "1.5×10-10"
+          "text": "1.5 × 10^ - 10"
         },
         {
           "key": "D",
-          "text": "1.5×10-9"
+          "text": "1.5 × 10^ - 9"
         }
       ],
       "answer": "B",
@@ -81,7 +81,7 @@ window.NM_EXAM_BANK["rpo-114-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\nJ 1 C g\nR = 500 keV×1.6×10−16 ×103 cm−2 ∙𝑠−1 ×0.029 cm2 ∙g−1 × ×1000\nkeV 34 J kg\n= 6.8×10−11 Ckg−1 ∙𝑠−1",
+      "answerText": "(2)\nJ 1 C g\nR = 500 keV × 1.6 × 10−16 × 103 cm−2 ∙𝑠−1 × 0.029 cm2 ∙g−1 × × 1000\nkeV 34 J kg\n= 6.8 × 10−11 C·kg−1 ∙𝑠−1",
       "isComplete": true
     },
     {
@@ -122,7 +122,7 @@ window.NM_EXAM_BANK["rpo-114-1-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 4,
-      "stem": "試問X射線， 質子及 α粒子的氧增強比(OER) 大小？",
+      "stem": "試問X射線， 質子及 α粒子的氧增強比 ( OER ) 大小？",
       "options": [
         {
           "key": "A",
@@ -138,7 +138,7 @@ window.NM_EXAM_BANK["rpo-114-1-professional"] = {
         },
         {
           "key": "D",
-          "text": "質子= α粒子= X射線"
+          "text": "質子 = α粒子 = X射線"
         }
       ],
       "answer": "A",
@@ -221,7 +221,7 @@ window.NM_EXAM_BANK["rpo-114-1-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 7,
-      "stem": "有關熱發光劑量計(TLD) 之特性， 下列敘述何者正確？ A.材料中常加入Mg或 Ti 作為氧化劑 B.可度量α輻射所造成的劑量\nC.計讀器需使用光電倍增管 D. LiF的能量依存性較 CaSO 小\n4",
+      "stem": "有關熱發光劑量計 ( TLD ) 之特性， 下列敘述何者正確？ A.材料中常加入Mg或 Ti 作為氧化劑 B.可度量α輻射所造成的劑量\nC.計讀器需使用光電倍增管 D. LiF的能量依存性較 CaSO 小\n4",
       "options": [
         {
           "key": "A",
@@ -291,15 +291,15 @@ window.NM_EXAM_BANK["rpo-114-1-professional"] = {
       "options": [
         {
           "key": "A",
-          "text": "總能量=511 keV+150 keV= 661 keV"
+          "text": "總能量 = 511 keV + 150 keV = 661 keV"
         },
         {
           "key": "B",
-          "text": "動能=150 keV"
+          "text": "動能 = 150 keV"
         },
         {
           "key": "C",
-          "text": "電子靜止質量= 9.11×10-31 kg"
+          "text": "電子靜止質量 = 9.11 × 10^ - 31 kg"
         },
         {
           "key": "D",
@@ -312,7 +312,7 @@ window.NM_EXAM_BANK["rpo-114-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(1)\n總能量=511 keV+150 keV= 661 keV",
+      "answerText": "(1)\n總能量 = 511 keV + 150 keV = 661 keV",
       "isComplete": true
     },
     {
@@ -365,7 +365,7 @@ window.NM_EXAM_BANK["rpo-114-1-professional"] = {
         },
         {
           "key": "C",
-          "text": "D = 2.3 × D = 6.9 10 0"
+          "text": "D = 2.3 × D = 6.9100"
         },
         {
           "key": "D",
@@ -431,7 +431,7 @@ window.NM_EXAM_BANK["rpo-114-1-professional"] = {
         },
         {
           "key": "C",
-          "text": "49-1.2-23.8= 24 keV"
+          "text": "49 - 1.2 - 23.8 = 24 keV"
         },
         {
           "key": "D",
@@ -444,7 +444,7 @@ window.NM_EXAM_BANK["rpo-114-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(3)\n49-1.2-23.8= 24 keV",
+      "answerText": "(3)\n49 - 1.2 - 23.8 = 24 keV",
       "isComplete": true
     },
     {
@@ -485,7 +485,7 @@ window.NM_EXAM_BANK["rpo-114-1-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 15,
-      "stem": "通量為3×1015 m-2且能量為5 MeV的光子與鉛作用， 其質量衰減係數μ/ρ＝0.0423 cm2/g、\n質量能量轉移係數 μ /ρ＝0.0305 cm2/g、質量能量吸收係數μ /ρ＝0.0258 cm2/g， 則克馬\ntr ab\n(kerma) 為多少 Gy？",
+      "stem": "通量為3 × 1015 m - 2且能量為5 MeV的光子與鉛作用， 其質量衰減係數μ / ρ＝0.0423 cm2 / g、\n質量能量轉移係數 μ / ρ＝0.0305 cm2 / g、質量能量吸收係數μ / ρ＝0.0258 cm2 / g， 則克馬\ntr ab\n(kerma) 為多少 Gy？",
       "options": [
         {
           "key": "A",
@@ -493,7 +493,7 @@ window.NM_EXAM_BANK["rpo-114-1-professional"] = {
         },
         {
           "key": "B",
-          "text": "d E   E  tr tr tr K      E tr    h   ( )    h   d m   h   1  1 0  4 m 2 1 0 0 0 g 1 5 2  1 3 2  3  1 0 / m  ( 5  1 .6  1 0 J)  0 . 0 3 0 5 c m / g   2 1 c m k g  7 . 3 2 J / k g"
+          "text": "dEμμE μ tr tr tr K = = φ × × E tr = φ × h ν × ( × ) = φ × h ν × dmρρh ν ρ 1 × 10^ - 4 m21000 g 152 - 132 = 3 × 10 / m × ( 5 × 1.6 × 10 J ) × 0.0305 cm / g × × 21 cmkg = 7.32 J / kg"
         },
         {
           "key": "C",
@@ -510,7 +510,7 @@ window.NM_EXAM_BANK["rpo-114-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\nd E   E \ntr tr tr\nK      E tr    h   (  )    h  \nd m   h  \n1  1 0  4 m 2 1 0 0 0 g\n1 5 2  1 3 2\n 3  1 0 / m  ( 5  1 .6  1 0 J )  0 . 0 3 0 5 c m / g  \n2\n1 c m k g\n 7 . 3 2 J / k g",
+      "answerText": "(2)\ndEμμE μ\ntr tr tr\nK = = φ × × E tr = φ × h ν × ( × ) = φ × h ν ×\ndmρρh ν ρ\n1 × 10^ - 4 m21000 g\n1 5 2 - 1 3 2\n= 3 × 10 / m × ( 5 × 1.6 × 10 J ) × 0.0305 cm / g × ×\n2\n1 cmkg\n= 7.32 J / kg",
       "isComplete": true
     },
     {
@@ -518,9 +518,15 @@ window.NM_EXAM_BANK["rpo-114-1-professional"] = {
       "kind": "essay",
       "section": "essay",
       "number": 1,
-      "stem": "(1)管電壓為90 kVp所產生的 X射線的最大能量應為多少 J？\n(2)最大能量X射線的頻率應為多少？(h = 6.63×10-34 Js)",
-      "answerText": "(1)管電壓為90 kVp所產生的 X射線的最大能量為 90 keV\n90 keV = 90000×1.6×10-19J = 1.44×10-14J\n(2) E = h\n1.44×10−14 J\n2.17×1019 𝑠−1\nν＝ =\n6.63×10−34 𝐽𝑠",
-      "isComplete": true
+      "stem": "(1)管電壓為90 kVp所產生的 X射線的最大能量應為多少 J？\n( 2 ) 最大能量X射線的頻率應為多少？ ( h = 6.63 × 10^ - 34 Js )",
+      "answerText": "(1)管電壓為90 kVp所產生的 X射線的最大能量為 90 keV\n90 keV = 90000 × 1.6 × 10^ - 19J = 1.44 × 10^ - 14J ( 2 ) E = hν 1.44 × 10−14 J 2.17 × 1019 𝑠−1 ν＝ = 6.63 × 10−34 𝐽𝑠",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-114-1-professional/q1-1.webp",
+          "alt": "114-1 輻射防護員 專業 問答第 1 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-114-1-professional-essay-002",
@@ -529,7 +535,13 @@ window.NM_EXAM_BANK["rpo-114-1-professional"] = {
       "number": 2,
       "stem": "請列舉至少3項蓋革計數器的缺點。",
       "answerText": "(1)無法分辨輻射種類。\n(2)無感時間很長。\n(3)以測量計數為主，較難直接測量劑量。\n(4)難以測量高強度的輻射。\n(5)無法分辨輻射能量。",
-      "isComplete": true
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-114-1-professional/q2-1.webp",
+          "alt": "114-1 輻射防護員 專業 問答第 2 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-114-1-professional-essay-003",
@@ -538,7 +550,13 @@ window.NM_EXAM_BANK["rpo-114-1-professional"] = {
       "number": 3,
       "stem": "請定義輻射中的G 值和W 值。",
       "answerText": "(1)G值：G值是指在放射化學中，每吸收 100 eV能量所產生的某一化學物質的數量，\n單位通常以 molecules/100 eV 表示。這個值用來衡量輻射在物質(例如氣體、液體或\n固體)中造成的化學反應產物的數量，是研究輻射對物質化學影響的一個重要參數。\nG值越高，表示在輻射能量的作用下，產生的反應物或產物越多。\n(2)W 值：W 值是指在輻射中，產生一對正負離子所需的平均能量，通常以 eV/對離子\n表示。W 值用於描述在氣體偵檢器中，產生一對正負離子所需要的輻射能量。這個\n值對於設計輻射偵檢器和理解輻射對氣體的游離效應至關重要。不同的氣體有不同\n的 W 值，例如氮氣的 W 值約為 34 eV。",
-      "isComplete": true
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-114-1-professional/q3-1.webp",
+          "alt": "114-1 輻射防護員 專業 問答第 3 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-114-1-professional-essay-004",
@@ -546,35 +564,59 @@ window.NM_EXAM_BANK["rpo-114-1-professional"] = {
       "section": "essay",
       "number": 4,
       "stem": "假設背景計數可忽略，A射源的計數為3000，B射源的計數為150，則此二射源計數比\n值(A/B)的標準差為何？",
-      "answerText": "A3000\nB150\nA\nR 20\nB\n2 2 2\n      A B 3000 150\nR  A  B     7103\n     \nR A B A2 B2 30002 1502\n     \n\nR 0.084\nR\n 0.084R0.084201.68\nR",
-      "isComplete": true
+      "answerText": "解：計數比值R = A / B = 3000 / 150 = 20。\n\n若 A、B 互相獨立且符合 Poisson 統計，則\nσR / R = √[ ( σA / A ) ^2 + ( σB / B ) ^2]\n= √[ ( √3000 / 3000 ) ^2 + ( √150 / 150 ) ^2]\n= √ ( 1 / 3000 + 1 / 150 ) = 0.084。\n\n因此σR = R × 0.084 = 20 × 0.084 = 1.68。\n\n故 A/B 的標準差為 1.68。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-114-1-professional/q4-1.webp",
+          "alt": "114-1 輻射防護員 專業 問答第 4 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-114-1-professional-essay-005",
       "kind": "essay",
       "section": "essay",
       "number": 5,
-      "stem": "(1)在溫度為22℃、壓力為 760 mmHg之標準條件下，以0.6 cm3空氣體積之 Farmer游\n5×10-10庫侖的電量，試問其曝露約為多少\n離腔度量加馬輻射，量得 C/kg？\n(2)若量測時的溫度改為18℃、壓力765 mmHg，請計算溫壓修正因子。",
-      "answerText": "(1) (5×10-10 C) / (0.6 cm3 ×1.293×10-6 kg/cm3 ) = 6.4×10-4 C/kg\n760 27318\n\n(2) Factor   = 0.98\n   \n P  27322",
-      "isComplete": true
+      "stem": "(1)在溫度為22℃、壓力為 760 mmHg之標準條件下，以0.6 cm3空氣體積之 Farmer游\n5 × 10^ - 10庫侖的電量，試問其曝露約為多少\n離腔度量加馬輻射，量得 C/kg？\n(2)若量測時的溫度改為18℃、壓力765 mmHg，請計算溫壓修正因子。",
+      "answerText": "( 1 ) ( 5 × 10^ - 10 C ) / ( 0.6 cm3 × 1.293 × 10^ - 6 kg / cm3 ) = 6.4 × 10^ - 4 C / kg ( 760 ) 273 + 18 ) (\n( 2 ) Factor = × = 0.98 ( ) ( ) ( P ) ( 273 + 22 )",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-114-1-professional/q5-1.webp",
+          "alt": "114-1 輻射防護員 專業 問答第 5 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-114-1-professional-essay-006",
       "kind": "essay",
       "section": "essay",
       "number": 6,
-      "stem": "假設某一放射性射源之光子，在  能譜之回散射峰位於90 keV，請計算此光子之康普\n吞邊緣(Compton edge)約位於多少keV？",
-      "answerText": "散射角為180度時稱為回散射，此時光子能量最小\n1 1\n𝜃 = 1800 ⇒ ℎ𝑣′ = ℎ𝑣 × ∴ 0.09 = ℎ𝑣 ×\n1+2𝛼 ℎ𝑣\n1+2×\n0.511\n∴ ℎ𝑣 = 0.139 𝑀𝑒𝑉\nℎ𝑣′\n又ℎ𝑣 = + 𝐸 ∴ 139 = 90+𝐸 ∴ 𝐸 = 49 keV\n𝑒 𝑒 𝑒",
-      "isComplete": true
+      "stem": "假設某一放射性射源之光子，在 γ 能譜之回散射峰位於90 keV，請計算此光子之康普\n吞邊緣(Compton edge)約位於多少keV？",
+      "answerText": "散射角為180度時稱為回散射，此時光子能量最小 1 1\n𝜃 = 1800 ⇒ ℎ𝑣′ = ℎ𝑣 × ∴ 0.09 = ℎ𝑣 × 1 + 2𝛼 ℎ𝑣 1 + 2 × 0.511\n∴ ℎ𝑣 = 0.139 𝑀𝑒𝑉\nℎ𝑣′\n又ℎ𝑣 = + 𝐸 ∴ 139 = 90 + 𝐸 ∴ 𝐸 = 49 keV\n𝑒 𝑒 𝑒",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-114-1-professional/q6-1.webp",
+          "alt": "114-1 輻射防護員 專業 問答第 6 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-114-1-professional-essay-007",
       "kind": "essay",
       "section": "essay",
       "number": 7,
-      "stem": "依現行法規，請將(1) X射線、(2)熱中子、(3) α粒子、(4)電子、(5) γ 射線與下列輻射加\n權因數配對：W R = 5、W R = 20、W R = 1",
-      "answerText": "(1) W = 1\nR\n(2) W = 5\nR\n(3) W = 20\nR\n(4) W = 1\nR\n(5) W = 1\nR",
-      "isComplete": true
+      "stem": "依現行法規，請將 ( 1 ) X射線、 ( 2 ) 熱中子、 ( 3 ) α粒子、 ( 4 ) 電子、 ( 5 ) γ 射線與下列輻射加\n權因數配對：WR = 5、WR = 20、WR = 1",
+      "answerText": "( 1 ) W = 1 R ( 2 ) W = 5R ( 3 ) W = 20R ( 4 ) W = 1R ( 5 ) W = 1R",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-114-1-professional/q7-1.webp",
+          "alt": "114-1 輻射防護員 專業 問答第 7 題原始解答截圖（第 1 張）"
+        }
+      ]
     }
   ]
 };

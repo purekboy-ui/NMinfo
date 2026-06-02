@@ -1,0 +1,102 @@
+107
+
+
+
+107
+
+ 6309
+
+
+
+
+
+1
+
+___________
+
+!
+
+
+
+1.18F-FDOPA A.DOPA2H18F B. C. D.
+2.123I A. B.13 C.3%+ D.Auger electrons
+3.99Mo/99mTc99Mo/99mTc A.1.10 B.0.96 C.1.04 D.1.15
+4. A. B. C. D.
+5.235U235UeV A.0.025 B.0.25 C.2.5 D.25
+6. A.123I-NaI B.99mTc5+-DMSA C.99mTc-sestamibi D.99mTc-pertechnetate
+7.-
+
+A.- B.-1 C.-1 D.- 8.pyrogen A. B.polysaccharideprotein C.0.2 �m D. 9.111In-octreotide A.dopamine B.somatostatin C.adrenaline D.estrogen 10.blood-brain barrier A.99mTc-ECD B.99mTc-DTPA C.123I-IMP D.99mTc-HMPAO 11. A.133Xe B.99mTc-HMPAOcomplex C.99mTc-MIBI D.Na99mTcO4Na131I 12.159 keV A.131I B.125I C.124I D.123I 13.133Xe A. B. C.185 keV D. 14.shelf life A.Na123I30 B.99mTc-HMPAO68 C.133Xe14 D.201Tl-TlCl56
+
+15.target--ligand A.--18F-FDG B.--11C-methionine C.--111In-octreotide D.--99mTc-annexin V
+16. A.99mTc-sulfur colloid B.99mTc-DTPA C.99mTc-MAG3 D.99mTc-DMSA
+17.99mTc-ECD A. B. C. D.10
+18.99mTc-TRODAT-1dopamine transporter
+SPECT99mTc-TRODAT-1
+A.posterior cingulate gyrus B.caudate nucleus C.putamen D.striatum 19.myocardial viability A.18F-FDG B.99mTc-sestamibi C.13N-ammonia D.123I-MIBG 20.99mTc-MIBI810 mCi1
+ stress test 810 mCi
+1 201Tl
+A. B. C. D. 21.EKG gating
+
+A.
+
+B.
+C.
+D.
+22.
+end-diastolic count� end-systolic count�100% end-diastolic count
+A.ejection fraction B.cardiac output C.stroke volume D.phase analysis 23.gated equilibrium radionuclide angiography, E-RNAMUGA
+
+A.P B.Q C.R D.S 24. A.amyloid PET B.18F-FDG PET C.99mTc-ECD SPECT D.MRI 25.Aprojection images2B
+artifact
+
+A.low count rate B.breast attenuation C.diaphragmatic attenuation D.motion artifact 26. A.Dobutamine B.Atropine C.Dipyridamole D.Adenosine 27.99mTc-sestamibi60 A.12% B.34% C.510% D.1020% 28.99mTc-methylene diphosphonate99mTc-MDP A.99mTc99Mo B.MDP C.free 99mTc D.colloid 29.18F-FDG PETquantitative A.standard uptake value, SUVcut-off value B.standard uptake value, SUV C.standard uptake value, SUV D.standard uptake value, SUVretention index 30. A.67Ga-citrate B.99mTc-MDP C.18F-FDG D.201Tl-TlCl 31.99mTc-MDP A.hydroxyapatite crystal
+
+B. C.Ca/P D.collagen 32.18F-FDG PET A. B. C. D. 33. A.18F-FDG B.18F-FDOPA C.131I-MIBG D.131I-NP-59 34.18F-FDOPA A.amino acid B.nucleoside C.glucose D.lipid 35.androgen receptor A.16-18F-fluoro-5-dihydrotestosterone (18F-FDHT) B.16-17-18F-fluoroestradiol (18F-FES) C.18F-FDG D.99mTc-MIBI 36.
+A.18F-FDG B.67Ga-citrate C. D. 37.three-phase bone scan A. B. C. D. 38.99mTc-MAG3
+
+A. B. C. D. 39.131I131I
+
+A. B.24 C. D. 40.45 mCi131I360 mrem/h12
+30 mrem/h
+A.15.5 mCi B.22.5 mCi C.35 mCi D.40 mCi 41.TSH A. B. C. D. 42.
+A. B. C. D. 43.
+
+A.captopril B. C.mechanical obstruction D. 44.123I131I A.131I123I B.123Ireactor131Icyclotron C.123I131I D.123I131I 45.medullary thyroid cancer A.99mTc-pertechnetate B.123I-NaI C.99mTc5+-DMSA D.123I-MIBG 46.111In-pentetreotide A. B. C. D. 47.201Tl-TlClNa99mTcO4Na99mTcO4201Tl-TlCl A. B. C. D. 48.Schilling test
+
+A.57Co B.60Co C.99mTc D.111In 49.gastroesophageal reflux  
+ 
+A. B. C. D. 50.133Xe99mTc-DTPA A.133Xe B.99mTc-DTPAalveolar permeability C.133Xe99mTc-MAA D.99mTc-DTPA99mTc-MAA 51.99mTc-sulfur colloid111In-DTPA
+
+A. B. C. D. 52.Meckel diverticulum
+
+A. B. C. D. 53.
+
+A.99mTc-labeled red blood cells B. C. D.50'60' 54. A.gastroesophageal reflux B.gastric emptying C.Meckel diverticulum D.enterogastric reflux 55. list mode acquisition A. B. C. D. 56.18F-FDGPETintensity
+intensity
+A.attenuation correction B.scatter correction C.dead time correction D.decay correction 57.99mTc-MAA99mTc-MAA A.99mTc-MAA B. C. D.99mTc-MAAbolus injection 58.AFPmean = 30.4 ng/ml, sd = 1.46 ng/dl
+29.8 ng/dl, 30.5 ng/dl, 32.1 ng/dl
+A. B. C. D. 59. A. B. C. D. 60. A.125I B.6
+
+C. D.1 61.prostate-specific antigen, PSA A. B.PSAPSA C.PSA10 ng/ml
+
+D.hormonal therapyPSA 62.logitB/B0logligand concentration
+
+A. B. C. D. 63. ITLC-SG, instant thin-layer chromatography silica gel  99mTc-MDP 
+
+A.System A  solvent front  99mTc-TcO4B.System A  origin  99mTc-MDP C.System B   99mTc-MDP99mTc-TcO2 D.System B   99mTc-MDP 64. 5 mCi 99mTc9mCi A.12.33 B.14.14 C.16.87 D.18.73 65.n, p A.112Sn113Sn B.14N14C C.98Mo99Mo D.111Cd111In 66.isobaric transition A.
+
+B. C. D. 67.200 mCi Na131I131I = 0.22 Rm2/hCi200 mCi131I
+1mmR/h
+A.0.44 B.4.4 C.44 D.440 68.131I-NaI A.131I-NaI6%14% B. C.131I-NaI D. 69.GM A.quenching B. C. D. 70. A. B. C. D. 71.131I364 keV391.3 keV336.7 keV A.10% B.15% C.20% D.30% 72.cut-off frequency
+
+A. B. C. D. 73.99Mo99mTc99Mo/99mTc A. B. C.
+
+D. 74.specific activity
+A. B. C. D. 75.curve fitting A. B. C. D. 76.PETcorrectioncalibration A.well counter calibration B.blank scan C.partial volume  D.normalization 77. A. B. C. D. 78.201T1167 keVhalf value layerHVL0.02
+75%201T1
+A.0.04 B.0.06 C.0.08 D.0.12 79.gamma camerapinhole collimator
+
+A.count rate B.count rate C.count rate D.count rate 80.dose calibrator A.137Cs B.131I C.99mTc D.67Ga
+
+

@@ -64,11 +64,11 @@ window.NM_EXAM_BANK["rpo-109-2-professional"] = {
         },
         {
           "key": "B",
-          "text": "β+"
+          "text": "β +"
         },
         {
           "key": "C",
-          "text": "β-"
+          "text": "β -"
         },
         {
           "key": "D",
@@ -122,7 +122,7 @@ window.NM_EXAM_BANK["rpo-109-2-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 4,
-      "stem": "60Co的加馬射線常數(gamma ray constant, ) 為307 m2 µGy GBq-1 h-1， 請問距離1 Ci的\n60Co 1公尺處的曝露率為何？",
+      "stem": "60Co的加馬射線常數 ( gamma ray constant, Γ ) 為307 m2 µGy GBq - 1 h - 1， 請問距離1 Ci的\n60Co 1公尺處的曝露率為何？",
       "options": [
         {
           "key": "A",
@@ -130,7 +130,7 @@ window.NM_EXAM_BANK["rpo-109-2-professional"] = {
         },
         {
           "key": "B",
-          "text": "解： 307 m2 µGy/(GBq h)  3.71010 Bq/(12 m2) 10-9GBq/Bq  10-3 mGy/µGy = 11.4 mGy/h"
+          "text": "解： 307 m2 µGy / ( GBq h ) × 3.7 × 1010 Bq / ( 12 m2 ) × 10^ - 9GBq / Bq × 10^ - 3 mGy / µGy = 11.4 mGy/h"
         },
         {
           "key": "C",
@@ -147,7 +147,7 @@ window.NM_EXAM_BANK["rpo-109-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\n解：\n307 m2 µGy/(GBq h)  3.71010 Bq/(12 m2) 10-9GBq/Bq  10-3 mGy/µGy = 11.4 mGy/h",
+      "answerText": "(2)\n解：\n307 m2 µGy / ( GBq h ) × 3.7 × 1010 Bq / ( 12 m2 ) × 10^ - 9GBq / Bq × 10^ - 3 mGy / µGy = 11.4 mGy/h",
       "isComplete": true
     },
     {
@@ -229,7 +229,7 @@ window.NM_EXAM_BANK["rpo-109-2-professional"] = {
         },
         {
           "key": "B",
-          "text": " 22 1 [解： ]D125  1.28 72 23"
+          "text": "· 221 [解：]D = 125 × × = 1.287223"
         },
         {
           "key": "C",
@@ -246,7 +246,7 @@ window.NM_EXAM_BANK["rpo-109-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\n 22 1\n[解：]D125  1.28\n72 23",
+      "answerText": "(2)\n· 221\n[解：]D = 125 × × = 1.28\n72 23",
       "isComplete": true
     },
     {
@@ -291,19 +291,19 @@ window.NM_EXAM_BANK["rpo-109-2-professional"] = {
       "options": [
         {
           "key": "A",
-          "text": "33.85 ()  S"
+          "text": "33.85 ( ) · ·S"
         },
         {
           "key": "B",
-          "text": "33.85 ()  S air wall(C) C m C m wall(C) air J   J Q  "
+          "text": "33.85 ( ) · ·S air wall ( C ) CmCm wall ( C ) air J ( μ ) JQ ( μ )"
         },
         {
           "key": "C",
-          "text": "33.85 ()  ab "
+          "text": "33.85 ( ) · ( ab )"
         },
         {
           "key": "D",
-          "text": "33.85 ()    ab      C    C m    air wall(C)"
+          "text": "33.85 ( ) · · ( ab ) ( ) ( ) C ( ρ ) Cm ( ρ ) air wall ( C )"
         }
       ],
       "answer": "A",
@@ -353,7 +353,7 @@ window.NM_EXAM_BANK["rpo-109-2-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 11,
-      "stem": "226Ra原子經過及 衰變後變成206Pb原子， 請問其中發生了幾次 衰變？ 88 82",
+      "stem": "226Ra原子經過α及β 衰變後變成206Pb原子， 請問其中發生了幾次β 衰變？ 8882",
       "options": [
         {
           "key": "A",
@@ -365,7 +365,7 @@ window.NM_EXAM_BANK["rpo-109-2-professional"] = {
         },
         {
           "key": "C",
-          "text": "經過每次衰變後質量數會減4、原子序會減 2； 每次衰變後質量數會不變、原子序會 - 加1。  Ra-226 經過 (226-206) /4 = 5次衰變而變成Pb-206， 如經過5次衰變後， 原子序應 減少10變成(88-10) =78； 但子核Pb-206的原子序為82， 比78多了4， 因此可估計發生 了4次衰變。"
+          "text": "經過每次α衰變後質量數會減4、原子序會減 2； 每次β衰變後質量數會不變、原子序會 - 加1。 ∴ Ra - 226 經過 ( 226 - 206 ) / 4 = 5次α衰變而變成Pb - 206， 如經過5次α衰變後， 原子序應 減少10變成 ( 88 - 10 ) = 78； 但子核Pb - 206的原子序為82， 比78多了4， 因此可估計發生 了4次β衰變。"
         },
         {
           "key": "D",
@@ -378,7 +378,7 @@ window.NM_EXAM_BANK["rpo-109-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(3)\n經過每次衰變後質量數會減4、原子序會減 2；每次衰變後質量數會不變、原子序會 -\n加1。\n Ra-226 經過 (226-206)/4 = 5次衰變而變成Pb-206，如經過5次衰變後，原子序應\n減少10變成(88-10)=78；但子核Pb-206的原子序為82，比78多了4，因此可估計發生\n了4次衰變。",
+      "answerText": "(3)\n經過每次α衰變後質量數會減4、原子序會減 2；每次β衰變後質量數會不變、原子序會 -\n加1。\n∴ Ra - 226 經過 ( 226 - 206 ) / 4 = 5次α衰變而變成Pb - 206，如經過5次α衰變後，原子序應\n減少10變成 ( 88 - 10 ) = 78；但子核Pb - 206的原子序為82，比78多了4，因此可估計發生\n了4次β衰變。",
       "isComplete": true
     },
     {
@@ -419,7 +419,7 @@ window.NM_EXAM_BANK["rpo-109-2-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 13,
-      "stem": "下列關於貝他(β-) 蛻變的敘述， 何者為真？",
+      "stem": "下列關於貝他 ( β - ) 蛻變的敘述， 何者為真？",
       "options": [
         {
           "key": "A",
@@ -460,7 +460,7 @@ window.NM_EXAM_BANK["rpo-109-2-professional"] = {
         },
         {
           "key": "B",
-          "text": "LET為50 keV/μm 輻射的RBE小於4 keV/μm 輻射 的RBE"
+          "text": "LET為50 keV / μm 輻射的RBE小於4 keV / μm 輻射 的RBE"
         },
         {
           "key": "C",
@@ -477,7 +477,7 @@ window.NM_EXAM_BANK["rpo-109-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2) LET為 50 keV/μm 輻射的RBE大於4 keV/μm 輻射的RBE",
+      "answerText": "( 2 ) LET為 50 keV / μm 輻射的RBE大於4 keV / μm 輻射的RBE",
       "isComplete": true
     },
     {
@@ -501,7 +501,7 @@ window.NM_EXAM_BANK["rpo-109-2-professional"] = {
         },
         {
           "key": "D",
-          "text": "每小時衰減10%  每小時尚存90% A  0.9=  e1小時  = -ln(0.9) (小時-1) A 0 1 1 平均壽命=  9.5(小時)  ln0.9"
+          "text": "每小時衰減10% ⇒ 每小時尚存90% A ⇒ 0.9 = = e - λ·1小時⇒ λ = - ln ( 0.9 ) ( 小時 - 1 ) A 011 ⇒平均壽命 = = ≈9.5 ( 小時 ) λ - ln0.9"
         }
       ],
       "answer": "D",
@@ -510,7 +510,7 @@ window.NM_EXAM_BANK["rpo-109-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(4)\n每小時衰減10%  每小時尚存90%\nA\n 0.9=  e1小時  = -ln(0.9) (小時-1)\nA\n0\n\n1 1\n平均壽命=  9.5(小時)\n ln0.9",
+      "answerText": "(4)\n每小時衰減10% ⇒ 每小時尚存90%\nA\n⇒ 0.9 = = e - λ·1小時⇒ λ = - ln ( 0.9 ) ( 小時 - 1 )\nA\n0\n1 1\n⇒平均壽命 = = ≈9.5 ( 小時 )\nλ - ln0.9",
       "isComplete": true
     },
     {
@@ -518,9 +518,15 @@ window.NM_EXAM_BANK["rpo-109-2-professional"] = {
       "kind": "essay",
       "section": "essay",
       "number": 1,
-      "stem": "在游離腔中，當測得電流為1.0×10-14A時，請問：\n(a)每秒有多少電子被收集？\n(b)若W = 29.9 eV/離子對，能量吸收率是多少(eV/s)？",
-      "answerText": "(a)\n1.010-14/1.610-19=6.3104 電子\n(b)\n6.310429.9= 1.9106 eVs-1",
-      "isComplete": true
+      "stem": "在游離腔中，當測得電流為1.0 × 10^ - 14A時，請問：\n(a)每秒有多少電子被收集？\n( b ) 若W = 29.9 eV / 離子對，能量吸收率是多少 ( eV / s ) ？",
+      "answerText": "(a)\n1.0∈10 - 14 / 1.6∈10 - 19 = 6.3∈104 電子\n(b)\n6.3∈104∈29.9 = 1.9∈106 eVs - 1",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-109-2-professional/q1-1.webp",
+          "alt": "109-2 輻射防護員 專業 問答第 1 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-109-2-professional-essay-002",
@@ -529,25 +535,43 @@ window.NM_EXAM_BANK["rpo-109-2-professional"] = {
       "number": 2,
       "stem": "請繪出充氣式偵測器(gas-filled detector)的操作電壓圖，圖中需標示出各區名稱。",
       "answerText": "",
-      "isComplete": false
+      "isComplete": false,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-109-2-professional/q2-1.webp",
+          "alt": "109-2 輻射防護員 專業 問答第 2 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-109-2-professional-essay-003",
       "kind": "essay",
       "section": "essay",
       "number": 3,
-      "stem": "在一密閉的倉庫(40×30×20 m3)中有 0.2 g的放射性85Kr (T = 10.72 年)氣體試樣，現該\n1/2\n射源突然被打破，氣體散逸到該倉庫內。試求：\n(a) 85Kr活度 (b)倉庫內的空氣比活度(MBq/ m3)。",
-      "answerText": "(a)\n0.2 g的 85Kr含原子數目，N= ( 0.2/85 )×6.02×1023 = 1.416×1021 原子\nλN = [0.693/(10.72×365×24×3600)]×1.416×1021\n= [0.693/(3.381×108) ]×1.416×1021 = 2.9×1012 Bq\n(b)\n比活度= 2.9×1012 Bq /(40×30×20 m3) =1.2×108 Bq/ m3 =120 MBq/ m3",
-      "isComplete": true
+      "stem": "在一密閉的倉庫 ( 40 × 30 × 20 m3 ) 中有 0.2 g的放射性85Kr ( T = 10.72 年 ) 氣體試樣，現該\n1/2\n射源突然被打破，氣體散逸到該倉庫內。試求：\n(a) 85Kr活度 (b)倉庫內的空氣比活度(MBq/ m3)。",
+      "answerText": "(a)\n0.2 g的 85Kr含原子數目，N = ( 0.2 / 85 ) × 6.02 × 1023 = 1.416 × 1021 原子\nλN = [0.693 / ( 10.72 × 365 × 24 × 3600 ) ] × 1.416 × 1021\n= [0.693 / ( 3.381 × 108 ) ] × 1.416 × 1021 = 2.9 × 1012 Bq\n(b)\n比活度 = 2.9 × 1012 Bq / ( 40 × 30 × 20 m3 ) = 1.2 × 108 Bq / m3 = 120 MBq / m3",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-109-2-professional/q3-1.webp",
+          "alt": "109-2 輻射防護員 專業 問答第 3 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-109-2-professional-essay-004",
       "kind": "essay",
       "section": "essay",
       "number": 4,
-      "stem": "有一個鉛合金，含 87% Pb、12% Sn、1% Cu，其密度= 10.4 g/cm3，若這三元素對某X\n射線的質量衰減係數(μ/ρ)分別為3.50、1.17、0.325 cm2/g，且已知三元素的密度分別為\n11.3、7.3、8.9 g/cm3，試求：\n(a)此鉛合金的質量衰減係數與直線衰減係數各為何？\n(b)將此X射線強度衰減至原來的 1/25，所需鉛合金的厚度為何？",
-      "answerText": "(a) 鉛合金μ/ρ = 3.50×0.87 + 1.17×0.12 + 0.325×0.01\n= 3.045 + 0.1404 + 0.00325\n= 3.19 cm2/g\nμ = 3.19 cm2/g × 10.4 g/cm3\n= 33.2 cm-1\n(b)1/25 = e-33.2×t\n0.04 = e-33.2×t\n雙邊取 ln:\n3.2189 = 33.2 × t\nt = 3.2189 /33.2\n= 0.097 cm",
-      "isComplete": true
+      "stem": "有一個鉛合金，含 87% Pb、12% Sn、1% Cu，其密度 = 10.4 g / cm3，若這三元素對某X\n射線的質量衰減係數 ( μ / ρ ) 分別為3.50、1.17、0.325 cm2 / g，且已知三元素的密度分別為\n11.3、7.3、8.9 g/cm3，試求：\n(a)此鉛合金的質量衰減係數與直線衰減係數各為何？\n(b)將此X射線強度衰減至原來的 1/25，所需鉛合金的厚度為何？",
+      "answerText": "解：\n(a) 鉛合金的質量衰減係數可用重量百分比加權：\nμ / ρ = 3.50 × 0.87 + 1.17 × 0.12 + 0.325 × 0.01 = 3.19 cm2 / g。\n\n因此直線衰減係數為\nμ = ( μ / ρ ) ρ = 3.19 × 10.4 = 33.2 cm^ - 1。\n\n( b ) 由衰減公式 I / I0 = e^ ( - μt ) = 1 / 25，\nt = ln ( 25 ) / 33.2 = 0.097 cm。\n\n故所需鉛合金厚度約為 0.097 cm(約 0.97 mm)。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-109-2-professional/q4-1.webp",
+          "alt": "109-2 輻射防護員 專業 問答第 4 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-109-2-professional-essay-005",
@@ -555,8 +579,14 @@ window.NM_EXAM_BANK["rpo-109-2-professional"] = {
       "section": "essay",
       "number": 5,
       "stem": "以HPGe偵檢器度量511 keV單能量的光子能譜，請問全能峰、康普吞邊緣及回散射峰\n的能量分別為何？",
-      "answerText": "全能峰 = 511 keV\n康普吞邊緣：是光子發生康普吞作用，轉交給電子最大可能的能量(發生在光子180 度\n2 2\n散射)。此電子可獲得之最大能量=h 511 341keV\n12 3\n回散射峰：511-341=170 keV",
-      "isComplete": true
+      "answerText": "全能峰 = 511 keV\n康普吞邊緣：是光子發生康普吞作用，轉交給電子最大可能的能量 ( 發生在光子180 度 2α 2\n散射 ) 。此電子可獲得之最大能量 = hν × = 511 × = 341keV 1 + 2α 3\n回散射峰：511 - 341 = 170 keV",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-109-2-professional/q5-1.webp",
+          "alt": "109-2 輻射防護員 專業 問答第 5 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-109-2-professional-essay-006",
@@ -564,8 +594,14 @@ window.NM_EXAM_BANK["rpo-109-2-professional"] = {
       "section": "essay",
       "number": 6,
       "stem": "寫出X光機的主屏蔽計算公式，並分別解釋各相關參數。",
-      "answerText": "Pd2\nX光機的主屏蔽計算公式為 K  ，各參數的意義說明如下：\nWUT\nK：距離X光靶1 公尺處每單位照射量(mA-min)的輻射劑量\nP：最大許可曝露率\nW：工作負載(workload)，一周使用X射線的總量\nU：使用因素(use factor)，X光機之有用射束朝向主屏蔽方向的工作負載分數\nT：佔用因數(occupancy factor)，人員可能停留在屏蔽牆外區域的時間分數\nd：X光管靶到主屏蔽外評估點的距離",
-      "isComplete": true
+      "answerText": "Pd2 X光機的主屏蔽計算公式為 K = ，各參數的意義說明如下：\nWUT K：距離X光靶1 公尺處每單位照射量(mA-min)的輻射劑量\nP：最大許可曝露率\nW：工作負載(workload)，一周使用X射線的總量\nU：使用因素(use factor)，X光機之有用射束朝向主屏蔽方向的工作負載分數\nT：佔用因數(occupancy factor)，人員可能停留在屏蔽牆外區域的時間分數\nd：X光管靶到主屏蔽外評估點的距離",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-109-2-professional/q6-1.webp",
+          "alt": "109-2 輻射防護員 專業 問答第 6 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-109-2-professional-essay-007",
@@ -574,7 +610,13 @@ window.NM_EXAM_BANK["rpo-109-2-professional"] = {
       "number": 7,
       "stem": "請說明氟化鋰熱發光劑量計(TLD)度量輻射劑量的原理。",
       "answerText": "氟化鋰晶體中含有雜質，當晶體吸收輻射的能量激發晶體中的原子，導致晶體內產生自\n由電子與電洞，這些自由電子與電洞被雜質或晶格缺陷所陷住，因此鎖住激發能在晶體\n中。當晶體被加熱，陷住之電子與電洞復合以光形式釋出激發能，光的總輸出正比於陷\n住的受激電子數，受激電子數又正比於自輻射所吸收的能量。經過校正後，晶體發射出\n來的光輸出可正比於接受的輻射劑量。",
-      "isComplete": true
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-109-2-professional/q7-1.webp",
+          "alt": "109-2 輻射防護員 專業 問答第 7 題原始解答截圖（第 1 張）"
+        }
+      ]
     }
   ]
 };

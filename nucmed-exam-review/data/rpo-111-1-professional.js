@@ -39,7 +39,7 @@ window.NM_EXAM_BANK["rpo-111-1-professional"] = {
         },
         {
           "key": "D",
-          "text": "吸收劑量=吸收之能量/腫瘤質量=10 J/0.5 kg = 20 J/kg = 20 Gy"
+          "text": "吸收劑量 = 吸收之能量 / 腫瘤質量 = 10 J / 0.5 kg = 20 J / kg = 20 Gy"
         }
       ],
       "answer": "D",
@@ -48,7 +48,7 @@ window.NM_EXAM_BANK["rpo-111-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(4)\n吸收劑量=吸收之能量/腫瘤質量=10 J/0.5 kg = 20 J/kg = 20 Gy",
+      "answerText": "(4)\n吸收劑量 = 吸收之能量 / 腫瘤質量 = 10 J / 0.5 kg = 20 J / kg = 20 Gy",
       "isComplete": true
     },
     {
@@ -97,7 +97,7 @@ window.NM_EXAM_BANK["rpo-111-1-professional"] = {
         },
         {
           "key": "B",
-          "text": "120/12 = 10 Gy"
+          "text": "120 / 12 = 10 Gy"
         },
         {
           "key": "C",
@@ -114,7 +114,7 @@ window.NM_EXAM_BANK["rpo-111-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\n120/12 = 10 Gy",
+      "answerText": "(2)\n120 / 12 = 10 Gy",
       "isComplete": true
     },
     {
@@ -130,7 +130,7 @@ window.NM_EXAM_BANK["rpo-111-1-professional"] = {
         },
         {
           "key": "B",
-          "text": "1decay 8100counts 0.9count 60s 30min 1min 5Bq Bq  1 5cm3 5cm3 cm3"
+          "text": "1decay 8100counts × 0.9count 60s 30min × 1min 5Bq Bq = = 15cm35cm3 cm3"
         },
         {
           "key": "C",
@@ -147,7 +147,7 @@ window.NM_EXAM_BANK["rpo-111-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\n1decay\n8100counts\n0.9count\n60s\n30min\n1min 5Bq Bq\n 1\n5cm3 5cm3 cm3",
+      "answerText": "(2)\n1decay\n8100counts ×\n0.9count\n60s\n30min ×\n1min 5Bq Bq\n= = 1\n5cm3 5cm3 cm3",
       "isComplete": true
     },
     {
@@ -188,11 +188,11 @@ window.NM_EXAM_BANK["rpo-111-1-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 6,
-      "stem": "137Cs 點射源， 其活度為10 Ci， γ能量為0.662 MeV (85%) ， 在2 公尺處1小時的能通\n量約為多少J/m2？",
+      "stem": "137Cs 點射源， 其活度為10 Ci， γ能量為0.662 MeV ( 85% ) ， 在2 公尺處1小時的能通\n量約為多少J/m2？",
       "options": [
         {
           "key": "A",
-          "text": "6.64×10-4"
+          "text": "6.64 × 10^ - 4"
         },
         {
           "key": "B",
@@ -200,11 +200,11 @@ window.NM_EXAM_BANK["rpo-111-1-professional"] = {
         },
         {
           "key": "C",
-          "text": "Atf  E  E 4r2 1010.85 Cih MeV ph/s s 1.61013J J  0.662 3.71010 3600   2.39 422 m2 m2 ph Ci h MeV"
+          "text": "Atf Ψ = φE = E 4πr210 × 1 × 0.85 Ci·h MeV ph / ss 1.6 × 10^ - 13J J = × 0.662 × 3.7 × 1010 × 3600 × = 2.394π × 22 m2 m2 ph Ci h MeV"
         },
         {
           "key": "D",
-          "text": "1.49×1013"
+          "text": "1.49 × 1013"
         }
       ],
       "answer": "C",
@@ -213,7 +213,7 @@ window.NM_EXAM_BANK["rpo-111-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(3)\nAtf\n E  E\n4r2\n\n1010.85 Cih MeV ph/s s 1.61013J J\n 0.662 3.71010 3600   2.39\n422 m2 m2\nph Ci h MeV",
+      "answerText": "(3)\nAtf\nΨ = φE = E\n4πr2\n10 × 1 × 0.85 Ci·h MeV ph / ss 1.6 × 10^ - 13J J\n= × 0.662 × 3.7 × 1010 × 3600 × = 2.39\n4π × 22 m2 m2\nph Ci h MeV",
       "isComplete": true
     },
     {
@@ -299,11 +299,11 @@ window.NM_EXAM_BANK["rpo-111-1-professional"] = {
         },
         {
           "key": "C",
-          "text": "在相同體積條件下， 對γ的能量解析度優於 NaI(Tl) 閃爍偵檢器"
+          "text": "在相同體積條件下， 對γ的能量解析度優於 NaI ( Tl ) 閃爍偵檢器"
         },
         {
           "key": "D",
-          "text": "在相同體積條件下， 對γ的偵檢效率低於NaI(Tl) 閃爍偵檢器"
+          "text": "在相同體積條件下， 對γ的偵檢效率低於NaI ( Tl ) 閃爍偵檢器"
         }
       ],
       "answer": "B",
@@ -312,7 +312,7 @@ window.NM_EXAM_BANK["rpo-111-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\n在相同體積條件下，鍺(鋰)偵檢器對相同能量光子的偵檢效率高於矽(鋰)偵檢器。\n\n6Li 與 7Li，其原子量分別為",
+      "answerText": "(2)\n在相同體積條件下，鍺(鋰)偵檢器對相同能量光子的偵檢效率高於矽(鋰)偵檢器。\n6Li 與 7Li，其原子量分別為",
       "isComplete": true
     },
     {
@@ -336,7 +336,7 @@ window.NM_EXAM_BANK["rpo-111-1-professional"] = {
         },
         {
           "key": "D",
-          "text": "設7Li 的豐度為χ， 則 6.015 (1-χ) + 7.016χ= 6.941， χ= 0.926/1.001 = 0.925 = 92.5%"
+          "text": "設7Li 的豐度為χ， 則 6.015 ( 1 - χ ) + 7.016χ = 6.941， χ = 0.926 / 1.001 = 0.925 = 92.5%"
         }
       ],
       "answer": "D",
@@ -345,7 +345,7 @@ window.NM_EXAM_BANK["rpo-111-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(4)\n設7Li 的豐度為χ，則 6.015 (1-χ) + 7.016χ= 6.941，\nχ= 0.926/1.001 = 0.925 = 92.5%",
+      "answerText": "(4)\n設7Li 的豐度為χ，則 6.015 ( 1 - χ ) + 7.016χ = 6.941，\nχ = 0.926 / 1.001 = 0.925 = 92.5%",
       "isComplete": true
     },
     {
@@ -386,7 +386,7 @@ window.NM_EXAM_BANK["rpo-111-1-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 12,
-      "stem": "已知 Cs-137 的曝露率常數(Γ) 為 3.4 Rcm2h-1mCi-1， 鉛對 Cs-137 加馬射線的直線衰減\n係數為1.12 cm-1。 若不考慮增建因子， 今有一活度為2居里的Cs-137 密封射源， 欲將\n距離射源0.6 公尺之曝露率降至0.5 Rh-1 需加多少公分的鉛？",
+      "stem": "已知 Cs - 137 的曝露率常數 ( Γ ) 為 3.4 R·cm2·h - 1·mCi - 1， 鉛對 Cs - 137 加馬射線的直線衰減\n係數為1.12 cm-1。 若不考慮增建因子， 今有一活度為2居里的Cs-137 密封射源， 欲將\n距離射源0.6 公尺之曝露率降至0.5 R·h - 1 需加多少公分的鉛？",
       "options": [
         {
           "key": "A",
@@ -394,7 +394,7 @@ window.NM_EXAM_BANK["rpo-111-1-professional"] = {
         },
         {
           "key": "B",
-          "text": "Rcm2 1 R  沒有鉛的X 3.4 2000mCi 1.89 mCih (60cm) 2 h 1 0.5 1.12 x(cm) 阻擋的比例 e cm 1.89 0.5 ln() 1.89 x  1.19cm 1.12"
+          "text": "R·cm21 Ṙ 沒有鉛的X = 3.4 ·2000mCi· = 1.89 mCi·h ( 60cm ) 2 h 10.5 - 1.12 ·x ( cm ) 阻擋的比例 = = e cm 1.890.5 ln ( ) 1.89 x = = 1.19cm - 1.12"
         },
         {
           "key": "C",
@@ -411,7 +411,7 @@ window.NM_EXAM_BANK["rpo-111-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\nRcm2 1 R\n\n沒有鉛的X 3.4 2000mCi 1.89\nmCih (60cm)2 h\n1\n0.5 1.12 x(cm)\n阻擋的比例 e cm\n1.89\n0.5\nln( )\n1.89\nx  1.19cm\n1.12",
+      "answerText": "(2)\nR·cm21 R\ṅ\n沒有鉛的X = 3.4 ·2000mCi· = 1.89\nmCi·h ( 60cm ) 2 h\n1\n0.5 - 1.12 ·x ( cm )\n阻擋的比例 = = e cm\n1.89\n0.5\nln( )\n1.89\nx = = 1.19cm\n-1.12",
       "isComplete": true
     },
     {
@@ -468,7 +468,7 @@ window.NM_EXAM_BANK["rpo-111-1-professional"] = {
         },
         {
           "key": "D",
-          "text": "1.5 Gy 0.075 J/ 0.5 kg = 1.5 J/kg = 1.5 Gy"
+          "text": "1.5 Gy 0.075 J / 0.5 kg = 1.5 J / kg = 1.5 Gy"
         }
       ],
       "answer": "D",
@@ -477,7 +477,7 @@ window.NM_EXAM_BANK["rpo-111-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(4) 1.5 Gy\n0.075 J/ 0.5 kg = 1.5 J/kg = 1.5 Gy",
+      "answerText": "(4) 1.5 Gy\n0.075 J / 0.5 kg = 1.5 J / kg = 1.5 Gy",
       "isComplete": true
     },
     {
@@ -497,7 +497,7 @@ window.NM_EXAM_BANK["rpo-111-1-professional"] = {
         },
         {
           "key": "C",
-          "text": " 0.025 10eV  0.05  10 0.025eV  99b0.054.95b 10eV"
+          "text": "σ 0.02510eV = = 0.05 σ 100.025eV ∴σ = 99b × 0.05 = 4.95b 10eV"
         },
         {
           "key": "D",
@@ -510,7 +510,7 @@ window.NM_EXAM_BANK["rpo-111-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(3)\n\n\n0.025\n10eV  0.05\n 10\n0.025eV\n 99b0.054.95b\n10eV",
+      "answerText": "(3)\nσ\n0.025\n10eV = = 0.05\nσ 10\n0.025eV\n∴σ = 99b × 0.05 = 4.95b\n10eV",
       "isComplete": true
     },
     {
@@ -519,8 +519,14 @@ window.NM_EXAM_BANK["rpo-111-1-professional"] = {
       "section": "essay",
       "number": 1,
       "stem": "一個10 keV的阿伐粒子在0.1 g的組織中沉積其所有的能量，請問：\n(1) 此組織的吸收劑量為多少Gy？ (2)等價劑量為多少Sv？",
-      "answerText": "(1)\nJ\n10 keV1.61016\nkeV\nD 1.61011 Gy\nkg\n0.1 g103\ng\n(2)\nHDW 1.61011203.21010 Sv\nR",
-      "isComplete": true
+      "answerText": "解：\n( 1 ) 10 keV = 10 × 1.6 × 10^ - 16 J = 1.6 × 10^ - 15 J。\n\n組織質量 0.1 g = 10^ - 4 kg，故吸收劑量 D = E / m\n= 1.6 × 10^ - 15 / 10^ - 4 = 1.6 × 10^ - 11 Gy。\n\n( 2 ) 阿伐粒子的輻射加權因數 wR = 20，故等價劑量 H = D × wR\n= 1.6 × 10^ - 11 × 20 = 3.2 × 10^ - 10 Sv。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-111-1-professional/q1-1.webp",
+          "alt": "111-1 輻射防護員 專業 問答第 1 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-111-1-professional-essay-002",
@@ -528,17 +534,33 @@ window.NM_EXAM_BANK["rpo-111-1-professional"] = {
       "section": "essay",
       "number": 2,
       "stem": "以碘化鈉(鉈)閃爍偵檢器測量137Cs 的能譜，請問(1)全能峰(full-energy peak)和(2)康普吞\n邊緣(Compton edge)的能量位置為多少keV？",
-      "answerText": "(1)137Cs衰變時釋出662 keV的光子，所以全能峰為662 keV。\n(2)發生康普吞作用在180度散射角度時，散射電子獲得最大的能量，此能量即為Compton\nedge。所以Compton edge等於\nh 662\nhh'h 662 478(keV)\nh 662\n1 (1cos180) 1 2\n511keV 511",
-      "isComplete": true
+      "answerText": "(1)137Cs衰變時釋出662 keV的光子，所以全能峰為662 keV。\n(2)發生康普吞作用在180度散射角度時，散射電子獲得最大的能量，此能量即為Compton\nedge。所以Compton edge等於 hν 662\nhν - hν' = hν - = 662 - = 478 ( keV ) hν 662\n1 + ( 1 - cos180° ) 1 + ·2511keV 511",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-111-1-professional/q2-1.webp",
+          "alt": "111-1 輻射防護員 專業 問答第 2 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-111-1-professional-essay-003",
       "kind": "essay",
       "section": "essay",
       "number": 3,
-      "stem": "一光子射束穿透水假體，當其厚度為3公分時，穿過之光子通量為3×1010光子/cm2，當\n其厚度為5公分時，穿過之光子通量為6×109光子/cm2，若不考慮散射及二次光子，試\n求: (1)光子在水假體內之直線衰減係數為多少？ (2)此光子在水中的平均自由路徑\n(mean free path)為多少？",
-      "answerText": "(1)\n31010  N  N e  N e3\n3\n3cm o o\n6109  N  N e  N e5\n5\n5cm o o\ne3\n二式相除得5 e2,即2 ln5\ne5\nln5\n0.805cm1\n \n2\n\n(2) 平均自由路徑= 1/= 1/0.805 = 1.24 cm",
-      "isComplete": true
+      "stem": "一光子射束穿透水假體，當其厚度為3公分時，穿過之光子通量為3 × 1010光子 / cm2，當\n其厚度為5公分時，穿過之光子通量為6 × 109光子 / cm2，若不考慮散射及二次光子，試\n求: (1)光子在水假體內之直線衰減係數為多少？ (2)此光子在水中的平均自由路徑\n(mean free path)為多少？",
+      "answerText": "解：\n( 1 ) 光子通量 obey N = N0e^ ( - μx ) 。\n\n已知在 3 cm 與 5 cm 厚度時，\n3 × 10^10 / 6 × 10^9 = e^[μ ( 5 - 3 ) ]， 即 5 = e^ ( 2μ ) 。\n\n所以μ = ln5 / 2 = 0.805 cm^ - 1。\n\n( 2 ) 平均自由路徑 λ = 1 / μ = 1 / 0.805 = 1.24 cm。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-111-1-professional/q3-1.webp",
+          "alt": "111-1 輻射防護員 專業 問答第 3 題原始解答截圖（第 1 張）"
+        },
+        {
+          "src": "./assets/radiation-answer-scans/rpo-111-1-professional/q3-2.webp",
+          "alt": "111-1 輻射防護員 專業 問答第 3 題原始解答截圖（第 2 張）"
+        }
+      ]
     },
     {
       "id": "rpo-111-1-professional-essay-004",
@@ -546,17 +568,29 @@ window.NM_EXAM_BANK["rpo-111-1-professional"] = {
       "section": "essay",
       "number": 4,
       "stem": "若電子的速度為光速的0.8倍，試問: (1)此時電子的質量為多少amu? (2)電子的動能為\n多少MeV？",
-      "answerText": "電子靜止時質量為0.00055 amu\nm m m\n(1)m 0  0  0 1.67m 1.670.00055u 0.00092amu\n0\nv2 10.82 10.64\n1\nc2\n(2)E mc2 m c2 (1.671)m c2 0.670.511MeV 0.342MeV\nK 0 0",
-      "isComplete": true
+      "answerText": "解：當 v = 0.8c 時，\nγ = 1 / √ ( 1 - v^2 / c^2 ) = 1 / √ ( 1 - 0.8^2 ) = 1 / 0.6 = 1.67。\n\n(1) 電子的相對論質量\nm = γm0 = 1.67 × 0.00055 amu = 9.2 × 10^ - 4 amu。\n\n( 2 ) 電子的動能 K = ( γ - 1 ) m0c^2\n= ( 1.67 - 1 ) × 0.511 MeV = 0.342 MeV。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-111-1-professional/q4-1.webp",
+          "alt": "111-1 輻射防護員 專業 問答第 4 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-111-1-professional-essay-005",
       "kind": "essay",
       "section": "essay",
       "number": 5,
-      "stem": "請說明(1) 射線及 (2) 粒子輻射之屏蔽考量。",
-      "answerText": "(1) 射線屏蔽物質的原子序愈大、密度愈大，屏蔽效果愈好，鉛、鐵、混凝土等是良好\n的屏蔽材料，其中鉛是屏蔽射線最常用的材料。\n(2) β 粒子之屏蔽物質及厚度，決定於：\n 屏蔽物質的原子序必須很小，以減少制動輻射的產生。且屏蔽物質的厚度必須大\n於β 粒子的最大射程，以完全阻擋β 粒子。\n 欲有效衰減所產生之制動輻射的量應使用高原子序物質屏蔽。\n故屏蔽 β 粒子時宜在內層先用較低原子序數(Z)物質以完全阻擋 β 粒子，其後再於外層\n以高原子序物質阻擋β 粒子產生之制動輻射的影響。",
-      "isComplete": true
+      "stem": "請說明 ( 1 ) γ射線及 ( 2 ) β粒子輻射之屏蔽考量。",
+      "answerText": "( 1 ) γ射線屏蔽物質的原子序愈大、密度愈大，屏蔽效果愈好，鉛、鐵、混凝土等是良好\n的屏蔽材料，其中鉛是屏蔽γ射線最常用的材料。\n( 2 ) β 粒子之屏蔽物質及厚度，決定於：\nλ 屏蔽物質的原子序必須很小，以減少制動輻射的產生。且屏蔽物質的厚度必須大\n於β 粒子的最大射程，以完全阻擋β 粒子。\nλ 欲有效衰減所產生之制動輻射的量應使用高原子序物質屏蔽。\n故屏蔽 β 粒子時宜在內層先用較低原子序數 ( Z ) 物質以完全阻擋 β 粒子，其後再於外層\n以高原子序物質阻擋β 粒子產生之制動輻射的影響。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-111-1-professional/q5-1.webp",
+          "alt": "111-1 輻射防護員 專業 問答第 5 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-111-1-professional-essay-006",
@@ -564,8 +598,14 @@ window.NM_EXAM_BANK["rpo-111-1-professional"] = {
       "section": "essay",
       "number": 6,
       "stem": "NaI的密度為3.67 g/cm3 ，對500 keV光子的質量衰減係數為0.09 cm2/g 。試問：\n(1)其直線衰減係數為多少?\n(2)此入射光子有多少百分比會在3 cm厚的NaI晶體中作用?",
-      "answerText": "(1)\n(2)",
-      "isComplete": true
+      "answerText": "解：\n( 1 ) 直線衰減係數 μ = ( μ / ρ ) ρ = 0.09 × 3.67 = 0.330 cm^ - 1。\n\n( 2 ) 3 cm 厚 NaI 中至少作用一次的比例為 1 - e^ ( - μx )\n= 1 - e^[ - ( 0.330 × 3 ) ] = 1 - e^ - 0.991 = 0.629。\n\n故約有 62.9% 的入射光子會在 3 cm 厚的 NaI 晶體中作用。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-111-1-professional/q6-1.webp",
+          "alt": "111-1 輻射防護員 專業 問答第 6 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-111-1-professional-essay-007",
@@ -573,8 +613,14 @@ window.NM_EXAM_BANK["rpo-111-1-professional"] = {
       "section": "essay",
       "number": 7,
       "stem": "某一非破壞檢測業者使用之放射性物質每週衰減2 %，則\n(1)該放射性物質的半化期與平均壽命約為多少天？\n(2)若該放射性物質的活度衰減至原來的 2% 即不符使用需求，則其自新購(活度為\n100%)起算，共可使用多少天?",
-      "answerText": "(1) A/A =e-t 當t=7天，A/A =0.98= e-7 ，即ln0.98=-7，\n0 0\n故此放射性物質之衰變常數 =2.89×10-3 (天-1)\n半化期=0.693/=0.693/(2.89×10-3 )(天)=240.1 天\n平均壽命=1/=346.5天\n(2)若活度衰減至原來的2% 的時間為T，則\nA/A =e-T， A/A =0.02= e-0.00289×T ，即ln0.02=-0.00289 T，\n0 0\n故可使用時間T=1353.6天",
-      "isComplete": true
+      "answerText": "( 1 ) A / A = e - λt 當t = 7天，A / A = 0.98 = e - 7λ ，即ln0.98 = - 7λ， 00\n故此放射性物質之衰變常數 λ = 2.89 × 10^ - 3 ( 天 - 1 )\n半化期 = 0.693 / λ = 0.693 / ( 2.89 × 10^ - 3 ) ( 天 ) = 240.1 天\n平均壽命 = 1 / λ = 346.5天\n(2)若活度衰減至原來的2% 的時間為T，則\nA / A = e - λT， A / A = 0.02 = e - 0.00289 × T ，即ln0.02 = - 0.00289 T， 00\n故可使用時間T = 1353.6天",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-111-1-professional/q7-1.webp",
+          "alt": "111-1 輻射防護員 專業 問答第 7 題原始解答截圖（第 1 張）"
+        }
+      ]
     }
   ]
 };

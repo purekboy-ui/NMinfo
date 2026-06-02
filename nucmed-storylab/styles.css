@@ -31,6 +31,7 @@
 
 .reader-inner {
   max-width: 1240px;
+  margin: 0 auto;
   padding: 38px 44px 92px;
 }
 
@@ -365,6 +366,10 @@
 .author-credit {
   color: var(--blue-deep) !important;
   font-weight: 700;
+}
+
+.workspace-grid {
+  grid-template-columns: minmax(0, 1fr);
 }
 
 @media (max-width: 1120px) {

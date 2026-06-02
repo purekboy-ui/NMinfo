@@ -34,6 +34,23 @@ const renderFigure = (figureImage, figureAlt) => figureImage
   `
   : '';
 
+const renderEssayAnswerScans = (answerImages = []) => {
+  if (!answerImages?.length) return '';
+
+  return `
+    <section class="essay-scan-group" aria-label="原始解答截圖">
+      <p class="essay-scan-label">原始解答截圖</p>
+      <div class="essay-scan-stack">
+        ${answerImages.map((image) => `
+          <figure class="answer-scan">
+            <img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt || '原始解答截圖')}" loading="lazy">
+          </figure>
+        `).join('')}
+      </div>
+    </section>
+  `;
+};
+
 const createDataScript = (src) => new Promise((resolve, reject) => {
   const existing = document.querySelector(`script[data-paper-src="${src}"]`);
   if (existing) {
@@ -193,12 +210,13 @@ const renderQuestionBlock = (question) => {
         <div class="question-meta">
           <span class="question-number">問答 ${question.number}</span>
         </div>
-        <h4>${escapeHtml(question.stem)}</h4>
+        ${question.answerImages?.length ? '' : `<h4>${escapeHtml(question.stem)}</h4>`}
         ${renderFigure(question.figureImage, question.figureAlt)}
-        <div class="essay-answer">
-          ${question.answerText
-            ? question.answerText.split('\n').map((line) => `<p>${escapeHtml(line)}</p>`).join('')
-            : '<p>目前沒有整理好的參考解答。</p>'}
+        <div class="essay-response">
+          ${renderEssayAnswerScans(question.answerImages)}
+          ${question.answerImages?.length
+            ? ''
+            : '<p class="muted-copy">目前沒有原始解答截圖。</p>'}
         </div>
       </article>
     `;
@@ -468,6 +486,9 @@ const initFromUrl = () => {
 
 const init = async () => {
   const response = await fetch(MANIFEST_URL);
+  if (!response.ok) {
+    throw new Error(`manifest 讀取失敗（${response.status}）`);
+  }
   state.manifest = await response.json();
   initFromUrl();
   await renderCurrentRoute();

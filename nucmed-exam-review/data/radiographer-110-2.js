@@ -1305,7 +1305,7 @@ window.NM_EXAM_BANK["radiographer-110-2"] = {
     {
       "id": "rg-110-2-q041",
       "number": 41,
-      "stem": "核醫藥物 99mTc-DTPA 可用於測量腎絲球過濾率(glomerular filtration rate, GFR) ， DTPA 的分子結構為下列何者？",
+      "stem": "核醫藥物 99mTc-DTPA 可用於測量腎絲球過濾率（glomerular filtration rate, GFR），DTPA 的分子結構為下列何者？",
       "options": [
         {
           "key": "A",

@@ -68,7 +68,7 @@ window.NM_EXAM_BANK["rpo-108-1-professional"] = {
         },
         {
           "key": "C",
-          "text": "[解： ] 7.307.06 0.0333.3% 7.30"
+          "text": "[解：] 7.30 - 7.06 = 0.033 = 3.3% 7.30"
         },
         {
           "key": "D",
@@ -81,7 +81,7 @@ window.NM_EXAM_BANK["rpo-108-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(3)\n[解：]\n7.307.06\n0.0333.3%\n7.30",
+      "answerText": "(3)\n[解：]\n7.30-7.06\n= 0.033 = 3.3%\n7.30",
       "isComplete": true
     },
     {
@@ -105,7 +105,7 @@ window.NM_EXAM_BANK["rpo-108-1-professional"] = {
         },
         {
           "key": "D",
-          "text": "解： 0.15 I ＝BI e-0.9 x 2.5 ＝0.1054 x BI， B＝0.15 / 0.1054＝1.42 0 0 0 3H污染， 最適當的檢測方法及設備為："
+          "text": "解： 0.15 I ＝BI e - 0.9 × 2.5 ＝0.1054 x BI， B＝0.15 / 0.1054＝1.420003H污染， 最適當的檢測方法及設備為："
         }
       ],
       "answer": "D",
@@ -114,7 +114,7 @@ window.NM_EXAM_BANK["rpo-108-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(4)\n解：0.15 I ＝BI e-0.9 x 2.5 ＝0.1054 x BI ，B＝0.15 / 0.1054＝1.42\n0 0 0\n\n3H污染，最適當的檢測方法及設備為：",
+      "answerText": "(4)\n解：0.15 I ＝BI e - 0.9 × 2.5 ＝0.1054 x BI ，B＝0.15 / 0.1054＝1.42\n0 0 0\n3H污染，最適當的檢測方法及設備為：",
       "isComplete": true
     },
     {
@@ -287,7 +287,7 @@ window.NM_EXAM_BANK["rpo-108-1-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 9,
-      "stem": "若統計測試之次數為 n， 單次測試成功之機率為 p， 則帕松(Poisson) 分佈的標準差() 計\n算公式為：",
+      "stem": "若統計測試之次數為 n， 單次測試成功之機率為 p， 則帕松 ( Poisson ) 分佈的標準差 ( σ ) 計\n算公式為：",
       "options": [
         {
           "key": "A",
@@ -390,11 +390,11 @@ window.NM_EXAM_BANK["rpo-108-1-professional"] = {
       "options": [
         {
           "key": "A",
-          "text": "質量＝ 1.293·V·(P /P) ·(T/T) 0 0"
+          "text": "質量＝ 1.293·V· ( P / P ) · ( T / T ) 00"
         },
         {
           "key": "B",
-          "text": "質量＝ 1.293·V·(P /P) ·(T /T) 0 0"
+          "text": "質量＝ 1.293·V· ( P / P ) · ( T / T ) 00"
         },
         {
           "key": "C",
@@ -402,7 +402,7 @@ window.NM_EXAM_BANK["rpo-108-1-professional"] = {
         },
         {
           "key": "D",
-          "text": "質量＝ 1.293·V·(P/P) ·(T/T) 0 0"
+          "text": "質量＝ 1.293·V· ( P / P ) · ( T / T ) 00"
         }
       ],
       "answer": "C",
@@ -452,7 +452,7 @@ window.NM_EXAM_BANK["rpo-108-1-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 14,
-      "stem": "若ㄧ空浮放射性物質， 其吸入的年攝入限度(ALI) 為 8.4105 Bq， 則其推定空氣濃度\n(DAC) 為多少Bq/m3？",
+      "stem": "若ㄧ空浮放射性物質， 其吸入的年攝入限度 ( ALI ) 為 8.4 × 105 Bq， 則其推定空氣濃度\n(DAC) 為多少Bq/m3？",
       "options": [
         {
           "key": "A",
@@ -460,7 +460,7 @@ window.NM_EXAM_BANK["rpo-108-1-professional"] = {
         },
         {
           "key": "B",
-          "text": "DAC=ALI/2400=8.4105 Bq/2400 m3=350 Bq/m3"
+          "text": "DAC = ALI / 2400 = 8.4 × 105 Bq / 2400 m3 = 350 Bq / m3"
         },
         {
           "key": "C",
@@ -477,7 +477,7 @@ window.NM_EXAM_BANK["rpo-108-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\nDAC=ALI/2400=8.4105 Bq/2400 m3=350 Bq/m3",
+      "answerText": "(2)\nDAC = ALI / 2400 = 8.4 × 105 Bq / 2400 m3 = 350 Bq / m3",
       "isComplete": true
     },
     {
@@ -485,7 +485,7 @@ window.NM_EXAM_BANK["rpo-108-1-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 15,
-      "stem": "設Χ＝ΦΕ(μ /ρ) ， 若式中Φ為光子通量， Ε為光子能量， μ /ρ為能量轉移係數， tr tr\n則Χ是指：",
+      "stem": "設Χ＝ΦΕ ( μ / ρ ) ， 若式中Φ為光子通量， Ε為光子能量， μ / ρ為能量轉移係數， tr tr\n則Χ是指：",
       "options": [
         {
           "key": "A",
@@ -520,61 +520,103 @@ window.NM_EXAM_BANK["rpo-108-1-professional"] = {
       "number": 1,
       "stem": "請說明：(1)使用Farmer 游離腔測量能量超過 3 MeV光子輻射的劑量時，為何需要有足\n夠厚的增建帽套(buildup cap)？ (2)在空氣中、水假體或固態假體中是否需要增建帽\n套？原因為何？",
       "answerText": "(1) 以 Farmer 游離腔測量能量超過 3 MeV 光子輻射的劑量時，需要有足夠厚的增建帽\n套以使游離腔的腔體內產生電子平衡，如此之測量才有意義。\n(2) 在空氣中，以 Farmer 游離腔測量高能光子輻射劑量，必須使用增建帽套，以使游離\n腔的腔體內達到電子平衡；若在水假體或固態假體中，以 Farmer 游離腔測量高能光\n子輻射劑量，則毋須使用增建帽套，因為假體材質本身就是增建帽套。",
-      "isComplete": true
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-108-1-professional/q1-1.webp",
+          "alt": "108-1 輻射防護員 專業 問答第 1 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-108-1-professional-essay-002",
       "kind": "essay",
       "section": "essay",
       "number": 2,
-      "stem": "I-131的半化期 8天，請問活度為 100 Ci 的 I-131之重量為多少公斤？",
-      "answerText": "假設 I-131 重量為W\nA=N\n\nW = 8.0310-10 g = 8.0310-13 kg",
-      "isComplete": true
+      "stem": "I - 131的半化期 8天，請問活度為 100 μCi 的 I - 131之重量為多少公斤？",
+      "answerText": "假設 I - 131 重量為WA = λN\nW = 8.03 × 10^ - 10 g = 8.03 × 10^ - 13 kg",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-108-1-professional/q2-1.webp",
+          "alt": "108-1 輻射防護員 專業 問答第 2 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-108-1-professional-essay-003",
       "kind": "essay",
       "section": "essay",
       "number": 3,
-      "stem": "一顆活度為1 Ci 的 60Co射源操作時不慎掉出其屏蔽容器，操作員在離射源 10公尺處查\n看15秒，請問該操作員在查看期間全身均勻曝露之有效劑量為何？\n2\nG y  m\n(60Co比加馬劑量常數   8 . 5 3  1 0  1 1 ，加馬加權因子 W =1)\nd R\nM B q  s",
-      "answerText": "2 4  6\nA 1 C i G y  m 3 .7  1 0 M B q 3 .1 6  1 0 G y\n劑量率為 D   s2    8 .5 3  1 0  1 1  \nr d r 2 m 2 M B q  s C i r 2 s\n3.16106 Sv\n有效劑量率為H DW \nR 102 s\n3 .1 6  1 0  6 S v\n有效劑量為 H   1 5 s  4 .7 4  1 0  7 S v\n1 0 2 s",
-      "isComplete": true
+      "stem": "一顆活度為1 Ci 的 60Co射源操作時不慎掉出其屏蔽容器，操作員在離射源 10公尺處查\n看15秒，請問該操作員在查看期間全身均勻曝露之有效劑量為何？\n2\nGy · m\n( 60Co比加馬劑量常數 Γ = 8.53 × 10^ - 11 ，加馬加權因子 W = 1 )\nd R\nMBq · s",
+      "answerText": "24 - 6 A 1 CiGy · m3.7 × 10 MBq 3.16 × 10 Gy\n劑量率為 Ḋ = s2 Γ = × 8.53 × 10^ - 11 × =\nrdr 2 m2 MBq · sCir 2 s 3.16 × 10^ - 6 Sv\n有效劑量率為H = D × W = R 102 s 3.16 × 10^ - 6 Sv\n有效劑量為 H = × 15 s = 4.74 × 10^ - 7 Sv 102 s",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-108-1-professional/q3-1.webp",
+          "alt": "108-1 輻射防護員 專業 問答第 3 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-108-1-professional-essay-004",
       "kind": "essay",
       "section": "essay",
       "number": 4,
-      "stem": "一個 105貝克長半化期阿伐射源(阿伐射線能量為 4.7 MeV) 均勻分布於 100 克的器官\n中，則此射源對該器官造成之吸收劑量率是多少 mGy /h ？",
-      "answerText": "解：[1×105 蛻變/秒 × 4.7 MeV /蛻變 × 3600 秒/時 × 1.6 × 10-13 J / MeV ] /\n0.100 kg = 2.71 × 10-3 J / kg‧h\n\n=2.71 mGy /h",
-      "isComplete": true
+      "stem": "一個 105貝克長半化期阿伐射源(阿伐射線能量為 4.7 MeV) 均勻分布於 100 克的器官\n中，則此射源對該器官造成之吸收劑量率是多少 mGy/h ？",
+      "answerText": "解：[1 × 105 蛻變 / 秒 × 4.7 MeV / 蛻變 × 3600 秒 / 時 × 1.6 × 10^ - 13 J / MeV] /\n0.100 kg = 2.71 × 10^ - 3 J / kg‧h = 2.71 mGy/h",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-108-1-professional/q4-1.webp",
+          "alt": "108-1 輻射防護員 專業 問答第 4 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-108-1-professional-essay-005",
       "kind": "essay",
       "section": "essay",
       "number": 5,
-      "stem": "若要將500 keV窄射束光子數目衰減為入射值的 1/8，需要多厚的鉛？\n(鉛的質量衰減係數為 0 . 1 5 c m 2 / g ，密度為 1 1 .4 g / c m 3 )",
-      "answerText": "N\n e   x\nN\n0\n1\n e  0 .1 5 1 1 .4 x\n8\nx  1 . 2 2 c m",
-      "isComplete": true
+      "stem": "若要將500 keV窄射束光子數目衰減為入射值的 1/8，需要多厚的鉛？\n( 鉛的質量衰減係數為 0.15 cm2 / g ，密度為 11.4 g / cm3 )",
+      "answerText": "N = e - μ xN01\n= e - 0.15 × 11.4 × 8 x = 1.22 cm",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-108-1-professional/q5-1.webp",
+          "alt": "108-1 輻射防護員 專業 問答第 5 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-108-1-professional-essay-006",
       "kind": "essay",
       "section": "essay",
       "number": 6,
-      "stem": "有一2 MBq的42K (半化期為12.4 h) 射源經過 6.2 h蛻變，請利用42K\n蛻變圖計算：\n(1)在此期間會有多少個 - 發射？ (2)釋放的所有  射線總能量為多少 MeV？",
-      "answerText": "(1)經過6.2 h 蛻變減少的活度\n經過6.2 h蛻變的原子數 =\n在此期間會有3.771010個 - 發射\n(2)釋放的所有  射線總能量 = 3.7710100.181.53 = 1.041010 MeV\n\n2 0",
-      "isComplete": true
+      "stem": "有一2 MBq的42K (半化期為12.4 h) 射源經過 6.2 h蛻變，請利用42K\n蛻變圖計算：\n( 1 ) 在此期間會有多少個 β - 發射？ ( 2 ) 釋放的所有 γ 射線總能量為多少 MeV？",
+      "answerText": "(1)經過6.2 h 蛻變減少的活度\n經過6.2 h蛻變的原子數 =\n在此期間會有3.77 × 1010個 β - 發射\n( 2 ) 釋放的所有 γ 射線總能量 = 3.77 × 1010 × 0.18 × 1.53 = 1.04 × 1010 MeV 20",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-108-1-professional/q6-1.webp",
+          "alt": "108-1 輻射防護員 專業 問答第 6 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-108-1-professional-essay-007",
       "kind": "essay",
       "section": "essay",
       "number": 7,
-      "stem": "已知某X光的頻率為 5  1 0 Hz，求其波長為多少 pm？ 能量為多少 MeV？\n( h  6 .6 2 6  1 0  3 4 J·s， c  3  1 0 8 m/s)",
-      "answerText": "解：\n3108\n 0.61012m0.6 pm\n51020\n3.31013\nE h6.626103451020 3.31013J  MeV 2.06MeV\n1.61013",
-      "isComplete": true
+      "stem": "已知某X光的頻率為 5 × 10 Hz，求其波長為多少 pm？ 能量為多少 MeV？\n( h = 6.626 × 10^ - 34 J·s， c = 3 × 108 m / s )",
+      "answerText": "解： 3 × 108\nλ = = 0.6 × 10^ - 12m = 0.6 pm 5 × 10203.3 × 10^ - 13\nE = hν = 6.626 × 10^ - 34 × 5 × 1020 = 3.3 × 10^ - 13J = MeV = 2.06MeV 1.6 × 10^ - 13",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-108-1-professional/q7-1.webp",
+          "alt": "108-1 輻射防護員 專業 問答第 7 題原始解答截圖（第 1 張）"
+        }
+      ]
     }
   ]
 };

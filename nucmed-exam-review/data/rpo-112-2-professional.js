@@ -39,7 +39,7 @@ window.NM_EXAM_BANK["rpo-112-2-professional"] = {
         },
         {
           "key": "D",
-          "text": "99% = ±2.58σ= ±2.58×50 = ±129 ∴1000±129 = 871~1129"
+          "text": "99% = ± 2.58σ = ± 2.58 × 50 = ± 129 ∴1000 ± 129 = 871~1129"
         }
       ],
       "answer": "D",
@@ -48,7 +48,7 @@ window.NM_EXAM_BANK["rpo-112-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(4)\n99% = ±2.58σ= ±2.58×50 = ±129 ∴1000±129 = 871~1129",
+      "answerText": "(4)\n99% = ± 2.58σ = ± 2.58 × 50 = ± 129 ∴1000 ± 129 = 871~1129",
       "isComplete": true
     },
     {
@@ -101,7 +101,7 @@ window.NM_EXAM_BANK["rpo-112-2-professional"] = {
         },
         {
           "key": "C",
-          "text": "樣品計數率10000/5-400/5 = 2000-80 = 1920/分鐘 樣品偏差為100000.5/5 = 20/分鐘， 背景偏差為4000.5/5 = 4/分鐘 淨計數率偏差為(202 + 42) 0.5 = (400 + 16) 0.5 = 20.4/分鐘 淨計數率與偏差為1920 ± 20.4/分鐘"
+          "text": "樣品計數率10000 / 5 - 400 / 5 = 2000 - 80 = 1920 / 分鐘 樣品偏差為100000.5 / 5 = 20 / 分鐘， 背景偏差為4000.5 / 5 = 4 / 分鐘 淨計數率偏差為 ( 202 + 42 ) 0.5 = ( 400 + 16 ) 0.5 = 20.4 / 分鐘 淨計數率與偏差為1920 ± 20.4 / 分鐘"
         },
         {
           "key": "D",
@@ -114,7 +114,7 @@ window.NM_EXAM_BANK["rpo-112-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(3)\n樣品計數率10000/5-400/5 = 2000-80 = 1920/分鐘\n樣品偏差為100000.5/5 = 20/分鐘，背景偏差為4000.5/5 = 4/分鐘\n淨計數率偏差為(202 + 42)0.5 = (400 + 16)0.5 = 20.4/分鐘\n淨計數率與偏差為1920 ± 20.4/分鐘",
+      "answerText": "(3)\n樣品計數率10000 / 5 - 400 / 5 = 2000 - 80 = 1920 / 分鐘\n樣品偏差為100000.5 / 5 = 20 / 分鐘，背景偏差為4000.5 / 5 = 4 / 分鐘\n淨計數率偏差為 ( 202 + 42 ) 0.5 = ( 400 + 16 ) 0.5 = 20.4 / 分鐘\n淨計數率與偏差為1920 ± 20.4 / 分鐘",
       "isComplete": true
     },
     {
@@ -159,19 +159,19 @@ window.NM_EXAM_BANK["rpo-112-2-professional"] = {
       "options": [
         {
           "key": "A",
-          "text": "1 1 x 0.025   ;   0.025 0.16; v E 0.35 1.0 0.160.351024 5.61026cm2 x"
+          "text": "11 × 0.025 σ∝ ∝ ; = = 0.025 = 0.16; vE 0.351.0 = 0.16 × 0.35 × 10^ - 24 = 5.6 × 10^ - 26cm2 x"
         },
         {
           "key": "B",
-          "text": "5 . 6  1 0  2 5"
+          "text": "5.6 × 10^ - 25"
         },
         {
           "key": "C",
-          "text": "5.61023"
+          "text": "5.6 × 10^ - 23"
         },
         {
           "key": "D",
-          "text": "5 . 6  1 0  2 2"
+          "text": "5.6 × 10^ - 22"
         }
       ],
       "answer": "A",
@@ -180,7 +180,7 @@ window.NM_EXAM_BANK["rpo-112-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(1)\n\n1 1 x 0.025\n  ;   0.025 0.16;\n\nv E 0.35 1.0\n0.160.351024 5.61026cm2\nx",
+      "answerText": "(1)\n11 × 0.025\nσ∝ ∝ ; = = 0.025 = 0.16;\nv E 0.35 1.0\n= 0.16 × 0.35 × 10^ - 24 = 5.6 × 10^ - 26cm2\nx",
       "isComplete": true
     },
     {
@@ -192,7 +192,7 @@ window.NM_EXAM_BANK["rpo-112-2-professional"] = {
       "options": [
         {
           "key": "A",
-          "text": "(0.1/0.5) 228e – (0.693/110) 120 = 0.524"
+          "text": "( 0.1 / 0.5 ) 2 × 28 × e - ( 0.693 / 110 ) × 120 = 0.524"
         },
         {
           "key": "B",
@@ -213,7 +213,7 @@ window.NM_EXAM_BANK["rpo-112-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(1)\n(0.1/0.5) 228e – (0.693/110)120 = 0.524",
+      "answerText": "(1)\n( 0.1 / 0.5 ) 2 × 28 × e - ( 0.693 / 110 ) × 120 = 0.524",
       "isComplete": true
     },
     {
@@ -221,7 +221,7 @@ window.NM_EXAM_BANK["rpo-112-2-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 7,
-      "stem": "232Th (原子序=90) 經過 β-衰變後， 衰變為 228Th (原子序=90) ， 則\nX 次 α 衰變與 Y 次 X\n與Y分別為：",
+      "stem": "232Th ( 原子序 = 90 ) 經過 β - 衰變後， 衰變為 228Th ( 原子序 = 90 ) ， 則\nX 次 α 衰變與 Y 次 X\n與Y分別為：",
       "options": [
         {
           "key": "A",
@@ -229,7 +229,7 @@ window.NM_EXAM_BANK["rpo-112-2-professional"] = {
         },
         {
           "key": "B",
-          "text": "1次α衰變A-4, Z-2； 2次β-衰變Z+2"
+          "text": "1次α衰變A - 4, Z - 2； 2次β - 衰變Z + 2"
         },
         {
           "key": "C",
@@ -246,7 +246,7 @@ window.NM_EXAM_BANK["rpo-112-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\n1次α衰變A-4, Z-2；2次β-衰變Z+2",
+      "answerText": "(2)\n1次α衰變A - 4, Z - 2；2次β - 衰變Z + 2",
       "isComplete": true
     },
     {
@@ -419,7 +419,7 @@ window.NM_EXAM_BANK["rpo-112-2-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 13,
-      "stem": "關於阿伐(α) 蛻變的敘述， 下列何者為真？",
+      "stem": "關於阿伐 ( α ) 蛻變的敘述， 下列何者為真？",
       "options": [
         {
           "key": "A",
@@ -452,7 +452,7 @@ window.NM_EXAM_BANK["rpo-112-2-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 14,
-      "stem": "若一個1 MeV加馬射線與另一個 0.1 MeV加馬射線， 在空氣中產生相同的游離密度， 請問1與0.1 MeV光子通量比值為多少？ ( 1 MeV的  = 0.028cm-1； 0.1 MeV的 \na a\n= 0.0233cm-1)",
+      "stem": "若一個1 MeV加馬射線與另一個 0.1 MeV加馬射線， 在空氣中產生相同的游離密度， 請問1與0.1 MeV光子通量比值為多少？ ( 1 MeV的 μ = 0.028cm - 1； 0.1 MeV的 μ\na a\n= 0.0233cm - 1 )",
       "options": [
         {
           "key": "A",
@@ -519,8 +519,18 @@ window.NM_EXAM_BANK["rpo-112-2-professional"] = {
       "section": "essay",
       "number": 1,
       "stem": "請說明：\n(1)電子平衡(electron equilibrium)\n(2)平均自由行程(mean free path)\n(3)輻射偵檢器達到電子平衡的條件",
-      "answerText": "(1)在放射物理學中，對於一次輻射(primary radiation，如光子)和一物質作用時，當離開\n物質內特定體積的二次電子數量等於進入該體積的二次電子數量時，即稱作電子平\n衡。\n(2)平均自由行程(mean free path) = 1/ ( =光子對物質的線性衰減係數)，其相當於光子\n平均在物質中行進多遠會發生一次作用的距離。\n(3)輻射偵檢器達到電子平衡的條件：偵檢器的窗口(window)壁厚< 1/ (光子的平均自由\n行程)，使光子通量保持不變；且窗口之壁厚須大於二次電子的最大射程。",
-      "isComplete": true
+      "answerText": "(1)在放射物理學中，對於一次輻射(primary radiation，如光子)和一物質作用時，當離開\n物質內特定體積的二次電子數量等於進入該體積的二次電子數量時，即稱作電子平\n衡。\n( 2 ) 平均自由行程 ( mean free path ) = 1 / μ ( μ = 光子對物質的線性衰減係數 ) ，其相當於光子\n平均在物質中行進多遠會發生一次作用的距離。\n( 3 ) 輻射偵檢器達到電子平衡的條件：偵檢器的窗口 ( window ) 壁厚< 1 / μ ( 光子的平均自由\n行程)，使光子通量保持不變；且窗口之壁厚須大於二次電子的最大射程。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-112-2-professional/q1-1.webp",
+          "alt": "112-2 輻射防護員 專業 問答第 1 題原始解答截圖（第 1 張）"
+        },
+        {
+          "src": "./assets/radiation-answer-scans/rpo-112-2-professional/q1-2.webp",
+          "alt": "112-2 輻射防護員 專業 問答第 1 題原始解答截圖（第 2 張）"
+        }
+      ]
     },
     {
       "id": "rpo-112-2-professional-essay-002",
@@ -529,7 +539,13 @@ window.NM_EXAM_BANK["rpo-112-2-professional"] = {
       "number": 2,
       "stem": "一個自由氣體游離腔受曝露量得電流為 A，腔室的敏感體積為 4 cm3，溫壓各\n為10 °C 和755毫米汞柱，請問：\n(參考溫度為0 °C，參考壓力為 1 atm， )\n(1) 溫壓校正因子\n(2) 曝露率(C/kg s)",
       "answerText": "(1)\n(2)",
-      "isComplete": true
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-112-2-professional/q2-1.webp",
+          "alt": "112-2 輻射防護員 專業 問答第 2 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-112-2-professional-essay-003",
@@ -537,8 +553,14 @@ window.NM_EXAM_BANK["rpo-112-2-professional"] = {
       "section": "essay",
       "number": 3,
       "stem": "有一準直良好含有 104個光子的射束，每個光子能量為 15 MeV，打在 20 cm 厚的\n碳塊上。請問在碳塊 5 cm 深度後之 1 mm 碳層的散射光子能量和制動輻射能量各\n為多少 MeV？(光子與碳的作用係數如下表；碳的密度為 2.25 g/cm3)",
-      "answerText": "一個光子能量轉移 = 15×(0.00186/0.00253) = 11.03 MeV\n一個光子能量吸收 = 15×(0.00183/0.00253) = 10.85MeV\n散射光子 = 42.8 × (15-11.03) MeV = 169.9 MeV\n制動輻射 = 42.8 × (11.03-10.85) MeV = 7.7 MeV",
-      "isComplete": true
+      "answerText": "一個光子能量轉移 = 15 × ( 0.00186 / 0.00253 ) = 11.03 MeV\n一個光子能量吸收 = 15 × ( 0.00183 / 0.00253 ) = 10.85MeV\n散射光子 = 42.8 × ( 15 - 11.03 ) MeV = 169.9 MeV\n制動輻射 = 42.8 × ( 11.03 - 10.85 ) MeV = 7.7 MeV",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-112-2-professional/q3-1.webp",
+          "alt": "112-2 輻射防護員 專業 問答第 3 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-112-2-professional-essay-004",
@@ -547,7 +569,13 @@ window.NM_EXAM_BANK["rpo-112-2-professional"] = {
       "number": 4,
       "stem": "請說明蓋革計數器無感時間(dead time)的產生原因。",
       "answerText": "蓋革計數器在獲取一個計數之後，因正電荷陽離子移向陰極的速度較緩慢，在短時間內\n陽離子仍圍繞在陽極周圍附近，陽極的電場強度因而減弱，使接續而來的另一個游離肇\n發崩洩(avalanche)成為不可能。必須等陽離子移向陰極，電場強度增加達到足以造成另\n一個崩洩開始，這段時間稱為無感時間。",
-      "isComplete": true
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-112-2-professional/q4-1.webp",
+          "alt": "112-2 輻射防護員 專業 問答第 4 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-112-2-professional-essay-005",
@@ -556,25 +584,47 @@ window.NM_EXAM_BANK["rpo-112-2-professional"] = {
       "number": 5,
       "stem": "請說明何謂X射線的射質(quality)與 X射線的量(quantity)。",
       "answerText": "X射線的射質指的是 X 射線的穿透力、X光的能量(kVp)。\nX射線的量指的是X 光的數量或強度、曝露。",
-      "isComplete": true
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-112-2-professional/q5-1.webp",
+          "alt": "112-2 輻射防護員 專業 問答第 5 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-112-2-professional-essay-006",
       "kind": "essay",
       "section": "essay",
       "number": 6,
-      "stem": "(1)假設忽略增建因數的效應，請推導光子的直線衰減係數()、半值層(HVL)與什一值\n層(TVL)三者之間的關係。\n(2)假設銫-137衰變放出之加馬射線在鉛中的質量衰減係數為 0.12 cm2 g-1，若使用2 cm\n鉛來屏蔽銫-137射源，大約有多少比例(%)的銫-137加馬射線會被阻擋下來？(鉛密度為\n11.4 g/cm3)",
-      "answerText": "(1)\n(2)\n = (/) = 0.12 (cm2/g) × 11.4 (g/cm3) = 1.368 (1/cm)\nHVL = 0.693/ = 1/1.368 = 0.5 cm",
-      "isComplete": true
+      "stem": "( 1 ) 假設忽略增建因數的效應，請推導光子的直線衰減係數 ( μ ) 、半值層 ( HVL ) 與什一值\n層(TVL)三者之間的關係。\n(2)假設銫-137衰變放出之加馬射線在鉛中的質量衰減係數為 0.12 cm2 g-1，若使用2 cm\n鉛來屏蔽銫-137射源，大約有多少比例(%)的銫-137加馬射線會被阻擋下來？(鉛密度為\n11.4 g/cm3)",
+      "answerText": "(1)\n(2)\nμ = ( μ / ρ ) × ρ = 0.12 ( cm2 / g ) × 11.4 ( g / cm3 ) = 1.368 ( 1 / cm )\nHVL = 0.693 / μ = 1 / 1.368 = 0.5 cm",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-112-2-professional/q6-1.webp",
+          "alt": "112-2 輻射防護員 專業 問答第 6 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-112-2-professional-essay-007",
       "kind": "essay",
       "section": "essay",
       "number": 7,
-      "stem": "有1公克的23Na放在原子爐中活化成24Na，若原子爐裡的中子通量率為6×1012 n/cm2-s，\n請計算：( 24Na半化期為 15小時，活化截面為 0.93邦)\n(1)照射1 天後24Na的活度為多少Ci？\n(2)承上，有多少比率的鈉原子會被活化？",
-      "answerText": "(1) 照射1天後的活度\n\n(2)",
-      "isComplete": true
+      "stem": "有1公克的23Na放在原子爐中活化成24Na，若原子爐裡的中子通量率為6 × 1012 n / cm2 - s，\n請計算：( 24Na半化期為 15小時，活化截面為 0.93邦)\n(1)照射1 天後24Na的活度為多少Ci？\n(2)承上，有多少比率的鈉原子會被活化？",
+      "answerText": "(1) 照射1天後的活度\n(2)",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-112-2-professional/q7-1.webp",
+          "alt": "112-2 輻射防護員 專業 問答第 7 題原始解答截圖（第 1 張）"
+        },
+        {
+          "src": "./assets/radiation-answer-scans/rpo-112-2-professional/q7-2.webp",
+          "alt": "112-2 輻射防護員 專業 問答第 7 題原始解答截圖（第 2 張）"
+        }
+      ]
     }
   ]
 };

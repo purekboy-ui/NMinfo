@@ -1,0 +1,78 @@
+114 
+
+114 
+
+
+
+ 6309   1 
+
+___________
+
+ 
+
+1.82Rb-RbCl  A.82Rb  B.82Rb  C.82Rb  D.82Rb 
+2. A. O16 p,  B. N14 p,  C. N15 p, n D. O18 p, n
+3.131I-NaI  A.ion exchange B.active transport C.phagocytosis D.capillary blockage
+4. Y 90  90Sr  90Sr/90Y generator A. B. C. D.
+5. A.18F-NaF B.18F-FDG
+
+C.13N-NH3 D.82Rb-RbCl 6. A.18F-NaF  89Sr-SrCl2  B.18F-NaF  C.18F-NaF  F 18  D. 99mTc-MDP 18F-NaF  7. A.62Cu  62Zn  B.68Ga  68Ge  C.82Rb  82Sr  D.90Sr  Y90  8.antibody analog A.111In-Capromab Pendetide B.99mTc-MAA C.90Y-Zevalin D.111In-ibritumomab tiuxetan 9. PET  A.123I B.124I C.125I D.131I 10.Parkinson's disease A.99mTc-TRODAT-1 B.18F-fluorodopa C.18F-fluciclovine D.123I-ioflupane123I-FP-CIT 11. A.99Mo-99mTc B.62Zn-62Cu
+
+C.81Rb-81mKr D.82Sr-82Rb 12. A.99mTc-tetrofosmin B.123I-MIBG C.111In-pentetreotide D.131I-tositumomab 13. 99mTc-DTPA aerosol  A. 133Xe  B. 50100 m C.3050 psi D. 14.
+ A.18F-FDG B.201Tl-TlCl C.99mTc-sestamibi D.99mTc-PYP 15.SPECT 17 
+mid inferior apical anterior basal anterolateral basal anteroseptal basal inferoseptal A. B. C. D. 16.ECG-gated  A. B.LVEF C.volume D.wall motion 17. 201Tl-TlCl  99mTc-sestamibi 
+
+A.201Tl-TlCl  6080 keV99mTc-sestamibi  140 keV B.201Tl-TlCl  73 99mTc-sestamibi  6  C.201Tl-TlCl generator99mTc cyclotron D.201Tl-TlCl  99mTc-sestamibi  18.Parkinson's disease A.99mTc-TRODAT-1 SPECT dopamine transporter, DAT B.99mTc-ECD SPECT  C.123I-beta-CIT SPECT  D.striatum 19.artifact A.LBBBseptal wall
+(anteroseptal wall B.inferior wall C.lateral wallfixed defect D.filtered back projection
+ 20.
+A.99mTc-sestamibi  B.201Tl-TlCl  C.99mTc-PYP  D.18F-FDG  21. A.18F-FDG B.99mTc-HMPAO C.99mTc-DTPA D.99mTc-florbetaben 22. PET  A. 18F-FDG  B.18F-FDG proliferative rate C.CT  18F-FDG 
+
+D.meningioma18F-FDG  23.Alzheimer's disease
+A.parietal cortex B.temporal cortex C.striatum D.posterior cingulate cortex 24.prone
+ A. B. C. D. 25. 99mTc-MDP  18F-NaF  A.hydroxyapatite B.99mTc-MDP  18F-NaF  18F-NaF  C.99mTc-MDP 20 mCi18F-NaF 10 mCi D.99mTc-MDP 3 18F-NaF 1  26. 18F-FDG PET
+A. B. C. D. 3060  27. 123I-NaI  A.57 
+
+B.424  C.25  D.72  28. A. B. C. D. 29. 99mTc-MDP  99mTcfree Tc
+ A. B. C. D. 30. A. B. C. D. 31. 18F-FDG PET SUV A.body mass B.serum glucose level C.body temperature D.uptake period 32. A. B. C. D. 33.99mTc-MDP 
+
+A. B. C. D. 34. 18F-FDG  A.Hodgkin's lymphoma B. B large B cell lymphoma C.extranodal marginal zone lymphoma D.T T cell lymphoma 35.pheochromocytoma A.131I-NP-59 B.68Ga-DOTATAE C.131I-MIBG D.18F-fluorodopa 36.99mTc-DMSA  A.glomerulus B.proximal tubule C.loop of Henle D.distal tubule 37.parathyroid scintigraphydual time A.99mTc-sestamibi B.123I-NaI C.201T1-TlCl D.99mTc-pertechnetate 38.renogram
+
+A. 2  1  B. 1 GFR C. 2  D. 3 elimination rate 39. A.struma ovarii  B.Graves disease C.toxic nodular goiter D.Hashitoxicosis 40.thyroid scintigraphy
+
+A.Graves disease B.toxic nodular goiter C.Hashitoxicosis D.subacute thyroiditis 41.131I-NaI 
+A.Graves disease B. C.toxic nodular goiter
+
+D.intra-thoracic goiter 42. 99mTc-MAG3mercaptoacetyltriglycinedynamic renography
+A. 20 mCi B. 100 99mTc-MAG3 tubular secretion C.split function D.ERPF 43. 1500  131I- A counts  1500 
+ B counts C counts D counts 24   A.(A-B)/(C-D)�100 B.(B-C)/(A-D)�0.918�100 C.(B-A)/(C-D)�0.918�100 D.(A-D)/(B-C)�0.918�100 44. 99mTc 99mTc-DMSA  A. 20 mCi  B. C. D. 45. 111In-WBC18 
+A. B.
+
+C. D.Crohn's disease 46.red blood cell survival A. B. C. D. 47. Schilling test A.angiotensin B.gastrin C. B12cyanocobalamin D.aldosterone 48.AIDS A. B. 67Ga-Citrate  C.111In-WBC  D.Kaposi's 201Tl-TlCl  49. modified power exponential fitting function  A 
+
+A.ascending phase B.lag phase C.filling phase D.delay phase 50. A.99mTc-pertechnetate B.67Ga-citrate C.123I-NaI D.99mTc-MDP 51. 67Ga 
+A.cellulitis B.abscesses C.peritonitis D.gastrointestinal stromal tumor 52. C 14 14C urea breath test A. B.14C  C.
+
+D. 53. 99mTc-DISIDA 
+A.Kupffer cells B.hepatic sinusoidal endothelial cells C.hepatocytes D.hepatic stellate cells 54. A.99mTc-sulfur colloid  B.99mTc-sulfur colloid  C.99mTc-DTPA  D.99mTc-DTPA  55.IRMA
+ A. B. C. D. 56. A.polymerase chain reaction, PCR B.capillary electrophoresis, CE C. Dot Blot  ELISA  D.density gradient centrifugation 57.Immunoradiometric assayIRMA"hook effect" A. B."hook effect" C. D. 58.multi-well
+ A.
+
+B. C. D.t- 59. A.iodogen B.urea C.ammonium phosphate D.stannous chloride 60. A.223Ra B.177Lu C.131I D.90Y 61.medical internal radiation dose, MIRD S value absorbed
+fraction organ mass mean energy of the particle radioactivity effective half-life A. B. C. D. 62.203Hg  8cumulated activity 1.65�
+107 Bqday 92 1.903�108 Bqday Skidney kidney 8.1�10-4 rad/Ci�hSkidneybody 6.1�10-6 rad/Ci�h dose commitment Gy A.6.32�10-2 B.7.45�10-2 C.8.70�10-2 D.9.48�10-2 63.mSv/MBq A. B. C.
+
+D. 64.peptide receptor radionuclide therapy
+A. B. C. D. 65. I 131 lesion-based dosimetry A. I 131  B. I 131 effective half-life C. I 131 whole-body planar scintigraphy D. I 131  I 124  66. A. B. C. D. 67.bone seeking radiopharmaceutical, BSR
+dose-limiting organ A. B. C. D. 68.uniformity A. B. C. D. 69.
+
+A. B. C. D. 70. 3.9 mm 8.7 mm
+ A.5.8 mm B.6.3 mm C.9.5 mm D.12.6 mm 71. A.septa B. C. D. 72. A.
+
+B. C. D. 73. A.15O B.11C C.13N D.82Rb 74. A. B.
+C. D. 75. SPECT  PET  A.SPECT  NaITl B.SPECT  C.PET  D.PET + 76.ITLC 99mTc-MDP  ITLC-SG 
+(1) 3,500 cpm(2) 38,000 cpm  A.8.4 B.91.6 C.9.2 D.90.8 77. 5,000 Bq  S 35  25  S 35  167 keV   48.7 keV35S  87.51 35S  623  dose commitment Gy? A.1.25�10-2 B.1.50�10-2
+
+C.1.75�10-2 D.2.00�10-2 78. PET  A.18F-FDG B.82Rb-RbCl C.15O-H2O D.13N-NH3 79. 226Ra 
+A. B. C.+ D.+ 80.+ A. B. C. D.
+
+

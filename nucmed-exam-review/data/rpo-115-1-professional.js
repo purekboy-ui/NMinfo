@@ -11,7 +11,7 @@ window.NM_EXAM_BANK["rpo-115-1-professional"] = {
   "subjectName": "游離輻射防護專業",
   "paperType": "paper",
   "subjectCode": "professional",
-  "questionCount": 23,
+  "questionCount": 22,
   "testableQuestionCount": 15,
   "invalidQuestionCount": 0,
   "source": {
@@ -60,7 +60,7 @@ window.NM_EXAM_BANK["rpo-115-1-professional"] = {
       "options": [
         {
           "key": "A",
-          "text": "E = (6.62  10-34)  (3  108) / (5  10-7) = 3.972  10-19 J = 2.48 eV"
+          "text": "E = ( 6.62 × 10^ - 34 ) × ( 3 × 108 ) / ( 5 × 10^ - 7 ) = 3.972 × 10^ - 19 J = 2.48 eV"
         },
         {
           "key": "B",
@@ -81,7 +81,7 @@ window.NM_EXAM_BANK["rpo-115-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(1)\nE = (6.62  10-34)  (3  108) / (5  10-7) = 3.972  10-19 J = 2.48 eV",
+      "answerText": "(1)\nE = ( 6.62 × 10^ - 34 ) × ( 3 × 108 ) / ( 5 × 10^ - 7 ) = 3.972 × 10^ - 19 J = 2.48 eV",
       "isComplete": true
     },
     {
@@ -122,7 +122,7 @@ window.NM_EXAM_BANK["rpo-115-1-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 4,
-      "stem": "若某人的甲狀腺(WT = 0.05) 和乳腺(WT = 0.05) 分別接受 X 光 2 mGy 及 3 mGy 的吸收劑 量， 其餘器官沒有受到曝露， 則此人共接受多少有效劑量？",
+      "stem": "若某人的甲狀腺 ( WT = 0.05 ) 和乳腺 ( WT = 0.05 ) 分別接受 X 光 2 mGy 及 3 mGy 的吸收劑\n量， 其餘器官沒有受到曝露， 則此人共接受多少有效劑量？",
       "options": [
         {
           "key": "A",
@@ -130,7 +130,7 @@ window.NM_EXAM_BANK["rpo-115-1-professional"] = {
         },
         {
           "key": "B",
-          "text": "210.05 + 310.05 =0.25 (mSv)"
+          "text": "2 × 1 × 0.05 + 3 × 1 × 0.05 = 0.25 ( mSv )"
         },
         {
           "key": "C",
@@ -147,7 +147,7 @@ window.NM_EXAM_BANK["rpo-115-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2) 210.05 + 310.05 =0.25 (mSv)",
+      "answerText": "( 2 ) 2 × 1 × 0.05 + 3 × 1 × 0.05 = 0.25 ( mSv )",
       "isComplete": true
     },
     {
@@ -221,23 +221,23 @@ window.NM_EXAM_BANK["rpo-115-1-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 7,
-      "stem": "一標準射源其輻射發射率為每分鐘 1000  30， 使用一計數系統度量的計數率為每分鐘 200  10， 若背景計數可忽略不計測， 此計測系統的效率及其標準差為？",
+      "stem": "一標準射源其輻射發射率為每分鐘 1000 ± 30， 使用一計數系統度量的計數率為每分鐘\n200 ± 10， 若背景計數可忽略不計測， 此計測系統的效率及其標準差為？",
       "options": [
         {
           "key": "A",
-          "text": "0.2  0.008"
+          "text": "0.2 ± 0.008"
         },
         {
           "key": "B",
-          "text": "計測系統的效率 e=200/1000=0.2 系統效率之標準差e=0.2 0.012"
+          "text": "計測系統的效率 e = 200 / 1000 = 0.2 系統效率之標準差σe = 0.20.012"
         },
         {
           "key": "C",
-          "text": "0.2  0.028"
+          "text": "0.2 ± 0.028"
         },
         {
           "key": "D",
-          "text": "0.2  0.056"
+          "text": "0.2 ± 0.056"
         }
       ],
       "answer": "B",
@@ -246,7 +246,7 @@ window.NM_EXAM_BANK["rpo-115-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\n\n計測系統的效率 e=200/1000=0.2\n\n系統效率之標準差e=0.2\n\n0.012",
+      "answerText": "(2)\n計測系統的效率 e = 200 / 1000 = 0.2\n系統效率之標準差σe = 0.2\n0.012",
       "isComplete": true
     },
     {
@@ -254,7 +254,7 @@ window.NM_EXAM_BANK["rpo-115-1-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 8,
-      "stem": "有一單能光子射入水中， 經過 1 公分有 0.693%衰減， 請計算此光子在水中之平均 自由行程(mean free path) 為多少公尺？",
+      "stem": "有一單能光子射入水中， 經過 1 公分有 0.693%衰減， 請計算此光子在水中之平均\n自由行程(mean free path) 為多少公尺？",
       "options": [
         {
           "key": "A",
@@ -287,7 +287,7 @@ window.NM_EXAM_BANK["rpo-115-1-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 9,
-      "stem": "若有二束能量分別為 2 MeV 與 0.04 MeV 的加馬輻射在空氣中產生相同的吸收劑量， 試 問 2 MeV 對 0.04 MeV 加馬輻射的通量比值？ [ 2 MeV 的( ab /) air=0.0235 cm2/g； 0.04 MeV 的( ab /) air=0.0625 cm2/g) ]",
+      "stem": "若有二束能量分別為 2 MeV 與 0.04 MeV 的加馬輻射在空氣中產生相同的吸收劑量， 試\n問 2 MeV 對 0.04 MeV 加馬輻射的通量比值？ [2 MeV 的 ( μab / ρ ) air = 0.0235 cm2 / g； 0.04 MeV 的 ( μab / ρ ) air = 0.0625 cm2 / g ) ]",
       "options": [
         {
           "key": "A",
@@ -312,7 +312,7 @@ window.NM_EXAM_BANK["rpo-115-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\n\n二束加馬輻射吸收劑量相等\n\n故二束加馬射線的通量比值",
+      "answerText": "(2)\n二束加馬輻射吸收劑量相等\n故二束加馬射線的通量比值",
       "isComplete": true
     },
     {
@@ -411,7 +411,7 @@ window.NM_EXAM_BANK["rpo-115-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(3) OER = 4 / 2 = 2",
+      "answerText": "( 3 ) OER = 4 / 2 = 2",
       "isComplete": true
     },
     {
@@ -452,7 +452,7 @@ window.NM_EXAM_BANK["rpo-115-1-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 14,
-      "stem": "當半化期為 103 年的母核種與半化期為 10-2 年的子核種達長期平衡時， 試問母核種與 子核種的原子數量比值為何？",
+      "stem": "當半化期為 103 年的母核種與半化期為 10-2 年的子核種達長期平衡時， 試問母核種與\n子核種的原子數量比值為何？",
       "options": [
         {
           "key": "A",
@@ -468,7 +468,7 @@ window.NM_EXAM_BANK["rpo-115-1-professional"] = {
         },
         {
           "key": "D",
-          "text": "解:λ1 N1 =λ2 N2， N1 / N2 =λ2 /λ1 = ( 0.693/T1/2) 2 / ( 0.693/T1/2) 1 = (T1/2) 1 /(T1/2) 2 = 103 年/ 10-2 年 = 105"
+          "text": "解:λ1 N1 = λ2 N2， N1 / N2 = λ2 / λ1 = ( 0.693 / T1 / 2 ) 2 / ( 0.693 / T1 / 2 ) 1 = ( T1 / 2 ) 1 / ( T1 / 2 ) 2 = 103 年 / 10 - 2 年 = 105"
         }
       ],
       "answer": "D",
@@ -477,7 +477,7 @@ window.NM_EXAM_BANK["rpo-115-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(4)\n解:λ1 N1 =λ2 N2 ，N1 / N2 =λ2 /λ1 = ( 0.693/T1/2 )2 / ( 0.693/T1/2 )1 = (T1/2 )1 /(T1/2 )2\n= 103 年/ 10-2 年 = 105",
+      "answerText": "(4)\n解:λ1 N1 = λ2 N2 ，N1 / N2 = λ2 / λ1 = ( 0.693 / T1 / 2 ) 2 / ( 0.693 / T1 / 2 ) 1 = ( T1 / 2 ) 1 / ( T1 / 2 ) 2\n= 103 年 / 10 - 2 年 = 105",
       "isComplete": true
     },
     {
@@ -485,11 +485,11 @@ window.NM_EXAM_BANK["rpo-115-1-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 15,
-      "stem": "若在某一組細胞之輻射照射實驗中， 可用函數 N/N0 = e-3D 來描述細胞的存活率， 其中\nN0 為零劑量時的細胞數， N 為照射劑量為 D (單位為 Gy) 時之平均存活細胞數， 則對此\n組細胞而言， 其半致死劑量 LD50 為多少 Gy？",
+      "stem": "若在某一組細胞之輻射照射實驗中， 可用函數 N / N0 = e - 3D 來描述細胞的存活率， 其中\nN0 為零劑量時的細胞數， N 為照射劑量為 D (單位為 Gy) 時之平均存活細胞數， 則對此\n組細胞而言， 其半致死劑量 LD50 為多少 Gy？",
       "options": [
         {
           "key": "A",
-          "text": "0.5=e-3LD50  LD50=(ln0.5) /(-3) =0.231 Gy"
+          "text": "0.5 = e - 3 × LD50 ⇒ LD50 = ( ln0.5 ) / ( - 3 ) = 0.231 Gy"
         },
         {
           "key": "B",
@@ -510,7 +510,7 @@ window.NM_EXAM_BANK["rpo-115-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(1)\n0.5=e-3LD50  LD50=(ln0.5)/(-3)=0.231 Gy",
+      "answerText": "(1)\n0.5 = e - 3 × LD50 ⇒ LD50 = ( ln0.5 ) / ( - 3 ) = 0.231 Gy",
       "isComplete": true
     },
     {
@@ -518,72 +518,105 @@ window.NM_EXAM_BANK["rpo-115-1-professional"] = {
       "kind": "essay",
       "section": "essay",
       "number": 1,
-      "stem": "一光子進行康普吞散射，若入射光子的能量為 0.662 MeV，而散射光子的能量為 0.527\n\nMeV，此光子的散射角度 θ 為幾度？",
+      "stem": "一光子進行康普吞散射，若入射光子的能量為 0.662 MeV，而散射光子的能量為 0.527\nMeV，此光子的散射角度 θ 為幾度？",
       "answerText": ",",
-      "isComplete": true
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-115-1-professional/q1-1.webp",
+          "alt": "115-1 輻射防護員 專業 問答第 1 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-115-1-professional-essay-002",
       "kind": "essay",
       "section": "essay",
       "number": 2,
-      "stem": "一個放射性樣品測量兩分鐘得到 1000 個計數，背景測量十分鐘得到 500 個計數，試問\n\n(1)淨計數率為多少 cpm？(5%)\n(2)標準差為多少？(5%)",
+      "stem": "一個放射性樣品測量兩分鐘得到 1000 個計數，背景測量十分鐘得到 500 個計數，試問\n(1)淨計數率為多少 cpm？(5%)\n(2)標準差為多少？(5%)",
       "answerText": "",
-      "isComplete": false
+      "isComplete": false,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-115-1-professional/q2-1.webp",
+          "alt": "115-1 輻射防護員 專業 問答第 2 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-115-1-professional-essay-003",
       "kind": "essay",
       "section": "essay",
       "number": 3,
-      "stem": "X 光照射條件為 50 mAs，產生的入射皮膚劑量為 2.4 mGy。若增加至 60 mAs 時(其他\n\n條件不變)，則入射皮膚劑量為多少 mGy？",
-      "answerText": "答: 皮膚劑量增加為 2.9 mGy\n\nX / 60 mAs =2.4 mGy /50 mAs\n\nX=2.4 mGy x 60 mAs /50 mAs\n\nX=2.9 mGy",
-      "isComplete": true
+      "stem": "X 光照射條件為 50 mAs，產生的入射皮膚劑量為 2.4 mGy。若增加至 60 mAs 時(其他\n條件不變)，則入射皮膚劑量為多少 mGy？",
+      "answerText": "答: 皮膚劑量增加為 2.9 mGy\nX / 60 mAs = 2.4 mGy / 50 mAs\nX = 2.4 mGy x 60 mAs / 50 mAs X = 2.9 mGy",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-115-1-professional/q3-1.webp",
+          "alt": "115-1 輻射防護員 專業 問答第 3 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-115-1-professional-essay-004",
       "kind": "essay",
       "section": "essay",
       "number": 4,
-      "stem": "簡述下列輻射之屏蔽考量 (1) 粒子 (5%) (2)光子 (5%)",
-      "answerText": "(1) 粒子穿透力雖較 α 強，但射程仍屬短，只會在人體淺部組織(皮膚、水晶體)造成劑\n量，確定效應比機率效應重要。β 粒子之屏蔽物質及厚度，決定於：\n\n• 屏蔽物質的原子序必須很小，以減少制動輻射的產生。且屏蔽物質的厚度必須大\n\n於 β 粒子的最大射程，以完全阻擋 β 粒子。\n\n• 高原子序物質可有效衰減所產生之制動輻射的量。\n故屏蔽 β 粒子時宜先用較低原子序數物質以完全阻擋 β 粒子，其後再接高原子序數\n物質，以有效阻擋 β 粒子及其產生之制動輻射的影響。\n\n(2)光子穿透力很強，衰減光子以電子密度較高的物質為佳，屏蔽物質的原子序愈大、\n密度愈大，屏蔽效果愈好(鉛、鐵、混凝土等是良好的屏蔽材料)。",
-      "isComplete": true
+      "stem": "簡述下列輻射之屏蔽考量 ( 1 ) β粒子 ( 5% ) ( 2 ) 光子 ( 5% )",
+      "answerText": "( 1 ) β粒子穿透力雖較 α 強，但射程仍屬短，只會在人體淺部組織 ( 皮膚、水晶體 ) 造成劑\n量，確定效應比機率效應重要。β 粒子之屏蔽物質及厚度，決定於：\n• 屏蔽物質的原子序必須很小，以減少制動輻射的產生。且屏蔽物質的厚度必須大\n於 β 粒子的最大射程，以完全阻擋 β 粒子。\n• 高原子序物質可有效衰減所產生之制動輻射的量。\n故屏蔽 β 粒子時宜先用較低原子序數物質以完全阻擋 β 粒子，其後再接高原子序數\n物質，以有效阻擋 β 粒子及其產生之制動輻射的影響。\n(2)光子穿透力很強，衰減光子以電子密度較高的物質為佳，屏蔽物質的原子序愈大、\n密度愈大，屏蔽效果愈好(鉛、鐵、混凝土等是良好的屏蔽材料)。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-115-1-professional/q4-1.webp",
+          "alt": "115-1 輻射防護員 專業 問答第 4 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-115-1-professional-essay-005",
       "kind": "essay",
       "section": "essay",
       "number": 5,
-      "stem": "某一 X 光管以高頻管電壓 120 kVp、管電流 100 mA 產生 X 光。X 光管產生之電子撞擊\n\n鎢靶後，有 0.5 %的電子動能轉換成 X 光，若照射時間為 50 ms，試問：\n(1) X 光的總能量為多少焦耳(J)？ (4%)\n(2)若該 X 光能使 1 g 的空氣每分鐘游離 5×10-8 C，則曝露率為每小時多少 C∕ kg？ (3%)\n(3)若空氣之 W 值為 34 eV/ip，則該 X 光在空氣所造成之吸收劑量率為多少 Gy/h？ (3%)",
-      "answerText": "(1) 電子的總電量 Q = it = 0.1 (A)0.05 (s) = 510-3 (C);\n\n電子的總動能 W = QV = 510-3 (C)120103 (V) = 600 (J)\nX 光的總能量 EX = W0.5 % = 6000.5 % = 3 (J)\n\n(2)\n\n(3)\n\n3 10-3 (C∕ kg‧ h)\n\n= 3 10-3 (C∕ kg‧ hr)34 J/C = 0.102 (Gy/h)",
-      "isComplete": true
+      "stem": "某一 X 光管以高頻管電壓 120 kVp、管電流 100 mA 產生 X 光。X 光管產生之電子撞擊\n鎢靶後，有 0.5 %的電子動能轉換成 X 光，若照射時間為 50 ms，試問：\n(1) X 光的總能量為多少焦耳(J)？ (4%)\n( 2 ) 若該 X 光能使 1 g 的空氣每分鐘游離 5 × 10^ - 8 C，則曝露率為每小時多少 C∕ kg？ ( 3% )\n(3)若空氣之 W 值為 34 eV/ip，則該 X 光在空氣所造成之吸收劑量率為多少 Gy/h？ (3%)",
+      "answerText": "( 1 ) 電子的總電量 Q = i × t = 0.1 ( A ) × 0.05 ( s ) = 5 × 10^ - 3 ( C ) ;\n電子的總動能 W = Q × V = 5 × 10^ - 3 ( C ) × 120 × 103 ( V ) = 600 ( J )\nX 光的總能量 EX = W × 0.5 % = 600 × 0.5 % = 3 ( J )\n(2)\n( 3 ) 3 × 10^ - 3 ( C∕ kg‧ h )\n= 3 × 10^ - 3 ( C∕ kg‧ hr ) × 34 J / C = 0.102 ( Gy / h )",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-115-1-professional/q5-1.webp",
+          "alt": "115-1 輻射防護員 專業 問答第 5 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-115-1-professional-essay-006",
       "kind": "essay",
       "section": "essay",
       "number": 6,
-      "stem": "一束 1.25 MeV 的加馬射線入射於水中，已知質能轉移係數為 0.032 cm²/g，質量衰減\n\n係數為 0.06 cm²/g，\n(1)計算該光子在水中的平均自由行程(mean free path,λ) (5%)\n(2)計算能量轉移比例(energy transfer fraction) (5%)",
-      "answerText": "(1)\n\n(2)",
-      "isComplete": true
+      "stem": "一束 1.25 MeV 的加馬射線入射於水中，已知質能轉移係數為 0.032 cm²/g，質量衰減\n係數為 0.06 cm²/g，\n( 1 ) 計算該光子在水中的平均自由行程 ( mean free path,λ ) ( 5% )\n(2)計算能量轉移比例(energy transfer fraction) (5%)",
+      "answerText": "解：\n( 1 ) 水的質量衰減係數為 0.06 cm2 / g，取水密度 ρ ≈ 1 g / cm3，則直線衰減係數\nμ = ( μ / ρ ) ρ = 0.06 cm^ - 1。\n\n平均自由行程λ = 1 / μ = 1 / 0.06 = 16.7 cm。\n\n( 2 ) 能量轉移比例可寫為 ftr = μtr / μ = 0.032 / 0.06 = 0.533。\n\n故能量轉移比例約為 53.3%。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-115-1-professional/q6-1.webp",
+          "alt": "115-1 輻射防護員 專業 問答第 6 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-115-1-professional-essay-007",
       "kind": "essay",
       "section": "essay",
       "number": 7,
-      "stem": "(1)請簡述何謂阻擋本領(stopping power) (5%)\n\n(2)某高能電子(大於 3 MeV)，在鋁(Z=13)中輻射阻擋本領與碰撞阻擋本領之比為 0.13，\n此電子在鉛(Z=82)中輻射阻擋本領與碰撞阻擋本領之比應為多少？(5%)",
-      "answerText": "1.帶電粒子行經每單位路徑長度的能量損失期望值",
-      "isComplete": true
-    },
-    {
-      "id": "rpo-115-1-professional-essay-002",
-      "kind": "essay",
-      "section": "essay",
-      "number": 2,
-      "stem": "0.13/13×82=0.82",
-      "answerText": "",
-      "isComplete": false
+      "stem": "(1)請簡述何謂阻擋本領(stopping power) (5%)\n( 2 ) 某高能電子 ( 大於 3 MeV ) ，在鋁 ( Z = 13 ) 中輻射阻擋本領與碰撞阻擋本領之比為 0.13，\n此電子在鉛 ( Z = 82 ) 中輻射阻擋本領與碰撞阻擋本領之比應為多少？ ( 5% )",
+      "answerText": "1.帶電粒子行經每單位路徑長度的能量損失期望值\n2.0.13 / 13 × 82 = 0.82",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-115-1-professional/q7-1.webp",
+          "alt": "115-1 輻射防護員 專業 問答第 7 題原始解答截圖（第 1 張）"
+        }
+      ]
     }
   ]
 };

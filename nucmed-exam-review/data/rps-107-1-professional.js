@@ -27,19 +27,19 @@ window.NM_EXAM_BANK["rps-107-1-professional"] = {
       "options": [
         {
           "key": "A",
-          "text": "質量 = 1.293·V·( Po/P) / (To/T)"
+          "text": "質量 = 1.293·V· ( Po / P ) / ( To / T )"
         },
         {
           "key": "B",
-          "text": "質量 = 1.293·V·( P/Po) / (T/To)"
+          "text": "質量 = 1.293·V· ( P / Po ) / ( T / To )"
         },
         {
           "key": "C",
-          "text": "質量 = 1.293·V·( Po/P) / (T/To)"
+          "text": "質量 = 1.293·V· ( Po / P ) / ( T / To )"
         },
         {
           "key": "D",
-          "text": "質量 = 1.293·V·( P/Po) / (To/T)"
+          "text": "質量 = 1.293·V· ( P / Po ) / ( To / T )"
         }
       ],
       "answer": "B",
@@ -64,7 +64,7 @@ window.NM_EXAM_BANK["rps-107-1-professional"] = {
         },
         {
           "key": "B",
-          "text": "解: 6 天= (8 ×X) / (8 +X) ， 8 X = 48 +6 X， 2 X = 48 天， X = 24天"
+          "text": "解: 6 天 = ( 8 × X ) / ( 8 + X ) ， 8 X = 48 + 6 X， 2 X = 48 天， X = 24天"
         },
         {
           "key": "C",
@@ -81,7 +81,7 @@ window.NM_EXAM_BANK["rps-107-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\n解: 6 天= (8 ×X) / (8 +X) ，8 X = 48 +6 X ，2 X = 48 天，X = 24天",
+      "answerText": "(2)\n解: 6 天 = ( 8 × X ) / ( 8 + X ) ，8 X = 48 + 6 X ，2 X = 48 天，X = 24天",
       "isComplete": true
     },
     {
@@ -97,7 +97,7 @@ window.NM_EXAM_BANK["rps-107-1-professional"] = {
         },
         {
           "key": "B",
-          "text": "解: S/S = 0.01 = e -41/D， 兩邊取ln， 4.6= 41/D， D = 8.9 Gy 0 0 0 0"
+          "text": "解: S / S = 0.01 = e - 41 / D， 兩邊取ln， 4.6 = 41 / D， D = 8.9 Gy 0000"
         },
         {
           "key": "C",
@@ -114,7 +114,7 @@ window.NM_EXAM_BANK["rps-107-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\n解: S/S = 0.01 = e -41/D ， 兩邊取ln， 4.6= 41/D ，D = 8.9 Gy\n0 0 0 0",
+      "answerText": "(2)\n解: S / S = 0.01 = e - 41 / D ， 兩邊取ln， 4.6 = 41 / D ，D = 8.9 Gy\n0 0 0 0",
       "isComplete": true
     },
     {
@@ -180,7 +180,7 @@ window.NM_EXAM_BANK["rps-107-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(4)\n\n1",
+      "answerText": "(4)\n1",
       "isComplete": true
     },
     {
@@ -353,11 +353,11 @@ window.NM_EXAM_BANK["rps-107-1-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 11,
-      "stem": "90Sr 半化期=28.78年， 90Y 半化期=64.1小時， 當 1 g 90Sr 與90Y達平衡時， 有多少克\n90Y 產生？",
+      "stem": "90Sr 半化期 = 28.78年， 90Y 半化期 = 64.1小時， 當 1 g 90Sr 與90Y達平衡時， 有多少克\n90Y 產生？",
       "options": [
         {
           "key": "A",
-          "text": "解: λ N = λ N， λ /λ = N /N， 64.1 hr/(28.78×365×24 hr) = X(g) /1g Sr Sr Y Y Sr Y Y Sr × 10-4 g X = 2.54 2"
+          "text": "解: λ N = λ N， λ / λ = N / N， 64.1 hr / ( 28.78 × 365 × 24 hr ) = X ( g ) / 1g Sr Sr YY Sr YY Sr × 10^ - 4 gX = 2.542"
         },
         {
           "key": "B",
@@ -365,11 +365,11 @@ window.NM_EXAM_BANK["rps-107-1-professional"] = {
         },
         {
           "key": "C",
-          "text": "1.78×10-4"
+          "text": "1.78 × 10^ - 4"
         },
         {
           "key": "D",
-          "text": "2.13×10-4"
+          "text": "2.13 × 10^ - 4"
         }
       ],
       "answer": "A",
@@ -378,7 +378,7 @@ window.NM_EXAM_BANK["rps-107-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(1)\n解: λ N = λ N ，λ /λ = N /N ，64.1 hr/(28.78×365×24 hr) = X(g)/1g\nSr Sr Y Y Sr Y Y Sr\n× 10-4 g\nX = 2.54\n2",
+      "answerText": "(1)\n解: λ N = λ N ，λ / λ = N / N ，64.1 hr / ( 28.78 × 365 × 24 hr ) = X ( g ) / 1g\nSr Sr Y Y Sr Y Y Sr\n× 10^ - 4 g\nX = 2.54\n2",
       "isComplete": true
     },
     {
@@ -398,7 +398,7 @@ window.NM_EXAM_BANK["rps-107-1-professional"] = {
         },
         {
           "key": "C",
-          "text": "[解:] 鈷-60， HVL = ln2/μ = 1.2公分， μ=0.5776 cm-1， 密度為11.35 g‧cm-3， μ/ρ=0.0509 cm2g-1 ;混凝土 μ = 0.0509×2.35 = 0.1196 cm-1， HVL= ln2/0.1196 = 5.80 cm"
+          "text": "[解:] 鈷 - 60， HVL = ln2 / μ = 1.2公分， μ = 0.5776 cm - 1， 密度為11.35 g‧cm - 3， μ / ρ = 0.0509 cm2g - 1 ;混凝土 μ = 0.0509 × 2.35 = 0.1196 cm - 1， HVL = ln2 / 0.1196 = 5.80 cm"
         },
         {
           "key": "D",
@@ -411,7 +411,7 @@ window.NM_EXAM_BANK["rps-107-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(3)\n[解:]\n鈷-60，HVL = ln2/μ = 1.2公分，μ=0.5776 cm-1，密度為11.35 g‧cm-3，\nμ/ρ=0.0509 cm2g-1 ;混凝土 μ = 0.0509×2.35 = 0.1196 cm-1，\nHVL= ln2/0.1196 = 5.80 cm",
+      "answerText": "(3)\n[解:]\n鈷 - 60，HVL = ln2 / μ = 1.2公分，μ = 0.5776 cm - 1，密度為11.35 g‧cm - 3，\nμ / ρ = 0.0509 cm2g - 1 ;混凝土 μ = 0.0509 × 2.35 = 0.1196 cm - 1，\nHVL = ln2 / 0.1196 = 5.80 cm",
       "isComplete": true
     },
     {
@@ -518,18 +518,30 @@ window.NM_EXAM_BANK["rps-107-1-professional"] = {
       "kind": "essay",
       "section": "essay",
       "number": 1,
-      "stem": "一間胸腔檢查專用X 光攝影室，操作時X光管的管電壓的125 kVp，工作負荷為 289\nmAmin/wk。已知主射束對應牆面外為一走廊，走廊離 X光管最近距離為 3.8 m，使用\n因數(U)=1，走廊的佔用因數(T)=1/4，欲使走廊之劑量率為0.01 R/wk，則主要輻射防護\n的屏蔽鉛當量厚度(mm)須為多厚？",
-      "answerText": "Ans：P=0.01 R/wk\nR\n2\n0 .0 1  ( 3 . 8 m )\nP d 2 R  m 2\nK   w k  0 .0 0 2\nW U T m A m 1 m A s\n2 8 9  1 \nw k 4\n對應圖形，須使用鉛厚度 1.4 mm。\n\n4",
-      "isComplete": true
+      "stem": "一間胸腔檢查專用X 光攝影室，操作時X光管的管電壓的125 kVp，工作負荷為 289\nmA·min / wk。已知主射束對應牆面外為一走廊，走廊離 X光管最近距離為 3.8 m，使用\n因數 ( U ) = 1，走廊的佔用因數 ( T ) = 1 / 4，欲使走廊之劑量率為0.01 R / wk，則主要輻射防護\n的屏蔽鉛當量厚度(mm)須為多厚？",
+      "answerText": "Ans：P = 0.01 R / wkR2\n0.01 · ( 3.8 m ) Pd 2 R · m2 K = = wk = 0.002\nW U T m A m 1 m A s\n289 · 1 · wk 4\n對應圖形，須使用鉛厚度 1.4 mm。\n4",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-107-1-professional/q1-1.webp",
+          "alt": "107-1 輻射防護師 專業 問答第 1 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rps-107-1-professional-essay-002",
       "kind": "essay",
       "section": "essay",
       "number": 2,
-      "stem": "已知標準狀態下空氣的密度()為0.001293 g/cm3，W 值為33.85 eV/ip。若在空氣溫度28\n137Cs\n℃、氣壓668 mmHg條件下，以0.6 cc的游離腔(ionization chamber)測量 的加馬\n射線曝露，在空氣中電量的讀數為1.6 nC，則此游離腔測量的曝露(R)為何？",
-      "answerText": "1.6109C 3876R\n曝露=  10.03R\ng 668 273 1kg C\n0.6cm30.001293    1\ncm3 760 27328 1000g kg",
-      "isComplete": true
+      "stem": "已知標準狀態下空氣的密度 ( ρ ) 為0.001293 g / cm3，W 值為33.85 eV / ip。若在空氣溫度28\n137Cs\n℃、氣壓668 mmHg條件下，以0.6 cc的游離腔(ionization chamber)測量 的加馬\n射線曝露，在空氣中電量的讀數為1.6 nC，則此游離腔測量的曝露(R)為何？",
+      "answerText": "1.6 × 10^ - 9C 3876R\n曝露 = × = 10.03R g 6682731kg C\n0.6cm3·0.001293 · · · 1\ncm3 760 273+28 1000g kg",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-107-1-professional/q2-1.webp",
+          "alt": "107-1 輻射防護師 專業 問答第 2 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rps-107-1-professional-essay-003",
@@ -538,16 +550,28 @@ window.NM_EXAM_BANK["rps-107-1-professional"] = {
       "number": 3,
       "stem": "關於輻射的生物效應，試述確定效應(deterministic effect)與機率效應(stochastic effect)的\n性質，並分別舉例說明之。",
       "answerText": "確定效應是指生物受到輻射照射後，若輻射劑量超過某一閾值(threshold)，生物效應一\n定會發生，且效應的嚴重程度隨輻射劑量增加而增加。若輻射劑量沒超過此閾值\n(threshold)，則如皮膚紅斑及白內障等生物效應一定不會發生。\n機率效應的發生沒有閾值。機率效應是指生物受到輻射照射後，導致發生機率隨輻射劑\n量增加而增加，但如癌症與遺傳效應的嚴重程度與輻射劑量大小無關。",
-      "isComplete": true
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-107-1-professional/q3-1.webp",
+          "alt": "107-1 輻射防護師 專業 問答第 3 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rps-107-1-professional-essay-004",
       "kind": "essay",
       "section": "essay",
       "number": 4,
-      "stem": "二種同位素A和B，其質量數分別為 A A 和A B ，且A A =4A B ；其半化期分別為 T A 和T B ，\n且T =0.5 T ，若二者比活度(specific activity)為S 和S ，請問S 是 S 的幾倍？\nA B A B A B",
-      "answerText": "1620 226\n\nS T A T A T A 1\nA  A A  B B  B B \n1620 226\nS T A 0.5T 4A 2\nB  A A B B\nT A\nB B\n所以S =0.5 S\nA B",
-      "isComplete": true
+      "stem": "二種同位素A和B，其質量數分別為 AA 和AB ，且AA = 4A B ；其半化期分別為 TA 和TB ，\n且T = 0.5 T ，若二者比活度 ( specific activity ) 為S 和S ，請問S 是 S 的幾倍？\nA B A B A B",
+      "answerText": "1620226 · STAT ·AT ·A 1\nA = AA = BB = BB = 1620226 ST ·A 0.5T ·4A 2 B · AABBTAB B\n所以S = 0.5 SAB",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-107-1-professional/q4-1.webp",
+          "alt": "107-1 輻射防護師 專業 問答第 4 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rps-107-1-professional-essay-005",
@@ -555,8 +579,14 @@ window.NM_EXAM_BANK["rps-107-1-professional"] = {
       "section": "essay",
       "number": 5,
       "stem": "NaI(Tl) (密度為 3.67 g / cm3 ) 對 500 keV 的光子質量衰減係數為 0.090 cm2 / g。\n試求垂直入射的窄射束光子在 4 cm 厚晶體中發生作用的百分比(%)。",
-      "answerText": "解: 1 – I/I = 1 – e-μ·4\n0\nμ = 0.090 cm2 / g × 3.67 g / cm3 = 0.3303 cm-1\n∴1 – I/I = 1 – e-μ·4 = 1 - e-0.3303 x 4 = 1 -0.2668 = 0.733 = 73.3 %\n0\n5",
-      "isComplete": true
+      "answerText": "解：1 – I / I = 1 – e - μ·40\nμ = 0.090 cm2 / g × 3.67 g / cm3 = 0.3303 cm - 1\n∴1 – I / I = 1 – e - μ·4 = 1 - e - 0.3303 × 4 = 1 - 0.2668 = 0.733 = 73.3 %05",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-107-1-professional/q5-1.webp",
+          "alt": "107-1 輻射防護師 專業 問答第 5 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rps-107-1-professional-essay-006",
@@ -564,8 +594,14 @@ window.NM_EXAM_BANK["rps-107-1-professional"] = {
       "section": "essay",
       "number": 6,
       "stem": "能量2 MeV中子與氘核(2H)相碰撞，為使中子能量降至\n1 eV，試粗略估計需要碰撞多少\n次？",
-      "answerText": "解: 中子每次碰撞，散射中子所剩能量 E = E (M-m /M+m )2 = E (2-1/2+1)2\nn 0 0\n= 1/9 E\n0\n(1/9)n x2 MeV = 1x10-6 MeV，(1/9)n = 1x10-6 MeV/2 MeV=5x10-7 ，\nn log (1/9) = log(5x10-7 )， n= (-7+0.7)/(-0.954)= 6.6\n約7次碰撞",
-      "isComplete": true
+      "answerText": "解：中子每次碰撞，散射中子所剩能量 E = E ( M - m / M + m ) 2 = E ( 2 - 1 / 2 + 1 ) 2 n 00 = 1 / 9 E0\n( 1 / 9 ) n x2 MeV = 1 × 10^ - 6 MeV， ( 1 / 9 ) n = 1 × 10^ - 6 MeV / 2 MeV = 5 × 10^ - 7 ，\nn log ( 1 / 9 ) = log ( 5 × 10^ - 7 ) ， n = ( - 7 + 0.7 ) / ( - 0.954 ) = 6.6約7次碰撞",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-107-1-professional/q6-1.webp",
+          "alt": "107-1 輻射防護師 專業 問答第 6 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rps-107-1-professional-essay-007",
@@ -573,8 +609,14 @@ window.NM_EXAM_BANK["rps-107-1-professional"] = {
       "section": "essay",
       "number": 7,
       "stem": "一20 MeV的光子射線與物質作用產生回散射 ( backscatter，180°) 時，試計算此回散射\n光子的能量約為多少 MeV？",
-      "answerText": "解: E 散射 = E 入射 / { 1+[ E(1-cosθ)/0.511]\n∵θ=180 度， cosθ= -1，\nE = 20 /[ (0.511+2×20)/0.511]\n散射\n= 0.511×20/ (0.511+2×20)\n\n= 0.252 MeV\n\n6",
-      "isComplete": true
+      "answerText": "解：E 散射 = E 入射 / {1 + [E ( 1 - cosθ ) / 0.511]\n∵θ = 180 度， cosθ = - 1，\nE = 20 / [ ( 0.511 + 2 × 20 ) / 0.511]散射\n= 0.511 × 20 / ( 0.511 + 2 × 20 ) = 0.252 MeV6",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-107-1-professional/q7-1.webp",
+          "alt": "107-1 輻射防護師 專業 問答第 7 題原始解答截圖（第 1 張）"
+        }
+      ]
     }
   ]
 };

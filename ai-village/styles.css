@@ -726,6 +726,140 @@ a {
   margin-top: 10px;
 }
 
+.reader-nav-shell {
+  display: contents;
+}
+
+.reader-fab-stack {
+  position: fixed;
+  right: 22px;
+  bottom: 26px;
+  z-index: 1400;
+  display: grid;
+  gap: 10px;
+}
+
+.reader-fab {
+  min-width: 60px;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid rgba(22, 32, 29, 0.16);
+  border-radius: 999px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 247, 231, 0.96)),
+    rgba(255, 250, 243, 0.94);
+  color: var(--blue-deep);
+  font-weight: 900;
+  box-shadow: 0 18px 34px rgba(22, 32, 29, 0.14);
+  backdrop-filter: blur(12px);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease;
+}
+
+.reader-fab:hover,
+.reader-fab:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 22px 40px rgba(22, 32, 29, 0.18);
+}
+
+.reader-fab--top {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.reader-nav-shell.can-scroll-top .reader-fab--top {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.reader-drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1390;
+  background: rgba(16, 47, 59, 0.22);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.reader-rail-drawer {
+  position: fixed;
+  right: 22px;
+  bottom: 132px;
+  z-index: 1391;
+  display: grid;
+  gap: 12px;
+  width: min(330px, calc(100vw - 32px));
+  max-height: min(68vh, 560px);
+  padding: 16px 14px 14px;
+  border: 1px solid rgba(22, 32, 29, 0.14);
+  border-radius: 22px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 247, 231, 0.97)),
+    rgba(255, 250, 243, 0.95);
+  box-shadow: 0 24px 44px rgba(22, 32, 29, 0.18);
+  backdrop-filter: blur(14px);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(14px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.reader-nav-shell.is-drawer-open .reader-drawer-backdrop,
+.reader-nav-shell.is-drawer-open .reader-rail-drawer {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.reader-nav-shell.is-drawer-open .reader-rail-drawer {
+  transform: translateY(0);
+}
+
+.reader-toc-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.reader-drawer-close {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 250, 243, 0.86);
+  color: var(--blue-deep);
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.reader-toc-list {
+  display: grid;
+  gap: 6px;
+  overflow: auto;
+  padding-right: 2px;
+}
+
+.reader-toc-link {
+  width: 100%;
+  padding: 10px 12px;
+  border: 0;
+  border-left: 3px solid transparent;
+  border-radius: 14px;
+  background: transparent;
+  color: var(--ink-soft, var(--muted));
+  text-align: left;
+  cursor: pointer;
+  line-height: 1.55;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.reader-toc-link:hover,
+.reader-toc-link.is-active {
+  color: var(--blue-deep);
+  background: rgba(196, 102, 61, 0.08);
+  border-color: var(--clay);
+}
+
 .source-links a {
   color: var(--blue-deep);
   font-weight: 700;
@@ -891,6 +1025,17 @@ a {
     max-width: none;
     padding: 84px 22px 48px;
     overflow-wrap: anywhere;
+  }
+
+  .reader-fab-stack {
+    right: 16px;
+    bottom: 18px;
+  }
+
+  .reader-rail-drawer {
+    right: 16px;
+    bottom: 122px;
+    width: min(340px, calc(100vw - 24px));
   }
 
   .page-header,

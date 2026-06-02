@@ -23,23 +23,23 @@ window.NM_EXAM_BANK["rpo-107-2-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 1,
-      "stem": "如果一個元素的K、L、M 層中電子的結合能(binding energy) 分別為 69 keV、12 keV、\n及 2.8 keV， 則 K 特性 X 射線的光子頻率為多少 Hz？ (蒲朗克常數 h = 4.14 ×10-21\nβ\nMeV．s)",
+      "stem": "如果一個元素的K、L、M 層中電子的結合能(binding energy) 分別為 69 keV、12 keV、\n及 2.8 keV， 則 K 特性 X 射線的光子頻率為多少 Hz？ ( 蒲朗克常數 h = 4.14 × 10^ - 21\nβ\nMeV．s)",
       "options": [
         {
           "key": "A",
-          "text": "1.38×1019"
+          "text": "1.38 × 1019"
         },
         {
           "key": "B",
-          "text": "E =69−2.8=66.2 keV=0.0662 MeV ν=0.0662/(4.14×10−21) =1.60×1019Hz"
+          "text": "E = 69−2.8 = 66.2 keV = 0.0662 MeV ν = 0.0662 / ( 4.14 × 10−21 ) = 1.60 × 1019Hz"
         },
         {
           "key": "C",
-          "text": "2.22×1018"
+          "text": "2.22 × 1018"
         },
         {
           "key": "D",
-          "text": "1.31×1018"
+          "text": "1.31 × 1018"
         }
       ],
       "answer": "B",
@@ -48,7 +48,7 @@ window.NM_EXAM_BANK["rpo-107-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\nE =69−2.8=66.2 keV=0.0662 MeV\n\nν=0.0662/(4.14×10−21)=1.60×1019Hz",
+      "answerText": "(2)\nE = 69−2.8 = 66.2 keV = 0.0662 MeV\nν = 0.0662 / ( 4.14 × 10−21 ) = 1.60 × 1019Hz",
       "isComplete": true
     },
     {
@@ -64,7 +64,7 @@ window.NM_EXAM_BANK["rpo-107-2-professional"] = {
         },
         {
           "key": "B",
-          "text": "N1/2 / N = 0.02 ==> N = 2500"
+          "text": "N1 / 2 / N = 0.02 = = > N = 2500"
         },
         {
           "key": "C",
@@ -81,7 +81,7 @@ window.NM_EXAM_BANK["rpo-107-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\nN1/2 / N = 0.02 ==> N = 2500",
+      "answerText": "(2)\nN1 / 2 / N = 0.02 = = > N = 2500",
       "isComplete": true
     },
     {
@@ -167,7 +167,7 @@ window.NM_EXAM_BANK["rpo-107-2-professional"] = {
         },
         {
           "key": "C",
-          "text": "dE 0.005J ×1= 0.25Sv H = D×W = ×W = T R dm R 0.02kg"
+          "text": "dE 0.005J × 1 = 0.25Sv H = D × W = × W = TR dm R 0.02kg"
         },
         {
           "key": "D",
@@ -180,7 +180,7 @@ window.NM_EXAM_BANK["rpo-107-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(3)\ndE 0.005J\n×1= 0.25Sv\nH = D×W = ×W =\nT R dm R 0.02kg",
+      "answerText": "(3)\ndE 0.005J\n× 1 = 0.25Sv\nH = D × W = × W =\nT R dm R 0.02kg",
       "isComplete": true
     },
     {
@@ -258,7 +258,7 @@ window.NM_EXAM_BANK["rpo-107-2-professional"] = {
       "options": [
         {
           "key": "A",
-          "text": "樣品活度A =1800/2 =900cpm、背景活度A = 200/8= 25cpm。 計數時間最佳化 s b t A 900 1 s = s = = 6， 且t +t =10， →t + t =10， 樣品量測時間 s b s s t A 25 6 b b 6×10 t = =8.6min。 s 7"
+          "text": "樣品活度A = 1800 / 2 = 900cpm、背景活度A = 200 / 8 = 25cpm。 計數時間最佳化 sbtA 9001 s = s = = 6， 且t + t = 10， →t + t = 10， 樣品量測時間 sbsstA 256 bb 6 × 10 t = = 8.6min。 s 7"
         },
         {
           "key": "B",
@@ -279,7 +279,7 @@ window.NM_EXAM_BANK["rpo-107-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(1)\n樣品活度A =1800/2 =900cpm、背景活度A = 200/8= 25cpm。計數時間最佳化\ns b\nt A 900 1\ns = s = = 6，且t +t =10，→t + t =10，樣品量測時間\ns b s s\nt A 25 6\nb b\n6×10\nt = =8.6min。\ns 7",
+      "answerText": "(1)\n樣品活度A = 1800 / 2 = 900cpm、背景活度A = 200 / 8 = 25cpm。計數時間最佳化\ns b\nt A 900 1\ns = s = = 6，且t + t = 10，→t + t = 10，樣品量測時間\ns b s s\nt A 25 6\nb b\n6 × 10\nt = = 8.6min。\ns 7",
       "isComplete": true
     },
     {
@@ -291,11 +291,11 @@ window.NM_EXAM_BANK["rpo-107-2-professional"] = {
       "options": [
         {
           "key": "A",
-          "text": "RBE = D /Dx， Dx 是指250 kVp 標準X 射線產生生物效應的劑量， D為待測輻射產 生相同生物效應的劑量"
+          "text": "RBE = D / Dx， Dx 是指250 kVp 標準X 射線產生生物效應的劑量， D為待測輻射產 生相同生物效應的劑量"
         },
         {
           "key": "B",
-          "text": "10 MeV質子(LET = 4 keV/µm) 的RBE 大於Co-60 (LET = 0.3 keV/µm) 的RBE"
+          "text": "10 MeV質子 ( LET = 4 keV / µm ) 的RBE 大於Co - 60 ( LET = 0.3 keV / µm ) 的RBE"
         },
         {
           "key": "C",
@@ -336,7 +336,7 @@ window.NM_EXAM_BANK["rpo-107-2-professional"] = {
         },
         {
           "key": "D",
-          "text": "12400/4800 = 2.58 eV /光子， 2.58 eV /光子x 41000光子/ 2.1x106 eV = 0.0504 = 5.04%"
+          "text": "12400 / 4800 = 2.58 eV / 光子， 2.58 eV / 光子x 41000光子 / 2.1 × 106 eV = 0.0504 = 5.04%"
         }
       ],
       "answer": "D",
@@ -345,7 +345,7 @@ window.NM_EXAM_BANK["rpo-107-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(4)\n12400/4800 = 2.58 eV /光子， 2.58 eV /光子x 41000光子/ 2.1x106 eV\n= 0.0504 = 5.04%",
+      "answerText": "(4)\n12400 / 4800 = 2.58 eV / 光子， 2.58 eV / 光子x 41000光子 / 2.1 × 106 eV\n= 0.0504 = 5.04%",
       "isComplete": true
     },
     {
@@ -353,7 +353,7 @@ window.NM_EXAM_BANK["rpo-107-2-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 11,
-      "stem": "假設15 MeV之X射線在氫中的質量衰減係數(μ/ρ) 為0.0253 cm2 /g， 在氧中的\nμ/ρ為0.0185 cm2 /g， 則此X射線在水中(H O) 的μ/ρ為多少 cm2 /g？ 2",
+      "stem": "假設15 MeV之X射線在氫中的質量衰減係數 ( μ / ρ ) 為0.0253 cm2 / g， 在氧中的\nμ / ρ為0.0185 cm2 / g， 則此X射線在水中 ( HO ) 的μ / ρ為多少 cm2 / g？ 2",
       "options": [
         {
           "key": "A",
@@ -394,15 +394,15 @@ window.NM_EXAM_BANK["rpo-107-2-professional"] = {
         },
         {
           "key": "B",
-          "text": "J 0.0317(cm2/g) 34 × ×32.6×10−6(C/kg) =1.22×10−3Gy =0.122cGy C 0.0288(cm2/g)"
+          "text": "J 0.0317 ( cm2 / g ) 34 × × 32.6 × 10−6 ( C / kg ) = 1.22 × 10−3Gy = 0.122cGy C 0.0288 ( cm2 / g )"
         },
         {
           "key": "C",
-          "text": "1.22×10−3"
+          "text": "1.22 × 10−3"
         },
         {
           "key": "D",
-          "text": "1.22×10−5"
+          "text": "1.22 × 10−5"
         }
       ],
       "answer": "B",
@@ -411,7 +411,7 @@ window.NM_EXAM_BANK["rpo-107-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\nJ 0.0317(cm2/g)\n34 × ×32.6×10−6(C/kg)=1.22×10−3Gy =0.122cGy\nC 0.0288(cm2/g)",
+      "answerText": "(2)\nJ 0.0317(cm2/g)\n34 × × 32.6 × 10−6 ( C / kg ) = 1.22 × 10−3Gy = 0.122cGy\nC 0.0288(cm2/g)",
       "isComplete": true
     },
     {
@@ -501,7 +501,7 @@ window.NM_EXAM_BANK["rpo-107-2-professional"] = {
         },
         {
           "key": "D",
-          "text": "511keV 511keV 180°散射光子的能量hν'= = =170keV 1+α(1−cos180°) 511 1+ (1+1) 511 電子的最大動能=511-170=341(keV)"
+          "text": "511keV 511keV 180°散射光子的能量hν' = = = 170keV 1 + α ( 1−cos180° ) 5111 + ( 1 + 1 ) 511 電子的最大動能 = 511 - 170 = 341 ( keV )"
         }
       ],
       "answer": "D",
@@ -510,7 +510,7 @@ window.NM_EXAM_BANK["rpo-107-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(4)\n511keV 511keV\n180°散射光子的能量hν'= = =170keV\n1+α(1−cos180°) 511\n1+ (1+1)\n511\n電子的最大動能=511-170=341(keV)",
+      "answerText": "(4)\n511keV 511keV\n180°散射光子的能量hν' = = = 170keV\n1 + α ( 1−cos180° ) 511\n1+ (1+1)\n511\n電子的最大動能 = 511 - 170 = 341 ( keV )",
       "isComplete": true
     },
     {
@@ -519,8 +519,14 @@ window.NM_EXAM_BANK["rpo-107-2-professional"] = {
       "section": "essay",
       "number": 1,
       "stem": "活度為10 mCi 的32P 質量為多少? ( 32P 的半化期為14.3天)",
-      "answerText": "A=λN\n0.693 x\n10×10−3×3.7×1010 = ×6.02×1023×\n14.3×24×60×60 32\nx=3.7×108/(1.055×1016)=3.5×10−8 g\n\n6.7×109 Sv/Bq，依已",
-      "isComplete": true
+      "answerText": "解：A = λN，且 λ = 0.693 / T1 / 2。\n32P 的半化期為 14.3 天，\nλ = 0.693 / ( 14.3 × 24 × 3600 ) 。\n\n活度 10 mCi = 10 × 10^ - 3 × 3.7 × 10^10 = 3.7 × 10^8 Bq，\n故原子數 N = A / λ = 1.055 × 10^16。\n\n質量 m = N × 32 / ( 6.02 × 10^23 ) = 3.5 × 10^ - 8 g。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-107-2-professional/q1-1.webp",
+          "alt": "107-2 輻射防護員 專業 問答第 1 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-107-2-professional-essay-002",
@@ -528,8 +534,14 @@ window.NM_EXAM_BANK["rpo-107-2-professional"] = {
       "section": "essay",
       "number": 2,
       "stem": "若空氣中有一人工核種，其攝入體內造成之有效劑量轉換因數為\n知參數計算該核種之年平均攝入限度(ALI)及推定空氣濃度(DAC)。(年有效劑量限度請\n以5年累積之年平均劑量限值計算)",
-      "answerText": "解：\n0.02 Sv\nALI= =3×106Bq\nSv\n6.7×10-9\nBq\n參考人每小時吸入1.2 m3\nALI 3×106Bq/ y Bq\n=1.25×103 。\nDAC = =\nm3 m3\n一年工作的呼吸量 h\n1.2×2000\nh y",
-      "isComplete": true
+      "answerText": "解：年平均有效劑量限度取 20 mSv = 0.02 Sv。\n已知劑量轉換因數為 6.7 × 10^ - 9 Sv / Bq，故年平均攝入限度\nALI = 0.02 / ( 6.7 × 10^ - 9 ) = 3.0 × 10^6 Bq。\n\n若參考人每小時吸入 1.2 m3、每年工作 2000 小時，\n年呼吸量 = 1.2 × 2000 = 2400 m3。\n因此DAC = ALI / 2400 = 1.25 × 10^3 Bq / m3。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-107-2-professional/q2-1.webp",
+          "alt": "107-2 輻射防護員 專業 問答第 2 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-107-2-professional-essay-003",
@@ -538,16 +550,28 @@ window.NM_EXAM_BANK["rpo-107-2-professional"] = {
       "number": 3,
       "stem": "(1)請說明蓋革計數器的淬熄；(2)請說明蓋革計數器的無感時間。",
       "answerText": "解：\n(1)由於蓋革計數器的電位差非常高，有些陽離子可能以很大的能量撞擊陰極\n壁而使壁材原子激發產生假信號。為防止發生這種假信號的作為即稱為淬熄。\n(2)輻射產生之陽離子到達陰極的時間較慢，電子到達陽極的時間較快，此時電場尚未\n恢復到原始狀態，若有另一輻射進入蓋革計數器，將無法產生足夠的脈衝被度量到。\n恢復電場所需的時間稱為無感時間。",
-      "isComplete": true
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-107-2-professional/q3-1.webp",
+          "alt": "107-2 輻射防護員 專業 問答第 3 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-107-2-professional-essay-004",
       "kind": "essay",
       "section": "essay",
       "number": 4,
-      "stem": "某Co-60點射源的活度為1 Ci，如欲使距離此射源1 m處的劑量率降低至25 µSv/h，請\n問須採用之鉛屏蔽厚度。 (Co-60的Γ=3.703×10-4 mSv·m2/(MBq·h)，Co-60的鉛半值層\n為1.2 cm)",
-      "answerText": "1 Ci = 3.7×104 MBq\n距離Co-60 1 m處的劑量率\nɺ A 1 mSv⋅m2 Ci 3.7×104MBq mSv\nH = Γ = 3.703×10−4 × × =13.7 。\nr2 12 MBq⋅h m2 Ci h\n1 x/1.2 1 x/1.2\nɺ ɺ\n設鉛屏蔽厚度為x cm，則H(x) = H(0)  ，→25=13700×  ，\n2 2\nx ln(13700/25)\n= = 9.1，→鉛屏蔽厚度x\n→ =1.2×9.1=10.92cm。\n1.2 ln2",
-      "isComplete": true
+      "stem": "某Co-60點射源的活度為1 Ci，如欲使距離此射源1 m處的劑量率降低至25 µSv/h，請\n問須採用之鉛屏蔽厚度。 ( Co - 60的Γ = 3.703 × 10^ - 4 mSv·m2 / ( MBq·h ) ，Co - 60的鉛半值層\n為1.2 cm)",
+      "answerText": "解：1 Ci = 3.7 × 10^4 MBq。\n距離 Co-60 點射源 1 m 處的未屏蔽劑量率為\nḢ0 = ΓA / r^2 = 3.703 × 10^ - 4 × 3.7 × 10^4 / 1^2\n= 13.7 mSv / h = 13700 μSv / h。\n\n若鉛半值層為 1.2 cm，厚度為 x 時\nḢ ( x ) = Ḣ0 × ( 1 / 2 ) ^ ( x / 1.2 ) 。\n代入 Ḣ ( x ) = 25 μSv / h，可得\n( 1 / 2 ) ^ ( x / 1.2 ) = 25 / 13700，\nx / 1.2 = log2 ( 13700 / 25 ) ≈ 9.1。\n\n所以 x = 1.2 × 9.1 = 10.92 cm，\n所需鉛屏蔽厚度約為 10.9 cm。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-107-2-professional/q4-1.webp",
+          "alt": "107-2 輻射防護員 專業 問答第 4 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-107-2-professional-essay-005",
@@ -555,8 +579,14 @@ window.NM_EXAM_BANK["rpo-107-2-professional"] = {
       "section": "essay",
       "number": 5,
       "stem": "在STP 標準狀態下，已知動能5.3 MeV的阿伐粒子，在空氣中射程為3.93 cm，請換算\n此阿伐粒子在水中的射程為多少(mm)？",
-      "answerText": "ρ ×ℓ =ρ ×ℓ\nair air water water\ng\n0.001293 ×3.93 cm\ncm3\n∴ℓ = =0.0051 cm=0.051 mm\nwater g\n1\ncm3",
-      "isComplete": true
+      "answerText": "解：用面密度守恆換算不同介質的射程：\nρ_air × ℓ_air = ρ_water × ℓ_water。\n\n代入 ρ_air = 0.001293 g / cm3、ℓ_air = 3.93 cm、ρ_water = 1 g / cm3，\nℓ_water = 0.001293 × 3.93 = 0.0051 cm = 0.051 mm。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-107-2-professional/q5-1.webp",
+          "alt": "107-2 輻射防護員 專業 問答第 5 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-107-2-professional-essay-006",
@@ -564,17 +594,33 @@ window.NM_EXAM_BANK["rpo-107-2-professional"] = {
       "section": "essay",
       "number": 6,
       "stem": "若將59Co原子放入核反應器中，以中子活化照射10.6年，則60Co活度為飽和活度的比\n例？",
-      "answerText": "=φσn(1−e−λ⋅t)，飽和活度為A =φσn。\n被活化活度A(t)\nsat\nA(t) 0.693\n−( ×10.6)\n=1−e−λ⋅t =1−e 5.26 =1−0.25=0.75\nA\nsat",
-      "isComplete": true
+      "answerText": "解：被活化核種的活度為\nA ( t ) = A_sat ( 1 - e^ ( - λt ) ) 。\n題目給照射時間 t = 10.6 年，而 60Co 的半化期為 5.26 年，\n故 λt = ( 0.693 / 5.26 ) × 10.6 ≈ 1.40。\n\n因此A ( t ) / A_sat = 1 - e^ - 1.40 ≈ 1 - 0.25 = 0.75。\n\n所以 60Co 活度約為飽和活度的 75%。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-107-2-professional/q6-1.webp",
+          "alt": "107-2 輻射防護員 專業 問答第 6 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-107-2-professional-essay-007",
       "kind": "essay",
       "section": "essay",
       "number": 7,
-      "stem": "在一個50克的軟組織樣品中14C 含量為1.2 x 105 Bq，試求在此組織中的平均劑量率為\n多少Gy/s？ (已知 T = 5730年，β粒子的平均能量為0.0495 MeV，並假設β粒子能量\n1/2\n完全被該軟組織吸收。)",
-      "answerText": "MeV dis β\n× ×\nɺ E E × A× f 0.0495×1.2×105 ×1 β s dis.\nab β\n平均吸收劑量率D = = =\nm m 50 g\nɺ MeV 103g 1.6×10−13J Gy\n→D =1.9×10−8\n=118.8 × ×\ng⋅s kg MeV s",
-      "isComplete": true
+      "stem": "在一個50克的軟組織樣品中14C 含量為1.2 × 105 Bq，試求在此組織中的平均劑量率為\n多少Gy / s？ ( 已知 T = 5730年，β粒子的平均能量為0.0495 MeV，並假設β粒子能量\n1/2\n完全被該軟組織吸收。)",
+      "answerText": "解：平均吸收劑量率可由\nḊ = A × E × 1.6 × 10^ - 13 / m\n計算。\n\n其中 A = 1.2 × 10^5 Bq，\nβ 粒子平均能量 E = 0.0495 MeV，\n質量 m = 50 g = 0.05 kg。\n\n故Ḋ = ( 1.2 × 10^5 ) × 0.0495 × 1.6 × 10^ - 13 / 0.05\n= 1.9 × 10^ - 8 Gy / s。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-107-2-professional/q7-1.webp",
+          "alt": "107-2 輻射防護員 專業 問答第 7 題原始解答截圖（第 1 張）"
+        },
+        {
+          "src": "./assets/radiation-answer-scans/rpo-107-2-professional/q7-2.webp",
+          "alt": "107-2 輻射防護員 專業 問答第 7 題原始解答截圖（第 2 張）"
+        }
+      ]
     }
   ]
 };

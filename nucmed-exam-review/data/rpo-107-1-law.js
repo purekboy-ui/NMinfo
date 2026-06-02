@@ -11,7 +11,7 @@ window.NM_EXAM_BANK["rpo-107-1-law"] = {
   "subjectName": "游離輻射防護法規",
   "paperType": "paper",
   "subjectCode": "law",
-  "questionCount": 33,
+  "questionCount": 34,
   "testableQuestionCount": 30,
   "invalidQuestionCount": 0,
   "source": {
@@ -56,7 +56,7 @@ window.NM_EXAM_BANK["rpo-107-1-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 2,
-      "stem": "推定空氣濃度為某一該放射性核種在每一立方公尺空氣中之濃度， 其考量參考人在輕微 體力之活動中， 於一年中呼吸此濃度之空氣多少小時將導致年攝入限度？",
+      "stem": "推定空氣濃度為某一該放射性核種在每一立方公尺空氣中之濃度， 其考量參考人在輕微\n體力之活動中， 於一年中呼吸此濃度之空氣多少小時將導致年攝入限度？",
       "options": [
         {
           "key": "A",
@@ -122,7 +122,7 @@ window.NM_EXAM_BANK["rpo-107-1-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 4,
-      "stem": "參加輻射防護訓練者， 其缺課時數超過全部授課時數多少比例， 將不得參與該次訓練結 業測驗？",
+      "stem": "參加輻射防護訓練者， 其缺課時數超過全部授課時數多少比例， 將不得參與該次訓練結\n業測驗？",
       "options": [
         {
           "key": "A",
@@ -188,7 +188,7 @@ window.NM_EXAM_BANK["rpo-107-1-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 6,
-      "stem": "依據嚴重污染環境輻射標準規定之嚴重污染環境的定義是指輻射作業使場所外一般人 體外曝露之劑量， 於一小時內超過多少毫西弗？",
+      "stem": "依據嚴重污染環境輻射標準規定之嚴重污染環境的定義是指輻射作業使場所外一般人\n體外曝露之劑量， 於一小時內超過多少毫西弗？",
       "options": [
         {
           "key": "A",
@@ -287,7 +287,7 @@ window.NM_EXAM_BANK["rpo-107-1-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 9,
-      "stem": "為減少大量集體有效劑量而採行緊急曝露時， 接受緊急曝露人員之劑量， 儘可能不超過 多少毫西弗？",
+      "stem": "為減少大量集體有效劑量而採行緊急曝露時， 接受緊急曝露人員之劑量， 儘可能不超過\n多少毫西弗？",
       "options": [
         {
           "key": "A",
@@ -353,7 +353,7 @@ window.NM_EXAM_BANK["rpo-107-1-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 11,
-      "stem": "申請使用下列哪些類別的密封放射性物質者， 應提送保安計畫？ A.第 1 類 B.第 2 類 C. 第 3 類 D.第 4 類 E.第 5 類",
+      "stem": "申請使用下列哪些類別的密封放射性物質者， 應提送保安計畫？ A.第 1 類 B.第 2 類 C.\n第 3 類 D.第 4 類 E.第 5 類",
       "options": [
         {
           "key": "A",
@@ -378,7 +378,7 @@ window.NM_EXAM_BANK["rpo-107-1-law"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(1)\n\n2",
+      "answerText": "(1)\n2",
       "isComplete": true
     },
     {
@@ -452,7 +452,7 @@ window.NM_EXAM_BANK["rpo-107-1-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 14,
-      "stem": "高強度輻射設施永久停止運轉後 X 個月內應提出設施廢棄之清理計畫， 並應於永久停 止運轉後 Y 年內完成， 試問 X+Y=？",
+      "stem": "高強度輻射設施永久停止運轉後 X 個月內應提出設施廢棄之清理計畫， 並應於永久停\n止運轉後 Y 年內完成， 試問 X + Y = ？",
       "options": [
         {
           "key": "A",
@@ -464,7 +464,7 @@ window.NM_EXAM_BANK["rpo-107-1-law"] = {
         },
         {
           "key": "C",
-          "text": "X+Y = 6+3 =9"
+          "text": "X + Y = 6 + 3 = 9"
         },
         {
           "key": "D",
@@ -477,7 +477,7 @@ window.NM_EXAM_BANK["rpo-107-1-law"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(3)\n\nX+Y = 6+3 =9",
+      "answerText": "(3)\nX + Y = 6 + 3 = 9",
       "isComplete": true
     },
     {
@@ -518,7 +518,7 @@ window.NM_EXAM_BANK["rpo-107-1-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 16,
-      "stem": "載運放射性物質之車輛為專用者， 運送車輛外表面任一點， 包括其上下兩表面， 劑量率 不得超過多少？",
+      "stem": "載運放射性物質之車輛為專用者， 運送車輛外表面任一點， 包括其上下兩表面， 劑量率\n不得超過多少？",
       "options": [
         {
           "key": "A",
@@ -551,7 +551,7 @@ window.NM_EXAM_BANK["rpo-107-1-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 17,
-      "stem": "依據放射性物質安全運送規則， 載運放射性物質之車輛為非專用者， 則每一包件或外包 裝外表面上任一點， 其輻射強度應符合下列何項規定？",
+      "stem": "依據放射性物質安全運送規則， 載運放射性物質之車輛為非專用者， 則每一包件或外包\n裝外表面上任一點， 其輻射強度應符合下列何項規定？",
       "options": [
         {
           "key": "A",
@@ -576,7 +576,7 @@ window.NM_EXAM_BANK["rpo-107-1-law"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(3)\n\n3",
+      "answerText": "(3)\n3",
       "isComplete": true
     },
     {
@@ -584,7 +584,7 @@ window.NM_EXAM_BANK["rpo-107-1-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 18,
-      "stem": "輻射工作人員因緊急曝露， 所接受之有效劑量超過 50 mSv、吸收劑量小於 1Gy， 須接 受特別健康檢查。 其中哪一項不需持續檢查 60 日(第 1, 2, 3 日及每 3 日) ？",
+      "stem": "輻射工作人員因緊急曝露， 所接受之有效劑量超過 50 mSv、吸收劑量小於 1Gy， 須接\n受特別健康檢查。 其中哪一項不需持續檢查 60 日(第 1, 2, 3 日及每 3 日) ？",
       "options": [
         {
           "key": "A",
@@ -617,23 +617,23 @@ window.NM_EXAM_BANK["rpo-107-1-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 19,
-      "stem": "主管機關經審核業者提出生產放射性物質之作業申請， 所核發之許可證， 其有效期間最 長為 X 年； 而對使用放射性物質進行輻射作業所核發之許可證， 其有效期間最長為 Y\n年。 則 X 與 Y 分別為：",
+      "stem": "主管機關經審核業者提出生產放射性物質之作業申請， 所核發之許可證， 其有效期間最\n長為 X 年； 而對使用放射性物質進行輻射作業所核發之許可證， 其有效期間最長為 Y\n年。 則 X 與 Y 分別為：",
       "options": [
         {
           "key": "A",
-          "text": "X=5、Y=5"
+          "text": "X = 5、Y = 5"
         },
         {
           "key": "B",
-          "text": "X=5、Y=10"
+          "text": "X = 5、Y = 10"
         },
         {
           "key": "C",
-          "text": "X=10、Y=5"
+          "text": "X = 10、Y = 5"
         },
         {
           "key": "D",
-          "text": "X=10、Y=10"
+          "text": "X = 10、Y = 10"
         }
       ],
       "answer": "C",
@@ -774,7 +774,7 @@ window.NM_EXAM_BANK["rpo-107-1-law"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "4\n\n(1)",
+      "answerText": "4\n(1)",
       "isComplete": true
     },
     {
@@ -819,19 +819,19 @@ window.NM_EXAM_BANK["rpo-107-1-law"] = {
       "options": [
         {
           "key": "A",
-          "text": "0.2 μSv/h"
+          "text": "0.2 μSv / h"
         },
         {
           "key": "B",
-          "text": "2 μSv/h"
+          "text": "2 μSv / h"
         },
         {
           "key": "C",
-          "text": "載運Ⅱ–黃類或Ⅲ–黃類 (見附件六) 包件之車輛核定載人座位， 其輻射強度不得超過 每小時 0.02 毫西弗(20 μSv/h) 。"
+          "text": "載運Ⅱ–黃類或Ⅲ–黃類 ( 見附件六 ) 包件之車輛核定載人座位， 其輻射強度不得超過 每小時 0.02 毫西弗 ( 20 μSv / h ) 。"
         },
         {
           "key": "D",
-          "text": "200 μSv/h"
+          "text": "200 μSv / h"
         }
       ],
       "answer": "C",
@@ -840,7 +840,7 @@ window.NM_EXAM_BANK["rpo-107-1-law"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(3)\n載運Ⅱ–黃類或Ⅲ–黃類 (見附件六) 包件之車輛核定載人座位，其輻射強度不得超過\n每小時 0.02 毫西弗(20 μSv/h)。",
+      "answerText": "(3)\n載運Ⅱ–黃類或Ⅲ–黃類 (見附件六) 包件之車輛核定載人座位，其輻射強度不得超過\n每小時 0.02 毫西弗 ( 20 μSv / h ) 。",
       "isComplete": true
     },
     {
@@ -939,7 +939,7 @@ window.NM_EXAM_BANK["rpo-107-1-law"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(4)\n\n5",
+      "answerText": "(4)\n5",
       "isComplete": true
     },
     {
@@ -947,7 +947,7 @@ window.NM_EXAM_BANK["rpo-107-1-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 29,
-      "stem": "依據「輻射防護人員管理辦法」之規定， 下列四項輻射防護課程中屬於核心課程的共有 幾項？ A.輻射度量 B.保健物理 C.輻射劑量 D.輻射安全:",
+      "stem": "依據「輻射防護人員管理辦法」之規定， 下列四項輻射防護課程中屬於核心課程的共有\n幾項？ A.輻射度量 B.保健物理 C.輻射劑量 D.輻射安全:",
       "options": [
         {
           "key": "A",
@@ -980,7 +980,7 @@ window.NM_EXAM_BANK["rpo-107-1-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 30,
-      "stem": "依規定應設立輻射防護管理組織之設施經營者， 應設置多少人以上輻射防護管理委員 會？ 其成員至應包括多少名專職輻射防護人員？",
+      "stem": "依規定應設立輻射防護管理組織之設施經營者， 應設置多少人以上輻射防護管理委員\n會？ 其成員至應包括多少名專職輻射防護人員？",
       "options": [
         {
           "key": "A",
@@ -1009,6 +1009,15 @@ window.NM_EXAM_BANK["rpo-107-1-law"] = {
       "isComplete": true
     },
     {
+      "id": "rpo-107-1-law-essay-001",
+      "kind": "essay",
+      "section": "essay",
+      "number": 1,
+      "stem": "請分別敘述設施經營者更換(1)許可類及(2)登記類 X 光機設備之X光管的規定。",
+      "answerText": "(1)領有使用許可證者，於更換後十五日內檢附測試報告，送主管機關備查。\n(2)經主管機關同意登記者，其測試報告自行留存。",
+      "isComplete": true
+    },
+    {
       "id": "rpo-107-1-law-essay-002",
       "kind": "essay",
       "section": "essay",
@@ -1022,8 +1031,8 @@ window.NM_EXAM_BANK["rpo-107-1-law"] = {
       "kind": "essay",
       "section": "essay",
       "number": 3,
-      "stem": "依游離輻射防護安全標準第四條，針對體外曝露及體內曝露的有效劑量之度量或計算有\n\n哪些規定？",
-      "answerText": "有效劑量，得以度量或計算強穿輻射產生之個人等效劑量及攝入放射性核種產生之約定\n有效劑量之和表示。\n強穿輻射產生之個人等效劑量或攝入放射性核種產生之約定有效劑量於一年內不超過\n\n6\n\n二毫西弗時，體外曝露及體內曝露得不必相加計算。",
+      "stem": "依游離輻射防護安全標準第四條，針對體外曝露及體內曝露的有效劑量之度量或計算有\n哪些規定？",
+      "answerText": "有效劑量，得以度量或計算強穿輻射產生之個人等效劑量及攝入放射性核種產生之約定\n有效劑量之和表示。\n強穿輻射產生之個人等效劑量或攝入放射性核種產生之約定有效劑量於一年內不超過6\n二毫西弗時，體外曝露及體內曝露得不必相加計算。",
       "isComplete": true
     },
     {
@@ -1032,7 +1041,7 @@ window.NM_EXAM_BANK["rpo-107-1-law"] = {
       "section": "essay",
       "number": 4,
       "stem": "在哪些情形下主管機關得廢止或撤銷輻射防護人員之認可證書？",
-      "answerText": "(1)認可證書出租或借予他人使用者\n(2)申請認可所附各項文件有虛偽不實之情事者\n(3)其他經主管機關認定情節重大者\n\n7",
+      "answerText": "(1)認可證書出租或借予他人使用者\n(2)申請認可所附各項文件有虛偽不實之情事者\n(3)其他經主管機關認定情節重大者7",
       "isComplete": true
     }
   ]

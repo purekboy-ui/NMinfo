@@ -4151,6 +4151,21 @@ a:hover { text-decoration: underline; }
     overflow: hidden;
 }
 
+.protocol-summary-card {
+    border: 1px solid var(--border-light);
+    border-radius: 18px;
+    background: rgba(247,241,239,0.64);
+    padding: 18px 20px;
+}
+
+.protocol-summary-card h3 {
+    margin: 0 0 12px;
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
 .protocol-summary-details summary {
     display: flex;
     align-items: center;
@@ -4236,15 +4251,63 @@ a:hover { text-decoration: underline; }
         padding: 0 16px 16px;
     }
 
-    .protocol-table {
-        min-width: 700px;
+    /* 讓 table 在小螢幕時自動轉換為垂直卡片流，消除任何左右拖曳與斷行擠壓 */
+    .protocol-table-wrap {
+        overflow-x: visible !important; 
     }
-
-    .protocol-table th,
-    .protocol-table td {
-        padding: 13px 14px;
-        font-size: 1rem;
-        line-height: 1.72;
+    
+    .protocol-table, 
+    .protocol-table thead, 
+    .protocol-table tbody, 
+    .protocol-table th, 
+    .protocol-table td, 
+    .protocol-table tr { 
+        display: block !important; 
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+    
+    /* 隱藏表頭，改由 td::before 的 data-label 來標示欄位 */
+    .protocol-table thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    .protocol-table tr {
+        background: var(--bg-hover, rgba(255,255,255,0.02));
+        border: 1px solid rgba(143,94,103,0.12) !important;
+        border-radius: 14px;
+        margin-bottom: 18px;
+        padding: 16px;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    }
+    
+    .protocol-table td { 
+        border: none !important;
+        border-bottom: 1px solid rgba(143,94,103,0.06) !important;
+        position: relative;
+        padding: 10px 0 !important; /* 移除左右擠壓的 padding，讓內容享受 100% 寬度 */
+        text-align: left !important;
+        font-size: 1.02rem !important; /* 大字級，清晰易讀 */
+        line-height: 1.6;
+    }
+    
+    .protocol-table td:last-child {
+        border-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    
+    .protocol-table td::before { 
+        /* 使用 HTML 的 data-label 屬性自動生成上方標籤 */
+        content: attr(data-label);
+        display: block !important; /* 關鍵點：讓標記單獨成行，防止文字被壓縮或頻繁換行 */
+        margin-bottom: 4px;
+        font-weight: 800;
+        color: var(--brand-primary-strong);
+        text-transform: uppercase;
+        font-size: 0.92rem;
+        letter-spacing: 0.03em;
     }
 
     .therapy-rich-card,

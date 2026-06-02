@@ -46,7 +46,7 @@ window.NM_EXAM_BANK["radiographer-115-1"] = {
       "acceptedAnswers": [
         "A"
       ],
-      "explanation": "有效半衰期 Te 滿足 1/Te = 1/Tp + 1/Tb。題目已知 3 小時後體內活度減半，所以 Te = 3 小時；代入 Tp = 13 小時，可得 1/Tb = 1/3 - 1/13 = 10/39，因此 Tb = 3.9 小時，答案 A。",
+      "explanation": "有效半衰期 Te 滿足 1 / Te = 1 / Tp + 1 / Tb。題目已知 3 小時後體內活度減半，所以 Te = 3 小時；代入 Tp = 13 小時，可得 1 / Tb = 1 / 3 - 1 / 13 = 10 / 39，因此 Tb = 3.9 小時，答案 A。",
       "explanationStatus": "ready",
       "kind": "mcq",
       "section": "mcq",
@@ -366,7 +366,7 @@ window.NM_EXAM_BANK["radiographer-115-1"] = {
       "acceptedAnswers": [
         "B"
       ],
-      "explanation": "平均壽命 mean life 為 tau = 1/lambda。經過一個平均壽命後，剩餘活性為 A0e^-1，約是 36.8%，表示已衰變掉約 63.2%，所以答案 B。",
+      "explanation": "平均壽命 mean life 為 tau = 1 / lambda。經過一個平均壽命後，剩餘活性為 A0e^ - 1，約是 36.8%，表示已衰變掉約 63.2%，所以答案 B。",
       "explanationStatus": "ready",
       "kind": "mcq",
       "section": "mcq",
@@ -462,7 +462,7 @@ window.NM_EXAM_BANK["radiographer-115-1"] = {
       "acceptedAnswers": [
         "B"
       ],
-      "explanation": "SUV = 組織活度濃度 / (注射活度 / 體重)。題目為 250 microCi/L ÷ (5000 microCi / 50 kg) = 250 ÷ 100 = 2.5，因此答案是 B。",
+      "explanation": "SUV = 組織活度濃度 / ( 注射活度 / 體重 ) 。題目為 250 microCi / L ÷ ( 5000 microCi / 50 kg ) = 250 ÷ 100 = 2.5，因此答案是 B。",
       "explanationStatus": "ready",
       "kind": "mcq",
       "section": "mcq",
@@ -2260,7 +2260,7 @@ window.NM_EXAM_BANK["radiographer-115-1"] = {
       "acceptedAnswers": [
         "C"
       ],
-      "explanation": "能窗範圍為 109.8 到 134.2 keV，中心在 122 keV，兩側各差 12.2 keV。12.2 / 122 = 10%，表示總能窗寬度為 ±10%，也就是 20% window，所以答案 C。",
+      "explanation": "能窗範圍為 109.8 到 134.2 keV，中心在 122 keV，兩側各差 12.2 keV。12.2 / 122 = 10%，表示總能窗寬度為 ± 10%，也就是 20% window，所以答案 C。",
       "explanationStatus": "ready",
       "kind": "mcq",
       "section": "mcq",
@@ -2580,7 +2580,7 @@ window.NM_EXAM_BANK["radiographer-115-1"] = {
       "acceptedAnswers": [
         "B"
       ],
-      "explanation": "若總計數與背景計數相互獨立，淨計數的標準偏差為 sqrt(S + B)。代入 sqrt(14,400 + 2,500) = sqrt(16,900) = 130，因此答案 B。",
+      "explanation": "若總計數與背景計數相互獨立，淨計數的標準偏差為 sqrt ( S + B ) 。代入 sqrt ( 14,400 + 2,500 ) = sqrt ( 16,900 ) = 130，因此答案 B。",
       "explanationStatus": "ready",
       "kind": "mcq",
       "section": "mcq",

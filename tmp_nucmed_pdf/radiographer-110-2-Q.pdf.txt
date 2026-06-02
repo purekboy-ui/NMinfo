@@ -1,0 +1,72 @@
+110 
+
+110 
+
+
+
+ 6309
+
+
+
+
+
+1 
+
+___________
+
+!
+
+
+
+1. 18F-florbetaben  A.18F-fluciclovine B.18F-fluorothymidine C.18F-flutemetamol D.18F-fluorodopa
+2. 18F-FDG  A. 18F-FDG-3-phosphate B. 2 -OH glycolysis C.electrophilic displacement F18 D.epilepsy
+3. PET  A.67Ga B.124I C.201Tl D.82Sr
+4.68Ge-68Ga  68Ge  45 mCi 100% 68Ga  mCi A.50 B.45 C.43 D.39
+5. A.fission B.neutron rich nuclides C.carrier D.82Sr 
+6. 32P-sodium orthophosphate  A.32P  B.32P-sodium orthophosphate polycythemia vera C.32P  89Sr90Y  D.32P-sodium orthophosphate 
+7. 223Ra  A. B.223Ra-radium chloride castration-resistant prostate cancer C.223Ra  D. 223Ra-radium chloride  radium 
+8. A.125I B.131I
+
+C.124I D.123I 9.62Cu64Cu  67Cu  A. B.67Cu  2.6  C. FDA  64Cu-ATSM  D. FDA  62Cu-PTSM  10. A.68Ge-68Ga B.81Rb-81mKr C.82Sr-82Rb D.99Mo-99mTc 11. Ethyl cysteinate dimerECD A.l,l-ECD B.d,d-ECD C.d,l-ECD D.l,d-ECD 12. A.99mTc-DTPA B.99mTc-ECD C.99mTc-HMPAO D.18F-fluorodopa 13. A.90Y-SIR-Sphere B.177Lu-DOTATOC C.99mTc-MAA D.223Ra-Xofigo 14. A.99mTc-sulesomab B.111In-leukocytes C.67Ga-citrate D.99mTc-RBC 15. A.201Tl-TlCl B.82Rb-RbCl C.13N-NH3 D.99mTc-sestamibi 16. 99mTc-sestamibiMIBI A.MIBI lipophilicity B.MIBI net positive molecular charge C.lower mitochondrial density D. 17.  A. B. C. D. 18.Alzheimer's disease A.amyloid PET B.18F-FDG PET C.99mTc-ECD SPECT
+
+D.MRI 19. 18F-FDG 
+A. B. C. D. 20. 15O-H2O  A. B. C. 10  D.functional brain mapping 21.18F  11C-PiB  A. B. C. D. 22. A.Tau  B. C. D. 23.LBBB A. B. C. D. 24.ejection fraction, EF A. 10% B. 5% C. D. 5% 25. A.18F-FDOPA B.18F-FDG C.99mTc-HMPAO D.99mTc-ECD 26.myocardial perfusion A.82Rb-RbCl B.13N-ammonia C.18F-FDG D.15O-water 27. 99mTc-ECD brain SPECT parietal lobetemporal lobe posterior cingulate gyrus A.Alzheimer's disease B.frontotemporal dementia C.vascular dementia D.semantic dementia 28.131I-MIBG  A. B. C. D.
+
+29. A.18F-NaFhydroxyapatite B.18F-NaFhydroxyapatite C.18F-FLThydroxyapatite D.18F-FLThydroxyapatite
+30. 99mTc-MDP  A. B. C. D.
+31. A.99mTc-annexin V B.11C-acetate C.18F-fluoromisonidazole D.18F-fluorothymidine
+32. 111In-pentetreotide scan  A.somatostatin receptor B.Na+/K+ Pump C.transferrin receptor D.dopamine transporter
+33.sentinel lymph nodes A. B. C. D.
+34. 111In-ibritumomab 24  A. B. C. D.
+35. non-Hodgkin's lymphomas  A.111In-ibritumomab B.67Ga-gallium citrate C.90Y-ibritumomab D.99mTc-depreotide
+36. 131I-MIBG  Lugol's solution A. B. 1  C. 1  1  D. 1  4 
+37. A.MRI  CT  18F-FDG PET  B. C. MRI   D.
+38. mCi  131I A.100 B.50 C.30 D.2
+
+39.morphology A.99mTc-DTPA B.99mTc-DMSA C.99mTc-MAG3 D.99mTc-MAA
+40.diuretic renography A. B. C. D.furosemide  5 
+41. 99mTc-DTPA DTPA  A.
+B.
+C.
+D.
+42.Pheochromocytoma 131I-MIBG  18F-FDG 
+
+A.131I-MIBG  18F-FDG  B.131I-MIBG  18F-FDG  C.131I-MIBG  18F-FDG  D.131I-MIBG  43. 177Lu J591
+
+
+A. bone scan  177Lu J591  B. bone scan  C. bone scan  177Lu J591  D. bone scan  44. A. 12  B. rhTSH  C. D. I 131  I 123  45. A.99mTc-DTPA  B.123I-MIBG  C.131I-OIH  D.201Tl-TlCl  46. abcd  I 123  a  d 
+
+A.hypothyroidism B.Graves' disease C.multinodular goiter D.papillary thyroid cancer 47.intraparenchymal lesion A.99mTc-DMSA B.99mTc-DTPA C.99mTc-MAG3 D.131I-OIH 48. A. B. 4  C. 24  D. 49. A. B. C. D. 50. 18F-FDG  18F-FDG  A. B. C. D. 51. 99mTc-DTPA aerosol 133Xe  A.biological half life B.alveolar epithelial clearance C.multiple-view imaging D.central clumping 52. A.99mTc-MAG3 B.99mTc-HMPAO C.99mTc-pertechnetate D.99mTc-MAA 53. 99mTc-MAA  A. 6 
+
+B.99mTc-MAA  C. 99mTc-MAA  D.right to left cardiac shunt99mTc-MAA  54. cholecystokininCCK A. B. Oddi  C. D. 55. A.99mTc-DISIDA B.99mTc-DMSA C.99mTc-DTPA D.99mTc-MAA 56.Meckel's diverticulum A. B. C. D. 57. Schilling test  A. B. C. D. 58. A.125I14C B.125I57Co C.125I32P D.125I131I 59. A. B. C. D. 60. intact-PTHintact parathyroid hormone  A. B. C. 5 D. 61. A. B. C. AInhibin A D. A 62. A.planar type B.disc type C.well type orthrough-hole D.sphere type 63.Graves' hyperthyroidism  A.
+
+B. C. D. 64. A.131I-Lipiodol B.90Y-microspheres C.90Y-polymer beads D.90Y anti-CD20 Ab 65. I 131  A. B. C. D. 66.hyperthyroidism A.131I-NaI B.89Sr-SrCl2 C.90Y-microsphere D.123I-NaI 67.- E-,max A.32P-phosphate B.89Sr-SrCl2 C.153Sm-EDTMP D.186Re(Sn)-HEDP 68. I 131  A.131I --  364 keV81% B.131I - 606 keV89% C.131I  99mTc  D. I 131  210 mCi 69. SPECT  1.3 51cm�51cm  64�64 mm A.6 B.8 C.10 D.12 70. A.geometry B.accuracy C.linearity D.constancy 71.transmission scan A.low dose CT B.high dose CT C.68Ge D.57Co 72.counts 10,000 99% A.9,00011,000 B.9,90010,100 C.9,70010,300 D.9,80010,200 73. A.constancy B.accuracy
+
+C.geometry D. 99mTc constancy 74.relative biological effectiveness, RBE A.99mTc B.250 keV X-ray C.1 MeV -ray D.137Cs 75. I 131 
+A.+ B.- C.D.+ 76. y=-ax+b a=
+A.0.693 B.0.693/t1/2 C.t1/2 D.1.44�t1/2 77.sensitivity
+
+A.septal B.septal C. D.septal 78. ROCreceiver operating characteristiccurve  X 
+A.True positive rate B.False positive rate C.False negative rate D.True negative rate 79. 2  8,000 2,000 cpm  A.10,000 B.6,000 C.5,000 D.3,000 80.standard deviation cpm A.100 B.60 C.50 D.30
+
+

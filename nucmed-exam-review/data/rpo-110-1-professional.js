@@ -23,23 +23,23 @@ window.NM_EXAM_BANK["rpo-110-1-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 1,
-      "stem": "下列何者為點射源在空氣中的曝露量計算公式？ (X： 曝露量、A： 活度、d： 距離、Γ： 曝露常數、t： 時間)",
+      "stem": "下列何者為點射源在空氣中的曝露量計算公式？ ( X： 曝露量、A： 活度、d： 距離、Γ： 曝露常數、t： 時間 )",
       "options": [
         {
           "key": "A",
-          "text": "X = Γ2×A×t/d"
+          "text": "X = Γ2 × A × t / d"
         },
         {
           "key": "B",
-          "text": "X = Γ×d2×t/A"
+          "text": "X = Γ × d2 × t / A"
         },
         {
           "key": "C",
-          "text": "X = A×t/Γd2"
+          "text": "X = A × t / Γd2"
         },
         {
           "key": "D",
-          "text": "X = Γ×A×t/d2"
+          "text": "X = Γ × A × t / d2"
         }
       ],
       "answer": "D",
@@ -56,7 +56,7 @@ window.NM_EXAM_BANK["rpo-110-1-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 2,
-      "stem": "弗力克(Fricke) 化學輻射劑量計， 在產生相同分子數目下， 使用的 G 值(每吸收 100 eV 輻射能產生變化的分子數目) 與吸收劑量 D 的關係為何？",
+      "stem": "弗力克（Fricke）化學輻射劑量計，在產生相同分子數目下，使用的 G 值（每吸收 100 eV 輻射能產生變化的分子數目）與吸收劑量 D 的關係為何？",
       "options": [
         {
           "key": "A",
@@ -81,7 +81,7 @@ window.NM_EXAM_BANK["rpo-110-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\n每吸收100 eV輻射能產生的分子數目，此數目稱為G值。考量一硫酸亞鐵樣品，密度\n為 ρ (g/cm3) ， 被 照 射 D(100eV/g) 劑 量 ， 在 其 過 程 產 生 鐵 離 子 濃 度 為\nM\nM(molecules/cm3) 。G值可表示為\nG  。\nD",
+      "answerText": "(2)\n每吸收100 eV輻射能產生的分子數目，此數目稱為G值。考量一硫酸亞鐵樣品，密度\n為 ρ ( g / cm3 ) ， 被 照 射 D ( 100eV / g ) 劑 量 ， 在 其 過 程 產 生 鐵 離 子 濃 度 為\nΔM\nΔM ( molecules / cm3 ) 。G值可表示為\nG = 。\nD·ρ",
       "isComplete": true
     },
     {
@@ -97,7 +97,7 @@ window.NM_EXAM_BANK["rpo-110-1-professional"] = {
         },
         {
           "key": "B",
-          "text": "Te = ( Tp × Tb) / ( Tp + Tb) = 12 ×7 / ( 12+7) = 4.42 天， 10 mCi × e – ( 0.693 /4.42) ×20 = 10 mCi × 0.043 =0.43 mCi"
+          "text": "Te = ( Tp × Tb ) / ( Tp + Tb ) = 12 × 7 / ( 12 + 7 ) = 4.42 天， 10 mCi × e - ( 0.693 / 4.42 ) × 20 = 10 mCi × 0.043 = 0.43 mCi"
         },
         {
           "key": "C",
@@ -114,7 +114,7 @@ window.NM_EXAM_BANK["rpo-110-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\nTe = ( Tp × Tb ) / ( Tp + Tb ) = 12 ×7 / ( 12+7) = 4.42 天，\n10 mCi × e – ( 0.693 /4.42 )×20 = 10 mCi × 0.043 =0.43 mCi",
+      "answerText": "(2)\nTe = ( Tp × Tb ) / ( Tp + Tb ) = 12 × 7 / ( 12 + 7 ) = 4.42 天，\n10 mCi × e - ( 0.693 / 4.42 ) × 20 = 10 mCi × 0.043 = 0.43 mCi",
       "isComplete": true
     },
     {
@@ -130,7 +130,7 @@ window.NM_EXAM_BANK["rpo-110-1-professional"] = {
         },
         {
           "key": "B",
-          "text": "S  e4.5/1.5 S  4.98%"
+          "text": "S = e - 4.5 / 1.5 S = 4.98%"
         },
         {
           "key": "C",
@@ -147,7 +147,7 @@ window.NM_EXAM_BANK["rpo-110-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\nS  e4.5/1.5\n\nS  4.98%",
+      "answerText": "(2)\nS = e - 4.5 / 1.5\nS = 4.98%",
       "isComplete": true
     },
     {
@@ -163,7 +163,7 @@ window.NM_EXAM_BANK["rpo-110-1-professional"] = {
         },
         {
           "key": "B",
-          "text": "2100/(10×60) =3.5 (cps) 活度dps= cps/儀器效率 = 3.5/0.1 = 35 dps =35 Bq"
+          "text": "2100 / ( 10 × 60 ) = 3.5 ( cps ) 活度dps = cps / 儀器效率 = 3.5 / 0.1 = 35 dps = 35 Bq"
         },
         {
           "key": "C",
@@ -180,7 +180,7 @@ window.NM_EXAM_BANK["rpo-110-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\n2100/(10×60)=3.5 (cps) 活度dps= cps/儀器效率 = 3.5/0.1 = 35 dps =35 Bq",
+      "answerText": "(2)\n2100 / ( 10 × 60 ) = 3.5 ( cps ) 活度dps = cps / 儀器效率 = 3.5 / 0.1 = 35 dps = 35 Bq",
       "isComplete": true
     },
     {
@@ -188,7 +188,7 @@ window.NM_EXAM_BANK["rpo-110-1-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 6,
-      "stem": "關於β+ decay和電子捕獲 (Electron Capture, EC) 的敘述， 何者正確？",
+      "stem": "關於β + decay和電子捕獲 ( Electron Capture, EC ) 的敘述， 何者正確？",
       "options": [
         {
           "key": "A",
@@ -196,7 +196,7 @@ window.NM_EXAM_BANK["rpo-110-1-professional"] = {
         },
         {
           "key": "B",
-          "text": "β+ decay 會放出微中子"
+          "text": "β + decay 會放出微中子"
         },
         {
           "key": "C",
@@ -299,7 +299,7 @@ window.NM_EXAM_BANK["rpo-110-1-professional"] = {
         },
         {
           "key": "C",
-          "text": "解： 2 mGy×20 = 40 mSv"
+          "text": "解： 2 mGy × 20 = 40 mSv"
         },
         {
           "key": "D",
@@ -312,7 +312,7 @@ window.NM_EXAM_BANK["rpo-110-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(3)\n解：2 mGy×20 = 40 mSv",
+      "answerText": "(3)\n解：2 mGy × 20 = 40 mSv",
       "isComplete": true
     },
     {
@@ -378,7 +378,7 @@ window.NM_EXAM_BANK["rpo-110-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\n\n105，射出時之光子數目(不計",
+      "answerText": "(2)\n105，射出時之光子數目(不計",
       "isComplete": true
     },
     {
@@ -402,7 +402,7 @@ window.NM_EXAM_BANK["rpo-110-1-professional"] = {
         },
         {
           "key": "D",
-          "text": "1  N  1 線性衰減係數 ln 0  ln(103)  0.69cm1  x  N  10"
+          "text": "1 ( N ) 1 線性衰減係數μ = ln ( 0 = ln ( 103 ) = 0.69cm - 1 ) × ( N ) 10"
         }
       ],
       "answer": "D",
@@ -411,7 +411,7 @@ window.NM_EXAM_BANK["rpo-110-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(4)\n1  N  1\n線性衰減係數 ln 0  ln(103)  0.69cm1\n\nx  N  10",
+      "answerText": "(4)\n1 ( N ) 1\n線性衰減係數μ = ln ( 0 = ln ( 103 ) = 0.69cm - 1\n) × ( N ) 10",
       "isComplete": true
     },
     {
@@ -419,11 +419,11 @@ window.NM_EXAM_BANK["rpo-110-1-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 13,
-      "stem": "將某8 ×106 Bq 之125I (半化期= 59.4天) 射源置入病人體內， 於3天後取出， 則此段期\n間內總蛻變次數約為多少次？",
+      "stem": "將某8 × 106 Bq 之125I ( 半化期 = 59.4天 ) 射源置入病人體內， 於3天後取出， 則此段期\n間內總蛻變次數約為多少次？",
       "options": [
         {
           "key": "A",
-          "text": "D = [( 8 × 106 蛻變/秒) / ( 0.693 / 59.4 × ( 1- e – 0.693 x 3 / 59.4) × 24 × 3600) ] = 5.92 × 1013 蛻變 × ( 1 – 0.9656) = 5.92 × 1013 蛻變× 0.0344 = 2 × 1012蛻變"
+          "text": "D = [ ( 8 × 106 蛻變 / 秒 ) / ( 0.693 / 59.4 × ( 1 - e - 0.693 × 3 / 59.4 ) × 24 × 3600 ) ] = 5.92 × 1013 蛻變 × ( 1 – 0.9656 ) = 5.92 × 1013 蛻變 × 0.0344 = 2 × 1012蛻變"
         },
         {
           "key": "B",
@@ -444,7 +444,7 @@ window.NM_EXAM_BANK["rpo-110-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(1)\nD = [( 8 × 106 蛻變/秒) / ( 0.693 / 59.4 × ( 1- e – 0.693 x 3 / 59.4 )\n× 24 × 3600) ]\n= 5.92 × 1013 蛻變 × ( 1 – 0.9656)\n= 5.92 × 1013 蛻變× 0.0344\n= 2 × 1012蛻變",
+      "answerText": "(1)\nD = [ ( 8 × 106 蛻變 / 秒 ) / ( 0.693 / 59.4 × ( 1 - e - 0.693 × 3 / 59.4 )\n× 24 × 3600 ) ]\n= 5.92 × 1013 蛻變 × ( 1 – 0.9656 )\n= 5.92 × 1013 蛻變 × 0.0344\n= 2 × 1012蛻變",
       "isComplete": true
     },
     {
@@ -518,27 +518,63 @@ window.NM_EXAM_BANK["rpo-110-1-professional"] = {
       "kind": "essay",
       "section": "essay",
       "number": 1,
-      "stem": "在一次輻射作業中，若某輻射工作人員的膀胱、結腸及性腺受到某  射線照射，分別\n造成1、2及3 mSv 的等價劑量，其他組織未受到曝露。若性腺之質量為25 g，則:\n(1)該  射線在性腺造成之吸收劑量為多少mGy？\n(2)性腺所吸收之能量為多少毫焦耳？\n(3)若膀胱、結腸及性腺之組織加權因數各為0.05、0.12、0.20，則其有效劑量為多少\nmSv？",
-      "answerText": "(1) H = DW , 3 (mSv) = D1, D = 3 (mGy)\nT R\n(2) D = E/M, D = 3 (mGy) = E/0.025 (kg), 吸收之能量E = 30.025=0.075 (mJ)\n(3) 10.05+20.12+30.20＝0.89 (mSv)",
-      "isComplete": true
+      "stem": "在一次輻射作業中，若某輻射工作人員的膀胱、結腸及性腺受到某 γ 射線照射，分別\n造成1、2及3 mSv 的等價劑量，其他組織未受到曝露。若性腺之質量為25 g，則:\n( 1 ) 該 γ 射線在性腺造成之吸收劑量為多少mGy？\n(2)性腺所吸收之能量為多少毫焦耳？\n(3)若膀胱、結腸及性腺之組織加權因數各為0.05、0.12、0.20，則其有效劑量為多少\nmSv？",
+      "answerText": "( 1 ) H = D × W , 3 ( mSv ) = D × 1, D = 3 ( mGy )\n( 2 ) D = E / M, D = 3 ( mGy ) = E / 0.025 ( kg ) , 吸收之能量E = 3 × 0.025 = 0.075 ( mJ )\n( 3 ) 1 × 0.05 + 2 × 0.12 + 3 × 0.20＝0.89 ( mSv )",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-110-1-professional/q1-1.webp",
+          "alt": "110-1 輻射防護員 專業 問答第 1 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-110-1-professional-essay-002",
       "kind": "essay",
       "section": "essay",
       "number": 2,
-      "stem": "請說明：\n(1)哪些放射性物質可經由無外傷的皮膚毛孔進入人體造成體內曝露(列舉二種)？\n(2)除前述方式外，放射性物質還有哪些進入人體的途徑？\n(3)最常用於偵測加馬核種體內污染的計測方法為何？",
+      "stem": "弗力克（Fricke）化學輻射劑量計，在產生相同分子數目下，使用的 G 值（每吸收 100 eV 輻射能產生變化的分子數目）與吸收劑量 D 的關係為何？",
       "answerText": "(1)氚、碘等。\n(2)吸入、食入(嚥入)、由傷口吸收。\n(3)全身計測法。",
-      "isComplete": true
+      "isComplete": true,
+      "options": [
+        {
+          "key": "A",
+          "text": "G 與 D 成正比"
+        },
+        {
+          "key": "B",
+          "text": "G 與 D 成反比"
+        },
+        {
+          "key": "C",
+          "text": "G 與 D^2 成正比"
+        },
+        {
+          "key": "D",
+          "text": "G 與 D^2 成反比"
+        }
+      ],
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-110-1-professional/q2-1.webp",
+          "alt": "110-1 輻射防護員 專業 問答第 2 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-110-1-professional-essay-003",
       "kind": "essay",
       "section": "essay",
       "number": 3,
-      "stem": "已知 、 、 、，分別是光子和碳作用的光電、合調、不合調、成對發生等效應\ncoh inc\n的原子衰減係數，請計算50 keV光子和碳作用的質量衰減係數(m2/kg)為何？\n(= 0.17310-28 m2/atom、 = 0.27410-28 m2/atom、 = 3.25210-28 m2/atom)\ncoh inc",
-      "answerText": "50 keV < 1.02 MeV，所以=0\nm2 m2\n 碳原子數量\n( )  (  )( )\n kg coh inc atom 1kg\n\n1000\n6.021023 atom\nm2 m2\n12\n (0.1730.2743.2520)1028   0.01856\natom 1kg kg",
-      "isComplete": true
+      "stem": "已知 τ、σ 、σ 、κ，分別是光子和碳作用的光電、合調、不合調、成對發生等效應\ncoh inc\n的原子衰減係數，請計算50 keV光子和碳作用的質量衰減係數(m2/kg)為何？\n( τ = 0.173 × 10^ - 28 m2 / atom、σ = 0.274 × 10^ - 28 m2 / atom、σ = 3.252 × 10^ - 28 m2 / atom )\ncoh inc",
+      "answerText": "50 keV < 1.02 MeV，所以κ = 0 m2 m2μ 碳原子數量\n( ) = ( τ + σ + σ + κ ) ( ) ×\nρ kg coh inc atom 1kg 1000 × 6.02 × 1023 atom m2 m212\n= ( 0.173 + 0.274 + 3.252 + 0 ) × 10^ - 28 × = 0.01856 atom 1kg kg",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-110-1-professional/q3-1.webp",
+          "alt": "110-1 輻射防護員 專業 問答第 3 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-110-1-professional-essay-004",
@@ -546,26 +582,44 @@ window.NM_EXAM_BANK["rpo-110-1-professional"] = {
       "section": "essay",
       "number": 4,
       "stem": "一個電容器型游離腔的有效體積為2 cm3，電容為5 pF，輻射照射之前的電壓為180 V，\n照射後下降為140 V，空氣的密度為0.001293 g/cm3，請計算曝露(C/kg)為多少？",
-      "answerText": "7.7 x 10-5 C/kg\nQCV\n51012 F(180140) V 21010 C\nQ 21010 C g C\nX   1000 7.73395105\nm g kg kg\n2 cm30.001293\ncm3",
-      "isComplete": true
+      "answerText": "7.7 × 10^ - 5 C / kg ΔQ = C × ΔV\n5 × 10^ - 12 F × ( 180 - 140 ) V = 2 × 10^ - 10 CQ 2 × 10^ - 10 CgC\nX = = × 1000 = 7.73395 × 10^ - 5 mg kg kg 2 cm3 × 0.001293 cm3",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-110-1-professional/q4-1.webp",
+          "alt": "110-1 輻射防護員 專業 問答第 4 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-110-1-professional-essay-005",
       "kind": "essay",
       "section": "essay",
       "number": 5,
-      "stem": "簡述  粒子對人體健康效應之重要影響及其屏蔽考量。",
-      "answerText": "(1) 粒子穿透力雖較α強，但只會在人體淺部組織(皮膚、水晶體)造成劑量，確定效\n應比機率效應重要。\n(2)β粒子之屏蔽物質及厚度，決定於：\n• 屏蔽物質的原子序必須很小，以減少制動輻射的產生。且屏蔽物質的厚度必須大\n於β粒子的最大射程，以完全阻擋β粒子。\n• 高原子序物質可有效衰減所產生之制動輻射的量。\n故屏蔽 β 粒子時宜先用較低原子序物質以完全阻擋β粒子，其後再接高原子序物\n\n質，以有效阻擋β 粒子產生之制動輻射的影響。",
-      "isComplete": true
+      "stem": "簡述 β 粒子對人體健康效應之重要影響及其屏蔽考量。",
+      "answerText": "( 1 ) β 粒子穿透力雖較α強，但只會在人體淺部組織 ( 皮膚、水晶體 ) 造成劑量，確定效\n應比機率效應重要。\n( 2 ) β粒子之屏蔽物質及厚度，決定於：\n• 屏蔽物質的原子序必須很小，以減少制動輻射的產生。且屏蔽物質的厚度必須大\n於β粒子的最大射程，以完全阻擋β粒子。\n• 高原子序物質可有效衰減所產生之制動輻射的量。\n故屏蔽 β 粒子時宜先用較低原子序物質以完全阻擋β粒子，其後再接高原子序物\n質，以有效阻擋β 粒子產生之制動輻射的影響。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-110-1-professional/q5-1.webp",
+          "alt": "110-1 輻射防護員 專業 問答第 5 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-110-1-professional-essay-006",
       "kind": "essay",
       "section": "essay",
       "number": 6,
-      "stem": "(1)距離射源1 m 處的空氣克馬率(air Kerma rate)為3×10-3 Gy/h，若使用4.4 cm 厚的屏\n蔽，屏蔽的線性衰減係數為1.24 cm-1，增建因數(buildup factor)為2.12，請計算空氣克\n馬率(Gy/h)。\n(2)請問該輻射的平均自由路徑(mean free path)為何？",
-      "answerText": "(1)\n(2) = 0.806 (cm)",
-      "isComplete": true
+      "stem": "( 1 ) 距離射源1 m 處的空氣克馬率 ( air Kerma rate ) 為3 × 10^ - 3 Gy / h，若使用4.4 cm 厚的屏\n蔽，屏蔽的線性衰減係數為1.24 cm-1，增建因數(buildup factor)為2.12，請計算空氣克\n馬率(Gy/h)。\n(2)請問該輻射的平均自由路徑(mean free path)為何？",
+      "answerText": "(1)\n( 2 ) = 0.806 ( cm )",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-110-1-professional/q6-1.webp",
+          "alt": "110-1 輻射防護員 專業 問答第 6 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-110-1-professional-essay-007",
@@ -574,7 +628,13 @@ window.NM_EXAM_BANK["rpo-110-1-professional"] = {
       "number": 7,
       "stem": "某一100 keV貝他射線，試問：\n(1) 完全停留於空氣中，產生的正負離子對大約是幾對？\n(2) 完全停留於鍺中，產生的電子電洞對大約是幾對？\n(3) 因此，高純度鍺偵檢器和游離腔偵檢器何者的能量解析度較好？",
       "answerText": "(1) (約3000對)\n(2) (約30000對)\n(3) 高純度鍺偵檢器(HPGe)優於游離腔(ion chamber)",
-      "isComplete": true
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-110-1-professional/q7-1.webp",
+          "alt": "110-1 輻射防護員 專業 問答第 7 題原始解答截圖（第 1 張）"
+        }
+      ]
     }
   ]
 };

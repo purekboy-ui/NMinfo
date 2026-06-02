@@ -1429,12 +1429,40 @@ function renderReaderRail(section, items) {
     }
 
     return `
-        <aside class="page-rail" aria-label="${escapeHtml(section.title)} 閱讀索引">
-            <div class="rail-shell">
-                <p class="rail-eyebrow">閱讀索引</p>
-                <p class="rail-title">${escapeHtml(section.navLabel || section.title)}</p>
-                <p class="rail-note">${escapeHtml(getReaderRailNote(section))}</p>
-                <ul class="rail-list">
+        <div class="reader-nav-shell" aria-label="${escapeHtml(section.title)} 閱讀索引">
+            <aside class="page-rail" aria-hidden="true">
+                <div class="rail-progress-track">
+                    ${items
+                        .map(
+                            (item) => `
+                                <button
+                                    type="button"
+                                    class="reader-progress-link"
+                                    data-scroll-target="${item.id}"
+                                    title="${escapeHtml(item.label)}"
+                                >
+                                    <span class="sr-only">${escapeHtml(item.label)}</span>
+                                </button>
+                            `
+                        )
+                        .join("")}
+                </div>
+            </aside>
+            <div class="reader-fab-stack">
+                <button type="button" class="reader-fab reader-fab--toc" data-reader-action="toggle-drawer">目錄</button>
+                <button type="button" class="reader-fab reader-fab--top" data-reader-action="scroll-top" aria-label="回到頁首">↑</button>
+            </div>
+            <button type="button" class="reader-drawer-backdrop" data-reader-action="close-drawer" aria-hidden="true" tabindex="-1"></button>
+            <aside class="reader-rail-drawer" aria-label="${escapeHtml(section.title)} 閱讀索引" aria-hidden="true">
+                <div class="reader-drawer-header">
+                    <div class="reader-drawer-copy">
+                        <p class="rail-eyebrow">閱讀索引</p>
+                        <p class="rail-title">${escapeHtml(section.navLabel || section.title)}</p>
+                        <p class="rail-note">${escapeHtml(getReaderRailNote(section))}</p>
+                    </div>
+                    <button type="button" class="reader-drawer-close" data-reader-action="close-drawer" aria-label="關閉目錄">×</button>
+                </div>
+                <ul class="reader-drawer-list">
                     ${items
                         .map(
                             (item) => `
@@ -1447,8 +1475,8 @@ function renderReaderRail(section, items) {
                         )
                         .join("")}
                 </ul>
-            </div>
-        </aside>
+            </aside>
+        </div>
     `;
 }
 
@@ -1473,19 +1501,36 @@ function renderIndexedBlocks(blocks, sectionKey) {
 }
 
 function setActiveReaderRail(id) {
-    document.querySelectorAll(".reader-rail-button").forEach((button) => {
+    document.querySelectorAll(".reader-rail-button, .reader-progress-link").forEach((button) => {
         button.classList.toggle("is-active", button.dataset.scrollTarget === id);
     });
 }
 
+let readerRailCleanup = null;
+
 function bindReaderRail() {
-    const buttons = Array.from(document.querySelectorAll(".reader-rail-button"));
+    readerRailCleanup?.();
+    readerRailCleanup = null;
+
+    const buttons = Array.from(document.querySelectorAll(".reader-rail-button, .reader-progress-link"));
+    const actionButtons = Array.from(document.querySelectorAll("[data-reader-action]"));
+    const navShell = document.querySelector(".reader-nav-shell");
+    const drawer = document.querySelector(".reader-rail-drawer");
+    const sections = Array.from(document.querySelectorAll(".article-block[id]"));
     if (!buttons.length) {
         return;
     }
 
+    const setDrawerOpen = (isOpen) => {
+        if (!navShell || !drawer) {
+            return;
+        }
+        navShell.classList.toggle("is-drawer-open", isOpen);
+        drawer.setAttribute("aria-hidden", isOpen ? "false" : "true");
+    };
+
     setActiveReaderRail(buttons[0].dataset.scrollTarget);
-    buttons.forEach((button) => {
+    const handleClick = (button) => {
         button.addEventListener("click", () => {
             const target = document.getElementById(button.dataset.scrollTarget);
             if (!target) {
@@ -1499,8 +1544,61 @@ function bindReaderRail() {
                 24;
             setActiveReaderRail(button.dataset.scrollTarget);
             contentScroll.scrollTo({ top: Math.max(0, targetTop), behavior: "smooth" });
+            if (button.classList.contains("reader-rail-button")) {
+                setDrawerOpen(false);
+            }
         });
-    });
+    };
+
+    const updateActive = () => {
+        const viewportTop = contentScroll.getBoundingClientRect().top + 96;
+        let activeSection = sections[0];
+
+        if (contentScroll.scrollTop + contentScroll.clientHeight >= contentScroll.scrollHeight - 24) {
+            activeSection = sections[sections.length - 1];
+        } else {
+            sections.forEach((section) => {
+                if (section.getBoundingClientRect().top <= viewportTop) {
+                    activeSection = section;
+                }
+            });
+        }
+
+        if (activeSection?.id) {
+            setActiveReaderRail(activeSection.id);
+        }
+        if (navShell) {
+            navShell.classList.toggle("can-scroll-top", contentScroll.scrollTop > 180);
+        }
+    };
+
+    const handleAction = (event) => {
+        const action = event.currentTarget.dataset.readerAction;
+        if (action === "toggle-drawer") {
+            setDrawerOpen(!navShell?.classList.contains("is-drawer-open"));
+            return;
+        }
+        if (action === "close-drawer") {
+            setDrawerOpen(false);
+            return;
+        }
+        if (action === "scroll-top") {
+            contentScroll.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    };
+
+    buttons.forEach(handleClick);
+    actionButtons.forEach((button) => button.addEventListener("click", handleAction));
+    contentScroll.addEventListener("scroll", updateActive, { passive: true });
+    window.addEventListener("resize", updateActive);
+    setDrawerOpen(false);
+    updateActive();
+
+    readerRailCleanup = () => {
+        actionButtons.forEach((button) => button.removeEventListener("click", handleAction));
+        contentScroll.removeEventListener("scroll", updateActive);
+        window.removeEventListener("resize", updateActive);
+    };
 }
 
 function getSectionType(section) {

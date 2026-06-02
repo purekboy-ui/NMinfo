@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Huang's 核醫工具箱</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet"></noscript>
+</head>
+<body>
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="開啟選單">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </button>
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-brand">
+                    <div class="brand-icon" aria-hidden="true">
+                        <img src="assets/logo/dr-huang-toolbox-logo.svg" alt="">
+                    </div>
+                    <div>
+                        <h1>Dr. Huang's</h1>
+                        <p class="brand-subtitle">核醫工具箱</p>
+                    </div>
+                </div>
+                <div class="search-box">
+                    <svg class="search-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/></svg>
+                    <input type="text" id="exam-search" aria-label="快速切換檢查與工具" placeholder="快速切換檢查或工具…">
+                    <kbd class="search-shortcut">/</kbd>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav" id="sidebar-nav">
+                <div class="sidebar-priority">
+                    <span class="sidebar-priority-label">快速入口</span>
+                    <button class="nav-item nav-item-priority active" data-category="HomeHub">首頁總覽</button>
+                </div>
+
+                <!-- 📚 核醫小學堂 -->
+                <div class="nav-group">
+                    <button class="nav-group-toggle" data-group="learning">
+                        <span class="nav-group-icon">📚</span>
+                        <span class="nav-group-label">核醫小學堂</span>
+                        <span class="nav-group-count">6</span>
+                        <svg class="nav-group-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                    </button>
+                    <div class="nav-group-items" id="group-learning">
+                        <button class="nav-item active" data-category="NMBasics">核醫原理、儀器與技術</button>
+                        <button class="nav-item" data-category="DocumentControl">文件與品質管理</button>
+                        <button class="nav-item" data-category="Radiopharmacy">熱核室與製劑作業</button>
+                        <button class="nav-item" data-category="PatientQA">病人溝通與衛教</button>
+                        <button class="nav-item" data-category="RadiationSafety">輻射防護與治療安全</button>
+                        <button class="nav-item" data-category="DosageTable">藥物與劑量工具</button>
+                    </div>
+                </div>
+
+                <!-- 💊 核醫治療 -->
+                <div class="nav-group">
+                    <button class="nav-group-toggle" data-group="therapy">
+                        <span class="nav-group-icon">💊</span>
+                        <span class="nav-group-label">核醫治療</span>
+                        <span class="nav-group-count">5</span>
+                        <svg class="nav-group-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                    </button>
+                    <div class="nav-group-items" id="group-therapy">
+                        <button class="nav-item" data-category="I131">I-131 甲狀腺治療</button>
+                        <button class="nav-item" data-category="Ra223">Ra-223 骨轉移治療</button>
+                        <button class="nav-item" data-category="Lu177PSMA">Lu-177 PSMA 治療</button>
+                        <button class="nav-item" data-category="Lu177DOTATATE">Lu-177 PRRT 治療</button>
+                        <button class="nav-item" data-category="OtherTherapies">其他治療</button>
+                    </div>
+                </div>
+
+                <!-- 🏥 正子影像 -->
+                <div class="nav-group">
+                    <button class="nav-group-toggle" data-group="pet">
+                        <span class="nav-group-icon">⚛️</span>
+                        <span class="nav-group-label">正子影像 PET</span>
+                        <span class="nav-group-count">7</span>
+                        <svg class="nav-group-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                    </button>
+                    <div class="nav-group-items" id="group-pet">
+                        <button class="nav-item" data-category="PET">FDG PET/CT (腫瘤)</button>
+                        <button class="nav-item" data-category="BrainPET">FDG PET Brain (失智)</button>
+                        <button class="nav-item" data-category="POSLUMA">PSMA PET (攝護腺)</button>
+                        <button class="nav-item" data-category="Ga68DOTATOC">Ga-68 DOTATOC (NET)</button>
+                        <button class="nav-item" data-category="AmyloidPET">Amyloid PET (類澱粉)</button>
+                        <button class="nav-item" data-category="NaFPET">F-18 NaF Bone PET</button>
+                        <button class="nav-item" data-category="CardiacPET">心臟正子掃描</button>
+                    </div>
+                </div>
+
+                <!-- 🧬 內分泌 / 治療 -->
+                <div class="nav-group">
+                    <button class="nav-group-toggle" data-group="endocrine">
+                        <span class="nav-group-icon">🧬</span>
+                        <span class="nav-group-label">內分泌 / 甲狀腺</span>
+                        <span class="nav-group-count">6</span>
+                        <svg class="nav-group-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                    </button>
+                    <div class="nav-group-items" id="group-endocrine">
+                        <button class="nav-item" data-category="Thyroid">甲狀腺掃描</button>
+                        <button class="nav-item" data-category="Parathyroid">副甲狀腺掃描</button>
+                        <button class="nav-item" data-category="MIBG">腎上腺髓質 MIBG</button>
+                        <button class="nav-item" data-category="NP59">腎上腺皮質 NP-59</button>
+                        <button class="nav-item" data-category="I131WBS">I-131 全身掃描</button>
+                        <button class="nav-item" data-category="Salivary">唾液腺掃描</button>
+                    </div>
+                </div>
+
+                <!-- ❤️ 心臟 / 循環 -->
+                <div class="nav-group">
+                    <button class="nav-group-toggle" data-group="cardiac">
+                        <span class="nav-group-icon">❤️</span>
+                        <span class="nav-group-label">心臟 / 循環 / 淋巴</span>
+                        <span class="nav-group-count">7</span>
+                        <svg class="nav-group-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                    </button>
+                    <div class="nav-group-items" id="group-cardiac">
+                        <button class="nav-item" data-category="MPI_Tc99m">心肌灌流 Tc-99m</button>
+                        <button class="nav-item" data-category="MPI_Tl201">心肌灌流 Tl-201</button>
+                        <button class="nav-item" data-category="CardiacAmyloid">心臟類澱粉 PYP</button>
+                        <button class="nav-item" data-category="MUGA">心室功能 MUGA</button>
+                        <button class="nav-item" data-category="Venography">靜脈攝影</button>
+                        <button class="nav-item" data-category="Lymphedema">淋巴水腫攝影</button>
+                        <button class="nav-item" data-category="SLN">前哨淋巴結</button>
+                    </div>
+                </div>
+
+                <!-- 🫁 消化 / 肝膽 -->
+                <div class="nav-group">
+                    <button class="nav-group-toggle" data-group="gi">
+                        <span class="nav-group-icon">🫁</span>
+                        <span class="nav-group-label">消化 / 肝膽</span>
+                        <span class="nav-group-count">7</span>
+                        <svg class="nav-group-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                    </button>
+                    <div class="nav-group-items" id="group-gi">
+                        <button class="nav-item" data-category="Gastric">胃排空掃描</button>
+                        <button class="nav-item" data-category="GIBleed">腸胃道出血</button>
+                        <button class="nav-item" data-category="Meckel">梅克爾憩室</button>
+                        <button class="nav-item" data-category="Liver">肝脾臟掃描</button>
+                        <button class="nav-item" data-category="LiverHemangioma">肝血管瘤 RBC</button>
+                        <button class="nav-item" data-category="Biliary">膽道掃描 HIDA</button>
+                        <button class="nav-item" data-category="Salivary2">唾液腺掃描</button>
+                    </div>
+                </div>
+
+                <!-- 🦴 骨骼 / 腎臟 -->
+                <div class="nav-group">
+                    <button class="nav-group-toggle" data-group="bone-renal">
+                        <span class="nav-group-icon">🦴</span>
+                        <span class="nav-group-label">骨骼 / 腎臟 / 泌尿</span>
+                        <span class="nav-group-count">6</span>
+                        <svg class="nav-group-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                    </button>
+                    <div class="nav-group-items" id="group-bone-renal">
+                        <button class="nav-item" data-category="Bone">全身骨骼掃描</button>
+                        <button class="nav-item" data-category="DMSA">腎皮質 DMSA</button>
+                        <button class="nav-item" data-category="DTPA">腎利尿 DTPA</button>
+                        <button class="nav-item" data-category="MAG3">腎功能 MAG3</button>
+                        <button class="nav-item" data-category="Cystography">膀胱逆流掃描</button>
+                        <button class="nav-item" data-category="Scrotal">陰囊掃描</button>
+                    </div>
+                </div>
+
+                <!-- 🧠 神經 / 肺 / 感染 -->
+                <div class="nav-group">
+                    <button class="nav-group-toggle" data-group="neuro">
+                        <span class="nav-group-icon">🧠</span>
+                        <span class="nav-group-label">神經 / 肺 / 感染</span>
+                        <span class="nav-group-count">7</span>
+                        <svg class="nav-group-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                    </button>
+                    <div class="nav-group-items" id="group-neuro">
+                        <button class="nav-item" data-category="Brain">腦部灌流 SPECT</button>
+                        <button class="nav-item" data-category="TRODAT">多巴胺 TRODAT</button>
+                        <button class="nav-item" data-category="Cisternography">腦脊髓液池掃描</button>
+                        <button class="nav-item" data-category="Lung">肺灌注掃描</button>
+                        <button class="nav-item" data-category="LungVQ">肺通氣灌注 V/Q</button>
+                        <button class="nav-item" data-category="Ga67">鎵-67 發炎掃描</button>
+                        <button class="nav-item" data-category="WBCScan">白血球掃描</button>
+                    </div>
+                </div>
+
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>Handcrafted 2026 by Huang Chun-Yin</p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-panel" aria-label="主要內容">
+            <div class="content-scroll">
+                <div id="content-display" class="content-area"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>

@@ -23,7 +23,7 @@ window.NM_EXAM_BANK["rpo-112-1-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 1,
-      "stem": "若6Li(n, α) 3H 反應的 Q值為4.78 MeV， 試問α粒子的動能為多少 MeV？",
+      "stem": "若6Li ( n, α ) 3H 反應的 Q值為4.78 MeV， 試問α粒子的動能為多少 MeV？",
       "options": [
         {
           "key": "A",
@@ -31,7 +31,7 @@ window.NM_EXAM_BANK["rpo-112-1-professional"] = {
         },
         {
           "key": "B",
-          "text": "E α = 4.78 MeV × 3/(3+4) = 2.05 MeV"
+          "text": "E α = 4.78 MeV × 3 / ( 3 + 4 ) = 2.05 MeV"
         },
         {
           "key": "C",
@@ -48,7 +48,7 @@ window.NM_EXAM_BANK["rpo-112-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\nE α = 4.78 MeV × 3/(3+4)= 2.05 MeV",
+      "answerText": "(2)\nE α = 4.78 MeV × 3 / ( 3 + 4 ) = 2.05 MeV",
       "isComplete": true
     },
     {
@@ -97,7 +97,7 @@ window.NM_EXAM_BANK["rpo-112-1-professional"] = {
         },
         {
           "key": "B",
-          "text": "假設10B的豐度為X 硼原子量 = 10.012939X + 11.009305(1-X) = 10.812025 X = 0.1980 = 19.80%"
+          "text": "假設10B的豐度為X 硼原子量 = 10.012939X + 11.009305 × ( 1 - X ) = 10.812025 ∴X = 0.1980 = 19.80%"
         },
         {
           "key": "C",
@@ -114,7 +114,7 @@ window.NM_EXAM_BANK["rpo-112-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\n假設10B的豐度為X\n硼原子量 = 10.012939X + 11.009305(1-X) = 10.812025 X = 0.1980 = 19.80%",
+      "answerText": "(2)\n假設10B的豐度為X\n硼原子量 = 10.012939X + 11.009305 × ( 1 - X ) = 10.812025 ∴X = 0.1980 = 19.80%",
       "isComplete": true
     },
     {
@@ -155,7 +155,7 @@ window.NM_EXAM_BANK["rpo-112-1-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 5,
-      "stem": "淋巴細胞具有高輻射敏感性， 下列關於其細胞存活曲線的描述何者錯誤？ A.較小 D 值 B.較寬廣的肩部 C.較小/ 值 D.細胞以分裂死亡(mitotic death) 的比重\n0\n遠比細胞凋亡(apoptosis) 多",
+      "stem": "淋巴細胞具有高輻射敏感性， 下列關於其細胞存活曲線的描述何者錯誤？ A.較小 D 值 B.較寬廣的肩部 C.較小α / β 值 D.細胞以分裂死亡 ( mitotic death ) 的比重\n0\n遠比細胞凋亡(apoptosis) 多",
       "options": [
         {
           "key": "A",
@@ -287,7 +287,7 @@ window.NM_EXAM_BANK["rpo-112-1-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 9,
-      "stem": "鉛(ρ=11.34 g‧cm-3) 對光子的總衰減係數在下列哪個能量附近有一最低值？",
+      "stem": "鉛 ( ρ = 11.34 g‧cm - 3 ) 對光子的總衰減係數在下列哪個能量附近有一最低值？",
       "options": [
         {
           "key": "A",
@@ -435,7 +435,7 @@ window.NM_EXAM_BANK["rpo-112-1-professional"] = {
         },
         {
           "key": "D",
-          "text": "RBE=標準輻射產生某一生物效應的劑量/某一輻射產生相同生物效應的劑量， 故需較高 劑量之輻射其RBE 值應較小。 依據游離輻射防護安全標準附表一， 3 MeV質子之輻射加權因數為 5， 1 MeV中子之輻 射加權因數為20。 女性卵巢接受超過3 Gy者即會造成暫時不孕。"
+          "text": "RBE = 標準輻射產生某一生物效應的劑量 / 某一輻射產生相同生物效應的劑量， 故需較高 劑量之輻射其RBE 值應較小。 依據游離輻射防護安全標準附表一， 3 MeV質子之輻射加權因數為 5， 1 MeV中子之輻 射加權因數為20。 女性卵巢接受超過3 Gy者即會造成暫時不孕。"
         }
       ],
       "answer": "D",
@@ -444,7 +444,7 @@ window.NM_EXAM_BANK["rpo-112-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(4)\nRBE=標準輻射產生某一生物效應的劑量/某一輻射產生相同生物效應的劑量，故需較高\n劑量之輻射其RBE 值應較小。\n依據游離輻射防護安全標準附表一，3 MeV質子之輻射加權因數為 5，1 MeV中子之輻\n射加權因數為20。\n女性卵巢接受超過3 Gy者即會造成暫時不孕。",
+      "answerText": "(4)\nRBE = 標準輻射產生某一生物效應的劑量 / 某一輻射產生相同生物效應的劑量，故需較高\n劑量之輻射其RBE 值應較小。\n依據游離輻射防護安全標準附表一，3 MeV質子之輻射加權因數為 5，1 MeV中子之輻\n射加權因數為20。\n女性卵巢接受超過3 Gy者即會造成暫時不孕。",
       "isComplete": true
     },
     {
@@ -452,7 +452,7 @@ window.NM_EXAM_BANK["rpo-112-1-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 14,
-      "stem": "同位素226Ra的初始質量為 500 mg， 請問多久後 222Rn達到最大的活度？ ( 226Ra的半化\n期=1600 年， 222Rn 的半化期=3.8天)",
+      "stem": "同位素226Ra的初始質量為 500 mg， 請問多久後 222Rn達到最大的活度？ ( 226Ra的半化\n期 = 1600 年， 222Rn 的半化期 = 3.8天 )",
       "options": [
         {
           "key": "A",
@@ -468,7 +468,7 @@ window.NM_EXAM_BANK["rpo-112-1-professional"] = {
         },
         {
           "key": "D",
-          "text": "226Ra的半化期=1600 年， 222Rn的半化期=3.8 天， 而質量與所求並無關係。 0.693 3.8/365 ln()  0.693 ln( B)  1600 t  A  0.18年65天 max   0.693 0.693 B A 3.8 1600年 年 365"
+          "text": "226Ra的半化期 = 1600 年， 222Rn的半化期 = 3.8 天， 而質量與所求並無關係。 0.6933.8 / 365 ln ( ) λ 0.693 ln ( B ) λ 1600 t = A = = 0.18年 = 65天 max λ - λ 0.6930.693 BA 3.81600年 年 365"
         }
       ],
       "answer": "D",
@@ -477,7 +477,7 @@ window.NM_EXAM_BANK["rpo-112-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(4)\n226Ra的半化期=1600 年，222Rn的半化期=3.8 天，而質量與所求並無關係。\n0.693\n3.8/365\nln( )\n 0.693\nln( B)\n 1600\nt  A  0.18年65天\n\nmax   0.693 0.693\nB A\n3.8 1600年\n年\n365",
+      "answerText": "(4)\n226Ra的半化期 = 1600 年，222Rn的半化期 = 3.8 天，而質量與所求並無關係。\n0.693\n3.8/365\nln( )\nλ 0.693\nln( B)\nλ 1600\nt = A = = 0.18年 = 65天\nmax λ - λ 0.6930.693\nB A\n3.8 1600年\n年\n365",
       "isComplete": true
     },
     {
@@ -519,26 +519,44 @@ window.NM_EXAM_BANK["rpo-112-1-professional"] = {
       "section": "essay",
       "number": 1,
       "stem": "某一工作人員不慎將 Tc-99m 藥物濺灑到檯面。該單位的輻防人員以擦拭濾紙擦拭 100\ncm2檯面後，測得計數率為 100 cps。若擦拭效率為 10%，計數效率 70%，則該檯面之\n污染活度為多少Bq/m2？",
-      "answerText": "100 cm2 = 0.01 m2\n100 cps / [(0.1 cps Bq-1)×0.7] = 1429 Bq\n該檯面之污染活度為 1429 Bq/0.01 m2 = 1.43×105 Bq m-2",
-      "isComplete": true
+      "answerText": "100 cm2 = 0.01 m2\n100 cps / [ ( 0.1 cps Bq - 1 ) × 0.7] = 1429 Bq\n該檯面之污染活度為 1429 Bq / 0.01 m2 = 1.43 × 105 Bq m - 2",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-112-1-professional/q1-1.webp",
+          "alt": "112-1 輻射防護員 專業 問答第 1 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-112-1-professional-essay-002",
       "kind": "essay",
       "section": "essay",
       "number": 2,
-      "stem": "若在一年內，某輻射工作人員受到沉積在肺(組織加權因數=0.12)中的α粒子授予體內吸\n收劑量10 mGy，甲狀腺(組織加權因數=0.05)中的β粒子所導致之劑量 160 mGy，及體\n外全身均勻之γ曝露 15 mGy，試問：\n(1)該工作人員之有效劑量為多少 mSv？\n(2)該年工作人員還能接受多少全身均勻γ體外曝露的有效劑量？",
-      "answerText": "(1) E= 200.12+16010.05+1511= 47 (mSv)\n(2) 50-47=3 (mSv)",
-      "isComplete": true
+      "stem": "若在一年內，某輻射工作人員受到沉積在肺 ( 組織加權因數 = 0.12 ) 中的α粒子授予體內吸\n收劑量10 mGy，甲狀腺 ( 組織加權因數 = 0.05 ) 中的β粒子所導致之劑量 160 mGy，及體\n外全身均勻之γ曝露 15 mGy，試問：\n(1)該工作人員之有效劑量為多少 mSv？\n( 2 ) 該年工作人員還能接受多少全身均勻γ體外曝露的有效劑量？",
+      "answerText": "( 1 ) E = × 20 × 0.12 + 160 × 1 × 0.05 + 15 × 1 × 1 = 47 ( mSv ) ( 2 ) 50 - 47 = 3 ( mSv )",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-112-1-professional/q2-1.webp",
+          "alt": "112-1 輻射防護員 專業 問答第 2 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-112-1-professional-essay-003",
       "kind": "essay",
       "section": "essay",
       "number": 3,
-      "stem": "試求距離某108貝克光子點射源4公尺處的空氣劑量率。\n(已知該射源的Γ值為 2.3×10-9(Gy．m2) / (MBq．h))",
-      "answerText": "空氣劑量率：[ 2.3×10-9(Gy．m2) / MBq．h] ×108 Bq / (4 m)2 = 1.43×10-8 Gy h-1",
-      "isComplete": true
+      "stem": "試求距離某108貝克光子點射源4公尺處的空氣劑量率。\n( 已知該射源的Γ值為 2.3 × 10^ - 9 ( Gy．m2 ) / ( MBq．h ) )",
+      "answerText": "空氣劑量率：[2.3 × 10^ - 9 ( Gy．m2 ) / MBq．h] × 108 Bq / ( 4 m ) 2 = 1.43 × 10^ - 8 Gy h - 1",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-112-1-professional/q3-1.webp",
+          "alt": "112-1 輻射防護員 專業 問答第 3 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-112-1-professional-essay-004",
@@ -546,8 +564,14 @@ window.NM_EXAM_BANK["rpo-112-1-professional"] = {
       "section": "essay",
       "number": 4,
       "stem": "某醫院將 2 MBq 的 Au-198 射源(半化期為 2.69 天)永遠植入一病人體內進行治療，則\nAu-198射源在此病人體內總共會發生多少次衰變？",
-      "answerText": "衰變次數=植入病人體內之核種原子個數(永遠植入)\n/ = 2106(Bq) / (0.693/T\n= N 0 = A 0 1/2 )\n= 2106(dps)  1.443  2.69  86400 (s) = 6.71011 (次衰變)",
-      "isComplete": true
+      "answerText": "衰變次數 = 植入病人體內之核種原子個數 ( 永遠植入 )\n/ λ = 2 × 106 ( Bq ) / ( 0.693 / T = N 0 = A 01 / 2 )\n= 2 × 106 ( dps ) × 1.443 × 2.69 × 86400 ( s ) = 6.7 × 1011 ( 次衰變 )",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-112-1-professional/q4-1.webp",
+          "alt": "112-1 輻射防護員 專業 問答第 4 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-112-1-professional-essay-005",
@@ -555,26 +579,44 @@ window.NM_EXAM_BANK["rpo-112-1-professional"] = {
       "section": "essay",
       "number": 5,
       "stem": "已知有一放射性樣本的總計數率(A )為背景計數率(A )的 49 倍，若欲在 12 分鐘內完成\ns b\n最佳的計測時間，則總計數及背景計數所需的計測時間各為幾分鐘？",
-      "answerText": "總計數及背景計數所需的計測時間為10.5分鐘及 1.5分鐘。\nt / t = = ，t =7t ，7t +t = 12，t = 1.5，ts=10.5\ns b s b b b b",
-      "isComplete": true
+      "answerText": "總計數及背景計數所需的計測時間為10.5分鐘及 1.5分鐘。\nt / t = = ，t = 7t ，7t + t = 12，t = 1.5，ts = 10.5 sbsbbbb",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-112-1-professional/q5-1.webp",
+          "alt": "112-1 輻射防護員 專業 問答第 5 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-112-1-professional-essay-006",
       "kind": "essay",
       "section": "essay",
       "number": 6,
-      "stem": "有一活度為4 Ci 的\n6 0 C o 點射源，每次蛻變射出 1.17 MeV與1.33 MeV 的加馬射線，在\n空氣中的質量吸收係數\na\n/  0 . 0 2 6 7 c m 2 / g   ，試求：\n(1) 6 0 C o 的比加馬射線常數 \n R\nC\n\ni\nm\n h\n2 \n(2)離該射源2公尺處空氣的吸收劑量率D  (Gy/h)。",
-      "answerText": "(1)比加馬常數\n \nq\nE\n\n\ne\nip\n1\n1\n1\n4\n. 6\n.2 \nM\n9\n E\ni\n 1 1 0\ne V\nR  m\nC i \nf\ni\n3 J\n2\nh\ni\n\ni\n1 0\n\nc\n 4\nm\n1\n3 4\nm\n2\n2\n\n\n4\n1\n1 0\nk\n\n3\ng\ng\n0 .\n\n0 2\nB\n6 7\nd i\nq\ns\n\n\ns\n1\n\n.1 3\n7\n.7 \n\n1\n1\nC\n\n0\ni\n1\n1 0\n. 3\nB\n3\nq\n\n\n1\n3\n\n6\nC\nJ\n0\nh\n0\nc m\ng\ns\n\n2 M\nd\n3 8\nC\ne V\ni s .\n7 6\n/ k\nR\ng\n\n  \n(2)吸收劑量率\nA 4 Rm2 Ci R\n\n曝露率X   1.29 1.29\nr2 4 Cih m2 h\nE J R C/kg Gy\n吸收劑量率D   ip X  341.29   1.13102Gy/h\nq C h 3876R J /kg\ne",
-      "isComplete": true
+      "stem": "有一活度為 4 Ci 的 60Co 點射源，每次蛻變射出 1.17 MeV 與 1.33 MeV 的加馬射線，在空氣中的質量吸收係數 ( μa / ρ ) = 0.0267 cm2 / g，試求： ( 1 ) 60Co 的比加馬射線常數 Γ（R·m2 / ( Ci·h ) ）； ( 2 ) 離該射源 2 公尺處空氣的吸收劑量率 Ḋ（Gy / h）。",
+      "answerText": "( 1 ) 比加馬射線常數 Γ = 1.29 R·m2 / ( Ci·h ) 。\n( 2 ) 2 公尺處曝露率 Ẋ = ΓA / r2 = 1.29 × 4 / 2^2 = 1.29 R / h。\n再用 Ḋ = ( W / e ) Ẋ / 3876，代入 W / e = 34 J / C，可得空氣吸收劑量率 Ḋ = 1.13 × 10^ - 2 Gy / h。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-112-1-professional/q6-1.webp",
+          "alt": "112-1 輻射防護員 專業 問答第 6 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-112-1-professional-essay-007",
       "kind": "essay",
       "section": "essay",
       "number": 7,
-      "stem": "輻射工作人員對於某放射性核種的年攝入限度為5106 Bq，請計算其推定空氣濃度，並\n說明推定空氣濃度之定義。",
-      "answerText": "DAC = ALI / (2400 m3) = 5106 Bq / (2400 m3) = 2083 Bq/m3\n推定空氣濃度(DAC)：指某一放射性核種在每一立方米空氣中的濃度(貝克/立方米)，參\n考人在輕微體力之活動中，於一年中呼吸此濃度之空氣 2000 小時，將導致年攝入限度。",
-      "isComplete": true
+      "stem": "輻射工作人員對於某放射性核種的年攝入限度為5 × 106 Bq，請計算其推定空氣濃度，並\n說明推定空氣濃度之定義。",
+      "answerText": "DAC = ALI / ( 2400 m3 ) = 5 × 106 Bq / ( 2400 m3 ) = 2083 Bq / m3\n推定空氣濃度(DAC)：指某一放射性核種在每一立方米空氣中的濃度(貝克/立方米)，參\n考人在輕微體力之活動中，於一年中呼吸此濃度之空氣 2000 小時，將導致年攝入限度。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-112-1-professional/q7-1.webp",
+          "alt": "112-1 輻射防護員 專業 問答第 7 題原始解答截圖（第 1 張）"
+        }
+      ]
     }
   ]
 };

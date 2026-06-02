@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-24T14:25:31.624Z",
+  "generatedAt": "2026-06-02T14:05:40.895Z",
   "scope": "medical-and-radiation-exam-review",
   "tracks": [
     {
@@ -321,8 +321,8 @@
       "yearLabel": "106-1",
       "subjectCode": "law",
       "subjectName": "游離輻射防護法規",
-      "questionCount": 19,
-      "testableQuestionCount": 19,
+      "questionCount": 20,
+      "testableQuestionCount": 20,
       "invalidQuestionCount": 0
     },
     {
@@ -334,9 +334,9 @@
       "yearLabel": "106-1",
       "subjectCode": "professional",
       "subjectName": "游離輻射防護專業",
-      "questionCount": 21,
+      "questionCount": 22,
       "testableQuestionCount": 14,
-      "invalidQuestionCount": 0
+      "invalidQuestionCount": 1
     },
     {
       "id": "rps-106-2-law",
@@ -360,7 +360,7 @@
       "yearLabel": "106-2",
       "subjectCode": "professional",
       "subjectName": "游離輻射防護專業",
-      "questionCount": 21,
+      "questionCount": 22,
       "testableQuestionCount": 15,
       "invalidQuestionCount": 0
     },
@@ -425,7 +425,7 @@
       "yearLabel": "108-1",
       "subjectCode": "law",
       "subjectName": "游離輻射防護法規",
-      "questionCount": 30,
+      "questionCount": 26,
       "testableQuestionCount": 20,
       "invalidQuestionCount": 0
     },
@@ -439,8 +439,8 @@
       "subjectCode": "professional",
       "subjectName": "游離輻射防護專業",
       "questionCount": 22,
-      "testableQuestionCount": 15,
-      "invalidQuestionCount": 0
+      "testableQuestionCount": 13,
+      "invalidQuestionCount": 2
     },
     {
       "id": "rps-108-2-law",
@@ -465,8 +465,8 @@
       "subjectCode": "professional",
       "subjectName": "游離輻射防護專業",
       "questionCount": 22,
-      "testableQuestionCount": 15,
-      "invalidQuestionCount": 0
+      "testableQuestionCount": 14,
+      "invalidQuestionCount": 1
     },
     {
       "id": "rps-109-2-law",
@@ -477,7 +477,7 @@
       "yearLabel": "109-2",
       "subjectCode": "law",
       "subjectName": "游離輻射防護法規",
-      "questionCount": 32,
+      "questionCount": 26,
       "testableQuestionCount": 20,
       "invalidQuestionCount": 0
     },
@@ -516,7 +516,7 @@
       "yearLabel": "110-1",
       "subjectCode": "professional",
       "subjectName": "游離輻射防護專業",
-      "questionCount": 25,
+      "questionCount": 22,
       "testableQuestionCount": 15,
       "invalidQuestionCount": 0
     },
@@ -594,7 +594,7 @@
       "yearLabel": "112-1",
       "subjectCode": "law",
       "subjectName": "游離輻射防護法規",
-      "questionCount": 29,
+      "questionCount": 26,
       "testableQuestionCount": 20,
       "invalidQuestionCount": 0
     },
@@ -659,8 +659,8 @@
       "yearLabel": "113-1",
       "subjectCode": "professional",
       "subjectName": "游離輻射防護專業",
-      "questionCount": 21,
-      "testableQuestionCount": 14,
+      "questionCount": 22,
+      "testableQuestionCount": 15,
       "invalidQuestionCount": 0
     },
     {
@@ -750,7 +750,7 @@
       "yearLabel": "115-1",
       "subjectCode": "law",
       "subjectName": "游離輻射防護法規",
-      "questionCount": 29,
+      "questionCount": 26,
       "testableQuestionCount": 20,
       "invalidQuestionCount": 0
     },
@@ -763,8 +763,8 @@
       "yearLabel": "115-1",
       "subjectCode": "professional",
       "subjectName": "游離輻射防護專業",
-      "questionCount": 21,
-      "testableQuestionCount": 14,
+      "questionCount": 22,
+      "testableQuestionCount": 15,
       "invalidQuestionCount": 0
     },
     {
@@ -789,7 +789,7 @@
       "yearLabel": "106-1",
       "subjectCode": "professional",
       "subjectName": "游離輻射防護專業",
-      "questionCount": 21,
+      "questionCount": 22,
       "testableQuestionCount": 15,
       "invalidQuestionCount": 0
     },
@@ -815,8 +815,8 @@
       "yearLabel": "106-2",
       "subjectCode": "professional",
       "subjectName": "游離輻射防護專業",
-      "questionCount": 25,
-      "testableQuestionCount": 14,
+      "questionCount": 22,
+      "testableQuestionCount": 15,
       "invalidQuestionCount": 0
     },
     {
@@ -828,7 +828,7 @@
       "yearLabel": "107-1",
       "subjectCode": "law",
       "subjectName": "游離輻射防護法規",
-      "questionCount": 33,
+      "questionCount": 34,
       "testableQuestionCount": 30,
       "invalidQuestionCount": 0
     },
@@ -842,7 +842,7 @@
       "subjectCode": "professional",
       "subjectName": "游離輻射防護專業",
       "questionCount": 22,
-      "testableQuestionCount": 13,
+      "testableQuestionCount": 15,
       "invalidQuestionCount": 0
     },
     {
@@ -854,7 +854,7 @@
       "yearLabel": "107-2",
       "subjectCode": "law",
       "subjectName": "游離輻射防護法規",
-      "questionCount": 36,
+      "questionCount": 34,
       "testableQuestionCount": 30,
       "invalidQuestionCount": 0
     },
@@ -919,7 +919,7 @@
       "yearLabel": "108-2",
       "subjectCode": "professional",
       "subjectName": "游離輻射防護專業",
-      "questionCount": 24,
+      "questionCount": 22,
       "testableQuestionCount": 15,
       "invalidQuestionCount": 0
     },
@@ -1049,7 +1049,7 @@
       "yearLabel": "112-1",
       "subjectCode": "law",
       "subjectName": "游離輻射防護法規",
-      "questionCount": 43,
+      "questionCount": 39,
       "testableQuestionCount": 30,
       "invalidQuestionCount": 0
     },
@@ -1218,7 +1218,7 @@
       "yearLabel": "115-1",
       "subjectCode": "professional",
       "subjectName": "游離輻射防護專業",
-      "questionCount": 23,
+      "questionCount": 22,
       "testableQuestionCount": 15,
       "invalidQuestionCount": 0
     }

@@ -1,0 +1,68 @@
+111 
+
+
+
+ 6309
+
+
+
+
+
+1 
+
+___________
+
+!
+
+
+
+1. 82Rb-rubidium chloride  A.13N-ammonia B.99mTc-sestamibi C.201Tl-thallous chloride D.18F-FDG
+2. A.photoelectric effect B.bremsstrahlung radiation C.pair production D.annihilation radiation
+3. A.30 mCi 99mTc-MAA  0.3 mCi  99Mo99mTc-MAA  99% B.123I-MIBG  I 123 iodide I 123  C.Radio-HPLC  D. 18F-FDG  Kryptofix 2.2.2 
+4. A. B. C.signal-to-noise ratio, SNR D.
+5. Y 90  A. 99mTc-MAA  B.90Y  C.90Y-TheraSphere  2030 m D.90Y-SIR-Sphere  2060 m
+6.223Ra-radium chloride  A.0.49 Ci/kg B.1.49 Ci/kg C.3.49 Ci/kg
+
+D.5.49 Ci/kg 7. 90Sr-90Y 
+A. 90Sr  28.6  B. Y 90  64.1  C.90Sr  Dowex 50 cation-exchange resin  D. 0.03M  HCl  Y 90 8. A. N/Z  B.+ C. D. 1 9. DNA  A.18F-fluorodopa B.18F-flurpiridaz C.18F-fluorothymidine D.11C-choline 10. 99mTc- A. 99mTc  B.99mTc- 99mTc +7 C. 20 m D. 11. 67Ga-citrate  A. B. C. D.67Ga  78  24  12. 18F-florbetaben  A.electrophilic substitution B. C.stilbene D. 10  6% 13. A.18F- flutemetamol B.99mTc-tetrofosmin C.18F-FLT D.123I-MIBG 14.99mTc-ECD kit ECD  Na2EDTA2H2Ostannous chloride
+
+ A. B. C. D.weak ligand 15. NP-59  A. 27  B. C.cholesterol D. I 131  16. A.99mTc-pentetreotide B.111In-pentetreotide C.67Ga-pentetreotide D.201Tl-pentetreotide 17. SPECT-CT CT CT    CT  CT   CT  A. B. C. D. 18.  A.18F-florbetaben B.11C-PIB C.18F-florbetapir D.123I-IBZM 19. 99mTc-HMPAO  99mTc-ECD  A.99mTc-HMPAO 99mTc-ECD  B.99mTc-ECD  99mTc-HMPAO  C. acetazolamide  D. 20.radionuclide cisternography A.99mTc-DMSA B.111In-DTPA C.67Ga-citrate
+
+D.201Tl-TlCl 21. 123I-MIBG 
+A.123I-MIBG  B. C. D.H/M ratioDLBPD 22. A.18 F-FDOPA B.11C-raclopride C.99mTc-TRODAT-1 D.123I-F-CIT 23. A. B. C. D. 24. A.240 B.220 C.200 D.180 25. 99mTc-PYP  A.6  B.13  C.7  D.14  26.polar map 
+A.LCX
+
+B.LAD C.RCA D.PA 27.stressrest201Tl-TlCl    810 mCi  1    3  A. B. C. D. 28.123I-MIBG  131I-MIBG neuroblastomaKI  A. B. C. D. 29.amino acid A.11C-choline B.11C-methionine C.18F-DOPA D.18F-fluoroethyltyrosine 30. 18F-FDG  A. B. 4  C. 4  D. 4  31. 18F-FDG  A.131I Tg B.131I Tg C.131I Tg D.131I Tg 32. 111In-pentetreotide  A. octreotide  DTPA  111In-InCl3 B. C. D.somatostatin 33. 111In-pentetreotide 
+
+A.pheochromocytoma B.gastrinoma C.neuroblastoma D.melanoma 34.uptake mechanism  A.18F-FDGglucose metabolism B.67Ga-citrateDNA synthesis C.99mTc-sestamibiuptake via mitochondria D.201Tl-TlCluptake via Na+/K+ ATPs pump 35.18F-FDG  A.glucose transporter B.hexokinase C.glucokinase D.-6-glucose-6-phosphate dehydrogenase 36. 18F-FDG  A. B. C. D. 37. A.CEA
+ B.gold standard C. D. 18F-FDG  38. A.99mTc-DMSA B.99mTc-MAA C.99mTc-MDP D.99mTc-DTPA 39.radioiodine thyroid ablation A. 131I-NaI  B. 131I-NaI  C. 131I-NaI  D. 131I-NaI  40. 99mTc-MAG3 effective renal plasma flow, ERPF
+
+A. B. C. D. 41.
+
+A.pinhole collimator B.diverging collimator C.parallel multihole collimator D.converging collimator 42. 131I-NaI 
+A.SPECT-CT  planar scan  B.Planar scan  SPECT-CT  C.Planar scan  SPECT-CT  D.Planar scan  SPECT-CT 43.suboptimal injection technique   A  B time-activity curves B  A aortaR L 
+
+A.the first few 2-sec flow frames 
+B.the last few 2-sec flow frames 
+C.the first few 2-sec flow frames D.the first few 2-sec flow frames 44. A. B. C. D. 45. 131I-NaI  A. B. C. D. 46.low-energy all-purpose, LEAP A. I 131  B. I 131  C. I 131  D. 99mTc  47. 131I-OIH ERPFmL/min A.120
+
+B.240 C.400 D.600 48. 67Ga-citrate  A.lactoferrin B.lactoferrin C.lactoferrin D.siderophores 49. A.first-pass radionuclide ventriculography99mTc-MAA B.equilibrium radionuclide ventriculography99mTc-DTPA C.peritoneal venous shunt patency evaluation99mTc-MAA D.ventriculoperitoneal shunt patency evaluation99mTc-DTPA 50. A. 131I-NaI B. C. D. 20  51.ventilation A.99mTc-MAA B.99mTc-DTPA aerosol C.133Xe D.99mTc-Technegas 52. A.111In-DTPA  99mTc-sulfur colloid B.99mTc-sulfur colloid  99mTc-DTPA C.99mTc- DTPA  99mTc-pertechnetate D.111In- DTPA  99mTc-pertechnetate 53.99mTc-DISIDA  A. B.- C. D.B  54. 99mTc-IDA morphine A. B. C.
+
+D. Oddi  55. 40 
+99mTc-sulfur colloid 99mTc-phytate 99mTc-DMSA
+A. B. C. D. 56. A. B. C. D. 57. B  A.transmission B.transmission C.tracing D.tracing 58.IRMAimmunoradiometric assay B/T  A. B. C. D. 59. 3H-thymidine  A. B. C. D. 60.epitope A. B. C.
+
+D. 61.125I 
+A.insulin B.T3 C.folic acid D.HbsAg 62. 1950 Berson  Yalow  A. B. C. D. 63.  A. B. C. D. 64.223Ra  A.219Rn B.215At C.211Pb D.207Pb 65. 90Y-DOTATOC  A.90Y  B.DOTATOC somatostatin C.90Y-DOTATOC  D.90Y-DOTATOC  111In somatostatin analogue
+ 66. Y 90 
+A. B. C. D. 67. A.153Sm-EDTMP B.131I-MIBG C.186Re-HEDP
+
+D.89Sr-SrCl2 68.
+A.25% B.37% C.50% D.63% 69. A. B. C. D. 70. SPECT  A.Ramp filter B.Hanning filter C.Butterworth filter D.Gaussian filter 71. SPECT  A.step and shoot B.continuous C.continuous step shoot D.stationary 72.SPECT A. B. 70~364 keV  C. D. 73. PET 
+
+A.truncation artifacts B.respiration artifacts C.hip prosthesis D.tumor recurrence 74. standard uptake valueSUVnormalization A.total body mass B.lean body mass C.body surface area D.blood sugar 75. A.67Ga B.133Xe C.89Sr D.131I 76.uniformity 95% pixel 1% counts A.40,000 B.30,000 C.4,000 D.1,000 77.    A. B. C.
+
+D. 78. 99mTc 6 
+ A.3 B.6 C.12 D.24 79.low count regiongray scale A.linear B.exponential C.logarithmic D.polynomial 80. 2% A.10,000 B.1,000 C.1,250 D.2,500
+
+

@@ -31,7 +31,7 @@ window.NM_EXAM_BANK["rps-107-2-professional"] = {
         },
         {
           "key": "B",
-          "text": "A 試樣A的標準差σ = 3000、試樣B的標準差σ = 200。 兩計數比值 的標 A B B σ 2 σ 2 σ 2    準差σ， 滿足 A/B  = A  + B ， 則 A/B  A/B  A   B  2 2 σ  2  3000  200 1 1  A/B  =  +  = + =0.00533，      A/B  3000   200  3000 200 σ  百分標準差：  A/B ×100% = 0.00533×100% =7.3%  A/B"
+          "text": "A 試樣A的標準差σ = 3000、試樣B的標準差σ = 200。 兩計數比值 的標 ABB ( σ 2 ( σ 2 ( σ 2 ) ) ) 準差σ， 滿足 ( A / B ) = ( A ) + ( B ) ， 則 A / B ( A / B ) ( A ) ( B ) 22 ( σ ) 2 ( 3000 ) ( 200 ) 11 ( A / B ) = ( ) + ( ) = + = 0.00533， ( ) ( ) ( A / B ) ( 3000 ) ( 200 ) 3000200 ( σ ) 百分標準差： ( A / B ) × 100% = 0.00533 × 100% = 7.3% ( A / B )"
         },
         {
           "key": "C",
@@ -48,7 +48,7 @@ window.NM_EXAM_BANK["rps-107-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\nA\n試樣A的標準差σ = 3000、試樣B的標準差σ = 200 。兩計數比值 的標\nA B\nB\nσ 2 σ 2 σ 2\n  \n準差σ ，滿足 A/B  = A  + B  ，則\nA/B\n A/B  A   B \n2 2\nσ  2  3000  200 1 1\n A/B  =  +  = + =0.00533，\n   \n A/B  3000   200  3000 200\nσ \n百分標準差： A/B ×100% = 0.00533×100% =7.3%\n A/B",
+      "answerText": "(2)\nA\n試樣A的標準差σ = 3000、試樣B的標準差σ = 200 。兩計數比值 的標\nA B\nB\n( σ 2 ( σ 2 ( σ 2\n) ) )\n準差σ ，滿足 ( A / B ) = ( A ) + ( B ) ，則\nA/B\n( A/B) ( A ) ( B )\n2 2\n( σ ) 2 ( 3000 ) ( 200 ) 11\n( A / B ) = ( ) + ( ) = + = 0.00533，\n( ) ( )\n( A/B) ( 3000 ) ( 200 ) 3000 200\n( σ )\n百分標準差： ( A / B ) × 100% = 0.00533 × 100% = 7.3%\n( A/B)",
       "isComplete": true
     },
     {
@@ -60,19 +60,19 @@ window.NM_EXAM_BANK["rps-107-2-professional"] = {
       "options": [
         {
           "key": "A",
-          "text": "1×10-6 s"
+          "text": "1 × 10^ - 6 s"
         },
         {
           "key": "B",
-          "text": "5×10-6 s"
+          "text": "5 × 10^ - 6 s"
         },
         {
           "key": "C",
-          "text": "說明： 當τ<<1N + N −N 2000+3000-4880 τ = A B AB = =1.0×10-5(s) 2N N 2×2000×3000 A B 4 27"
+          "text": "說明： 當τ<<1N + N −N 2000 + 3000 - 4880 τ = AB AB = = 1.0 × 10^ - 5 ( s ) 2N N 2 × 2000 × 3000 AB 427"
         },
         {
           "key": "D",
-          "text": "5×10-5 s"
+          "text": "5 × 10^ - 5 s"
         }
       ],
       "answer": "C",
@@ -81,7 +81,7 @@ window.NM_EXAM_BANK["rps-107-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(3)\n說明：\n當τ<<1N + N −N 2000+3000-4880\nτ = A B AB = =1.0×10-5(s)\n2N N 2×2000×3000\nA B\n\n4 27",
+      "answerText": "(3)\n說明：\n當τ<<1N + N −N 2000 + 3000 - 4880\nτ = AB AB = = 1.0 × 10^ - 5 ( s )\n2N N 2 × 2000 × 3000\nA B\n4 27",
       "isComplete": true
     },
     {
@@ -93,7 +93,7 @@ window.NM_EXAM_BANK["rps-107-2-professional"] = {
       "options": [
         {
           "key": "A",
-          "text": "1000 12C的原子數量= ×6.02×1023 =5.02×1025 1kg 12 m2 −0.00569 ⋅ 1kg ⋅1027atom 5.02×1025atom m2 n −n =104 −104e− a µ⋅ a x =104(1−e kg) =1072 o"
+          "text": "100012C的原子數量 = × 6.02 × 1023 = 5.02 × 10251kg 12 m2 −0.00569 ⋅ 1kg ⋅1027atom 5.02 × 1025atom m2 n −n = 104 −104e - a µ⋅ ax = 104 ( 1−e kg ) = 1072 o"
         },
         {
           "key": "B",
@@ -114,7 +114,7 @@ window.NM_EXAM_BANK["rps-107-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(1)\n1000\n12C的原子數量= ×6.02×1023 =5.02×1025\n1kg\n12\nm2\n−0.00569 ⋅ 1kg ⋅1027atom\n5.02×1025atom m2\nn −n =104 −104e− a µ⋅ a x =104(1−e kg )=1072\no",
+      "answerText": "(1)\n1000\n12C的原子數量 = × 6.02 × 1023 = 5.02 × 1025\n1kg\n12\nm2\n−0.00569 ⋅ 1kg ⋅1027atom\n5.02 × 1025atom m2\nn −n = 104 −104e - a µ⋅ ax = 104 ( 1−e kg ) = 1072\no",
       "isComplete": true
     },
     {
@@ -134,7 +134,7 @@ window.NM_EXAM_BANK["rps-107-2-professional"] = {
         },
         {
           "key": "C",
-          "text": "5 106  5 N = N 0 e−D/D 0， →105 =106e−5/D 0， → D =ln   105    =ln(10) ， →D 0 = ln10 = 2.17Gy 0"
+          "text": "5 ( 106 ) 5 N = N 0 e - D / D 0， →105 = 106e - 5 / D 0， → D = ln ( ( ( 105 ) ) ) = ln ( 10 ) ， →D 0 = ln10 = 2.17Gy 0"
         },
         {
           "key": "D",
@@ -147,7 +147,7 @@ window.NM_EXAM_BANK["rps-107-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(3)\n5 106  5\nN = N 0 e−D/D 0 ，→105 =106e−5/D 0，→ D =ln   105    =ln(10)，→D 0 = ln10 = 2.17Gy\n0",
+      "answerText": "(3)\n5 (106 ) 5\nN = N 0 e - D / D 0 ，→105 = 106e - 5 / D 0，→ D = ln ( ( ( 105 ) ) ) = ln ( 10 ) ，→D 0 = ln10 = 2.17Gy\n0",
       "isComplete": true
     },
     {
@@ -167,7 +167,7 @@ window.NM_EXAM_BANK["rps-107-2-professional"] = {
         },
         {
           "key": "C",
-          "text": "鉛的熱中子截面σ =0.17barn Pb 硼的熱中子截面σ =759barn B 鎘的熱中子截面σ =2450barn Cd 銅的熱中子截面σ =3.79barn Cu σ >σ >σ >σ Cd B Cu Pb"
+          "text": "鉛的熱中子截面σ = 0.17barn Pb 硼的熱中子截面σ = 759barn B 鎘的熱中子截面σ = 2450barn Cd 銅的熱中子截面σ = 3.79barn Cu σ >σ >σ >σ Cd B Cu Pb"
         },
         {
           "key": "D",
@@ -180,7 +180,7 @@ window.NM_EXAM_BANK["rps-107-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(3)\n鉛的熱中子截面σ =0.17barn\nPb\n硼的熱中子截面σ =759barn\nB\n鎘的熱中子截面σ =2450barn\nCd\n銅的熱中子截面σ =3.79barn\nCu\nσ >σ >σ >σ\nCd B Cu Pb",
+      "answerText": "(3)\n鉛的熱中子截面σ = 0.17barn\nPb\n硼的熱中子截面σ = 759barn\nB\n鎘的熱中子截面σ = 2450barn\nCd\n銅的熱中子截面σ = 3.79barn\nCu\nσ >σ >σ >σ\nCd B Cu Pb",
       "isComplete": true
     },
     {
@@ -258,7 +258,7 @@ window.NM_EXAM_BANK["rps-107-2-professional"] = {
       "options": [
         {
           "key": "A",
-          "text": "RBE = Dx/D， D為一輻射產生某一特定生物終點(biological endpoint) 的劑量， Dx 是 指250 kVp 標準X射線產生相同生物終點的劑量"
+          "text": "RBE = Dx / D， D為一輻射產生某一特定生物終點 ( biological endpoint ) 的劑量， Dx 是 指250 kVp 標準X射線產生相同生物終點的劑量"
         },
         {
           "key": "B",
@@ -365,7 +365,7 @@ window.NM_EXAM_BANK["rps-107-2-professional"] = {
         },
         {
           "key": "C",
-          "text": "80 mCi = 80 × 3.7×107 Bq=2960 MBq 740 MBq / 2960 MBq = 1/4 = 1/22 (即可再使用2個半化期的時間) 2×74天=148天"
+          "text": "80 mCi = 80 × 3.7 × 107 Bq = 2960 MBq 740 MBq / 2960 MBq = 1 / 4 = 1 / 22 ( 即可再使用2個半化期的時間 ) 2 × 74天 = 148天"
         },
         {
           "key": "D",
@@ -378,7 +378,7 @@ window.NM_EXAM_BANK["rps-107-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(3)\n80 mCi = 80 × 3.7×107 Bq=2960 MBq\n740 MBq / 2960 MBq = 1/4 = 1/22 (即可再使用2個半化期的時間)\n2×74天=148天",
+      "answerText": "(3)\n80 mCi = 80 × 3.7 × 107 Bq = 2960 MBq\n740 MBq / 2960 MBq = 1 / 4 = 1 / 22 ( 即可再使用2個半化期的時間 )\n2 × 74天 = 148天",
       "isComplete": true
     },
     {
@@ -402,7 +402,7 @@ window.NM_EXAM_BANK["rps-107-2-professional"] = {
         },
         {
           "key": "D",
-          "text": "γ射線會使化學 劑量計(Fricke dosimeter) 的2價鐵離子變成3價鐵離子"
+          "text": "γ射線會使化學 劑量計 ( Fricke dosimeter ) 的2價鐵離子變成3價鐵離子"
         }
       ],
       "answer": "D",
@@ -435,7 +435,7 @@ window.NM_EXAM_BANK["rps-107-2-professional"] = {
         },
         {
           "key": "D",
-          "text": "解: 6Li +1n → 3H + 4He"
+          "text": "解: 6Li + 1n → 3H + 4He"
         }
       ],
       "answer": "D",
@@ -444,7 +444,7 @@ window.NM_EXAM_BANK["rps-107-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(4)\n解: 6Li +1n → 3H + 4He",
+      "answerText": "(4)\n解: 6Li + 1n → 3H + 4He",
       "isComplete": true
     },
     {
@@ -452,7 +452,7 @@ window.NM_EXAM_BANK["rps-107-2-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 14,
-      "stem": "設某物質原子核內的核子數為A， 中子與物質原子核進行彈性碰撞， 則中子轉移給原子\n核的平均能量比例f， 下列式子何者正確？ 2\n A−1 A2 +1 2A 4A",
+      "stem": "設某物質原子核內的核子數為A， 中子與物質原子核進行彈性碰撞， 則中子轉移給原子\n核的平均能量比例f， 下列式子何者正確？ 2\n( A−1) A2 +1 2A 4A",
       "options": [
         {
           "key": "A",
@@ -464,11 +464,11 @@ window.NM_EXAM_BANK["rps-107-2-professional"] = {
         },
         {
           "key": "C",
-          "text": "中子彈性散射後平均能量 ∫E′dΩ 1 π 1π E [ ] A2 E′= = ∫E′2πsinψdψ= ∫ +1+2Acosψsinψdψ 4π 2 () 2 ∫dΩ A+1 0 0  π  1 E  cos2ψ  ( A2) π =  +1(−cosψ) +2A  () 2 2 A+1  0 −2   0  1 E A2 +1 () = A2 +1 ×2 = E () 2 () 2 2 A+1 A+1 E − E′ A2 +1 2A 中子彈性散射後轉移給原子核的能量比例 f = =1− = (A+1) 2 (A+1) 2 E"
+          "text": "中子彈性散射後平均能量 ∫E′dΩ 1 π 1πE [] A2 E′ = = ∫E′2πsinψdψ = ∫ + 1 + 2Acosψsinψdψ 4π 2 ( ) 2 ∫dΩ A + 100 {π} 1 E | cos2ψ | ( A2 ) π = { + 1 ( −cosψ ) + 2A} ( ) 22 A + 1 | 0 −2 | {0} 1 E A2 + 1 ( ) = A2 + 1 × 2 = E ( ) 2 ( ) 22 A + 1 A + 1 E − E′ A2 + 12A 中子彈性散射後轉移給原子核的能量比例 f = = 1− = ( A + 1 ) 2 ( A + 1 ) 2 E"
         },
         {
           "key": "D",
-          "text": "f =   A+1 (A+1) 2 (A+1) 2 (A+1) 2 "
+          "text": "f = ( ) A + 1 ) ( A + 1 ) 2 ( A + 1 ) 2 ( A + 1 ) 2 ("
         }
       ],
       "answer": "C",
@@ -477,7 +477,7 @@ window.NM_EXAM_BANK["rps-107-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(3)\n中子彈性散射後平均能量\n∫E′dΩ\n1 π 1π E [ ]\nA2\nE′= = ∫E′2πsinψdψ= ∫ +1+2Acosψsinψdψ\n4π 2 ( )2\n∫dΩ A+1\n0 0\n π \n1 E  cos2ψ \n( A2 ) π\n=  +1(−cosψ) +2A \n( )2\n2 A+1  0 −2 \n 0 \n1 E A2 +1\n( )\n= A2 +1 ×2 = E\n( )2 ( )2\n2 A+1 A+1\nE − E′ A2 +1 2A\n中子彈性散射後轉移給原子核的能量比例 f = =1− =\n(A+1)2 (A+1)2\nE",
+      "answerText": "(3)\n中子彈性散射後平均能量\n∫E′dΩ\n1 π 1πE []\nA2\nE′ = = ∫E′2πsinψdψ = ∫ + 1 + 2Acosψsinψdψ\n4π 2 ( ) 2\n∫dΩ A + 1\n0 0\n{π}\n1 E | cos2ψ |\n( A2 ) π\n= { + 1 ( −cosψ ) + 2A}\n( )2\n2 A+1 | 0 −2 |\n{ 0 }\n1 E A2 +1\n( )\n= A2 + 1 × 2 = E\n( )2 ( )2\n2 A+1 A+1\nE − E′ A2 +1 2A\n中子彈性散射後轉移給原子核的能量比例 f = = 1− =\n(A+1)2 (A+1)2\nE",
       "isComplete": true
     },
     {
@@ -493,7 +493,7 @@ window.NM_EXAM_BANK["rps-107-2-professional"] = {
         },
         {
           "key": "B",
-          "text": "0.05 = e – (0.693/HVL) ‧4.5 cm， 雙邊取ln， 2.9957 = 3.1185 / HVL， 故HVL=1.04 cm"
+          "text": "0.05 = e - ( 0.693 / HVL ) ‧4.5 cm， 雙邊取ln， 2.9957 = 3.1185 / HVL， 故HVL = 1.04 cm"
         },
         {
           "key": "C",
@@ -510,7 +510,7 @@ window.NM_EXAM_BANK["rps-107-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\n0.05 = e – (0.693/HVL)‧4.5 cm，雙邊取ln，\n2.9957 = 3.1185 / HVL，故HVL=1.04 cm",
+      "answerText": "(2)\n0.05 = e - ( 0.693 / HVL ) ‧4.5 cm，雙邊取ln，\n2.9957 = 3.1185 / HVL，故HVL = 1.04 cm",
       "isComplete": true
     },
     {
@@ -518,9 +518,19 @@ window.NM_EXAM_BANK["rps-107-2-professional"] = {
       "kind": "essay",
       "section": "essay",
       "number": 1,
-      "stem": "假設一碳壁游離腔，空氣腔體積為1 cm3，置於水假體內，受到Co-60加馬射線的曝露，\n在空氣腔內產生3×10−7庫侖的電量，求(a)空氣腔內空氣的吸收劑量、(b)游離腔碳腔壁\n的吸收劑量、(c)水的吸收劑量。(假設碳壁厚度略大於電子的射程，且游離腔很小，滿\n足布拉格-戈雷空腔理論；空氣在標準狀態下ρ =1.293 kg/m3、W =33.85 eV/ip、\nair\n\nwater carbone\nµ  µ \nSwater =0.998、Scarbon =1.009、 ab  =1.111、 ab  =1.121)\n   \ncarbon air ρ ρ\n   \ncarbon air",
-      "answerText": "(a)空氣的吸收劑量\nW Q 3×10−7\nD = =33.85× =7.85 Gy\nair 1.293×10−6\nq m\ne air\n(b)碳腔壁的吸收劑量\nD = D Scarbon =7.85×1.009=7.92 Gy\ncarbon air air\n(c)水的吸收劑量\nwater\nµ \nD = D ab =7.92×1.111=8.80 Gy\n \nwater carbon ρ\n \ncarbon",
-      "isComplete": true
+      "stem": "假設一碳壁游離腔，空氣腔體積為1 cm3，置於水假體內，受到Co-60加馬射線的曝露，\n在空氣腔內產生3 × 10−7庫侖的電量，求 ( a ) 空氣腔內空氣的吸收劑量、 ( b ) 游離腔碳腔壁\n的吸收劑量、(c)水的吸收劑量。(假設碳壁厚度略大於電子的射程，且游離腔很小，滿\n足布拉格 - 戈雷空腔理論；空氣在標準狀態下ρ = 1.293 kg / m3、W = 33.85 eV / ip、\nair\nwater carbone\n(µ ) (µ )\nSwater = 0.998、Scarbon = 1.009、 ( ab ) = 1.111、 ( ab ) = 1.121 )\n( ) ( )\ncarbon air ρ ρ\n( ) ( )\ncarbon air",
+      "answerText": "( a ) 空氣的吸收劑量 WQ 3 × 10−7\nD = = 33.85 × = 7.85 Gy air 1.293 × 10−6 qme air\n(b)碳腔壁的吸收劑量\nD = D Scarbon = 7.85 × 1.009 = 7.92 Gy carbon air air\n(c)水的吸收劑量 water (µ )\nD = D ab = 7.92 × 1.111 = 8.80 Gy ( ) water carbon ρ ( ) carbon",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-107-2-professional/q1-1.webp",
+          "alt": "107-2 輻射防護師 專業 問答第 1 題原始解答截圖（第 1 張）"
+        },
+        {
+          "src": "./assets/radiation-answer-scans/rps-107-2-professional/q1-2.webp",
+          "alt": "107-2 輻射防護師 專業 問答第 1 題原始解答截圖（第 2 張）"
+        }
+      ]
     },
     {
       "id": "rps-107-2-professional-essay-002",
@@ -528,8 +538,14 @@ window.NM_EXAM_BANK["rps-107-2-professional"] = {
       "section": "essay",
       "number": 2,
       "stem": "度量鉛對10 MeV中子的截面，發現1 cm厚的鉛吸收體穿透的中子通率為初始值的54.5\n%。試計算其微觀截面與巨觀截面。 (鉛的原子量是207.1，比重11.3)",
-      "answerText": "× 6.02 × 1023 = 0.607 ∴σ = 1.85×10-23 cm2\n∑ = σN = σ ×\n巨觀截面為0.607 cm-1；微觀截面為18.5邦",
-      "isComplete": true
+      "answerText": "× 6.02 × 1023 = 0.607 ∴σ = 1.85 × 10^ - 23 cm2 ∑ = σN = σ ×\n巨觀截面為0.607 cm-1；微觀截面為18.5邦",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-107-2-professional/q2-1.webp",
+          "alt": "107-2 輻射防護師 專業 問答第 2 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rps-107-2-professional-essay-003",
@@ -537,17 +553,29 @@ window.NM_EXAM_BANK["rps-107-2-professional"] = {
       "section": "essay",
       "number": 3,
       "stem": "某實驗室使用2 mCi的32P產生20公升廢液，及0.01 mCi 137Cs產生50公升廢液，假\n設洗滌廢液活度皆為原先活度的 1/500。兩者之混合廢液再放置 2 個月，請問該混合廢\n液中 32P 及 137Cs 的濃度各為多少？混合廢液能否排放出去？ (註：32P 之半化期 14.3\n天，排放限值為0.3 Bq/ml，137Cs 之半化期30年，排放限值為0.09 Bq/ml)",
-      "answerText": "解：(1) 32P 於廢液中的濃度=〔2×3.7×107×e-(0.693×60/14.3)〕Bq/(500×70000 ml)\n= (7.4×107×0.0546) Bq / (3.5×107ml)\n= 4.04×106 Bq / (3.5×107ml)\n\n= 0.12 Bq / ml\n(2) 137Cs於廢液中的濃度=〔0.01×3.7×107〕Bq/(500×70000 ml)\n= 3.7×105 Bq/ (3.5×107ml)\n= 1.06×10-2 Bq/ ml\n(3) 0.12/0.3 + 0.0106/0.09= 0.4+0.12=0.52，小於1，可以排放。",
-      "isComplete": true
+      "answerText": "解： ( 1 ) 32P 於廢液中的濃度 = 〔2 × 3.7 × 107 × e - ( 0.693 × 60 / 14.3 ) 〕Bq / ( 500 × 70000 ml )\n= ( 7.4 × 107 × 0.0546 ) Bq / ( 3.5 × 107ml )\n= 4.04 × 106 Bq / ( 3.5 × 107ml ) = 0.12 Bq / ml\n( 2 ) 137Cs於廢液中的濃度 = 〔0.01 × 3.7 × 107〕Bq / ( 500 × 70000 ml )\n= 3.7 × 105 Bq / ( 3.5 × 107ml ) = 1.06 × 10^ - 2 Bq / ml\n( 3 ) 0.12 / 0.3 + 0.0106 / 0.09 = 0.4 + 0.12 = 0.52，小於1，可以排放。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-107-2-professional/q3-1.webp",
+          "alt": "107-2 輻射防護師 專業 問答第 3 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rps-107-2-professional-essay-004",
       "kind": "essay",
       "section": "essay",
       "number": 4,
-      "stem": "一顆9 Ci的60Co射源掉落出其屏蔽容器，操作員在射源周圍3米處布置了示警隔離樁\n與隔離繩，共花了30秒，然後以2 m/s之速度遠離射源到無窮遠處請求協助。\n(1)此操作員在布置示警隔離樁與隔離繩期間之吸收劑量為多少？ (2)操作員布置完離\nGy⋅m2\n開隔離繩後，所受到的劑量為多少µSv？(60Co的比加馬劑量常數為8.53×10−11 )\nMBq⋅s",
-      "answerText": "A 9 Gy⋅m2 Ci 3.7×104MBq 2.84×10−5 Gy\nɺ\n吸收劑量率D = Γ =8.53×10−11× × =\nd\nr2 r2 MBq⋅s m2 Ci r2 s\n(1)布置示警隔離樁與隔離繩期間之吸收劑量\n2.84×10−5\nɺ\nD = D×t = ×30=9.47×10−5Gy =94.7µGy\n32\nɺ\n(2)遠離射源到無窮遠處之吸收劑量D = ∫Ddt\n1\n因離射源的距離與時間的關係為r = 3+2t，→dt = dr\n2\n∞ 2.84×10−5 ∞\nɺ 1 −1\n吸收劑量D = ∫Ddt = ∫ × dr =1.42×10−5  = 4.7µGy\nr2 2  r \n3 3\nH =W D=4.7µSv\nR",
-      "isComplete": true
+      "stem": "一顆9 Ci的60Co射源掉落出其屏蔽容器，操作員在射源周圍3米處布置了示警隔離樁\n與隔離繩，共花了30秒，然後以2 m/s之速度遠離射源到無窮遠處請求協助。\n(1)此操作員在布置示警隔離樁與隔離繩期間之吸收劑量為多少？ (2)操作員布置完離\nGy⋅m2\n開隔離繩後，所受到的劑量為多少µSv？ ( 60Co的比加馬劑量常數為8.53 × 10−11 )\nMBq⋅s",
+      "answerText": "A 9 Gy⋅m2 Ci 3.7 × 104MBq 2.84 × 10−5 Gy\nɺ\n吸收劑量率D = Γ = 8.53 × 10−11 × × = d\nr2 r2 MBq⋅s m2 Ci r2 s\n(1)布置示警隔離樁與隔離繩期間之吸收劑量\n2.84 × 10−5\nɺ\nD = D × t = × 30 = 9.47 × 10−5Gy = 94.7µGy32\nɺ\n( 2 ) 遠離射源到無窮遠處之吸收劑量D = ∫Ddt1\n因離射源的距離與時間的關係為r = 3 + 2t，→dt = dr2 ∞ 2.84 × 10−5 ∞ ɺ 1 ( −1 )\n吸收劑量D = ∫Ddt = ∫ × dr = 1.42 × 10−5 ( ) = 4.7µGy r22 ( r ) 33 H = WD = 4.7µSvR",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-107-2-professional/q4-1.webp",
+          "alt": "107-2 輻射防護師 專業 問答第 4 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rps-107-2-professional-essay-005",
@@ -555,8 +583,18 @@ window.NM_EXAM_BANK["rps-107-2-professional"] = {
       "section": "essay",
       "number": 5,
       "stem": "將某放射性樣品置於計數器內，測量 5 分鐘，測得數目為 1200。取走該樣品後，測量\n背景值60分鐘，測得數目為2400。假設計數時間的百分標準差均為1 %；計數器的效\n率均為 0.25，標準差為 10 %。 (a)求此樣品的淨計數率及其標準差(以 cpm 表示)。(b)\n求此樣品的活度及其標準差(以Bq為單位)。",
-      "answerText": "(a)\n2 2 2\nN σ  σ  σ \n計數率R ，因N及t 都有誤差，所以 R N t 。\n=  =   + \nt R N t\n     \nσ 2  1200 2 2\n1200   1 \n樣品計數率R = =240 cpm、 R S  =  + ，→σ =7.33 cpm；\n    \nS 5 240 1200 100 R S\n   \n2\nσ  2  2400 2\n2400  1 \n背景計數率R = =40 cpm、 R B  =  +  ，→σ =0.91 cpm。\nB     R\n60 40 2400 100 B\n   \n淨計數率R = R −R =240−40=200 cpm\nnet S B\nσ2 +σ2 (7.33)2 +(0.91)2\n標準差σ = = =7.39 cpm\nnet R R\nS B\n\n(b)\nR 200 dis min\n活度A= net = × =13.3 Bq，\nε 0.25 min 60s\n2 2 2 2 2\n σ  σ   1  7.39  1 \n標準差 A = net  + = + ，σ =1.42 Bq\n     \n13.3 R 10 200 10 A\n   \nnet",
-      "isComplete": true
+      "answerText": "解：\n(a) 樣品測 5 分鐘得 1200 計數，所以\nRS = 1200 / 5 = 240 cpm。\n\n背景測 60 分鐘得 2400 計數，所以\nRB = 2400 / 60 = 40 cpm。\n\n由題意，計數時間的百分標準差均為 1%，\n故樣品計數率標準差\nσRS / RS = √[ ( √1200 / 1200 ) ^2 + ( 1 / 100 ) ^2]， σRS = 7.33 cpm。\n\n同理背景計數率標準差\nσRB / RB = √[ ( √2400 / 2400 ) ^2 + ( 1 / 100 ) ^2]， σRB = 0.91 cpm。\n\n淨計數率Rnet = RS - RB = 240 - 40 = 200 cpm。\n\n其標準差σRnet = √ ( σRS^2 + σRB^2 )\n= √ ( 7.33^2 + 0.91^2 ) = 7.39 cpm。\n\n( b ) 計數器效率 ε = 0.25，故樣品活度\nA = Rnet / ( ε × 60 )\n= 200 / ( 0.25 × 60 ) = 13.3 Bq。\n\n活度的相對標準差為\nσA / A = √[ ( σRnet / Rnet ) ^2 + ( σε / ε ) ^2]\n= √[ ( 7.39 / 200 ) ^2 + ( 0.10 ) ^2] = 0.1066。\n\n因此σA = 13.3 × 0.1066 = 1.42 Bq。\n\n故答案為：\n淨計數率 = 200 ± 7.39 cpm；\n活度 = 13.3 ± 1.42 Bq。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-107-2-professional/q5-1.webp",
+          "alt": "107-2 輻射防護師 專業 問答第 5 題原始解答截圖（第 1 張）"
+        },
+        {
+          "src": "./assets/radiation-answer-scans/rps-107-2-professional/q5-2.webp",
+          "alt": "107-2 輻射防護師 專業 問答第 5 題原始解答截圖（第 2 張）"
+        }
+      ]
     },
     {
       "id": "rps-107-2-professional-essay-006",
@@ -564,8 +602,14 @@ window.NM_EXAM_BANK["rps-107-2-professional"] = {
       "section": "essay",
       "number": 6,
       "stem": "某X光機管制區工作人員操作機台前(人員位置)測得之有效劑量率為0.1 m Sv/h，若已\n知鉛對此輻射的衰減係數是0.77 cm-1，考慮輻射工作人員每年工作2000小時，今擬於\n輻射源與操作機台間設置一層鉛屏蔽，此鉛屏蔽厚度至少應達多少公分以上，才能使工\n作人員有效劑量於每年正常作業情況下均能小於20 mSv？",
-      "answerText": "未加鉛屏蔽前操作機台處之累積年有效劑量為0.1 mSv/h × 2000 h/y = 200 mSv/y\n設鉛屏蔽厚度為x 公分可使年有效劑量為20 mSv\n則20 (mSv/y) = 200 (mSv/y) × e- 0.77 x\nln(20/200) = ln e- 0.77 x\nx = (ln 0.1) /(-0.77) = 2.99 cm (或3.0 cm)\n故設置之鉛屏蔽厚度至少應達2.99 (或3.0)公分以上",
-      "isComplete": true
+      "answerText": "解：未加鉛屏蔽前，工作人員每年有效劑量為\n0.1 mSv / h × 2000 h / y = 200 mSv / y。\n\n若要把年有效劑量降到 20 mSv/y，則需滿足\n20 = 200e^ ( - 0.77x ) 。\n\n因此e^ ( - 0.77x ) = 0.1，\nx = ln ( 0.1 ) / ( - 0.77 ) = 2.99 cm。\n\n故鉛屏蔽厚度至少約為 2.99 cm(約 3.0 cm)。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-107-2-professional/q6-1.webp",
+          "alt": "107-2 輻射防護師 專業 問答第 6 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rps-107-2-professional-essay-007",
@@ -574,7 +618,13 @@ window.NM_EXAM_BANK["rps-107-2-professional"] = {
       "number": 7,
       "stem": "游離輻射一次大量曝露對生物體的全身曝露確定效應，可分為急性效應(acute effects)與\n延遲效應(delayed effects)。請回答下列問題：\n(1)急性輻射症候群可簡化分為哪三類？共同的病症現象是甚麼？\n(2)請說明至少兩種延遲之確定性效應病症。",
       "answerText": "(1)急性輻射症候群可以簡化分為三類：(a)造血症候群、(b)胃腸症候群、(c)中央神經系\n統症候群。共同的效應有(a)噁心與嘔吐、(b)不舒服與疲勞、(c)體溫增加、(d)血液變\n化。\n(2)延遲之確定性效應病症包括皮膚潰瘍、器官或組織萎縮、白內障、不孕症或壽命縮\n短等，但不包括致癌效應與基因效應。",
-      "isComplete": true
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-107-2-professional/q7-1.webp",
+          "alt": "107-2 輻射防護師 專業 問答第 7 題原始解答截圖（第 1 張）"
+        }
+      ]
     }
   ]
 };

@@ -1,0 +1,3 @@
+Copy-Item  \\index.html .\\index.html -Force
+Copy-Item \\style.css .\\style.css -Force
+Copy-Item \\script.js .\\script.js -Force

@@ -11,9 +11,9 @@ window.NM_EXAM_BANK["rps-106-1-professional"] = {
   "subjectName": "游離輻射防護專業",
   "paperType": "paper",
   "subjectCode": "professional",
-  "questionCount": 21,
+  "questionCount": 22,
   "testableQuestionCount": 14,
-  "invalidQuestionCount": 0,
+  "invalidQuestionCount": 1,
   "source": {
     "markdownFile": "106年_第1次_輻防師_專業_解答.md"
   },
@@ -27,19 +27,19 @@ window.NM_EXAM_BANK["rps-106-1-professional"] = {
       "options": [
         {
           "key": "A",
-          "text": "63Cu + γ → 62Cu + 1n"
+          "text": "63Cu + γ→62Cu + 1n"
         },
         {
           "key": "B",
-          "text": "14N + 4He → 17O + 1H"
+          "text": "14N + 4He→17O + 1H 7281292902H + 3H→4He + 1H + 1n 235U + 1n→141Ba + 92Kr + 31n"
         },
         {
           "key": "C",
-          "text": "2H + 3H → 4He + 1H + 1n"
+          "text": ""
         },
         {
           "key": "D",
-          "text": "235U + 1n → 141Ba + 92Kr + 3n"
+          "text": "1 1 2 1 0 92 0 56 36 0"
         }
       ],
       "answer": "D",
@@ -49,7 +49,7 @@ window.NM_EXAM_BANK["rps-106-1-professional"] = {
       "explanation": "",
       "explanationStatus": "none",
       "answerText": "(4)",
-      "isComplete": true
+      "isComplete": false
     },
     {
       "id": "rps-106-1-professional-mcq-002",
@@ -180,7 +180,7 @@ window.NM_EXAM_BANK["rps-106-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\n\n1",
+      "answerText": "(2)\n1",
       "isComplete": true
     },
     {
@@ -233,7 +233,7 @@ window.NM_EXAM_BANK["rps-106-1-professional"] = {
         },
         {
           "key": "C",
-          "text": " 0.025 10eV  0.05  10 0.025eV  99b0.054.95b 10eV"
+          "text": "σ 0.02510eV = = 0.05 σ 100.025eV ∴σ = 99b × 0.05 = 4.95b 10eV"
         },
         {
           "key": "D",
@@ -246,7 +246,7 @@ window.NM_EXAM_BANK["rps-106-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(3)\n 0.025\n10eV  0.05\n 10\n0.025eV\n 99b0.054.95b\n10eV",
+      "answerText": "(3)\nσ 0.025\n10eV = = 0.05\nσ 10\n0.025eV\n∴σ = 99b × 0.05 = 4.95b\n10eV",
       "isComplete": true
     },
     {
@@ -254,7 +254,7 @@ window.NM_EXAM_BANK["rps-106-1-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 8,
-      "stem": "細胞受輻射照射後， 若 α= 0.25 Gy -1， β= 0.025 Gy -2， 單次照射劑量為\n2 Gy， 試問\n細胞存活的比例約多少 % ?",
+      "stem": "細胞受輻射照射後， 若 α = 0.25 Gy - 1， β = 0.025 Gy - 2， 單次照射劑量為\n2 Gy， 試問\n細胞存活的比例約多少 % ?",
       "options": [
         {
           "key": "A",
@@ -262,7 +262,7 @@ window.NM_EXAM_BANK["rps-106-1-professional"] = {
         },
         {
           "key": "B",
-          "text": "解: S = exp ( - αD – βD2) = exp ( - 0.25 x 2 – 0.025 x 22) = exp ( - 0.5 – 0.1) = exp ( - 0.6) = 0.5488 = 54.9 %"
+          "text": "解: S = exp ( - αD – βD2 ) = exp ( - 0.25 × 2 – 0.025 × 22 ) = exp ( - 0.5 – 0.1 ) = exp ( - 0.6 ) = 0.5488 = 54.9 %"
         },
         {
           "key": "C",
@@ -279,7 +279,7 @@ window.NM_EXAM_BANK["rps-106-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\n解: S = exp ( - αD – βD2 ) = exp ( - 0.25 x 2 – 0.025 x 22 ) = exp ( - 0.5 – 0.1)\n= exp ( - 0.6) = 0.5488 = 54.9 %",
+      "answerText": "(2)\n解: S = exp ( - αD – βD2 ) = exp ( - 0.25 × 2 – 0.025 × 22 ) = exp ( - 0.5 – 0.1 )\n= exp ( - 0.6 ) = 0.5488 = 54.9 %",
       "isComplete": true
     },
     {
@@ -295,7 +295,7 @@ window.NM_EXAM_BANK["rps-106-1-professional"] = {
         },
         {
           "key": "B",
-          "text": "10B(n, α) 7Li， 反應的Q 值2.31 MeV， 則α粒子與7Li"
+          "text": "10B ( n, α ) 7Li， 反應的Q 值2.31 MeV， 則α粒子與7Li"
         },
         {
           "key": "C",
@@ -312,7 +312,7 @@ window.NM_EXAM_BANK["rps-106-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\n\n10B(n,α)7Li，反應的Q 值2.31 MeV，則α粒子與7Li",
+      "answerText": "(2)\n10B ( n,α ) 7Li，反應的Q 值2.31 MeV，則α粒子與7Li",
       "isComplete": true
     },
     {
@@ -324,7 +324,7 @@ window.NM_EXAM_BANK["rps-106-1-professional"] = {
       "options": [
         {
           "key": "A",
-          "text": "2 7 粒子  2.311.47MeV 74 解： 4 7Li  2.31 0.84MeV 74"
+          "text": "27 α粒子 = × 2.31 = 1.47MeV 7 + 4 解： 47Li = × 2.31 = 0.84MeV 7 + 4"
         },
         {
           "key": "B",
@@ -345,7 +345,7 @@ window.NM_EXAM_BANK["rps-106-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(1)\n2\n\n7\n粒子  2.311.47MeV\n74\n解：\n4\n7Li  2.31 0.84MeV\n74",
+      "answerText": "(1)\n2\n7\nα粒子 = × 2.31 = 1.47MeV\n7+4\n解：\n4\n7Li = × 2.31 = 0.84MeV\n7+4",
       "isComplete": true
     },
     {
@@ -369,7 +369,7 @@ window.NM_EXAM_BANK["rps-106-1-professional"] = {
         },
         {
           "key": "D",
-          "text": "[解]劑量率須降的比例為(10 uSv/h) /(8 mSv/h) =(10 uSv/h) /(8000 uSv/h) =1/800 故需3個半質層(HVL) 加2個什一質層(TVL) 的鉛屏 又1TVL=3.32HVL, 故需鉛屏3×0.2mm+2×3.32×0.2mm=0.6mm+1.328mm=1.93mm"
+          "text": "[解]劑量率須降的比例為 ( 10 uSv / h ) / ( 8 mSv / h ) = ( 10 uSv / h ) / ( 8000 uSv / h ) = 1 / 800 故需3個半質層 ( HVL ) 加2個什一質層 ( TVL ) 的鉛屏 又1TVL = 3.32HVL, 故需鉛屏3 × 0.2mm + 2 × 3.32 × 0.2mm = 0.6mm + 1.328mm = 1.93mm"
         }
       ],
       "answer": "D",
@@ -378,7 +378,7 @@ window.NM_EXAM_BANK["rps-106-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(4)\n[解]劑量率須降的比例為(10 uSv/h)/(8 mSv/h) =(10 uSv/h)/(8000 uSv/h)=1/800\n故需3個半質層(HVL)加2個什一質層(TVL)的鉛屏\n又1TVL=3.32HVL, 故需鉛屏3×0.2mm+2×3.32×0.2mm=0.6mm+1.328mm=1.93mm",
+      "answerText": "(4)\n[解]劑量率須降的比例為 ( 10 uSv / h ) / ( 8 mSv / h ) = ( 10 uSv / h ) / ( 8000 uSv / h ) = 1 / 800\n故需3個半質層(HVL)加2個什一質層(TVL)的鉛屏\n又1TVL = 3.32HVL, 故需鉛屏3 × 0.2mm + 2 × 3.32 × 0.2mm = 0.6mm + 1.328mm = 1.93mm",
       "isComplete": true
     },
     {
@@ -431,7 +431,7 @@ window.NM_EXAM_BANK["rps-106-1-professional"] = {
         },
         {
           "key": "C",
-          "text": "1 V   ， 即電場大小和離燈絲中心的距離成反比 r b ln() a  r 10mm 10 所以 表面0.1mm  10mm   66.7(倍)  r 0.1mm0.05mm 0.15 10mm 表面0.1mm 3"
+          "text": "kerma略小於dose"
         },
         {
           "key": "D",
@@ -444,7 +444,40 @@ window.NM_EXAM_BANK["rps-106-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(3)\n14.\n有一圓柱型蓋革(GM)偵檢器，陽極燈絲直徑0.1 mm，圓柱(陰極)直徑2 cm，請問陽極表\n面0.1 mm處之電場，是圓柱中間點(距離燈絲中心1.0 cm)電場的幾倍？\n(1) 0.05 (2) 5.8 (3) 66.7 (4) 100\n[解：]\n(3)\n1 V\n   ，即電場大小和離燈絲中心的距離成反比\nr b\nln( )\na\n r 10mm 10\n所以 表面0.1mm  10mm   66.7(倍)\n r 0.1mm0.05mm 0.15\n10mm 表面0.1mm\n3",
+      "answerText": "(3)",
+      "isComplete": true
+    },
+    {
+      "id": "rps-106-1-professional-mcq-014",
+      "kind": "mcq",
+      "section": "mcq",
+      "number": 14,
+      "stem": "有一圓柱型蓋革(GM) 偵檢器， 陽極燈絲直徑0.1 mm， 圓柱(陰極) 直徑2 cm， 請問陽極表\n面0.1 mm處之電場， 是圓柱中間點(距離燈絲中心1.0 cm) 電場的幾倍？",
+      "options": [
+        {
+          "key": "A",
+          "text": "0.05"
+        },
+        {
+          "key": "B",
+          "text": "5.8"
+        },
+        {
+          "key": "C",
+          "text": "1 V ε = × ， 即電場大小和離燈絲中心的距離成反比 rb ln ( ) aεr 10mm 10 所以 表面0.1mm = 10mm = = = 66.7 ( 倍 ) ε r 0.1mm + 0.05mm 0.1510mm 表面0.1mm3"
+        },
+        {
+          "key": "D",
+          "text": "100"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "",
+      "explanationStatus": "none",
+      "answerText": "(3)\n1 V\nε = × ，即電場大小和離燈絲中心的距離成反比\nr b\nln( )\na\nε r 10mm 10\n所以 表面0.1mm = 10mm = = = 66.7 ( 倍 )\nε r 0.1mm + 0.05mm 0.15\n10mm 表面0.1mm\n3",
       "isComplete": true
     },
     {
@@ -452,23 +485,23 @@ window.NM_EXAM_BANK["rps-106-1-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 15,
-      "stem": "Cm2\n60 Co 點射源的比加馬常數Γ為多少？ [在空氣中的質量吸收係數\nkgMBqh\n2\n / 0.0244 cm / g ]\na",
+      "stem": "C·m2\n60 Co 點射源的比加馬常數Γ為多少？ [在空氣中的質量吸收係數\nkg·MBq·h\n2\nμ / ρ = 0.0244 cm / g]\na",
       "options": [
         {
           "key": "A",
-          "text": "4.11×10-9"
+          "text": "4.11 × 10^ - 9"
         },
         {
           "key": "B",
-          "text": "60 Co 點射源每次蛻變會射出1.17 MeV與 1.33 MeV加馬射線各一條， 比加馬常數 q 1  1 1 C cm2 MeV e E a 1.171.33   f   0.0244 E 4 i i 34 4 J g dis.  ip i 1.61013J 104m2 103g 106Bq dis 3600s       MeV cm2 kg Bqs MBq h Cm2 8.22109 kgMBqh"
+          "text": "60 Co 點射源每次蛻變會射出1.17 MeV與 1.33 MeV加馬射線各一條， 比加馬常數 q 1 μ 11 C cm2 MeV eΣEa ( 1.17 + 1.33 ) Γ = f = × × 0.0244 × E 4πii 344πJg dis. ρ ip i 1.6 × 10^ - 13J 10 - 4m2103g 106Bq dis 3600s × × × × × × MeV cm2 kg Bq·s MBq hC·m2 = 8.22 × 10^ - 9 kg·MBq·h"
         },
         {
           "key": "C",
-          "text": "4.11×10-8"
+          "text": "4.11 × 10^ - 8"
         },
         {
           "key": "D",
-          "text": "8.22×10-8"
+          "text": "8.22 × 10^ - 8"
         }
       ],
       "answer": "B",
@@ -477,7 +510,7 @@ window.NM_EXAM_BANK["rps-106-1-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\n60 Co\n點射源每次蛻變會射出1.17 MeV與 1.33 MeV加馬射線各一條，比加馬常數\nq 1  1 1 C cm2 MeV\ne E a 1.171.33\n  f   0.0244\nE 4 i i 34 4 J g dis.\n\nip i\n1.61013J 104m2 103g 106Bq\ndis 3600s\n     \nMeV cm2 kg Bqs MBq h\nCm2\n8.22109\nkgMBqh",
+      "answerText": "(2)\n60 Co\n點射源每次蛻變會射出1.17 MeV與 1.33 MeV加馬射線各一條，比加馬常數\nq 1 μ 11 C cm2 MeV\neΣEa ( 1.17 + 1.33 )\nΓ = f = × × 0.0244 ×\nE 4πii 344πJg dis.\nρ\nip i\n1.6 × 10^ - 13J 10 - 4m2103g 106Bq\ndis 3600s\n× × × × × ×\nMeV cm2 kg Bq·s MBq h\nC·m2\n= 8.22 × 10^ - 9\nkg·MBq·h",
       "isComplete": true
     },
     {
@@ -486,17 +519,33 @@ window.NM_EXAM_BANK["rps-106-1-professional"] = {
       "section": "essay",
       "number": 1,
       "stem": "137Cs 之半化期為30年，其衰變至剩下1%約需多少年?",
-      "answerText": "0.693\n t\nA(t) A(0)eλt  A(0)e 30\nA(t) 0.693\n t\ne 30  0.01,\nA(0)\n0.693\n t\nln(e 30 ) ln 0.01-4.61\n0.693\n t -4.61\n30\nt 199.57  200 (y)",
-      "isComplete": true
+      "answerText": "解：Cs-137 半化期為 30 年，衰變公式為\nA ( t ) = A ( 0 ) e^ ( - λt ) ，其中 λ = 0.693 / 30。\n\n當 A ( t ) / A ( 0 ) = 0.01 時，\ne^[ - ( 0.693 / 30 ) t] = 0.01。\n兩邊取自然對數可得\nt = 30 × ln ( 100 ) / 0.693 = 199.6 年。\n\n故約需 200 年。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-106-1-professional/q1-1.webp",
+          "alt": "106-1 輻射防護師 專業 問答第 1 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rps-106-1-professional-essay-002",
       "kind": "essay",
       "section": "essay",
       "number": 2,
-      "stem": "一部球形游離腔，腔壁為石墨，腔內氣體為 CO ，當受加馬射線照射時，每克 CO ( W\n2 2\n2.8 × 1012 離子對，試問石墨腔壁的吸收劑量為多少? (若石墨\n= 33 eV / ion pair ) 中產生\n1.680 MeV·cm2 / g ；質量吸收\n和 CO 2 對該光子的平均質量阻擋本領分別為 1.648 與\n係數分別為1.032 與 1.131 cm2 / g )",
-      "answerText": "解: CO 氣體的吸收劑量= [ 2.8 × 1012 離子對 × 33 eV / ion pair x 1.6 × 1019 J / eV]\n2\n/ 1 × 10-3 kg\n= 1.48 × 10-2\nJ / kg\n4\n\n= 14.8 mGy\n腔壁的吸收劑量= 14.8 mGy × 1.648 / 1.680 = 14.5 mGy",
-      "isComplete": true
+      "stem": "一部球形游離腔，腔壁為石墨，腔內氣體為 CO ，當受加馬射線照射時，每克 CO ( W\n2 2\n2.8 × 1012 離子對，試問石墨腔壁的吸收劑量為多少? ( 若石墨\n= 33 eV / ion pair ) 中產生\n1.680 MeV·cm2 / g ；質量吸收\n和 CO 2 對該光子的平均質量阻擋本領分別為 1.648 與\n係數分別為1.032 與 1.131 cm2 / g )",
+      "answerText": "解：CO 氣體的吸收劑量 = [2.8 × 1012 離子對 × 33 eV / ion pair x 1.6 × 1019 J / eV]2 / 1 × 10^ - 3 kg = 1.48 × 10^ - 2 J / kg4 = 14.8 mGy\n腔壁的吸收劑量 = 14.8 mGy × 1.648 / 1.680 = 14.5 mGy",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-106-1-professional/q2-1.webp",
+          "alt": "106-1 輻射防護師 專業 問答第 2 題原始解答截圖（第 1 張）"
+        },
+        {
+          "src": "./assets/radiation-answer-scans/rps-106-1-professional/q2-2.webp",
+          "alt": "106-1 輻射防護師 專業 問答第 2 題原始解答截圖（第 2 張）"
+        }
+      ]
     },
     {
       "id": "rps-106-1-professional-essay-003",
@@ -504,26 +553,44 @@ window.NM_EXAM_BANK["rps-106-1-professional"] = {
       "section": "essay",
       "number": 3,
       "stem": "在STP 標準狀態下，已知動能5.3 MeV的阿伐粒子，在空氣中射程為3.93 cm，請換算\n此阿伐粒子在水中的射程為多少(mm)？",
-      "answerText": "   \nair air water water\ng\n0.001293 3.93cm\ncm3\n  0.0051cm0.051mm\nwater g\n1\ncm3",
-      "isComplete": true
+      "answerText": "解：用面密度守恆換算空氣與水中的射程：\nρ_air × λ_air = ρ_water × λ_water。\n\n代入 ρ_air = 0.001293 g / cm3、λ_air = 3.93 cm、ρ_water = 1 g / cm3，\nλ_water = 0.001293 × 3.93 = 0.0051 cm = 0.051 mm。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-106-1-professional/q3-1.webp",
+          "alt": "106-1 輻射防護師 專業 問答第 3 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rps-106-1-professional-essay-004",
       "kind": "essay",
       "section": "essay",
       "number": 4,
-      "stem": "閃爍體吸收了140 keV 的單能γ射線後，產生5,000個頻率為6.25 × 1014 (s-1)的閃爍光\n子，試計算此閃爍體的效率?",
-      "answerText": "6.6310346.251014\nE 50001.30104eV 13.0keV\n\n1.61019\n\n13.0\n 100%9.29%\n140",
-      "isComplete": true
+      "stem": "閃爍體吸收了140 keV 的單能γ射線後，產生5,000個頻率為6.25 × 1014 ( s - 1 ) 的閃爍光\n子，試計算此閃爍體的效率?",
+      "answerText": "解：單一閃爍光子的能量為\nE = hν = 6.63 × 10^ - 34 × 6.25 × 10^14 / ( 1.6 × 10^ - 19 ) = 2.59 eV。\n\n5000 個閃爍光子的總能量為\n5000 × 2.59 eV = 1.30 × 10^4 eV = 13.0 keV。\n\n故閃爍體效率 = 13.0 / 140 × 100% = 9.29%。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-106-1-professional/q4-1.webp",
+          "alt": "106-1 輻射防護師 專業 問答第 4 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rps-106-1-professional-essay-005",
       "kind": "essay",
       "section": "essay",
       "number": 5,
-      "stem": "有一體積為0.6 cm3之空腔充滿著標準狀況的空氣，在某一時間裡此空氣腔曝露在一輻\n射場裡而放出3.5 ×10-10庫侖之電荷。試決定空氣的吸收劑量(mGy)?",
-      "answerText": "33.85J\n3.51010\nC\n1C J\nDose 0.0153 15.3mGy\ng kg\n0.6cm30.001293 kg\n\ncm3\n1000g",
-      "isComplete": true
+      "stem": "有一體積為0.6 cm3之空腔充滿著標準狀況的空氣，在某一時間裡此空氣腔曝露在一輻\n射場裡而放出3.5 × 10^ - 10庫侖之電荷。試決定空氣的吸收劑量 ( mGy ) ?",
+      "answerText": "解：空氣吸收劑量可由\nD = Q ( W / e ) / m\n計算。\n\n沉積能量 = 3.5 × 10^ - 10 C × 33.85 J / C = 1.18 × 10^ - 8 J。\n\n空氣質量 = 0.6 cm3 × 0.001293 g / cm3 = 7.758 × 10^ - 4 g\n= 7.758 × 10^ - 7 kg。\n\n故D = 1.18 × 10^ - 8 / 7.758 × 10^ - 7 = 0.0153 Gy = 15.3 mGy。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-106-1-professional/q5-1.webp",
+          "alt": "106-1 輻射防護師 專業 問答第 5 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rps-106-1-professional-essay-006",
@@ -531,17 +598,33 @@ window.NM_EXAM_BANK["rps-106-1-professional"] = {
       "section": "essay",
       "number": 6,
       "stem": "有一胸腔X光室(Chest room)，每星期250人次的胸腔X光攝影，在主射束前方1公尺\n處，每人次平均無屏蔽的空氣克馬(the mean unshielding air kerma per patient)等於1.2\nmGy patient-1，X光管到主屏蔽牆的垂直距離為3公尺。牆外為非管制區，其空氣克馬\n率限值採用0.02 mGy wk-1，佔用因數採用1，請求出主屏蔽的鉛當量厚度(mm)為何？\n5",
-      "answerText": "mGym2\npatient\n1.2 250 1\npatient wk mGy\nK (0)  33.3\nP (3m)2 wk\n\nmGy\n0.02\nP wk\nTransmission  B   6104\nP K (0) mGy\nP 33.3\nwk\nChest Room curve, Transmission 610-4對應的鉛當量厚度為2.2 mmPb",
-      "isComplete": true
+      "answerText": "解：主屏蔽前方每週無屏蔽空氣克馬為\nK ( 0 ) = 1.2 × 250 / 3^2 = 33.3 mGy / wk。\n\n牆外限值為 P = 0.02 mGy / wk，佔用因數 T = 1，故所需穿透率\nB = P / K ( 0 ) = 0.02 / 33.3 = 6 × 10^ - 4。\n\n由 chest room 的屏蔽曲線查得，\n穿透率 6 × 10^ - 4 對應之鉛當量厚度約為 2.2 mmPb。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-106-1-professional/q6-1.webp",
+          "alt": "106-1 輻射防護師 專業 問答第 6 題原始解答截圖（第 1 張）"
+        },
+        {
+          "src": "./assets/radiation-answer-scans/rps-106-1-professional/q6-2.webp",
+          "alt": "106-1 輻射防護師 專業 問答第 6 題原始解答截圖（第 2 張）"
+        }
+      ]
     },
     {
       "id": "rps-106-1-professional-essay-007",
       "kind": "essay",
       "section": "essay",
       "number": 7,
-      "stem": "一束準直良好的射束，含有106 個1 MeV光子，垂直入射 20 cm 厚的碳塊(密度2.25\ng/cm3)，其質量衰減係數(mass attenuation coefficient, /)為0.0636 cm2/g，質量能量吸收\n0.0280 cm2/g。請計算在碳塊裡的10 cm\n係數(mass energy absorption coefficient,  /)為\nab\n深處，1 mm 的碳層(即10.0-10.1 cm範圍內)所吸收的能量(MeV)？",
-      "answerText": "106(e0.0636cm2/g2.25g/cm310.0cm e0.0636cm2/g2.25g/cm310.1cm)\nN  N  N  3397\n10.0cm 10.1cm\n\n0.0280\n3397E  3397(1MeV ) 1495MeV\nab\n0.0636\n\n6",
-      "isComplete": true
+      "stem": "一束準直良好的射束，含有106 個1 MeV光子，垂直入射 20 cm 厚的碳塊(密度2.25\ng / cm3 ) ，其質量衰減係數 ( mass attenuation coefficient, μ / ρ ) 為0.0636 cm2 / g，質量能量吸收\n0.0280 cm2/g。請計算在碳塊裡的10 cm\n係數 ( mass energy absorption coefficient, μ / ρ ) 為\nab\n深處，1 mm 的碳層(即10.0-10.1 cm範圍內)所吸收的能量(MeV)？",
+      "answerText": "解：先算 10.0 cm 到 10.1 cm 之間被吸收的光子數：\nΔN = 10^6 [e^ ( - ( 0.0636 × 2.25 × 10.0 ) ) - e^ ( - ( 0.0636 × 2.25 × 10.1 ) ) ] = 3397。\n\n每個被吸收光子的平均沉積能量為\nE_ab = 1 MeV × ( μab / ρ ) / ( μ / ρ )\n= 1 × 0.0280 / 0.0636 = 0.440 MeV。\n\n故該 1 mm 碳層吸收的總能量為\n3397 × 0.440 = 1495 MeV。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rps-106-1-professional/q7-1.webp",
+          "alt": "106-1 輻射防護師 專業 問答第 7 題原始解答截圖（第 1 張）"
+        }
+      ]
     }
   ]
 };

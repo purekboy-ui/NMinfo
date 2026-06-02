@@ -11,8 +11,8 @@ window.NM_EXAM_BANK["rps-106-1-law"] = {
   "subjectName": "游離輻射防護法規",
   "paperType": "paper",
   "subjectCode": "law",
-  "questionCount": 19,
-  "testableQuestionCount": 19,
+  "questionCount": 20,
+  "testableQuestionCount": 20,
   "invalidQuestionCount": 0,
   "source": {
     "markdownFile": "106年_第1次_輻防師_法規_解答.md"
@@ -291,19 +291,19 @@ window.NM_EXAM_BANK["rps-106-1-law"] = {
       "options": [
         {
           "key": "A",
-          "text": "X=0; Y=1"
+          "text": "X = 0; Y = 1"
         },
         {
           "key": "B",
-          "text": "X=1; Y=0"
+          "text": "X = 1; Y = 0"
         },
         {
           "key": "C",
-          "text": "X=1; Y=1"
+          "text": "X = 1; Y = 1"
         },
         {
           "key": "D",
-          "text": "X=2; Y=0"
+          "text": "X = 2; Y = 0"
         }
       ],
       "answer": "C",
@@ -324,19 +324,19 @@ window.NM_EXAM_BANK["rps-106-1-law"] = {
       "options": [
         {
           "key": "A",
-          "text": "X=5、Y=3"
+          "text": "X = 5、Y = 3"
         },
         {
           "key": "B",
-          "text": "X=5、Y=6"
+          "text": "X = 5、Y = 6"
         },
         {
           "key": "C",
-          "text": "X=6、Y=3"
+          "text": "X = 6、Y = 3"
         },
         {
           "key": "D",
-          "text": "X=6、Y=6"
+          "text": "X = 6、Y = 6"
         }
       ],
       "answer": "C",
@@ -551,7 +551,7 @@ window.NM_EXAM_BANK["rps-106-1-law"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 17,
-      "stem": "輻射安全證書出租或出借他人使用者， 主管機關得撤銷或廢止其輻射安全證書， 自撤銷\n3 或廢止之日起幾年內不得再申請？",
+      "stem": "輻射安全證書出租或出借他人使用者， 主管機關得撤銷或廢止其輻射安全證書， 自撤銷\n3\n或廢止之日起幾年內不得再申請？",
       "options": [
         {
           "key": "A",
@@ -625,15 +625,15 @@ window.NM_EXAM_BANK["rps-106-1-law"] = {
         },
         {
           "key": "B",
-          "text": "血液學檢查"
+          "text": "0.05"
         },
         {
           "key": "C",
-          "text": "乳房攝影檢查"
+          "text": "0.5"
         },
         {
           "key": "D",
-          "text": "20. 輻射工作人員特別健康檢查項目不包含下列何項？"
+          "text": "1"
         }
       ],
       "answer": "D",
@@ -642,7 +642,40 @@ window.NM_EXAM_BANK["rps-106-1-law"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(4)\n20.\n輻射工作人員特別健康檢查項目不包含下列何項？\n(1)生化檢查 (2)血液學檢查 (3)乳房攝影檢查 (4)尿液常規檢查\n[解：]\n(3)",
+      "answerText": "(4)",
+      "isComplete": true
+    },
+    {
+      "id": "rps-106-1-law-mcq-020",
+      "kind": "mcq",
+      "section": "mcq",
+      "number": 20,
+      "stem": "輻射工作人員特別健康檢查項目不包含下列何項？",
+      "options": [
+        {
+          "key": "A",
+          "text": "生化檢查"
+        },
+        {
+          "key": "B",
+          "text": "血液學檢查"
+        },
+        {
+          "key": "C",
+          "text": "乳房攝影檢查"
+        },
+        {
+          "key": "D",
+          "text": "尿液常規檢查"
+        }
+      ],
+      "answer": "C",
+      "acceptedAnswers": [
+        "C"
+      ],
+      "explanation": "",
+      "explanationStatus": "none",
+      "answerText": "(3)",
       "isComplete": true
     }
   ]

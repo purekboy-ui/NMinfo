@@ -517,93 +517,12 @@ const PROTOCOL_DATA = {
     ]
   },
   "MPI_Tc99m": {
-    "title": "Tc-99m MPI SPECT",
-    "source": "SNMMI / ASNC / SCCT Guideline for Cardiac SPECT / CT and PET / CT 1.0；ASNC reporting / protocol quick references, 2024",
-    "acquisition": [
-      [
-        "Detector / modality",
-        "dual-head SPECT 或 SPECT / CT"
-      ],
-      [
-        "Tracer",
-        "Tc-99m sestamibi 或 tetrofosmin"
-      ],
-      [
-        "Patient prep",
-        "依 stress protocol；記錄 caffeine、藥物與 stress 條件"
-      ],
-      [
-        "Position",
-        "supine 基本；必要時加 prone / upright"
-      ],
-      [
-        "Arc",
-        "cardiac 180° 常見"
-      ],
-      [
-        "Orbit",
-        "body contour 優先"
-      ],
-      [
-        "Matrix",
-        "64x64 常見"
-      ],
-      [
-        "Views",
-        "60 或 64 views 常見"
-      ],
-      [
-        "Time / view",
-        "約 15–30 秒 / stop，依 dose 與體型調整"
-      ],
-      [
-        "Gating",
-        "8-frame 或 16-frame ECG gating"
-      ],
-      [
-        "CT role",
-        "若有 SPECT / CT，可做 CT AC"
-      ]
-    ],
-    "processing": [
-      [
-        "Reconstruction family",
-        "iterative reconstruction 常見"
-      ],
-      [
-        "Attenuation correction",
-        "CT AC 或 none，需與 NAC 對照"
-      ],
-      [
-        "Scatter correction",
-        "視系統可用"
-      ],
-      [
-        "Resolution recovery / PSF",
-        "視系統可用"
-      ],
-      [
-        "Reorientation",
-        "SA / VLA / HLA cardiac planes"
-      ],
-      [
-        "Quantification",
-        "perfusion scores、EF、wall motion / thickening"
-      ]
-    ],
-    "qc": [
-      "stress 是否達標",
-      "ECG gating 是否穩定",
-      "CT 與 SPECT 是否 misregistration",
-      "raw projection 是否有 motion",
-      "是否需要 prone / upright 補拍釐清 artifact"
-    ],
-    "pitfalls": [
-      "乳房衰減",
-      "橫膈衰減",
-      "subdiaphragmatic activity",
-      "arrhythmia 造成 gating 不可靠"
-    ],
+    "title": "心肌灌流 SPECT 臨床指引 (Tc-99m MPI SPECT)",
+    "source": "ASNC, *Single Photon Emission Computed Tomography (SPECT) Myocardial Perfusion Imaging Guidelines: Instrumentation, Acquisition, Processing, and Interpretation* (2018)；ASNC, *Quality Metrics for Single-Photon Emission Computed Tomography Myocardial Perfusion Imaging: An ASNC Information Statement* (2023)；EANM, *EANM procedural guidelines for radionuclide myocardial perfusion imaging with SPECT and SPECT / CT* (2015)；ASNC, *Standardized Reporting of Nuclear Cardiology Procedures* (2017)；ASNC / AHA / ACC, *Reporting of Myocardial Perfusion Imaging Tests Quick Reference* (2024)",
+    "acquisition": [],
+    "processing": [],
+    "qc": [],
+    "pitfalls": [],
     "localFixedFields": [
       "示蹤劑與實際活度",
       "注射時間、開始收像時間與時間差",
@@ -1001,72 +920,48 @@ const PROTOCOL_DATA = {
     ]
   },
   "Salivary": {
-    "title": "Salivary Gland Scintigraphy",
-    "source": "ACR / SNMMI / SPR Practice Guideline for Performance of Gastrointestinal Scintigraphy",
+    "title": "Salivary gland scintigraphy",
+    "source": "整理自 2016 ACR/EULAR Sjogren 分類準則後續影像評論、2024 健康族群唾液腺動態常模研究與近年 salivary scintigraphy 文獻。",
     "acquisition": [
-      [
-        "Detector / modality",
-        "planar dynamic"
-      ],
-      [
-        "Tracer",
-        "Tc-99m pertechnetate"
-      ],
-      [
-        "Patient prep",
-        "避免影響唾液分泌的因素；刺激物準備一致"
-      ],
-      [
-        "Position",
-        "supine 或 seated，頭頸固定"
-      ],
-      [
-        "View",
-        "anterior 頭頸"
-      ],
-      [
-        "Matrix",
-        "128x128 常見"
-      ],
-      [
-        "Dynamic framing",
-        "依科內 protocol 固定短 frame 連續收像"
-      ],
-      [
-        "Stimulation",
-        "檸檬汁或其他刺激方式，時間點需固定"
-      ]
+      "常見檢前至少禁食 2 小時並維持基本補水，避免口腔與胃部背景差異過大。",
+      "Tc-99m pertechnetate 注射後以 anterior 頭頸連續動態收像，頭頸固定與左右視野完整比「補拍更多張」更重要。",
+      "刺激物種類、容量與給予時間點要固定；許多 protocol 以 20 分鐘給檸檬汁，再持續追蹤排出與再累積。"
     ],
     "processing": [
-      [
-        "Reconstruction family",
-        "不適用，主要為 dynamic planar"
-      ],
-      [
-        "Quantification",
-        "time-activity curves、攝取與排出指標"
-      ],
-      [
-        "ROI",
-        "parotid、submandibular、background 需固定"
-      ]
+      "先看雙側腮腺與頜下腺是否對稱累積，再看刺激後是否出現明顯下降與後續再累積。",
+      "視覺型態與 time-activity curve 要一起讀，不能只看單張最亮或最暗的影像。",
+      "若有定量，ROI 畫法、background 位置與指標定義需固定，否則不同病人與不同時間點無法比較。"
     ],
     "qc": [
-      "刺激時間點是否記錄",
-      "動態過程是否有病人移動",
-      "ROI 是否一致"
+      "臨床問題是否清楚",
+      "選的 tracer 是否真的回答該問題",
+      "病人準備是否完成",
+      "是否有近期造影劑、藥物、食物或手術影響判讀",
+      "是否需排尿、補水、停藥、 thyroid blockade、 premedication",
+      "注射是否順利，是否疑似 extravasation",
+      "detector / camera / CT 是否通過當日 QC",
+      "是否選對 collimator、energy window、matrix、zoom",
+      "病人是否能穩定維持姿勢",
+      "是否需要固定帶、枕頭、膝下墊、 head holder",
+      "先看 raw data，不要只看重建結果",
+      "是否有 motion、截切、金屬、污染、注射滲漏",
+      "重建參數是否與科內 preset 一致",
+      "report 中是否完整記錄 tracer、activity、注射時間、掃描時間與特殊事件"
     ],
     "pitfalls": [
-      "頭頸 motion",
-      "刺激時間點不一致",
-      "只看單張影像不看 curve"
+      "是否有 TOF",
+      "是否有 PSF",
+      "是否有 penalized likelihood",
+      "CT AC 是否成功",
+      "是否有 metal artifact / respiratory misregistration"
     ],
     "localFixedFields": [
-      "刺激物種類",
-      "刺激時間點",
-      "dynamic frame 長度",
-      "ROI 與 curve 分析方法"
-    ]
+      "禁食與補水規則",
+      "刺激物種類與刺激時間點",
+      "dynamic frame 長度與總收像時間",
+      "ROI 與排出分率計算方法"
+    ],
+    "note": "唾液腺掃描的重點在雙側大唾液腺的攝取、刺激後排出與再累積節奏；若刺激物與時間點不固定，曲線就失去比較價值。"
   },
   "DTPA": {
     "title": "Renal Dynamic Scintigraphy（MAG3 / DTPA）",
@@ -2281,16 +2176,16 @@ const PROTOCOL_DATA = {
   },
   "Lymphedema": {
     "title": "Lymphedema / lymphoscintigraphy",
-    "source": "以共通 acquisition checklist 與多時間點功能檢查原則整理；本站待補 lymphoscintigraphy 專檔。",
+    "source": "整理自 ISL 2023 consensus、SNMMI Appropriate Use Criteria 2023、下肢淋巴水腫 lymphoscintigraphy 研究與鄭醫師教學網站分級圖例。",
     "acquisition": [
-      "注射點、按摩 / 活動條件與拍攝時間點要固定。",
-      "多時間點追蹤比單張靜態圖更重要，時間戳記要完整。",
-      "雙側比較時，姿勢與顯示尺度要一致。"
+      "遠端指(趾)間皮內或淺皮下注射最常見，注射層次、左右劑量與活動條件需固定。",
+      "先做早期動態或早期靜態，再於 1–3 小時補延遲影像；必要時加做到更晚時點以區分單純延遲與真正阻塞。",
+      "雙側比較時，姿勢、視野、顯示尺度與是否安排步行/按摩等刺激條件都應一致。"
     ],
     "processing": [
-      "保留早期流動與延遲集結影像，不要只留最後一張。",
-      "描述時要把節點顯影時間、側支與皮下回流模式分開寫。",
-      "若使用半定量或 transit 指標，前後流程必須完全一致。"
+      "保留早期路徑與延遲節點影像，不要只留最後一張延遲相。",
+      "描述時要把淋巴管上行、節點顯影時間、dermal backflow、部分阻塞與完全阻塞分開寫。",
+      "若使用 transit time 或半定量指標，ROI、時間點與刺激條件必須完全一致。"
     ],
     "qc": [
       "臨床問題是否清楚",
@@ -2316,25 +2211,25 @@ const PROTOCOL_DATA = {
       "是否有 metal artifact / respiratory misregistration"
     ],
     "localFixedFields": [
-      "注射部位與方法",
-      "活動 / 按摩規則",
-      "固定時間點",
-      "雙側顯示尺度"
+      "注射部位與注射層次",
+      "活動 / 按摩 / 步行規則",
+      "早期與延遲固定時間點",
+      "雙側顯示尺度與判讀用語"
     ],
-    "note": "本站目前尚無 lymphoscintigraphy 專檔，先提供多時間點淋巴動態檢查的共通核對項。"
+    "note": "淋巴水腫攝影的核心在比較早期上行、延遲節點到達與 dermal backflow；若注射層次與刺激條件不固定，前後檢查很難比較。"
   },
   "SLN": {
     "title": "Sentinel lymph node mapping",
-    "source": "以共通 acquisition checklist 與術前定位需求整理；本站待補 sentinel node 專檔。",
+    "source": "整理自 EANM/SNMMI breast cancer guideline、EANM melanoma guideline、SNMMI Appropriate Use Criteria 2023 與 sentinel node radiology review。",
     "acquisition": [
-      "注射部位與時序要能對應手術需求，術前溝通必須清楚。",
-      "早期動態與延遲定位都要保留，避免只剩最後一張皮膚標記圖。",
-      "必要時以多角度或 SPECT/CT 釐清節點與注射點重疊。"
+      "依癌種選擇 peritumoral、subareolar、intradermal 或 scar-adjacent 注射法，並讓活度與手術時間匹配。",
+      "保留早期動態與靜態定位，因為最早出現的節點才最符合 sentinel node 定義。",
+      "解剖複雜、深層或多站引流時，應及早考慮多角度或 SPECT/CT，避免注射點 shine-through。"
     ],
     "processing": [
-      "影像標示要清楚，方便外科對照皮膚標記與解剖位置。",
-      "若節點靠近注射點，需調整顯示窗位或加做斜位 / SPECT/CT。",
-      "手術溝通稿應包含節點數、相對位置與是否疑似二站節點。"
+      "先區分第一站與第二站節點，再進行皮膚標記與位置描述。",
+      "若節點靠近注射點或位置深層，需調整窗位或加做斜位 / SPECT/CT。",
+      "手術溝通稿應包含節點數、最早顯影節點、異位引流與是否疑似第二站節點。"
     ],
     "qc": [
       "臨床問題是否清楚",
@@ -2360,12 +2255,12 @@ const PROTOCOL_DATA = {
       "是否有 metal artifact / respiratory misregistration"
     ],
     "localFixedFields": [
-      "注射方式與注射點位",
-      "動態與延遲時間點",
-      "皮膚標記流程",
-      "是否加做 SPECT/CT"
+      "癌種對應的注射方式與注射點位",
+      "動態與靜態固定時間點",
+      "皮膚標記與術前溝通流程",
+      "SPECT/CT 加做條件"
     ],
-    "note": "本站目前尚無前哨淋巴定位專檔，先提供術前標記型檢查的共通原則。"
+    "note": "前哨淋巴結造影的關鍵不是單看熱點，而是找出最早引流的第一站節點並把它準確交給外科；注射法與手術時序必須綁在一起。"
   },
   "LiverHemangioma": {
     "title": "Liver hemangioma scintigraphy",
@@ -2543,16 +2438,16 @@ const PROTOCOL_DATA = {
   },
   "NP59": {
     "title": "NP-59 adrenal cortical imaging",
-    "source": "以內分泌小器官影像通則整理；本站待補 NP-59 專檔。",
+    "source": "整理自 Endocrine Society 2025 PA 指南、J Nucl Med 2009 台灣 NP-59 SPECT/CT 研究與近年 adrenal imaging 文獻。",
     "acquisition": [
-      "小器官檢查要讓腎上腺盡量填滿 FOV，而不是用大視野硬拍。",
-      "前處理與藥物準備比收像秒數更先決，需嚴格依科內流程。",
-      "多時間點比較時，擺位、幾何與顯示尺度要固定。"
+      "檢前先核對臨床問題、生化資料、CT/MRI 與可能干擾藥物，確認真的是要回答皮質功能問題。",
+      "I-131 藥物需完成甲狀腺阻斷；原發性醛固酮增多症等情境常再依院內流程加入 dexamethasone suppression。",
+      "常見為 Day 3、Day 5、Day 7 多時間點 planar，必要時加做 SPECT/CT；多時點幾何與縮放要固定。"
     ],
     "processing": [
-      "先確認背景器官與腸道活動，再談腎上腺相對攝取。",
-      "前後時點對照要固定，避免用不同窗位硬比。",
-      "若要做側化判讀，必須和 CT / MRI 解剖位置一起看。"
+      "先看整體背景是否可判讀，再比較雙側腎上腺是否有單側優勢、雙側增強或病灶側缺攝取。",
+      "SPECT/CT 的價值在把功能熱點對回解剖位置，不宜只憑平面影像下手術側化結論。",
+      "報告結論以支持哪一種功能模式為主，並註明判讀信心與技術限制。"
     ],
     "qc": [
       "臨床問題是否清楚",
@@ -2579,25 +2474,25 @@ const PROTOCOL_DATA = {
       "是否有 penalized likelihood"
     ],
     "localFixedFields": [
-      "前處理與停藥流程",
-      "多時間點時序",
-      "小器官 zoom / 幾何條件",
-      "對照 CT / MRI 需求"
+      "甲狀腺阻斷與 dexamethasone suppression 流程",
+      "停藥 / 換藥規則",
+      "Day 3 / 5 / 7 與 SPECT/CT 加做條件",
+      "對照 CT / MRI 與手術前分型需求"
     ],
-    "note": "本站目前尚無 NP-59 專檔，先提供小器官與多時間點內分泌檢查的共通原則。"
+    "note": "NP-59 是腎上腺皮質功能定位檢查，重點在皮質自主分泌與左右側化，不是單看腫塊大小。"
   },
   "I131WBS": {
     "title": "I-131 whole-body survey",
-    "source": "以甲狀腺 / 內分泌共通原則與高能量全身掃描邏輯整理；本站待補 I-131 WBS 專檔。",
+    "source": "整理自 ATA 2015 differentiated thyroid cancer guideline、診斷性與治療後 I-131 WBS/SPECT-CT 相關綜述與近年實務更新。",
     "acquisition": [
-      "必須使用適合 I-131 的高能量 collimator 與對應 energy window。",
-      "全身掃描速度、局部 spot view 與延遲相條件要固定。",
-      "污染控制與病人更衣 / 排尿流程要先設計，避免假陽性。"
+      "檢前先核對是診斷性還是治療後 WBS，並記錄 TSH stimulation 方式、低碘飲食與近期含碘暴露。",
+      "必須使用適合 I-131 的高能量 collimator 與對應 energy window；whole-body 掃描速度、局部 spot view 與延遲相條件要固定。",
+      "掃描前排尿、更衣並檢查口鼻與皮膚污染；必要時針對可疑區域重拍，避免把唾液或尿液污染當成病灶。"
     ],
     "processing": [
-      "先看全身 distribution，再回到局部高攝取區做 spot 或 SPECT/CT 對位。",
-      "描述時要區分生理性唾液腺、胃腸、泌尿與病灶性聚積。",
-      "若為追蹤比較，掃描時間點與儀器設定需盡量一致。"
+      "先建立全身生理性分布地圖，再回到局部高攝取區辨認是甲狀腺床、淋巴結、遠端轉移還是表面污染。",
+      "對平面影像不確定的焦點，應優先考慮 spot view 或 SPECT/CT 對位，而不是只靠窗位調整硬判讀。",
+      "若為追蹤比較，掃描時點、儀器設定與是否加做 tomographic 補定位需盡量一致。"
     ],
     "qc": [
       "臨床問題是否清楚",
@@ -2624,12 +2519,13 @@ const PROTOCOL_DATA = {
       "是否有 penalized likelihood"
     ],
     "localFixedFields": [
+      "TSH stimulation 與低碘飲食流程",
       "HE collimator 與 energy window",
       "全身掃描速度",
       "污染控制流程",
       "spot / SPECT/CT 加做條件"
     ],
-    "note": "本站目前尚無 I-131 WBS 專檔，先提供甲狀腺 / 高能量全身掃描的共通核對項。"
+    "note": "I-131 WBS 的判讀品質大量取決於 TSH stimulation、低碘飲食與污染控制；whole-body planar 只是起點，定位常需靠 spot view 或 SPECT/CT。"
   }
 };
 

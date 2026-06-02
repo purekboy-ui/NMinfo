@@ -60,7 +60,7 @@ window.NM_EXAM_BANK["rpo-110-2-professional"] = {
       "options": [
         {
           "key": "A",
-          "text": "5×10-2/Sv"
+          "text": "5 × 10^ - 2 / Sv"
         },
         {
           "key": "B",
@@ -81,7 +81,7 @@ window.NM_EXAM_BANK["rpo-110-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(1)\n5×10-2/Sv",
+      "answerText": "(1)\n5 × 10^ - 2 / Sv",
       "isComplete": true
     },
     {
@@ -134,7 +134,7 @@ window.NM_EXAM_BANK["rpo-110-2-professional"] = {
         },
         {
           "key": "C",
-          "text": "E (1B) 2(10.0071) S(E)  i   2.04 i R 0.972"
+          "text": "E ( 1 - B ) 2 ( 1 - 0.0071 ) S ( E ) = i = = 2.04 iR 0.972"
         },
         {
           "key": "D",
@@ -147,7 +147,7 @@ window.NM_EXAM_BANK["rpo-110-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(3)\nE (1B) 2(10.0071)\nS(E )  i   2.04\ni R 0.972",
+      "answerText": "(3)\nE (1-B) 2(1-0.0071)\nS ( E ) = i = = 2.04\ni R 0.972",
       "isComplete": true
     },
     {
@@ -163,11 +163,11 @@ window.NM_EXAM_BANK["rpo-110-2-professional"] = {
         },
         {
           "key": "B",
-          "text": "β=0"
+          "text": "β = 0"
         },
         {
           "key": "C",
-          "text": "β=1"
+          "text": "β = 1"
         },
         {
           "key": "D",
@@ -258,7 +258,7 @@ window.NM_EXAM_BANK["rpo-110-2-professional"] = {
       "options": [
         {
           "key": "A",
-          "text": "0.02/0.01=2"
+          "text": "0.02 / 0.01 = 2"
         },
         {
           "key": "B",
@@ -279,7 +279,7 @@ window.NM_EXAM_BANK["rpo-110-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(1)\n0.02/0.01=2",
+      "answerText": "(1)\n0.02 / 0.01 = 2",
       "isComplete": true
     },
     {
@@ -287,23 +287,23 @@ window.NM_EXAM_BANK["rpo-110-2-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 9,
-      "stem": "已知：  表示光子通量(fluence) ，  表示光子能通量(energy fluence) ， / =質量衰減係\n數、 / =質量轉移係數、 / = 質量吸收係數。 請問吸收劑量等於？ tr ab\n   ",
+      "stem": "已知： φ 表示光子通量 ( fluence ) ， ψ 表示光子能通量 ( energy fluence ) ， μ / ρ = 質量衰減係\n數、μ / ρ = 質量轉移係數、μ / ρ = 質量吸收係數。 請問吸收劑量等於？ tr ab\nμ μ μ μ",
       "options": [
         {
           "key": "A",
-          "text": "( tr)"
+          "text": "ψ· ( tr )"
         },
         {
           "key": "B",
-          "text": "()"
+          "text": "φ· ( )"
         },
         {
           "key": "C",
-          "text": "( ab)"
+          "text": "ψ· ( ab )"
         },
         {
           "key": "D",
-          "text": "( tr)    "
+          "text": "φ· ( tr ) ρ ρ ρ ρ"
         }
       ],
       "answer": "C",
@@ -320,7 +320,7 @@ window.NM_EXAM_BANK["rpo-110-2-professional"] = {
       "kind": "mcq",
       "section": "mcq",
       "number": 10,
-      "stem": "某放射性核種的衰變常數( ) 值為0.693 y-1， 經過6年後， 其放射性活度變為原來的\n多少？",
+      "stem": "某放射性核種的衰變常數 ( λ ) 值為0.693 y - 1， 經過6年後， 其放射性活度變為原來的\n多少？",
       "options": [
         {
           "key": "A",
@@ -336,7 +336,7 @@ window.NM_EXAM_BANK["rpo-110-2-professional"] = {
         },
         {
           "key": "D",
-          "text": "0.693 0.693 1 1 T   1y   0.693y1 26 64"
+          "text": "0.6930.69311 T = = = 1y = λ 0.693y - 12664"
         }
       ],
       "answer": "D",
@@ -345,7 +345,7 @@ window.NM_EXAM_BANK["rpo-110-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(4)\n0.693 0.693 1 1\nT   1y \n 0.693y1 26 64",
+      "answerText": "(4)\n0.693 0.693 1 1\nT = = = 1y =\nλ 0.693y - 12664",
       "isComplete": true
     },
     {
@@ -361,7 +361,7 @@ window.NM_EXAM_BANK["rpo-110-2-professional"] = {
         },
         {
           "key": "B",
-          "text": "hv >> m c2, hv’ = m c2/2 = 0.256 MeV, E = hv-0.256 MeV 0 min 0 e-"
+          "text": "hv >> m c2, hv’ = m c2 / 2 = 0.256 MeV, E = hv - 0.256 MeV 0 min 0 e -"
         },
         {
           "key": "C",
@@ -378,7 +378,7 @@ window.NM_EXAM_BANK["rpo-110-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\nhv >> m c2, hv’ = m c2/2 = 0.256 MeV, E = hv-0.256 MeV\n0 min 0 e-",
+      "answerText": "(2)\nhv >> m c2, hv’ = m c2 / 2 = 0.256 MeV, E = hv - 0.256 MeV\n0 min 0 e-",
       "isComplete": true
     },
     {
@@ -493,7 +493,7 @@ window.NM_EXAM_BANK["rpo-110-2-professional"] = {
         },
         {
           "key": "B",
-          "text": "解： 10000±(10000) 1/2=10000±100 (=1σ) ∴30 × 68.3% = 20次"
+          "text": "解： 10000 ± ( 10000 ) 1 / 2 = 10000 ± 100 ( = 1σ ) ∴30 × 68.3% = 20次"
         },
         {
           "key": "C",
@@ -510,7 +510,7 @@ window.NM_EXAM_BANK["rpo-110-2-professional"] = {
       ],
       "explanation": "",
       "explanationStatus": "none",
-      "answerText": "(2)\n解：10000±(10000)1/2=10000±100 (=1σ) ∴30 × 68.3% = 20次",
+      "answerText": "(2)\n解：10000 ± ( 10000 ) 1 / 2 = 10000 ± 100 ( = 1σ ) ∴30 × 68.3% = 20次",
       "isComplete": true
     },
     {
@@ -518,9 +518,15 @@ window.NM_EXAM_BANK["rpo-110-2-professional"] = {
       "kind": "essay",
       "section": "essay",
       "number": 1,
-      "stem": "假設光子的通量為 10 17 m -2，能量為 662 keV，μ/ρ = 0.1614 m 2 /g， μ\n/ρ =\ntr\n0.0984 cm 2 /g， μ /ρ = 0.0951 cm 2 /g，試問克馬為多少戈雷？\nab",
-      "answerText": "解: 1  10 17 光子/ m 2  0.662 MeV /光子  1.6 x 10 -13 J / MeV  0.0984 cm 2 /g \n1000 g /kg  10 -4 m 2 /cm 2 = 0.1042  10 3 J /kg = 104.2 Gy",
-      "isComplete": true
+      "stem": "假設光子的通量為 1017 m - 2，能量為 662 keV，μ / ρ = 0.1614 m2 / g， μ\n/ ρ =\ntr\n0.0984 cm2 / g， μ / ρ = 0.0951 cm2 / g，試問克馬為多少戈雷？\nab",
+      "answerText": "解：1 × 1017 光子 / m2 × 0.662 MeV / 光子 × 1.6 × 10^ - 13 J / MeV × 0.0984 cm2 / g ×\n1000 g / kg × 10^ - 4 m2 / cm2 = 0.1042 × 103 J / kg = 104.2 Gy",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-110-2-professional/q1-1.webp",
+          "alt": "110-2 輻射防護員 專業 問答第 1 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-110-2-professional-essay-002",
@@ -528,8 +534,14 @@ window.NM_EXAM_BANK["rpo-110-2-professional"] = {
       "section": "essay",
       "number": 2,
       "stem": "將137Cs 樣品放在計數裝置內測量 5分鐘，共記錄 2500個計數；之後，拿走了該樣品，\n用20分鐘測得3600 個背景計數，請問樣品的淨計數率及其標準差？",
-      "answerText": "n\ng n b 2500 3600\n淨計數率r r r     320(cpm)\nn g b\nt t 5 20\ng b\nng nb 2500 3600\n標準差rn 10.4 (cpm)\n   \n2 2 2 2\ntg t 5 20\nb\n淨計數率±標準差=320±10.4(cpm)",
-      "isComplete": true
+      "answerText": "ng n b 2500 3600\n淨計數率r = r - r = - = - = 320 ( cpm ) ngbtt 520 gb ng nb 25003600\n標準差σrn = 10.4 ( cpm )\n= + = + 2222 tg t 520b\n淨計數率 ± 標準差 = 320 ± 10.4 ( cpm )",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-110-2-professional/q2-1.webp",
+          "alt": "110-2 輻射防護員 專業 問答第 2 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-110-2-professional-essay-003",
@@ -537,17 +549,29 @@ window.NM_EXAM_BANK["rpo-110-2-professional"] = {
       "section": "essay",
       "number": 3,
       "stem": "200 kBq的 I-131沉積在輻射工作人員的體內，造成甲狀腺 50 mGy的吸收劑量與肺 0.20\nmGy的吸收劑量，根據現行游離輻射防護安全標準，請問：\n(1)甲狀腺及肺的組織加權因數各為何？ (2)計算此工作人員的有效劑量(effective dose)",
-      "answerText": "(1)甲狀腺: 0.05 肺: 0.12\n(2)H = 50 x 0.05 + 0.2 x 0.12 = 2.524 mSv\nE",
-      "isComplete": true
+      "answerText": "(1)甲狀腺: 0.05 肺: 0.12\n( 2 ) H = 50 × 0.05 + 0.2 × 0.12 = 2.524 mSvE",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-110-2-professional/q3-1.webp",
+          "alt": "110-2 輻射防護員 專業 問答第 3 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-110-2-professional-essay-004",
       "kind": "essay",
       "section": "essay",
       "number": 4,
-      "stem": "某光子入射於鉛板中，若鉛板的密度為11.34 g/cm3，對該光子的質量衰減係數為\n0.00362\ncm2g-1，則：\n(1)該光子於鉛板中之衰減係數為多少 cm-1 ？\n\n(2)該光子之平均自由行程約為多少 cm？ (請詳列算式)",
-      "answerText": "解：\n\n(2)\n\n(cm)",
-      "isComplete": true
+      "stem": "某光子入射於鉛板中，若鉛板的密度為11.34 g/cm3，對該光子的質量衰減係數為\n0.00362\ncm2·g - 1，則：\n(1)該光子於鉛板中之衰減係數為多少 cm-1 ？\n(2)該光子之平均自由行程約為多少 cm？ (請詳列算式)",
+      "answerText": "解：\n(2) (cm)",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-110-2-professional/q4-1.webp",
+          "alt": "110-2 輻射防護員 專業 問答第 4 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-110-2-professional-essay-005",
@@ -556,7 +580,13 @@ window.NM_EXAM_BANK["rpo-110-2-professional"] = {
       "number": 5,
       "stem": "請說明為何蓋革管要加淬熄氣體？請列舉至少 2種淬熄氣體。",
       "answerText": "(1)因淬熄氣體游離能比主要氣體低，當主要氣體正離子撞擊到淬熄氣體後，會將電荷\n轉移給淬熄氣體，以防主要氣體正離子撞擊陰極壁時釋放電子，造成二次雪崩。淬熄氣\n體分子撞擊到陰極壁時容易分解，不會撞出陰極壁之電子造成假訊號。\n(2)酒精或醚類的有機蒸氣、鹵素氣體。",
-      "isComplete": true
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-110-2-professional/q5-1.webp",
+          "alt": "110-2 輻射防護員 專業 問答第 5 題原始解答截圖（第 1 張）"
+        }
+      ]
     },
     {
       "id": "rpo-110-2-professional-essay-006",
@@ -564,17 +594,33 @@ window.NM_EXAM_BANK["rpo-110-2-professional"] = {
       "section": "essay",
       "number": 6,
       "stem": "質子的質量為 1 個原子質量單位(amu)，若質子的動能為 150 MeV，請問：\n(1)總能量為多少MeV (2)其質量約為靜止質量的幾倍 (3)質子速度與光速的比值(v/c)",
-      "answerText": "(1)總能量=動能+質子的靜止能量 = 150 MeV+ 931 MeV = 1081 MeV\nmc2 1081 MeV m\n(2)   1.16\nm c2 931 MeV m\n0 0\nm\n(3)m  0\nv2\n1\nc2\n\nm 1\n 1.16\nm v2\n0 1\nc2\n1\n1.162 1.35\nv2\n1\nc2\nv2\n1.351.35 1\nc2\nv\n0.51\nc",
-      "isComplete": true
+      "answerText": "解：\n(1) 質子的總能量\nE = T + m0c^2 = 150 + 931 = 1081 MeV。\n\n(2) 相對論質量與靜止質量之比為\nm / m0 = E / ( m0c^2 ) = 1081 / 931 = 1.16。\n\n( 3 ) 由 γ = m / m0 = 1.16， v / c = √ ( 1 - 1 / γ^2 ) = √ ( 1 - 1 / 1.16^2 ) = 0.51。\n\n所以質子速度約為 0.51c。",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-110-2-professional/q6-1.webp",
+          "alt": "110-2 輻射防護員 專業 問答第 6 題原始解答截圖（第 1 張）"
+        },
+        {
+          "src": "./assets/radiation-answer-scans/rpo-110-2-professional/q6-2.webp",
+          "alt": "110-2 輻射防護員 專業 問答第 6 題原始解答截圖（第 2 張）"
+        }
+      ]
     },
     {
       "id": "rpo-110-2-professional-essay-007",
       "kind": "essay",
       "section": "essay",
       "number": 7,
-      "stem": "一般會使用鉛材料(密度 11.35 g/cm 3)進行X光機的輻射防護，請問鉛對 70 keV光子的\n半值層(HVL)與什一值層(TVL)各為多少cm？\n(70 keV光子的質量衰減係數為 2.8 cm2·g-1)",
-      "answerText": "0.693/(11.35 HVL)=2.8\n0.693/2.8=11.35 HVL\nHVL = 0.022 cm\n1 TVL=3.32 × HVL =0.073 cm",
-      "isComplete": true
+      "stem": "一般會使用鉛材料(密度 11.35 g/cm 3)進行X光機的輻射防護，請問鉛對 70 keV光子的\n半值層(HVL)與什一值層(TVL)各為多少cm？\n( 70 keV光子的質量衰減係數為 2.8 cm2·g - 1 )",
+      "answerText": "0.693 / ( 11.35 × HVL ) = 2.8\n0.693 / 2.8 = 11.35 × HVL HVL = 0.022 cm\n1 TVL = 3.32 × HVL = 0.073 cm",
+      "isComplete": true,
+      "answerImages": [
+        {
+          "src": "./assets/radiation-answer-scans/rpo-110-2-professional/q7-1.webp",
+          "alt": "110-2 輻射防護員 專業 問答第 7 題原始解答截圖（第 1 張）"
+        }
+      ]
     }
   ]
 };
