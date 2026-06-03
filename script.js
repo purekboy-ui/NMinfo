@@ -9171,17 +9171,6 @@ CardiacAmyloid: {
         tellUs: "如果無法平躺、近期做過會影響判讀的心臟檢查，或尚未完成血清 / 尿液單株蛋白評估，請先告知。",
         evidence: "更新依據：SNMMI/ASNC/ASE/EANM 等 PYP imaging practice points 與現有頁面內容。"
     },
-    CardiacPET: {
-        title: "心臟正子掃描",
-        subtitle: "Cardiac PET — 心肌灌流、血流定量、存活性評估與發炎／浸潤影像",
-        category: "pet",
-        readerGuideMode: "article",
-        readerGuideArticle: [
-            "Cardiac PET 的核心優勢不只是看灌流分布，而是直接量化心肌血流（MBF）與冠脈血流儲備（CFR），這是 SPECT MPI 做不到的。",
-            "心臟 FDG PET 的病人準備與腫瘤 FDG PET 完全相反——心臟需要葡萄糖負荷來驅動心肌攝取，空腹反而會讓正常心肌不顯影。這是臨床上最常被搞混的關鍵差異。",
-            "不同示蹤劑（Rb-82、N-13 Ammonia、F-18 FDG）各有其生理基礎與適用情境；選擇哪一條路徑，取決於你要回答的問題是灌流、存活還是發炎。"
-        ]
-    },
 };
 
 Object.assign(EXAM_DATA, CARDIAC_VIEW_OVERRIDES);
