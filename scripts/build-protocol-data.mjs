@@ -63,7 +63,7 @@ const OVERVIEW_SPECS = {
     file: '06-gi-hepatobiliary-protocols.md',
     heading: '4. Gastrointestinal bleeding scintigraphy',
     title: "Meckel's diverticulum scan",
-    note: 'Meckel 單元目前先借用 GI bleed 的動態腹部收像骨架，後續建議補專檔。',
+    note: 'Meckel 以 GI 類腹部動態收像原則為基礎，Tc-99m pertechnetate 注射後 1 frame/min × 30–60 min，前處理（禁食、H2 blocker）為敏感度關鍵。',
     fallbackQcGroup: 'gi'
   }
 };
@@ -72,7 +72,7 @@ const GENERIC_FALLBACKS = {
   MUGA: {
     title: 'MUGA',
     modalityLabel: '平面 / gated 心臟核醫',
-    note: '本站目前尚無 MUGA 專檔，先提供共通 gated 心臟核醫原則，避免排程與後處理完全無依據。',
+    note: '本條目提供共通 gated 心臟核醫收像、後處理與 QC 原則，用於心室功能評估與 EF 追蹤。',
     acquisition: [
       'ECG gating 必須穩定，先確認心律與 R-wave 偵測品質。',
       '多角度 planar 收像前，先讓左心室與左心房分離良好。',
@@ -91,12 +91,12 @@ const GENERIC_FALLBACKS = {
       'LAO / best septal separation 幾何條件',
       'EF 計算軟體與版本'
     ],
-    source: '以心臟核醫總覽與共通技術模板整理；本站待補 MUGA 專檔。'
+    source: '以心臟核醫總覽與共通技術模板整理。'
   },
   Venography: {
     title: 'Radionuclide venography',
     modalityLabel: '動態平面血流 / 靜脈檢查',
-    note: '本站目前尚無 radionuclide venography 專檔，先提供動態平面與原始血流序列的共通原則。',
+    note: '本條目提供動態平面血流序列的共通收像與判讀原則，用於放射性核種靜脈攝影。',
     acquisition: [
       '注射一定要順利且對側比較條件一致，extravasation 會直接破壞判讀。',
       'dynamic frame timing 要固定，保留完整 early flow sequence。',
@@ -115,7 +115,7 @@ const GENERIC_FALLBACKS = {
       '視野起訖範圍',
       '是否加做延遲或局部補拍'
     ],
-    source: '以共通 acquisition checklist 與動態平面成像模板整理；本站待補 venography 專檔。'
+    source: '以共通 acquisition checklist 與動態平面成像模板整理。'
   },
   Lymphedema: {
     title: 'Lymphedema / lymphoscintigraphy',
@@ -168,7 +168,7 @@ const GENERIC_FALLBACKS = {
   LiverHemangioma: {
     title: 'Liver hemangioma scintigraphy',
     modalityLabel: 'RBC 平面 / SPECT 多時間點檢查',
-    note: '本站目前尚無肝血管瘤專檔，先提供血池型肝臟檢查的共通成像原則。',
+    note: '本條目提供血池型肝臟檢查的共通收像、延遲比對與 SPECT/CT 定位原則，用於肝血管瘤 RBC 掃描。',
     acquisition: [
       '標記紅血球流程與 labeling QC 要穩定。',
       '早期血流、blood pool 與延遲時間點都要完整保留。',
@@ -180,19 +180,19 @@ const GENERIC_FALLBACKS = {
       '若與其他肝臟病灶鑑別，需結合先前 CT / MRI 解剖位置。'
     ],
     qcGroup: 'gi',
-    pitfallsGroup: 'gi',
+    pitfallsGroup: 'generic',
     localFixedFields: [
       'RBC 標記方法',
       '多時間點時序',
       '是否加做 SPECT/CT',
       '延遲相最晚時間點'
     ],
-    source: '以 GI / 肝膽共通影像原則與多時間點 blood-pool 邏輯整理；本站待補 liver hemangioma 專檔。'
+    source: '以 GI / 肝膽共通影像原則與多時間點 blood-pool 邏輯整理。'
   },
   Scrotal: {
     title: 'Scrotal scintigraphy',
     modalityLabel: '急症血流 / 動態平面檢查',
-    note: '本站目前尚無陰囊掃描專檔，先提供急症血流檢查的共通核對項。',
+    note: '本條目提供急症血流檢查的共通收像與判讀核對原則，用於急性陰囊疼痛鑑別掃描。',
     acquisition: [
       'early flow sequence 必須完整，不能只留延遲靜態圖。',
       '左右側顯示尺度、ROI 與擺位要一致，方便比較血流差異。',
@@ -211,12 +211,12 @@ const GENERIC_FALLBACKS = {
       '是否補延遲相',
       '急診時序與回報流程'
     ],
-    source: '以共通 acquisition checklist 與急症血流檢查邏輯整理；本站待補 scrotal 專檔。'
+    source: '以共通 acquisition checklist 與急症血流檢查邏輯整理。'
   },
   Cisternography: {
     title: 'Radionuclide cisternography',
     modalityLabel: '多時間點 CSF 流動檢查',
-    note: '本站目前尚無 cisternography 專檔，先提供多時間點 CSF 流動檢查的共通原則。',
+    note: '本條目提供多時間點 CSF 流動檢查的共通收像與判讀原則，用於腦脊髓液池掃描。',
     acquisition: [
       '腰椎穿刺、注入時間與體位變化都要完整記錄。',
       '2 至 4 小時、24 小時、必要時 48 小時時間點不可任意省略。',
@@ -235,12 +235,12 @@ const GENERIC_FALLBACKS = {
       '補拍區域與條件',
       '與重症 / 神經團隊回報節點'
     ],
-    source: '以多時間點功能檢查原則整理；本站待補 cisternography 專檔。'
+    source: '以多時間點功能檢查原則整理。'
   },
   Ga67: {
     title: 'Ga-67 scintigraphy',
     modalityLabel: '延遲多時間點全身 / 局部檢查',
-    note: '本站目前尚無 Ga-67 專檔，先提供延遲全身與感染定位檢查的共通原則。',
+    note: '本條目提供延遲全身掃描與感染/發炎定位檢查的共通收像與 QC 原則，用於 Ga-67 發炎掃描。',
     acquisition: [
       '固定延遲時間點，必要時 48 至 72 小時追蹤。',
       '全身與局部補拍都要記錄，避免只剩一組延遲靜態圖。',
@@ -259,7 +259,7 @@ const GENERIC_FALLBACKS = {
       '全身與局部補拍條件',
       '對照影像需求'
     ],
-    source: '以神經 / 肺 / 感染共通陷阱與延遲全身成像邏輯整理；本站待補 Ga-67 專檔。'
+    source: '以神經 / 肺 / 感染共通陷阱與延遲全身成像邏輯整理。'
   },
   NP59: {
     title: 'NP-59 adrenal cortical imaging',

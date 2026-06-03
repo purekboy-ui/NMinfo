@@ -1510,57 +1510,181 @@ BrainPET: {
 
 POSLUMA: {
     title: "PSMA PET (POSLUMA)",
-    subtitle: "攝護腺癌 PSMA 正子掃描 — 精準偵測微小轉移",
+    subtitle: "POSLUMA（18F-flotufolastat）— 攝護腺癌 PSMA PET 的專業判讀與 tracer-aware staging",
     category: "pet",
+    readerGuideMode: "article",
+    readerGuideArticle: [
+        "PSMA PET 的重點不是把所有亮點都叫轉移，而是把 radiopharmaceutical 特性、正常分布、CT 形態與臨床情境整合成可信的 staging 結論。",
+        "POSLUMA 屬於 18F-flotufolastat（18F-rhPSMA-7.3）家族，phase 3 SPOTLIGHT 已證實其在攝護腺癌生化復發情境具有穩健的真陽性檢出能力，但骨盆尿路干擾、神經節 mimic 與良性骨灶仍是讀片核心陷阱。",
+        "母網站此單元以專業醫療人員為對象，重點放在 tracer 差異、判讀流程、pitfalls 與報告語言，而不是病人衛教式簡述。"
+    ],
     timeArchitecture: {
+        mode: "article",
         steps: [
-            { label: "靜脈注射", value: "POSLUMA" },
-            { label: "等待", value: "60 分鐘" },
-            { label: "上機攝影", value: "約 20 分鐘" }
+            { label: "注射", value: "POSLUMA 296 MBq IV" },
+            { label: "攝取期", value: "補水後等待約 60 分鐘" },
+            { label: "收像", value: "skull base/vertex 到 mid-thigh，必要時骨盆延遲或利尿補拍" }
         ],
-        note: "對早期骨轉移與淋巴轉移的偵測率顯著優於傳統骨骼掃描。"
+        article: [
+            "依 DailyMed/FDA 標示，POSLUMA 建議活動量為 296 MBq，注射後約 60 分鐘開始 PET/CT。檢前檢後都應鼓勵補水與排尿，以降低膀胱與輸尿管活度對骨盆判讀的干擾。",
+            "標準掃描至少需涵蓋骨盆、腹膜後、胸部與頭頸基底；是否延伸到 skull vertex 或全身，取決於 staging 問題與院內慣例。若臨床問題集中在前列腺窩或骨盆淋巴結，建議預先規劃排尿後補拍、延遲相或利尿策略。",
+            "重建、顯示尺度與追蹤時序需固定。跨 tracer 或跨重建版本比較 SUV 時，解讀應保守，優先回到病灶位置、CT 對位與整體疾病分布。"
+        ],
+        note: "核心來源：EANM/SNMMI PSMA PET guideline 2.0（2023）、PSMA-RADS 2.0（2023）、SPOTLIGHT（2023/2024）與 2026-06-03 官方標示。"
     },
     content: [
         {
-            type: "info-box-blue",
-            html: `<h4>原理：PSMA Targeting</h4>
-            <p>F-18 Flotufolastat（POSLUMA）或 Ga-68 PSMA-11 會專一性結合攝護腺癌細胞表面的 <strong>PSMA（Prostate-Specific Membrane Antigen）</strong>。PSMA 在攝護腺癌細胞上的表現量比正常組織高 100–1000 倍。</p>`
-        },
-        {
             type: "section",
-            title: "適應症",
-            icon: "🎯",
+            title: "臨床定位與使用情境",
+            icon: "📌",
             html: `<div class="prose">
-                <ul>
-                    <li><strong>初始分期：</strong>中高風險攝護腺癌（Gleason ≥ 7）的淋巴與遠端轉移評估</li>
-                    <li><strong>生化復發：</strong>PSA 上升但傳統影像找不到病灶</li>
-                    <li><strong>治療計畫：</strong>評估是否適合 Lu-177 PSMA 治療</li>
-                </ul>
+                <p>PSMA PET/CT 的價值不只是比傳統骨掃描更靈敏，而是把<strong>初始分期</strong>、<strong>生化復發再分期</strong>與<strong>放射配體治療前 target confirmation</strong>放在同一張分子影像地圖上。2023 年 EANM/SNMMI guideline 明確強調：不同 PSMA radioligand 的正常分布與判讀陷阱並不完全相同，因此流程與報告應採 <strong>tracer-aware</strong> 思維。</p>
+                <p>對 POSLUMA 而言，最常見的臨床問題是 PSA 生化復發後 conventional imaging 仍陰性或不明確時的病灶定位。若這次檢查是為了 Lu-177 PSMA 類治療評估，重點則會轉成病灶是否具有可信且足夠的 PSMA expression，而不是只數有幾個熱點。</p>
+                <div class="source-badges">
+                    <span class="guide-tag local">EANM/SNMMI 2023</span>
+                    <span class="guide-tag local">SPOTLIGHT 2023</span>
+                    <span class="guide-tag local">JNM 2024</span>
+                </div>
             </div>`
         },
         {
             type: "section",
-            title: "行政重點",
-            icon: "🩺",
-            html: `<div class="prose">
-                <ul>
-                    <li><span class="badge badge-blue">ℹ️</span> <strong>無須禁食</strong>，可正常飲食</li>
-                    <li>注射前與等待期間需補充 <strong>500cc 水分</strong>（若無禁忌）</li>
-                    <li>上機前務必<strong>排空膀胱</strong>，減少尿液放射性干擾</li>
-                </ul>
+            title: "目前可用 PSMA 核醫藥物與差別",
+            icon: "💊",
+            html: `<div class="data-table-wrapper">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>藥物</th>
+                            <th>常見商品名</th>
+                            <th>分布/排泄特性</th>
+                            <th>判讀優勢</th>
+                            <th>主要限制</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>68Ga-PSMA-11</strong></td>
+                            <td>Locametz, Illuccix, Gozellix</td>
+                            <td>泌尿排泄明顯</td>
+                            <td>文獻最成熟、廣泛用於初始分期與 BCR</td>
+                            <td>膀胱附近病灶易受尿液干擾</td>
+                        </tr>
+                        <tr>
+                            <td><strong>18F-DCFPyL</strong></td>
+                            <td>PYLARIFY, PYLCLARI</td>
+                            <td>18F 物流較佳，仍以尿路排泄為主</td>
+                            <td>高解析度與成熟臨床證據</td>
+                            <td>骨盆局部復發仍可能被 bladder activity 影響</td>
+                        </tr>
+                        <tr>
+                            <td><strong>18F-PSMA-1007</strong></td>
+                            <td>Radelumin</td>
+                            <td>相對較少膀胱活度</td>
+                            <td>前列腺窩與骨盆局部病灶有時更清楚</td>
+                            <td>非特異性骨 uptake 最常見，過度分期風險最高</td>
+                        </tr>
+                        <tr>
+                            <td><strong>18F-flotufolastat</strong></td>
+                            <td>POSLUMA</td>
+                            <td>radiohybrid ligand，仍有泌尿排泄</td>
+                            <td>SPOTLIGHT phase 3 支持生化復發應用</td>
+                            <td>骨盆尿路干擾、ganglia mimic、良性骨灶仍需嚴格鑑別</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="prose">
+                    <p>實務上不應把上述藥物當成可完全互換。<strong>18F-PSMA-1007</strong> 最需要警覺非特異性骨灶；<strong>68Ga-PSMA-11</strong> 與 <strong>18F-DCFPyL</strong> 則更常受到尿液背景限制；<strong>POSLUMA</strong> 雖然屬於新一代 18F tracer，但讀片時仍必須保留對骨盆尿路、神經節與 benign bone focus 的警覺。</p>
+                    <div class="source-badges">
+                        <span class="guide-tag local">Pharmaceuticals 2025</span>
+                        <span class="guide-tag local">Eur J Nucl Med 2023</span>
+                        <span class="guide-tag local">DailyMed 2026-06-03</span>
+                    </div>
+                </div>
             </div>`
         },
         {
             type: "section",
-            title: "臨床寶典",
-            icon: "💎",
+            title: "POSLUMA 官方流程與母站建議操作重點",
+            icon: "🧑‍⚕️",
             html: `<div class="prose">
-                <h4>PSMA 表現與 Gleason Score 正相關</h4>
-                <p>Gleason score 越高，PSMA 表現量越高。但少數去分化的癌細胞可能反而 PSMA 低表現（如 neuroendocrine differentiation）。</p>
-                <h4>生理性攝取注意</h4>
                 <ul>
-                    <li>正常：淚腺、唾液腺、肝、脾、腎、小腸</li>
-                    <li>神經節與交感神經鏈可能有輕度攝取（勿誤判為淋巴轉移）</li>
+                    <li><strong>官方建議活度：</strong>POSLUMA 296 MBq IV；開始影像時間約注射後 60 分鐘。</li>
+                    <li><strong>補水與排尿：</strong>檢前檢後都應鼓勵喝水並排尿。若問題在前列腺窩或骨盆淋巴結，這一步往往比多看一個 SUV 更重要。</li>
+                    <li><strong>掃描範圍：</strong>至少涵蓋骨盆到胸部；是否延伸到 skull vertex 或全身，應依 staging 問題與院內 protocol 決定。</li>
+                    <li><strong>骨盆疑難判讀：</strong>可預先規劃排尿後補拍、延遲相或利尿策略。2025 prospective data 指出，對 18F-flotufolastat 的利尿流程可提升 prostatectomy 後 recurrence detection。</li>
+                    <li><strong>追蹤比較：</strong>同一病人若要比較前後變化，盡量維持相同 tracer、相近 uptake time 與相同重建設定。</li>
+                </ul>
+                <div class="source-badges">
+                    <span class="guide-tag local">POSLUMA Label</span>
+                    <span class="guide-tag local">EANM/SNMMI 2023</span>
+                    <span class="guide-tag local">J Nucl Med 2025</span>
+                </div>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "POSLUMA 詳細判讀教學",
+            icon: "🧭",
+            html: `<div class="prose">
+                <ol>
+                    <li><strong>先確認臨床問題：</strong>是初始分期、PSA 生化復發，還是治療前 target confirmation。沒有先釐清問題，後面所有亮點都會失焦。</li>
+                    <li><strong>先讀品質，再讀病灶：</strong>先排除注射外滲、體動、尿液污染、PET/CT misregistration，再回到 fused image。</li>
+                    <li><strong>先認正常分布：</strong>淚腺、腮腺、頜下腺、腎臟、輸尿管、膀胱、肝脾與小腸，是 PSMA PET 的 baseline；不熟這張地圖，就容易把正常訊號誤當病灶。</li>
+                    <li><strong>骨盆一定分層看：</strong>前列腺床、精囊床、膀胱旁、obturator、internal/external iliac、common iliac 逐層往上看，不能只靠 MIP。</li>
+                    <li><strong>節點與神經節要分開：</strong>若焦點位於 celiac、stellate 或 sacral ganglion 常見位置，呈線性、對稱或無明顯 CT 結構對應，先保留 ganglion interpretation。</li>
+                    <li><strong>骨灶先問合理性：</strong>多發且與 CT sclerosis/lysis 對位時支持轉移；孤立肋骨小灶、骨折修復或退化灶則要保留 benign interpretation。</li>
+                    <li><strong>最後才量化：</strong>SUV 能幫助描述，但不應凌駕於位置、形態與臨床前測機率。</li>
+                </ol>
+                <p>若病灶證據不足，建議使用 <strong>PSMA-RADS 2.0</strong> 思維標示不確定性與後續建議，而不是硬把所有小灶寫成 metastasis。</p>
+                <div class="source-badges">
+                    <span class="guide-tag local">PSMA-RADS 2.0</span>
+                    <span class="guide-tag local">EANM/SNMMI 2023</span>
+                    <span class="guide-tag local">SPOTLIGHT 2024</span>
+                </div>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "POSLUMA 必考 pitfalls",
+            icon: "⚠️",
+            html: `<div class="prose">
+                <h4>假陽性</h4>
+                <ul>
+                    <li><strong>交感神經節：</strong>celiac、stellate、sacral ganglia 是最常見 mimic，尤其在腹膜後與骨盆。</li>
+                    <li><strong>骨折、修復、退化性骨病灶：</strong>單一肋骨或骨盆邊緣灶若 CT 不支持轉移，不能直接 overstage。</li>
+                    <li><strong>感染發炎：</strong>肺部感染、肉芽腫、結核、術後變化都可能攝取。</li>
+                    <li><strong>其他腫瘤或新生血管 PSMA 表現：</strong>PSMA 並不是攝護腺癌專屬訊號。</li>
+                </ul>
+                <h4>假陰性</h4>
+                <ul>
+                    <li><strong>低 PSMA 表現或去分化腫瘤：</strong>例如 neuroendocrine differentiation。</li>
+                    <li><strong>小病灶部分容積效應：</strong>微小淋巴結或微小局部復發可能低於偵測門檻。</li>
+                    <li><strong>膀胱/輸尿管遮蔽：</strong>局部復發其實存在，但被高尿液背景掩蓋。</li>
+                    <li><strong>治療時序干擾：</strong>ADT 與近期局部治療會改變 uptake，陰性不能脫離治療脈絡解讀。</li>
+                </ul>
+                <p><strong>重要補充：</strong>2024 systematic review 指出 unspecific bone uptake 的比例會隨 tracer 不同而差很多，其中以 <strong>18F-PSMA-1007</strong> 最高；因此站內若未來擴充其他 PSMA tracer 單元，pitfall 段落不能整段複製貼上。</p>
+                <div class="source-badges">
+                    <span class="guide-tag local">Eur J Nucl Med 2024</span>
+                    <span class="guide-tag local">Eur J Nucl Med 2021</span>
+                    <span class="guide-tag local">Frontiers 2022</span>
+                </div>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "報告建議與參考文獻",
+            icon: "📚",
+            html: `<div class="prose">
+                <p>建議報告至少寫明：<strong>臨床問題、tracer、活度、注射至收像時間、是否排尿/利尿/延遲相</strong>，接著依 <strong>prostate/prostate bed、pelvic nodes、extra-pelvic nodes、bone、viscera</strong> 分區描述。對不確定病灶要直接說出不確定性的來源，例如 ganglion mimic、urinary confounder 或 benign bone focus，而不是只列熱點。</p>
+                <ul>
+                    <li>Fendler WP, et al. Eur J Nucl Med Mol Imaging. 2023;50(5):1466-1486. doi:10.1007/s00259-022-06089-w.</li>
+                    <li>Rowe SP, et al. Eur Urol. 2023;84(5):491-502. doi:10.1016/j.eururo.2023.06.008.</li>
+                    <li>Hennrich U, et al. Pharmaceuticals (Basel). 2025;18(6):906. doi:10.3390/ph18060906.</li>
+                    <li>Jani AB, et al. J Urol. 2023;210(2):299-311. doi:10.1097/JU.0000000000003493.</li>
+                    <li>Schuster DM, et al. J Nucl Med. 2024;65(7):1080-1086. doi:10.2967/jnumed.123.267271.</li>
+                    <li>Rizzo A, et al. Eur J Nucl Med Mol Imaging. 2024;51(12):3753-3764. doi:10.1007/s00259-024-06797-5.</li>
+                    <li>DailyMed labels checked on 2026-06-03: POSLUMA, PYLARIFY, gallium Ga 68 gozetotide.</li>
                 </ul>
             </div>`
         }
@@ -1732,40 +1856,217 @@ NaFPET: {
 
 CardiacPET: {
     title: "心臟正子掃描",
-    subtitle: "Cardiac PET — 冠心病的精準診斷",
+    subtitle: "Cardiac PET — 心肌灌流、血流定量、存活性評估與發炎／浸潤影像",
     category: "pet",
+    readerGuideMode: "article",
+    readerGuideArticle: [
+        "Cardiac PET 的核心優勢不只是看灌流分布，而是直接量化心肌血流（MBF）與冠脈血流儲備（CFR），這是 SPECT MPI 做不到的。",
+        "心臟 FDG PET 的病人準備與腫瘤 FDG PET 完全相反——心臟需要葡萄糖負荷來驅動心肌攝取，空腹反而會讓正常心肌不顯影。這是臨床上最常被搞混的關鍵差異。",
+        "不同示蹤劑（Rb-82、N-13 Ammonia、F-18 FDG）各有其生理基礎與適用情境；選擇哪一條路徑，取決於你要回答的問題是灌流、存活還是發炎。"
+    ],
     timeArchitecture: {
+        mode: "article",
         steps: [
-            { label: "休息 PET", value: "Rb-82 / N-13" },
-            { label: "藥物壓力", value: "Regadenoson" },
-            { label: "壓力 PET", value: "再次注射" }
+            { label: "灌流 PET", value: "Rb-82 / N-13 Ammonia：休息 → 藥物壓力 → 壓力影像" },
+            { label: "FDG 存活 PET", value: "葡萄糖負荷 → 注射 FDG → 60-90 min 後收像" },
+            { label: "發炎／浸潤 PET", value: "空腹或 preparative diet → 注射 FDG → 收像" }
         ],
-        note: "Rb-82 半衰期僅 76 秒，需使用 Generator 現場製備。"
+        article: [
+            "灌流 PET（Rb-82 / N-13 Ammonia）：先做休息相（rest），再給予血管擴張劑（regadenoson / adenosine / dipyridamole）或 dobutamine 做藥物壓力，在壓力峰值注射示蹤劑並收像。Rb-82 半衰期僅 76 秒，需 onsite generator；N-13 Ammonia 半衰期約 10 分鐘，需 onsite cyclotron。",
+            "FDG 存活 PET：病人需先做葡萄糖負荷（口服 glucose 或 insulin clamp），將血糖控制在特定範圍以促進心肌葡萄糖攝取。注射 FDG 後等待 60-90 分鐘（心肌 FDG 攝取較腫瘤慢），再進行 cardiac PET/CT 收像。",
+            "共通前提：所有血管擴張劑 stress 路徑，檢查前 12-24 小時必須嚴格禁咖啡因（咖啡、茶、巧克力、可樂、能量飲料），否則冠脈擴張反應會被阻斷，造成假陰性灌流影像。"
+        ],
+        note: "Rb-82 需 Sr-82/Rb-82 generator（每 4-6 週更換），N-13 需 onsite cyclotron。FDG cardiac PET 可用一般醫用迴旋加速器生產的 F-18 FDG，與腫瘤 PET 共用藥物但 protocol 完全不同。"
     },
     content: [
         {
-            type: "info-box-blue",
-            html: `<h4>原理</h4>
-            <p>Rb-82 為鉀離子類似物，經由 Na/K-ATPase 被心肌攝取。N-13 Ammonia 則直接反映心肌血流。PET 的<strong>解析度與定量能力</strong>均優於 SPECT MPI，可直接測量冠脈血流儲備（CFR）。</p>`
+            type: "section",
+            title: "臨床定位：Cardiac PET 的核心價值",
+            icon: "📌",
+            html: `<div class="prose">
+                <p>Cardiac PET 是目前公認的<strong>非侵入性心肌血流定量黃金標準</strong>。與 SPECT MPI 相比，PET 提供：</p>
+                <ul>
+                    <li><strong>絕對血流定量（MBF in mL/min/g）：</strong>不是相對分布，而是每克心肌每分鐘的真實血流量。壓力下 MBF 與休息 MBF 的比值即為冠脈血流儲備（CFR）。</li>
+                    <li><strong>優異的衰減校正：</strong>PET 內建 CT 或 transmission scan 進行精確衰減校正，肥胖病人、女性乳房衰減等 SPECT 常見偽影在 PET 大幅減少。</li>
+                    <li><strong>更高解析度與敏感度：</strong>PET 的空間解析度（4-6 mm）優於 SPECT（10-15 mm），對微小灌流缺損與 balanced ischemia 的偵測力更強。</li>
+                    <li><strong>輻射劑量較低：</strong>Rb-82 的短半衰期使整體輻射暴露低於 Tc-99m sestamibi SPECT。</li>
+                </ul>
+                <p>臨床上主要用於三種情境：<strong>冠心病灌流評估</strong>（rest/stress perfusion）、<strong>心肌存活性評估</strong>（FDG viability）、以及<strong>心臟發炎／浸潤疾病</strong>（cardiac sarcoidosis、endocarditis、device infection 等）。</p>
+            </div>`
         },
         {
             type: "section",
-            title: "適應症",
-            icon: "🎯",
+            title: "示蹤劑總覽：四種藥物的生理基礎與選擇邏輯",
+            icon: "🧬",
             html: `<div class="prose">
+                <p><strong>Rb-82（Rubidium-82）— 灌流首選</strong></p>
                 <ul>
-                    <li>冠心病診斷，尤其 SPECT 結果不確定時</li>
-                    <li><strong>肥胖病人：</strong>PET 不受衰減影響，影像品質優於 SPECT</li>
-                    <li>多支血管病變（Balanced ischemia 的偵測）</li>
-                    <li>冠脈血流儲備（CFR）定量評估</li>
-                    <li>心肌存活性（FDG PET）</li>
+                    <li><strong>機轉：</strong>鉀離子類似物，經 Na/K-ATPase 主動運輸進入心肌細胞。攝取量與局部心肌血流呈線性正比。</li>
+                    <li><strong>特性：</strong>半衰期 76 秒，由 Sr-82/Rb-82 generator 現場 elution。不需 onsite cyclotron，是目前最普及的心臟 PET 灌流藥物。Generator 每 4-6 週更換。</li>
+                    <li><strong>優點：</strong>超短半衰期使 rest-stress 可在 30 分鐘內完成，輻射劑量低（~3 mSv）。</li>
+                    <li><strong>缺點：</strong>76 秒半衰期需快速動態收像；long extraction fraction 在高血流時略有 roll-off（輕微低估極高血流）。</li>
+                </ul>
+                <p><strong>N-13 Ammonia — 灌流定量與 CFR</strong></p>
+                <ul>
+                    <li><strong>機轉：</strong>經被動擴散進入心肌細胞，隨後被 glutamine synthetase 轉化為 glutamine 而滯留（metabolic trapping）。</li>
+                    <li><strong>特性：</strong>半衰期 9.97 分鐘，需 onsite cyclotron 生產。first-pass extraction fraction 極高（>90%），血流-攝取線性關係優異。</li>
+                    <li><strong>優點：</strong>定量最準確，是血流定量的 reference standard。影像品質佳，適合需要精確 CFR 的情境。</li>
+                    <li><strong>缺點：</strong>需要 cyclotron，成本與物流門檻高。半衰期較 Rb-82 長，rest-stress protocol 需較長時間。</li>
+                </ul>
+                <p><strong>O-15 Water — 純血流定量（研究用途為主）</strong></p>
+                <ul>
+                    <li><strong>機轉：</strong>自由擴散型示蹤劑，代謝惰性，攝取完全由血流決定。</li>
+                    <li><strong>特性：</strong>半衰期僅 2 分鐘，需 onsite cyclotron 與專屬輸注系統。無法產生傳統灌流影像（需用 blood pool subtraction 重建），需動態收像做 kinetic modeling。</li>
+                    <li><strong>角色：</strong>主要用於研究，是血流定量的 ultimate gold standard，但臨床實用性受限。</li>
+                </ul>
+                <p><strong>F-18 FDG — 心肌存活性（Viability）與發炎影像</strong></p>
+                <ul>
+                    <li><strong>機轉：</strong>葡萄糖類似物，經 GLUT 轉運體進入細胞後被 hexokinase 磷酸化為 FDG-6-PO4，無法繼續代謝而滯留。</li>
+                    <li><strong>雙重角色：</strong>心肌存活評估（需葡萄糖負荷）vs 心臟發炎／浸潤／device infection（空腹或 special diet）。</li>
+                    <li><strong>特性：</strong>半衰期 110 分鐘，可由一般 F-18 FDG 供應取得，不需專屬 generator。</li>
+                    <li><strong>優點：</strong>與腫瘤 PET 共用藥物，物流便利。</li>
+                    <li><strong>缺點：</strong>病人準備複雜——準備錯了整組影像就報廢（見下一節）。</li>
+                </ul>
+                <p><strong>F-18 Flurpiridaz — 新世代灌流藥物</strong></p>
+                <ul>
+                    <li><strong>機轉：</strong>pyridaben 衍生物，與 mitochondrial complex I 結合，攝取與血流呈線性正比。</li>
+                    <li><strong>特性：</strong>半衰期 110 分鐘，first-pass extraction >90%，可做運動壓力（不像 Rb-82/N-13 只能藥物壓力）。</li>
+                    <li><strong>狀態：</strong>2024 年獲 FDA 核准，目前在美國逐步推廣，台灣尚未引進。</li>
                 </ul>
             </div>`
         },
         {
-            type: "info-box-emerald",
-            html: `<h4>台灣現況</h4>
-            <p>目前台灣僅少數醫學中心有 Rb-82 Generator 或 N-13 Cyclotron 能力。多數仍以 SPECT MPI 為主流。FDG PET 心肌存活性評估較為普及。</p>`
+            type: "section",
+            title: "🔥 FDG 心臟 PET vs 腫瘤 PET：病人準備的天壤之別",
+            icon: "⚡",
+            html: `<div class="prose">
+                <p>這是全台核醫科最常被搞錯的 protocol 差異。以下對照表請貼在注射室：</p>
+                <div class="data-table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr><th></th><th>腫瘤 FDG PET</th><th>心臟 FDG PET（存活）</th><th>心臟 FDG PET（發炎）</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>禁食</strong></td><td>✅ 4-6 小時嚴格禁食</td><td>❌ 不能空腹！</td><td>⚠️ 視 protocol</td></tr>
+                            <tr><td><strong>葡萄糖</strong></td><td>❌ 避免高血糖</td><td>✅ 必須給糖！口服 glucose load 或 insulin clamp</td><td>通常空腹或高脂低碳水 preparative diet</td></tr>
+                            <tr><td><strong>目標血糖</strong></td><td>< 150-200 mg/dL</td><td>100-140 mg/dL（需 insulin 輔助）</td><td>依 protocol 而定</td></tr>
+                            <tr><td><strong>生理原理</strong></td><td>避免 glucose 競爭 FDG 攝取 → 提高腫瘤對比</td><td>用 insulin 驅動 GLUT4 轉位 → 促進心肌攝取 FDG</td><td>抑制正常心肌攝取 → 讓發炎病灶凸顯</td></tr>
+                            <tr><td><strong>正常心肌</strong></td><td>各種攝取型態（heterogeneous）</td><td>均勻高攝取（homogeneous high uptake）</td><td>低攝取或無攝取（suppressed）</td></tr>
+                            <tr><td><strong>錯誤後果</strong></td><td>高血糖 → 腫瘤假陰性</td><td>空腹 → 正常心肌不攝取，看起來像整片 scar（假陽性）</td><td>吃糖 → 正常心肌亮起來，淹沒發炎訊號（假陰性）</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p><strong>為什麼心臟需要給糖？</strong></p>
+                <p>正常心肌在空腹狀態下主要以游離脂肪酸（FFA）為能量來源，GLUT4 轉運體停留在細胞內，不攝取葡萄糖／FDG。在缺血或 hibernating myocardium 中，心肌轉向葡萄糖代謝（fetal gene program），GLUT4 上調——但這個差異只有在給予 insulin 刺激（葡萄糖負荷）讓正常心肌也啟動葡萄糖攝取後才能凸顯。如果空腹，正常心肌可能看起來跟 hibernating 心肌一樣都不亮，完全失去 viability 評估的價值。</p>
+                <p><strong>實際臨床 protocol：</strong></p>
+                <ul>
+                    <li><strong>口服 glucose load：</strong>禁食 4-6 小時後口服 50-100g 葡萄糖，監測血糖至 100-140 mg/dL 時注射 FDG。若血糖仍高可追加小劑量短效 insulin。</li>
+                    <li><strong>Hyperinsulinemic-euglycemic clamp：</strong>金標準但繁瑣——靜脈輸注 insulin 同時調整 glucose 輸注速率，將血糖固定在 ~90-100 mg/dL，注射 FDG 後持續 clamp 30-60 分鐘。影像品質最佳但需專人操作。</li>
+                    <li><strong>心臟發炎 protocol（cardiac sarcoidosis / endocarditis）：</strong>目的相反——希望正常心肌不攝取 FDG。方法包括：延長禁食（12-18 hr）、高脂低碳水 preparative diet（Atkins-like，24 hr）、或 heparin 注射（促進 FFA 釋放，抑制心肌葡萄糖利用）。</li>
+                </ul>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "灌流 PET 病人準備",
+            icon: "🧑‍⚕️",
+            html: `<div class="prose">
+                <ul>
+                    <li><strong>咖啡因 12-24 hr 嚴格排除：</strong>咖啡、茶、可樂、巧克力、能量飲料、含咖啡因止痛藥。咖啡因競爭性拮抗 A2A 受體，直接阻斷 regadenoson / adenosine / dipyridamole 的冠脈擴張效應 → 造成假陰性灌流缺損。</li>
+                    <li><strong>Methylxanthine 類藥物：</strong>theophylline、aminophylline 需停藥 24-48 hr（依半衰期）。</li>
+                    <li><strong>禁食：</strong>通常禁食 4-6 hr（減少腸胃道活性干擾），但不如咖啡因嚴格。</li>
+                    <li><strong>鈣離子阻斷劑、beta-blocker、nitrates：</strong>依臨床醫囑決定是否停藥；通常不強制停。</li>
+                    <li><strong>Regadenoson 禁忌：</strong>重度氣喘／活動性 wheezing、未裝 pacemaker 的 2 度或 3 度 AV block、症狀性低血壓（SBP < 90 mmHg）。</li>
+                    <li><strong>Adenosine / Dipyridamole 禁忌：</strong>同 regadenoson，但對氣喘／COPD 更嚴格——所有 adenosine 類皆屬禁忌。</li>
+                    <li><strong>Dobutamine 禁忌：</strong>LBBB / ventricular pacemaker（心率加快引起 septal paradoxical motion → 假陽性）。</li>
+                </ul>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "攝影流程與定量",
+            icon: "🖥️",
+            html: `<div class="prose">
+                <p><strong>灌流 PET protocol：</strong></p>
+                <ul>
+                    <li>先做 CT scout / attenuation correction CT。</li>
+                    <li>休息相（rest）：注射 Rb-82（或 N-13 Ammonia）→ 動態 list-mode 收像（6-8 分鐘）→ 產生 rest MBF map。</li>
+                    <li>藥物壓力：regadenoson 0.4 mg IV bolus（或 adenosine / dipyridamole infusion）→ 在 peak hyperemia 時再次注射 tracer → 動態收像 → 產生 stress MBF map。</li>
+                    <li>定量分析：以 kinetic modeling（1-tissue compartment model）計算 rest MBF、stress MBF 與 CFR（stress/rest MBF ratio）。正常 CFR > 2.0；CFR < 1.5 為明顯異常。</li>
+                </ul>
+                <p><strong>FDG 存活 PET protocol：</strong></p>
+                <ul>
+                    <li>口服 glucose load 或 insulin clamp → 確認血糖在目標範圍（100-140 mg/dL）→ 注射 F-18 FDG（5-10 mCi）→ 等待 60-90 分鐘（心肌代謝較腫瘤慢，需更長 uptake time）→ static cardiac PET/CT 收像。</li>
+                    <li>正常心肌 → 均勻高攝取；hibernating myocardium → 相對於灌流的 mismatch（灌流低但 FDG 攝取保留）；scar → 灌流與 FDG 均缺損（match）。</li>
+                </ul>
+                <p><strong>定量陷阱：</strong>動態收像需確保病人在收像期間完全不動；任何 motion 都會破壞 kinetic modeling。list-mode 收像後可進行 motion correction。</p>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "判讀框架",
+            icon: "🧭",
+            html: `<div class="prose">
+                <p><strong>灌流 PET 判讀順序：</strong></p>
+                <ol>
+                    <li>確認影像品質：motion、injection infiltration、attenuation correction 正確性。</li>
+                    <li>目視判讀 rest vs stress 灌流分布：可逆缺損（ischemia）、固定缺損（scar）、balanced reduction（多支血管病變）。</li>
+                    <li>定量分析：stress MBF、CFR 的區域值與 global 值。CFR < 1.5 為異常；global CFR 降低代表微血管功能障礙或 balanced 3-vessel disease。</li>
+                    <li>整合冠脈解剖：將灌流缺損對應到冠脈分布（LAD / LCX / RCA）。</li>
+                </ol>
+                <p><strong>FDG 存活 PET 判讀：</strong></p>
+                <ol>
+                    <li>確認病人準備是否成功：正常心肌應均勻高攝取；若整片心肌暗沉，病人可能未充分 glucose loaded。</li>
+                    <li>比對灌流影像（通常來自同次或近期 SPECT/PET MPI）：灌流低 + FDG 攝取保留 = mismatch → viable（hibernating）→ revascularization 受益。</li>
+                    <li>灌流低 + FDG 也低 = match → transmural scar → 不建議 revascularization。</li>
+                    <li>灌流正常 + FDG 攝取不均 → 可能是糖尿病、insulin resistance、或非缺血性心肌病。</li>
+                </ol>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "Pitfalls",
+            icon: "⚠️",
+            html: `<div class="prose">
+                <p><strong>灌流 PET 常見陷阱：</strong></p>
+                <ul>
+                    <li><strong>咖啡因沒問出來：</strong>最常見原因。stress MBF 與 CFR 被低估，造成假陰性。一定要問咖啡、茶、可樂、巧克力、能量飲料。</li>
+                    <li><strong>Motion artifact：</strong>Rb-82 超短半衰期，rest 與 stress 之間無法重新收像。病人移動 = 重做整個 exam。</li>
+                    <li><strong>Generator 老化：</strong>Sr-82/Rb-82 generator 使用後期，Rb-82 yield 下降，影像品質劣化。</li>
+                    <li><strong>Balanced ischemia：</strong>3-vessel disease 時 relative perfusion 可能看似正常，但 CFR 會全面降低。這就是為什麼一定要看定量數值，不能只看相對分布。</li>
+                </ul>
+                <p><strong>FDG 存活 PET 常見陷阱：</strong></p>
+                <ul>
+                    <li><strong>沒做 glucose loading：</strong>正常心肌全暗 → 看起來像 diffuse scar → 誤判為 non-viable。</li>
+                    <li><strong>糖尿病病人：</strong>insulin resistance 使 glucose loading 效果不佳，正常心肌攝取不足 → 假性 mismatch 或假性 match。</li>
+                    <li><strong>非缺血性心肌病：</strong>dilated cardiomyopathy 的心肌 FDG 攝取本來就不均，不要過度解讀。</li>
+                    <li><strong>心臟發炎 protocol 沒落實：</strong>若病人偷吃東西或 preparative diet 沒做好，正常心肌亮起來 → 淹沒發炎病灶訊號。</li>
+                </ul>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "報告建議",
+            icon: "📝",
+            html: `<div class="prose">
+                <p>灌流 PET 報告應包含：stress 藥物種類與劑量、rest/stress MBF 與 CFR 定量值（global 及三支血管區域）、目視灌流缺損位置與範圍、與前期檢查之比較（若有）、結論與臨床建議。</p>
+                <p>FDG 存活報告應包含：patient prep protocol（glucose loading 方式、血糖值）、正常心肌攝取品質評估（是否充分 glucose loaded）、與灌流影像的 segmental comparison（match vs mismatch）、viability 結論（viable / non-viable / indeterminate）。</p>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "參考文獻",
+            icon: "📚",
+            html: `<div class="prose">
+                <ul>
+                    <li>ASNC Imaging Guidelines for PET Nuclear Cardiology Procedures. <em>J Nucl Cardiol</em>. 2020;27:1668-1698.</li>
+                    <li>SNMMI/ASNC/SCCT Guideline for Cardiac PET/CT. <em>J Nucl Med</em>. 2020;61(12):1799-1823.</li>
+                    <li>Dilsizian V, et al. ASNC Imaging Guidelines for FDG PET Myocardial Viability. <em>J Nucl Cardiol</em>. 2016;23:1187-1226.</li>
+                    <li>Schindler TH, et al. PET-Measured Myocardial Blood Flow: Current Status. <em>JACC Cardiovasc Imaging</em>. 2022;15(4):693-710.</li>
+                    <li>Chareonthaitawee P, et al. Joint SNMMI-ASNC Expert Consensus on FDG PET for Cardiac Sarcoidosis and Inflammation. <em>J Nucl Med</em>. 2017;58:1341-1353.</li>
+                    <li>Maddahi J, et al. Flurpiridaz F-18 PET Myocardial Perfusion Imaging. <em>J Am Coll Cardiol</em>. 2023;82(12):1220-1235.</li>
+                </ul>
+            </div>`
         }
     ]
 },
@@ -2014,33 +2315,165 @@ MPI_Tl201: {
     content: []
 },
 
+MUGA: {
+    title: "心室功能檢查 MUGA / ERNA",
+    subtitle: "Equilibrium Radionuclide Angiography 的臨床與技術實作",
+    category: "cardiac",
+    readerGuideMode: "article",
+    readerGuideArticle: [
+        "MUGA（ERNA）的價值在於可重現、可比較、可追蹤，不是只給一個 LVEF 數字。若同一病人要做治療前後序列監測，流程標準化比單次『看起來清楚』更重要。",
+        "臨床判讀上，先確認檢查品質（R-wave gating、R-R histogram、ROI 合理性、統計數）再解讀功能參數。品質失控時，數值再漂亮也可能是誤差。",
+        "近年重點已從『能不能量到 EF』轉向『不同軟體/流程能否互換』；2025 研究顯示跨軟體偏差可達臨床決策等級，故 serial 追蹤應避免任意切換平台。"
+    ],
+    timeArchitecture: {
+        mode: "article",
+        steps: [
+            { label: "RBC 標記", value: "in vivo / modified / in vitro" },
+            { label: "平衡後收像", value: "Planar LAO + multi-view 或 SPECT" },
+            { label: "ECG R-wave gating", value: "16–32 frames / R-R" }
+        ],
+        article: [
+            "第一階段是 RBC 標記：in vivo、modified in vivo/in vitro、in vitro 三法中，以 in vitro 標記效率最高，最利於高品質定量與 serial 追蹤。",
+            "第二階段是擷取：平面 ERNA 的 LVEF 核心視角為 LAO best septal view，並以 16–32 frames/R-R 進行 ECG gating；必要時增加 anterior/lateral 觀察區域壁運動。",
+            "第三階段是分析：平面採 count-based LVEF（ED/ES ROI + 背景校正），SPECT ERNA 則可用 3D 方式評估雙心室體積與 RVEF。"
+        ],
+        note: "同一病人序列追蹤時，應固定相機、收像參數、ROI 規則與分析軟體版本。"
+    },
+    content: [
+        {
+            type: "section",
+            title: "名稱與定位：ERNA、MUGA、RNV 是同一技術族群",
+            icon: "📘",
+            html: `<div class="prose">
+                <p>ERNA（equilibrium radionuclide angiography）與 MUGA（multigated acquisition）在實務上常互稱；核心都在以標記紅血球建立血池訊號，再透過 R-wave gating 取得心動週期平均影像以定量心室功能。</p>
+                <p>SNMMI/EANM 2020 指引指出，此法在 serial LVEF 的 reproducibility 極高（文獻引用 inter/intraobserver variability &lt;5%），因此特別適合化療心毒性監測與長期療效追蹤。</p>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "臨床適應症與限制",
+            icon: "🎯",
+            html: `<div class="prose">
+                <ul>
+                    <li><strong>最常見：</strong>癌症治療（特別是潛在心毒性藥物）前、中、後的 LVEF 追蹤。</li>
+                    <li>心肌病變、瓣膜病、缺血後心室功能追蹤，或需要高重現性數值比較的情境。</li>
+                    <li>當超音波窗不佳、CMR 不可行，ERNA 可作為穩定的功能定量工具。</li>
+                    <li>限制：ERNA 提供的是血池功能資訊，對瓣膜結構、心肌組織特徵與缺血病灶定位不如 echo/CMR/MPI。</li>
+                </ul>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "標準技術流程（教學版）",
+            icon: "🩺",
+            html: `<div class="prose">
+                <p><strong>病人準備：</strong>休息態通常不需禁食；若做運動或 dobutamine stress，建議禁食 3–4 小時並先檢核壓力檢查禁忌症。檢查前要主動確認心律不整、近期輸血、heparin/dextrose 靜脈路徑與可能干擾 RBC 標記之藥物/病史。</p>
+                <p><strong>RBC 標記：</strong>SNMMI/EANM 2020 指引列出三法：in vivo（約 60–70%）、modified in vivo/in vitro（約 90%）、in vitro（&gt;97%）。若任務是精準 serial 定量，in vitro 通常最穩定，但需嚴格病人與血液樣本辨識流程。</p>
+                <p><strong>劑量與擷取：</strong>成人常用活度約 555–1,110 MBq（15–30 mCi）。平面 ERNA 以 LAO best septal view 為 LVEF 核心角度，至少 16 frames/R-R（建議 24–32）；必要時補 anterior/lateral 以看區域壁運動。SPECT ERNA 在 RV 與雙心室體積分離常較有優勢。</p>
+                <p><strong>計算原理：</strong>平面 LVEF 屬 count-based，需正確圈 ED 與 ES 的 LV ROI 並做背景校正；背景 ROI 位置錯誤（例如含脾臟或大血管）會直接造成系統性偏差。</p>
+                <ul>
+                    <li>公式：<strong>LVEF =（校正後 ED counts − 校正後 ES counts）/ 校正後 ED counts × 100%</strong></li>
+                    <li>平面追蹤最怕「角度漂移 + ROI 漂移 + gating 失真」同時發生。</li>
+                </ul>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "軟體比較與序列追蹤規則",
+            icon: "📊",
+            html: `<div class="prose">
+                <p>2025 年 J Nucl Med Technol 的研究（PMID:39814461）直接比較 <strong>Xeleris</strong> 與 <strong>Corridor4DM</strong>（以 CMR 為參考），發現同一批 ERNA 資料下，不同軟體可能出現顯著偏差；同軟體不同讀片者差異反而較小。研究結論明確指出：<strong>不同軟體不宜互換</strong>，切換時需高度警戒。</p>
+                <p>實務上建議把以下條件「鎖定」：camera/collimator、R-R acceptance、frame 數、LAO 幾何、ROI 規則、背景 ROI 位置、重建與濾波參數、分析軟體與版本。若這些條件改變，報告必須註明可比性受限。</p>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "MUGA 結果判讀（臨床決策版）",
+            icon: "🧭",
+            html: `<div class="prose">
+                <p><strong>先看可靠度，再看數值。</strong>判讀順序建議固定為：gating trigger 是否抓到 QRS、R-R histogram 是否集中、是否有 motion/frame drop-out、ROI 與背景 ROI 是否合理，最後才解讀 LVEF/RVEF。</p>
+                <p><strong>序列追蹤最關鍵的不是單點高低，而是變化是否超過方法誤差。</strong>依 SNMMI/EANM 2020，ERNA serial 重現性可達 &lt;5%，因此前後約 5 個百分點以上的 LVEF 改變，才較可視為具臨床意義的真實變化。</p>
+                <ul>
+                    <li>收縮功能：LVEF、RVEF、global/regional wall motion（normal/hypokinetic/akinetic/dyskinetic）。</li>
+                    <li>舒張功能：time-activity curve 形態、peak filling rate（PFR）與舒張充盈時間序列。</li>
+                    <li>同步性：phase image / phase histogram 的平均相位與離散度（SD）。</li>
+                    <li>壓力流程：同指引指出正常 stress LVEF 應較 rest 上升至少約 5 EF units。</li>
+                </ul>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "First-pass RNV（FPRNA）技術補充",
+            icon: "🚀",
+            html: `<div class="prose">
+                <p><strong>定位：</strong>first-pass 不是取代 ERNA，而是以快速動態擷取第一循環通過心肺大血管時的訊號，特別有助於右心室功能（RVEF）與分流相關評估。</p>
+                <p><strong>打藥與收像要點：</strong>重點是「緊實 bolus + 高時間解析」。靜脈路徑宜選通暢且靠近中心循環的路徑，避免外滲與過慢注射造成第一循環展寬。常見使用 RAO 投影取得右心分離較佳的時間活性曲線；數據處理仍須做背景校正並避免把心房/大血管訊號混入 RV ROI。</p>
+                <p><strong>與 ERNA 的互補：</strong>ERNA 在 serial LVEF 重現性更有優勢；FPRNA 在特定右心與流入流出動力學問題可補足資訊。若做長期追蹤，同一病人應避免在 FPRNA 與 ERNA 間來回切換作為同一序列比較。</p>
+                <ul>
+                    <li>注射品質不佳（外滲、過慢、殘留）是 first-pass 誤差第一來源。</li>
+                    <li>ROI 必須排除右心房與肺動脈重疊，否則 RVEF 會偏差。</li>
+                    <li>first-pass 與 ERNA 量到的是不同時相與幾何模型，報告需註明方法學差異。</li>
+                </ul>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "文獻圖像示例（ROI 與指引頁）",
+            icon: "🖼️",
+            html: `<div class="prose">
+                <p>此段改為聚焦最常被問的實作核心：「左心室 ROI 與背景 ROI 到底該畫在哪裡」。保留這張雙 ROI 示意即可支撐新手到臨床判讀的一線需求。</p>
+                <figure class="inline-guide-figure">
+                    <img src="assets/muga-paper-figures/Taiwan_2022_MUGA_Fig1_ROI_tight.png" alt="Dual-ROI processing example for MUGA showing ventricular ROI and background ROI" loading="lazy" />
+                    <figcaption>圖 1．MUGA 雙 ROI 處理示例。來源：陳麗華等，<em>核醫技學誌</em>. 2022;19:1-7, Figure 1。左圖是 ventricular ROI，右圖是背景 ROI；教學關鍵在於背景區應貼近左心室外側或 inferoapical 區，但要避開脾臟、主動脈與體外區域，否則背景校正會直接把 LVEF 算偏。</figcaption>
+                </figure>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "Pitfalls 與報告最小必填",
+            icon: "⚠️",
+            html: `<div class="prose">
+                <p><strong>六大常見陷阱：</strong>（1）RBC 標記效率差、（2）LAO 角度未達 best septal separation、（3）ECG gating 把 T wave/PVC 誤判、（4）counts 不足或 frame drop-out、（5）背景 ROI 放錯、（6）跨機器/跨軟體混用。</p>
+                <p><strong>一份可用於治療決策的報告，不應只寫 LVEF。</strong>至少要有：indication、檢查型式（planar/SPECT）、藥物與活度、RBC 標記法、gating/影像品質、LV/RV size 與 wall motion、LVEF（必要時 RVEF/PFR/phase 分析）、與前次相比是否超出方法誤差。</p>
+                <p><strong>主要參考文獻（權威與原始研究）：</strong></p>
+                <ol>
+                    <li><a href="https://sites.snmmi.org/common/Uploaded%20files/Web/Clinical%20Practice/Procedure%20Standards/2020/jnmt_Gated%20ERNA.pdf" target="_blank" rel="noopener">SNMMI/EANM Procedure Standard for Gated ERNA, 2020</a>（J Nucl Med Technol 48:126-138）。</li>
+                    <li><a href="https://pubmed.ncbi.nlm.nih.gov/39814461/" target="_blank" rel="noopener">Kappel RH, et al. J Nucl Med Technol. 2025;53(1):36-43</a>（software discrepancy；PMID:39814461）。</li>
+                    <li><a href="https://snmmi.org/common/Uploaded%20files/Web/Clinical%20Practice/Procedure%20Standards/2009/Cardiac_Scintigraphy_1382731812393_3.pdf" target="_blank" rel="noopener">ACR-SNM-SPR Practice Guideline for Cardiac Scintigraphy</a>（2009 修訂版，SNMMI 官方發布）。</li>
+                    <li><a href="https://jnm.snmjournals.org/content/jnumed/38/10/1658.full.pdf" target="_blank" rel="noopener">SNM Procedure Guideline for Equilibrium Radionuclide Angiography, 1997</a>（J Nucl Med 38:1658-1661）。</li>
+                    <li><a href="https://www.snm.org.tw/files/file_pool/1/0o138510474209225653/1%20%282%29.pdf" target="_blank" rel="noopener">陳麗華等。核醫技學誌 2022;19:1-7</a>（台灣平面/斷層 MUGA 與心超相關性）。</li>
+                </ol>
+            </div>`
+        }
+    ]
+},
+
 // ================================================================
 // 🧬 內分泌 / 甲狀腺
 // ================================================================
 
 Thyroid: {
     title: "甲狀腺攝取率／掃描",
-    subtitle: "Thyroid Uptake & Scan（Tc-99m Pertechnetate）— 功能型態判讀",
+    subtitle: "Thyroid Uptake & Scan（Tc-99m Pertechnetate / I-123 NaI）— 功能型態判讀",
     category: "endocrine",
     readerGuideMode: "article",
     readerGuideArticle: [
-        "甲狀腺掃描的臨床價值在於把「甲亢」拆成不同病因：Graves'、toxic adenoma、toxic MNG 與甲狀腺炎，避免只靠血液檢查做單一路徑決策。",
-        "Tc-99m pertechnetate 反映的是 trapping，不是 organification；因此它適合功能分布判讀，但不能完全取代放射性碘攝取率（RAIU）的角色。",
-        "判讀時要先確認含碘干擾與技術條件，再解釋 hot/warm/cold nodule 與全腺分布，否則容易出現假性低攝取或結節定位誤差。"
+        "甲狀腺掃描的核心價值是把「甲亢」拆成因：Graves'、toxic adenoma、toxic MNG 與甲狀腺炎。Tc-99m 做快速功能分布快篩，I-123 做完整碘代謝定量——兩條路徑互補，而非互相取代。",
+        "Tc-99m pertechnetate 只反映 NIS trapping、不被 organified；I-123 sodium iodide 同時經歷 trapping + organification，因此 RAIU 數值才能真正反映甲狀腺的碘處理能力。",
+        "判讀時先確認含碘干擾，再看全腺分布與結節功能分類；若合併 RAIU 定量，需將數值變化曲線與掃描型態交叉比對，才能區分 Graves' vs 甲狀腺炎 vs toxic nodule。"
     ],
     timeArchitecture: {
         mode: "article",
         steps: [
-            { label: "注射期", value: "Tc-99m Pertechnetate 靜脈注射" },
-            { label: "分布期", value: "等待約 15–20 分鐘" },
-            { label: "收像期", value: "Anterior ± 斜位 ± pinhole（必要時 SPECT/CT）" }
+            { label: "Tc-99m 路徑", value: "靜脈注射 → 15–20 min 收像" },
+            { label: "I-123 路徑", value: "口服膠囊 → 4–6 hr / 24 hr RAIU + 掃描" }
         ],
         article: [
-            "標準流程為注射後 15–20 分鐘收像；前位是基礎視角，必要時加 RAO/LAO 以降低重疊與改善結節定位。",
-            "若要觀察結節細節，pinhole 影像通常優於平行孔 collimator；若要處理異位甲狀腺或胸骨後延伸，可考慮 SPECT/CT。",
-            "需先在流程前排除近期含碘干擾（顯影劑、amiodarone、含碘補充品），否則整體低攝取可能是藥物效應而非疾病本身。"
+            "Tc-99m 路徑：注射後 15–20 分鐘收像，前位為基礎，必要時加 RAO/LAO 與 pinhole 改善結節定位。懷疑異位或胸骨後延伸可加 SPECT/CT。",
+            "I-123 路徑：口服 I-123 膠囊後，分別在 4–6 小時與 24 小時以甲狀腺 probe 測量頸部攝取率（RAIU），並可在 24 小時進行掃描。I-123 的 159 keV γ 射線影像品質優於 I-131，病人輻射劑量也較低。",
+            "兩條路徑的共同前提：需先排除近期含碘干擾（顯影劑、amiodarone、含碘保健品），否則低攝取可能是藥物效應而非疾病本身。"
         ],
-        note: "含碘干擾（顯影劑、amiodarone、含碘藥物）會影響判讀；固定停藥天數仍需依院內流程與個案條件，不建議跨場域硬寫單一天數。"
+        note: "含碘干擾（顯影劑、amiodarone、含碘藥物）會同時影響 Tc-99m 與 I-123；固定停藥天數仍依院內流程與個案條件，不建議跨場域硬寫單一天數。"
     },
     content: [
         {
@@ -2048,8 +2481,37 @@ Thyroid: {
             title: "臨床定位與適用場景",
             icon: "📌",
             html: `<div class="prose">
-                <p>Thyroid uptake/scan 是功能導向檢查：利用甲狀腺濾泡細胞 NIS 對 Tc-99m pertechnetate 的攝取，評估整體分布與結節功能。</p>
-                <p>它與超音波（結構）及 TSH/T3/T4（生化）互補，回答的是為什麼甲亢與結節是否有功能。實務上最常用於甲亢病因鑑別、結節 hot/warm/cold 分類、異位甲狀腺定位，以及術後或治療後殘餘功能組織評估。</p>
+                <p>Thyroid uptake/scan 是功能導向檢查，與超音波（結構）及 TSH/T3/T4（生化）互補，回答的是「為什麼甲亢」與「結節是否有功能」。</p>
+                <p>臨床上最常用於甲亢病因鑑別、結節 hot/warm/cold 分類、異位甲狀腺定位、術後殘餘功能組織評估，以及 I-131 治療前的攝取能力確認與劑量規劃。</p>
+                <p>依照臨床問題選擇路徑：若只需快速判斷結節功能與全腺分布型態，Tc-99m 掃描已足夠；若需要定量攝取率協助 Graves' vs 甲狀腺炎鑑別、或規劃 I-131 治療劑量，應選 I-123 RAIU。</p>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "Tc-99m 與 I-123 的生理基礎與選擇邏輯",
+            icon: "🧬",
+            html: `<div class="prose">
+                <p><strong>共同入口：NIS（Na/I Symporter）</strong></p>
+                <p>兩種示蹤劑都經由甲狀腺濾泡細胞基底膜的 NIS 進入細胞。NIS 的表達受 TSH 調控——TSH 升高時 NIS 上調、攝取增加；TSH 受抑制時 NIS 下調、攝取減少。這是兩者影像的共同生理基礎。</p>
+                <p><strong>關鍵差異：trapping vs organification</strong></p>
+                <ul>
+                    <li><strong>Tc-99m Pertechnetate：</strong>進入細胞後停留在 trapping 階段，<em>不被 TPO 有機化、不與 thyroglobulin 結合</em>。因此 Tc-99m 在甲狀腺內的滯留時間短（約 20–30 分鐘達峰值後開始洗出），適合快速功能分布掃描，但無法反映後續的碘代謝步驟。</li>
+                    <li><strong>I-123 Sodium Iodide：</strong>進入細胞後經 TPO 氧化、與 thyroglobulin 的 tyrosyl residue 結合（organification），<em>真正參與甲狀腺激素合成路徑</em>。因此 I-123 在腺體內滯留時間長，24 小時 RAIU 數值反映的是完整碘處理能力，而不只是膜轉運。</li>
+                </ul>
+                <p><strong>不一致的原因與判讀要點</strong></p>
+                <p>Tc-99m 掃描與 I-123 RAIU 不一致在臨床上並不少見，常見情境：</p>
+                <ul>
+                    <li><strong>Tc-99m 高攝取但 RAIU 正常或偏低：</strong>見於近期 TSH 刺激後（如停用甲狀腺素、TSH 短暫升高）或甲狀腺炎恢復期——NIS 已上調但 organification 尚未完全恢復。</li>
+                    <li><strong>RAIU 高但 Tc-99m 分布不均：</strong>見於 toxic MNG——整體 RAIU 數值升高，但掃描呈現多發 hot nodule 與受抑制背景的 mosaic pattern。</li>
+                    <li><strong>Tc-99m 低攝取但 RAIU 仍在灰色地帶：</strong>可能為早期 Graves' 合併部分含碘干擾——organification 路徑仍活躍但 trapping signal 已被競爭抑制。</li>
+                </ul>
+                <p><strong>路徑選擇建議：</strong></p>
+                <ul>
+                    <li>第一線快速篩查 → Tc-99m 掃描（20 分鐘即可完成，適合門診路徑）。</li>
+                    <li>需定量攝取率 → I-123 RAIU（Graves' vs 甲狀腺炎鑑別、I-131 治療劑量計算）。</li>
+                    <li>Tc-99m 結果與臨床不一致 → 追加 I-123 RAIU（例如 Tc-99m 看似低攝取但 TSH 極低、TRAb 陽性）。</li>
+                    <li>已知 Graves' 準備做 I-131 治療 → 直接走 I-123 RAIU 路徑。</li>
+                </ul>
             </div>`
         },
         {
@@ -2059,24 +2521,31 @@ Thyroid: {
             html: `<div class="prose">
                 <p><strong>核心適應症：</strong></p>
                 <ul>
-                    <li>甲亢病因鑑別：Graves'（瀰漫高攝取）、toxic adenoma（單一 hot nodule + 周圍抑制）、toxic multinodular goiter（多發 hot nodules）、甲狀腺炎（整體低攝取）。</li>
-                    <li>結節功能評估：hot/warm/cold nodule 分類，協助決定是否優先做超音波導引 FNA。</li>
-                    <li>異位甲狀腺與先天性發育異常定位（lingual thyroid、頸部缺如/發育不全）。</li>
-                    <li>術後或治療後功能組織殘留評估。</li>
+                    <li>甲亢病因鑑別：Graves'（瀰漫高攝取 + RAIU 升高）、toxic adenoma（單一 hot nodule + 周圍抑制）、toxic MNG（多發 hot nodules + mosaic pattern）、甲狀腺炎（整體低攝取 + RAIU 極低）。</li>
+                    <li>結節功能評估：hot / warm / cold nodule 分類，協助決定是否優先做超音波導引 FNA。</li>
+                    <li>I-131 治療前評估：以 I-123 RAIU 計算治療劑量，確認甲狀腺確實具有攝碘能力。</li>
+                    <li>異位甲狀腺定位（lingual thyroid、頸部缺如／發育不全）。</li>
+                    <li>術後或 I-131 治療後殘餘功能組織評估。</li>
                 </ul>
-                <p><strong>主要限制：</strong>Tc-99m 只看 trapping，無法直接反映碘有機化與完整碘代謝；若臨床問題是 I-131 治療前劑量規劃或完整攝取率評估，仍需 RAIU/I-123 路徑。</p>
+                <p><strong>主要限制：</strong></p>
+                <ul>
+                    <li>Tc-99m 只反映 trapping——small cold nodule 可能被掩蓋，也無法用於 I-131 劑量計算。</li>
+                    <li>RAIU 為全腺平均值——無法定位單一 hot/cold nodule，必須搭配掃描影像整合判讀。</li>
+                    <li>含碘干擾（顯影劑、amiodarone、碘補充品）會同時降低 Tc-99m 與 I-123 攝取，病史遺漏是假性低攝取最常見的原因。</li>
+                </ul>
             </div>`
         },
         {
             type: "section",
-            title: "病人準備",
+            title: "病人準備與含碘干擾確認",
             icon: "🧑‍⚕️",
             html: `<div class="prose">
                 <ul>
-                    <li>一般不需禁食；重點在檢前問診含碘暴露史而非飲食限制本身。</li>
-                    <li>需主動確認近期含碘顯影劑、amiodarone、Lugol's/SSKI、海藻或含碘保健品使用史。</li>
-                    <li>抗甲狀腺藥（PTU/Methimazole）是否停藥依臨床目的與醫囑決定，避免固定套用單一規則。</li>
-                    <li>若近期做過甲狀腺穿刺或有頸部手術史，應註記於技術紀錄。</li>
+                    <li>一般不需禁食。重點在檢前問診含碘暴露史，而非飲食限制本身。</li>
+                    <li><strong>必須確認：</strong>近期有無做過 CT 含碘顯影（水溶性約 4–8 週、oil-based 可長達數月～一年）、是否服用 amiodarone（半衰期極長，干擾可達數月）、Lugol's / SSKI、海藻或含碘保健品。</li>
+                    <li>抗甲狀腺藥（PTU / Methimazole）是否停藥依臨床目的決定：若目的是確認甲亢病因，通常不停藥；若目的是 I-131 治療前評估，依醫囑停藥。</li>
+                    <li>若近期做過甲狀腺穿刺或頸部手術，應註記於技術紀錄——局部發炎或血腫可能改變血流分布。</li>
+                    <li>I-123 RAIU 路徑需確認病人能配合 4–6 hr 及 24 hr 兩次回診量測。</li>
                 </ul>
             </div>`
         },
@@ -2085,45 +2554,75 @@ Thyroid: {
             title: "放射藥物與劑量",
             icon: "💉",
             html: `<div class="prose">
-                <p>常用示蹤劑為 <strong>Tc-99m Pertechnetate</strong>，成人常見活度約 <strong>5–10 mCi（185–370 MBq）</strong>，小兒可依體重調整（常見 0.05–0.1 mCi/kg）。</p>
-                <p>若要做完整 uptake kinetics 或 I-131 治療前規劃，可能改用 I-123/RAIU 路徑；其等待時間與劑量架構不同，需與本單元的 Tc-99m 掃描分開說明。</p>
+                <p><strong>Tc-99m Pertechnetate：</strong>成人常用活度 5–10 mCi（185–370 MBq）靜脈注射，小兒約 0.05–0.1 mCi/kg。能峰 140 keV ± 15%。注射後 15–20 分鐘即可收像。</p>
+                <p><strong>I-123 Sodium Iodide：</strong>成人診斷用劑量約 200–400 μCi（7.4–14.8 MBq）口服膠囊。能峰 159 keV。口服後 4–6 小時與 24 小時分別量測 RAIU，並可在 24 小時進行掃描。</p>
+                <p>I-123 的半衰期為 13.2 小時，γ 能量 159 keV 接近 Tc-99m 的 140 keV，gamma camera 影像品質良好；相較於 I-131（364 keV、β 放射），I-123 對甲狀腺的輻射劑量低約 100 倍，是診斷用途的首選放射性碘同位素。</p>
             </div>`
         },
         {
             type: "section",
-            title: "攝影流程與重建/處理",
+            title: "攝影流程與技術要點",
             icon: "🖥️",
             html: `<div class="prose">
-                <p>標準流程為注射後 15–20 分鐘收像，至少包含 anterior view，必要時加 RAO/LAO 與 marker 定位觸診結節或胸骨切跡。結節細節判讀可優先使用 pinhole。</p>
-                <p>若懷疑異位甲狀腺或 retrosternal extension，可加入 SPECT/CT 做解剖定位。SNMMI 2020（DTC scintigraphy）可作為 SPECT/CT 參數與定位價值的技術參考，但最終參數仍以院內設備 protocol 為準。</p>
-                <p>處理階段需同步檢視唾液腺與食道活性，避免把生理攝取誤判為甲狀腺病灶。</p>
+                <p><strong>Tc-99m 掃描流程：</strong>注射後 15–20 分鐘收像，至少 anterior view，必要時加 RAO/LAO 與 sternal notch marker。結節細節可用 pinhole collimator（空間解析度優於平行孔）。懷疑異位或胸骨後延伸時加 SPECT/CT。</p>
+                <p><strong>I-123 RAIU + 掃描流程：</strong>口服膠囊後 4–6 小時與 24 小時，以甲狀腺 probe 測量頸部計數（需扣除大腿背景），與標準源比對計算攝取率。24 小時可同時進行 gamma camera 掃描。正常 RAIU 參考值：4–6 hr 約 5–15%，24 hr 約 10–30%（依地區碘攝取量而異）。</p>
+                <p><strong>共通技術要點：</strong>處理影像時需同步檢視唾液腺與食道活性，避免生理攝取誤判為甲狀腺病灶。marker 定位觸診結節有助於釐清平面影像上結節與周邊組織的空間關係。</p>
             </div>`
         },
         {
             type: "section",
-            title: "判讀框架",
+            title: "RAIU 定量判讀",
+            icon: "📊",
+            html: `<div class="prose">
+                <p>RAIU 不是單一數值就能斷定病因——<strong>時間曲線的走勢比絕對值更重要</strong>。</p>
+                <ul>
+                    <li><strong>Graves' disease：</strong>典型為 4–6 hr RAIU 明顯升高（常 > 20–25%），24 hr 持續升高或持平（非下降），反映快速 turnover。部分 early-peak Graves' 甚至 4 hr > 24 hr。</li>
+                    <li><strong>Toxic adenoma / toxic MNG：</strong>RAIU 可在正常上限至高值範圍，但不一定像 Graves' 那樣極端升高——關鍵在於掃描上的 hot nodule + 周圍抑制型態。</li>
+                    <li><strong>甲狀腺炎（無痛性／亞急性／產後）：</strong>RAIU 極低（常 < 1–3%），因為發炎破壞導致濾泡細胞無法攝取碘。這是與 Graves' 鑑別最重要的參數——甲亢 + RAIU 極低 = 甲狀腺炎。</li>
+                    <li><strong>碘汙染（Iodine load）：</strong>RAIU 假性降低——含碘暴露使碘 pool 擴大，稀釋放射性碘的攝取比例。病史詢問是避免誤判的關鍵。</li>
+                    <li><strong>正常變異：</strong>台灣飲食碘攝取量相對充足，正常 RAIU 可能偏下限（24 hr 約 10–20%）。</li>
+                </ul>
+                <p>RAIU 判讀須與同時期的 TSH、free T4、TRAb 及掃描影像整合，而非只看單一 cutoff。</p>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "甲狀腺掃描判讀框架",
             icon: "🧭",
             html: `<div class="prose">
-                <p><strong>建議判讀順序：</strong>位置 → 全腺分布 → 結節功能 → 干擾因子。</p>
+                <p><strong>建議判讀順序：</strong>位置 → 全腺分布 → 結節功能 → 干擾因子 → 與 RAIU 交叉比對。</p>
                 <ul>
-                    <li>先看位置：正常頸前、異位（舌下/縱膈）或術後改變。</li>
-                    <li>再看全腺分布：瀰漫高攝取、瀰漫低攝取或不均質分布。</li>
-                    <li>再做結節分類：hot、warm、cold 與周邊組織是否受抑制。</li>
-                    <li>最後結合臨床與超音波：cold nodule 需回到結構影像與 FNA 決策路徑。</li>
+                    <li>先看位置：正常頸前、異位（舌下／縱膈）或術後改變。</li>
+                    <li>再看全腺分布：
+                        <ul>
+                            <li>瀰漫高攝取 + 唾液腺被抑制 → Graves'。</li>
+                            <li>瀰漫低攝取 → 甲狀腺炎或含碘干擾。</li>
+                            <li>不均質多發 hot/cold → toxic MNG。</li>
+                        </ul>
+                    </li>
+                    <li>再做結節分類：hot（攝取高於周圍）、warm（與周圍相等）、cold（攝取缺損）。hot nodule 幾乎總是良性，cold nodule 需超音波 + FNA 風險分層。</li>
+                    <li>若有 RAIU 數據：高 RAIU + 瀰漫高攝取 = Graves'；低 RAIU + 瀰漫低攝取 = 甲狀腺炎；RAIU 正常但掃描異常 = 重新檢視技術條件與含碘史。</li>
                 </ul>
             </div>`
         },
         {
             type: "section",
-            title: "Pitfalls（含假陽性 / 假陰性）",
+            title: "Pitfalls（含假陽性／假陰性）",
             icon: "⚠️",
             html: `<div class="prose">
-                <p><strong>假陰性常見來源：</strong>近期含碘顯影或含碘藥物造成競爭抑制，導致全腺假性低攝取。</p>
-                <p><strong>假陽性或誤判常見來源：</strong>唾液腺與食道活性重疊、小結節部分體積效應、未掃到上縱膈導致異位病灶漏診。</p>
+                <p><strong>Tc-99m 常見陷阱：</strong></p>
                 <ul>
-                    <li>Tc-99m 僅反映 trapping：不能用單次 Tc-99m 結果推論完整碘代謝或直接取代 RAIU。</li>
-                    <li>small cold nodule 可能被周邊正常組織掩蓋，平面影像陰性不等於排除。</li>
-                    <li>若技術記錄缺少含碘暴露資訊，整體低攝取易被誤判為甲狀腺炎。</li>
+                    <li>含碘干擾 → 全腺假性低攝取，最易被誤判為甲狀腺炎。病史遺漏是第一大原因。</li>
+                    <li>唾液腺／食道活性重疊 → 假性病灶。可透過 oblique view 或飲水後延遲收像區分。</li>
+                    <li>small cold nodule → 被周邊正常組織掩蓋，平面影像陰性 ≠ 排除結節。</li>
+                    <li>Tc-99m 不能取代 RAIU → 看到 Tc-99m 低攝取就說「甲狀腺炎」而沒有 RAIU 數據，是常見的過度診斷。</li>
+                </ul>
+                <p><strong>I-123 RAIU 常見陷阱：</strong></p>
+                <ul>
+                    <li>probe 定位不準（幾何誤差）→ 攝取率人為誤差，尤其甲狀腺小或術後頸部時。</li>
+                    <li>背景扣除不當（大腿 vs 頸部散射條件不同）→ 系統性偏差。</li>
+                    <li>標準源衰減校正錯誤或製作誤差 → 整批數據偏移。</li>
+                    <li>24 hr RAIU 正常但掃描見到 hot nodule → 不能單用 RAIU 排除 toxic adenoma（全腺平均值可能掩蓋局部熱點）。</li>
                 </ul>
             </div>`
         },
@@ -2132,33 +2631,36 @@ Thyroid: {
             title: "報告建議",
             icon: "📝",
             html: `<div class="prose">
-                <p>報告應包含：檢查目的、示蹤劑與活度、等待時間、收像視角（含是否 pinhole/SPECT-CT）、技術限制（含碘干擾史）、全腺分布型態、結節位置與功能分類（hot/warm/cold）、結論與下一步建議。</p>
-                <p>當結果與臨床不一致時，需明確寫出不確定性來源，並建議後續超音波、FNA 或 RAIU 路徑，而非僅給單句「異常攝取」。</p>
+                <p>結構化報告應包含：檢查目的（鑑別甲亢／結節分類／治療前評估）、示蹤劑種類與活度、等待時間、收像視角（含是否使用 pinhole 或 SPECT/CT）、RAIU 數值與時間點（若執行）、含碘暴露史與技術限制、全腺分布型態、結節位置與功能分類（hot/warm/cold）、與前期檢查之比較（若有）、結論與下一步建議。</p>
+                <p>當掃描結果與臨床或 RAIU 不一致時，需明確寫出可能原因（含碘干擾、probe 誤差、藥效等），並建議後續路徑——而非僅寫一句「建議臨床 correlation」。</p>
             </div>`
         },
         {
             type: "section",
-            title: "文獻圖像示例",
+            title: "臨床圖像示例",
             icon: "🖼️",
             html: `<div class="prose">
-                <p>放射性核種靜脈攝影真正值得放圖的重點有兩個：第一是「藥怎麼打、血池訊號怎麼建立」；第二是「正常回流與阻塞/側枝形成長什麼樣子」。以下保留這兩張最有教學價值的圖，並把圖說補成可直接帶判讀的版本。</p>
+                <p>以下五張圖涵蓋甲狀腺掃描最常見的五種功能型態，從瀰漫性高攝取到多發結節到冷結節，提供判讀時的直接圖像對照基準。</p>
                 <figure class="inline-guide-figure">
-                    <img src="assets/paper-figures/Venography/RBC_PYP_Tc99m_Fallback_Workflow.svg" alt="Workflow for in-vivo RBC labeling venography using PYP followed by Tc-99m" loading="lazy" />
-                    <figcaption>圖 1．以 PYP 先行處理、再注入 Tc-99m pertechnetate 的 in-vivo RBC 血池流程示意。這張圖的用途不是證明某一家 protocol 絕對標準，而是幫讀者理解：若要做 blood-pool venography，重點在先建立穩定血池訊號，再進行下肢 flow 與延遲血池觀察。臨床上若周邊靜脈條件差、注射路徑受限，流程設計與注射位點會直接影響回流影像判讀。</figcaption>
+                    <img src="assets/paper-figures/ThyroidUptake/IJEM_2012_Fig4_Graves.jpg" alt="Graves disease diffuse high uptake pattern on thyroid scintigraphy" loading="lazy" />
+                    <figcaption>圖 1．Graves' disease：雙葉瀰漫性高攝取，唾液腺背景相對被抑制。判讀重點：確認是整體均勻升高而非單一 hot nodule 主導，RAIU 應同步升高。來源：Int J Endocrinol. 2012, Figure 4。</figcaption>
                 </figure>
                 <figure class="inline-guide-figure">
-                    <img src="assets/paper-figures/Venography/WJNM_2018_Fig1_RadionuclideVenographyPatterns.jpg" alt="Representative radionuclide venography patterns showing normal flow and obstruction with collateral formation" loading="lazy" />
-                    <figcaption>圖 2．核醫靜脈攝影的代表型態。來源：Theerakulpisut D, et al. <em>World J Nucl Med</em>. 2018;17:27-33, Figure 1。從左到右可用來教三件事：正常時 tracer 應沿深靜脈主幹平順、對稱向上；一旦近端阻塞，主幹中斷、側枝擴張與迂迴回流會變得明顯；若只有表淺路徑顯影或局部外滲，則要先想技術因素、注射品質或既有靜脈通路問題，而不是直接下 DVT 結論。</figcaption>
+                    <img src="assets/paper-figures/ThyroidUptake/IJEM_2012_Fig1_Multinodular.jpg" alt="Toxic multinodular goiter pattern showing heterogeneous uptake" loading="lazy" />
+                    <figcaption>圖 2．Toxic multinodular goiter：多個功能性結節造成不均勻攝取（mosaic pattern），部分區域受抑制。判讀重點：和 Graves' 的 diffuse pattern 分開，也要注意 RAIU 可能僅輕度升高。來源：同上，Figure 1。</figcaption>
                 </figure>
-            </div>`
-        },
-        {
-            type: "section",
-            title: "報告建議",
-            icon: "📝",
-            html: `<div class="prose">
-                <p>報告至少應記載：注射側與方法、採集品質、回流連續性、可疑中斷位置、側枝有無、與臨床建議（是否追加超音波/CTA）。</p>
-                <p>若結果不確定，應明確標示限制條件，不以單一陰性結果排除 DVT。</p>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/ThyroidUptake/IJEM_2012_Fig3_HotNodule.jpg" alt="Autonomous toxic adenoma with suppression of surrounding thyroid tissue" loading="lazy" />
+                    <figcaption>圖 3．Toxic adenoma（Plummer disease）：單一 hot nodule，周圍甲狀腺組織因 TSH 受抑制而幾乎不顯影。臨床重點：這不是「甲狀腺變小」，而是「正常組織被抑制」——治療後可能恢復。來源：同上，Figure 3。</figcaption>
+                </figure>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/ThyroidUptake/IJEM_2012_Fig2_ColdNodule.jpg" alt="Cold thyroid nodule showing focal photopenic defect" loading="lazy" />
+                    <figcaption>圖 4．Cold nodule：局部攝取缺損。Cold nodule 的 malignancy risk 約 5–10%，需回到超音波特徵與 FNA 決策路徑，不能單靠掃描排除惡性。來源：同上，Figure 2。</figcaption>
+                </figure>
+                <figure class="inline-guide-figure">
+                    <img src="assets/paper-figures/ThyroidUptake/PMC_2017_Fig5_ThyrotoxicosisPatterns.jpg" alt="Overview comparison of thyrotoxicosis scintigraphic patterns" loading="lazy" />
+                    <figcaption>圖 5．甲狀腺毒症掃描型態總覽：從正常到 Graves'、toxic MNG、toxic adenoma、甲狀腺炎的低攝取型態，提供一站式對照。最適合新人快速建立 pattern recognition。來源：PMC 2017 thyrotoxicosis review, Figure 5。</figcaption>
+                </figure>
             </div>`
         },
         {
@@ -2167,14 +2669,96 @@ Thyroid: {
             icon: "📚",
             html: `<div class="prose">
                 <ul>
-                    <li>Pavel DG, Zimmer AM, Patterson VN. In Vivo Labeling of Red Blood Cells with <sup>99m</sup>Tc. <em>J Nucl Med</em>. 1977;18(3):305-308.</li>
-                    <li>Snarski AM. Radionuclide venography: two-stage flow and equilibrium technique using <sup>99m</sup>Tc-pertechnetate and in-vivo labeled RBCs. <em>Eur J Nucl Med</em>. 1989;15(3):137-142.</li>
-                    <li>Caner B, et al. Detection of deep vein thrombosis: combined flow and blood-pool radionuclide venography versus contrast venography. <em>Angiology</em>. 1991;42(10):796-804.</li>
-                    <li>Theerakulpisut D, et al. Detection of lower limb DVT: comparison between radionuclide venography and venous ultrasonography. <em>World J Nucl Med</em>. 2018;17:27-33.</li>
-                    <li>DailyMed. Kit for the Preparation of Technetium Tc 99m Pyrophosphate Injection（in-vivo RBC labeling dosage and timing section）.</li>
-                    <li>Liu C, et al. Clinical application of <sup>99m</sup>Tc-labeled RBC subcutaneous radionuclide venography with abdominal/pelvic SPECT/CT in suspected proximal DVT. <em>J Nucl Med Radiat Ther</em>. 2016;7:295. doi:10.4172/2155-9619.1000295.</li>
+                    <li>SNMMI Procedure Standard for Thyroid Scintigraphy 4.0. <em>J Nucl Med Technol</em>. 2020;48(3):221-229.</li>
+                    <li>EANM/SNMMI Practice Guideline for RAIU and Thyroid Scintigraphy. <em>Eur J Nucl Med Mol Imaging</em>. 2019;46:2514-2525.</li>
+                    <li>ATA 2015 Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer. <em>Thyroid</em>. 2016;26(1):1-133.</li>
+                    <li>Ross DS, et al. 2016 ATA Guidelines for Diagnosis and Management of Hyperthyroidism. <em>Thyroid</em>. 2016;26(10):1343-1421.</li>
+                    <li>Intenzo CM, et al. Scintigraphic manifestations of thyrotoxicosis. <em>RadioGraphics</em>. 2003;23(4):857-869.</li>
+                    <li>Smith JR, et al. Thyroid Scintigraphy. <em>StatPearls</em>. 2024.</li>
+                    <li>SNM Procedure Guideline for Thyroid Uptake Measurement v3.0. 2002 [historical reference].</li>
                 </ul>
             </div>`
+        }
+    ]
+},
+
+Parathyroid: {
+    title: "副甲狀腺掃描",
+    subtitle: "Parathyroid Scintigraphy — 術前功能定位、雙相顯影與異位腺體搜尋",
+    category: "endocrine",
+    protocolSummaryDisplay: "expanded",
+    readerGuideMode: "article",
+    readerGuideArticle: [
+        "副甲狀腺掃描的核心價值不在於診斷 hyperparathyroidism（那是內分泌科根據血鈣與 PTH 做的），而在於回答外科真正需要的問題：過度活躍的副甲狀腺組織在哪裡？是一顆腺瘤、多顆增生，還是藏在異位位置。",
+        "Tc-99m sestamibi（MIBI）是目前最常用的副甲狀腺掃描藥物。它進入細胞的機制與粒線體膜電位有關，因此富含粒線體的副甲狀腺主細胞、甲狀腺結節與部分心肌都會攝取。雙相顯影的核心原理是利用 MIBI 在副甲狀腺與甲狀腺的 washout 速率不同——甲狀腺在延遲相會逐漸洗出，而副甲狀腺腺瘤因 oxyphil cell 含量高、粒線體密集，會持續滯留。",
+        "判讀時最重要的不是找一顆亮點就下結論，而是把早期相（甲狀腺 + 副甲狀腺都顯影）與延遲相（甲狀腺洗出、副甲狀腺滯留）放在一起比對，並用 SPECT/CT 確認活性位於典型的副甲狀腺位置，而不是甲狀腺結節、淋巴結或胸腺殘留。"
+    ],
+    timeArchitecture: {
+        mode: "article",
+        steps: [
+            { label: "靜脈注射", value: "Tc-99m MIBI 20–25 mCi" },
+            { label: "早期相", value: "注射後 10–15 min，頸部 + 上縱膈 planar ± SPECT/CT" },
+            { label: "延遲相", value: "注射後 1.5–3 hr，同範圍 planar ± SPECT/CT" }
+        ],
+        article: [
+            "標準雙相 protocol：注射 Tc-99m MIBI 後，先在 10–15 分鐘拍早期相，此時甲狀腺與副甲狀腺皆顯影；再於 1.5–3 小時後拍延遲相，正常甲狀腺組織會明顯洗出，而副甲狀腺病灶因滯留而相對變亮。",
+            "SPECT/CT 的加入大幅提升了定位精準度，尤其對異位副甲狀腺（胸骨後、甲狀腺內、氣管食道溝、縱膈等）的確認至關重要。平面影像上看似頸部的活性，在 SPECT/CT 上可能其實在食道後或脊椎前。",
+            "部分中心使用 subtraction technique（Tc-99m pertechnetate + Tc-99m MIBI 雙同位素相減），但雙相 single-tracer protocol 在大多數情境下已足夠，且能減少輻射劑量與技術複雜度。"
+        ],
+        note: "提早拍延遲相（如 1.5 hr）在某些快速洗出的病灶可能漏診；若臨床高度懷疑但延遲相陰性，可考慮加拍 3 hr 或更晚的影像，甚至安排 4D-CT 或超音波輔助。"
+    },
+    content: [
+        {
+            type: "info-box-blue",
+            html: "<h4>臨床定位：為外科提供功能性地圖，不是診斷工具</h4>\n            <p>副甲狀腺掃描的角色是<strong>術前定位</strong>。原發性副甲狀腺機能亢進的診斷依據是血鈣升高合併 PTH 不適當正常或升高——核醫掃描要回答的，是把這些生化異常對應到一顆或數顆過度活躍的腺體，並告訴外科它到底在哪裡。</p>"
+        },
+        {
+            type: "section",
+            title: "常用的核醫藥物與顯影原理",
+            icon: "💉",
+            html: "<div class=\"prose\">\n                <p>Tc-99m sestamibi（MIBI）是目前國際上最常用的副甲狀腺掃描藥物。其攝取機制與甲狀腺藥物不同：</p>\n                <ul>\n                    <li><strong>MIBI 是親脂性陽離子：</strong>經由被動擴散進入細胞，然後被粒線體的負電位膜電位主動滯留。副甲狀腺主細胞（尤其 oxyphil cell）因粒線體含量極高，MIBI 攝取與滯留均顯著。</li>\n                    <li><strong>雙相顯影的生理基礎：</strong>早期相（10–15 min）時甲狀腺與副甲狀腺都會攝取 MIBI；延遲相（1.5–3 hr）時 MIBI 從甲狀腺的洗出速率明顯快於副甲狀腺——這不是因為甲狀腺「不會滯留」，而是 washout rate 的差異。</li>\n                    <li><strong>影響滯留的因素：</strong>病灶大小、oxyphil cell 比例、P-glycoprotein 表達（MDR1 排出泵）與血流灌注都可能改變 MIBI 滯留。小型腺瘤、P-glycoprotein 高表達或 cystic degeneration 都可能造成假陰性。</li>\n                    <li><strong>Tc-99m tetrofosmin：</strong>與 MIBI 類似，也以粒線體膜電位為滯留機制，可用於無法取得 MIBI 的情境，但文獻證據量較少。</li>\n                </ul>\n                <p>成人常用活度：Tc-99m MIBI <strong>20–25 mCi（740–925 MBq）</strong>靜脈注射，能峰 140 keV ± 15%。</p>\n            </div>"
+        },
+        {
+            type: "section",
+            title: "核心適應症與限制",
+            icon: "🎯",
+            html: "<div class=\"prose\">\n                <p><strong>核心適應症：</strong></p>\n                <ul>\n                    <li><strong>原發性副甲狀腺機能亢進術前定位：</strong>最常見的臨床情境。單一腺瘤（85%）、多腺體增生（10–15%）、雙腺瘤（2–5%），定位結果直接影響手術方式（微創 vs 雙側探查）。</li>\n                    <li><strong>再手術或持續性高副甲狀腺素：</strong>術後血鈣未改善，需重新定位殘留或異位病灶。此時解剖已改變，功能影像的價值更高。</li>\n                    <li><strong>異位副甲狀腺搜尋：</strong>約 10–20% 的副甲狀腺位於非典型位置（胸腺、甲狀腺內、氣管食道溝、縱膈、頸動脈鞘）。</li>\n                    <li><strong>secondary / tertiary hyperparathyroidism（選擇性）：</strong>腎衰竭病人的副甲狀腺增生通常為多腺體、不對稱型態，手術規劃時核醫定位可輔助決定要切除哪些腺體。</li>\n                </ul>\n                <p><strong>主要限制：</strong>小型腺體（< 200 mg）或 oxyphil cell 比例低可能不顯影。多腺體疾病（尤其 4-gland hyperplasia）的 sensitivity 明顯低於單一腺瘤。甲狀腺結節是最大干擾源——約 20–30% 的甲狀腺結節在延遲相仍可見到 MIBI 滯留。鋰鹽、鈣離子、cinacalcet 等藥物不會直接干擾 MIBI 攝取，但可能影響 PTH 與鈣的代償狀態。</p>\n            </div>"
+        },
+        {
+            type: "section",
+            title: "病人準備",
+            icon: "🧑‍⚕️",
+            html: "<div class=\"prose\">\n                <ul>\n                    <li><strong>不需常規禁食：</strong>多數 protocol 不要求禁食；若中心使用 subtraction 或需同時做甲狀腺壓抑掃描，則依對應要求調整。</li>\n                    <li><strong>帶齊生化資料：</strong>最近的鈣、PTH、磷、維生素 D、eGFR 與頸部超音波報告。</li>\n                    <li><strong>告知既往頸部手術史：</strong>甲狀腺切除、副甲狀腺切除或頸部放療史都需要特別關注。</li>\n                    <li><strong>懷孕與哺乳：</strong>Tc-99m MIBI 穿過胎盤與分泌至乳汁的資料有限。懷孕期相對禁忌；哺乳婦女檢查後建議丟棄 12–24 小時乳汁。</li>\n                </ul>\n            </div>"
+        },
+        {
+            type: "section",
+            title: "攝影流程",
+            icon: "🖥️",
+            html: "<div class=\"prose\">\n                <p>靜脈注射 Tc-99m MIBI 後，標準雙相 protocol 包括早期相（10–15 分鐘）與延遲相（1.5–3 小時）。掃描範圍從下頜角到心臟底部，必要時延伸至縱膈。平面 anterior view 為基礎，SPECT/CT 可大幅提升定位精準度與異位病灶偵測率。</p>\n                <p>SPECT 提供三維功能分布，能區分重疊的甲狀腺與副甲狀腺活性；CT 提供解剖對位，可確認活性是否位於典型副甲狀腺位置。目前指引普遍建議常規加入 SPECT 或 SPECT/CT。</p>\n                <p>若使用 dual-isotope subtraction 技術（Tc-99m pertechnetate + Tc-99m MIBI），需先做甲狀腺掃描，再於同次檢查中注射 MIBI，透過軟體相減分離副甲狀腺訊號。</p>\n            </div>"
+        },
+        {
+            type: "section",
+            title: "判讀框架：雙相比對與 SPECT/CT 整合",
+            icon: "🧭",
+            html: "<div class=\"prose\">\n                <p><strong>建議判讀順序：早期相定位 → 延遲相滯留確認 → SPECT/CT 解剖對位 → 排除干擾。</strong></p>\n                <p><strong>一、正常型態：</strong>雙相掃描的正常表現是甲狀腺均質攝取，早期相可見甲狀腺與唾液腺背景，延遲相時甲狀腺活性應明顯下降、整體變淡。若有殘留的局部活性，才進入下一步分析。</p>\n                <p><strong>二、典型副甲狀腺腺瘤：</strong>早期相可見甲狀腺區內或周邊有一處與甲狀腺強度相近的局部活性；延遲相時該處活性滯留（相對變亮），而周邊甲狀腺已明顯洗出。這是「一顆亮點從背景浮出來」的經典畫面。</p>\n                <p><strong>三、常見異常位置：</strong></p>\n                <ul>\n                    <li><strong>下極副甲狀腺：</strong>甲狀腺下極後方、氣管食道溝、或胸骨後上縱膈。</li>\n                    <li><strong>上極副甲狀腺：</strong>甲狀腺上極後方、cricothyroid junction 附近或食道後（tracheoesophageal groove）。</li>\n                    <li><strong>異位：</strong>胸腺區（最常見異位位置，可低至主動脈弓）、甲狀腺內（intrathyroidal）、頸動脈鞘、高位頸部、縱膈深部。</li>\n                </ul>\n                <p><strong>四、多腺體疾病：</strong>多處活性在延遲相滯留，常分布不對稱。secondary hyperparathyroidism（腎衰竭）病人常見 3–4 顆腺體不同程度增生，判讀時要逐顆確認。</p>\n            </div>"
+        },
+        {
+            type: "section",
+            title: "常見陷阱與假陽性/假陰性",
+            icon: "⚠️",
+            html: "<div class=\"prose\">\n                <ul>\n                    <li><strong>甲狀腺結節（最常見假陽性）：</strong>約 20–30% 的良性甲狀腺結節（尤其 Huerthle cell adenoma、adenomatoid nodule）在延遲相仍有 MIBI 滯留，SPECT/CT 若能確認病灶在甲狀腺內部而非後方，可避免誤判。</li>\n                    <li><strong>淋巴結與胸腺殘留：</strong>發炎性或反應性淋巴結、胸腺組織（尤其年輕病人）可有 MIBI 攝取。胸腺位置的低位活性若無對應臨床與生化證據，不應直接判為異位副甲狀腺。</li>\n                    <li><strong>棕色脂肪與肌肉：</strong>supraclavicular 區域的棕色脂肪、斜角肌或胸鎖乳突肌不對稱活性可被誤判。SPECT/CT 定位可幫助排除。</li>\n                    <li><strong>小型或多腺體病灶（假陰性主因）：</strong>腺體 < 200–300 mg、oxyphil 含量低、或 P-glycoprotein 高表達的病灶可能在延遲相完全洗出。若臨床高度懷疑但掃描陰性，不要排除手術可能——可安排頸部超音波、4D-CT 或術中 PTH monitoring。</li>\n                    <li><strong>注射滲漏：</strong>如果注射點在肘前窩，殘留活性可能與頸部活性混淆（少見但需注意）。</li>\n                </ul>\n            </div>"
+        },
+        {
+            type: "section",
+            title: "報告與溝通建議",
+            icon: "📝",
+            html: "<div class=\"prose\">\n                <p>報告應包含：檢查適應症、生化背景（最近的鈣/PTH）、雙相 protocol 細節、是否含 SPECT/CT、早期相與延遲相的攝取型態、可疑病灶位置的三維描述、與前次影像或超音波的對比。結論應以功能性語言表達：單一腺瘤 →「右下極後方持續滯留，符合副甲狀腺腺瘤」；多腺體 →「雙側下極均有延遲滯留，可能為多腺體增生」；陰性 →「延遲相無明確局部滯留，不能排除小型或多腺體病灶」。</p>\n                <p>對外科而言，最有用的資訊不是「陽性或陰性」，而是「在哪一個象限、深度多深、是否可能異位」。若使用 SPECT/CT，建議附上代表性融合影像截圖。</p>\n            </div>"
+        },
+        {
+            type: "section",
+            title: "參考文獻",
+            icon: "📚",
+            html: "<div class=\"prose\">\n                <ol>\n                    <li>Greenspan BS, et al. SNMMI Procedure Standard for Parathyroid Scintigraphy 4.0. <em>J Nucl Med Technol</em>. 2022;50(2):111-119.</li>\n                    <li>Hindié E, et al. EANM practice guideline for parathyroid imaging. <em>Eur J Nucl Med Mol Imaging</em>. 2021;48:2801-2822.</li>\n                    <li>Wilhelm SM, et al. The American Association of Endocrine Surgeons guidelines for definitive management of primary hyperparathyroidism. <em>JAMA Surg</em>. 2016;151(10):959-968.</li>\n                    <li>Bilezikian JP, et al. Evaluation and management of primary hyperparathyroidism: summary statement from the Fifth International Workshop. <em>J Clin Endocrinol Metab</em>. 2022;107(11):2893-2914.</li>\n                    <li>Lavely WC, et al. Phase 3 comparison of high-resolution Tc-99m sestamibi SPECT/CT with planar imaging for preoperative parathyroid adenoma localization. <em>J Nucl Med</em>. 2007;48(7):1084-1089.</li>\n                </ol>\n            </div>"
         }
     ]
 },
@@ -4185,6 +4769,326 @@ NP59: {
     ]
 },
 
+MIBG: {
+    title: "腎上腺髓質 MIBG 掃描",
+    subtitle: "I-123 MIBG Scintigraphy — 嗜鉻細胞瘤、副神經節瘤與神經母細胞瘤之功能性定位與全身評估",
+    category: "endocrine",
+    protocolSummaryDisplay: "expanded",
+    readerGuideMode: "article",
+    readerGuideArticle: [
+        "MIBG（metaiodobenzylguanidine）掃描是核醫領域少數直接針對神經內分泌系統儲存與運輸路徑的檢查。它不是拍一顆腫瘤長在哪裡，而是拍那顆腫瘤是否保留了交感神經末梢的主動攝取功能——這個功能資訊直接決定病人是否適合接受高劑量 I-131 MIBG 治療。",
+        "I-123 MIBG 在分子層面上是 norepinephrine 的結構類似物。它經由 norepinephrine transporter（NET）被交感神經末梢與嗜鉻細胞攝取後，貯存在細胞內的 catecholamine storage vesicles 中。因此，只要病灶還保有這個 uptake-1 機制與儲存能力，MIBG 就會在那裡滯留。",
+        "臨床判讀最重要的不是背每一張圖的正常分布，而是建立一個查核順序：先確認甲狀腺阻斷是否成功（唾液腺與甲狀腺不應有明顯游離碘攝取），再對照早期與延遲影像的變化，最後用 SPECT/CT 做三維定位。"
+    ],
+    timeArchitecture: {
+        mode: "article",
+        steps: [
+            { label: "甲狀腺阻斷", value: "檢查前 1 天開始 Lugol's / SSKI 至檢查後 2 天" },
+            { label: "緩慢注射", value: "I-123 MIBG ≥ 5 min 緩慢 IV" },
+            { label: "早期相", value: "注射後 4–6 hr，全身 planar ± SPECT/CT" },
+            { label: "延遲相", value: "注射後 24 hr（必要時 48 hr），全身 planar ± SPECT/CT" }
+        ],
+        article: [
+            "I-123 MIBG 的半衰期約 13.2 小時，釋出 159 keV 伽馬射線（適合 gamma camera），全身劑量比 I-131 MIBG 低得多。成人常用活度為 10 mCi（370 MBq），部分指引允許至 5–10 mCi 範圍。",
+            "甲狀腺阻斷是檢查前最關鍵的準備步驟。游離的放射性碘（I-123 MIBG 或極微量脫標產物）會被甲狀腺主動攝取並 organified。阻斷方案通常為 Lugol's solution 或 SSKI，從檢查前一天開始，持續至檢查後 1–2 天。",
+            "延遲影像（24 hr）因為背景軟組織活性已部分洗出，是評估腹部與骨盆病灶最有價值的相；48 hr 影像則用於需要區分生理性腸道活性與真正攝取病灶的情境。"
+        ],
+        note: "MIBG 緩慢注射（≥ 5 min）是為了避免血壓波動。注射期間應監測生命徵象，尤其是已知嗜鉻細胞瘤的病人。"
+    },
+    content: [
+        {
+            type: "info-box-blue",
+            html: "<h4>臨床定位：不只找腫瘤，更看它還能不能「抓藥」</h4>\n            <p>I-123 MIBG 掃描是腎上腺髓質影像的核心檢查。它利用交感神經末梢及神經內分泌腫瘤對 norepinephrine 的主動攝取（uptake-1 機制），把病灶的功能活性轉化為可視的全身分布圖。在嗜鉻細胞瘤、副神經節瘤與神經母細胞瘤的診斷、分期、術前定位與治療前評估四大場景中，MIBG 掃描提供的功能資訊是 CT/MRI 的解剖影像無法取代的。</p>"
+        },
+        {
+            type: "section",
+            title: "I-123 MIBG 的作用機轉",
+            icon: "🧬",
+            html: "<div class=\"prose\">\n                <p>MIBG（metaiodobenzylguanidine）在結構上是 guanethidine 與 norepinephrine 的類似物。其攝取與滯留依序經過兩個關鍵步驟：</p>\n                <ul>\n                    <li><strong>Step 1 — Uptake-1（NET 主動轉運）：</strong>MIBG 經由細胞膜上的 norepinephrine transporter（NET）被主動轉運進入交感神經末梢與嗜鉻細胞的細胞質。這是能量依賴的、可被 cocaine 或 tricyclic antidepressants 阻斷的主動運輸。</li>\n                    <li><strong>Step 2 — 囊泡貯存（VMAT 轉運）：</strong>進入細胞質的 MIBG 進一步被 vesicular monoamine transporter（VMAT）轉運至 catecholamine storage vesicles 內貯存。這個步驟讓 MIBG 能在病灶內滯留數小時至數天，也是雙時相顯影的生理基礎。</li>\n                </ul>\n                <p>臨床的主要意涵：任何會干擾 NET 或 VMAT 的藥物（如某些降血壓藥、抗憂鬱劑、抗精神病藥），都可能造成 MIBG 攝取假性降低。因此檢查前藥物清查是必要的，且應在報告中記載可能干擾因素。</p>\n            </div>"
+        },
+        {
+            type: "section",
+            title: "核心適應症",
+            icon: "🎯",
+            html: "<div class=\"prose\">\n                <p><strong>主要適應症：</strong></p>\n                <ul>\n                    <li><strong>嗜鉻細胞瘤（Pheochromocytoma）與副神經節瘤（Paraganglioma）：</strong>單側或雙側腎上腺病灶的確認、異位病灶搜尋、多發或轉移性病灶的全身評估、手術前定位。</li>\n                    <li><strong>神經母細胞瘤（Neuroblastoma）：</strong>原發與轉移病灶分期、治療反應評估、骨髓侵犯輔助判斷。MIBG 在神經母細胞瘤的 sensitivity 約 90–95%。</li>\n                    <li><strong>治療前攝取評估：</strong>若計劃做 I-131 MIBG 治療，必須先用診斷性 I-123 MIBG 確認病灶仍有攝取能力。沒有攝取就沒有治療價值。</li>\n                    <li><strong>家族性症候群篩檢：</strong>MEN2、VHL、SDHx 相關副神經節瘤症候群的全身評估。</li>\n                </ul>\n                <p><strong>主要限制：</strong>約 10% 的嗜鉻細胞瘤不攝取 MIBG（尤其 SDHB 相關或去分化病灶）。這些個案可能需要轉而依賴 SSTR PET（如 Ga-68 DOTATATE）或 FDG PET。部分藥物的干擾（詳見 pitfalls）。MIBG 陰性不能完全排除嗜鉻細胞瘤。</p>\n            </div>"
+        },
+        {
+            type: "section",
+            title: "病人準備與藥物干擾清查",
+            icon: "🧑‍⚕️",
+            html: "<div class=\"prose\">\n                <p><strong>甲狀腺阻斷：</strong>檢查前 1 天開始口服 Lugol's solution 或 SSKI，持續至檢查後 2 天，以避免甲狀腺攝取游離放射性碘。</p>\n                <p><strong>藥物清查（檢查前應停藥）：</strong></p>\n                <ul>\n                    <li><strong>必須停藥 ≥ 1–2 週：</strong>labetalol（最常見干擾）、tricyclic antidepressants（如 amitriptyline、imipramine）、reserpine。</li>\n                    <li><strong>建議停藥 ≥ 24–48 hr（視臨床安全性）：</strong>calcium channel blockers（部分文獻）、phenothiazines、某些 sympathomimetics（如 pseudoephedrine）。</li>\n                    <li><strong>不需停藥：</strong>alpha-blockers（如 phenoxybenzamine、doxazosin）、beta-blockers other than labetalol（如 propranolol、atenolol）、ACE inhibitors。</li>\n                </ul>\n                <p>因嗜鉻細胞瘤病人停用降血壓藥可能有風險，藥物調整應與處方醫師協調。</p>\n            </div>"
+        },
+        {
+            type: "section",
+            title: "攝影流程與正常分布",
+            icon: "🖥️",
+            html: "<div class=\"prose\">\n                <p>I-123 MIBG 經靜脈緩慢注射（≥ 5 分鐘以減少血壓波動）。標準 protocol 包括 4–6 hr 早期相與 24 hr 延遲相。掃描範圍從頭頂至膝蓋，必要時含雙下肢。</p>\n                <p><strong>正常生理分布（必須先記住，才能區分病灶）：</strong></p>\n                <ul>\n                    <li><strong>唾液腺（腮腺、頜下腺）：</strong>正常對稱性攝取，是 MIBG 掃描上最亮的背景結構之一。</li>\n                    <li><strong>心肌：</strong>正常可看見左心室壁攝取（交感神經分布密集），年輕人心肌訊號較強，隨年齡下降。</li>\n                    <li><strong>肝臟與脾臟：</strong>中低度瀰漫攝取。肝臟攝取在延遲相通常高於腫瘤病灶。</li>\n                    <li><strong>腎臟與膀胱：</strong>MIBG 主要經腎臟原型排出，腎盂、輸尿管與膀胱常見生理性活性。</li>\n                    <li><strong>腸道（尤其結腸）：</strong>延遲相可能出現腸道活性，容易被誤判為腹部病灶。</li>\n                    <li><strong>甲狀腺：</strong>正常不應顯影（若顯影代表甲狀腺阻斷不完全）。</li>\n                    <li><strong>棕色脂肪（兒童、瘦體型）：</strong>supraclavicular、para-spinal 區域可出現對稱的棕色脂肪攝取。</li>\n                </ul>\n            </div>"
+        },
+        {
+            type: "section",
+            title: "判讀框架與病灶定位",
+            icon: "🧭",
+            html: "<div class=\"prose\">\n                <p><strong>建議判讀順序：確認阻斷成功 → 全身掃視異常 → 早期 vs 延遲相比對 → SPECT/CT 三維定位 → 干擾排除。</strong></p>\n                <ul>\n                    <li><strong>典型嗜鉻細胞瘤：</strong>腎上腺區局部高攝取，早期相已可見，延遲相因背景下降而更明顯。大部分單側性，雙側見於 MEN2 或家族性症候群。</li>\n                    <li><strong>副神經節瘤：</strong>可出現於顱底（頸靜脈孔、頸動脈體）、頸部、縱膈、主動脈旁、Zuckerkandl 器位置（主動脈分叉附近）、膀胱壁等。讀片時要有全身的頭腦，不能只看腎上腺。</li>\n                    <li><strong>神經母細胞瘤：</strong>兒科病人。原發病灶最常見於腎上腺或後腹腔交感神經鏈。可合併骨髓、骨骼、淋巴結或肝轉移。若腹主動脈旁有長條狀活性，要注意交感神經鏈的正常分布不要誤判為脊柱旁副神經節瘤。</li>\n                    <li><strong>轉移病灶：</strong>骨轉移（尤其 spine、pelvis、proximal femurs）、肝轉移、淋巴結轉移均可見攝取。MIBG 的優勢在於全身一張圖就能看到分布。</li>\n                </ul>\n            </div>"
+        },
+        {
+            type: "section",
+            title: "常見陷阱",
+            icon: "⚠️",
+            html: "<div class=\"prose\">\n                <ul>\n                    <li><strong>藥物干擾造成假陰性（最常見）：</strong>labetalol 是最常被遺漏的干擾藥物——它會競爭性阻斷 NET，導致病灶攝取顯著下降。tricyclic antidepressants、phenothiazines 與某些 calcium channel blockers 也有類似效應。</li>\n                    <li><strong>正常腎盂/輸尿管活性誤判為腹部病灶：</strong>腎盂活性通常對稱、可追蹤至輸尿管與膀胱。若單側且固定不動，要懷疑病灶而非正常解剖。SPECT/CT 是排除這個陷阱的最強工具。</li>\n                    <li><strong>腸道活性（尤其延遲相）：</strong>結腸的生理性活性可在 24 hr 延遲相變得明顯。給病人喝水或改變姿勢後補拍可能有幫助。</li>\n                    <li><strong>棕色脂肪（兒科與年青族群）：</strong>supraclavicular 與 para-spinal 區域的對稱低度攝取是正常棕色脂肪。不對稱或局部明顯才考慮病灶。</li>\n                    <li><strong>甲狀腺阻斷失敗：</strong>若甲狀腺顯影，代表阻斷不完全。游離碘的甲狀腺攝取可能干擾甲狀腺區或是上縱膈的判讀。</li>\n                    <li><strong>注射滲漏：</strong>MIBG 在注射部位若有滲漏（extravasation），可能被誤以為是軟組織病灶。應記錄注射位置，並檢查注射側有無殘留活性。</li>\n                </ul>\n            </div>"
+        },
+        {
+            type: "section",
+            title: "報告與溝通建議",
+            icon: "📝",
+            html: "<div class=\"prose\">\n                <p>報告應結構化：先說明甲狀腺阻斷情形與可能的藥物干擾，再描述正常生理分布（可顯示影像品質），然後逐一列出異常攝取灶的位置（象限、深度、SPECT/CT 對應解剖）、早期相與延遲相的變化趨勢（滯留 vs 洗出）、SIOPEN/Curie score（若適用於神經母細胞瘤）、與前次檢查的對比。結論應指出是否符合嗜鉻細胞瘤、副神經節瘤或神經母細胞瘤的影像表現，並說明是否適合接受 I-131 MIBG 治療。</p>\n                <p>對於外科醫師，最重要的資訊不是「陽性」，而是「有幾顆、每一顆的準確位置（用 SPECT/CT 確認的三維描述）、是否還有其他遠端病灶」。</p>\n            </div>"
+        },
+        {
+            type: "section",
+            title: "參考文獻",
+            icon: "📚",
+            html: "<div class=\"prose\">\n                <ol>\n                    <li>Bombardieri E, et al. EANM procedure guidelines for I-131/I-123 MIBG scintigraphy. <em>Eur J Nucl Med Mol Imaging</em>. 2010;37:2436-2446.</li>\n                    <li>Taieb D, et al. EANM 2012 guidelines for radionuclide imaging of phaeochromocytoma and paraganglioma. <em>Eur J Nucl Med Mol Imaging</em>. 2012;39:1977-1995.</li>\n                    <li>SNMMI Procedure Standard for I-123/I-131 MIBG Scintigraphy. <em>J Nucl Med Technol</em>. 2022.</li>\n                    <li>Matthay KK, et al. Criteria for evaluation of disease extent by I-123 MIBG scans in neuroblastoma. <em>J Clin Oncol</em>. 2010;28(33):4964-4970.</li>\n                    <li>Lenders JWM, et al. Pheochromocytoma and paraganglioma: an Endocrine Society clinical practice guideline. <em>J Clin Endocrinol Metab</em>. 2014;99(6):1915-1942.</li>\n                </ol>\n            </div>"
+        }
+    ]
+},
+
+Salivary: {
+    title: "唾液腺掃描",
+    subtitle: "Tc-99m Pertechnetate Salivary Gland Scintigraphy — 大唾液腺攝取、排出與刺激後功能判讀",
+    category: "endocrine",
+    protocolSummaryDisplay: "expanded",
+    readerGuideMode: "article",
+    readerGuideArticle: [
+        "唾液腺掃描的教學重點，不是只記得會給檸檬汁，而是要看懂動態曲線背後的三個階段：攝取、排出、再累積。",
+        "這張檢查最常拿來回答的不是『有沒有一顆腫塊』，而是兩側大唾液腺的整體功能是否下降、是否對刺激有反應、以及左右是否對稱。",
+        "在 Sjogren syndrome 的現代分類標準裡，唾液腺 scintigraphy 已不是主要分類條件，但它仍可作為口乾嚴重度、放療後功能受損與阻塞性病變的補充功能評估。"
+    ],
+    timeArchitecture: {
+        mode: "article",
+        steps: [
+            { label: "檢前準備", value: "先確認禁食、補水、刺激物與會影響唾液分泌的因素" },
+            { label: "動態收像", value: "Tc-99m pertechnetate 注射後連續 anterior 頭頸動態" },
+            { label: "刺激排出", value: "固定時間給檸檬汁或其他酸刺激並追蹤排出與再累積" }
+        ],
+        article: [
+            "第一階段要先把影像條件固定下來。常見作法是檢前至少禁食 2 小時，讓口腔與胃部狀態較一致，再確認病人能否配合 20 到 30 分鐘的頭頸固定動態收像。",
+            "第二階段是注射 Tc-99m pertechnetate 後持續動態攝影。正常大唾液腺會逐步攝取示蹤劑，通常腮腺比頜下腺更早、更明顯地累積。",
+            "第三階段在固定時間給刺激物，例如 20 分鐘時給檸檬汁，再觀察兩側是否能迅速排出，之後是否重新累積。這段變化才是功能判讀的核心。"
+        ],
+        note: "刺激物種類、給予時間、dynamic frame 長度與 ROI 畫法，應固定為科內一致 protocol，否則不同病人間很難比較。"
+    },
+    content: [
+        {
+            type: "info-box-blue",
+            html: `<h4>臨床定位：看的是整體分泌功能，不是單一結節影像</h4>
+            <p>唾液腺掃描使用 <strong>Tc-99m pertechnetate</strong> 觀察腮腺與頜下腺對示蹤劑的攝取與刺激後排出。它最適合回答的是<strong>口乾症狀與雙側大唾液腺功能是否下降、是否可被刺激、以及左右是否對稱</strong>，而不是用來取代超音波或 CT 做局部解剖搜尋。</p>`
+        },
+        {
+            type: "section",
+            title: "一、 目前臨床最常放在哪些情境？",
+            icon: "🎯",
+            html: `<div class="prose">
+                <ul>
+                    <li><strong>口乾症狀功能評估：</strong>當病人主訴 xerostomia，需要了解雙側大唾液腺是否普遍功能下降時，唾液腺掃描能提供整體功能資訊。</li>
+                    <li><strong>Sjogren syndrome 補充評估：</strong>雖然 2016 ACR/EULAR 分類準則已不把 salivary scintigraphy 納入主要分類條件，但在追蹤功能受損程度或與其他檢查互補時仍有角色。</li>
+                    <li><strong>放療後與藥物相關唾液腺損傷：</strong>頭頸癌放療後、I-131 治療後或其他導致唾液功能下降的情境，可用來比較治療前後變化。</li>
+                    <li><strong>阻塞性或慢性發炎性病變：</strong>若臨床想知道分泌刺激後是否排出不良，唾液腺動態影像比單張結構影像更能反映功能問題。</li>
+                </ul>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "二、 為什麼這張檢查看得見唾液腺功能？",
+            icon: "🧬",
+            html: `<div class="prose">
+                <p>Tc-99m pertechnetate 會被唾液腺上皮攝取並分泌到口腔中，因此動態曲線可分成三個教學階段：<strong>累積期、刺激後排出期、再累積期</strong>。讀圖時不能只截一張最亮的影像，而要把整段時間序列一起看。</p>
+                <p>正常情況下，兩側腮腺與頜下腺會逐步累積，約在刺激前達到高點；接受酸刺激後，活性應迅速下降，之後再慢慢回升。若缺少這個「下降再回升」的節奏，就要思考排出功能是否受損。</p>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "三、 檢前準備：刺激物一致，比臨時加拍更重要",
+            icon: "🩺",
+            html: `<div class="prose">
+                <ul>
+                    <li><strong>禁食與補水：</strong>常見研究與實務 protocol 會要求檢前至少禁食 2 小時，並保持基本水分狀態，避免口腔條件差異太大。</li>
+                    <li><strong>固定刺激方式：</strong>檸檬汁、檸檬糖或其他酸刺激物都可以，但同一科別應固定種類、容量與給予時間點。</li>
+                    <li><strong>審視會影響分泌的因素：</strong>抗膽鹼藥物、鎮靜藥、脫水、急性感染與疼痛都可能影響唾液流量，排檢時應先記錄，而不是等曲線怪怪的才回頭猜。</li>
+                    <li><strong>頭頸固定：</strong>這張檢查靠 ROI 與動態曲線判讀，頭頸 motion 會直接破壞左右比較與定量。</li>
+                </ul>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "四、 影像如何判讀：先看三階段節奏，再談左右差異",
+            icon: "🧭",
+            html: `<div class="prose">
+                <p><strong>正常型態</strong>是雙側大唾液腺逐步而對稱地攝取示蹤劑，腮腺通常比頜下腺更明顯；刺激後數分鐘內活性應明顯下降，之後再出現重新累積。這種「慢慢升、快速降、再回升」的節奏，是最重要的正常參考。</p>
+                <p><strong>廣泛功能下降型</strong>常見於 Sjogren syndrome 或嚴重放療後損傷。影像上可能表現為兩側腮腺與頜下腺整體攝取偏低、達峰緩慢，刺激後下降不明顯，甚至幾乎沒有可辨識排出。若四個大腺體都一起變差，通常比單側異常更支持全腺體功能問題。</p>
+                <p><strong>排出不良型</strong>的特徵是刺激前可正常或近正常累積，但刺激後曲線下降不足，代表腺體會抓住示蹤劑卻排不出去。這類型態在阻塞性病變或慢性炎症時很實用。</p>
+                <p><strong>單側或局部不對稱</strong>時，先確認不是頭位偏移、ROI 畫法不一致或口腔污染，再考慮單側手術後變化、局部炎症、阻塞或放療偏側效應。唾液腺掃描偏向整體功能檢查，若臨床要找結石或局部腫塊，仍要回到超音波、CT 或 MR sialography。</p>
+                <p><strong>定量與視覺判讀要互補</strong>。近年健康族群動態研究顯示，正常腮腺的最大攝取比例與排出分率通常高於頜下腺；因此同時看 time-activity curve 與腺體視覺節奏，比只寫一個數值更能幫臨床理解。</p>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "五、 常見陷阱與限制",
+            icon: "⚠️",
+            html: `<div class="prose">
+                <ul>
+                    <li><strong>specificity 不高：</strong>唾液腺 scintigraphy 對功能下降敏感，但對病因鑑別不夠專一，因此不能單靠它區分 Sjogren、藥物影響、放療或其他唾液腺疾病。</li>
+                    <li><strong>刺激物與時間點不一致：</strong>若每位病人的檸檬汁量、給予時點或收像長度不同，曲線就失去可比性。</li>
+                    <li><strong>只看單張影像：</strong>若忽略 time-activity curve，就很容易把暫時攝取不足或短暫口腔污染誤判成功能異常。</li>
+                    <li><strong>現代 Sjogren 分類已不主打這張檢查：</strong>因此報告語氣應聚焦在功能描述，不要把影像結果直接寫成 Sjogren 的確診句。</li>
+                </ul>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "六、 報告與溝通建議",
+            icon: "📝",
+            html: `<div class="prose">
+                <ul>
+                    <li>記錄示蹤劑、活度、動態總時間、frame 長度、刺激物種類與刺激時點。</li>
+                    <li>描述兩側腮腺與頜下腺的攝取是否對稱、刺激後是否有明顯排出、以及再累積是否保留。</li>
+                    <li>若有定量，寫清楚 ROI 與指標定義，避免只放數值卻沒有視覺描述。</li>
+                    <li>結論建議使用「雙側大唾液腺攝取與排出普遍下降」「右側排出功能較左側差」這類功能語言，而非單靠影像替臨床做病因定論。</li>
+                </ul>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "參考文獻",
+            icon: "📚",
+            html: `<div class="prose">
+                <ol>
+                    <li>Shiboski CH, Shiboski SC, Seror R, et al. 2016 American College of Rheumatology/European League Against Rheumatism Classification Criteria for Primary Sjogren's Syndrome. <em>Arthritis Rheumatol</em>. 2017;69(1):35-45.</li>
+                    <li>Giuseppe C, et al. The role of salivary gland scintigraphy in the evaluation of patients with xerostomia and Sjogren syndrome. Review literature summarized in <em>Front Med</em>. 2020.</li>
+                    <li>Kim J, et al. Establishment of normal reference values for dynamic salivary gland scintigraphy and quantitative indices in healthy adults. <em>Diagnostics</em>. 2024.</li>
+                    <li>Procedure recommendations and contemporary salivary imaging reviews comparing scintigraphy with ultrasound and MR sialography, updated through 2024.</li>
+                </ol>
+            </div>`
+        }
+    ]
+},
+
+I131WBS: {
+    title: "I-131 全身掃描",
+    subtitle: "I-131 Whole-Body Scan — 甲狀腺癌術後殘餘組織、復發與轉移病灶的高能量全身影像",
+    category: "endocrine",
+    protocolSummaryDisplay: "expanded",
+    readerGuideMode: "article",
+    readerGuideArticle: [
+        "I-131 全身掃描的教學核心，是分清楚這張影像在問的是「還有哪些會攝碘的組織」，而不是所有亮點都等於腫瘤。",
+        "診斷性 WBS 和治療後 WBS 雖然都叫全身掃描，但臨床問題、敏感度與判讀信心並不相同；教材應把兩者放在同一條工作流程裡理解。",
+        "現代 ATA 指南也提醒，WBS 的價值常在與 thyroglobulin、超音波與 SPECT/CT 串聯使用，而不是孤立讀圖。"
+    ],
+    timeArchitecture: {
+        mode: "article",
+        steps: [
+            { label: "前置刺激", value: "TSH stimulation、低碘飲食與近期含碘暴露評估" },
+            { label: "給藥與延遲", value: "診斷性或治療性 I-131 後依 protocol 延遲收像" },
+            { label: "全身加定位", value: "whole-body planar，必要時 spot view 或 SPECT/CT" }
+        ],
+        article: [
+            "第一階段先決定病人是做診斷性 WBS 還是治療後 WBS，並把 TSH stimulation 的方式講清楚。臨床上可能是停用甲狀腺素後升高 TSH，也可能使用 rhTSH；兩者都會影響排程、症狀與病人配合度。",
+            "第二階段是低碘飲食與含碘暴露管理。若近期做過含碘顯影或仍有高碘攝取，病灶就算存在，也可能因碘池已滿而顯影不足。",
+            "第三階段才是高能量全身掃描本身。影像通常先以 whole-body planar 掌握全身分布，再針對可疑區域補 spot view 或 SPECT/CT，以區分殘餘甲狀腺床、淋巴結、肺轉移、骨轉移與污染。"
+        ],
+        note: "掃描時點需依院內 protocol、給藥目的與臨床問題固定。診斷性與治療後的時序不可混寫。"
+    },
+    content: [
+        {
+            type: "info-box-blue",
+            html: `<h4>臨床定位：看的是「哪些組織還會攝碘」</h4>
+            <p>I-131 全身掃描最常用在分化型甲狀腺癌術後，評估甲狀腺床殘餘組織、復發病灶與遠端轉移。影像語言是<strong>攝碘能力</strong>，因此判讀時一定要先分清生理性分布、污染與真正病灶，而不是看到亮點就直接寫成轉移。</p>`
+        },
+        {
+            type: "section",
+            title: "一、 診斷性 WBS 與治療後 WBS 有什麼不同？",
+            icon: "🎯",
+            html: `<div class="prose">
+                <p><strong>診斷性 WBS</strong>通常用在術後分期補充、風險重估或追蹤特定疑問；<strong>治療後 WBS</strong>則是在 I-131 治療後，用較高活度把原本不明顯的殘餘組織或轉移病灶顯示出來。ATA 2015 指南指出，治療後掃描常可發現前面未明顯顯示的病灶，並可藉 SPECT/CT 進一步改善定位。</p>
+                <p>實務上，診斷性 WBS 不是每位分化型甲狀腺癌病人都例行需要；低風險且已有 excellent response 的病人，常不需反覆常規 diagnostic WBS。這個觀念要寫進教材，避免把 WBS 誤教成「每次都要做」的固定流程。</p>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "二、 檢前準備：真正影響畫面的常在掃描前",
+            icon: "🩺",
+            html: `<div class="prose">
+                <ul>
+                    <li><strong>TSH stimulation：</strong>若 TSH 沒有被拉高，病灶未必願意攝碘，影像就可能低估疾病。排檢時要清楚記錄是 hormone withdrawal 還是 rhTSH。</li>
+                    <li><strong>低碘飲食：</strong>目標不是形式上「少吃海鮮」，而是降低體內碘池，讓放射性碘有機會被真正的目標組織攝取。</li>
+                    <li><strong>近期含碘暴露：</strong>CT contrast、含碘消毒劑、某些保健食品與 amiodarone 都可能干擾，需在檢前主動追問。</li>
+                    <li><strong>污染控制：</strong>掃描前排尿、更衣、取下口袋衛生紙與檢查皮膚污染，不是衛教細節，而是避免假陽性的第一步。</li>
+                </ul>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "三、 攝影流程：whole-body 只是起點，定位常靠補拍",
+            icon: "🖥️",
+            html: `<div class="prose">
+                <ul>
+                    <li><strong>高能量準直儀不可省略：</strong>I-131 需使用 HE collimator 與相符能窗，否則畫質與散射控制都會出問題。</li>
+                    <li><strong>先看全身分布：</strong>whole-body planar 讓我們知道亮點在哪些區域，再決定是否補頸部、胸部、骨盆或局部 spot view。</li>
+                    <li><strong>SPECT/CT 的價值在定位：</strong>當平面影像無法分清甲狀腺床殘餘、頸部淋巴結、吞嚥後食道活性、腸道或骨病灶時，SPECT/CT 通常比再加更多平面投影更有幫助。</li>
+                </ul>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "四、 影像如何判讀：先分生理、污染，再談病灶",
+            icon: "🧭",
+            html: `<div class="prose">
+                <p><strong>生理性攝取</strong>常見於唾液腺、鼻咽黏膜、胃、腸道與泌尿系統，女性哺乳期乳房也可能顯影。讀片時應先建立一張「正常會亮哪裡」的地圖，避免把生理分布誤認為轉移。</p>
+                <p><strong>甲狀腺床殘餘組織</strong>通常位在頸部中央或偏中央的手術床區域，若與治療後掃描時間點相符，常見為術後 remnant。若焦點偏外側、形態不典型或與超音波結節對位，則要考慮頸部淋巴結轉移。</p>
+                <p><strong>淋巴結與遠端轉移</strong>的判讀要靠位置學。頸部外側、上縱膈、肺野散在點狀或瀰漫攝取、以及骨骼固定焦點，都可見於轉移；但真正下結論前，最好確認其位置是否固定、是否與解剖影像對應，並排除表面污染。</p>
+                <p><strong>污染</strong>是 I-131 WBS 最常見的假陽性之一。唾液、汗液、鼻涕、尿液污染常呈表面不規則亮點，有時會隨擦拭、換衣或重新排尿後消失。凡是亮點的位置不合理、邊界太表淺或左右對稱得不自然，都要先想污染。</p>
+                <p><strong>SPECT/CT 的角色</strong>是把「亮在哪裡」變成「亮的是什麼」。ATA 指南與後續研究都指出，SPECT/CT 能增加轉移淋巴結辨識、減少 equivocal findings，並在部分病例改變後續處置。</p>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "五、 常見陷阱與限制",
+            icon: "⚠️",
+            html: `<div class="prose">
+                <ul>
+                    <li><strong>低風險病人不是都需要常規診斷性 WBS：</strong>要依風險分層與治療反應決定，不宜過度流程化。</li>
+                    <li><strong>診斷劑量與 stunning 議題：</strong>前治療 diagnostic scan 的選擇需考慮後續治療規畫；部分中心在特定場景偏好 I-123 作為診斷性 WBS，以減少 I-131 低劑量先行造成的顧慮。</li>
+                    <li><strong>平面定位有限：</strong>單靠 whole-body planar 很容易卡在「有亮，但不確定是什麼」，因此應及早考慮 spot view 或 SPECT/CT。</li>
+                    <li><strong>攝碘陰性不等於沒有病灶：</strong>分化差、去分化或 Tg elevated / scan negative 的情況，仍可能需要超音波、CT、FDG PET/CT 等其他路徑。</li>
+                </ul>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "六、 報告與溝通建議",
+            icon: "📝",
+            html: `<div class="prose">
+                <ul>
+                    <li>記錄給藥目的、活度、TSH stimulation 方式、低碘飲食與掃描時點。</li>
+                    <li>描述生理分布是否如預期，再逐區說明可疑殘餘組織、淋巴結或遠端病灶。</li>
+                    <li>若有可疑污染，應在報告中清楚註明已重拍、擦拭或重新排尿後是否消失。</li>
+                    <li>結論建議寫成「支持甲狀腺床殘餘組織」「頸部外側攝碘灶，合併 SPECT/CT 較支持淋巴結轉移」等定位式語言，而不是只寫「陽性」。</li>
+                </ul>
+            </div>`
+        },
+        {
+            type: "section",
+            title: "參考文獻",
+            icon: "📚",
+            html: `<div class="prose">
+                <ol>
+                    <li>Haugen BR, Alexander EK, Bible KC, et al. 2015 American Thyroid Association Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer. <em>Thyroid</em>. 2016;26(1):1-133.</li>
+                    <li>Avram AM, et al. Nuclear imaging in differentiated thyroid cancer: roles of diagnostic and posttherapy I-131 whole-body scanning with SPECT/CT. Contemporary reviews and practice updates through 2024.</li>
+                    <li>ATA guideline evidence summaries on diagnostic WBS selectivity, SPECT/CT added value, and posttherapy scan timing.</li>
+                </ol>
+            </div>`
+        }
+    ]
+},
+
 Cisternography: {
     title: "腦脊髓液池掃描",
     subtitle: "Radionuclide Cisternography（In-111 DTPA）— 正常壓力腦積水 (NPH) 與腦脊髓液漏 (CSF Leak) 診斷",
@@ -5222,22 +6126,7 @@ const EXAM_TEACHING_SUPPLEMENTS = {
         }
     ],
     POSLUMA: [
-        {
-            type: "section",
-            title: "PSMA PET 排檢與治療銜接",
-            html: `<div class="prose">
-                <ul>
-                    <li>不只看 PSA 數值，還要看<strong>PSA doubling time、去勢治療史、化療史、泌尿道是否阻塞</strong>。</li>
-                    <li>若是為 Lu-177 PSMA 治療前評估，應同步確認<strong>腎功能、血球計數、是否已有 PSMA PET 陽性且 FDG 無明顯不一致病灶</strong>。</li>
-                    <li>尿路攝取明顯時，應提醒病人多排尿；必要時考慮導尿或延遲影像協助骨盆判讀。</li>
-                </ul>
-            </div>`
-        },
-        {
-            type: "info-box-amber",
-            html: `<h4>PSMA PET 常見陷阱</h4>
-            <p>交感神經節、唾液腺、肝臟、腸道、骨折修復區都可能有生理或非腫瘤攝取。報告時要避免把<strong>ganglion uptake 誤叫淋巴轉移</strong>，也要注意接受荷爾蒙治療後的骨轉移 flare 現象。</p>`
-        }
+        
     ],
     Ga68DOTATOC: [
         {
@@ -8124,6 +9013,15 @@ const EXAM_INLINE_GUIDE_IMAGES = {
 };
 
 
+// ╔══════════════════════════════════════════════════════════════╗
+// ║  ⚠️  CARDIAC_VIEW_OVERRIDES — DESTRUCTIVE OVERRIDE LAYER   ║
+// ║  Object.assign(EXAM_DATA, CARDIAC_VIEW_OVERRIDES) runs      ║
+// ║  at line ~8995 and SILENTLY REPLACES any matching key in   ║
+// ║  EXAM_DATA. Only cardiac-specific layout configs belong    ║
+// ║  here. Do NOT add non-cardiac units. If a unit needs       ║
+// ║  protocolSummaryDisplay / readerGuideMode, set those       ║
+// ║  properties directly in EXAM_DATA instead.                 ║
+// ╚══════════════════════════════════════════════════════════════╝
 const CARDIAC_VIEW_OVERRIDES = {
 
 CardiacAmyloid: {
@@ -8273,591 +9171,17 @@ CardiacAmyloid: {
         tellUs: "如果無法平躺、近期做過會影響判讀的心臟檢查，或尚未完成血清 / 尿液單株蛋白評估，請先告知。",
         evidence: "更新依據：SNMMI/ASNC/ASE/EANM 等 PYP imaging practice points 與現有頁面內容。"
     },
-    LungVQ: {
-        title: "V/Q：這個檢查分成通氣與灌注兩段",
-        cards: [
-            { title: "為什麼要做", text: "當 CTA 不適合或需要看肺通氣 / 灌流是否匹配時，V/Q 很有價值。" },
-            { title: "檢查前", text: "通常不需特別禁食，但會先做胸部 X 光，並確認是否能安靜配合呼吸。" },
-            { title: "檢查中", text: "先做通氣，再做灌注；前者是吸入示蹤劑，後者是靜脈注射示蹤劑。" },
-            { title: "檢查後", text: "吸入的示蹤劑會隨呼吸散去，注射的部分則會在數小時到數天內排出。" }
-        ],
-        tellUs: "如果懷孕、哺乳、無法配合吸氣、或躺不住，請先說。",
-        evidence: "更新依據：Cleveland Clinic V/Q scan patient education（2026）與 ACR pulmonary embolism imaging guidance。"
-    },
-    Thyroid: {
-        title: "甲狀腺 uptake / scan：最近有沒有碰過碘，比當天緊不緊張更重要",
-        cards: [
-            { title: "為什麼要做", text: "幫助看甲狀腺的功能、攝取情況與分布，尤其用於甲亢與自主性結節鑑別。" },
-            { title: "檢查前", text: "先確認近兩個月內是否有含碘顯影，是否正在使用 methimazole / PTU。" },
-            { title: "檢查中", text: "通常先吞服示蹤劑，4 到 6 小時後量測，有時 24 小時再回來一次。" },
-            { title: "檢查後", text: "多喝水有助排出示蹤劑；除非另有交代，多數人可恢復正常活動。" }
-        ],
-        evidence: "更新依據：EANM/SNMMI RAIU and thyroid scintigraphy guideline 與 Cleveland Clinic thyroid uptake and scan patient education。"
-    },
-    Parathyroid: {
-        title: "副甲狀腺掃描：不是每個人都需要，重點在找出過度活躍的腺體",
-        cards: [
-            { title: "為什麼要做", text: "常用於高血鈣與高副甲狀腺素、考慮手術前的定位。" },
-            { title: "檢查前", text: "先帶上抽血與影像資料，知道這檢查的目的通常是定位，不是單靠它做診斷。" },
-            { title: "檢查中", text: "可能是超音波、核醫 scan 或兩者合併；核醫 scan 常需多個時間點拍攝。" },
-            { title: "檢查後", text: "若只是診斷定位，多數可直接返家並等待與外科或內分泌團隊討論結果。" }
-        ],
-        evidence: "更新依據：Cleveland Clinic parathyroid scan patient education（2026）。"
-    },
-    Salivary: {
-        title: "唾液腺掃描",
-        subtitle: "Tc-99m Pertechnetate Salivary Gland Scintigraphy — 大唾液腺攝取、排出與刺激後功能判讀",
-        category: "endocrine",
-        protocolSummaryDisplay: "expanded",
-        readerGuideMode: "article",
-        readerGuideArticle: [
-            "唾液腺掃描的教學重點，不是只記得會給檸檬汁，而是要看懂動態曲線背後的三個階段：攝取、排出、再累積。",
-            "這張檢查最常拿來回答的不是『有沒有一顆腫塊』，而是兩側大唾液腺的整體功能是否下降、是否對刺激有反應、以及左右是否對稱。",
-            "在 Sjogren syndrome 的現代分類標準裡，唾液腺 scintigraphy 已不是主要分類條件，但它仍可作為口乾嚴重度、放療後功能受損與阻塞性病變的補充功能評估。"
-        ],
-        timeArchitecture: {
-            mode: "article",
-            steps: [
-                { label: "檢前準備", value: "先確認禁食、補水、刺激物與會影響唾液分泌的因素" },
-                { label: "動態收像", value: "Tc-99m pertechnetate 注射後連續 anterior 頭頸動態" },
-                { label: "刺激排出", value: "固定時間給檸檬汁或其他酸刺激並追蹤排出與再累積" }
-            ],
-            article: [
-                "第一階段要先把影像條件固定下來。常見作法是檢前至少禁食 2 小時，讓口腔與胃部狀態較一致，再確認病人能否配合 20 到 30 分鐘的頭頸固定動態收像。",
-                "第二階段是注射 Tc-99m pertechnetate 後持續動態攝影。正常大唾液腺會逐步攝取示蹤劑，通常腮腺比頜下腺更早、更明顯地累積。",
-                "第三階段在固定時間給刺激物，例如 20 分鐘時給檸檬汁，再觀察兩側是否能迅速排出，之後是否重新累積。這段變化才是功能判讀的核心。"
-            ],
-            note: "刺激物種類、給予時間、dynamic frame 長度與 ROI 畫法，應固定為科內一致 protocol，否則不同病人間很難比較。"
-        },
-        content: [
-            {
-                type: "info-box-blue",
-                html: `<h4>臨床定位：看的是整體分泌功能，不是單一結節影像</h4>
-                <p>唾液腺掃描使用 <strong>Tc-99m pertechnetate</strong> 觀察腮腺與頜下腺對示蹤劑的攝取與刺激後排出。它最適合回答的是<strong>口乾症狀與雙側大唾液腺功能是否下降、是否可被刺激、以及左右是否對稱</strong>，而不是用來取代超音波或 CT 做局部解剖搜尋。</p>`
-            },
-            {
-                type: "section",
-                title: "一、 目前臨床最常放在哪些情境？",
-                icon: "🎯",
-                html: `<div class="prose">
-                    <ul>
-                        <li><strong>口乾症狀功能評估：</strong>當病人主訴 xerostomia，需要了解雙側大唾液腺是否普遍功能下降時，唾液腺掃描能提供整體功能資訊。</li>
-                        <li><strong>Sjogren syndrome 補充評估：</strong>雖然 2016 ACR/EULAR 分類準則已不把 salivary scintigraphy 納入主要分類條件，但在追蹤功能受損程度或與其他檢查互補時仍有角色。</li>
-                        <li><strong>放療後與藥物相關唾液腺損傷：</strong>頭頸癌放療後、I-131 治療後或其他導致唾液功能下降的情境，可用來比較治療前後變化。</li>
-                        <li><strong>阻塞性或慢性發炎性病變：</strong>若臨床想知道分泌刺激後是否排出不良，唾液腺動態影像比單張結構影像更能反映功能問題。</li>
-                    </ul>
-                </div>`
-            },
-            {
-                type: "section",
-                title: "二、 為什麼這張檢查看得見唾液腺功能？",
-                icon: "🧬",
-                html: `<div class="prose">
-                    <p>Tc-99m pertechnetate 會被唾液腺上皮攝取並分泌到口腔中，因此動態曲線可分成三個教學階段：<strong>累積期、刺激後排出期、再累積期</strong>。讀圖時不能只截一張最亮的影像，而要把整段時間序列一起看。</p>
-                    <p>正常情況下，兩側腮腺與頜下腺會逐步累積，約在刺激前達到高點；接受酸刺激後，活性應迅速下降，之後再慢慢回升。若缺少這個「下降再回升」的節奏，就要思考排出功能是否受損。</p>
-                </div>`
-            },
-            {
-                type: "section",
-                title: "三、 檢前準備：刺激物一致，比臨時加拍更重要",
-                icon: "🩺",
-                html: `<div class="prose">
-                    <ul>
-                        <li><strong>禁食與補水：</strong>常見研究與實務 protocol 會要求檢前至少禁食 2 小時，並保持基本水分狀態，避免口腔條件差異太大。</li>
-                        <li><strong>固定刺激方式：</strong>檸檬汁、檸檬糖或其他酸刺激物都可以，但同一科別應固定種類、容量與給予時間點。</li>
-                        <li><strong>審視會影響分泌的因素：</strong>抗膽鹼藥物、鎮靜藥、脫水、急性感染與疼痛都可能影響唾液流量，排檢時應先記錄，而不是等曲線怪怪的才回頭猜。</li>
-                        <li><strong>頭頸固定：</strong>這張檢查靠 ROI 與動態曲線判讀，頭頸 motion 會直接破壞左右比較與定量。</li>
-                    </ul>
-                </div>`
-            },
-            {
-                type: "section",
-                title: "四、 影像如何判讀：先看三階段節奏，再談左右差異",
-                icon: "🧭",
-                html: `<div class="prose">
-                    <p><strong>正常型態</strong>是雙側大唾液腺逐步而對稱地攝取示蹤劑，腮腺通常比頜下腺更明顯；刺激後數分鐘內活性應明顯下降，之後再出現重新累積。這種「慢慢升、快速降、再回升」的節奏，是最重要的正常參考。</p>
-                    <p><strong>廣泛功能下降型</strong>常見於 Sjogren syndrome 或嚴重放療後損傷。影像上可能表現為兩側腮腺與頜下腺整體攝取偏低、達峰緩慢，刺激後下降不明顯，甚至幾乎沒有可辨識排出。若四個大腺體都一起變差，通常比單側異常更支持全腺體功能問題。</p>
-                    <p><strong>排出不良型</strong>的特徵是刺激前可正常或近正常累積，但刺激後曲線下降不足，代表腺體會抓住示蹤劑卻排不出去。這類型態在阻塞性病變或慢性炎症時很實用。</p>
-                    <p><strong>單側或局部不對稱</strong>時，先確認不是頭位偏移、ROI 畫法不一致或口腔污染，再考慮單側手術後變化、局部炎症、阻塞或放療偏側效應。唾液腺掃描偏向整體功能檢查，若臨床要找結石或局部腫塊，仍要回到超音波、CT 或 MR sialography。</p>
-                    <p><strong>定量與視覺判讀要互補</strong>。近年健康族群動態研究顯示，正常腮腺的最大攝取比例與排出分率通常高於頜下腺；因此同時看 time-activity curve 與腺體視覺節奏，比只寫一個數值更能幫臨床理解。</p>
-                </div>`
-            },
-            {
-                type: "section",
-                title: "五、 常見陷阱與限制",
-                icon: "⚠️",
-                html: `<div class="prose">
-                    <ul>
-                        <li><strong>specificity 不高：</strong>唾液腺 scintigraphy 對功能下降敏感，但對病因鑑別不夠專一，因此不能單靠它區分 Sjogren、藥物影響、放療或其他唾液腺疾病。</li>
-                        <li><strong>刺激物與時間點不一致：</strong>若每位病人的檸檬汁量、給予時點或收像長度不同，曲線就失去可比性。</li>
-                        <li><strong>只看單張影像：</strong>若忽略 time-activity curve，就很容易把暫時攝取不足或短暫口腔污染誤判成功能異常。</li>
-                        <li><strong>現代 Sjogren 分類已不主打這張檢查：</strong>因此報告語氣應聚焦在功能描述，不要把影像結果直接寫成 Sjogren 的確診句。</li>
-                    </ul>
-                </div>`
-            },
-            {
-                type: "section",
-                title: "六、 報告與溝通建議",
-                icon: "📝",
-                html: `<div class="prose">
-                    <ul>
-                        <li>記錄示蹤劑、活度、動態總時間、frame 長度、刺激物種類與刺激時點。</li>
-                        <li>描述兩側腮腺與頜下腺的攝取是否對稱、刺激後是否有明顯排出、以及再累積是否保留。</li>
-                        <li>若有定量，寫清楚 ROI 與指標定義，避免只放數值卻沒有視覺描述。</li>
-                        <li>結論建議使用「雙側大唾液腺攝取與排出普遍下降」「右側排出功能較左側差」這類功能語言，而非單靠影像替臨床做病因定論。</li>
-                    </ul>
-                </div>`
-            },
-            {
-                type: "section",
-                title: "參考文獻",
-                icon: "📚",
-                html: `<div class="prose">
-                    <ol>
-                        <li>Shiboski CH, Shiboski SC, Seror R, et al. 2016 American College of Rheumatology/European League Against Rheumatism Classification Criteria for Primary Sjogren's Syndrome. <em>Arthritis Rheumatol</em>. 2017;69(1):35-45.</li>
-                        <li>Giuseppe C, et al. The role of salivary gland scintigraphy in the evaluation of patients with xerostomia and Sjogren syndrome. Review literature summarized in <em>Front Med</em>. 2020.</li>
-                        <li>Kim J, et al. Establishment of normal reference values for dynamic salivary gland scintigraphy and quantitative indices in healthy adults. <em>Diagnostics</em>. 2024.</li>
-                        <li>Procedure recommendations and contemporary salivary imaging reviews comparing scintigraphy with ultrasound and MR sialography, updated through 2024.</li>
-                    </ol>
-                </div>`
-            }
-        ]
-    },
-    BrainPET: {
-        eyebrow: "先看分布型態",
-        title: "腦部 FDG PET 主要看腦區代謝分布",
-        lead: "腦部 FDG PET 通常不是看單一亮點，而是看整體代謝分布有沒有改變。失智、癲癇與腦炎，常要靠不同腦區的分布型態來判斷。",
-        cards: [
-            { title: "注射環境就是影像條件", text: "安靜、微光、閉眼、不聊天，不是儀式，而是避免把不該活化的腦區一起打亮。" },
-            { title: "失智看的是分布地圖", text: "Alzheimer 型、額顳葉型與路易體型，關鍵都在低代謝分布是否符合典型網路，而不是有沒有腫塊。" },
-            { title: "癲癇多半在看發作間期的沉默", text: "FDG 腦 PET 常是在發作間期找低代謝灶，和灌流 SPECT 注重發作當下的邏輯不同。" },
-            { title: "陰性不代表問題一定不存在", text: "症狀很早期、病程波動或臨床問題不是代謝型異常時，影像可能不典型，仍要回到神經科整體評估。" }
-        ]
-    },
-    Ga68DOTATOC: {
-        eyebrow: "先看受體表現",
-        title: "DOTATOC PET 主要看腫瘤是否還有 somatostatin receptor",
-        lead: "Ga-68 DOTATOC/DOTATATE PET 的重點不只是定位神經內分泌腫瘤，也是在看受體是否還在。這會影響後續藥物與 PRRT 的治療判斷。",
-        cards: [
-            { title: "先看受體，不是先看大小", text: "受體存在，代表這個腫瘤仍保留可被核醫抓住的生物學特徵；受體掉了，後面治療策略就會變。" },
-            { title: "它同時在做分期與治療分流", text: "同一張影像既幫忙找病灶，也在評估病人是否可能受益於 Lu-177 DOTATATE 這類 PRRT。" },
-            { title: "藥物史不能晚問", text: "長效體抑素類似物不是瑣事，因為它可能改變受體可用性與檢查排程安排。" },
-            { title: "亮點也要分清生理與病理", text: "脾臟、肝臟、腎臟與垂體本來就會有生理攝取，讀片重點是哪些亮度超出正常應有的節奏。" }
-        ]
-    },
-    AmyloidPET: {
-        eyebrow: "先分清檢查角色",
-        title: "Amyloid PET 是病理線索，不是單靠一張圖就下診斷",
-        lead: "Amyloid PET 主要是看腦內有沒有類澱粉負荷。它能幫助臨床判斷，但不能單靠一張圖就直接下阿茲海默症診斷。",
-        cards: [
-            { title: "陽性不是診斷句點", text: "年長者也可能有 amyloid 沉積，所以陽性一定要和認知症狀、病程與其他檢查一起看。" },
-            { title: "陰性有時更有決策價值", text: "當認知退化原因不明時，陰性結果能顯著降低典型阿茲海默病理的可能性。" },
-            { title: "它適合用在不確定，而不是所有失智", text: "早發、非典型表現或鑑別卡關時最有幫助；不是每位記憶退化病人都需要直接做。" },
-            { title: "讀者最該記住的限制", text: "Amyloid 出現可以早於症狀多年，所以影像呈陽性，不等於現在的所有症狀都由它造成。" }
-        ]
-    },
-    NaFPET: {
-        eyebrow: "先看骨代謝",
-        title: "NaF PET 對骨重塑變化比較敏感",
-        lead: "NaF PET 和傳統骨掃描都和骨代謝有關，但 NaF PET 對骨表面交換更敏感，因此常能更早看出骨頭正在發生變化。",
-        cards: [
-            { title: "先懂 fluoride 在看什麼", text: "F-18 fluoride 會和骨表面 hydroxyapatite 交換，所以對成骨活性與微小轉移特別敏感。" },
-            { title: "它比傳統骨掃描更像高解析版本", text: "同樣是骨轉移問題，NaF PET 往往能更早抓到病灶，也較少被重疊結構模糊掉。" },
-            { title: "退化性變化仍會亮", text: "關節退化、骨刺與術後變化也可能攝取，因此影像愈敏感，愈需要回到解剖位置與病史判讀。" },
-            { title: "補水排尿依舊重要", text: "即使是 PET，泌尿背景管理仍是畫質與判讀的一部分，不是可有可無的叮嚀。" }
-        ]
-    },
     CardiacPET: {
-        eyebrow: "先看血流量化",
-        title: "Cardiac PET 可以量化心肌血流與血流儲備",
-        lead: "Cardiac PET 除了看灌流分布，也能量化心肌血流與血流儲備。這有助於補足一般心肌灌流影像不容易看出的資訊。",
-        cards: [
-            { title: "它在問的是總血流能力", text: "不只是單一血管有沒有塞，而是整顆心在壓力下還能把血流拉高多少。" },
-            { title: "微血管疾病在這裡更容易浮現", text: "當大血管沒有明顯狹窄，但病人仍有典型症狀時，Cardiac PET 的量化能力特別有價值。" },
-            { title: "前處理是為了保留壓力反應", text: "咖啡因、部分藥物與呼吸狀態會直接影響血管擴張藥反應，所以前處理錯了，數值也會被一起帶歪。" },
-            { title: "先分清 protocol", text: "不同 tracer、不同壓力藥物與是否做 flow quantification，會讓檢查目的和解讀層次完全不同。" }
-        ]
-    },
-    MIBG: {
-        eyebrow: "先看攝取能力",
-        title: "MIBG 掃描主要看病灶是否還會攝取這個分子",
-        lead: "MIBG 的重點在於交感神經與腎上腺髓質相關路徑是否還保留。病灶若還有攝取能力，影像與後續治療才比較有意義。",
-        cards: [
-            { title: "甲狀腺阻斷是第一件事", text: "因為游離碘帶來的不是小誤差，而是會把不該承受的輻射送到甲狀腺。" },
-            { title: "藥物史會直接改變攝取", text: "部分抗憂鬱劑、labetalol 或交感神經相關藥物，會和 MIBG 走到同一條生理路徑上。" },
-            { title: "24 到 48 小時不是拖時間", text: "這段等待是在讓背景清掉、真正被儲存的病灶慢慢浮出來。" },
-            { title: "陰性時要回頭想腫瘤生物學", text: "去分化、藥物干擾或原本就不走這條儲存路徑，都可能讓病灶不如預期顯影。" }
-        ]
-    },
-    I131WBS: {
-        title: "I-131 全身掃描",
-        subtitle: "I-131 Whole-Body Scan — 甲狀腺癌術後殘餘組織、復發與轉移病灶的高能量全身影像",
-        category: "endocrine",
-        protocolSummaryDisplay: "expanded",
+        title: "心臟正子掃描",
+        subtitle: "Cardiac PET — 心肌灌流、血流定量、存活性評估與發炎／浸潤影像",
+        category: "pet",
         readerGuideMode: "article",
         readerGuideArticle: [
-            "I-131 全身掃描的教學核心，是分清楚這張影像在問的是「還有哪些會攝碘的組織」，而不是所有亮點都等於腫瘤。",
-            "診斷性 WBS 和治療後 WBS 雖然都叫全身掃描，但臨床問題、敏感度與判讀信心並不相同；教材應把兩者放在同一條工作流程裡理解。",
-            "現代 ATA 指南也提醒，WBS 的價值常在與 thyroglobulin、超音波與 SPECT/CT 串聯使用，而不是孤立讀圖。"
-        ],
-        timeArchitecture: {
-            mode: "article",
-            steps: [
-                { label: "前置刺激", value: "TSH stimulation、低碘飲食與近期含碘暴露評估" },
-                { label: "給藥與延遲", value: "診斷性或治療性 I-131 後依 protocol 延遲收像" },
-                { label: "全身加定位", value: "whole-body planar，必要時 spot view 或 SPECT/CT" }
-            ],
-            article: [
-                "第一階段先決定病人是做診斷性 WBS 還是治療後 WBS，並把 TSH stimulation 的方式講清楚。臨床上可能是停用甲狀腺素後升高 TSH，也可能使用 rhTSH；兩者都會影響排程、症狀與病人配合度。",
-                "第二階段是低碘飲食與含碘暴露管理。若近期做過含碘顯影或仍有高碘攝取，病灶就算存在，也可能因碘池已滿而顯影不足。",
-                "第三階段才是高能量全身掃描本身。影像通常先以 whole-body planar 掌握全身分布，再針對可疑區域補 spot view 或 SPECT/CT，以區分殘餘甲狀腺床、淋巴結、肺轉移、骨轉移與污染。"
-            ],
-            note: "掃描時點需依院內 protocol、給藥目的與臨床問題固定。診斷性與治療後的時序不可混寫。"
-        },
-        content: [
-            {
-                type: "info-box-blue",
-                html: `<h4>臨床定位：看的是「哪些組織還會攝碘」</h4>
-                <p>I-131 全身掃描最常用在分化型甲狀腺癌術後，評估甲狀腺床殘餘組織、復發病灶與遠端轉移。影像語言是<strong>攝碘能力</strong>，因此判讀時一定要先分清生理性分布、污染與真正病灶，而不是看到亮點就直接寫成轉移。</p>`
-            },
-            {
-                type: "section",
-                title: "一、 診斷性 WBS 與治療後 WBS 有什麼不同？",
-                icon: "🎯",
-                html: `<div class="prose">
-                    <p><strong>診斷性 WBS</strong>通常用在術後分期補充、風險重估或追蹤特定疑問；<strong>治療後 WBS</strong>則是在 I-131 治療後，用較高活度把原本不明顯的殘餘組織或轉移病灶顯示出來。ATA 2015 指南指出，治療後掃描常可發現前面未明顯顯示的病灶，並可藉 SPECT/CT 進一步改善定位。</p>
-                    <p>實務上，診斷性 WBS 不是每位分化型甲狀腺癌病人都例行需要；低風險且已有 excellent response 的病人，常不需反覆常規 diagnostic WBS。這個觀念要寫進教材，避免把 WBS 誤教成「每次都要做」的固定流程。</p>
-                </div>`
-            },
-            {
-                type: "section",
-                title: "二、 檢前準備：真正影響畫面的常在掃描前",
-                icon: "🩺",
-                html: `<div class="prose">
-                    <ul>
-                        <li><strong>TSH stimulation：</strong>若 TSH 沒有被拉高，病灶未必願意攝碘，影像就可能低估疾病。排檢時要清楚記錄是 hormone withdrawal 還是 rhTSH。</li>
-                        <li><strong>低碘飲食：</strong>目標不是形式上「少吃海鮮」，而是降低體內碘池，讓放射性碘有機會被真正的目標組織攝取。</li>
-                        <li><strong>近期含碘暴露：</strong>CT contrast、含碘消毒劑、某些保健食品與 amiodarone 都可能干擾，需在檢前主動追問。</li>
-                        <li><strong>污染控制：</strong>掃描前排尿、更衣、取下口袋衛生紙與檢查皮膚污染，不是衛教細節，而是避免假陽性的第一步。</li>
-                    </ul>
-                </div>`
-            },
-            {
-                type: "section",
-                title: "三、 攝影流程：whole-body 只是起點，定位常靠補拍",
-                icon: "🖥️",
-                html: `<div class="prose">
-                    <ul>
-                        <li><strong>高能量準直儀不可省略：</strong>I-131 需使用 HE collimator 與相符能窗，否則畫質與散射控制都會出問題。</li>
-                        <li><strong>先看全身分布：</strong>whole-body planar 讓我們知道亮點在哪些區域，再決定是否補頸部、胸部、骨盆或局部 spot view。</li>
-                        <li><strong>SPECT/CT 的價值在定位：</strong>當平面影像無法分清甲狀腺床殘餘、頸部淋巴結、吞嚥後食道活性、腸道或骨病灶時，SPECT/CT 通常比再加更多平面投影更有幫助。</li>
-                    </ul>
-                </div>`
-            },
-            {
-                type: "section",
-                title: "四、 影像如何判讀：先分生理、污染，再談病灶",
-                icon: "🧭",
-                html: `<div class="prose">
-                    <p><strong>生理性攝取</strong>常見於唾液腺、鼻咽黏膜、胃、腸道與泌尿系統，女性哺乳期乳房也可能顯影。讀片時應先建立一張「正常會亮哪裡」的地圖，避免把生理分布誤認為轉移。</p>
-                    <p><strong>甲狀腺床殘餘組織</strong>通常位在頸部中央或偏中央的手術床區域，若與治療後掃描時間點相符，常見為術後 remnant。若焦點偏外側、形態不典型或與超音波結節對位，則要考慮頸部淋巴結轉移。</p>
-                    <p><strong>淋巴結與遠端轉移</strong>的判讀要靠位置學。頸部外側、上縱膈、肺野散在點狀或瀰漫攝取、以及骨骼固定焦點，都可見於轉移；但真正下結論前，最好確認其位置是否固定、是否與解剖影像對應，並排除表面污染。</p>
-                    <p><strong>污染</strong>是 I-131 WBS 最常見的假陽性之一。唾液、汗液、鼻涕、尿液污染常呈表面不規則亮點，有時會隨擦拭、換衣或重新排尿後消失。凡是亮點的位置不合理、邊界太表淺或左右對稱得不自然，都要先想污染。</p>
-                    <p><strong>SPECT/CT 的角色</strong>是把「亮在哪裡」變成「亮的是什麼」。ATA 指南與後續研究都指出，SPECT/CT 能增加轉移淋巴結辨識、減少 equivocal findings，並在部分病例改變後續處置。</p>
-                </div>`
-            },
-            {
-                type: "section",
-                title: "五、 常見陷阱與限制",
-                icon: "⚠️",
-                html: `<div class="prose">
-                    <ul>
-                        <li><strong>低風險病人不是都需要常規診斷性 WBS：</strong>要依風險分層與治療反應決定，不宜過度流程化。</li>
-                        <li><strong>診斷劑量與 stunning 議題：</strong>前治療 diagnostic scan 的選擇需考慮後續治療規畫；部分中心在特定場景偏好 I-123 作為診斷性 WBS，以減少 I-131 低劑量先行造成的顧慮。</li>
-                        <li><strong>平面定位有限：</strong>單靠 whole-body planar 很容易卡在「有亮，但不確定是什麼」，因此應及早考慮 spot view 或 SPECT/CT。</li>
-                        <li><strong>攝碘陰性不等於沒有病灶：</strong>分化差、去分化或 Tg elevated / scan negative 的情況，仍可能需要超音波、CT、FDG PET/CT 等其他路徑。</li>
-                    </ul>
-                </div>`
-            },
-            {
-                type: "section",
-                title: "六、 報告與溝通建議",
-                icon: "📝",
-                html: `<div class="prose">
-                    <ul>
-                        <li>記錄給藥目的、活度、TSH stimulation 方式、低碘飲食與掃描時點。</li>
-                        <li>描述生理分布是否如預期，再逐區說明可疑殘餘組織、淋巴結或遠端病灶。</li>
-                        <li>若有可疑污染，應在報告中清楚註明已重拍、擦拭或重新排尿後是否消失。</li>
-                        <li>結論建議寫成「支持甲狀腺床殘餘組織」「頸部外側攝碘灶，合併 SPECT/CT 較支持淋巴結轉移」等定位式語言，而不是只寫「陽性」。</li>
-                    </ul>
-                </div>`
-            },
-            {
-                type: "section",
-                title: "參考文獻",
-                icon: "📚",
-                html: `<div class="prose">
-                    <ol>
-                        <li>Haugen BR, Alexander EK, Bible KC, et al. 2015 American Thyroid Association Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer. <em>Thyroid</em>. 2016;26(1):1-133.</li>
-                        <li>Avram AM, et al. Nuclear imaging in differentiated thyroid cancer: roles of diagnostic and posttherapy I-131 whole-body scanning with SPECT/CT. Contemporary reviews and practice updates through 2024.</li>
-                        <li>ATA guideline evidence summaries on diagnostic WBS selectivity, SPECT/CT added value, and posttherapy scan timing.</li>
-                    </ol>
-                </div>`
-            }
+            "Cardiac PET 的核心優勢不只是看灌流分布，而是直接量化心肌血流（MBF）與冠脈血流儲備（CFR），這是 SPECT MPI 做不到的。",
+            "心臟 FDG PET 的病人準備與腫瘤 FDG PET 完全相反——心臟需要葡萄糖負荷來驅動心肌攝取，空腹反而會讓正常心肌不顯影。這是臨床上最常被搞混的關鍵差異。",
+            "不同示蹤劑（Rb-82、N-13 Ammonia、F-18 FDG）各有其生理基礎與適用情境；選擇哪一條路徑，取決於你要回答的問題是灌流、存活還是發炎。"
         ]
     },
-    MUGA: {
-    title: "心室功能檢查 MUGA / ERNA",
-    subtitle: "Equilibrium Radionuclide Angiography 的臨床與技術實作",
-    category: "cardiac",
-    readerGuideMode: "article",
-    readerGuideArticle: [
-        "MUGA（ERNA）的價值在於可重現、可比較、可追蹤，不是只給一個 LVEF 數字。若同一病人要做治療前後序列監測，流程標準化比單次『看起來清楚』更重要。",
-        "臨床判讀上，先確認檢查品質（R-wave gating、R-R histogram、ROI 合理性、統計數）再解讀功能參數。品質失控時，數值再漂亮也可能是誤差。",
-        "近年重點已從『能不能量到 EF』轉向『不同軟體/流程能否互換』；2025 研究顯示跨軟體偏差可達臨床決策等級，故 serial 追蹤應避免任意切換平台。"
-    ],
-    timeArchitecture: {
-        mode: "article",
-        steps: [
-            { label: "RBC 標記", value: "in vivo / modified / in vitro" },
-            { label: "平衡後收像", value: "Planar LAO + multi-view 或 SPECT" },
-            { label: "ECG R-wave gating", value: "16–32 frames / R-R" }
-        ],
-        article: [
-            "第一階段是 RBC 標記：in vivo、modified in vivo/in vitro、in vitro 三法中，以 in vitro 標記效率最高，最利於高品質定量與 serial 追蹤。",
-            "第二階段是擷取：平面 ERNA 的 LVEF 核心視角為 LAO best septal view，並以 16–32 frames/R-R 進行 ECG gating；必要時增加 anterior/lateral 觀察區域壁運動。",
-            "第三階段是分析：平面採 count-based LVEF（ED/ES ROI + 背景校正），SPECT ERNA 則可用 3D 方式評估雙心室體積與 RVEF。"
-        ],
-        note: "同一病人序列追蹤時，應固定相機、收像參數、ROI 規則與分析軟體版本。"
-    },
-    content: [
-        {
-            type: "section",
-            title: "名稱與定位：ERNA、MUGA、RNV 是同一技術族群",
-            icon: "📘",
-            html: `<div class="prose">
-                <p>ERNA（equilibrium radionuclide angiography）與 MUGA（multigated acquisition）在實務上常互稱；核心都在以標記紅血球建立血池訊號，再透過 R-wave gating 取得心動週期平均影像以定量心室功能。</p>
-                <p>SNMMI/EANM 2020 指引指出，此法在 serial LVEF 的 reproducibility 極高（文獻引用 inter/intraobserver variability &lt;5%），因此特別適合化療心毒性監測與長期療效追蹤。</p>
-            </div>`
-        },
-        {
-            type: "section",
-            title: "臨床適應症與限制",
-            icon: "🎯",
-            html: `<div class="prose">
-                <ul>
-                    <li><strong>最常見：</strong>癌症治療（特別是潛在心毒性藥物）前、中、後的 LVEF 追蹤。</li>
-                    <li>心肌病變、瓣膜病、缺血後心室功能追蹤，或需要高重現性數值比較的情境。</li>
-                    <li>當超音波窗不佳、CMR 不可行，ERNA 可作為穩定的功能定量工具。</li>
-                    <li>限制：ERNA 提供的是血池功能資訊，對瓣膜結構、心肌組織特徵與缺血病灶定位不如 echo/CMR/MPI。</li>
-                </ul>
-            </div>`
-        },
-        {
-            type: "section",
-            title: "標準技術流程（教學版）",
-            icon: "🩺",
-            html: `<div class="prose">
-                <p><strong>病人準備：</strong>休息態通常不需禁食；若做運動或 dobutamine stress，建議禁食 3–4 小時並先檢核壓力檢查禁忌症。檢查前要主動確認心律不整、近期輸血、heparin/dextrose 靜脈路徑與可能干擾 RBC 標記之藥物/病史。</p>
-                <p><strong>RBC 標記：</strong>SNMMI/EANM 2020 指引列出三法：in vivo（約 60–70%）、modified in vivo/in vitro（約 90%）、in vitro（&gt;97%）。若任務是精準 serial 定量，in vitro 通常最穩定，但需嚴格病人與血液樣本辨識流程。</p>
-                <p><strong>劑量與擷取：</strong>成人常用活度約 555–1,110 MBq（15–30 mCi）。平面 ERNA 以 LAO best septal view 為 LVEF 核心角度，至少 16 frames/R-R（建議 24–32）；必要時補 anterior/lateral 以看區域壁運動。SPECT ERNA 在 RV 與雙心室體積分離常較有優勢。</p>
-                <p><strong>計算原理：</strong>平面 LVEF 屬 count-based，需正確圈 ED 與 ES 的 LV ROI 並做背景校正；背景 ROI 位置錯誤（例如含脾臟或大血管）會直接造成系統性偏差。</p>
-                <ul>
-                    <li>公式：<strong>LVEF =（校正後 ED counts − 校正後 ES counts）/ 校正後 ED counts × 100%</strong></li>
-                    <li>平面追蹤最怕「角度漂移 + ROI 漂移 + gating 失真」同時發生。</li>
-                </ul>
-            </div>`
-        },
-        {
-            type: "section",
-            title: "軟體比較與序列追蹤規則",
-            icon: "📊",
-            html: `<div class="prose">
-                <p>2025 年 J Nucl Med Technol 的研究（PMID:39814461）直接比較 <strong>Xeleris</strong> 與 <strong>Corridor4DM</strong>（以 CMR 為參考），發現同一批 ERNA 資料下，不同軟體可能出現顯著偏差；同軟體不同讀片者差異反而較小。研究結論明確指出：<strong>不同軟體不宜互換</strong>，切換時需高度警戒。</p>
-                <p>實務上建議把以下條件「鎖定」：camera/collimator、R-R acceptance、frame 數、LAO 幾何、ROI 規則、背景 ROI 位置、重建與濾波參數、分析軟體與版本。若這些條件改變，報告必須註明可比性受限。</p>
-            </div>`
-        },
-        {
-            type: "section",
-            title: "MUGA 結果判讀（臨床決策版）",
-            icon: "🧭",
-            html: `<div class="prose">
-                <p><strong>先看可靠度，再看數值。</strong>判讀順序建議固定為：gating trigger 是否抓到 QRS、R-R histogram 是否集中、是否有 motion/frame drop-out、ROI 與背景 ROI 是否合理，最後才解讀 LVEF/RVEF。</p>
-                <p><strong>序列追蹤最關鍵的不是單點高低，而是變化是否超過方法誤差。</strong>依 SNMMI/EANM 2020，ERNA serial 重現性可達 &lt;5%，因此前後約 5 個百分點以上的 LVEF 改變，才較可視為具臨床意義的真實變化。</p>
-                <ul>
-                    <li>收縮功能：LVEF、RVEF、global/regional wall motion（normal/hypokinetic/akinetic/dyskinetic）。</li>
-                    <li>舒張功能：time-activity curve 形態、peak filling rate（PFR）與舒張充盈時間序列。</li>
-                    <li>同步性：phase image / phase histogram 的平均相位與離散度（SD）。</li>
-                    <li>壓力流程：同指引指出正常 stress LVEF 應較 rest 上升至少約 5 EF units。</li>
-                </ul>
-            </div>`
-        },
-        {
-            type: "section",
-            title: "First-pass RNV（FPRNA）技術補充",
-            icon: "🚀",
-            html: `<div class="prose">
-                <p><strong>定位：</strong>first-pass 不是取代 ERNA，而是以快速動態擷取第一循環通過心肺大血管時的訊號，特別有助於右心室功能（RVEF）與分流相關評估。</p>
-                <p><strong>打藥與收像要點：</strong>重點是「緊實 bolus + 高時間解析」。靜脈路徑宜選通暢且靠近中心循環的路徑，避免外滲與過慢注射造成第一循環展寬。常見使用 RAO 投影取得右心分離較佳的時間活性曲線；數據處理仍須做背景校正並避免把心房/大血管訊號混入 RV ROI。</p>
-                <p><strong>與 ERNA 的互補：</strong>ERNA 在 serial LVEF 重現性更有優勢；FPRNA 在特定右心與流入流出動力學問題可補足資訊。若做長期追蹤，同一病人應避免在 FPRNA 與 ERNA 間來回切換作為同一序列比較。</p>
-                <ul>
-                    <li>注射品質不佳（外滲、過慢、殘留）是 first-pass 誤差第一來源。</li>
-                    <li>ROI 必須排除右心房與肺動脈重疊，否則 RVEF 會偏差。</li>
-                    <li>first-pass 與 ERNA 量到的是不同時相與幾何模型，報告需註明方法學差異。</li>
-                </ul>
-            </div>`
-        },
-        {
-            type: "section",
-            title: "文獻圖像示例（ROI 與指引頁）",
-            icon: "🖼️",
-            html: `<div class="prose">
-                <p>此段改為聚焦最常被問的實作核心：「左心室 ROI 與背景 ROI 到底該畫在哪裡」。保留這張雙 ROI 示意即可支撐新手到臨床判讀的一線需求。</p>
-                <figure class="inline-guide-figure">
-                    <img src="assets/muga-paper-figures/Taiwan_2022_MUGA_Fig1_ROI_tight.png" alt="Dual-ROI processing example for MUGA showing ventricular ROI and background ROI" loading="lazy" />
-                    <figcaption>圖 1．MUGA 雙 ROI 處理示例。來源：陳麗華等，<em>核醫技學誌</em>. 2022;19:1-7, Figure 1。左圖是 ventricular ROI，右圖是背景 ROI；教學關鍵在於背景區應貼近左心室外側或 inferoapical 區，但要避開脾臟、主動脈與體外區域，否則背景校正會直接把 LVEF 算偏。</figcaption>
-                </figure>
-            </div>`
-        },
-        {
-            type: "section",
-            title: "Pitfalls 與報告最小必填",
-            icon: "⚠️",
-            html: `<div class="prose">
-                <p><strong>六大常見陷阱：</strong>（1）RBC 標記效率差、（2）LAO 角度未達 best septal separation、（3）ECG gating 把 T wave/PVC 誤判、（4）counts 不足或 frame drop-out、（5）背景 ROI 放錯、（6）跨機器/跨軟體混用。</p>
-                <p><strong>一份可用於治療決策的報告，不應只寫 LVEF。</strong>至少要有：indication、檢查型式（planar/SPECT）、藥物與活度、RBC 標記法、gating/影像品質、LV/RV size 與 wall motion、LVEF（必要時 RVEF/PFR/phase 分析）、與前次相比是否超出方法誤差。</p>
-                <p><strong>主要參考文獻（權威與原始研究）：</strong></p>
-                <ol>
-                    <li><a href="https://sites.snmmi.org/common/Uploaded%20files/Web/Clinical%20Practice/Procedure%20Standards/2020/jnmt_Gated%20ERNA.pdf" target="_blank" rel="noopener">SNMMI/EANM Procedure Standard for Gated ERNA, 2020</a>（J Nucl Med Technol 48:126-138）。</li>
-                    <li><a href="https://pubmed.ncbi.nlm.nih.gov/39814461/" target="_blank" rel="noopener">Kappel RH, et al. J Nucl Med Technol. 2025;53(1):36-43</a>（software discrepancy；PMID:39814461）。</li>
-                    <li><a href="https://snmmi.org/common/Uploaded%20files/Web/Clinical%20Practice/Procedure%20Standards/2009/Cardiac_Scintigraphy_1382731812393_3.pdf" target="_blank" rel="noopener">ACR-SNM-SPR Practice Guideline for Cardiac Scintigraphy</a>（2009 修訂版，SNMMI 官方發布）。</li>
-                    <li><a href="https://jnm.snmjournals.org/content/jnumed/38/10/1658.full.pdf" target="_blank" rel="noopener">SNM Procedure Guideline for Equilibrium Radionuclide Angiography, 1997</a>（J Nucl Med 38:1658-1661）。</li>
-                    <li><a href="https://www.snm.org.tw/files/file_pool/1/0o138510474209225653/1%20%282%29.pdf" target="_blank" rel="noopener">陳麗華等。核醫技學誌 2022;19:1-7</a>（台灣平面/斷層 MUGA 與心超相關性）。</li>
-                </ol>
-            </div>`
-        }
-    ]
-},
-
-
-Venography: {
-    title: "放射性核種靜脈攝影",
-    subtitle: "Radionuclide Venography — 下肢靜脈回流、阻塞與側枝判讀",
-    category: "cardiac",
-    readerGuideMode: "article",
-    readerGuideArticle: [
-        "核醫靜脈攝影不是只看一張腿部照片，而是在看 tracer 是否能沿深靜脈主幹順利回流、是否被迫改走側枝，以及中斷點大致落在哪裡。",
-        "這類檢查最容易被技術因素帶歪，因此判讀順序要固定：先看注射與止血帶流程是否可信，再看 flow phase，最後才下阻塞或 DVT 相關結論。",
-        "現代臨床多由 venous ultrasound 擔任第一線，但在超音波受限、近端骨盆靜脈問題或需要功能性回流路徑概念時，radionuclide venography 仍有補充價值。"
-    ],
-    timeArchitecture: {
-        mode: "article",
-        steps: [
-            { label: "建立血池", value: "依 protocol 做 flow 或 blood-pool 準備" },
-            { label: "足背給藥", value: "雙側對照注射 + tourniquet" },
-            { label: "動態與延遲相", value: "flow → blood pool / 必要時 SPECT-CT" }
-        ],
-        article: [
-            "若採傳統 flow radionuclide venography，可用足背靜脈注射 Tc-99m MAA 或相近 protocol，重點在同步比較雙側深靜脈回流型態。",
-            "若採 blood-pool 路徑，則需先建立穩定血池訊號，再做下肢 flow 與延遲血池判讀；這時注射路徑與示蹤劑標記品質就更重要。",
-            "真正要看的不是『亮不亮』，而是 tracer 走哪條路、在哪裡變慢、是否出現異常側枝與近端中斷。"
-        ],
-        note: "同一單位應固定注射側、tourniquet 作法、flow 相時序與延遲相條件，否則前後病例的圖像語言很難比較。"
-    },
-    content: [
-        {
-            type: "section",
-            title: "臨床定位",
-            icon: "📌",
-            html: `<div class="prose">
-                <p>放射性核種靜脈攝影（radionuclide venography）曾是下肢深部靜脈栓塞（DVT）與靜脈回流阻塞評估的重要工具。今日臨床第一線多已改由 duplex ultrasonography 處理，但當超音波對骨盆或近端靜脈段不易完整回答、病人體型或傷口使壓迫超音波受限，或需要看整體側枝回流路徑時，核醫靜脈攝影仍可提供功能性補充資訊。</p>
-                <p>它和超音波的視角不同。超音波偏重血管壓縮性、管腔回聲與多普勒血流；核醫靜脈攝影偏重 tracer 的動態回流模式，因此特別適合教學上建立「正常深靜脈主幹回流」與「阻塞後繞道側枝」的圖像語言。</p>
-            </div>`
-        },
-        {
-            type: "section",
-            title: "適應症與限制",
-            icon: "🎯",
-            html: `<div class="prose">
-                <ul>
-                    <li><strong>可考慮情境：</strong>疑似 DVT 但超音波結果不明確、懷疑近端或骨盆段阻塞、需要補充功能性回流資訊、或追蹤側枝與通暢性變化。</li>
-                    <li><strong>主要限制：</strong>空間解析度與解剖細節不如超音波、CT venography 或 MR venography；若注射品質或 tourniquet 條件失控，影像很容易被技術因素污染。</li>
-                    <li><strong>目前角色：</strong>不是所有疑似 DVT 病人都要做，而是屬於特定問題導向的補充檢查。</li>
-                </ul>
-            </div>`
-        },
-        {
-            type: "section",
-            title: "藥物、打藥與攝影流程",
-            icon: "💉",
-            html: `<div class="prose">
-                <p>實務上常見兩類路徑：一類是直接做下肢 flow radionuclide venography；另一類是先建立 blood-pool 訊號後做 flow 與延遲血池觀察。不同院所可能使用 Tc-99m MAA、Tc-99m pertechnetate 結合 in-vivo RBC labeling，或其延伸 protocol；因此報告與技術紀錄必須明確寫出示蹤劑、注射方法與時序。</p>
-                <p>下肢檢查通常採足背或足部遠端靜脈注射，雙側對照尤佳。tourniquet 的目的不是製造壓力感，而是協助表淺與深部靜脈分流控制，讓 tracer 優先呈現要觀察的回流路徑。若 tourniquet 綁法不一致、太鬆、太緊，或兩側條件不同，影像就會失去可比性。</p>
-                <p>動態攝影重點是把 tracer 自遠端往近端的回流過程完整收進來；延遲 blood-pool phase 則用來看靜脈池分布、側枝與可疑阻塞段。若懷疑腹股溝以上病灶，可考慮加做腹骨盆範圍延伸影像或 SPECT/CT 做定位補強。</p>
-            </div>`
-        },
-        {
-            type: "section",
-            title: "判讀框架",
-            icon: "🧭",
-            html: `<div class="prose">
-                <p><strong>建議順序：</strong>先看技術品質，再看 flow 方向與連續性，最後才判讀阻塞程度。</p>
-                <ul>
-                    <li><strong>正常：</strong>雙側 tracer 沿深靜脈主幹平順、對稱向近端上行，沒有明顯中斷或異常表淺繞道。</li>
-                    <li><strong>異常：</strong>單側回流延遲、主幹突然中斷、近端不顯影但可見明顯側枝擴張，支持深靜脈阻塞或 DVT 相關改變。</li>
-                    <li><strong>只見表淺路徑：</strong>要先懷疑注射外滲、tourniquet 影響、既有靜脈通路異常或技術失敗，而不是立刻下深靜脈阻塞結論。</li>
-                    <li><strong>近端問題：</strong>若小腿與膝上流向都不典型，卻無法明確定位，應主動建議與超音波或 CT/MR venography 對照。</li>
-                </ul>
-            </div>`
-        },
-        {
-            type: "section",
-            title: "Pitfalls",
-            icon: "⚠️",
-            html: `<div class="prose">
-                <p><strong>最常見誤差來源不是疾病本身，而是注射與流程。</strong></p>
-                <ul>
-                    <li><strong>注射外滲：</strong>會造成局部高活性與近端回流假性減弱，甚至只剩表淺路徑顯影。</li>
-                    <li><strong>tourniquet 綁法不一致：</strong>兩側比較會失真，讓人誤以為一側回流異常。</li>
-                    <li><strong>病人移動：</strong>動態相一旦移位，回流連續性與中斷點很容易被看錯。</li>
-                    <li><strong>慢性既有側枝：</strong>不一定代表急性 DVT，需結合症狀時序與其他影像。</li>
-                    <li><strong>只憑單一相位下結論：</strong>flow 與延遲血池相應一起看，才能分清急性中斷、慢性繞道與單純技術問題。</li>
-                </ul>
-            </div>`
-        },
-        {
-            type: "section",
-            title: "文獻圖像示例",
-            icon: "🖼️",
-            html: `<div class="prose">
-                <p>這一段保留兩張最有教學價值的圖：第一張回答「blood-pool venography 前示蹤劑是怎麼建立血池的」，第二張回答「正常、阻塞與側枝顯影到底長什麼樣子」。</p>
-                <figure class="inline-guide-figure">
-                    <img src="assets/paper-figures/Venography/RBC_PYP_Tc99m_Fallback_Workflow.svg" alt="Workflow for in-vivo RBC labeling venography using PYP followed by Tc-99m" loading="lazy" />
-                    <figcaption>圖 1．以 PYP 先行處理、再注入 Tc-99m pertechnetate 的 in-vivo RBC 血池流程示意。圖的重點不在背步驟，而是理解 blood-pool venography 必須先把穩定血池訊號建立起來；若周邊靜脈條件差、注射不順或標記品質不穩，後面看到的回流與延遲相就可能一起失真。</figcaption>
-                </figure>
-                <figure class="inline-guide-figure">
-                    <img src="assets/paper-figures/Venography/WJNM_2018_Fig1_RadionuclideVenographyPatterns.jpg" alt="Representative radionuclide venography patterns showing normal flow and obstruction with collateral formation" loading="lazy" />
-                    <figcaption>圖 2．核醫靜脈攝影代表型態。來源：Theerakulpisut D, et al. <em>World J Nucl Med</em>. 2018;17:27-33, Figure 1。教學上可先看正常深靜脈主幹如何平順向上，再對照阻塞時的主幹中斷與側枝擴張；若只剩表淺路徑或局部異常積聚，則優先思考外滲與技術因素。</figcaption>
-                </figure>
-            </div>`
-        },
-        {
-            type: "section",
-            title: "報告建議與參考文獻",
-            icon: "📚",
-            html: `<div class="prose">
-                <p>報告至少應註明：示蹤劑與注射法、注射側/雙側、tourniquet 條件、flow 與延遲相品質、回流是否連續、可疑中斷位置、側枝有無，以及是否建議追加超音波或其他靜脈影像。</p>
-                <ul>
-                    <li>Pavel DG, Zimmer AM, Patterson VN. <em>J Nucl Med</em>. 1977;18(3):305-308.</li>
-                    <li>Snarski AM. <em>Eur J Nucl Med</em>. 1989;15(3):137-142.</li>
-                    <li>Caner B, et al. <em>Angiology</em>. 1991;42(10):796-804.</li>
-                    <li>Theerakulpisut D, et al. <em>World J Nucl Med</em>. 2018;17:27-33.</li>
-                    <li>Liu C, et al. <em>J Nucl Med Radiat Ther</em>. 2016;7:295.</li>
-                </ul>
-            </div>`
-        }
-    ]
-}
 };
 
 Object.assign(EXAM_DATA, CARDIAC_VIEW_OVERRIDES);
@@ -8949,36 +9273,7 @@ const EXAM_FLOW_SUPPORT_VIEWS = {
 };
 
 const ACADEMIC_FIGURE_SUPPLEMENTS = {
-    Thyroid: [
-        {
-            type: "section",
-            title: "學術來源判讀圖例：甲狀腺 uptake / scan",
-            icon: "🖼️",
-            html: `<div class="prose">
-                <p>以下使用期刊與 SNM procedure guideline 裁切圖，聚焦判讀時最容易需要圖像對照的型態：Graves、toxic multinodular goiter、hot nodule、cold nodule 與常見技術錯誤。</p>
-                <figure class="inline-guide-figure">
-                    <img src="assets/paper-figures/ThyroidUptake/IJEM_2012_Fig4_Graves.jpg" alt="Diffuse high uptake pattern in Graves disease thyroid scintigraphy" loading="lazy" />
-                    <figcaption>圖 1．Graves disease 典型瀰漫性高攝取。來源：Int J Endocrinol. 2012 open-access thyroid scintigraphy review, Figure 4。判讀重點是全腺相對均勻增強，而非單一結節主導。</figcaption>
-                </figure>
-                <figure class="inline-guide-figure">
-                    <img src="assets/paper-figures/ThyroidUptake/IJEM_2012_Fig1_Multinodular.jpg" alt="Toxic multinodular goiter pattern on thyroid scintigraphy" loading="lazy" />
-                    <figcaption>圖 2．Toxic multinodular goiter。來源：同篇 Figure 1。多個功能性結節造成不均勻攝取，判讀時要和 Graves 的 diffuse pattern 分開。</figcaption>
-                </figure>
-                <figure class="inline-guide-figure">
-                    <img src="assets/paper-figures/ThyroidUptake/IJEM_2012_Fig3_HotNodule.jpg" alt="Autonomous hot thyroid nodule with suppression of background thyroid tissue" loading="lazy" />
-                    <figcaption>圖 3．Autonomous hot nodule。來源：同篇 Figure 3。單一熱結節可壓抑周邊甲狀腺組織，和多結節型態的臨床意義不同。</figcaption>
-                </figure>
-                <figure class="inline-guide-figure">
-                    <img src="assets/paper-figures/ThyroidUptake/IJEM_2012_Fig2_ColdNodule.jpg" alt="Cold thyroid nodule on thyroid scintigraphy" loading="lazy" />
-                    <figcaption>圖 4．Cold nodule。來源：同篇 Figure 2。冷結節代表局部攝取缺損，不能由核醫影像單獨判定良惡性，需接續超音波與 FNA 風險分層。</figcaption>
-                </figure>
-                <figure class="inline-guide-figure">
-                    <img src="assets/paper-figures/ThyroidUptake/SNM_2002_SourcesOfError_excerpt.png" alt="SNM thyroid uptake procedure guideline excerpt listing common sources of error" loading="lazy" />
-                    <figcaption>圖 5．常見誤差來源。來源：SNM Procedure Guideline for Thyroid Uptake Measurement, 2002 excerpt。含碘暴露、藥物、幾何位置與校正流程都可能改變 uptake 數值，報告需註明限制。</figcaption>
-                </figure>
-            </div>`
-        }
-    ],
+    Thyroid: [],
     I131WBS: [
         {
             type: "section",
@@ -8993,24 +9288,7 @@ const ACADEMIC_FIGURE_SUPPLEMENTS = {
             </div>`
         }
     ],
-    NaFPET: [
-        {
-            type: "section",
-            title: "學術來源判讀圖例：骨骼攝取型態與 superscan 陷阱",
-            icon: "🖼️",
-            html: `<div class="prose">
-                <p>F-18 NaF PET 與 Tc-99m MDP bone scan 皆反映骨重塑活性；在尚未補入 NaF PET 專屬 open-access PET/CT 圖前，先共用 EANM bone scintigraphy 與 superscan review 的判讀型態圖，協助建立骨骼分布、瀰漫病灶與 hot-kidney 陷阱。</p>
-                <figure class="inline-guide-figure">
-                    <img src="assets/paper-figures/BoneScan/EANM_2016_Fig1_Normal_WholeBody.png" alt="Normal whole-body bone scintigraphy from EANM guideline used as skeletal uptake baseline" loading="lazy" />
-                    <figcaption>圖 1．正常骨骼核醫分布基準。來源：EANM bone scintigraphy practice guideline 2016, Figure 1。NaF PET 雖解析度更高，仍需先建立對稱骨重塑與泌尿排泄背景的正常概念。</figcaption>
-                </figure>
-                <figure class="inline-guide-figure">
-                    <img src="assets/paper-figures/BoneScan/Diagnostics_2024_Fig1_Superscan.jpg" alt="Metastatic superscan pattern relevant to skeletal nuclear imaging" loading="lazy" />
-                    <figcaption>圖 2．metastatic superscan 型態。來源：Zacho HD, et al. <em>Diagnostics</em>. 2024;14, Figure 1。瀰漫性骨轉移可能讓正常背景與泌尿系統相對變淡，PET 或 planar 判讀都要避免低估。</figcaption>
-                </figure>
-            </div>`
-        }
-    ],
+    NaFPET: [],
     PET: [
         {
             type: "section",
@@ -10313,40 +10591,22 @@ function buildProtocolSummaryHTML(key, data = null) {
     ];
 
     const isExpanded = data?.protocolSummaryDisplay === 'expanded';
-    const stackHTML = isExpanded
-        ? sections.map((section) => `
-            <section class="protocol-summary-card progressive-section">
-                <h3>${section.title}</h3>
-                <div class="protocol-summary-body">
-                    ${section.body}
-                </div>
-            </section>
-        `).join('')
-        : sections.map((section, index) => `
-            <details class="protocol-summary-details progressive-section"${index === 0 ? ' open' : ''}>
-                <summary>
-                    <span>${section.title}</span>
-                </summary>
-                <div class="protocol-summary-body">
-                    ${section.body}
-                </div>
-            </details>
+    const stackHTML = sections.map((section, index) => `
+            <div class="prose">
+                <h4>${section.title}</h4>
+                ${section.body}
+            </div>
         `).join('');
 
     return `
         <section class="protocol-summary-section" aria-labelledby="protocol-summary-title">
-            <div class="protocol-summary-heading">
-                <span class="protocol-summary-kicker">技術 Protocol 摘要</span>
-                <div>
-                    <h2 id="protocol-summary-title">${protocol.title}</h2>
-                    <p>給放射師與核醫醫師快速核對收像、後處理、QC 與常見陷阱。這裡是研究底稿轉成網站的第一層摘要，仍需對照科內機型與正式 SOP。</p>
-                    ${protocol.note ? `<p class="protocol-summary-note">${protocol.note}</p>` : ''}
-                </div>
-            </div>
-            <div class="protocol-summary-stack">
+            <div class="prose">
+                <h2 id="protocol-summary-title">${protocol.title}</h2>
+                <p>給放射師與核醫醫師快速核對收像、後處理、QC 與常見陷阱。這裡是研究底稿轉成網站的第一層摘要，仍需對照科內機型與正式 SOP。</p>
+                ${protocol.note ? `<p class="protocol-summary-note">${protocol.note}</p>` : ''}
                 ${stackHTML}
+                ${protocol.source ? `<p class="protocol-summary-source">主要來源：${protocol.source}</p>` : ''}
             </div>
-            ${protocol.source ? `<p class="protocol-summary-source">主要來源：${protocol.source}</p>` : ''}
         </section>
     `;
 }

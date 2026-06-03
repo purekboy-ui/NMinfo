@@ -184,7 +184,7 @@ const PROTOCOL_DATA = {
   },
   "POSLUMA": {
     "title": "PSMA PET / CT",
-    "source": "PSMA PET / CT: joint EANM procedure guideline / SNMMI procedure standard 2.0, 2023",
+    "source": "Fendler WP, et al. *PSMA PET / CT: joint EANM procedure guideline / SNMMI procedure standard for prostate cancer imaging 2.0*. Eur J Nucl Med Mol Imaging. 2023;50(5):1466-1486. doi:10.1007 / s00259-022-06089-w. PMID: 36604326；Rowe SP, et al. *Prostate-specific Membrane Antigen Reporting and Data System Version 2.0*. Eur Urol. 2023;84(5):491-502. doi:10.1016 / j.eururo.2023.06.008. PMID: 37414701；Hennrich U, et al. *Revolutionizing Prostate Cancer Detection: The Role of Approved PSMA-PET Imaging Agents*. Pharmaceuticals (Basel). 2025;18(6):906. doi:10.3390 / ph18060906. PMID: 40573302；Jani AB, et al. *Diagnostic Performance and Safety of 18F-rhPSMA-7.3 Positron Emission Tomography in Men With Suspected Prostate Cancer Recurrence: Results From a Phase 3, Prospective, Multicenter Study (SPOTLIGHT).* J Urol. 2023;210(2):299-311. doi:10.1097 / JU.0000000000003493. PMID: 37126069；Schuster DM, et al. *True-Positive 18F-Flotufolastat Lesions in Patients with Prostate Cancer Recurrence with Baseline-Negative Conventional Imaging: Results from the Prospective, Phase 3, Multicenter SPOTLIGHT Study.* J Nucl Med. 2024;65(7):1080-1086. doi:10.2967 / jnumed.123.267271. PMID: 38782456；Rizzo A, et al. *The Homunculus of unspecific bone uptakes associated with PSMA-targeted tracers: a systematic review-based definition*. Eur J Nucl Med Mol Imaging. 2024;51(12):3753-3764. doi:10.1007 / s00259-024-06797-5. PMID: 38884773；DailyMed / FDA labels checked on 2026-06-03: POSLUMA (flotufolastat F 18), PYLARIFY (piflufolastat F 18 / DCFPyL), gallium Ga 68 gozetotide",
     "acquisition": [
       [
         "Detector / modality",
@@ -192,15 +192,15 @@ const PROTOCOL_DATA = {
       ],
       [
         "Tracer",
-        "68Ga-PSMA-11、18F-DCFPyL、18F-PSMA-1007 等"
+        "報告中必須明列使用的 PSMA radiopharmaceutical，例如 18F-flotufolastat、18F-DCFPyL、68Ga-PSMA-11、18F-PSMA-1007"
       ],
       [
         "Patient prep",
-        "一般不需嚴格禁食；掃描前排尿常有助於減少骨盆干擾"
+        "一般無須禁食；鼓勵補水，掃描前與掃描後排尿；若要釐清骨盆或前列腺窩，可依院內流程考慮利尿、延遲相或排尿後補拍"
       ],
       [
         "Uptake time",
-        "依 tracer 固定，常見約 50–120 分鐘區間"
+        "tracer-specific；POSLUMA 官方建議注射後約 60 分鐘開始影像，68Ga-PSMA-11 常見 50–100 分鐘，18F-DCFPyL 約 60 分鐘"
       ],
       [
         "Position",
@@ -208,25 +208,25 @@ const PROTOCOL_DATA = {
       ],
       [
         "FOV / scan range",
-        "skull vertex 或 skull base 至 mid-thigh；高風險可全身"
+        "skull vertex 或 skull base 至 mid-thigh；高風險或問題導向時可全身"
       ],
       [
         "Time / bed",
-        "多約 2–4 分鐘 / bed"
+        "多數系統約 2–4 分鐘 / bed，需配合活度與重建策略"
       ],
       [
         "CT role",
-        "AC / localization 基本； staging 常加診斷 CT"
+        "至少 low-dose CT 作 AC / localization；若臨床問題需要，可合併診斷 CT 或對比增強 CT"
       ]
     ],
     "processing": [
       [
         "Reconstruction family",
-        "TOF OSEM 常見"
+        "TOF OSEM 或 vendor validated equivalent"
       ],
       [
         "Iterations / subsets",
-        "依 vendor validated preset 固定"
+        "依 scanner validated preset 固定，不建議跨時期任意切換"
       ],
       [
         "Attenuation correction",
@@ -238,34 +238,38 @@ const PROTOCOL_DATA = {
       ],
       [
         "Resolution recovery / PSF",
-        "視系統可用"
+        "可用時固定啟用策略，追蹤比較需一致"
       ],
       [
         "Quantification",
-        "SUV 可描述性使用；跨 tracer 比較需謹慎"
+        "SUV 可作描述與追蹤輔助，但跨藥物、跨重建版本與跨掃描時序比較時要保守"
       ]
     ],
     "qc": [
-      "tracer 種類是否清楚記錄",
-      "uptake time 是否符合該 tracer 的科內規範",
-      "排尿與骨盆影像品質是否足夠",
-      "CT-PET 是否 misregistration",
-      "追蹤比較是否維持同 tracer / 同重建 preset"
+      "tracer 名稱、實際活度、注射時間、開始收像時間是否完整記錄",
+      "uptake time 是否符合該 tracer 與院內 protocol",
+      "是否有足夠補水與排尿，特別是骨盆判讀情境",
+      "PET / CT 是否 misregistration，尤其橫膈、膀胱與體動區域",
+      "是否有注射外滲、局部污染、金屬 artifact 或尿液造成的假影",
+      "若為追蹤檢查，是否維持相同 tracer、相近 uptake time 與相同重建 preset"
     ],
     "pitfalls": [
-      "ganglia、生理性腺體與尿路攝取",
-      "18F-PSMA-1007 的非特異性骨攝取",
-      "金屬與 CT AC artifact",
-      "不同 tracer / 不同流程下硬比 SUV"
+      "生理性高攝取：淚腺、唾液腺、腎臟、輸尿管、膀胱、肝、脾、小腸",
+      "交感神經節：celiac、stellate、sacral ganglia 可誤判為淋巴結",
+      "尿液與 ureter activity：前列腺窩、膀胱旁、pelvic node 判讀最常受影響",
+      "發炎、感染、肉芽組織、骨折修復、退化性骨病灶可假陽性",
+      "18F-PSMA-1007 非特異性骨 uptake 特別常見，肋骨與骨盆最典型",
+      "負向掃描不能排除微小病灶、低 PSMA 表現病灶或去分化腫瘤",
+      "治療時序會改變攝取，ADT 早期 flare 或前次治療效應不可忽略"
     ],
     "localFixedFields": [
-      "tracer 種類與實際活度",
-      "注射時間、開始收像時間與 tracer-specific uptake time",
-      "排尿指示、是否使用利尿或其他院內輔助流程",
+      "tracer 種類與商品名",
+      "注射活度、注射時間、開始收像時間與實際 uptake time",
+      "補水、排尿、是否加做利尿或延遲影像",
       "scan range、arms up / down、time / bed",
-      "CT 模式（AC-only 或 staging 診斷 CT、是否使用對比劑）",
-      "reconstruction preset 與定量指標",
-      "是否加做局部延長 bed、排尿後或延遲補拍"
+      "CT 模式（AC-only、診斷 CT、是否對比劑）",
+      "重建 preset 與量化方法",
+      "是否有前次治療、ADT、近期 biopsy、手術、放療或感染資訊"
     ]
   },
   "Ga68DOTATOC": {
@@ -2035,10 +2039,10 @@ const PROTOCOL_DATA = {
       "report 中是否完整記錄 tracer、activity、注射時間、掃描時間與特殊事件"
     ],
     "pitfalls": [
-      "吃不完整標準餐卻仍硬套正常值",
-      "忽略用藥對 motility 的影響",
-      "少拍關鍵延遲時間點",
-      "動態檢查只存靜態影像，沒有保留足夠 raw sequence"
+      "未取得或未對照近期內視鏡、CT / MRI 解剖影像",
+      "忽略用藥、禁食時長或近期介入對 GI 動態檢查的影響",
+      "只看單張靜態影像下結論，未回看動態 raw sequence",
+      "少拍關鍵延遲時間點，無法區分間歇性與持續性異常"
     ],
     "localFixedFields": [
       "示蹤劑與實際活度",
@@ -2047,7 +2051,7 @@ const PROTOCOL_DATA = {
       "視野 / 體位 / 幾何條件",
       "是否加做 SPECT/CT、診斷 CT 或延遲補拍"
     ],
-    "note": "Meckel 單元目前先借用 GI bleed 的動態腹部收像骨架，後續建議補專檔。"
+    "note": "Meckel 以 GI 類腹部動態收像原則為基礎，Tc-99m pertechnetate 注射後 1 frame/min × 30–60 min，前處理（禁食、H2 blocker）為敏感度關鍵。"
   },
   "Cystography": {
     "title": "Radionuclide cystography",
@@ -2097,7 +2101,7 @@ const PROTOCOL_DATA = {
   },
   "MUGA": {
     "title": "MUGA",
-    "source": "以心臟核醫總覽與共通技術模板整理；本站待補 MUGA 專檔。",
+    "source": "以心臟核醫總覽與共通技術模板整理。",
     "acquisition": [
       "ECG gating 必須穩定，先確認心律與 R-wave 偵測品質。",
       "多角度 planar 收像前，先讓左心室與左心房分離良好。",
@@ -2128,11 +2132,11 @@ const PROTOCOL_DATA = {
       "LAO / best septal separation 幾何條件",
       "EF 計算軟體與版本"
     ],
-    "note": "本站目前尚無 MUGA 專檔，先提供共通 gated 心臟核醫原則，避免排程與後處理完全無依據。"
+    "note": "本條目提供共通 gated 心臟核醫收像、後處理與 QC 原則，用於心室功能評估與 EF 追蹤。"
   },
   "Venography": {
     "title": "Radionuclide venography",
-    "source": "以共通 acquisition checklist 與動態平面成像模板整理；本站待補 venography 專檔。",
+    "source": "以共通 acquisition checklist 與動態平面成像模板整理。",
     "acquisition": [
       "注射一定要順利且對側比較條件一致，extravasation 會直接破壞判讀。",
       "dynamic frame timing 要固定，保留完整 early flow sequence。",
@@ -2172,7 +2176,7 @@ const PROTOCOL_DATA = {
       "視野起訖範圍",
       "是否加做延遲或局部補拍"
     ],
-    "note": "本站目前尚無 radionuclide venography 專檔，先提供動態平面與原始血流序列的共通原則。"
+    "note": "本條目提供動態平面血流序列的共通收像與判讀原則，用於放射性核種靜脈攝影。"
   },
   "Lymphedema": {
     "title": "Lymphedema / lymphoscintigraphy",
@@ -2264,7 +2268,7 @@ const PROTOCOL_DATA = {
   },
   "LiverHemangioma": {
     "title": "Liver hemangioma scintigraphy",
-    "source": "以 GI / 肝膽共通影像原則與多時間點 blood-pool 邏輯整理；本站待補 liver hemangioma 專檔。",
+    "source": "以 GI / 肝膽共通影像原則與多時間點 blood-pool 邏輯整理。",
     "acquisition": [
       "標記紅血球流程與 labeling QC 要穩定。",
       "早期血流、blood pool 與延遲時間點都要完整保留。",
@@ -2292,10 +2296,11 @@ const PROTOCOL_DATA = {
       "report 中是否完整記錄 tracer、activity、注射時間、掃描時間與特殊事件"
     ],
     "pitfalls": [
-      "吃不完整標準餐卻仍硬套正常值",
-      "忽略用藥對 motility 的影響",
-      "少拍關鍵延遲時間點",
-      "動態檢查只存靜態影像，沒有保留足夠 raw sequence"
+      "是否有 TOF",
+      "是否有 PSF",
+      "是否有 penalized likelihood",
+      "CT AC 是否成功",
+      "是否有 metal artifact / respiratory misregistration"
     ],
     "localFixedFields": [
       "RBC 標記方法",
@@ -2303,11 +2308,11 @@ const PROTOCOL_DATA = {
       "是否加做 SPECT/CT",
       "延遲相最晚時間點"
     ],
-    "note": "本站目前尚無肝血管瘤專檔，先提供血池型肝臟檢查的共通成像原則。"
+    "note": "本條目提供血池型肝臟檢查的共通收像、延遲比對與 SPECT/CT 定位原則，用於肝血管瘤 RBC 掃描。"
   },
   "Scrotal": {
     "title": "Scrotal scintigraphy",
-    "source": "以共通 acquisition checklist 與急症血流檢查邏輯整理；本站待補 scrotal 專檔。",
+    "source": "以共通 acquisition checklist 與急症血流檢查邏輯整理。",
     "acquisition": [
       "early flow sequence 必須完整，不能只留延遲靜態圖。",
       "左右側顯示尺度、ROI 與擺位要一致，方便比較血流差異。",
@@ -2347,11 +2352,11 @@ const PROTOCOL_DATA = {
       "是否補延遲相",
       "急診時序與回報流程"
     ],
-    "note": "本站目前尚無陰囊掃描專檔，先提供急症血流檢查的共通核對項。"
+    "note": "本條目提供急症血流檢查的共通收像與判讀核對原則，用於急性陰囊疼痛鑑別掃描。"
   },
   "Cisternography": {
     "title": "Radionuclide cisternography",
-    "source": "以多時間點功能檢查原則整理；本站待補 cisternography 專檔。",
+    "source": "以多時間點功能檢查原則整理。",
     "acquisition": [
       "腰椎穿刺、注入時間與體位變化都要完整記錄。",
       "2 至 4 小時、24 小時、必要時 48 小時時間點不可任意省略。",
@@ -2391,11 +2396,11 @@ const PROTOCOL_DATA = {
       "補拍區域與條件",
       "與重症 / 神經團隊回報節點"
     ],
-    "note": "本站目前尚無 cisternography 專檔，先提供多時間點 CSF 流動檢查的共通原則。"
+    "note": "本條目提供多時間點 CSF 流動檢查的共通收像與判讀原則，用於腦脊髓液池掃描。"
   },
   "Ga67": {
     "title": "Ga-67 scintigraphy",
-    "source": "以神經 / 肺 / 感染共通陷阱與延遲全身成像邏輯整理；本站待補 Ga-67 專檔。",
+    "source": "以神經 / 肺 / 感染共通陷阱與延遲全身成像邏輯整理。",
     "acquisition": [
       "固定延遲時間點，必要時 48 至 72 小時追蹤。",
       "全身與局部補拍都要記錄，避免只剩一組延遲靜態圖。",
@@ -2434,7 +2439,7 @@ const PROTOCOL_DATA = {
       "全身與局部補拍條件",
       "對照影像需求"
     ],
-    "note": "本站目前尚無 Ga-67 專檔，先提供延遲全身與感染定位檢查的共通原則。"
+    "note": "本條目提供延遲全身掃描與感染/發炎定位檢查的共通收像與 QC 原則，用於 Ga-67 發炎掃描。"
   },
   "NP59": {
     "title": "NP-59 adrenal cortical imaging",
